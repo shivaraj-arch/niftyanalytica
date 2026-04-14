@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-04-14T23:44:20.934982+05:30",
+  "generatedAt": "2026-04-15T01:34:21.220052+05:30",
   "aiAnalysis": {
-    "generatedAt": "2026-04-14T23:44:20.934902+05:30",
+    "generatedAt": "2026-04-15T01:34:21.220035+05:30",
     "model": "gemini-2.5-flash-lite",
     "requestedModel": "gemini-robotics-er-1.5-preview",
     "status": "ok",
-    "summary": "The Nifty 50 index closed at 23842.65 on April 13, 2026, indicating a bearish sentiment for the day. The market experienced a significant decline of 224.82 contributing points, driven by heavy selling pressure. FIIs were net sellers to the tune of -1983.18 Cr, while DIIs showed net buying of 2432.30 Cr. The Advance/Decline ratio was heavily skewed towards decliners with a 10/39 split.  Top contributing stocks to the downside included HDFCBANK (-56.99 points) and RELIANCE (-52.19 points), both experiencing notable percentage drops. ICICIBANK was a lone gainer among the top contributors, adding 40.16 points.  Option chain data reveals substantial put OI build-up at the 23800 strike, suggesting this level could act as immediate support. Conversely, significant call OI additions at 23850 and 23900 indicate resistance. The market's immediate outlook appears bearish, with key levels to watch being 23800 (support) and 23850-23900 (resistance). Investors should monitor FII/DII flows and the performance of banking and heavyweight stocks for further directional cues.",
+    "summary": "The Nifty closed at 23842.65, marking a bearish sentiment for the day with a total contributing point of -224.82. The market experienced significant selling pressure, evidenced by the substantial net outflow from FIIs (-1983.18 Cr), although DIIs provided some support with a net inflow of 2432.30 Cr. The Advance/Decline ratio of 10/39 further underscores the bearish undertone.  Key contributors to the decline include HDFCBANK (-56.99 points) and RELIANCE (-52.19 points), both experiencing notable price drops. ICICIBANK was a solitary gainer among the top contributors, adding 40.16 points.  Option chain data reveals significant put OI build-up at the 23800 strike, suggesting strong support, while call OI is concentrated around 23850 and 24000, indicating potential resistance.  The recent finance headlines, particularly those concerning rising oil prices due to geopolitical tensions, could influence market sentiment. Given the day's performance and FII outflows, the immediate bias leans bearish, with a neutral outlook contingent on sustained DII support and a reversal in FII activity.  Key levels to watch are 23800 (support) and 24000 (resistance).",
     "bias": "Bearish",
     "keyLevels": [
       "23800 (Support)",
       "23850 (Resistance)",
-      "23900 (Resistance)"
+      "24000 (Resistance)"
     ],
     "watchlist": [
       "HDFCBANK",
@@ -19,11 +19,11 @@
       "MARUTI"
     ],
     "headlines": [
+      "US Eases Venezuela Sanctions to Allow Central Bank Transactions",
+      "Argentina Inflation Picked Up More Than Expected on Energy Shock",
+      "US enforces Hormuz blockade after Trump's threat; here's why and how it's being carried out",
       "BOE\u2019s Bailey Urges Regulators to Assess AI Cyber Risk to Banks",
-      "Trump asks UK to 'drill, baby, drill\u2019 in North Sea; pressure mounts on Starmer as Iran war pushes oil prices higher",
-      "Alternative Data Increasingly Helping Economists Gauge War Shock",
-      "IPL 2027 set for Australian debut? Report say talks are on for historic trade as Big Bash League keen to come to Chennai",
-      "Lagarde Welcomes New Hungarian Leader\u2019s Plan to Join Euro"
+      "Trump asks UK to 'drill, baby, drill\u2019 in North Sea; pressure mounts on Starmer as Iran war pushes oil prices higher"
     ],
     "fiiDii": {
       "date": "13-Apr-2026",
@@ -6428,7 +6428,7 @@
         },
         "put": {
           "marketPrice": 0.05,
-          "bsValue": 20.555600419423172,
+          "bsValue": 20.555600419424536,
           "iv": 0.0
         }
       },
@@ -6436,12 +6436,12 @@
         "strikePrice": 23650,
         "call": {
           "marketPrice": 192.4,
-          "bsValue": 228.94538919335173,
+          "bsValue": 228.9453891933481,
           "iv": 0.0
         },
         "put": {
           "marketPrice": 0.05,
-          "bsValue": 29.816824653671574,
+          "bsValue": 29.816824653670665,
           "iv": 0.0
         }
       },
@@ -6867,7 +6867,7 @@
     }
   },
   "marketTape": {
-    "updatedAt": "2026-04-14T23:44:17.398750+05:30",
+    "updatedAt": "2026-04-15T01:34:17.911684+05:30",
     "items": [
       {
         "label": "Nifty 50",
@@ -6878,24 +6878,24 @@
       },
       {
         "label": "S&P 500",
-        "last": 6960.2,
-        "changePercent": 0.7133658423649624,
+        "last": 6967.4,
+        "changePercent": 0.8175490891200856,
         "source": "Stooq",
-        "updatedAt": "2026-04-14 20:13:36"
+        "updatedAt": "2026-04-14 22:01:54"
       },
       {
         "label": "Dow Jones",
-        "last": 48524.7,
-        "changePercent": 0.5928849658054632,
+        "last": 48536.0,
+        "changePercent": 0.616310141027853,
         "source": "Stooq",
-        "updatedAt": "2026-04-14 20:13:30"
+        "updatedAt": "2026-04-14 22:03:37"
       },
       {
         "label": "Nasdaq",
-        "last": 23591.385,
-        "changePercent": 1.051568526824445,
+        "last": 23639.084,
+        "changePercent": 1.2558828884933784,
         "source": "Stooq",
-        "updatedAt": "2026-04-14 20:13:39"
+        "updatedAt": "2026-04-14 22:03:51"
       },
       {
         "label": "Nikkei 225",
@@ -6927,23 +6927,41 @@
       },
       {
         "label": "Crude Oil",
-        "last": 91.5,
-        "changePercent": -6.403436988543376,
+        "last": 92.19,
+        "changePercent": -5.69762684124387,
         "source": "Stooq",
-        "updatedAt": "2026-04-14 20:14:13"
+        "updatedAt": "2026-04-14 22:04:09"
       },
       {
         "label": "Gold",
-        "last": 4839.505,
-        "changePercent": 1.993824948892505,
+        "last": 4845.085,
+        "changePercent": 2.1114248983118804,
         "source": "Stooq",
-        "updatedAt": "2026-04-14 20:14:16"
+        "updatedAt": "2026-04-14 22:04:16"
       }
     ]
   },
   "newsFeed": {
-    "updatedAt": "2026-04-14T23:44:11.024427+05:30",
+    "updatedAt": "2026-04-15T01:34:11.195813+05:30",
     "items": [
+      {
+        "source": "Bloomberg Economics",
+        "title": "US Eases Venezuela Sanctions to Allow Central Bank Transactions",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-14/us-eases-venezuela-sanctions-to-allow-central-bank-transactions",
+        "publishedAt": "2026-04-14T19:37:43+00:00"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Argentina Inflation Picked Up More Than Expected on Energy Shock",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-14/argentina-inflation-picked-up-more-than-expected-on-energy-shock",
+        "publishedAt": "2026-04-14T19:20:27+00:00"
+      },
+      {
+        "source": "Livemint",
+        "title": "US enforces Hormuz blockade after Trump's threat; here's why and how it's being carried out",
+        "link": "https://www.livemint.com/news/us-news/us-enforces-hormuz-blockade-after-trumps-threat-heres-why-and-how-its-being-carried-out-11776191200923.html",
+        "publishedAt": "2026-04-14T18:37:20+00:00"
+      },
       {
         "source": "Bloomberg Economics",
         "title": "BOE\u2019s Bailey Urges Regulators to Assess AI Cyber Risk to Banks",
@@ -6985,24 +7003,6 @@
         "title": "Fed Chair Nominee Warsh Discloses Assets Above $190 Million",
         "link": "https://www.bloomberg.com/news/articles/2026-04-14/fed-chair-nominee-warsh-discloses-assets-worth-over-190-million",
         "publishedAt": "2026-04-14T14:46:47+00:00"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Lagarde Says Early ECB Exit No Option With Clouds on Horizon",
-        "link": "https://www.bloomberg.com/news/articles/2026-04-14/lagarde-says-she-won-t-leave-ecb-early-with-clouds-on-horizon",
-        "publishedAt": "2026-04-14T14:41:07+00:00"
-      },
-      {
-        "source": "Livemint",
-        "title": "High oil prices may hit India\u2019s growth, but strong fundamentals offer a cushion: S&amp;P",
-        "link": "https://www.livemint.com/news/high-oil-prices-india-s-growth-strong-fundamentals-offer-a-cushion-s-p-oil-brent-banking-11776170577032.html",
-        "publishedAt": "2026-04-14T14:34:26+00:00"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Mideast Conflict Could Still Trigger Market Turmoil, IMF Warns",
-        "link": "https://www.bloomberg.com/news/articles/2026-04-14/mideast-conflict-could-still-trigger-market-turmoil-imf-warns",
-        "publishedAt": "2026-04-14T14:15:00+00:00"
       }
     ],
     "sourcesAvailable": [
