@@ -83,13 +83,9 @@ body::before {
   top: 6px;
   right: 0;
   display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  padding: 12px 16px;
-  border-radius: 999px;
-  background: linear-gradient(135deg, rgba(15, 76, 92, 0.96), rgba(9, 42, 52, 0.96));
-  color: #f4fbfd;
-  text-decoration: none;
+  width: min(240px, calc(100vw - 28px));
+  border-radius: 18px;
+  overflow: hidden;
   box-shadow: 0 18px 40px rgba(10, 38, 47, 0.22);
 }
 
@@ -97,25 +93,10 @@ body::before {
   transform: translateY(-2px);
 }
 
-.android-mark {
-  width: 40px;
-  height: 40px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.14);
-}
-
-.android-mark svg {
-  width: 24px;
-  height: 24px;
-}
-
-.playstore-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
+.playstore-corner img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .playstore-text strong {
@@ -442,7 +423,7 @@ tbody tr:hover {
   .playstore-corner {
     position: static;
     margin: 0 0 14px auto;
-    width: fit-content;
+    width: min(180px, calc(100vw - 20px));
   }
 
   .hero-copy,
