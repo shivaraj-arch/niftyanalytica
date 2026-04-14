@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nifty Analytica</title>
+  <meta
+    name="description"
+    content="Nifty 50 contributors, option open interest, Black-Scholes comparison, and low IV opportunities from Nifty Analytica."
+  >
+  <meta name="theme-color" content="#0f4c5c">
+  <meta property="og:title" content="Nifty Analytica">
+  <meta
+    property="og:description"
+    content="Static market dashboard for Nifty 50 contributors, open interest, Black-Scholes pricing, and low IV options."
+  >
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">NSE Snapshot Dashboard</p>
+        <h1>Nifty Analytica</h1>
+        <p class="hero-text">
+          A lightweight web view of the mobile app: contributors, option-chain pressure,
+          Black-Scholes comparison, and low implied volatility opportunities.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://play.google.com/store/apps/details?id=com.niftyanalytica" target="_blank" rel="noreferrer">View Android App</a>
+          <a class="button button-secondary" href="#contributors">Open Dashboard</a>
+        </div>
+      </div>
+      <aside class="hero-panel reveal delay-1">
+        <div class="panel-chip">Updated</div>
+        <div id="generatedAt" class="panel-value">Waiting for refresh</div>
+        <p class="panel-note">GitHub Pages deploy regenerates market data and publishes a static snapshot.</p>
+        <dl class="hero-metrics">
+          <div>
+            <dt>Nifty Spot</dt>
+            <dd id="heroSpot">-</dd>
+          </div>
+          <div>
+            <dt>Nearest Expiry</dt>
+            <dd id="heroExpiry">-</dd>
+          </div>
+          <div>
+            <dt>Top Contributor</dt>
+            <dd id="heroTopContributor">-</dd>
+          </div>
+          <div>
+            <dt>Lowest IV</dt>
+            <dd id="heroLowestIv">-</dd>
+          </div>
+        </dl>
+      </aside>
+    </header>
+
+    <nav class="section-nav reveal delay-2">
+      <a href="#contributors">Contributors</a>
+      <a href="#open-interest">Open Interest</a>
+      <a href="#black-scholes">Black-Scholes</a>
+      <a href="#low-iv">Low IV</a>
+      <a href="https://github.com/shivaraj-arch/niftyanalytica/blob/main/privacy" target="_blank" rel="noreferrer">Privacy</a>
+    </nav>
+
+    <main>
+      <section id="contributors" class="card reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Index Impact</p>
+            <h2>NIFTY 50 Contributors</h2>
+          </div>
+          <div id="contributorsStamp" class="stamp">-</div>
+        </div>
+        <div class="summary-grid" id="contributorsSummary"></div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Symbol</th>
+                <th>Last</th>
+                <th>%</th>
+                <th>CP</th>
+                <th>Traded Value (Cr)</th>
+              </tr>
+            </thead>
+            <tbody id="contributorsRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="open-interest" class="card reveal delay-1">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Option Chain</p>
+            <h2>Open Interest and Pressure</h2>
+          </div>
+          <div id="openInterestStamp" class="stamp">-</div>
+        </div>
+        <div class="summary-grid" id="openInterestSummary"></div>
+        <div class="chart-stack">
+          <div>
+            <h3>Net OI Change by Strike</h3>
+            <div id="oiChart" class="svg-chart"></div>
+          </div>
+          <div>
+            <h3>Buy Minus Sell by Strike</h3>
+            <div id="bidAskChart" class="svg-chart"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="black-scholes" class="card reveal delay-2">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Model Check</p>
+            <h2>Black-Scholes vs Market</h2>
+          </div>
+          <div id="blackScholesStamp" class="stamp">-</div>
+        </div>
+        <div class="summary-grid" id="blackScholesSummary"></div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Strike</th>
+                <th>Call Market</th>
+                <th>Call BS</th>
+                <th>Put Market</th>
+                <th>Put BS</th>
+                <th>Call IV</th>
+                <th>Put IV</th>
+              </tr>
+            </thead>
+            <tbody id="blackScholesRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="low-iv" class="card reveal delay-3">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Opportunity Scanner</p>
+            <h2>Lowest Implied Volatility</h2>
+          </div>
+          <div id="lowIvStamp" class="stamp">-</div>
+        </div>
+        <div class="summary-grid" id="lowIvSummary"></div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Strike</th>
+                <th>Expiry</th>
+                <th>IV</th>
+                <th>IV Δ</th>
+                <th>OI Change %</th>
+                <th>Last Price</th>
+              </tr>
+            </thead>
+            <tbody id="lowIvRows"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer reveal delay-3">
+      <p>Public dashboard for the Nifty Analytica mobile app.</p>
+      <p>
+        Source repo: <a href="https://github.com/shivaraj-arch/niftyanalytica" target="_blank" rel="noreferrer">shivaraj-arch/niftyanalytica</a>
+      </p>
+    </footer>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
