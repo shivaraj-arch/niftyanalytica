@@ -48,6 +48,7 @@ body::before {
   width: min(1200px, calc(100% - 32px));
   margin: 0 auto;
   padding: 28px 0 48px;
+  position: relative;
 }
 
 .hero,
@@ -75,6 +76,56 @@ body::before {
   border: 1px solid var(--card-border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+}
+
+.playstore-corner {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(15, 76, 92, 0.96), rgba(9, 42, 52, 0.96));
+  color: #f4fbfd;
+  text-decoration: none;
+  box-shadow: 0 18px 40px rgba(10, 38, 47, 0.22);
+}
+
+.playstore-corner:hover {
+  transform: translateY(-2px);
+}
+
+.android-mark {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.android-mark svg {
+  width: 24px;
+  height: 24px;
+}
+
+.playstore-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.playstore-text strong {
+  color: #f4fbfd;
+  font-size: 0.92rem;
+}
+
+.playstore-text span {
+  color: rgba(244, 251, 253, 0.82);
+  font-size: 0.78rem;
 }
 
 .hero-copy {
@@ -370,6 +421,7 @@ tbody tr:hover {
 
   .hero {
     gap: 18px;
+    margin-top: 72px;
   }
 
   .summary-grid {
@@ -385,6 +437,12 @@ tbody tr:hover {
   .page-shell {
     width: min(100% - 18px, 100%);
     padding-top: 14px;
+  }
+
+  .playstore-corner {
+    position: static;
+    margin: 0 0 14px auto;
+    width: fit-content;
   }
 
   .hero-copy,
