@@ -179,11 +179,7 @@ const renderMarketTape = (items) => {
     </article>
   `).join('');
 
-  host.innerHTML = `
-    <div class="ticker-marquee">
-      <div class="ticker-track">${chips}${chips}</div>
-    </div>
-  `;
+  host.innerHTML = `<div class="ticker-grid">${chips}</div>`;
 };
 
 const renderNewsMeta = (newsFeed) => {
