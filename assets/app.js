@@ -2,6 +2,13 @@ const currency = new Intl.NumberFormat('en-IN', { maximumFractionDigits: 2 });
 
 const chartState = {};
 
+const setText = (id, value) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.textContent = value;
+  }
+};
+
 const loadData = async () => {
   try {
     const response = await fetch('data/market-data.json', { cache: 'no-store' });
@@ -17,11 +24,11 @@ const loadData = async () => {
 };
 
 const renderError = (message) => {
-  document.getElementById('generatedAt').textContent = 'Data refresh pending';
-  document.getElementById('aiSummaryText').textContent = message;
+  setText('generatedAt', 'Data refresh pending');
+  setText('aiSummaryText', message);
   document.getElementById('marketTape').innerHTML = `<p>${message}</p>`;
   document.getElementById('aiHeadlines').innerHTML = `<li>${message}</li>`;
-  document.getElementById('newsFeedMeta').textContent = 'Headline refresh pending';
+  setText('newsFeedMeta', 'Headline refresh pending');
   document.getElementById('contributorsRows').innerHTML = `<tr><td colspan="5">${message}</td></tr>`;
   document.getElementById('blackScholesRows').innerHTML = `<tr><td colspan="7">${message}</td></tr>`;
   document.getElementById('lowIvRows').innerHTML = `<tr><td colspan="6">${message}</td></tr>`;
@@ -39,19 +46,18 @@ const renderDashboard = (payload) => {
   const newsFeed = payload.newsFeed || {};
   const defaultLowIvRows = lowIv.rowsByExpiry?.[lowIv.defaultExpiry] || [];
 
-  document.getElementById('generatedAt').textContent = formatDateTime(payload.generatedAt);
-  document.getElementById('marketTapeStamp').textContent = formatDateTime(marketTape.updatedAt) || '-';
-  document.getElementById('newsFeedStamp').textContent = formatDateTime(newsFeed.updatedAt) || '-';
-  document.getElementById('heroSpot').textContent = formatNumber(openInterest.spot);
-  document.getElementById('heroExpiry').textContent = openInterest.expiry || '-';
-  document.getElementById('heroTopContributor').textContent = contributors.rows[0] ? `${contributors.rows[0].symbol} ${signed(contributors.rows[0].contributingPoints)}` : '-';
-  document.getElementById('heroLowestIv').textContent = defaultLowIvRows[0] ? `${defaultLowIvRows[0].type} ${defaultLowIvRows[0].strike} @ ${defaultLowIvRows[0].iv.toFixed(2)}%` : '-';
+  setText('generatedAt', formatDateTime(payload.generatedAt));
+  setText('marketTapeStamp', formatDateTime(marketTape.updatedAt) || '-');
+  setText('heroSpot', formatNumber(openInterest.spot));
+  setText('heroExpiry', openInterest.expiry || '-');
+  setText('heroTopContributor', contributors.rows[0] ? `${contributors.rows[0].symbol} ${signed(contributors.rows[0].contributingPoints)}` : '-');
+  setText('heroLowestIv', defaultLowIvRows[0] ? `${defaultLowIvRows[0].type} ${defaultLowIvRows[0].strike} @ ${defaultLowIvRows[0].iv.toFixed(2)}%` : '-');
 
-  document.getElementById('aiAnalysisStamp').textContent = formatDateTime(aiAnalysis.generatedAt) || '-';
-  document.getElementById('contributorsStamp').textContent = contributors.timestamp || '-';
-  document.getElementById('openInterestStamp').textContent = openInterest.timestamp || '-';
-  document.getElementById('blackScholesStamp').textContent = blackScholes.timestamp || '-';
-  document.getElementById('lowIvStamp').textContent = lowIv.timestamp || '-';
+  setText('aiAnalysisStamp', formatDateTime(aiAnalysis.generatedAt) || '-');
+  setText('contributorsStamp', contributors.timestamp || '-');
+  setText('openInterestStamp', openInterest.timestamp || '-');
+  setText('blackScholesStamp', blackScholes.timestamp || '-');
+  setText('lowIvStamp', lowIv.timestamp || '-');
 
   renderMetricGrid('aiSummary', [
     { label: 'Bias', value: aiAnalysis.bias || '-', tone: biasTone(aiAnalysis.bias) },
