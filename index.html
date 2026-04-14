@@ -52,9 +52,6 @@
 </head>
 <body>
   <div class="page-shell">
-    <a class="playstore-corner reveal" href="https://play.google.com/store/apps/details?id=com.niftyanalytica" target="_blank" rel="noreferrer" aria-label="Open Nifty Analytica on Google Play">
-      <img alt="Get it on Google Play" src="assets/google-play-badge.svg">
-    </a>
     <header class="hero">
       <div class="hero-copy reveal">
         <p class="eyebrow">NSE Snapshot Dashboard</p>
@@ -95,6 +92,7 @@
     </header>
 
     <nav class="section-nav reveal delay-2">
+      <a href="#ai-analysis">AI Analysis</a>
       <a href="#contributors">Contributors</a>
       <a href="#open-interest">Open Interest</a>
       <a href="#black-scholes">Black-Scholes</a>
@@ -102,7 +100,36 @@
       <a href="https://github.com/shivaraj-arch/niftyanalytica/blob/main/privacy" target="_blank" rel="noreferrer">Privacy</a>
     </nav>
 
+    <div class="dashboard-shell">
     <main>
+      <section id="ai-analysis" class="card reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">AI Brief</p>
+            <h2>Agent Market Analysis</h2>
+          </div>
+          <div id="aiAnalysisStamp" class="stamp">-</div>
+        </div>
+        <div class="summary-grid" id="aiSummary"></div>
+        <div class="ai-layout">
+          <article class="ai-copy">
+            <p id="aiSummaryText" class="ai-summary-text">Waiting for AI analysis.</p>
+            <div>
+              <h3>Key Levels</h3>
+              <ul id="aiKeyLevels" class="chip-list"></ul>
+            </div>
+            <div>
+              <h3>Watchlist</h3>
+              <ul id="aiWatchlist" class="chip-list"></ul>
+            </div>
+          </article>
+          <aside class="ai-sidecard">
+            <h3>Recent Headlines</h3>
+            <ul id="aiHeadlines" class="headline-list"></ul>
+          </aside>
+        </div>
+      </section>
+
       <section id="contributors" class="card reveal">
         <div class="section-heading">
           <div>
@@ -138,13 +165,17 @@
         </div>
         <div class="summary-grid" id="openInterestSummary"></div>
         <div class="chart-stack">
-          <div>
+          <div class="chart-panel" data-chart-title="Net OI Change by Strike" data-chart-target="oiChart">
             <h3>Net OI Change by Strike</h3>
+            <div id="oiLegend" class="chart-legend"></div>
             <div id="oiChart" class="svg-chart"></div>
+            <button class="chart-expand" type="button" data-chart-target="oiChart" data-chart-title="Net OI Change by Strike">Expand chart</button>
           </div>
-          <div>
+          <div class="chart-panel" data-chart-title="Buy Minus Sell by Strike" data-chart-target="bidAskChart">
             <h3>Buy Minus Sell by Strike</h3>
+            <div id="bidAskLegend" class="chart-legend"></div>
             <div id="bidAskChart" class="svg-chart"></div>
+            <button class="chart-expand" type="button" data-chart-target="bidAskChart" data-chart-title="Buy Minus Sell by Strike">Expand chart</button>
           </div>
         </div>
       </section>
@@ -185,6 +216,10 @@
           <div id="lowIvStamp" class="stamp">-</div>
         </div>
         <div class="summary-grid" id="lowIvSummary"></div>
+        <div class="filter-row">
+          <label class="select-label" for="lowIvExpirySelect">Expiry</label>
+          <select id="lowIvExpirySelect" class="select-control"></select>
+        </div>
         <div class="table-wrap">
           <table>
             <thead>
@@ -193,7 +228,6 @@
                 <th>Strike</th>
                 <th>Expiry</th>
                 <th>IV</th>
-                <th>IV Δ</th>
                 <th>OI Change %</th>
                 <th>Last Price</th>
               </tr>
@@ -204,12 +238,54 @@
       </section>
     </main>
 
+    <aside class="news-rail">
+      <section class="card news-card reveal delay-1">
+        <div class="section-heading rail-heading">
+          <div>
+            <p class="eyebrow">Global Tape</p>
+            <h2>World Markets</h2>
+          </div>
+          <div id="marketTapeStamp" class="stamp">-</div>
+        </div>
+        <p class="rail-note">Open market pulse for major indices and macro instruments.</p>
+        <div id="marketTape" class="market-tape"></div>
+      </section>
+
+      <section class="card news-card reveal delay-2">
+        <div class="section-heading rail-heading">
+          <div>
+            <p class="eyebrow">News Rail</p>
+            <h2>Top 10 Headlines</h2>
+          </div>
+          <div id="newsFeedStamp" class="stamp">-</div>
+        </div>
+        <p id="newsFeedMeta" class="rail-note">Loading headlines.</p>
+        <ol id="newsFeedList" class="news-feed-list"></ol>
+      </section>
+    </aside>
+    </div>
+
     <footer class="footer reveal delay-3">
       <p>Public dashboard for the Nifty Analytica mobile app.</p>
       <p>
         Source repo: <a href="https://github.com/shivaraj-arch/niftyanalytica" target="_blank" rel="noreferrer">shivaraj-arch/niftyanalytica</a>
       </p>
+      <a class="playstore-footer" href="https://play.google.com/store/apps/details?id=com.niftyanalytica" target="_blank" rel="noreferrer" aria-label="Open Nifty Analytica on Google Play">
+        <img alt="Get it on Google Play" src="assets/google-play-badge.svg">
+      </a>
     </footer>
+  </div>
+
+  <div id="chartModal" class="chart-modal" hidden>
+    <div class="chart-modal-backdrop" data-close-modal="true"></div>
+    <div class="chart-modal-card">
+      <div class="section-heading chart-modal-header">
+        <h2 id="chartModalTitle">Chart</h2>
+        <button id="chartModalClose" class="chart-modal-close" type="button" aria-label="Close chart">Close</button>
+      </div>
+      <div id="chartModalLegend" class="chart-legend"></div>
+      <div id="chartModalBody" class="svg-chart svg-chart-large"></div>
+    </div>
   </div>
 
   <script src="assets/app.js"></script>

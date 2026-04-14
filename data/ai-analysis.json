@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-04-14T23:04:09.555424+05:30",
+  "model": "gemini-2.5-flash-lite",
+  "requestedModel": "gemini-robotics-er-1.5-preview",
+  "status": "ok",
+  "summary": "The Nifty closed at 23842.65, experiencing a decline of 224.82 points. The market sentiment appears bearish, driven by significant selling pressure from FIIs (-1983.18 Cr) despite DIIs showing net buying (+2432.30 Cr). The Advance/Decline ratio of 10:39 further underscores the prevailing bearish trend.  Top contributing stocks to the downside include HDFCBANK, RELIANCE, MARUTI, BAJFINANCE, INFY, TCS, and ITC, collectively dragging the index lower. ICICIBANK was a notable exception, contributing positively.  Option chain data reveals substantial put OI buildup at the 23800 strike, indicating strong support, while call OI is concentrated around 23850 and 24000, suggesting potential resistance. The significant increase in put OI at 23800 and the negative contributing points from major banking and IT stocks point towards a cautious to bearish outlook for the immediate future. Traders should monitor the 23800 and 23850 levels closely for directional cues.",
+  "bias": "Bearish",
+  "keyLevels": [
+    "23800 (Support)",
+    "23850 (Resistance)",
+    "24000 (Resistance)"
+  ],
+  "watchlist": [
+    "HDFCBANK",
+    "RELIANCE",
+    "ICICIBANK",
+    "MARUTI"
+  ],
+  "headlines": [
+    "Trump asks UK to 'drill, baby, drill\u2019 in North Sea; pressure mounts on Starmer as Iran war pushes oil prices higher",
+    "Alternative Data Increasingly Helping Economists Gauge War Shock",
+    "IPL 2027 set for Australian debut? Report say talks are on for historic trade as Big Bash League keen to come to Chennai",
+    "Lagarde Welcomes New Hungarian Leader\u2019s Plan to Join Euro",
+    "Lagarde, Worried About AI, Lauds Anthropic\u2019s Approach on Mythos"
+  ],
+  "fiiDii": {
+    "date": "13-Apr-2026",
+    "fiiNet": -1983.18,
+    "diiNet": 2432.3
+  }
+}

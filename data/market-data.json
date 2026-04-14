@@ -1,5 +1,36 @@
 {
-  "generatedAt": "2026-04-14T17:56:07.376007+05:30",
+  "generatedAt": "2026-04-14T23:04:09.555495+05:30",
+  "aiAnalysis": {
+    "generatedAt": "2026-04-14T23:04:09.555424+05:30",
+    "model": "gemini-2.5-flash-lite",
+    "requestedModel": "gemini-robotics-er-1.5-preview",
+    "status": "ok",
+    "summary": "The Nifty closed at 23842.65, experiencing a decline of 224.82 points. The market sentiment appears bearish, driven by significant selling pressure from FIIs (-1983.18 Cr) despite DIIs showing net buying (+2432.30 Cr). The Advance/Decline ratio of 10:39 further underscores the prevailing bearish trend.  Top contributing stocks to the downside include HDFCBANK, RELIANCE, MARUTI, BAJFINANCE, INFY, TCS, and ITC, collectively dragging the index lower. ICICIBANK was a notable exception, contributing positively.  Option chain data reveals substantial put OI buildup at the 23800 strike, indicating strong support, while call OI is concentrated around 23850 and 24000, suggesting potential resistance. The significant increase in put OI at 23800 and the negative contributing points from major banking and IT stocks point towards a cautious to bearish outlook for the immediate future. Traders should monitor the 23800 and 23850 levels closely for directional cues.",
+    "bias": "Bearish",
+    "keyLevels": [
+      "23800 (Support)",
+      "23850 (Resistance)",
+      "24000 (Resistance)"
+    ],
+    "watchlist": [
+      "HDFCBANK",
+      "RELIANCE",
+      "ICICIBANK",
+      "MARUTI"
+    ],
+    "headlines": [
+      "Trump asks UK to 'drill, baby, drill\u2019 in North Sea; pressure mounts on Starmer as Iran war pushes oil prices higher",
+      "Alternative Data Increasingly Helping Economists Gauge War Shock",
+      "IPL 2027 set for Australian debut? Report say talks are on for historic trade as Big Bash League keen to come to Chennai",
+      "Lagarde Welcomes New Hungarian Leader\u2019s Plan to Join Euro",
+      "Lagarde, Worried About AI, Lauds Anthropic\u2019s Approach on Mythos"
+    ],
+    "fiiDii": {
+      "date": "13-Apr-2026",
+      "fiiNet": -1983.18,
+      "diiNet": 2432.3
+    }
+  },
   "indexContributors": {
     "timestamp": "13-Apr-2026 16:00:00",
     "lastPrice": 23842.65,
@@ -148,6 +179,223 @@
         "pChange": 2.71,
         "tradedValueCr": 342.503129825,
         "contributingPoints": 3.9682902828996083
+      },
+      {
+        "symbol": "JIOFIN",
+        "last": 237.75,
+        "pChange": -2.24,
+        "tradedValueCr": 364.89736421599997,
+        "contributingPoints": -3.8322330705651595
+      },
+      {
+        "symbol": "NESTLEIND",
+        "last": 1226.2,
+        "pChange": -1.85,
+        "tradedValueCr": 165.47375901700002,
+        "contributingPoints": -3.568698050170097
+      },
+      {
+        "symbol": "ADANIENT",
+        "last": 2130.2,
+        "pChange": 2.08,
+        "tradedValueCr": 789.0073697390001,
+        "contributingPoints": 2.833462745565673
+      },
+      {
+        "symbol": "KOTAKBANK",
+        "last": 372.85,
+        "pChange": -0.45,
+        "tradedValueCr": 1107.879401952,
+        "contributingPoints": -2.710259624797367
+      },
+      {
+        "symbol": "POWERGRID",
+        "last": 300.2,
+        "pChange": -0.84,
+        "tradedValueCr": 470.830333176,
+        "contributingPoints": -2.5059008424663483
+      },
+      {
+        "symbol": "JSWSTEEL",
+        "last": 1203.0,
+        "pChange": -0.97,
+        "tradedValueCr": 124.04569698399999,
+        "contributingPoints": -2.400564582334769
+      },
+      {
+        "symbol": "BHARTIARTL",
+        "last": 1866.4,
+        "pChange": -0.19,
+        "tradedValueCr": 1941.8011693279998,
+        "contributingPoints": -2.388225454152397
+      },
+      {
+        "symbol": "BAJAJFINSV",
+        "last": 1790.4,
+        "pChange": -1.04,
+        "tradedValueCr": 221.213778786,
+        "contributingPoints": -2.358073368421509
+      },
+      {
+        "symbol": "GRASIM",
+        "last": 2716.0,
+        "pChange": -0.97,
+        "tradedValueCr": 341.737279002,
+        "contributingPoints": -2.200672160904857
+      },
+      {
+        "symbol": "CIPLA",
+        "last": 1211.8,
+        "pChange": -1.44,
+        "tradedValueCr": 195.30023172,
+        "contributingPoints": -2.1540501541763377
+      },
+      {
+        "symbol": "ULTRACEMCO",
+        "last": 11509.0,
+        "pChange": -0.69,
+        "tradedValueCr": 252.403665138,
+        "contributingPoints": -2.0634120431654397
+      },
+      {
+        "symbol": "TRENT",
+        "last": 3874.0,
+        "pChange": -1.09,
+        "tradedValueCr": 164.887140835,
+        "contributingPoints": -2.055757777797226
+      },
+      {
+        "symbol": "LT",
+        "last": 3953.0,
+        "pChange": -0.17,
+        "tradedValueCr": 1925.354454375,
+        "contributingPoints": -1.7312507079342574
+      },
+      {
+        "symbol": "ADANIPORTS",
+        "last": 1465.1,
+        "pChange": -0.69,
+        "tradedValueCr": 530.032095055,
+        "contributingPoints": -1.6363660573032108
+      },
+      {
+        "symbol": "TMPV",
+        "last": 345.6,
+        "pChange": 0.88,
+        "tradedValueCr": 449.47790008500004,
+        "contributingPoints": 1.3975587845078232
+      },
+      {
+        "symbol": "AXISBANK",
+        "last": 1352.8,
+        "pChange": 0.15,
+        "tradedValueCr": 1208.167517067,
+        "contributingPoints": 1.2777335928961013
+      },
+      {
+        "symbol": "ASIANPAINT",
+        "last": 2348.0,
+        "pChange": -0.54,
+        "tradedValueCr": 404.411395738,
+        "contributingPoints": -1.2578719995304424
+      },
+      {
+        "symbol": "WIPRO",
+        "last": 202.96,
+        "pChange": -0.94,
+        "tradedValueCr": 443.43721728,
+        "contributingPoints": -1.1963092548859238
+      },
+      {
+        "symbol": "TATASTEEL",
+        "last": 206.1,
+        "pChange": -0.25,
+        "tradedValueCr": 528.240845184,
+        "contributingPoints": -0.9344242404987106
+      },
+      {
+        "symbol": "SBILIFE",
+        "last": 1916.0,
+        "pChange": -0.37,
+        "tradedValueCr": 122.239317291,
+        "contributingPoints": -0.6986600148095247
+      },
+      {
+        "symbol": "COALINDIA",
+        "last": 435.5,
+        "pChange": 0.32,
+        "tradedValueCr": 812.970104824,
+        "contributingPoints": 0.6942356657540424
+      },
+      {
+        "symbol": "TATACONSUM",
+        "last": 1090.0,
+        "pChange": -0.34,
+        "tradedValueCr": 183.555914436,
+        "contributingPoints": -0.5294720746131379
+      },
+      {
+        "symbol": "BAJAJ-AUTO",
+        "last": 9792.0,
+        "pChange": -0.22,
+        "tradedValueCr": 356.141778148,
+        "contributingPoints": -0.5237233175062941
+      },
+      {
+        "symbol": "MAXHEALTH",
+        "last": 950.3,
+        "pChange": -0.32,
+        "tradedValueCr": 226.68450139499998,
+        "contributingPoints": -0.49650091124098783
+      },
+      {
+        "symbol": "ONGC",
+        "last": 287.05,
+        "pChange": 0.19,
+        "tradedValueCr": 685.584057994,
+        "contributingPoints": 0.46485775273860414
+      },
+      {
+        "symbol": "SUNPHARMA",
+        "last": 1653.6,
+        "pChange": -0.08,
+        "tradedValueCr": 620.382467955,
+        "contributingPoints": -0.30732880963549497
+      },
+      {
+        "symbol": "TECHM",
+        "last": 1438.0,
+        "pChange": -0.15,
+        "tradedValueCr": 183.954353164,
+        "contributingPoints": -0.3004803851400062
+      },
+      {
+        "symbol": "DRREDDY",
+        "last": 1234.3,
+        "pChange": 0.17,
+        "tradedValueCr": 179.524083803,
+        "contributingPoints": 0.28056609924680487
+      },
+      {
+        "symbol": "BEL",
+        "last": 442.5,
+        "pChange": 0.01,
+        "tradedValueCr": 668.239617006,
+        "contributingPoints": 0.03477531432626504
+      },
+      {
+        "symbol": "NIFTY 50",
+        "last": 23842.65,
+        "pChange": -0.86,
+        "tradedValueCr": 41931.293678769,
+        "contributingPoints": -0.0020683516
+      },
+      {
+        "symbol": "APOLLOHOSP",
+        "last": 7511.5,
+        "pChange": 0.0,
+        "tradedValueCr": 233.101134525,
+        "contributingPoints": 0.0
       }
     ]
   },
@@ -6343,506 +6591,434 @@
       "28-Apr-2026",
       "05-May-2026"
     ],
-    "rows": [
+    "defaultExpiry": "21-Apr-2026",
+    "rowsByExpiry": {
+      "13-Apr-2026": [],
+      "21-Apr-2026": [
+        {
+          "type": "CE",
+          "strike": 22850,
+          "expiry": "21-Apr-2026",
+          "iv": 15.47,
+          "oiChangePercent": 44.44444444444444,
+          "lastPrice": 1039.9,
+          "oi": 78.0
+        },
+        {
+          "type": "CE",
+          "strike": 23000,
+          "expiry": "21-Apr-2026",
+          "iv": 16.08,
+          "oiChangePercent": 140.02137323002938,
+          "lastPrice": 896.2,
+          "oi": 8984.0
+        },
+        {
+          "type": "CE",
+          "strike": 24800,
+          "expiry": "21-Apr-2026",
+          "iv": 17.75,
+          "oiChangePercent": 280.8147994180004,
+          "lastPrice": 16.6,
+          "oi": 36642.0
+        },
+        {
+          "type": "CE",
+          "strike": 22900,
+          "expiry": "21-Apr-2026",
+          "iv": 17.9,
+          "oiChangePercent": 7.427536231884058,
+          "lastPrice": 997.0,
+          "oi": 593.0
+        },
+        {
+          "type": "CE",
+          "strike": 24650,
+          "expiry": "21-Apr-2026",
+          "iv": 17.95,
+          "oiChangePercent": 294.2781104457751,
+          "lastPrice": 29.65,
+          "oi": 5926.0
+        },
+        {
+          "type": "CE",
+          "strike": 24750,
+          "expiry": "21-Apr-2026",
+          "iv": 17.98,
+          "oiChangePercent": 136.54402645721373,
+          "lastPrice": 21.05,
+          "oi": 5722.0
+        },
+        {
+          "type": "CE",
+          "strike": 24700,
+          "expiry": "21-Apr-2026",
+          "iv": 17.99,
+          "oiChangePercent": 102.93307526241345,
+          "lastPrice": 25.2,
+          "oi": 27260.0
+        },
+        {
+          "type": "CE",
+          "strike": 24600,
+          "expiry": "21-Apr-2026",
+          "iv": 18.02,
+          "oiChangePercent": 173.1089258698941,
+          "lastPrice": 35.55,
+          "oi": 21663.0
+        },
+        {
+          "type": "CE",
+          "strike": 24450,
+          "expiry": "21-Apr-2026",
+          "iv": 18.26,
+          "oiChangePercent": 88.65361566120656,
+          "lastPrice": 59.15,
+          "oi": 4722.0
+        },
+        {
+          "type": "CE",
+          "strike": 24500,
+          "expiry": "21-Apr-2026",
+          "iv": 18.27,
+          "oiChangePercent": 117.3437226405183,
+          "lastPrice": 51.0,
+          "oi": 49650.0
+        }
+      ],
+      "28-Apr-2026": [
+        {
+          "type": "CE",
+          "strike": 24750,
+          "expiry": "28-Apr-2026",
+          "iv": 16.72,
+          "oiChangePercent": 11.283043197936815,
+          "lastPrice": 63.25,
+          "oi": 1726.0
+        },
+        {
+          "type": "CE",
+          "strike": 24800,
+          "expiry": "28-Apr-2026",
+          "iv": 16.79,
+          "oiChangePercent": 7.6923076923076925,
+          "lastPrice": 56.9,
+          "oi": 12180.0
+        },
+        {
+          "type": "CE",
+          "strike": 24650,
+          "expiry": "28-Apr-2026",
+          "iv": 16.83,
+          "oiChangePercent": 38.951310861423224,
+          "lastPrice": 80.95,
+          "oi": 1113.0
+        },
+        {
+          "type": "CE",
+          "strike": 24700,
+          "expiry": "28-Apr-2026",
+          "iv": 16.88,
+          "oiChangePercent": 6.741364941198259,
+          "lastPrice": 73.0,
+          "oi": 11527.0
+        },
+        {
+          "type": "CE",
+          "strike": 24600,
+          "expiry": "28-Apr-2026",
+          "iv": 17.16,
+          "oiChangePercent": 25.97648330855521,
+          "lastPrice": 94.85,
+          "oi": 9321.0
+        },
+        {
+          "type": "CE",
+          "strike": 24550,
+          "expiry": "28-Apr-2026",
+          "iv": 17.27,
+          "oiChangePercent": 21.319311663479922,
+          "lastPrice": 106.9,
+          "oi": 1269.0
+        },
+        {
+          "type": "CE",
+          "strike": 24500,
+          "expiry": "28-Apr-2026",
+          "iv": 17.38,
+          "oiChangePercent": 17.09026792241861,
+          "lastPrice": 120.0,
+          "oi": 54454.0
+        },
+        {
+          "type": "CE",
+          "strike": 24450,
+          "expiry": "28-Apr-2026",
+          "iv": 17.5,
+          "oiChangePercent": 6.741573033707865,
+          "lastPrice": 134.45,
+          "oi": 1140.0
+        },
+        {
+          "type": "CE",
+          "strike": 24400,
+          "expiry": "28-Apr-2026",
+          "iv": 17.52,
+          "oiChangePercent": 0.5259642678243446,
+          "lastPrice": 148.2,
+          "oi": 12041.0
+        },
+        {
+          "type": "CE",
+          "strike": 24300,
+          "expiry": "28-Apr-2026",
+          "iv": 17.83,
+          "oiChangePercent": 21.701294463178506,
+          "lastPrice": 183.5,
+          "oi": 11188.0
+        }
+      ],
+      "05-May-2026": [
+        {
+          "type": "CE",
+          "strike": 24650,
+          "expiry": "05-May-2026",
+          "iv": 16.57,
+          "oiChangePercent": -24.242424242424242,
+          "lastPrice": 138.85,
+          "oi": 25.0
+        },
+        {
+          "type": "CE",
+          "strike": 24700,
+          "expiry": "05-May-2026",
+          "iv": 16.6,
+          "oiChangePercent": 40.38461538461539,
+          "lastPrice": 127.9,
+          "oi": 146.0
+        },
+        {
+          "type": "CE",
+          "strike": 24800,
+          "expiry": "05-May-2026",
+          "iv": 16.72,
+          "oiChangePercent": 77.5,
+          "lastPrice": 109.25,
+          "oi": 142.0
+        },
+        {
+          "type": "CE",
+          "strike": 24750,
+          "expiry": "05-May-2026",
+          "iv": 16.73,
+          "oiChangePercent": 16.666666666666668,
+          "lastPrice": 119.45,
+          "oi": 42.0
+        },
+        {
+          "type": "CE",
+          "strike": 24550,
+          "expiry": "05-May-2026",
+          "iv": 16.92,
+          "oiChangePercent": -61.25,
+          "lastPrice": 171.0,
+          "oi": 31.0
+        },
+        {
+          "type": "CE",
+          "strike": 24600,
+          "expiry": "05-May-2026",
+          "iv": 16.99,
+          "oiChangePercent": -23.846153846153847,
+          "lastPrice": 159.0,
+          "oi": 99.0
+        },
+        {
+          "type": "CE",
+          "strike": 24500,
+          "expiry": "05-May-2026",
+          "iv": 17.17,
+          "oiChangePercent": 20.699708454810494,
+          "lastPrice": 190.0,
+          "oi": 828.0
+        },
+        {
+          "type": "CE",
+          "strike": 24450,
+          "expiry": "05-May-2026",
+          "iv": 17.23,
+          "oiChangePercent": -45.348837209302324,
+          "lastPrice": 206.4,
+          "oi": 47.0
+        },
+        {
+          "type": "CE",
+          "strike": 24350,
+          "expiry": "05-May-2026",
+          "iv": 17.3,
+          "oiChangePercent": -52.68817204301075,
+          "lastPrice": 240.65,
+          "oi": 44.0
+        },
+        {
+          "type": "CE",
+          "strike": 24400,
+          "expiry": "05-May-2026",
+          "iv": 17.41,
+          "oiChangePercent": 63.46153846153846,
+          "lastPrice": 226.0,
+          "oi": 340.0
+        }
+      ]
+    }
+  },
+  "marketTape": {
+    "updatedAt": "2026-04-14T23:04:05.935172+05:30",
+    "items": [
       {
-        "type": "CE",
-        "strike": 22850,
-        "expiry": "21-Apr-2026",
-        "iv": 15.47,
-        "ivChange": 0.0,
-        "oiChangePercent": 44.44444444444444,
-        "lastPrice": 1039.9,
-        "oi": 78.0
+        "label": "Nifty 50",
+        "last": 23842.65,
+        "changePercent": -0.86,
+        "source": "NSE",
+        "updatedAt": "13-Apr-2026 16:00:00"
       },
       {
-        "type": "CE",
-        "strike": 23000,
-        "expiry": "21-Apr-2026",
-        "iv": 16.08,
-        "ivChange": 0.0,
-        "oiChangePercent": 140.02137323002938,
-        "lastPrice": 896.2,
-        "oi": 8984.0
+        "label": "S&P 500",
+        "last": 6964.4,
+        "changePercent": 0.7741394029721165,
+        "source": "Stooq",
+        "updatedAt": "2026-04-14 19:33:24"
       },
       {
-        "type": "CE",
-        "strike": 24650,
-        "expiry": "05-May-2026",
-        "iv": 16.57,
-        "ivChange": 0.0,
-        "oiChangePercent": -24.242424242424242,
-        "lastPrice": 138.85,
-        "oi": 25.0
+        "label": "Dow Jones",
+        "last": 48528.9,
+        "changePercent": 0.6015916681005177,
+        "source": "Stooq",
+        "updatedAt": "2026-04-14 19:33:24"
       },
       {
-        "type": "CE",
-        "strike": 24700,
-        "expiry": "05-May-2026",
-        "iv": 16.6,
-        "ivChange": 0.0,
-        "oiChangePercent": 40.38461538461539,
-        "lastPrice": 127.9,
-        "oi": 146.0
+        "label": "Nasdaq",
+        "last": 23611.805,
+        "changePercent": 1.139035753921029,
+        "source": "Stooq",
+        "updatedAt": "2026-04-14 19:33:27"
       },
       {
-        "type": "CE",
-        "strike": 24750,
-        "expiry": "28-Apr-2026",
-        "iv": 16.72,
-        "ivChange": 0.0,
-        "oiChangePercent": 11.283043197936815,
-        "lastPrice": 63.25,
-        "oi": 1726.0
+        "label": "Nikkei 225",
+        "last": 57877.39,
+        "changePercent": 1.386933493793971,
+        "source": "Stooq",
+        "updatedAt": "2026-04-14 08:45:03"
       },
       {
-        "type": "CE",
-        "strike": 24800,
-        "expiry": "05-May-2026",
-        "iv": 16.72,
-        "ivChange": 0.0,
-        "oiChangePercent": 77.5,
-        "lastPrice": 109.25,
-        "oi": 142.0
+        "label": "Hang Seng",
+        "last": 25872.32,
+        "changePercent": 0.8240958502933503,
+        "source": "Stooq",
+        "updatedAt": "2026-04-14 10:08:40"
       },
       {
-        "type": "CE",
-        "strike": 24750,
-        "expiry": "05-May-2026",
-        "iv": 16.73,
-        "ivChange": 0.0,
-        "oiChangePercent": 16.666666666666668,
-        "lastPrice": 119.45,
-        "oi": 42.0
+        "label": "FTSE 100",
+        "last": 10609.1,
+        "changePercent": 0.2570426860960766,
+        "source": "Stooq",
+        "updatedAt": "2026-04-14 17:35:30"
       },
       {
-        "type": "CE",
-        "strike": 24800,
-        "expiry": "28-Apr-2026",
-        "iv": 16.79,
-        "ivChange": 0.0,
-        "oiChangePercent": 7.6923076923076925,
-        "lastPrice": 56.9,
-        "oi": 12180.0
+        "label": "DAX",
+        "last": 24034.29,
+        "changePercent": 0.33597995475458625,
+        "source": "Stooq",
+        "updatedAt": "2026-04-14 17:31:27"
       },
       {
-        "type": "CE",
-        "strike": 24650,
-        "expiry": "28-Apr-2026",
-        "iv": 16.83,
-        "ivChange": 0.0,
-        "oiChangePercent": 38.951310861423224,
-        "lastPrice": 80.95,
-        "oi": 1113.0
+        "label": "Crude Oil",
+        "last": 92.42,
+        "changePercent": -5.46235679214403,
+        "source": "Stooq",
+        "updatedAt": "2026-04-14 19:34:04"
       },
       {
-        "type": "CE",
-        "strike": 24700,
-        "expiry": "28-Apr-2026",
-        "iv": 16.88,
-        "ivChange": 0.0,
-        "oiChangePercent": 6.741364941198259,
-        "lastPrice": 73.0,
-        "oi": 11527.0
+        "label": "Gold",
+        "last": 4832.225,
+        "changePercent": 1.8403970578937539,
+        "source": "Stooq",
+        "updatedAt": "2026-04-14 19:34:04"
+      }
+    ]
+  },
+  "newsFeed": {
+    "updatedAt": "2026-04-14T23:03:59.367327+05:30",
+    "items": [
+      {
+        "source": "Livemint",
+        "title": "Trump asks UK to 'drill, baby, drill\u2019 in North Sea; pressure mounts on Starmer as Iran war pushes oil prices higher",
+        "link": "https://www.livemint.com/news/us-news/trump-asks-uk-to-drill-baby-drill-in-north-sea-pressure-mounts-on-starmer-as-iran-war-pushes-oil-prices-higher-11776178169046.html",
+        "publishedAt": "2026-04-14T17:16:59+00:00"
       },
       {
-        "type": "CE",
-        "strike": 24550,
-        "expiry": "05-May-2026",
-        "iv": 16.92,
-        "ivChange": 0.0,
-        "oiChangePercent": -61.25,
-        "lastPrice": 171.0,
-        "oi": 31.0
+        "source": "Bloomberg Economics",
+        "title": "Alternative Data Increasingly Helping Economists Gauge War Shock",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-14/alternative-data-increasingly-helping-economists-gauge-war-shock",
+        "publishedAt": "2026-04-14T16:30:03+00:00"
       },
       {
-        "type": "CE",
-        "strike": 24600,
-        "expiry": "05-May-2026",
-        "iv": 16.99,
-        "ivChange": 0.0,
-        "oiChangePercent": -23.846153846153847,
-        "lastPrice": 159.0,
-        "oi": 99.0
+        "source": "Livemint",
+        "title": "IPL 2027 set for Australian debut? Report say talks are on for historic trade as Big Bash League keen to come to Chennai",
+        "link": "https://www.livemint.com/news/trends/ipl-2027-set-for-australian-debut-report-say-talks-are-on-for-historic-trade-as-big-bash-league-keen-to-come-to-chennai-11776180968688.html",
+        "publishedAt": "2026-04-14T15:56:29+00:00"
       },
       {
-        "type": "CE",
-        "strike": 24600,
-        "expiry": "28-Apr-2026",
-        "iv": 17.16,
-        "ivChange": 0.0,
-        "oiChangePercent": 25.97648330855521,
-        "lastPrice": 94.85,
-        "oi": 9321.0
+        "source": "Bloomberg Economics",
+        "title": "Lagarde Welcomes New Hungarian Leader\u2019s Plan to Join Euro",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-14/lagarde-welcomes-new-hungarian-leader-s-plan-to-join-euro",
+        "publishedAt": "2026-04-14T15:12:39+00:00"
       },
       {
-        "type": "CE",
-        "strike": 24500,
-        "expiry": "05-May-2026",
-        "iv": 17.17,
-        "ivChange": 0.0,
-        "oiChangePercent": 20.699708454810494,
-        "lastPrice": 190.0,
-        "oi": 828.0
+        "source": "Bloomberg Economics",
+        "title": "Lagarde, Worried About AI, Lauds Anthropic\u2019s Approach on Mythos",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-14/lagarde-worried-about-ai-lauds-anthropic-s-approach-on-mythos",
+        "publishedAt": "2026-04-14T15:07:38+00:00"
       },
       {
-        "type": "CE",
-        "strike": 24450,
-        "expiry": "05-May-2026",
-        "iv": 17.23,
-        "ivChange": 0.0,
-        "oiChangePercent": -45.348837209302324,
-        "lastPrice": 206.4,
-        "oi": 47.0
+        "source": "Bloomberg Economics",
+        "title": "Fed Chair Nominee Warsh Discloses Assets Above $190 Million",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-14/fed-chair-nominee-warsh-discloses-assets-worth-over-190-million",
+        "publishedAt": "2026-04-14T14:46:47+00:00"
       },
       {
-        "type": "CE",
-        "strike": 24550,
-        "expiry": "28-Apr-2026",
-        "iv": 17.27,
-        "ivChange": 0.0,
-        "oiChangePercent": 21.319311663479922,
-        "lastPrice": 106.9,
-        "oi": 1269.0
+        "source": "Bloomberg Economics",
+        "title": "Lagarde Says Early ECB Exit No Option With Clouds on Horizon",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-14/lagarde-says-she-won-t-leave-ecb-early-with-clouds-on-horizon",
+        "publishedAt": "2026-04-14T14:41:07+00:00"
       },
       {
-        "type": "CE",
-        "strike": 24350,
-        "expiry": "05-May-2026",
-        "iv": 17.3,
-        "ivChange": 0.0,
-        "oiChangePercent": -52.68817204301075,
-        "lastPrice": 240.65,
-        "oi": 44.0
+        "source": "Livemint",
+        "title": "High oil prices may hit India\u2019s growth, but strong fundamentals offer a cushion: S&amp;P",
+        "link": "https://www.livemint.com/news/high-oil-prices-india-s-growth-strong-fundamentals-offer-a-cushion-s-p-oil-brent-banking-11776170577032.html",
+        "publishedAt": "2026-04-14T14:34:26+00:00"
       },
       {
-        "type": "CE",
-        "strike": 24500,
-        "expiry": "28-Apr-2026",
-        "iv": 17.38,
-        "ivChange": 0.0,
-        "oiChangePercent": 17.09026792241861,
-        "lastPrice": 120.0,
-        "oi": 54454.0
+        "source": "Bloomberg Economics",
+        "title": "Mideast Conflict Could Still Trigger Market Turmoil, IMF Warns",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-14/mideast-conflict-could-still-trigger-market-turmoil-imf-warns",
+        "publishedAt": "2026-04-14T14:15:00+00:00"
       },
       {
-        "type": "CE",
-        "strike": 24400,
-        "expiry": "05-May-2026",
-        "iv": 17.41,
-        "ivChange": 0.0,
-        "oiChangePercent": 63.46153846153846,
-        "lastPrice": 226.0,
-        "oi": 340.0
-      },
+        "source": "Livemint",
+        "title": "Govt reshuffles 48 officers at joint secy level; key appointments across commerce, PMO, DEA",
+        "link": "https://www.livemint.com/news/govt-reshuffles-48-officers-at-joint-secy-level-key-appointments-across-commerce-pmo-dea-11776163047594.html",
+        "publishedAt": "2026-04-14T14:07:25+00:00"
+      }
+    ],
+    "sourcesAvailable": [
+      "Livemint",
+      "Bloomberg Economics"
+    ],
+    "sourceErrors": [
       {
-        "type": "CE",
-        "strike": 24300,
-        "expiry": "05-May-2026",
-        "iv": 17.47,
-        "ivChange": 0.0,
-        "oiChangePercent": -15.319148936170214,
-        "lastPrice": 262.2,
-        "oi": 199.0
-      },
-      {
-        "type": "CE",
-        "strike": 24450,
-        "expiry": "28-Apr-2026",
-        "iv": 17.5,
-        "ivChange": 0.0,
-        "oiChangePercent": 6.741573033707865,
-        "lastPrice": 134.45,
-        "oi": 1140.0
-      },
-      {
-        "type": "CE",
-        "strike": 24400,
-        "expiry": "28-Apr-2026",
-        "iv": 17.52,
-        "ivChange": 0.0,
-        "oiChangePercent": 0.5259642678243446,
-        "lastPrice": 148.2,
-        "oi": 12041.0
-      },
-      {
-        "type": "CE",
-        "strike": 24200,
-        "expiry": "05-May-2026",
-        "iv": 17.72,
-        "ivChange": 0.0,
-        "oiChangePercent": 19.841269841269842,
-        "lastPrice": 306.25,
-        "oi": 604.0
-      },
-      {
-        "type": "CE",
-        "strike": 24800,
-        "expiry": "21-Apr-2026",
-        "iv": 17.75,
-        "ivChange": 0.0,
-        "oiChangePercent": 280.8147994180004,
-        "lastPrice": 16.6,
-        "oi": 36642.0
-      },
-      {
-        "type": "CE",
-        "strike": 24300,
-        "expiry": "28-Apr-2026",
-        "iv": 17.83,
-        "ivChange": 0.0,
-        "oiChangePercent": 21.701294463178506,
-        "lastPrice": 183.5,
-        "oi": 11188.0
-      },
-      {
-        "type": "CE",
-        "strike": 22900,
-        "expiry": "21-Apr-2026",
-        "iv": 17.9,
-        "ivChange": 0.0,
-        "oiChangePercent": 7.427536231884058,
-        "lastPrice": 997.0,
-        "oi": 593.0
-      },
-      {
-        "type": "CE",
-        "strike": 24150,
-        "expiry": "05-May-2026",
-        "iv": 17.9,
-        "ivChange": 0.0,
-        "oiChangePercent": -27.956989247311828,
-        "lastPrice": 331.0,
-        "oi": 67.0
-      },
-      {
-        "type": "CE",
-        "strike": 24250,
-        "expiry": "05-May-2026",
-        "iv": 17.91,
-        "ivChange": 0.0,
-        "oiChangePercent": -16.216216216216218,
-        "lastPrice": 290.65,
-        "oi": 93.0
-      },
-      {
-        "type": "CE",
-        "strike": 24650,
-        "expiry": "21-Apr-2026",
-        "iv": 17.95,
-        "ivChange": 0.0,
-        "oiChangePercent": 294.2781104457751,
-        "lastPrice": 29.65,
-        "oi": 5926.0
-      },
-      {
-        "type": "CE",
-        "strike": 24100,
-        "expiry": "05-May-2026",
-        "iv": 17.95,
-        "ivChange": 0.0,
-        "oiChangePercent": 17.482517482517483,
-        "lastPrice": 353.65,
-        "oi": 336.0
-      },
-      {
-        "type": "CE",
-        "strike": 24750,
-        "expiry": "21-Apr-2026",
-        "iv": 17.98,
-        "ivChange": 0.0,
-        "oiChangePercent": 136.54402645721373,
-        "lastPrice": 21.05,
-        "oi": 5722.0
-      },
-      {
-        "type": "CE",
-        "strike": 24700,
-        "expiry": "21-Apr-2026",
-        "iv": 17.99,
-        "ivChange": 0.0,
-        "oiChangePercent": 102.93307526241345,
-        "lastPrice": 25.2,
-        "oi": 27260.0
-      },
-      {
-        "type": "CE",
-        "strike": 24600,
-        "expiry": "21-Apr-2026",
-        "iv": 18.02,
-        "ivChange": 0.0,
-        "oiChangePercent": 173.1089258698941,
-        "lastPrice": 35.55,
-        "oi": 21663.0
-      },
-      {
-        "type": "CE",
-        "strike": 23000,
-        "expiry": "05-May-2026",
-        "iv": 18.06,
-        "ivChange": 0.0,
-        "oiChangePercent": 143.75,
-        "lastPrice": 1064.9,
-        "oi": 39.0
-      },
-      {
-        "type": "CE",
-        "strike": 24350,
-        "expiry": "28-Apr-2026",
-        "iv": 18.09,
-        "ivChange": 0.0,
-        "oiChangePercent": 16.703296703296704,
-        "lastPrice": 172.2,
-        "oi": 1062.0
-      },
-      {
-        "type": "CE",
-        "strike": 24250,
-        "expiry": "28-Apr-2026",
-        "iv": 18.11,
-        "ivChange": 0.0,
-        "oiChangePercent": 11.021307861866275,
-        "lastPrice": 205.15,
-        "oi": 1511.0
-      },
-      {
-        "type": "CE",
-        "strike": 23750,
-        "expiry": "05-May-2026",
-        "iv": 18.13,
-        "ivChange": 0.0,
-        "oiChangePercent": 89.55223880597015,
-        "lastPrice": 536.25,
-        "oi": 127.0
-      },
-      {
-        "type": "CE",
-        "strike": 23950,
-        "expiry": "05-May-2026",
-        "iv": 18.13,
-        "ivChange": 0.0,
-        "oiChangePercent": 29.23076923076923,
-        "lastPrice": 428.6,
-        "oi": 168.0
-      },
-      {
-        "type": "CE",
-        "strike": 24000,
-        "expiry": "05-May-2026",
-        "iv": 18.17,
-        "ivChange": 0.0,
-        "oiChangePercent": 19.846743295019156,
-        "lastPrice": 405.05,
-        "oi": 3128.0
-      },
-      {
-        "type": "CE",
-        "strike": 24450,
-        "expiry": "21-Apr-2026",
-        "iv": 18.26,
-        "ivChange": 0.0,
-        "oiChangePercent": 88.65361566120656,
-        "lastPrice": 59.15,
-        "oi": 4722.0
-      },
-      {
-        "type": "CE",
-        "strike": 24500,
-        "expiry": "21-Apr-2026",
-        "iv": 18.27,
-        "ivChange": 0.0,
-        "oiChangePercent": 117.3437226405183,
-        "lastPrice": 51.0,
-        "oi": 49650.0
-      },
-      {
-        "type": "CE",
-        "strike": 22950,
-        "expiry": "21-Apr-2026",
-        "iv": 18.29,
-        "ivChange": 0.0,
-        "oiChangePercent": -3.3057851239669422,
-        "lastPrice": 950.95,
-        "oi": 117.0
-      },
-      {
-        "type": "CE",
-        "strike": 24150,
-        "expiry": "28-Apr-2026",
-        "iv": 18.32,
-        "ivChange": 0.0,
-        "oiChangePercent": 14.334085778781038,
-        "lastPrice": 246.0,
-        "oi": 1013.0
-      },
-      {
-        "type": "CE",
-        "strike": 24550,
-        "expiry": "21-Apr-2026",
-        "iv": 18.33,
-        "ivChange": 0.0,
-        "oiChangePercent": 197.05882352941177,
-        "lastPrice": 44.1,
-        "oi": 5353.0
-      },
-      {
-        "type": "CE",
-        "strike": 24200,
-        "expiry": "28-Apr-2026",
-        "iv": 18.35,
-        "ivChange": 0.0,
-        "oiChangePercent": 25.075834175935288,
-        "lastPrice": 227.4,
-        "oi": 12370.0
-      },
-      {
-        "type": "CE",
-        "strike": 24050,
-        "expiry": "05-May-2026",
-        "iv": 18.42,
-        "ivChange": 0.0,
-        "oiChangePercent": 8.653846153846153,
-        "lastPrice": 387.0,
-        "oi": 113.0
-      },
-      {
-        "type": "CE",
-        "strike": 23800,
-        "expiry": "05-May-2026",
-        "iv": 18.44,
-        "ivChange": 0.0,
-        "oiChangePercent": 61.611374407582936,
-        "lastPrice": 514.75,
-        "oi": 341.0
-      },
-      {
-        "type": "CE",
-        "strike": 23900,
-        "expiry": "05-May-2026",
-        "iv": 18.44,
-        "ivChange": 0.0,
-        "oiChangePercent": 64.5320197044335,
-        "lastPrice": 461.0,
-        "oi": 334.0
-      },
-      {
-        "type": "CE",
-        "strike": 23700,
-        "expiry": "05-May-2026",
-        "iv": 18.49,
-        "ivChange": 0.0,
-        "oiChangePercent": 78.57142857142857,
-        "lastPrice": 573.25,
-        "oi": 250.0
-      },
-      {
-        "type": "CE",
-        "strike": 24050,
-        "expiry": "28-Apr-2026",
-        "iv": 18.62,
-        "ivChange": 0.0,
-        "oiChangePercent": -2.4126455906821964,
-        "lastPrice": 293.0,
-        "oi": 1173.0
+        "source": "Business Standard",
+        "error": "Feed blocked or non-XML response"
       }
     ]
   }
