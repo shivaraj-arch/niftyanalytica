@@ -20,7 +20,7 @@ const renderError = (message) => {
   document.getElementById('generatedAt').textContent = 'Data refresh pending';
   document.getElementById('aiSummaryText').textContent = message;
   document.getElementById('marketTape').innerHTML = `<p>${message}</p>`;
-  document.getElementById('newsFeedList').innerHTML = `<li class="news-feed-item">${message}</li>`;
+  document.getElementById('aiHeadlines').innerHTML = `<li>${message}</li>`;
   document.getElementById('newsFeedMeta').textContent = 'Headline refresh pending';
   document.getElementById('contributorsRows').innerHTML = `<tr><td colspan="5">${message}</td></tr>`;
   document.getElementById('blackScholesRows').innerHTML = `<tr><td colspan="7">${message}</td></tr>`;
@@ -57,15 +57,25 @@ const renderDashboard = (payload) => {
     { label: 'Bias', value: aiAnalysis.bias || '-', tone: biasTone(aiAnalysis.bias) },
     { label: 'FII Net', value: aiAnalysis.fiiDii ? `${signed(aiAnalysis.fiiDii.fiiNet)} Cr` : '-', tone: tone(aiAnalysis.fiiDii?.fiiNet || 0) },
     { label: 'DII Net', value: aiAnalysis.fiiDii ? `${signed(aiAnalysis.fiiDii.diiNet)} Cr` : '-', tone: tone(aiAnalysis.fiiDii?.diiNet || 0) },
-    { label: 'Model', value: aiAnalysis.model || 'Gemini pending' },
+    { label: 'Model Used', value: aiAnalysis.model || 'Gemini pending' },
   ]);
 
   document.getElementById('aiSummaryText').textContent = aiAnalysis.summary || 'AI analysis is pending for the next refresh.';
   renderChipList('aiKeyLevels', aiAnalysis.keyLevels || []);
   renderChipList('aiWatchlist', aiAnalysis.watchlist || []);
-  document.getElementById('aiHeadlines').innerHTML = (aiAnalysis.headlines || []).map((headline) => `<li>${headline}</li>`).join('');
+  const headlineMarkup = (newsFeed.items || []).length
+    ? (newsFeed.items || []).map((item) => `
+        <li>
+          <a href="${item.link}" target="_blank" rel="noreferrer">
+            <span class="news-source">${item.source}</span>
+            <span class="news-title">${item.title}</span>
+          </a>
+        </li>
+      `).join('')
+    : (aiAnalysis.headlines || []).map((headline) => `<li>${headline}</li>`).join('');
+  document.getElementById('aiHeadlines').innerHTML = headlineMarkup;
   renderMarketTape(marketTape.items || []);
-  renderNewsFeed(newsFeed);
+  renderNewsMeta(newsFeed);
 
   renderMetricGrid('contributorsSummary', [
     { label: 'Nifty Last', value: formatNumber(contributors.lastPrice) },
@@ -170,21 +180,11 @@ const renderMarketTape = (items) => {
   `;
 };
 
-const renderNewsFeed = (newsFeed) => {
-  const items = newsFeed.items || [];
+const renderNewsMeta = (newsFeed) => {
   const meta = document.getElementById('newsFeedMeta');
-  const list = document.getElementById('newsFeedList');
   const sources = (newsFeed.sourcesAvailable || []).join(', ');
   const blocked = (newsFeed.sourceErrors || []).map((item) => item.source).join(', ');
   meta.textContent = blocked ? `Sources: ${sources}. Unavailable right now: ${blocked}.` : `Sources: ${sources}.`;
-  list.innerHTML = items.map((item) => `
-    <li class="news-feed-item">
-      <a href="${item.link}" target="_blank" rel="noreferrer">
-        <span class="news-source">${item.source}</span>
-        <span class="news-title">${item.title}</span>
-      </a>
-    </li>
-  `).join('');
 };
 
 const renderBarChart = (id, rows, mapper, legendId, title, expanded = false) => {

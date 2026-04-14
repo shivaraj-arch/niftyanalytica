@@ -181,6 +181,9 @@ def fetch_index_contributors(opener):
         pct_change = parse_number(row.get('pChange'))
         traded_value_cr = parse_number(row.get('totalTradedValue')) / 10000000
         contributing_points = (nifty_previous_close * (ffmc / nifty_ffmc) * pct_change) / 10000000
+        if row.get('symbol') == 'NIFTY 50':
+            continue
+
         transformed.append(
             {
                 'symbol': row.get('symbol', ''),
@@ -199,6 +202,7 @@ def fetch_index_contributors(opener):
     return {
         'timestamp': payload.get('timestamp', ''),
         'lastPrice': last_price,
+        'indexChange': parse_number(nifty_row.get('pChange')),
         'totalPoints': total_points,
         'positiveSum': positive_sum,
         'negativeSum': negative_sum,
@@ -404,17 +408,15 @@ def fetch_news_feed(opener):
 
 def fetch_market_tape(contributors):
     items = []
-    nifty_row = next((row for row in contributors['rows'] if row.get('symbol') == 'NIFTY 50'), None)
-    if nifty_row:
-        items.append(
-            {
-                'label': 'Nifty 50',
-                'last': nifty_row['last'],
-                'changePercent': nifty_row['pChange'],
-                'source': 'NSE',
-                'updatedAt': contributors['timestamp'],
-            }
-        )
+    items.append(
+        {
+            'label': 'Nifty 50',
+            'last': contributors['lastPrice'],
+            'changePercent': contributors.get('indexChange', 0.0),
+            'source': 'NSE',
+            'updatedAt': contributors['timestamp'],
+        }
+    )
 
     for symbol, label in MARKET_TICKER_SPECS:
         quote = subprocess.run(

@@ -62,14 +62,16 @@
           Black-Scholes comparison, and low implied volatility opportunities.
         </p>
         <div class="hero-actions">
-          <a class="button button-primary" href="https://play.google.com/store/apps/details?id=com.niftyanalytica" target="_blank" rel="noreferrer">View Android App</a>
-          <a class="button button-secondary" href="#contributors">Open Dashboard</a>
+          <a class="button button-primary button-badge" href="https://play.google.com/store/apps/details?id=com.niftyanalytica" target="_blank" rel="noreferrer" aria-label="Open Nifty Analytica on Google Play">
+            <img alt="Get it on Google Play" src="assets/google-play-badge.svg">
+          </a>
+          <a class="button button-secondary" href="#contributors">Dashboard</a>
         </div>
       </div>
       <aside class="hero-panel reveal delay-1">
         <div class="panel-chip">Updated</div>
         <div id="generatedAt" class="panel-value">Waiting for refresh</div>
-        <p class="panel-note">GitHub Pages deploy regenerates market data and publishes a static snapshot.</p>
+        <p class="panel-note">This page refreshes from scheduled NSE data pulls, analytics processing, and AI summarization to keep the snapshot current through the trading day.</p>
         <dl class="hero-metrics">
           <div>
             <dt>Nifty Spot</dt>
@@ -100,7 +102,6 @@
       <a href="https://github.com/shivaraj-arch/niftyanalytica/blob/main/privacy" target="_blank" rel="noreferrer">Privacy</a>
     </nav>
 
-    <div class="dashboard-shell">
     <main>
       <section id="ai-analysis" class="card reveal">
         <div class="section-heading">
@@ -124,10 +125,23 @@
             </div>
           </article>
           <aside class="ai-sidecard">
-            <h3>Recent Headlines</h3>
+            <h3>Top 10 Headlines</h3>
             <ul id="aiHeadlines" class="headline-list"></ul>
           </aside>
         </div>
+      </section>
+
+      <section id="market-tape-section" class="card reveal delay-1">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Global Tape</p>
+            <h2>World Markets</h2>
+          </div>
+          <div id="marketTapeStamp" class="stamp">-</div>
+        </div>
+        <p class="rail-note">Open market pulse for major indices and macro instruments.</p>
+        <div id="marketTape" class="market-tape"></div>
+        <p id="newsFeedMeta" class="rail-note">Loading headlines.</p>
       </section>
 
       <section id="contributors" class="card reveal">
@@ -237,33 +251,6 @@
         </div>
       </section>
     </main>
-
-    <aside class="news-rail">
-      <section class="card news-card reveal delay-1">
-        <div class="section-heading rail-heading">
-          <div>
-            <p class="eyebrow">Global Tape</p>
-            <h2>World Markets</h2>
-          </div>
-          <div id="marketTapeStamp" class="stamp">-</div>
-        </div>
-        <p class="rail-note">Open market pulse for major indices and macro instruments.</p>
-        <div id="marketTape" class="market-tape"></div>
-      </section>
-
-      <section class="card news-card reveal delay-2">
-        <div class="section-heading rail-heading">
-          <div>
-            <p class="eyebrow">News Rail</p>
-            <h2>Top 10 Headlines</h2>
-          </div>
-          <div id="newsFeedStamp" class="stamp">-</div>
-        </div>
-        <p id="newsFeedMeta" class="rail-note">Loading headlines.</p>
-        <ol id="newsFeedList" class="news-feed-list"></ol>
-      </section>
-    </aside>
-    </div>
 
     <footer class="footer reveal delay-3">
       <p>Public dashboard for the Nifty Analytica mobile app.</p>
