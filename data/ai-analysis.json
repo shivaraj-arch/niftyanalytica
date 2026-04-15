@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-04-15T13:41:46.352140+05:30",
+  "generatedAt": "2026-04-15T16:10:52.562556+05:30",
   "model": "gemini-2.5-flash-lite",
   "requestedModel": "gemini-robotics-er-1.5-preview",
   "status": "ok",
-  "summary": "The Nifty is currently trading open at 24210.60, showing a positive momentum supported by strong FII inflows and a healthy advance-decline ratio. The market is being propelled by significant contributions from heavyweight stocks like HDFCBANK, RELIANCE, and LT, which are adding substantial points to the index.  The option chain data indicates considerable activity around the 24200 strike price, with a notable build-up in both call and put open interest, suggesting potential for increased volatility.  However, the significant increase in put OI at 24000 and 23900, coupled with a decrease in call OI at these levels, hints at some underlying support.  Recent finance headlines, particularly those related to oil prices and geopolitical events, could influence market sentiment.  Given the current uptrend and strong institutional buying, the bias leans towards Bullish, but traders should remain vigilant of potential pullbacks and the significant option activity around current levels.",
+  "summary": "The Nifty closed at 24231.30, with the market currently closed. The FIIs were net sellers (-1983.18 Cr) while DIIs were net buyers (2432.30 Cr) on April 13th, indicating a mixed sentiment from institutional investors. The Advance/Decline ratio of 45/5 suggests a strongly positive market breadth.  The index gained 375.06 points, driven by significant contributions from HDFCBANK (+51.20 points), RELIANCE (+40.95 points), and LT (+30.70 points).  Technically, the market appears to be in a bullish phase, supported by strong intraday performance and positive breadth.  Option chain data shows significant Open Interest (OI) build-up at the 24200 strike for both calls and puts, suggesting potential consolidation around this level. However, the substantial increase in put OI at 24000 and 24100, coupled with a decrease in call OI at these strikes, indicates growing support. The immediate resistance is seen around 24300, while strong support is building around 24000.  The recent finance headlines suggest positive geopolitical and economic developments, which could further fuel the bullish sentiment.  Traders should monitor the 24000 and 24300 levels for potential directional cues.",
   "bias": "Bullish",
   "keyLevels": [
     "24000 (Support)",
     "24200 (Current)",
-    "24500 (Resistance)"
+    "24300 (Resistance)"
   ],
   "watchlist": [
     "HDFCBANK",
     "RELIANCE",
     "LT",
-    "INDIGO"
+    "INFY"
   ],
   "headlines": [
+    "India-US to resume talks on bilateral trade agreement this month \u2014 What we know",
+    "Iranian Oil Arrives in India Just Ahead of US Waiver Expiry",
+    "\u2018Virat Kohli is in pain\u2019: RCB fan shares injury update, posts video ahead of LSG match | IPL 2026",
     "Greece Is Set to Reveal Yet More Outperformance on Budget Goals",
-    "Norway\u2019s Crude Exports Hit Record Value as Oil Price Soared",
-    "Bessent and UK\u2019s Reeves at Odds Over Iran War Ahead of Meeting",
-    "French Inflation Was Faster Than Initially Thought in March",
-    "Japan to Provide $10 Billion to Southeast Asia to Secure Oil"
+    "Norway\u2019s Crude Exports Hit Record Value as Oil Price Soared"
   ],
   "fiiDii": {
     "date": "13-Apr-2026",
