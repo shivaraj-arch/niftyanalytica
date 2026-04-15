@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-04-15T19:39:39.789356+05:30",
+  "generatedAt": "2026-04-15T22:05:25.791834+05:30",
   "aiAnalysis": {
-    "generatedAt": "2026-04-15T19:39:39.789336+05:30",
+    "generatedAt": "2026-04-15T22:05:25.791815+05:30",
     "model": "gemini-2.5-flash-lite",
     "requestedModel": "gemini-robotics-er-1.5-preview",
     "status": "ok",
-    "summary": "The Nifty closed at 24231.30, marking a strong upward movement with a total contributing point of 375.06. The market experienced significant buying pressure from FIIs, who recorded a net inflow of \u20b9666.15 crore, while DIIs saw a net outflow of \u20b9568.98 crore. The advance-decline ratio of 45:5 clearly indicates a bullish sentiment prevailing in the market. Top contributing stocks like HDFCBANK, RELIANCE, and LT led the gains, showcasing broad-based strength across major sectors.  Option chain analysis reveals substantial Open Interest (OI) build-up at the 24200 strike price for both calls and puts, suggesting potential consolidation or a battleground around this level. However, the significant increase in put OI at 24000 and 24100, coupled with a decrease in call OI at these strikes, indicates some defensive positioning.  Recent headlines suggest potential positive developments in India-US trade relations, which could further support market sentiment.  Given the strong intraday momentum, robust FII inflows, and positive contributing stocks, the immediate bias leans bullish, with key support at 24000 and resistance at 24500.",
+    "summary": "The Nifty closed at 24231.30, marking a strong upward movement supported by significant FII inflows of \u20b9666.15 crore, although DIIs saw a net outflow of \u20b9568.98 crore. The market's positive sentiment was driven by substantial contributions from heavyweight stocks like HDFCBANK (+1.93%), RELIANCE (+2.11%), and LT (+3.0%), collectively adding over 120 points.  The Advance/Decline ratio of 45/5 further underscores a predominantly bullish undertone.  Option chain data reveals considerable activity around the 24200 strike, with a notable build-up in both Call and Put Open Interest, suggesting potential for increased volatility.  However, the substantial increase in Put OI at 24000 and 24100, coupled with significant Put Bid/Ask volumes, indicates strong support levels.  Recent global headlines, including IMF warnings on central bank actions and geopolitical concerns, add a layer of caution.  Despite these external factors, the strong domestic buying and positive market breadth suggest a bullish bias for the upcoming trading sessions, with key levels to watch at 24000 and 24500.",
     "bias": "Bullish",
     "keyLevels": [
       "24000 (Support)",
-      "24200 (Key Level)",
+      "24231 (Current)",
       "24500 (Resistance)"
     ],
     "watchlist": [
@@ -19,11 +19,11 @@
       "INFY"
     ],
     "headlines": [
-      "Nigerian Inflation Quickens, Missing Expectations It Would Cool",
-      "India to send delegation to US for fresh trade talks next week",
-      "US Homebuilder Sentiment Falls to Seven-Month Low",
-      "Western Nations Urge Quick Resolution of Middle East Conflict",
-      "Michigan weather: Two tornadoes, 80+ MPH winds, heavy rain bring widespread outages"
+      "IMF Chief Warns Hasty Central-Bank Action Could Suffocate Growth",
+      "Nagel Echoes Lagarde on Euro Zone Slipping Below ECB Baseline",
+      "Kerrygold Butter Maker Sees Iran War Costs Hitting Consumers",
+      "China Poised to Become Top Tourism Economy as Foreigners Skip US",
+      "\u2018I\u2019ll have to fire him\u2019: Trump threatens action if Fed chair Powell stays on beyond term"
     ],
     "fiiDii": {
       "date": "15-Apr-2026",
@@ -7342,7 +7342,7 @@
     }
   },
   "marketTape": {
-    "updatedAt": "2026-04-15T19:39:32.209380+05:30",
+    "updatedAt": "2026-04-15T22:05:23.264313+05:30",
     "items": [
       {
         "label": "Nifty 50",
@@ -7353,24 +7353,24 @@
       },
       {
         "label": "S&P 500",
-        "last": 6977.9,
-        "changePercent": -0.02292427824343239,
+        "last": 6996.3,
+        "changePercent": 0.240704921555988,
         "source": "Stooq",
-        "updatedAt": "2026-04-15 16:09:07"
+        "updatedAt": "2026-04-15 18:34:58"
       },
       {
         "label": "Dow Jones",
-        "last": 48401.7,
-        "changePercent": -0.5941549773058736,
+        "last": 48327.5,
+        "changePercent": -0.7465445359512024,
         "source": "Stooq",
-        "updatedAt": "2026-04-15 16:09:08"
+        "updatedAt": "2026-04-15 18:34:57"
       },
       {
         "label": "Nasdaq",
-        "last": 23753.0,
-        "changePercent": 0.29626519391512346,
+        "last": 23883.152,
+        "changePercent": 0.8458277547503134,
         "source": "Stooq",
-        "updatedAt": "2026-04-15 16:09:03"
+        "updatedAt": "2026-04-15 18:34:44"
       },
       {
         "label": "Nikkei 225",
@@ -7388,40 +7388,88 @@
       },
       {
         "label": "FTSE 100",
-        "last": 10593.5,
-        "changePercent": -0.14798476793726884,
+        "last": 10559.6,
+        "changePercent": -0.467518757304984,
         "source": "Stooq",
-        "updatedAt": "2026-04-15 16:09:14"
+        "updatedAt": "2026-04-15 17:35:30"
       },
       {
         "label": "DAX",
-        "last": 24083.94,
-        "changePercent": 0.11081884568829002,
+        "last": 24087.42,
+        "changePercent": 0.12528432141954293,
         "source": "Stooq",
-        "updatedAt": "2026-04-15 15:54:18"
+        "updatedAt": "2026-04-15 17:31:18"
       },
       {
         "label": "Crude Oil",
-        "last": 91.04,
-        "changePercent": -1.3437364542696086,
+        "last": 91.52,
+        "changePercent": -0.8235804074555755,
         "source": "Stooq",
-        "updatedAt": "2026-04-15 16:09:29"
+        "updatedAt": "2026-04-15 18:35:18"
       },
       {
         "label": "Gold",
-        "last": 4824.695,
-        "changePercent": -0.31745474229659737,
+        "last": 4809.795,
+        "changePercent": -0.6253021656756388,
         "source": "Stooq",
-        "updatedAt": "2026-04-15 16:09:28"
+        "updatedAt": "2026-04-15 18:35:20"
       }
     ]
   },
   "newsFeed": {
-    "updatedAt": "2026-04-15T19:39:27.600226+05:30",
+    "updatedAt": "2026-04-15T22:05:16.368946+05:30",
     "items": [
       {
         "source": "Bloomberg Economics",
-        "title": "Nigerian Inflation Quickens, Missing Expectations It Would Cool",
+        "title": "IMF Chief Warns Hasty Central-Bank Action Could Suffocate Growth",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-15/imf-chief-warns-hasty-central-bank-action-could-suffocate-growth",
+        "publishedAt": "2026-04-15T16:03:55+00:00"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Nagel Echoes Lagarde on Euro Zone Slipping Below ECB Baseline",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-15/nagel-says-ecb-between-baseline-and-adverse-outcomes-on-iran",
+        "publishedAt": "2026-04-15T15:43:03+00:00"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Kerrygold Butter Maker Sees Iran War Costs Hitting Consumers",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-15/kerrygold-butter-maker-sees-iran-war-costs-hitting-consumers",
+        "publishedAt": "2026-04-15T15:39:25+00:00"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "China Poised to Become Top Tourism Economy as Foreigners Skip US",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-15/china-poised-to-become-top-tourism-economy-as-foreigners-skip-us",
+        "publishedAt": "2026-04-15T15:35:38+00:00"
+      },
+      {
+        "source": "Livemint",
+        "title": "\u2018I\u2019ll have to fire him\u2019: Trump threatens action if Fed chair Powell stays on beyond term",
+        "link": "https://www.livemint.com/news/us-news/ill-have-to-fire-him-trump-threatens-action-if-fed-chair-powell-stays-on-beyond-term-11776265660374.html",
+        "publishedAt": "2026-04-15T15:27:58+00:00"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "BOE\u2019s Greene Says Traders Were Right to Trim Rate Hike Bets",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-15/boe-s-greene-says-traders-were-right-to-trim-rate-hike-bets",
+        "publishedAt": "2026-04-15T15:14:15+00:00"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Morgan Stanley CEO Concerned About \u2018Imported\u2019 Inflation",
+        "link": "https://www.bloomberg.com/news/videos/2026-04-15/morgan-stanley-ceo-concerned-about-imported-inflation-video",
+        "publishedAt": "2026-04-15T15:13:47+00:00"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Qatar Warns of \u2018Huge\u2019 Economic Fallout From War in Coming Months",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-15/qatar-warns-of-huge-economic-fallout-from-war-in-coming-months",
+        "publishedAt": "2026-04-15T14:47:24+00:00"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Nigerian Monthly Inflation at 20-Year High on Iran War Oil Shock",
         "link": "https://www.bloomberg.com/news/articles/2026-04-15/nigerian-inflation-quickens-missing-expectations-it-would-cool",
         "publishedAt": "2026-04-15T14:05:59+00:00"
       },
@@ -7430,54 +7478,6 @@
         "title": "India to send delegation to US for fresh trade talks next week",
         "link": "https://www.livemint.com/news/india-to-send-delegation-to-us-for-fresh-trade-talks-next-week-11776254820925.html",
         "publishedAt": "2026-04-15T14:04:57+00:00"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "US Homebuilder Sentiment Falls to Seven-Month Low",
-        "link": "https://www.bloomberg.com/news/articles/2026-04-15/us-homebuilder-sentiment-falls-to-seven-month-low-amid-iran-war",
-        "publishedAt": "2026-04-15T14:00:00+00:00"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Western Nations Urge Quick Resolution of Middle East Conflict",
-        "link": "https://www.bloomberg.com/news/articles/2026-04-15/western-nations-urge-quick-resolution-of-middle-east-conflict",
-        "publishedAt": "2026-04-15T13:35:45+00:00"
-      },
-      {
-        "source": "Livemint",
-        "title": "Michigan weather: Two tornadoes, 80+ MPH winds, heavy rain bring widespread outages",
-        "link": "https://www.livemint.com/news/us-news/michigan-tornado-outbreak-two-tornadoes-80-mph-winds-thousands-without-power-and-large-hail-cause-widespread-damage-11776259127473.html",
-        "publishedAt": "2026-04-15T13:32:53+00:00"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Putin Demands Officials Explain Why Russian Economy Is Slowing",
-        "link": "https://www.bloomberg.com/news/articles/2026-04-15/putin-demands-officials-explain-why-russian-economy-is-slowing",
-        "publishedAt": "2026-04-15T13:26:19+00:00"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Fed\u2019s Hammack Says Baseline Is Rates on Hold for a \u2018Good While\u2019",
-        "link": "https://www.bloomberg.com/news/articles/2026-04-15/fed-s-hammack-says-baseline-is-rates-on-hold-for-a-good-while",
-        "publishedAt": "2026-04-15T13:07:48+00:00"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Iran War Sets Back Milei\u2019s Zero-Inflation Promise in Argentina",
-        "link": "https://www.bloomberg.com/news/articles/2026-04-15/iran-war-sets-back-milei-s-zero-inflation-promise-in-argentina",
-        "publishedAt": "2026-04-15T13:00:49+00:00"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Trump Threatens to Fire Powell If He Doesn\u2019t Exit Fed",
-        "link": "https://www.bloomberg.com/news/articles/2026-04-15/trump-threatens-to-fire-powell-if-he-doesn-t-step-down-from-fed",
-        "publishedAt": "2026-04-15T12:10:32+00:00"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "HSBC Turns Bullish on Hungary\u2019s Stocks After \u2018Game-Changer\u2019 Vote",
-        "link": "https://www.bloomberg.com/news/articles/2026-04-15/hsbc-turns-bullish-on-hungary-s-stocks-after-game-changer-vote",
-        "publishedAt": "2026-04-15T11:02:29+00:00"
       }
     ],
     "sourcesAvailable": [
