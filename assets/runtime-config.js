@@ -1,0 +1,4 @@
+window.RUNTIME_CONFIG = window.RUNTIME_CONFIG || {
+  SUPABASE_URL: '',
+  SUPABASE_KEY: '',
+};

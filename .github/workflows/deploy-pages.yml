@@ -23,6 +23,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Write runtime config
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: |
+          cat <<EOF > assets/runtime-config.js
+          window.RUNTIME_CONFIG = window.RUNTIME_CONFIG || {
+            SUPABASE_URL: '${SUPABASE_URL}',
+            SUPABASE_KEY: '${SUPABASE_KEY}',
+          };
+          EOF
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:

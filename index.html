@@ -71,7 +71,7 @@
       <aside class="hero-panel reveal delay-1">
         <div class="panel-chip">Updated</div>
         <div id="generatedAt" class="panel-value">Waiting for refresh</div>
-        <p class="panel-note">This page refreshes from scheduled NSE data pulls, analytics processing, and AI summarization to keep the snapshot current through the trading day.</p>
+        <p class="panel-note">Live market sections refresh on each page load through Supabase Edge Functions, while AI analysis remains on its scheduled GitHub Actions cycle.</p>
         <dl class="hero-metrics">
           <div>
             <dt>Nifty Spot</dt>
@@ -115,11 +115,11 @@
         <div class="ai-layout">
           <article class="ai-copy">
             <p id="aiSummaryText" class="ai-summary-text">Waiting for AI analysis.</p>
-            <div>
+            <div id="aiKeyLevelsBlock">
               <h3>Key Levels</h3>
               <ul id="aiKeyLevels" class="chip-list"></ul>
             </div>
-            <div>
+            <div id="aiWatchlistBlock">
               <h3>Watchlist</h3>
               <ul id="aiWatchlist" class="chip-list"></ul>
             </div>
@@ -134,12 +134,12 @@
       <section id="market-tape-section" class="card reveal delay-1">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Global Tape</p>
-            <h2>World Markets</h2>
+            <p class="eyebrow">Live Feed</p>
+            <h2>Market Snapshot</h2>
           </div>
           <div id="marketTapeStamp" class="stamp">-</div>
         </div>
-        <p class="rail-note">Open market pulse for major indices and macro instruments.</p>
+        <p class="rail-note">Realtime non-AI market data served from your Supabase Edge Function.</p>
         <div id="marketTape" class="market-tape"></div>
         <p id="newsFeedMeta" class="rail-note">Loading headlines.</p>
       </section>
@@ -275,6 +275,7 @@
     </div>
   </div>
 
+  <script src="assets/runtime-config.js"></script>
   <script src="assets/app.js"></script>
 </body>
 </html>
