@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-04-15T16:10:52.562556+05:30",
+  "generatedAt": "2026-04-15T19:39:39.789336+05:30",
   "model": "gemini-2.5-flash-lite",
   "requestedModel": "gemini-robotics-er-1.5-preview",
   "status": "ok",
-  "summary": "The Nifty closed at 24231.30, with the market currently closed. The FIIs were net sellers (-1983.18 Cr) while DIIs were net buyers (2432.30 Cr) on April 13th, indicating a mixed sentiment from institutional investors. The Advance/Decline ratio of 45/5 suggests a strongly positive market breadth.  The index gained 375.06 points, driven by significant contributions from HDFCBANK (+51.20 points), RELIANCE (+40.95 points), and LT (+30.70 points).  Technically, the market appears to be in a bullish phase, supported by strong intraday performance and positive breadth.  Option chain data shows significant Open Interest (OI) build-up at the 24200 strike for both calls and puts, suggesting potential consolidation around this level. However, the substantial increase in put OI at 24000 and 24100, coupled with a decrease in call OI at these strikes, indicates growing support. The immediate resistance is seen around 24300, while strong support is building around 24000.  The recent finance headlines suggest positive geopolitical and economic developments, which could further fuel the bullish sentiment.  Traders should monitor the 24000 and 24300 levels for potential directional cues.",
+  "summary": "The Nifty closed at 24231.30, marking a strong upward movement with a total contributing point of 375.06. The market experienced significant buying pressure from FIIs, who recorded a net inflow of \u20b9666.15 crore, while DIIs saw a net outflow of \u20b9568.98 crore. The advance-decline ratio of 45:5 clearly indicates a bullish sentiment prevailing in the market. Top contributing stocks like HDFCBANK, RELIANCE, and LT led the gains, showcasing broad-based strength across major sectors.  Option chain analysis reveals substantial Open Interest (OI) build-up at the 24200 strike price for both calls and puts, suggesting potential consolidation or a battleground around this level. However, the significant increase in put OI at 24000 and 24100, coupled with a decrease in call OI at these strikes, indicates some defensive positioning.  Recent headlines suggest potential positive developments in India-US trade relations, which could further support market sentiment.  Given the strong intraday momentum, robust FII inflows, and positive contributing stocks, the immediate bias leans bullish, with key support at 24000 and resistance at 24500.",
   "bias": "Bullish",
   "keyLevels": [
     "24000 (Support)",
-    "24200 (Current)",
-    "24300 (Resistance)"
+    "24200 (Key Level)",
+    "24500 (Resistance)"
   ],
   "watchlist": [
     "HDFCBANK",
@@ -17,15 +17,15 @@
     "INFY"
   ],
   "headlines": [
-    "India-US to resume talks on bilateral trade agreement this month \u2014 What we know",
-    "Iranian Oil Arrives in India Just Ahead of US Waiver Expiry",
-    "\u2018Virat Kohli is in pain\u2019: RCB fan shares injury update, posts video ahead of LSG match | IPL 2026",
-    "Greece Is Set to Reveal Yet More Outperformance on Budget Goals",
-    "Norway\u2019s Crude Exports Hit Record Value as Oil Price Soared"
+    "Nigerian Inflation Quickens, Missing Expectations It Would Cool",
+    "India to send delegation to US for fresh trade talks next week",
+    "US Homebuilder Sentiment Falls to Seven-Month Low",
+    "Western Nations Urge Quick Resolution of Middle East Conflict",
+    "Michigan weather: Two tornadoes, 80+ MPH winds, heavy rain bring widespread outages"
   ],
   "fiiDii": {
-    "date": "13-Apr-2026",
-    "fiiNet": -1983.18,
-    "diiNet": 2432.3
+    "date": "15-Apr-2026",
+    "fiiNet": 666.15,
+    "diiNet": -568.98
   }
 }
