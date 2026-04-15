@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-04-15T01:34:21.220035+05:30",
+  "generatedAt": "2026-04-15T09:16:00.158914+05:30",
   "model": "gemini-2.5-flash-lite",
   "requestedModel": "gemini-robotics-er-1.5-preview",
   "status": "ok",
-  "summary": "The Nifty closed at 23842.65, marking a bearish sentiment for the day with a total contributing point of -224.82. The market experienced significant selling pressure, evidenced by the substantial net outflow from FIIs (-1983.18 Cr), although DIIs provided some support with a net inflow of 2432.30 Cr. The Advance/Decline ratio of 10/39 further underscores the bearish undertone.  Key contributors to the decline include HDFCBANK (-56.99 points) and RELIANCE (-52.19 points), both experiencing notable price drops. ICICIBANK was a solitary gainer among the top contributors, adding 40.16 points.  Option chain data reveals significant put OI build-up at the 23800 strike, suggesting strong support, while call OI is concentrated around 23850 and 24000, indicating potential resistance.  The recent finance headlines, particularly those concerning rising oil prices due to geopolitical tensions, could influence market sentiment. Given the day's performance and FII outflows, the immediate bias leans bearish, with a neutral outlook contingent on sustained DII support and a reversal in FII activity.  Key levels to watch are 23800 (support) and 24000 (resistance).",
-  "bias": "Bearish",
+  "summary": "The Nifty is currently trading higher, opening at 23842.65, indicating a positive start to the trading session. The market sentiment appears cautiously optimistic, supported by strong FII inflows of 2432.30 Cr, although DIIs saw a net outflow of -1983.18 Cr. The Advance/Decline ratio of 48/2 further reinforces the bullish undertone, with significant contributing points from heavyweight stocks like HDFCBANK, RELIANCE, and LT.  Technically, the Nifty is showing strength, with the index timestamp at 15-Apr-2026 09:15:10.  Option chain analysis reveals substantial Put Open Interest at 23800 and 23700, suggesting these levels could act as support. Conversely, Call Open Interest is concentrated around 23900 and 24000, indicating potential resistance.  Recent global news, including potential tariff restorations and geopolitical events, could introduce volatility.  Traders should monitor the 23800 and 23900 levels closely for directional cues. The overall bias is **Bullish** given the current market momentum and strong support from large-cap stocks.",
+  "bias": "Bullish",
   "keyLevels": [
-    "23800 (Support)",
-    "23850 (Resistance)",
-    "24000 (Resistance)"
+    "23700 (Support)",
+    "23800 (Key Support)",
+    "23900 (Resistance)"
   ],
   "watchlist": [
     "HDFCBANK",
     "RELIANCE",
-    "ICICIBANK",
-    "MARUTI"
+    "LT",
+    "HINDALCO"
   ],
   "headlines": [
-    "US Eases Venezuela Sanctions to Allow Central Bank Transactions",
-    "Argentina Inflation Picked Up More Than Expected on Energy Shock",
-    "US enforces Hormuz blockade after Trump's threat; here's why and how it's being carried out",
-    "BOE\u2019s Bailey Urges Regulators to Assess AI Cyber Risk to Banks",
-    "Trump asks UK to 'drill, baby, drill\u2019 in North Sea; pressure mounts on Starmer as Iran war pushes oil prices higher"
+    "Trump tariffs could be restored by July after Supreme Court setback, says Bessent",
+    "Pakistan Secures $3 Billion in Saudi Funding to Bolster Reserves",
+    "Iraq-Bound Tanker Attempts Hormuz Crossing Into Persian Gulf",
+    "Petrol, diesel prices on 15 April in your city: Fuel rates today in Delhi, Mumbai, Chennai, Kolkata, Bengaluru",
+    "BOK Governor Nominee Warns of Inflation, Flags Excess Won Moves"
   ],
   "fiiDii": {
     "date": "13-Apr-2026",
