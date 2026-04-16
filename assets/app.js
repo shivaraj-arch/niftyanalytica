@@ -3,7 +3,7 @@ const currency = new Intl.NumberFormat('en-IN', { maximumFractionDigits: 2 });
 const chartState = {};
 const runtimeConfig = window.RUNTIME_CONFIG || {};
 const SUPABASE_URL = (runtimeConfig.SUPABASE_URL || '').replace(/\/$/, '');
-const SUPABASE_KEY = runtimeConfig.SUPABASE_KEY || '';
+const SUPABASE_PUBLISHABLE_KEY = runtimeConfig.SUPABASE_PUBLISHABLE_KEY || '';
 const LIVE_SNAPSHOT_URL = `${SUPABASE_URL}/functions/v1/nse-snapshot`;
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
@@ -32,15 +32,14 @@ const loadJson = async (url, options = {}) => {
 const fetchAiAnalysis = async () => loadJson('data/ai-analysis.json', { cache: 'no-store' });
 
 const fetchLiveSnapshot = async () => {
-  if (!SUPABASE_URL || !SUPABASE_KEY) {
+  if (!SUPABASE_URL || !SUPABASE_PUBLISHABLE_KEY) {
     throw new Error('Supabase runtime configuration is missing.');
   }
 
   return loadJson(LIVE_SNAPSHOT_URL, {
     cache: 'no-store',
     headers: {
-      apikey: SUPABASE_KEY,
-      Authorization: `Bearer ${SUPABASE_KEY}`,
+      apikey: SUPABASE_PUBLISHABLE_KEY,
       'Cache-Control': 'no-store',
     },
   });
