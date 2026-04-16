@@ -1,31 +1,17 @@
 {
-  "generatedAt": "2026-04-15T22:05:25.791815+05:30",
+  "generatedAt": "2026-04-16T09:25:30.557951+05:30",
+  "agent": "AggregatorAgent",
+  "pipeline": [
+    "nifty_analysis_agent",
+    "nifty_flow_agent",
+    "AggregatorAgent"
+  ],
   "model": "gemini-2.5-flash-lite",
-  "requestedModel": "gemini-robotics-er-1.5-preview",
-  "status": "ok",
-  "summary": "The Nifty closed at 24231.30, marking a strong upward movement supported by significant FII inflows of \u20b9666.15 crore, although DIIs saw a net outflow of \u20b9568.98 crore. The market's positive sentiment was driven by substantial contributions from heavyweight stocks like HDFCBANK (+1.93%), RELIANCE (+2.11%), and LT (+3.0%), collectively adding over 120 points.  The Advance/Decline ratio of 45/5 further underscores a predominantly bullish undertone.  Option chain data reveals considerable activity around the 24200 strike, with a notable build-up in both Call and Put Open Interest, suggesting potential for increased volatility.  However, the substantial increase in Put OI at 24000 and 24100, coupled with significant Put Bid/Ask volumes, indicates strong support levels.  Recent global headlines, including IMF warnings on central bank actions and geopolitical concerns, add a layer of caution.  Despite these external factors, the strong domestic buying and positive market breadth suggest a bullish bias for the upcoming trading sessions, with key levels to watch at 24000 and 24500.",
-  "bias": "Bullish",
-  "keyLevels": [
-    "24000 (Support)",
-    "24231 (Current)",
-    "24500 (Resistance)"
-  ],
-  "watchlist": [
-    "HDFCBANK",
-    "RELIANCE",
-    "LT",
-    "INFY"
-  ],
-  "headlines": [
-    "IMF Chief Warns Hasty Central-Bank Action Could Suffocate Growth",
-    "Nagel Echoes Lagarde on Euro Zone Slipping Below ECB Baseline",
-    "Kerrygold Butter Maker Sees Iran War Costs Hitting Consumers",
-    "China Poised to Become Top Tourism Economy as Foreigners Skip US",
-    "\u2018I\u2019ll have to fire him\u2019: Trump threatens action if Fed chair Powell stays on beyond term"
-  ],
-  "fiiDii": {
-    "date": "15-Apr-2026",
-    "fiiNet": 666.15,
-    "diiNet": -568.98
-  }
+  "requestedModel": "gemini-2.5-flash-lite",
+  "status": "error",
+  "summary": "AI analysis could not be generated automatically. Error: unhandled errors in a TaskGroup (1 sub-exception)",
+  "bias": "Neutral",
+  "keyLevels": [],
+  "watchlist": [],
+  "headlines": []
 }
