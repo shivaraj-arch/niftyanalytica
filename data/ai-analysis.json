@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-16T09:25:30.557951+05:30",
+  "generatedAt": "2026-04-16T13:41:58.881853+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
@@ -8,10 +8,14 @@
   ],
   "model": "gemini-2.5-flash-lite",
   "requestedModel": "gemini-2.5-flash-lite",
-  "status": "error",
-  "summary": "AI analysis could not be generated automatically. Error: unhandled errors in a TaskGroup (1 sub-exception)",
-  "bias": "Neutral",
+  "status": "ok",
+  "summary": "Nifty Analysis Agent\n\nThe Nifty 50 index saw a decline of 102.65 points, closing at 24128.65. The market breadth was negative, with 19 stocks advancing and 31 declining.\n\n**Key stocks that contributed to the decline:**\n\n*   **HDFC Bank:** Declined by 1.29%, impacting the banking sector.\n*   **Reliance Industries:** Fell by 0.80%, reflecting broader market sentiment.\n*   **ICICI Bank:** Saw a dip of 0.49%, adding to the pressure on financial stocks.\n*   **Bharti Airtel:** Declined by 1.56%, indicating some weakness in the telecom sector.\n*   **Mahindra & Mahindra:** Experienced a significant drop of 1.36%.\n\n**Stocks that showed positive movement:**\n\n*   **Infosys:** Gained 0.53%, showing resilience in the IT sector.\n*   **Larsen & Toubro:** Increased by 0.57%, indicating strength in the infrastructure and engineering space.\n*   **Eternal Limited:** Rose by 1.67%.\n*   **Hindalco:** Saw a jump of 2.74%.\n*   **Tata Consultancy Services:** Added 0.59%.\n\n**FII/DII Flows:**\n\nAs of April 15, 2026, Foreign Institutional Investors (FIIs) were net buyers with an inflow of \u20b9666.15 crore, while Domestic Institutional Investors (DIIs) were net sellers with an outflow of \u20b9-568.98 crore.\n\n**Financial Headlines:**\n\n*   The Indian stock market experienced a relief rally as geopolitical tensions eased, leading to upward movement in the Nifty 50 and BSE Sensex.\n*   Q4 results are being announced, with mixed performances reported by companies like Tejas Networks and HDB Financial Services.\n*   Mutual funds have been actively investing in banking and tech stocks.\n*   Concerns persist regarding the impact of global events on the Indian economy, although the trade gap in March showed some improvement.\n\nNifty Flow Agent\n\nI can help you fetch the latest FII/DII flow for the Nifty 50 index. However, I do not have the functionality to analyze individual stocks or fetch financial headlines. Would you like me to proceed with fetching the FII/DII flow data?\n\nAggregator Agent\n\n## Executive Summary: Indian Market Overview\n\nThe Indian equity market experienced a notable downturn, with the Nifty 50 index closing 102.65 points lower at 24128.65. This decline was influenced by significant drops in heavyweight stocks such as HDFC Bank, Reliance Industries, ICICI Bank, Bharti Airtel, and Mahindra & Mahindra. The market breadth was negative, indicating a prevailing bearish sentiment.\n\nHowever, the IT sector showed resilience, with Infosys and Tata Consultancy Services posting gains. Larsen & Toubro also demonstrated strength, reflecting positive movement in infrastructure and engineering. Hindalco and Eternal Limited were other notable gainers.\n\nIn terms of institutional flows, as of April 15, 2026, Foreign Institutional Investors (FIIs) were net buyers with an inflow of \u20b9666.15 crore, while Domestic Institutional Investors (DIIs) exhibited net selling pressure with an outflow of \u20b9-568.98 crore.\n\nFinancial headlines indicate that the market has been reacting to easing geopolitical tensions, which have spurred a relief rally. However, ongoing global events, particularly concerning oil prices and the Middle East, continue to be a source of concern for the Indian economy, despite some improvement in the trade gap. The Q4 earnings season is underway, revealing mixed corporate performances. Notably, mutual funds have shown active interest in banking and technology stocks.",
+  "bias": "Bearish",
   "keyLevels": [],
   "watchlist": [],
-  "headlines": []
+  "headlines": [
+    "**Financial Headlines:**",
+    "I can help you fetch the latest FII/DII flow for the Nifty 50 index. However, I do not have the functionality to analyze individual stocks or fetch financial headlines. Would you like me to proceed with fetching the FII/DII flow data?",
+    "Financial headlines indicate that the market has been reacting to easing geopolitical tensions, which have spurred a relief rally. However, ongoing global events, particularly concerning oil prices and the Middle East, continue to be a source of concern for the Indian economy, despite some improvement in the trade gap. The Q4 earnings season is underway, revealing mixed corporate performances. Notably, mutual funds have shown active interest in banking and technology stocks."
+  ]
 }
