@@ -216,6 +216,59 @@ td,
   color: var(--ink);
 }
 
+.refresh-control-row {
+  margin-top: 18px;
+}
+
+.toggle-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.toggle-control input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.toggle-slider {
+  position: relative;
+  width: 52px;
+  height: 30px;
+  border-radius: 999px;
+  background: rgba(15, 76, 92, 0.14);
+  transition: background-color 160ms ease;
+}
+
+.toggle-slider::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #fffef8;
+  box-shadow: 0 8px 18px rgba(11, 43, 53, 0.18);
+  transition: transform 160ms ease;
+}
+
+.toggle-control input:checked + .toggle-slider {
+  background: rgba(31, 143, 107, 0.78);
+}
+
+.toggle-control input:checked + .toggle-slider::after {
+  transform: translateX(22px);
+}
+
+.toggle-label {
+  font-size: 0.94rem;
+}
+
 .hero-metrics {
   margin: 24px 0 0;
   display: grid;
@@ -605,6 +658,113 @@ tbody tr:hover {
   margin-bottom: 16px;
 }
 
+.holiday-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.holiday-month {
+  padding: 18px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.54);
+  border: 1px solid rgba(15, 76, 92, 0.08);
+}
+
+.holiday-month h3 {
+  margin-bottom: 12px;
+}
+
+.holiday-weekdays,
+.holiday-days {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.holiday-weekdays span {
+  text-align: center;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.holiday-day {
+  min-height: 42px;
+  padding: 6px 4px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--ink);
+  background: rgba(15, 76, 92, 0.04);
+}
+
+.holiday-day.empty {
+  background: transparent;
+}
+
+.holiday-day.weekend {
+  color: var(--rose);
+  background: rgba(185, 74, 72, 0.08);
+}
+
+.holiday-day.holiday {
+  color: #fff6f4;
+  background: linear-gradient(135deg, #c75b54, #9f312e);
+}
+
+.holiday-day span {
+  display: block;
+  font-size: 0.98rem;
+}
+
+.holiday-day small {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.holiday-list {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.holiday-item {
+  display: grid;
+  gap: 2px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(15, 76, 92, 0.08);
+}
+
+.holiday-item-date {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.holiday-item-text {
+  color: var(--ink);
+  line-height: 1.4;
+}
+
+.holiday-month-note {
+  margin: 14px 0 0;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -673,6 +833,7 @@ tbody tr:hover {
   .news-rail,
   .chart-stack,
   .summary-grid,
+  .holiday-calendar-grid,
   .footer {
     grid-template-columns: 1fr;
   }
@@ -721,6 +882,10 @@ tbody tr:hover {
   .playstore-footer,
   .select-control {
     width: 100%;
+  }
+
+  .toggle-control {
+    align-items: flex-start;
   }
 
   .ticker-grid {

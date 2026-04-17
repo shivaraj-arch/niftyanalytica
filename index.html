@@ -27,7 +27,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/styles.css?v=20260417-3">
+  <link rel="stylesheet" href="assets/styles.css?v=20260417-4">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -71,7 +71,14 @@
       <aside class="hero-panel reveal delay-1">
         <div class="panel-chip">Updated</div>
         <div id="generatedAt" class="panel-value">Waiting for refresh</div>
-        <p class="panel-note">Live market sections refresh on each page load through Supabase Edge Functions, while AI analysis remains on its scheduled GitHub Actions cycle.</p>
+        <p class="panel-note">Market sections stay fresh while you browse, and the AI brief updates on its own cycle.</p>
+        <div class="refresh-control-row">
+          <label class="toggle-control" for="autoRefreshToggle">
+            <input id="autoRefreshToggle" type="checkbox" checked>
+            <span class="toggle-slider" aria-hidden="true"></span>
+            <span class="toggle-label">Auto refresh every minute</span>
+          </label>
+        </div>
         <dl class="hero-metrics">
           <div>
             <dt>Nifty Spot</dt>
@@ -99,6 +106,7 @@
       <a href="#open-interest">Open Interest</a>
       <a href="#black-scholes">Black-Scholes</a>
       <a href="#low-iv">Low IV</a>
+      <a href="#nse-holidays">NSE Holidays</a>
       <a href="https://github.com/shivaraj-arch/niftyanalytica/blob/main/privacy" target="_blank" rel="noreferrer">Privacy</a>
     </nav>
 
@@ -110,7 +118,7 @@
         </div>
         <div id="marketTapeStamp" class="stamp">-</div>
       </div>
-      <p class="rail-note">Global market pulse from the cached world-market tape.</p>
+      <p class="rail-note">Global market pulse for the current session.</p>
       <div id="marketTape" class="market-tape"></div>
     </section>
 
@@ -244,6 +252,18 @@
           </table>
         </div>
       </section>
+
+      <section id="nse-holidays" class="card reveal delay-3">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Market Calendar</p>
+            <h2>NSE Holidays</h2>
+          </div>
+          <div id="holidayStamp" class="stamp">-</div>
+        </div>
+        <p id="holidayMeta" class="rail-note">Loading trading holiday calendar.</p>
+        <div id="holidayCalendarGrid" class="holiday-calendar-grid"></div>
+      </section>
     </main>
 
     <aside class="news-rail">
@@ -284,7 +304,7 @@
     </div>
   </div>
 
-  <script src="assets/runtime-config.js?v=20260417-3"></script>
-  <script src="assets/app.js?v=20260417-3"></script>
+  <script src="assets/runtime-config.js?v=20260417-4"></script>
+  <script src="assets/app.js?v=20260417-4"></script>
 </body>
 </html>

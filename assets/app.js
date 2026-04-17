@@ -6,8 +6,10 @@ const SUPABASE_URL = (runtimeConfig.SUPABASE_URL || '').replace(/\/$/, '');
 const SUPABASE_PUBLISHABLE_KEY = runtimeConfig.SUPABASE_PUBLISHABLE_KEY || '';
 const LIVE_SNAPSHOT_URL = `${SUPABASE_URL}/functions/v1/nse-snapshot`;
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const WEEKDAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const AI_REFRESH_MS = 60 * 60 * 1000;
 const REALTIME_REFRESH_MS = 60 * 1000;
+const NSE_HOLIDAYS_URL = 'https://r.jina.ai/http://www.nseindia.com/api/holiday-master?type=trading';
 const LIVE_NEWS_SOURCES = [
   {
     source: 'Business Standard',
@@ -42,12 +44,22 @@ const setDisplay = (id, visible) => {
   }
 };
 
+let realtimeRefreshTimer = null;
+
 const loadJson = async (url, options = {}) => {
   const response = await fetch(url, options);
   if (!response.ok) {
     throw new Error(`Failed to load data: ${response.status}`);
   }
   return response.json();
+};
+
+const loadText = async (url, options = {}) => {
+  const response = await fetch(url, options);
+  if (!response.ok) {
+    throw new Error(`Failed to load text: ${response.status}`);
+  }
+  return response.text();
 };
 
 const fetchAiAnalysis = async () => loadJson('data/ai-analysis.json', { cache: 'no-store' });
@@ -100,6 +112,17 @@ const fetchLiveHeadlines = async () => {
   };
 };
 
+const fetchNseHolidays = async () => {
+  const rawText = await loadText(`${NSE_HOLIDAYS_URL}&_=${Date.now()}`, { cache: 'no-store' });
+  const payload = parseEmbeddedJson(rawText);
+  const records = Array.isArray(payload.CM)
+    ? payload.CM
+    : Array.isArray(payload.FO)
+      ? payload.FO
+      : Object.values(payload).find(Array.isArray) || [];
+  return normalizeHolidayPayload(records);
+};
+
 const fetchLiveSnapshot = async () => {
   if (!SUPABASE_URL || !SUPABASE_PUBLISHABLE_KEY) {
     throw new Error('Supabase runtime configuration is missing.');
@@ -129,10 +152,11 @@ const loadAiData = async () => {
 };
 
 const loadRealtimeData = async () => {
-  const [liveResult, marketTapeResult, headlinesResult] = await Promise.allSettled([
+  const [liveResult, marketTapeResult, headlinesResult, holidaysResult] = await Promise.allSettled([
     fetchLiveSnapshot(),
     fetchNewsRailSnapshot(),
     fetchLiveHeadlines(),
+    fetchNseHolidays(),
   ]);
 
   if (marketTapeResult.status === 'fulfilled') {
@@ -170,6 +194,17 @@ const loadRealtimeData = async () => {
   } else {
     renderLiveError(liveResult.reason?.message || 'Live market refresh failed.');
   }
+
+  if (holidaysResult.status === 'fulfilled') {
+    try {
+      renderHolidayCalendar(holidaysResult.value);
+    } catch (error) {
+      console.error('Holiday render failed', error);
+      renderHolidayError(error?.message || 'Holiday calendar render failed.');
+    }
+  } else {
+    renderHolidayError(holidaysResult.reason?.message || 'Holiday calendar refresh failed.');
+  }
 };
 
 const renderAiError = (message) => {
@@ -196,6 +231,12 @@ const renderHeadlineError = (message) => {
   setText('newsFeedStamp', 'Headline refresh pending');
   setText('newsFeedMeta', message);
   document.getElementById('newsFeedList').innerHTML = `<li class="news-feed-item">${message}</li>`;
+};
+
+const renderHolidayError = (message) => {
+  setText('holidayStamp', 'Holiday refresh pending');
+  setText('holidayMeta', message);
+  document.getElementById('holidayCalendarGrid').innerHTML = `<p>${message}</p>`;
 };
 
 const renderLiveError = (message) => {
@@ -451,47 +492,77 @@ const buildLowIv = (payload) => {
   const records = payload.records || {};
   const data = records.data || [];
   const spot = parseNumber(records.underlyingValue);
-  const expiry = formatExpiryLabel(getFirstExpiry(data));
-  const rows = [];
+  const expiries = [...new Set(data.map((item) => formatExpiryLabel(item.CE?.expiryDate || item.PE?.expiryDate)).filter(Boolean))].slice(0, 4);
+  const rowsByExpiry = {};
 
-  data.forEach((item) => {
-    const strike = item.CE?.strikePrice || item.PE?.strikePrice;
-    if (!strike || Math.abs(strike - spot) > 1000) {
-      return;
-    }
-
-    [['CE', item.CE], ['PE', item.PE]].forEach(([type, contract]) => {
-      if (!contract) {
+  expiries.forEach((expiry) => {
+    const rows = [];
+    data.forEach((item) => {
+      const contractExpiry = formatExpiryLabel(item.CE?.expiryDate || item.PE?.expiryDate);
+      const strike = item.CE?.strikePrice || item.PE?.strikePrice;
+      if (contractExpiry !== expiry || !strike || Math.abs(strike - spot) > 1000) {
         return;
       }
 
-      const iv = parseNumber(contract.impliedVolatility);
-      const volume = parseNumber(contract.totalTradedVolume);
-      if (iv <= 0 || volume <= 0) {
-        return;
-      }
+      [['CE', item.CE], ['PE', item.PE]].forEach(([type, contract]) => {
+        if (!contract) {
+          return;
+        }
 
-      rows.push({
-        type,
-        strike,
-        expiry,
-        iv,
-        oiChangePercent: parseNumber(contract.pchangeinOpenInterest),
-        lastPrice: parseNumber(contract.lastPrice),
-        oi: parseNumber(contract.openInterest),
+        const iv = parseNumber(contract.impliedVolatility);
+        const volume = parseNumber(contract.totalTradedVolume);
+        if (iv <= 0 || volume <= 0) {
+          return;
+        }
+
+        rows.push({
+          type,
+          strike,
+          expiry,
+          iv,
+          oiChangePercent: parseNumber(contract.pchangeinOpenInterest),
+          lastPrice: parseNumber(contract.lastPrice),
+          oi: parseNumber(contract.openInterest),
+        });
       });
     });
-  });
 
-  rows.sort((left, right) => left.iv - right.iv);
-  const limitedRows = rows.slice(0, 10);
+    rows.sort((left, right) => left.iv - right.iv);
+    rowsByExpiry[expiry] = rows.slice(0, 10);
+  });
 
   return {
     timestamp: records.timestamp || '',
-    expiries: expiry ? [expiry] : [],
-    defaultExpiry: expiry || '',
-    rowsByExpiry: expiry ? { [expiry]: limitedRows } : {},
+    expiries,
+    defaultExpiry: expiries[0] || '',
+    rowsByExpiry,
   };
+};
+
+const renderHolidayCalendar = (holidayPayload) => {
+  setText('holidayStamp', formatDateTime(holidayPayload.updatedAt) || '-');
+  setText('holidayMeta', 'Exchange holidays are marked in red. Saturdays and Sundays are treated as market holidays.');
+  document.getElementById('holidayCalendarGrid').innerHTML = holidayPayload.months.map((month) => `
+    <article class="holiday-month">
+      <h3>${month.label}</h3>
+      <div class="holiday-weekdays">${WEEKDAYS.map((day) => `<span>${day}</span>`).join('')}</div>
+      <div class="holiday-days">${month.cells.map((cell) => {
+        if (!cell) {
+          return '<div class="holiday-day empty"></div>';
+        }
+        const classes = ['holiday-day'];
+        if (cell.isWeekend) classes.push('weekend');
+        if (cell.isHoliday) classes.push('holiday');
+        return `<div class="${classes.join(' ')}" title="${escapeHtml(cell.descriptions.join(' | '))}"><span>${cell.day}</span>${cell.isHoliday ? '<small>Closed</small>' : ''}</div>`;
+      }).join('')}</div>
+      ${month.holidays.length ? `<ul class="holiday-list">${month.holidays.map((holiday) => `
+        <li class="holiday-item">
+          <span class="holiday-item-date">${holiday.tradingDate} • ${holiday.weekDay}</span>
+          <span class="holiday-item-text">${escapeHtml(holiday.description)}</span>
+        </li>
+      `).join('')}</ul>` : '<p class="holiday-month-note">Weekends are highlighted as non-trading days.</p>'}
+    </article>
+  `).join('');
 };
 
 const renderMetricGrid = (id, metrics) => {
@@ -814,6 +885,121 @@ const lowestLabel = (rows) => {
   return `${best.type} ${best.strike}`;
 };
 
+const parseEmbeddedJson = (text) => {
+  const start = text.indexOf('{');
+  const end = text.lastIndexOf('}');
+  if (start === -1 || end === -1 || end <= start) {
+    throw new Error('Holiday payload could not be parsed.');
+  }
+  return JSON.parse(text.slice(start, end + 1));
+};
+
+const normalizeHolidayPayload = (records) => {
+  const deduped = [];
+  const seen = new Set();
+  records.forEach((record) => {
+    const key = `${record.tradingDate}-${record.description}`;
+    if (!seen.has(key)) {
+      seen.add(key);
+      deduped.push(record);
+    }
+  });
+
+  const year = deduped.length ? Number(deduped[0].tradingDate.split('-')[2]) : new Date().getFullYear();
+  const holidayMap = new Map();
+  deduped.forEach((record) => {
+    const date = parseTradingDate(record.tradingDate);
+    const key = toDateKey(date);
+    if (!holidayMap.has(key)) {
+      holidayMap.set(key, []);
+    }
+    holidayMap.get(key).push(record.description);
+  });
+
+  return {
+    updatedAt: new Date().toISOString(),
+    year,
+    months: MONTHS.map((label, monthIndex) => buildHolidayMonth(label, monthIndex, year, deduped, holidayMap)),
+  };
+};
+
+const buildHolidayMonth = (label, monthIndex, year, records, holidayMap) => {
+  const firstDay = new Date(year, monthIndex, 1);
+  const lastDay = new Date(year, monthIndex + 1, 0);
+  const monthRecords = records.filter((record) => parseTradingDate(record.tradingDate).getMonth() === monthIndex);
+  const cells = [];
+
+  for (let filler = 0; filler < firstDay.getDay(); filler += 1) {
+    cells.push(null);
+  }
+
+  for (let day = 1; day <= lastDay.getDate(); day += 1) {
+    const date = new Date(year, monthIndex, day);
+    const key = toDateKey(date);
+    const isWeekend = date.getDay() === 0 || date.getDay() === 6;
+    const descriptions = holidayMap.get(key) || (isWeekend ? ['Weekend'] : []);
+    cells.push({
+      day,
+      isWeekend,
+      isHoliday: descriptions.length > 0,
+      descriptions,
+    });
+  }
+
+  return {
+    label,
+    cells,
+    holidays: monthRecords,
+  };
+};
+
+const parseTradingDate = (value) => {
+  const [day, month, year] = String(value || '').split('-');
+  return new Date(Number(year), MONTHS.indexOf(month), Number(day));
+};
+
+const toDateKey = (date) => `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+
+const escapeHtml = (value) => String(value)
+  .replace(/&/g, '&amp;')
+  .replace(/</g, '&lt;')
+  .replace(/>/g, '&gt;')
+  .replace(/"/g, '&quot;');
+
+const syncRefreshToggle = () => {
+  const toggle = document.getElementById('autoRefreshToggle');
+  if (!toggle) {
+    return;
+  }
+  toggle.checked = true;
+  toggle.onchange = () => {
+    if (toggle.checked) {
+      startRealtimeRefresh();
+      loadRealtimeData().catch((error) => {
+        console.error('Realtime load failed', error);
+      });
+      return;
+    }
+    stopRealtimeRefresh();
+  };
+};
+
+const startRealtimeRefresh = () => {
+  stopRealtimeRefresh();
+  realtimeRefreshTimer = window.setInterval(() => {
+    loadRealtimeData().catch((error) => {
+      console.error('Scheduled realtime load failed', error);
+    });
+  }, REALTIME_REFRESH_MS);
+};
+
+const stopRealtimeRefresh = () => {
+  if (realtimeRefreshTimer) {
+    window.clearInterval(realtimeRefreshTimer);
+    realtimeRefreshTimer = null;
+  }
+};
+
 loadAiData().catch((error) => {
   console.error('AI load failed', error);
   renderAiError(error?.message || 'AI analysis refresh failed.');
@@ -825,7 +1011,10 @@ loadRealtimeData().catch((error) => {
   renderHeadlineError(message);
   renderMarketTapeError(message);
   renderLiveError(message);
+  renderHolidayError(message);
 });
+
+syncRefreshToggle();
 
 window.setInterval(() => {
   loadAiData().catch((error) => {
@@ -833,8 +1022,4 @@ window.setInterval(() => {
   });
 }, AI_REFRESH_MS);
 
-window.setInterval(() => {
-  loadRealtimeData().catch((error) => {
-    console.error('Scheduled realtime load failed', error);
-  });
-}, REALTIME_REFRESH_MS);
+startRealtimeRefresh();
