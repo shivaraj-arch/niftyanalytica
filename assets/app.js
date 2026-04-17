@@ -40,7 +40,6 @@ const fetchLiveSnapshot = async () => {
     cache: 'no-store',
     headers: {
       apikey: SUPABASE_PUBLISHABLE_KEY,
-      'Cache-Control': 'no-store',
     },
   });
 };
