@@ -814,15 +814,6 @@ const lowestLabel = (rows) => {
   return `${best.type} ${best.strike}`;
 };
 
-loadData().catch((error) => {
-  console.error('Dashboard load failed', error);
-  const message = error?.message || 'Dashboard load failed.';
-  renderAiError(message);
-  renderHeadlineError(message);
-  renderMarketTapeError(message);
-  renderLiveError(message);
-});
-
 loadAiData().catch((error) => {
   console.error('AI load failed', error);
   renderAiError(error?.message || 'AI analysis refresh failed.');
