@@ -6,6 +6,27 @@ const SUPABASE_URL = (runtimeConfig.SUPABASE_URL || '').replace(/\/$/, '');
 const SUPABASE_PUBLISHABLE_KEY = runtimeConfig.SUPABASE_PUBLISHABLE_KEY || '';
 const LIVE_SNAPSHOT_URL = `${SUPABASE_URL}/functions/v1/nse-snapshot`;
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const AI_REFRESH_MS = 60 * 60 * 1000;
+const REALTIME_REFRESH_MS = 60 * 1000;
+const LIVE_NEWS_SOURCES = [
+  {
+    source: 'Business Standard',
+    url: 'https://news.google.com/rss/search?q=site%3Abusiness-standard.com%20%28market%20OR%20stocks%20OR%20nifty%20OR%20economy%20OR%20inflation%29&hl=en-IN&gl=IN&ceid=IN%3Aen',
+  },
+  {
+    source: 'Livemint',
+    url: 'https://www.livemint.com/rss/news',
+  },
+  {
+    source: 'Bloomberg Economics',
+    url: 'https://feeds.bloomberg.com/economics/news.rss',
+  },
+];
+const MARKET_NEWS_KEYWORDS = [
+  'market', 'stock', 'stocks', 'economy', 'economic', 'inflation', 'fed', 'ecb', 'bank', 'oil', 'trade',
+  'finance', 'nifty', 'sensex', 'wall street', 'bond', 'currency', 'rupee', 'dollar', 'ipo', 'earnings',
+  'shares', 'fii', 'dii', 'rates', 'gdp', 'tariff', 'commodity', 'crude', 'buyback', 'profit', 'results',
+];
 
 const setText = (id, value) => {
   const element = document.getElementById(id);
@@ -30,7 +51,54 @@ const loadJson = async (url, options = {}) => {
 };
 
 const fetchAiAnalysis = async () => loadJson('data/ai-analysis.json', { cache: 'no-store' });
-const fetchNewsRail = async () => loadJson('data/news-feed.json', { cache: 'no-store' });
+const fetchNewsRailSnapshot = async () => loadJson(`data/news-feed.json?t=${Date.now()}`, { cache: 'no-store' });
+
+const fetchLiveHeadlines = async () => {
+  const results = await Promise.allSettled(
+    LIVE_NEWS_SOURCES.map(async ({ source, url }) => {
+      const payload = await loadJson(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(url)}&_=${Date.now()}`, { cache: 'no-store' });
+      return { source, payload };
+    })
+  );
+
+  const items = [];
+  const sourcesAvailable = [];
+  const sourceErrors = [];
+  const seenTitles = new Set();
+
+  results.forEach((result, index) => {
+    const source = LIVE_NEWS_SOURCES[index].source;
+    if (result.status !== 'fulfilled') {
+      sourceErrors.push({ source, error: result.reason?.message || 'Feed fetch failed' });
+      return;
+    }
+
+    const feedItems = result.value.payload?.items || [];
+    sourcesAvailable.push(source);
+    feedItems.forEach((item) => {
+      const title = cleanHeadlineTitle(item.title || '', source);
+      const description = item.description || '';
+      if (!title || seenTitles.has(title.toLowerCase()) || !isMarketStory(title, description)) {
+        return;
+      }
+      seenTitles.add(title.toLowerCase());
+      items.push({
+        source,
+        title,
+        link: item.link,
+        publishedAt: item.pubDate || item.publishedAt || '',
+      });
+    });
+  });
+
+  items.sort((left, right) => new Date(right.publishedAt || 0) - new Date(left.publishedAt || 0));
+  return {
+    updatedAt: new Date().toISOString(),
+    items: items.slice(0, 10),
+    sourcesAvailable,
+    sourceErrors,
+  };
+};
 
 const fetchLiveSnapshot = async () => {
   if (!SUPABASE_URL || !SUPABASE_PUBLISHABLE_KEY) {
@@ -45,29 +113,51 @@ const fetchLiveSnapshot = async () => {
   });
 };
 
-const loadData = async () => {
-  const [aiResult, liveResult, newsResult] = await Promise.allSettled([fetchAiAnalysis(), fetchLiveSnapshot(), fetchNewsRail()]);
+const isMarketStory = (title, description) => {
+  const haystack = `${title} ${description}`.toLowerCase();
+  return MARKET_NEWS_KEYWORDS.some((keyword) => haystack.includes(keyword));
+};
 
-  if (aiResult.status === 'fulfilled') {
+const cleanHeadlineTitle = (title, source) => {
+  const suffix = ` - ${source}`;
+  return title.endsWith(suffix) ? title.slice(0, -suffix.length).trim() : title.trim();
+};
+
+const loadAiData = async () => {
+  const aiResult = await fetchAiAnalysis();
+  renderAiSection(aiResult);
+};
+
+const loadRealtimeData = async () => {
+  const [liveResult, marketTapeResult, headlinesResult] = await Promise.allSettled([
+    fetchLiveSnapshot(),
+    fetchNewsRailSnapshot(),
+    fetchLiveHeadlines(),
+  ]);
+
+  if (marketTapeResult.status === 'fulfilled') {
     try {
-      renderAiSection(aiResult.value);
+      const marketTape = marketTapeResult.value.marketTape || {};
+      setText('marketTapeStamp', formatDateTime(marketTape.updatedAt) || '-');
+      renderMarketTape(marketTape.items || []);
     } catch (error) {
-      console.error('AI render failed', error);
-      renderAiError(error?.message || 'AI analysis render failed.');
+      console.error('Market tape render failed', error);
+      renderMarketTapeError(error?.message || 'Market tape render failed.');
     }
   } else {
-    renderAiError(aiResult.reason?.message || 'AI analysis refresh failed.');
+    renderMarketTapeError(marketTapeResult.reason?.message || 'Market tape refresh failed.');
   }
 
-  if (newsResult.status === 'fulfilled') {
+  if (headlinesResult.status === 'fulfilled') {
     try {
-      renderNewsRail(newsResult.value);
+      renderNewsFeed(headlinesResult.value);
+      setText('newsFeedStamp', formatDateTime(headlinesResult.value.updatedAt) || '-');
     } catch (error) {
-      console.error('News rail render failed', error);
-      renderNewsRailError(error?.message || 'Headline rail render failed.');
+      console.error('Headline render failed', error);
+      renderHeadlineError(error?.message || 'Headline rail render failed.');
     }
   } else {
-    renderNewsRailError(newsResult.reason?.message || 'Headline rail refresh failed.');
+    renderHeadlineError(headlinesResult.reason?.message || 'Headline rail refresh failed.');
   }
 
   if (liveResult.status === 'fulfilled') {
@@ -97,11 +187,14 @@ const renderAiError = (message) => {
   setDisplay('aiWatchlistBlock', false);
 };
 
-const renderNewsRailError = (message) => {
-  setText('marketTapeStamp', 'Headline refresh pending');
+const renderMarketTapeError = (message) => {
+  setText('marketTapeStamp', 'Market tape refresh pending');
+  document.getElementById('marketTape').innerHTML = `<p>${message}</p>`;
+};
+
+const renderHeadlineError = (message) => {
   setText('newsFeedStamp', 'Headline refresh pending');
   setText('newsFeedMeta', message);
-  document.getElementById('marketTape').innerHTML = `<p>${message}</p>`;
   document.getElementById('newsFeedList').innerHTML = `<li class="news-feed-item">${message}</li>`;
 };
 
@@ -138,15 +231,6 @@ const renderAiSection = (aiAnalysis) => {
   setDisplay('aiWatchlistBlock', (aiAnalysis.watchlist || []).length > 0);
 };
 
-const renderNewsRail = (payload) => {
-  const marketTape = payload.marketTape || {};
-  const newsFeed = payload.newsFeed || {};
-  setText('marketTapeStamp', formatDateTime(marketTape.updatedAt) || '-');
-  setText('newsFeedStamp', formatDateTime(newsFeed.updatedAt) || '-');
-  renderMarketTape(marketTape.items || []);
-  renderNewsFeed(newsFeed);
-};
-
 const renderLiveSections = (snapshot) => {
   const contributors = snapshot.contributors;
   const openInterest = snapshot.openInterest;
@@ -154,7 +238,6 @@ const renderLiveSections = (snapshot) => {
   const lowIv = snapshot.lowIV;
 
   setText('generatedAt', formatDateTime(snapshot.fetchedAt));
-  setText('marketTapeStamp', formatDateTime(snapshot.fetchedAt));
   setText('heroSpot', formatNumber(openInterest.spot));
   setText('heroExpiry', openInterest.expiry || '-');
   setText('heroTopContributor', contributors.rows[0] ? `${contributors.rows[0].symbol} ${signed(contributors.rows[0].contributingPoints)}` : '-');
@@ -735,6 +818,32 @@ loadData().catch((error) => {
   console.error('Dashboard load failed', error);
   const message = error?.message || 'Dashboard load failed.';
   renderAiError(message);
-  renderNewsRailError(message);
+  renderHeadlineError(message);
+  renderMarketTapeError(message);
   renderLiveError(message);
 });
+
+loadAiData().catch((error) => {
+  console.error('AI load failed', error);
+  renderAiError(error?.message || 'AI analysis refresh failed.');
+});
+
+loadRealtimeData().catch((error) => {
+  console.error('Realtime load failed', error);
+  const message = error?.message || 'Realtime refresh failed.';
+  renderHeadlineError(message);
+  renderMarketTapeError(message);
+  renderLiveError(message);
+});
+
+window.setInterval(() => {
+  loadAiData().catch((error) => {
+    console.error('Scheduled AI load failed', error);
+  });
+}, AI_REFRESH_MS);
+
+window.setInterval(() => {
+  loadRealtimeData().catch((error) => {
+    console.error('Scheduled realtime load failed', error);
+  });
+}, REALTIME_REFRESH_MS);
