@@ -30,6 +30,7 @@ const loadJson = async (url, options = {}) => {
 };
 
 const fetchAiAnalysis = async () => loadJson('data/ai-analysis.json', { cache: 'no-store' });
+const fetchNewsRail = async () => loadJson('data/news-feed.json', { cache: 'no-store' });
 
 const fetchLiveSnapshot = async () => {
   if (!SUPABASE_URL || !SUPABASE_PUBLISHABLE_KEY) {
@@ -45,7 +46,7 @@ const fetchLiveSnapshot = async () => {
 };
 
 const loadData = async () => {
-  const [aiResult, liveResult] = await Promise.allSettled([fetchAiAnalysis(), fetchLiveSnapshot()]);
+  const [aiResult, liveResult, newsResult] = await Promise.allSettled([fetchAiAnalysis(), fetchLiveSnapshot(), fetchNewsRail()]);
 
   if (aiResult.status === 'fulfilled') {
     try {
@@ -56,6 +57,17 @@ const loadData = async () => {
     }
   } else {
     renderAiError(aiResult.reason?.message || 'AI analysis refresh failed.');
+  }
+
+  if (newsResult.status === 'fulfilled') {
+    try {
+      renderNewsRail(newsResult.value);
+    } catch (error) {
+      console.error('News rail render failed', error);
+      renderNewsRailError(error?.message || 'Headline rail render failed.');
+    }
+  } else {
+    renderNewsRailError(newsResult.reason?.message || 'Headline rail refresh failed.');
   }
 
   if (liveResult.status === 'fulfilled') {
@@ -72,11 +84,7 @@ const loadData = async () => {
 
 const renderAiError = (message) => {
   setText('aiAnalysisStamp', 'AI refresh pending');
-  setText('newsFeedStamp', 'Headline refresh pending');
   setText('aiSummaryText', message);
-  document.getElementById('aiHeadlines').innerHTML = `<li>${message}</li>`;
-  document.getElementById('newsFeedList').innerHTML = `<li class="news-feed-item">${message}</li>`;
-  setText('newsFeedMeta', message);
   renderMetricGrid('aiSummary', [
     { label: 'Agent', value: '-' },
     { label: 'Model', value: '-' },
@@ -89,9 +97,16 @@ const renderAiError = (message) => {
   setDisplay('aiWatchlistBlock', false);
 };
 
+const renderNewsRailError = (message) => {
+  setText('marketTapeStamp', 'Headline refresh pending');
+  setText('newsFeedStamp', 'Headline refresh pending');
+  setText('newsFeedMeta', message);
+  document.getElementById('marketTape').innerHTML = `<p>${message}</p>`;
+  document.getElementById('newsFeedList').innerHTML = `<li class="news-feed-item">${message}</li>`;
+};
+
 const renderLiveError = (message) => {
   setText('generatedAt', 'Live refresh pending');
-  setText('marketTapeStamp', 'Live refresh pending');
   setText('heroSpot', '-');
   setText('heroExpiry', '-');
   setText('heroTopContributor', '-');
@@ -100,8 +115,6 @@ const renderLiveError = (message) => {
   setText('openInterestStamp', 'Live refresh pending');
   setText('blackScholesStamp', 'Live refresh pending');
   setText('lowIvStamp', 'Live refresh pending');
-  setText('newsFeedMeta', message);
-  document.getElementById('marketTape').innerHTML = `<p>${message}</p>`;
   document.getElementById('contributorsRows').innerHTML = `<tr><td colspan="5">${message}</td></tr>`;
   document.getElementById('blackScholesRows').innerHTML = `<tr><td colspan="7">${message}</td></tr>`;
   document.getElementById('lowIvRows').innerHTML = `<tr><td colspan="6">${message}</td></tr>`;
@@ -111,7 +124,6 @@ const renderLiveError = (message) => {
 
 const renderAiSection = (aiAnalysis) => {
   setText('aiAnalysisStamp', formatDateTime(aiAnalysis.generatedAt) || '-');
-  setText('newsFeedStamp', formatDateTime(aiAnalysis.generatedAt) || '-');
   renderMetricGrid('aiSummary', [
     { label: 'Agent', value: aiAnalysis.agent || 'ADK Multi-Agent' },
     { label: 'Model', value: aiAnalysis.model || '-' },
@@ -124,12 +136,15 @@ const renderAiSection = (aiAnalysis) => {
   renderChipList('aiWatchlist', aiAnalysis.watchlist || []);
   setDisplay('aiKeyLevelsBlock', (aiAnalysis.keyLevels || []).length > 0);
   setDisplay('aiWatchlistBlock', (aiAnalysis.watchlist || []).length > 0);
+};
 
-  const headlines = aiAnalysis.headlines || [];
-  document.getElementById('aiHeadlines').innerHTML = headlines.length
-    ? headlines.map((headline) => `<li>${headline}</li>`).join('')
-    : '<li>Headlines are embedded in the cached AI brief.</li>';
-  renderNewsFeed(aiAnalysis);
+const renderNewsRail = (payload) => {
+  const marketTape = payload.marketTape || {};
+  const newsFeed = payload.newsFeed || {};
+  setText('marketTapeStamp', formatDateTime(marketTape.updatedAt) || '-');
+  setText('newsFeedStamp', formatDateTime(newsFeed.updatedAt) || '-');
+  renderMarketTape(marketTape.items || []);
+  renderNewsFeed(newsFeed);
 };
 
 const renderLiveSections = (snapshot) => {
@@ -148,9 +163,6 @@ const renderLiveSections = (snapshot) => {
   setText('openInterestStamp', openInterest.timestamp || '-');
   setText('blackScholesStamp', blackScholes.timestamp || '-');
   setText('lowIvStamp', lowIv.timestamp || '-');
-  setText('newsFeedMeta', `Cached AI headlines • ${formatDateTime(snapshot.fetchedAt)}`);
-
-  renderMarketTape(snapshot.marketTape);
 
   renderMetricGrid('contributorsSummary', [
     { label: 'Nifty Last', value: formatNumber(contributors.lastPrice) },
@@ -234,7 +246,6 @@ const normalizeLiveSnapshot = (payload) => {
     openInterest,
     blackScholes,
     lowIV,
-    marketTape: buildMarketTape(contributors, fiiDii, openInterest),
   };
 };
 
@@ -400,45 +411,6 @@ const buildLowIv = (payload) => {
   };
 };
 
-const buildMarketTape = (contributors, fiiDii, openInterest) => ([
-  {
-    label: 'Nifty 50',
-    valueText: formatNumber(contributors.lastPrice),
-    detailText: `${signed(contributors.indexChange)}%`,
-    toneClass: tone(contributors.indexChange),
-  },
-  {
-    label: 'Advances',
-    valueText: String(contributors.advances),
-    detailText: `${contributors.rows.length} tracked`,
-    toneClass: 'positive',
-  },
-  {
-    label: 'Declines',
-    valueText: String(contributors.declines),
-    detailText: `${contributors.rows.length} tracked`,
-    toneClass: 'negative',
-  },
-  {
-    label: 'FII Net',
-    valueText: `${signed(fiiDii.fiiNet)} Cr`,
-    detailText: fiiDii.date || 'Latest session',
-    toneClass: tone(fiiDii.fiiNet),
-  },
-  {
-    label: 'DII Net',
-    valueText: `${signed(fiiDii.diiNet)} Cr`,
-    detailText: fiiDii.date || 'Latest session',
-    toneClass: tone(fiiDii.diiNet),
-  },
-  {
-    label: 'Nearest Expiry',
-    valueText: openInterest.expiry || '-',
-    detailText: openInterest.timestamp || 'Live',
-    toneClass: '',
-  },
-]);
-
 const renderMetricGrid = (id, metrics) => {
   document.getElementById(id).innerHTML = metrics.map((metric) => `
     <article class="metric">
@@ -462,8 +434,8 @@ const renderMarketTape = (items) => {
   const chips = items.map((item) => `
     <article class="ticker-chip">
       <span class="ticker-label">${item.label}</span>
-      <span class="ticker-value">${formatTickerValue(item.valueText)}</span>
-      <span class="ticker-change ${item.toneClass || ''}">${item.detailText || ''}</span>
+      <span class="ticker-value">${formatTickerValue(item.last)}</span>
+      <span class="ticker-change ${tone(item.changePercent)}">${signed(item.changePercent)}%</span>
     </article>
   `).join('');
 
@@ -474,24 +446,26 @@ const renderMarketTape = (items) => {
   `;
 };
 
-const renderNewsFeed = (aiAnalysis) => {
-  const items = aiAnalysis.headlines || [];
+const renderNewsFeed = (newsFeed) => {
+  const items = newsFeed.items || [];
   const meta = document.getElementById('newsFeedMeta');
   const list = document.getElementById('newsFeedList');
+  const sources = (newsFeed.sourcesAvailable || []).join(', ');
+  const blocked = (newsFeed.sourceErrors || []).map((item) => item.source).join(', ');
   if (!items.length) {
-    meta.textContent = aiAnalysis.status === 'ok' ? 'No AI headlines were extracted for this cycle.' : (aiAnalysis.summary || 'Headline refresh pending');
+    meta.textContent = blocked ? `Unavailable right now: ${blocked}.` : 'No RSS headlines available.';
     list.innerHTML = '<li class="news-feed-item">No headlines available.</li>';
     return;
   }
 
-  meta.textContent = aiAnalysis.status === 'ok'
-    ? `Cached AI headlines from ${formatDateTime(aiAnalysis.generatedAt)}.`
-    : `Using the most recent cached AI headlines.`;
+  meta.textContent = blocked ? `Sources: ${sources}. Unavailable right now: ${blocked}.` : `Sources: ${sources}.`;
 
-  list.innerHTML = items.map((headline) => `
+  list.innerHTML = items.map((item) => `
     <li class="news-feed-item">
-      <span class="news-source">AI Brief</span>
-      <span class="news-title">${headline}</span>
+      <a href="${item.link}" target="_blank" rel="noreferrer">
+        <span class="news-source">${item.source}</span>
+        <span class="news-title">${item.title}</span>
+      </a>
     </li>
   `).join('');
 };
@@ -761,5 +735,6 @@ loadData().catch((error) => {
   console.error('Dashboard load failed', error);
   const message = error?.message || 'Dashboard load failed.';
   renderAiError(message);
+  renderNewsRailError(message);
   renderLiveError(message);
 });
