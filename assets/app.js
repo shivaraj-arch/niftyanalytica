@@ -72,8 +72,11 @@ const loadData = async () => {
 
 const renderAiError = (message) => {
   setText('aiAnalysisStamp', 'AI refresh pending');
+  setText('newsFeedStamp', 'Headline refresh pending');
   setText('aiSummaryText', message);
   document.getElementById('aiHeadlines').innerHTML = `<li>${message}</li>`;
+  document.getElementById('newsFeedList').innerHTML = `<li class="news-feed-item">${message}</li>`;
+  setText('newsFeedMeta', message);
   renderMetricGrid('aiSummary', [
     { label: 'Agent', value: '-' },
     { label: 'Model', value: '-' },
@@ -108,6 +111,7 @@ const renderLiveError = (message) => {
 
 const renderAiSection = (aiAnalysis) => {
   setText('aiAnalysisStamp', formatDateTime(aiAnalysis.generatedAt) || '-');
+  setText('newsFeedStamp', formatDateTime(aiAnalysis.generatedAt) || '-');
   renderMetricGrid('aiSummary', [
     { label: 'Agent', value: aiAnalysis.agent || 'ADK Multi-Agent' },
     { label: 'Model', value: aiAnalysis.model || '-' },
@@ -125,6 +129,7 @@ const renderAiSection = (aiAnalysis) => {
   document.getElementById('aiHeadlines').innerHTML = headlines.length
     ? headlines.map((headline) => `<li>${headline}</li>`).join('')
     : '<li>Headlines are embedded in the cached AI brief.</li>';
+  renderNewsFeed(aiAnalysis);
 };
 
 const renderLiveSections = (snapshot) => {
@@ -143,7 +148,7 @@ const renderLiveSections = (snapshot) => {
   setText('openInterestStamp', openInterest.timestamp || '-');
   setText('blackScholesStamp', blackScholes.timestamp || '-');
   setText('lowIvStamp', lowIv.timestamp || '-');
-  setText('newsFeedMeta', `Live via Supabase Edge Function • ${formatDateTime(snapshot.fetchedAt)}`);
+  setText('newsFeedMeta', `Cached AI headlines • ${formatDateTime(snapshot.fetchedAt)}`);
 
   renderMarketTape(snapshot.marketTape);
 
@@ -454,13 +459,41 @@ const renderMarketTape = (items) => {
     return;
   }
 
-  host.innerHTML = `<div class="ticker-grid">${items.map((item) => `
+  const chips = items.map((item) => `
     <article class="ticker-chip">
       <span class="ticker-label">${item.label}</span>
-      <span class="ticker-value">${item.valueText || '-'}</span>
+      <span class="ticker-value">${formatTickerValue(item.valueText)}</span>
       <span class="ticker-change ${item.toneClass || ''}">${item.detailText || ''}</span>
     </article>
-  `).join('')}</div>`;
+  `).join('');
+
+  host.innerHTML = `
+    <div class="ticker-marquee">
+      <div class="ticker-track">${chips}${chips}</div>
+    </div>
+  `;
+};
+
+const renderNewsFeed = (aiAnalysis) => {
+  const items = aiAnalysis.headlines || [];
+  const meta = document.getElementById('newsFeedMeta');
+  const list = document.getElementById('newsFeedList');
+  if (!items.length) {
+    meta.textContent = aiAnalysis.status === 'ok' ? 'No AI headlines were extracted for this cycle.' : (aiAnalysis.summary || 'Headline refresh pending');
+    list.innerHTML = '<li class="news-feed-item">No headlines available.</li>';
+    return;
+  }
+
+  meta.textContent = aiAnalysis.status === 'ok'
+    ? `Cached AI headlines from ${formatDateTime(aiAnalysis.generatedAt)}.`
+    : `Using the most recent cached AI headlines.`;
+
+  list.innerHTML = items.map((headline) => `
+    <li class="news-feed-item">
+      <span class="news-source">AI Brief</span>
+      <span class="news-title">${headline}</span>
+    </li>
+  `).join('');
 };
 
 const renderBarChart = (id, rows, mapper, legendId, title, expanded = false) => {
@@ -672,6 +705,14 @@ const formatCompact = (value) => {
   if (abs >= 100000) return `${(value / 100000).toFixed(1)}L`;
   if (abs >= 1000) return `${(value / 1000).toFixed(1)}K`;
   return Number(value).toFixed(0);
+};
+
+const formatTickerValue = (value) => {
+  if (value === null || value === undefined) return '-';
+  if (typeof value === 'string') return value;
+  if (Number.isNaN(Number(value))) return '-';
+  const number = Number(value);
+  return Math.abs(number) >= 1000 ? currency.format(number) : number.toFixed(2);
 };
 
 const signed = (value) => {

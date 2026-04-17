@@ -254,9 +254,27 @@ td,
   color: var(--accent);
 }
 
+.dashboard-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 22px;
+  align-items: start;
+}
+
 main {
   display: grid;
   gap: 22px;
+}
+
+.news-rail {
+  display: grid;
+  gap: 18px;
+  position: sticky;
+  top: 18px;
+}
+
+.news-card {
+  padding: 22px;
 }
 
 .rail-heading {
@@ -368,7 +386,20 @@ main {
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.54);
   border: 1px solid rgba(15, 76, 92, 0.08);
-  padding: 12px;
+}
+
+.ticker-marquee {
+  overflow: hidden;
+  padding: 12px 0;
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.ticker-track {
+  display: inline-flex;
+  gap: 12px;
+  min-width: max-content;
+  animation: ticker-slide 42s linear infinite;
+  padding-right: 12px;
 }
 
 .ticker-grid {
@@ -378,34 +409,48 @@ main {
 }
 
 .ticker-chip {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 4px 10px;
+  display: inline-flex;
   align-items: center;
-  min-width: 0;
-  padding: 12px 14px;
-  border-radius: 18px;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 999px;
   background: rgba(15, 76, 92, 0.08);
-  border: 1px solid rgba(15, 76, 92, 0.08);
+  white-space: nowrap;
 }
 
 .ticker-label {
   font-weight: 700;
   color: var(--ink);
-  min-width: 0;
 }
 
 .ticker-value {
   color: var(--muted);
-  min-width: 0;
 }
 
 .ticker-change {
   font-weight: 700;
-  justify-self: end;
-  grid-column: 2;
-  grid-row: 1 / span 2;
-  align-self: center;
+}
+
+.news-feed-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.news-feed-item {
+  padding: 12px 14px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.54);
+  border: 1px solid rgba(15, 76, 92, 0.08);
+  color: var(--ink);
+}
+
+.news-feed-item a {
+  display: grid;
+  gap: 6px;
+  text-decoration: none;
 }
 
 .news-source {
@@ -617,9 +662,21 @@ tbody tr:hover {
   }
 }
 
+@keyframes ticker-slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 @media (max-width: 980px) {
   .hero,
+  .dashboard-shell,
   .ai-layout,
+  .news-rail,
   .chart-stack,
   .summary-grid,
   .footer {
@@ -687,13 +744,11 @@ tbody tr:hover {
   }
 
   .ticker-chip {
-    grid-template-columns: 1fr;
+    display: inline-flex;
   }
 
   .ticker-change {
-    grid-column: auto;
-    grid-row: auto;
-    justify-self: start;
+    justify-self: auto;
   }
 }
     padding: 16px 18px;
