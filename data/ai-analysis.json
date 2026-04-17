@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-04-17T01:21:36.916610+05:30",
+  "generatedAt": "2026-04-17T08:40:02.948200+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
     "nifty_flow_agent",
     "AggregatorAgent"
   ],
-  "model": "gemini-2.5-flash-lite",
-  "requestedModel": "gemini-2.5-flash-lite",
+  "model": "gemini-robotics-er-1.5-preview",
+  "requestedModel": "gemini-robotics-er-1.5-preview",
   "status": "error",
   "summary": "AI analysis could not be generated automatically. Error: unhandled errors in a TaskGroup (1 sub-exception)",
   "bias": "Neutral",
