@@ -49,13 +49,23 @@ const loadData = async () => {
   const [aiResult, liveResult] = await Promise.allSettled([fetchAiAnalysis(), fetchLiveSnapshot()]);
 
   if (aiResult.status === 'fulfilled') {
-    renderAiSection(aiResult.value);
+    try {
+      renderAiSection(aiResult.value);
+    } catch (error) {
+      console.error('AI render failed', error);
+      renderAiError(error?.message || 'AI analysis render failed.');
+    }
   } else {
     renderAiError(aiResult.reason?.message || 'AI analysis refresh failed.');
   }
 
   if (liveResult.status === 'fulfilled') {
-    renderLiveSections(normalizeLiveSnapshot(liveResult.value));
+    try {
+      renderLiveSections(normalizeLiveSnapshot(liveResult.value));
+    } catch (error) {
+      console.error('Live render failed', error);
+      renderLiveError(error?.message || 'Live market render failed.');
+    }
   } else {
     renderLiveError(liveResult.reason?.message || 'Live market refresh failed.');
   }
@@ -707,4 +717,9 @@ const lowestLabel = (rows) => {
   return `${best.type} ${best.strike}`;
 };
 
-loadData();
+loadData().catch((error) => {
+  console.error('Dashboard load failed', error);
+  const message = error?.message || 'Dashboard load failed.';
+  renderAiError(message);
+  renderLiveError(message);
+});
