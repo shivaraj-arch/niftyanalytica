@@ -1197,6 +1197,9 @@ const bindDonateModal = () => {
     return;
   }
 
+  modal.hidden = true;
+  modal.setAttribute('aria-hidden', 'true');
+
   const closeModal = () => {
     modal.hidden = true;
     modal.setAttribute('aria-hidden', 'true');

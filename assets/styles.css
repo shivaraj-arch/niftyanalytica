@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -348,12 +352,8 @@ main {
 
 .news-card {
   padding: 22px;
-  position: sticky;
-  top: 18px;
-  max-height: calc(100vh - 36px);
   display: flex;
   flex-direction: column;
-  min-height: 0;
 }
 
 .rail-heading {
@@ -540,11 +540,6 @@ main {
   display: grid;
   color: var(--ink);
   gap: 12px;
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  padding-right: 6px;
-  min-height: 0;
-  max-height: calc(100vh - 220px);
 }
 
 .news-feed-item {
