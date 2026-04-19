@@ -27,7 +27,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/styles.css?v=20260417-4">
+  <link rel="stylesheet" href="assets/styles.css?v=20260419-1">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -55,7 +55,10 @@
     <header class="hero">
       <div class="hero-copy reveal">
         <p class="eyebrow">NSE Snapshot Dashboard</p>
-        <h1>Nifty Analytica</h1>
+        <div class="hero-brand">
+          <img class="brand-icon" src="assets/icon-app1.png" alt="Nifty Analytica icon">
+          <h1>Nifty Analytica</h1>
+        </div>
         <p class="hero-text">
           Nifty Analytica is an Android app on Google Play for NSE Nifty 50 analytics.
           This public dashboard mirrors the app with contributors, option-chain pressure,
@@ -66,6 +69,7 @@
             <img alt="Get it on Google Play" src="assets/google-play-badge.svg">
           </a>
           <a class="button button-secondary" href="#contributors">Dashboard</a>
+          <button class="button button-donate" id="donateButton" type="button">Donate / GPay</button>
         </div>
       </div>
       <aside class="hero-panel reveal delay-1">
@@ -134,7 +138,7 @@
         </div>
         <div class="summary-grid" id="aiSummary"></div>
         <article class="ai-copy">
-          <p id="aiSummaryText" class="ai-summary-text">Waiting for AI analysis.</p>
+          <div id="aiSummaryText" class="ai-summary-text">Waiting for AI analysis.</div>
           <div id="aiKeyLevelsBlock">
             <h3>Key Levels</h3>
             <ul id="aiKeyLevels" class="chip-list"></ul>
@@ -271,11 +275,11 @@
         <div class="section-heading rail-heading">
           <div>
             <p class="eyebrow">News Rail</p>
-            <h2>Top 10 Headlines</h2>
+            <h2>Latest Headlines</h2>
           </div>
           <div id="newsFeedStamp" class="stamp">-</div>
         </div>
-        <p id="newsFeedMeta" class="rail-note">Loading headlines.</p>
+        <p id="newsFeedMeta" class="rail-note">Loading 5 latest headlines from each source.</p>
         <ol id="newsFeedList" class="news-feed-list"></ol>
       </section>
     </aside>
@@ -292,6 +296,15 @@
     </footer>
   </div>
 
+  <div id="donateModal" class="donate-modal-backdrop" hidden aria-hidden="true">
+    <div class="donate-modal" role="dialog" aria-modal="true" aria-labelledby="donateModalTitle">
+      <button type="button" id="donateClose" class="donate-modal-close" aria-label="Close donate popup">&times;</button>
+      <div class="donate-modal-title" id="donateModalTitle">Support Nifty Analytica</div>
+      <div class="donate-modal-copy">Donate to VPA <strong>shivarajms120@okaxis.com</strong> to support the dashboard and AI brief.</div>
+      <span class="donate-vpa"><a href="upi://pay?pa=shivarajms120@okaxis.com&pn=Shivaraj%20M%20S&cu=INR">shivarajms120@okaxis.com</a></span>
+    </div>
+  </div>
+
   <div id="chartModal" class="chart-modal" hidden>
     <div class="chart-modal-backdrop" data-close-modal="true"></div>
     <div class="chart-modal-card">
@@ -304,7 +317,7 @@
     </div>
   </div>
 
-  <script src="assets/runtime-config.js?v=20260417-4"></script>
-  <script src="assets/app.js?v=20260417-4"></script>
+  <script src="assets/runtime-config.js?v=20260419-1"></script>
+  <script src="assets/app.js?v=20260419-1"></script>
 </body>
 </html>

@@ -7,9 +7,21 @@ const SUPABASE_PUBLISHABLE_KEY = runtimeConfig.SUPABASE_PUBLISHABLE_KEY || '';
 const LIVE_SNAPSHOT_URL = `${SUPABASE_URL}/functions/v1/nse-snapshot`;
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const WEEKDAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-const AI_REFRESH_MS = 60 * 60 * 1000;
+const AI_REFRESH_HOURS = [6, 9, 12, 15, 18, 21];
 const REALTIME_REFRESH_MS = 60 * 1000;
 const NSE_HOLIDAYS_URL = 'https://r.jina.ai/http://www.nseindia.com/api/holiday-master?type=trading';
+const MARKET_TAPE_PROXY_BASE = 'https://r.jina.ai/http://stooq.com/q/l/';
+const MARKET_TAPE_SPECS = [
+  ['^spx', 'S&P 500'],
+  ['^dji', 'Dow Jones'],
+  ['^ndq', 'Nasdaq'],
+  ['^nkx', 'Nikkei 225'],
+  ['^hsi', 'Hang Seng'],
+  ['^ukx', 'FTSE 100'],
+  ['^dax', 'DAX'],
+  ['cl.f', 'Crude Oil'],
+  ['xauusd', 'Gold'],
+];
 const LIVE_NEWS_SOURCES = [
   {
     source: 'Business Standard',
@@ -45,6 +57,7 @@ const setDisplay = (id, visible) => {
 };
 
 let realtimeRefreshTimer = null;
+let aiRefreshTimer = null;
 
 const loadJson = async (url, options = {}) => {
   const response = await fetch(url, options);
@@ -65,6 +78,23 @@ const loadText = async (url, options = {}) => {
 const fetchAiAnalysis = async () => loadJson('data/ai-analysis.json', { cache: 'no-store' });
 const fetchNewsRailSnapshot = async () => loadJson(`data/news-feed.json?t=${Date.now()}`, { cache: 'no-store' });
 
+const fetchLiveMarketTape = async () => {
+  const results = await Promise.allSettled(
+    MARKET_TAPE_SPECS.map(async ([symbol, label]) => {
+      const url = `${MARKET_TAPE_PROXY_BASE}?s=${encodeURIComponent(symbol)}&f=sd2t2ohlcvn&p=1&i=d&_=${Date.now()}`;
+      const payload = await loadText(url, { cache: 'no-store' });
+      return parseStooqQuoteLine(payload, label);
+    })
+  );
+
+  return {
+    updatedAt: new Date().toISOString(),
+    items: results
+      .filter((result) => result.status === 'fulfilled')
+      .map((result) => result.value),
+  };
+};
+
 const fetchLiveHeadlines = async () => {
   const results = await Promise.allSettled(
     LIVE_NEWS_SOURCES.map(async ({ source, url }) => {
@@ -73,10 +103,10 @@ const fetchLiveHeadlines = async () => {
     })
   );
 
-  const items = [];
+  const candidates = [];
   const sourcesAvailable = [];
   const sourceErrors = [];
-  const seenTitles = new Set();
+  const maxItemsPerSource = 5;
 
   results.forEach((result, index) => {
     const source = LIVE_NEWS_SOURCES[index].source;
@@ -87,26 +117,55 @@ const fetchLiveHeadlines = async () => {
 
     const feedItems = result.value.payload?.items || [];
     sourcesAvailable.push(source);
+    const sourceItems = [];
+    const seenWithinSource = new Set();
+
     feedItems.forEach((item) => {
       const title = cleanHeadlineTitle(item.title || '', source);
       const description = item.description || '';
-      if (!title || seenTitles.has(title.toLowerCase()) || !isMarketStory(title, description)) {
+      const publishedAt = item.pubDate || item.publishedAt || '';
+      const titleKey = normalizeHeadlineKey(title);
+      if (!titleKey || seenWithinSource.has(titleKey) || !isMarketStory(title, description)) {
         return;
       }
-      seenTitles.add(title.toLowerCase());
-      items.push({
+      if (!Number.isFinite(Date.parse(publishedAt))) {
+        return;
+      }
+
+      seenWithinSource.add(titleKey);
+
+      sourceItems.push({
         source,
         title,
         link: item.link,
-        publishedAt: item.pubDate || item.publishedAt || '',
+        publishedAt,
       });
     });
+
+    sourceItems
+      .sort((left, right) => new Date(right.publishedAt) - new Date(left.publishedAt))
+      .slice(0, maxItemsPerSource)
+      .forEach((item) => {
+        candidates.push(item);
+      });
   });
 
-  items.sort((left, right) => new Date(right.publishedAt || 0) - new Date(left.publishedAt || 0));
+  const items = [];
+  const seenTitles = new Set();
+  candidates
+    .sort((left, right) => new Date(right.publishedAt || 0) - new Date(left.publishedAt || 0))
+    .forEach((item) => {
+      const titleKey = normalizeHeadlineKey(item.title);
+      if (seenTitles.has(titleKey)) {
+        return;
+      }
+      seenTitles.add(titleKey);
+      items.push(item);
+    });
+
   return {
     updatedAt: new Date().toISOString(),
-    items: items.slice(0, 10),
+    items,
     sourcesAvailable,
     sourceErrors,
   };
@@ -152,16 +211,23 @@ const loadAiData = async () => {
 };
 
 const loadRealtimeData = async () => {
-  const [liveResult, marketTapeResult, headlinesResult, holidaysResult] = await Promise.allSettled([
+  const [liveResult, marketTapeLiveResult, marketTapeSnapshotResult, headlinesResult, holidaysResult] = await Promise.allSettled([
     fetchLiveSnapshot(),
+    fetchLiveMarketTape(),
     fetchNewsRailSnapshot(),
     fetchLiveHeadlines(),
     fetchNseHolidays(),
   ]);
 
-  if (marketTapeResult.status === 'fulfilled') {
+  const marketTapePayload = marketTapeLiveResult.status === 'fulfilled' && (marketTapeLiveResult.value.items || []).length
+    ? marketTapeLiveResult.value
+    : marketTapeSnapshotResult.status === 'fulfilled'
+      ? (marketTapeSnapshotResult.value.marketTape || {})
+      : null;
+
+  if (marketTapePayload) {
     try {
-      const marketTape = marketTapeResult.value.marketTape || {};
+      const marketTape = marketTapePayload;
       setText('marketTapeStamp', formatDateTime(marketTape.updatedAt) || '-');
       renderMarketTape(marketTape.items || []);
     } catch (error) {
@@ -169,7 +235,10 @@ const loadRealtimeData = async () => {
       renderMarketTapeError(error?.message || 'Market tape render failed.');
     }
   } else {
-    renderMarketTapeError(marketTapeResult.reason?.message || 'Market tape refresh failed.');
+    const errorMessage = marketTapeLiveResult.status === 'rejected'
+      ? marketTapeLiveResult.reason?.message
+      : marketTapeSnapshotResult.reason?.message;
+    renderMarketTapeError(errorMessage || 'Market tape refresh failed.');
   }
 
   if (headlinesResult.status === 'fulfilled') {
@@ -209,7 +278,7 @@ const loadRealtimeData = async () => {
 
 const renderAiError = (message) => {
   setText('aiAnalysisStamp', 'AI refresh pending');
-  setText('aiSummaryText', message);
+  document.getElementById('aiSummaryText').innerHTML = `<p>${escapeHtml(message)}</p>`;
   renderMetricGrid('aiSummary', [
     { label: 'Agent', value: '-' },
     { label: 'Model', value: '-' },
@@ -265,7 +334,7 @@ const renderAiSection = (aiAnalysis) => {
     { label: 'Status', value: aiAnalysis.status || '-', tone: aiAnalysis.status === 'ok' ? 'positive' : '' },
   ]);
 
-  setText('aiSummaryText', aiAnalysis.summary || 'AI analysis is pending for the next refresh.');
+  document.getElementById('aiSummaryText').innerHTML = renderMarkdown(aiAnalysis.summary || 'AI analysis is pending for the next refresh.');
   renderChipList('aiKeyLevels', aiAnalysis.keyLevels || []);
   renderChipList('aiWatchlist', aiAnalysis.watchlist || []);
   setDisplay('aiKeyLevelsBlock', (aiAnalysis.keyLevels || []).length > 0);
@@ -612,13 +681,14 @@ const renderNewsFeed = (newsFeed) => {
     return;
   }
 
-  meta.textContent = blocked ? `Sources: ${sources}. Unavailable right now: ${blocked}.` : `Sources: ${sources}.`;
+  meta.textContent = blocked ? `Showing up to 5 latest headlines per source. Sources: ${sources}. Unavailable right now: ${blocked}.` : `Showing up to 5 latest headlines per source. Sources: ${sources}.`;
 
   list.innerHTML = items.map((item) => `
     <li class="news-feed-item">
       <a href="${item.link}" target="_blank" rel="noreferrer">
         <span class="news-source">${item.source}</span>
         <span class="news-title">${item.title}</span>
+        <span class="news-time">${formatDateTime(item.publishedAt)}</span>
       </a>
     </li>
   `).join('');
@@ -966,6 +1036,191 @@ const escapeHtml = (value) => String(value)
   .replace(/>/g, '&gt;')
   .replace(/"/g, '&quot;');
 
+const normalizeHeadlineKey = (value) => cleanHeadlineTitle(value || '', '')
+  .toLowerCase()
+  .replace(/&amp;/g, 'and')
+  .replace(/\b(business standard|livemint|bloomberg economics|bloomberg)\b/g, '')
+  .replace(/\s*[|:-]\s*(live|latest|update|updates)\b.*$/g, '')
+  .replace(/[^a-z0-9]+/g, ' ')
+  .trim();
+
+const parseStooqQuoteLine = (rawText, label) => {
+  const quoteLine = String(rawText || '')
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .find((line) => /^[^,]+,\d{4}-\d{2}-\d{2},/.test(line));
+
+  if (!quoteLine) {
+    throw new Error(`No quote line returned for ${label}.`);
+  }
+
+  const parts = quoteLine.split(',');
+  if (parts.length < 7 || parts[1] === 'N/D') {
+    throw new Error(`Incomplete quote returned for ${label}.`);
+  }
+
+  const openPrice = parseNumber(parts[3]);
+  const closePrice = parseNumber(parts[6]);
+  const changePercent = openPrice ? ((closePrice - openPrice) / openPrice) * 100 : 0;
+
+  return {
+    label,
+    last: closePrice,
+    changePercent,
+    source: 'Stooq',
+    updatedAt: `${parts[1]} ${parts[2]}`,
+  };
+};
+
+const formatMarkdownInline = (value) => escapeHtml(value)
+  .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+  .replace(/__(.+?)__/g, '<strong>$1</strong>')
+  .replace(/\*(.+?)\*/g, '<em>$1</em>')
+  .replace(/_(.+?)_/g, '<em>$1</em>')
+  .replace(/`(.+?)`/g, '<code>$1</code>');
+
+const renderMarkdown = (value) => {
+  const lines = String(value || '').replace(/\r\n/g, '\n').split('\n');
+  const blocks = [];
+  let paragraph = [];
+  let listType = null;
+  let listItems = [];
+
+  const flushParagraph = () => {
+    if (!paragraph.length) {
+      return;
+    }
+    blocks.push(`<p>${formatMarkdownInline(paragraph.join(' '))}</p>`);
+    paragraph = [];
+  };
+
+  const flushList = () => {
+    if (!listItems.length || !listType) {
+      return;
+    }
+    blocks.push(`<${listType}>${listItems.map((item) => `<li>${formatMarkdownInline(item)}</li>`).join('')}</${listType}>`);
+    listItems = [];
+    listType = null;
+  };
+
+  lines.forEach((line) => {
+    const trimmed = line.trim();
+    if (!trimmed) {
+      flushParagraph();
+      flushList();
+      return;
+    }
+
+    const headingMatch = trimmed.match(/^(#{1,4})\s+(.+)$/);
+    if (headingMatch) {
+      flushParagraph();
+      flushList();
+      const level = Math.min(4, headingMatch[1].length + 1);
+      blocks.push(`<h${level}>${formatMarkdownInline(headingMatch[2])}</h${level}>`);
+      return;
+    }
+
+    const bulletMatch = trimmed.match(/^[-*]\s+(.+)$/);
+    if (bulletMatch) {
+      flushParagraph();
+      if (listType && listType !== 'ul') {
+        flushList();
+      }
+      listType = 'ul';
+      listItems.push(bulletMatch[1]);
+      return;
+    }
+
+    const orderedMatch = trimmed.match(/^\d+[.)]\s+(.+)$/);
+    if (orderedMatch) {
+      flushParagraph();
+      if (listType && listType !== 'ol') {
+        flushList();
+      }
+      listType = 'ol';
+      listItems.push(orderedMatch[1]);
+      return;
+    }
+
+    flushList();
+    paragraph.push(trimmed);
+  });
+
+  flushParagraph();
+  flushList();
+
+  return blocks.join('') || `<p>${formatMarkdownInline(String(value || ''))}</p>`;
+};
+
+const getNextAiRefreshDelay = () => {
+  const now = new Date();
+  for (let offset = 0; offset < 8; offset += 1) {
+    const candidateDate = new Date(now);
+    candidateDate.setHours(0, 0, 0, 0);
+    candidateDate.setDate(candidateDate.getDate() + offset);
+    if (candidateDate.getDay() === 0 || candidateDate.getDay() === 6) {
+      continue;
+    }
+
+    for (const hour of AI_REFRESH_HOURS) {
+      const candidate = new Date(candidateDate);
+      candidate.setHours(hour, 0, 0, 0);
+      if (candidate > now) {
+        return candidate.getTime() - now.getTime();
+      }
+    }
+  }
+  return 3 * 60 * 60 * 1000;
+};
+
+const scheduleAiRefresh = () => {
+  if (aiRefreshTimer) {
+    window.clearTimeout(aiRefreshTimer);
+    aiRefreshTimer = null;
+  }
+
+  aiRefreshTimer = window.setTimeout(() => {
+    loadAiData().catch((error) => {
+      console.error('Scheduled AI load failed', error);
+    }).finally(() => {
+      scheduleAiRefresh();
+    });
+  }, getNextAiRefreshDelay());
+};
+
+const bindDonateModal = () => {
+  const modal = document.getElementById('donateModal');
+  const openButton = document.getElementById('donateButton');
+  const closeButton = document.getElementById('donateClose');
+
+  if (!modal || !openButton || !closeButton) {
+    return;
+  }
+
+  const closeModal = () => {
+    modal.hidden = true;
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+  };
+
+  openButton.onclick = () => {
+    modal.hidden = false;
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+  };
+  closeButton.onclick = closeModal;
+  modal.onclick = (event) => {
+    if (event.target === modal) {
+      closeModal();
+    }
+  };
+  window.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !modal.hidden) {
+      closeModal();
+    }
+  });
+};
+
 const syncRefreshToggle = () => {
   const toggle = document.getElementById('autoRefreshToggle');
   if (!toggle) {
@@ -1015,11 +1270,7 @@ loadRealtimeData().catch((error) => {
 });
 
 syncRefreshToggle();
+bindDonateModal();
 
-window.setInterval(() => {
-  loadAiData().catch((error) => {
-    console.error('Scheduled AI load failed', error);
-  });
-}, AI_REFRESH_MS);
-
+scheduleAiRefresh();
 startRealtimeRefresh();
