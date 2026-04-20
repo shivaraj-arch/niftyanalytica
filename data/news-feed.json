@@ -1,6 +1,6 @@
 {
   "marketTape": {
-    "updatedAt": "2026-04-18T23:54:07.497169+05:30",
+    "updatedAt": "2026-04-20T09:04:53.773540+05:30",
     "items": [
       {
         "label": "S&P 500",
@@ -25,17 +25,17 @@
       },
       {
         "label": "Nikkei 225",
-        "last": 58475.9,
-        "changePercent": -1.314975641754987,
+        "last": 59045.45,
+        "changePercent": 0.38130835910069366,
         "source": "Stooq",
-        "updatedAt": "2026-04-17 23:00:00"
+        "updatedAt": "2026-04-20 04:35:02"
       },
       {
         "label": "Hang Seng",
-        "last": 26160.33,
-        "changePercent": -0.8862911860381638,
+        "last": 26407.68,
+        "changePercent": 0.9455155955601421,
         "source": "Stooq",
-        "updatedAt": "2026-04-17 10:08:40"
+        "updatedAt": "2026-04-20 05:34:26"
       },
       {
         "label": "FTSE 100",
@@ -53,82 +53,106 @@
       },
       {
         "label": "Crude Oil",
-        "last": 83.85,
-        "changePercent": -10.012878300064404,
+        "last": 87.3,
+        "changePercent": -2.4907852116609,
         "source": "Stooq",
-        "updatedAt": "2026-04-17 23:00:00"
+        "updatedAt": "2026-04-20 05:34:48"
       },
       {
         "label": "Gold",
-        "last": 4854.675,
-        "changePercent": 1.247798416841419,
+        "last": 4792.795,
+        "changePercent": 0.6177349229642077,
         "source": "Stooq",
-        "updatedAt": "2026-04-17 22:00:32"
+        "updatedAt": "2026-04-20 05:34:52"
       }
     ]
   },
   "newsFeed": {
-    "updatedAt": "2026-04-18T23:54:08.539834+05:30",
+    "updatedAt": "2026-04-20T09:04:54.812401+05:30",
     "items": [
       {
         "source": "Business Standard",
-        "title": "LTM Ltd Announcements: Latest Stock/Share Market Notices & Announcements, Board Meetings, Quarterly Results",
-        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOcG0xRjlRTHV3UHJZQV8xYnZBb0JrOEZReVpmbno4OVItbXFTQjRXSklzanY0ekVYUkc4c1NuV1RiZ0Q3aGpsZVYzUHFqRGVTSl9McllGOVo0WHdrMmZlUlU3cElvN3VRa2R2NVNDUDI3Rk44WmJweHRkcEMybkEwQWJPY0VRZldt?oc=5",
-        "publishedAt": "2026-04-18T17:33:00+00:00"
+        "title": "Q4 results: Bank of Maharashtra, PNB Housing Finance, Groww on Apr 20",
+        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQSm9tdHFvRGd5VTRVZ09fOFRIRm1HT2lVMGdOX0xLUC1TbWtxUHpnYWZ4cG4yR3RwdU55OUNMMVRWcEpBa3daWXpMNEVqaVYzNWFUNnhpVVhOcXFHR2M2UXZTMll0WnVjOExOemYzTzI5a0pQemVxbVp0MTlJSnVDVk5aM0dKczloVnFZam45Sngwd21ReFk4QTJrQ2JDbWZSVkc4VHVpclBETnJmVFhyUm1QdHJiMy01dUJ1WTg4UTE4X3VnV1hyXzE0WHgtYk9pQzk3T2lvTktiS0E3T2lJNDJn0gHnAUFVX3lxTE5fQlI2ODZnMFA3N25RS2szVXJJSy13Yjc0UjZXMFljLXgxdFNtd3pQZ2pEMG54R0oxd2xDSWI4ZHRxVXVrSy1acEdROTR4US1PcnExaU1PMjZHbGdUQy1fNE91QjJMNWV1QVJEZnp0aDMxQnh2WXFUbDB4NldqTm8wNTJwa2FlbGh5NExLTFAzZ2tXQ095Q21CeTJoLTdDU19kVXNlWmhDd0RDcUpORDBUMGg2QlhZR3ZpeFlPczR0M0FPX181Tzh6X2stZ0RGVzNEYkcxS1dLcVduMzBOOGRGUXUzVUZZRQ?oc=5",
+        "publishedAt": "2026-04-20T02:50:33+00:00"
+      },
+      {
+        "source": "Livemint",
+        "title": "Petrol, diesel rates on April 20 \u2014 Check fuel prices today in Delhi, Mumbai, Bengaluru & other cities",
+        "link": "https://www.livemint.com/news/india/petrol-diesel-rates-on-april-20-check-fuel-prices-today-in-delhi-mumbai-bengaluru-other-cities-11776650188042.html",
+        "publishedAt": "2026-04-20T02:33:35+00:00"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Stocks to Watch today, Apr 20: HDFC Bk, ICICI Bk, YES Bk, Groww, Trent",
+        "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOYm9aeEFoaFFITWd3d2xyamgyWS1adUxyeTBlUDFPay05d0Z3bE1YTVl6cXhBbHgtbVhGOTUxN19Xd1BlNUtFRmVpbVQzbG1tTHdHZjBXM1BkRFBMMXFoM01nMkpEOUxucnFncmxielk0WlpfT1ZMcmhrcjVlS0FValAxOXcwYVdhRnNqUTllSm1oQklhbWI0REk1eEJUTDhUWlFpSFhQWkpPUXBNOTVUZlJqalJ2bkQxajRtTUN2Y3RCVV9sU2ZvM0dsa2lhQXZjQ3ExZlhQSHFYRXhHWmEzbUowWS03X000NEJodkZhUDR1QdIB9wFBVV95cUxNTEJVckRTNDBhdUtpSE00VWJXU0lfUFg1amtmS0pkR3NSQ2VFWm93bmtZSkxxNU5nT3ZPWlh1dEhldEVPeGZEdEdfNzdZd2w1RFJqQkVYTy1oZjRxQ3pFZnJydjVLTHZSVWthQTJUdnYyRTVXYkpYYlhJdl9ZYjk4dTNXQkpNUTc1cWdiQlBxVE1NVnctcGtkYXRpT1lweldMeUhsWWZ2WEVYdmZYQU5IRlgzRXk3Zm45WDQ5eVNja0dRblYtUXhybGZPTjhOeHVpZ1QzRDRDZE1hUVlpODNHdFlyTG5sSmhHNVZoTGNoVm0wVHRZUFI4?oc=5",
+        "publishedAt": "2026-04-20T02:29:04+00:00"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Japan\u2019s Opposition Urges 5-Year Path to Achieve Primary Surplus",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-20/japan-s-opposition-urges-5-year-path-to-achieve-primary-surplus",
+        "publishedAt": "2026-04-20T02:00:00+00:00"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Top stocks to buy: Acutaas, Prudent, Steelcast signal upside, says analyst",
+        "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxObjE2LXZMOG1YOUdFdHlYbmoyTnB1Vy1WTGJyaWdZeW5FSWszUjF5RzRSTGJUQXZaNHlIQ2VKVnpKbmx0WEZVcURGTE9yY3Y2SngtcmdtMzA5NS1DcUpZcU1GNWJhandvMWFQZXlHSHY1TzhpV054MVIyMjItRXNoWkdnN1Vsd1VNWk4zUFV4aUx1Z052MEdIRnpFR3FubUtPU3cwbGUtdXpiQmZZUGNmbzdhdjZURGUyc21YOC05cUJHSEZTTW94MDFsNGN1b1hZSW00Uk1fTk5RWkZueExqUG5aUDh1d9IB6wFBVV95cUxNZ2RmZ2VRMmxlSWFjc3NNZWtyb1RaZ0FHbDlYRDlmZnZTblpualR5N3phbnp1WkFVMk5uanlFRm1sMFUwejBZeGJYNW45NVhFdnkzalduN1VCU25YSFpUVmYwYWJfTTBjdEFYVFJSVC1yc1dhWE9oVVd6dTFFbzBFUjYybWs2aUhmbTRqSnJlWUs1dzNmM0d3VG5EQTFDV2F1R2d1eWx6ZUhsMFpNdThUcmJ0TVpQSUlDWEw2M3VsTGh3S2w0a1A4SUhmZXhySHVwcmdWVmJJYnpIeURFclVWZFVGLTYyd1M5NlZj?oc=5",
+        "publishedAt": "2026-04-20T01:30:00+00:00"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Bank of Korea\u2019s Outgoing Governor Flags Limits to Policy Tools",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-20/bank-of-korea-s-outgoing-governor-flags-limits-to-policy-tools",
+        "publishedAt": "2026-04-20T01:01:17+00:00"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Oil prices rise anew after US-Iran standoff in Hormuz strands tankers",
+        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZy1kUURNV0tXRkluUUY2eFRQTzE4Mm14Z1pkeEE5VUVyNmRweHBEckw3ek52NmxkcDVib1lFa0NZMU5TWEZGZTBqMXJNbjd5bzZIaW1uRldYdmkyU1RmTHZiWWNnX1N5cFhUdVZiX0lFVDJldng0ZkdRZjg5NTNVZkc5TG9MLW5BVS1kamlCYVN3WGxyalNKTUhDT2d0MWJIVzVPbE9zckU4QTh2RE90c0lTSHZzakN5cy1maWFxQXJ5aDAtRVBsWC1IMV95VWpaTTBSelpjeDlReXfSAeABQVVfeXFMTUstUFlkUkpEbk5LRjNFUzBzaHg4ZFJfb2U5bUVGdXNoUy1zOExmbnU0RFZYQkpnQmxkOTBGamV3Q1h0UVV1NTVyRXhaRTNjMFh4amUzR18xSm5XWk9mc0pubnY4UnF2MmMwZXF1ZUxVNXJTdzZVc3B0bmNReXFUdTk4YklQQml0cUhHUDZiaTF6RXRTTE5UbkoyNWltWGphYU1kZzloaFNDQ1c2QUVZY0FwZ0x3WGdiREtlZEtiZVl2YmpROHBiYVRvTXBsam00ZE9pLU9Bc1JDSFZkRjJVazU?oc=5",
+        "publishedAt": "2026-04-20T00:58:19+00:00"
+      },
+      {
+        "source": "Livemint",
+        "title": "When will gas prices drop in US? Trump's energy secretary makes grim forecast: \u2018Might not happen until\u2026\u2019",
+        "link": "https://www.livemint.com/news/us-news/when-will-gas-prices-drop-trumps-energy-secretary-makes-grim-forecast-might-not-happen-until-2027-11776644002243.html",
+        "publishedAt": "2026-04-20T00:27:11+00:00"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "UAE in Talks With US for Possible Financial Lifeline, WSJ Says",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-19/uae-in-talks-with-us-for-possible-financial-lifeline-wsj-says",
+        "publishedAt": "2026-04-19T20:39:54+00:00"
+      },
+      {
+        "source": "Livemint",
+        "title": "World News Today Live Updates on April 20, 2026 : Iran turns down fresh peace talks with US, blames Washington\u2019s \u2018unrealistic expectations\u2019",
+        "link": "https://www.livemint.com/news/world/latest-world-news-on-april-20-2026-live-updates-11776631080895.html",
+        "publishedAt": "2026-04-19T20:38:00+00:00"
+      },
+      {
+        "source": "Business Standard",
+        "title": "'Still expect double-digit earnings growth for Nifty 50 firms in FY27'",
+        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcXNfU1lOb1FkbENmOEJiN1o4RC1zTHJPZXNkQXk1NDh3SGJ4dndWelRlM2JuMVF4VHVUS1pXLWpEbXlsaTZGdlYwNkZUSXBwNUNVQXk2X1N0elhKb3JfcmtabGhNQlBBNzVVWnR1Y3Jfb2ptV1IyR2N4VTI1eHJnWTIzVVdxdjhNV0llS2FpMDktSERlUEhVOE5naWxEUzdJV2xCTDNib3VKV3FWMHMxWHVUUTM2Y09xbjdXODJRS1VVWERsNXY0TWlkcUpwSU1KX1RMRWNR0gHbAUFVX3lxTFBrNHVMc2hDZU5RazhyQ3lZQTZuelY5UHFQOUFkUnNKR1MwTmFPVmUwOGh4UTZLZUlLaFpVZ3JKQ0lBLTczZW5nNkpJaGc5MTRPNkc3SjlWc3FaTnd1LXppMzJNMXdtUlB5X1RlbVVnZ1BwY2JEY2gxVndzN3RhbGo0eWRkUVZHaWNKUm5rWlVzRVNJYTQ5SkY4bzFuYUdpQTZQTjZPWjd6YnZFdHg5QkR4QnBMbGM2QU8yRWNHQ0dkMWNKTTZFU3E0a3VLWkgwU1l4eE1nQXhSY2lnYw?oc=5",
+        "publishedAt": "2026-04-19T18:00:38+00:00"
+      },
+      {
+        "source": "Livemint",
+        "title": "\u2018Over 500 parcels in one shift\u2019: Amazon driver shares what \u2018normal\u2019 route looks like, sparks debate",
+        "link": "https://www.livemint.com/news/trends/amazon-driver-shares-what-normal-route-looks-like-viral-video-sparks-debate-11776616707323.html",
+        "publishedAt": "2026-04-19T17:16:03+00:00"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "War Revives Stagflation Dangers for Global Economy",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-18/war-revives-stagflation-dangers-for-global-economy",
+        "publishedAt": "2026-04-18T20:00:00+00:00"
       },
       {
         "source": "Bloomberg Economics",
         "title": "ECB Moves Away From April Hike as Peace Talks Progress",
         "link": "https://www.bloomberg.com/news/articles/2026-04-18/ecb-moves-away-from-april-hike-as-peace-talks-progress-overview",
         "publishedAt": "2026-04-18T14:00:12+00:00"
-      },
-      {
-        "source": "Livemint",
-        "title": "MEA summons Iranian envoy Dr Mohammad Fathali after India-flagged tanker shot at near Hormuz: Report",
-        "link": "https://www.livemint.com/news/india/mea-summons-iranian-envoy-dr-mohammad-fathali-after-india-flagged-tanker-shot-at-near-hormuz-report-11776514382022.html",
-        "publishedAt": "2026-04-18T13:29:20+00:00"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Marsons bags Rs 15-cr order from Inox Solar",
-        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNWEdnVlJBa3hUQ1N3ZzFxOGlMZWRzU0JnbGhVQzhoV0tjYVZ1YnowaTdBd1QwSmExOHE4QkRzZ1R2V3NoaE9vMUxZdmh0ZFdPYUJtb2NUU0hnM3JSdF8xNXlWaEpPVVhBa1VmZGstVHRNSTliT09IdWk1U3FLNF9ONWRlNVlSY2tHMXNLWnoxRFI3LXJ3MDBEOFBnUF9DVURHeUR5NjRoVUR5TmdmVGlyWWZ2Z2Y5LWhyQzNKSEstdWFrN0HSAcgBQVVfeXFMTUV6OTA5ZDFiWTV5eG9uaFQyUmdnR3M5OHBDVWlhQWVlZllxLW1CdS1xdUFEdG5iVDZka2lEQ3Q5N0R0N1RGRU1YWGFBeFJ4MlcxMEVTZldnVEtrNUJmWXhrRS1KM3B5MTBieW9XdFJhZ2VST0VENTBuWXVlUGs5eGZsMzVfQnVIUzRSWnpJUEpWWlZBZVFWN0R3Zmd5WGVHRFBoSFZYRHExTU1OVWd4c1g5YzJlSThHYVI2NGpERWFWVl8wVDNjR3I?oc=5",
-        "publishedAt": "2026-04-18T13:20:02+00:00"
-      },
-      {
-        "source": "Business Standard",
-        "title": "ICICI Bank records PAT of Rs 13,702 crore in Q4; board OKs dividend of Rs 12/share",
-        "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQVlpRd2JRMnFDcDJmLV93OHFSNVhmYm9OUk9TSUw4WEdwME1QOEdKRXNHTm44YWpjY1gyRGNsOGVZcmljVTNFZlVxTmxQSDBGRFctclFIcVVfYS1HTzhXOTdiVWZUOC1ibi1rQ3NOU3lLQ2FJRnh1dWlFYUpqVnFsMllyeXZoVWh4eGV3cTdtQnhaTFB3dUJHVkxNRGVnRlVreWdvRldDal9oaDdabHloRlZJZVBwQndnZndaTXRvaEk2YUxiUkJERGJheE9RMG5MZzFobXFrWEtlbUVsVEtlZzdzNTFtaWRVY1ZPOEJ3dWJleExMY0HSAfsBQVVfeXFMUHpCRFJLRUNBTDhKOF85RC13V0FuY1o2Y3JvcFEzOExpQV9uQ2gxU1R3RFBNRVA3RS1ONE5UZDNxU3ZSMFR4ZVlabDNPYTVfWDFuTElmVnc4S2FZNmNaTjBYTG5ZYXB4d0hRcTZiSmJIRC1POFZFU1I4RlZoV2lJTk9kUHcxbHdLbzg5QUxnaTFoM2VNaE5HYUJjanNFcWp3MEJTZGR6b3JPTmlZdmZNY3hvNUdLWUhObDZEU0NXc3o3Q0dQam1LclVjN2s0ZDdxbUJudWpTUlYwbVpWX2pXdVM3LVpLdnJfN0pkVzREc1F1SWJZZFZfWi10U2s?oc=5",
-        "publishedAt": "2026-04-18T12:20:48+00:00"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Network 18 Media & Investments reports consolidated net loss of Rs 30.52 crore in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNSklFWUFWU2QtZ1BmYVdzZlMtZXh1RF9JcU42S3hteFpxNVJTSVQ4ZkZyWXBOaXBKUVMyWTN3RnRpdVBjWFIyeWpDcTAtSjR1Q2pmclg3RVFaMnhIVm9yNzg0WjF4cFdpWnZ4ZGJXZVcxUnk4c3ZSU3pLbG1jNG1veVNzN2MyZVJFQnlzVktRZkdMT204bGlLcTl1QzlUQThCMGFkQXgxT0xZSzF1YS0zelU3M29WWEM2dm5BNnhfbFg4YzByTHlXdnJNb2xMQWI2OV9JTTlvZ0pHYXgwcUxZNjRFNTNVTXV3RF8wQ2RtcW84OU9IdWlZMFJ1RnowQ21NcjZlTmgtbXZPaS16R2NBSFl30gGXAkFVX3lxTE82RkJpa1FxclhGWUtISGx1WGlhYkhUekM4N1ljdHZvUWVOaHhNSmFKWm85bEVweVdhdDdYdUdjMkNCMG15QVpyTnRkRzliMmRTc2VLTDZONnhUam9ZeTB2bzQxZWdQQXFEdldKeVp0WWhvTXI5M3I1ekVBS01rYWlOTk9vNHRuSFBHZVNvYUpaT0N0Ykl0VGROX0VCSHBDdUR6TjhyMFdLZFRtXzVFenlMaDBqNzdQQlI0Nm13OWNmUTk4c1hmMTJIa1lRNzJNb1JVUm1JZjB5ekVyQnlsMzlLcnJhN19scFlld2lLRlhVMjE0WXoxRDZTRFEzSkE3LWlCcnlCalk1NUtmVWxfejdWUVBFU216dw?oc=5",
-        "publishedAt": "2026-04-18T12:20:30+00:00"
-      },
-      {
-        "source": "Business Standard",
-        "title": "ICICI Bank consolidated net profit rises 9.28% in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNZjRJNkNxVl80aUk2cWc4YWJ2bUlBV2t4ZE92c3F6UnF4akRoZ2FzRG1RQnU3RmZkRE04OW1lc0liZkF0VlkyaXlxNlpWZ1FNR3o2cmEzTHNwV0dYcGtpUno4b1Y0Tk1nUWtGWWxHM3BmNlQ1V0pGclFTQjdid0ZoN21SY2hxN2tKZkVRbnVtNnM0ajVJT09vb2hYcUJoemtKSllkT3I1SFVRTzdWWEhITVJ6SGh3MFFBN2ZqbW82WlB5anNTWkxuN2RrSUFheDJjTWFwOXgtSElEaXlIRXdtYV95RFYzV0ZC0gHuAUFVX3lxTFBCTTZORW1HVlFhSnlxMUJWOUN2ZlRocmc4ekNiYlVRQVprVDZOQzYwMi1qSUxiVGRCQzdIakJlZ3d1d0p4RGRjSi1YSEJhTXB1N2RST2hLVktvQVgyMDZQeHV5ZGcyNW1aOUN0TzdQcGlEb0l0RTQ1Y1VBWndEYXhLaXhMRnNkRlBrbnNqQmVHZEFxX21mMHNwa2U2ZDlERHAtX1dxalpnVGd4RFgtWFY4MG9OMWZ1NHEwS0NhSzVRVnFkM2dZSi1jTEl3YXhfZURHRjR2aWhkRXI3SlRFU3FNZTQ3VWhFczl2SE9WeGc?oc=5",
-        "publishedAt": "2026-04-18T12:20:23+00:00"
-      },
-      {
-        "source": "Business Standard",
-        "title": "HDFC Bank consolidated net profit rises 8.05% in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPZmlXbDRraHI4dzFmeWVCREU3YTRSTnJNVUozQ2JlNU4wUXRXdnJTYjBwZEJ3NmNNLVFlbDlnNkhSTnhYRWZ5QU1JRFlhQUtQVDlwTVVBQ0VXdTBkcGlLMXZfMHRRN2I2LTlQSGtHeDZiSlZUYzJNS2NISHV3Y3RpN1JDSmNfa2lZNlhyaGJaN29qNFlpZ1JmZnZ4TVQ1dHBheW52dDcwSWFnVFg4elYwZHY1YnBkZE9hd0xHOFduVFJ1N1NYV19yY3Y2SFdjanAxU0Ywb0lSTFNlTGo4S2lOdEd4aTZGRnfSAewBQVVfeXFMTXlvMmNSb0dWYjBzVXB6YmljT25sd29NbHVnYTE5RWxnRVVtUC1FZXVxbnNfcncwc1ZXVjNHQjR3YU5ULVR2MXBGWE5tZWhZRVRzNUF3b2dkdThXQzFVWnVtdmZEamJMUlpRYUdpMW9POUxXUkRMbDlnWW9XbFAzOFZVYm9ZRGV3SGtHWkdIaTFieTh3STh3R1plZ0lzUVNlRHBtQWdBZ0JVTENzRmctclVGOVNickhGRFJPVGdvb2Y1VkpzaUkwRjU3U2xOcjd1eVY0Ui1ubGYzcGx5cTM1elZ6SUtkcXZfOThlMTQ?oc=5",
-        "publishedAt": "2026-04-18T12:20:15+00:00"
-      },
-      {
-        "source": "Business Standard",
-        "title": "HDFC Bank Q4 PAT rises 9% YoY to Rs 19,221 crore; declares dividend of Rs 13/share",
-        "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPREo3Z3doaEQ1bzNjRENyMTJFVC1qcGMyTG8zQ0s1c1o3QUdFMDROVTZYTW1LUE12WkVFOG1WbXQ1QUJJM3I3OUJPNlV2Y0JRbVl4VjdZSk5vZ01hMnZmUENSZTJDQ1VuSnkzcTJFclVOZWNWNmVoSUlidGlMNktSZHc2RGhIT2FSMVQ3TW9TWlVFUDFmVF9ueXJ2a1RPNm5sTVJIdllqWkpKNFA5UVBCTV9YTzVNMndjT1dEa0tkbzZzUnRxejNJZHdyb2dfUjk3SzBBRG1PNzhzUnRmY3B2SGdxZFpPc1ZpWndJVlFSUGRqNFY10gH6AUFVX3lxTE1BakUyM3ZoVzNJb2FzWVBhTzRtaUROWFJWYTV2WTRwdmJpT0xtMW5sM0ZTeGM1a2tZYTBDcUdwb0tsMmdvRkZrQkpjenU0Q0NvdEdnTkVjTG9zaXRIUWNjaUV3cVlwRjFsaDdfUTh2aDJDMWxxSUpzUDg2M2lzRGZTNkhOajhySXNSTWM1V28tRkpzQ3k1ekVNVXk0Rm5CVm9rSUJPVHYyWTNuVzFLQVVTRUNUc0p1WjlQWHlqai1tNUFnN0owdm0yTV9lZFRIM0JBamhhdGxSR19nd3k1SEw4UUZxeVRNbktQTlpYWUpNblV6R1g3M2tUM3c?oc=5",
-        "publishedAt": "2026-04-18T12:01:01+00:00"
-      },
-      {
-        "source": "Livemint",
-        "title": "India receives oil shipment as supertanker amid blockade, says Iran as Tehran reimposes restrictions on Strait of Hormuz",
-        "link": "https://www.livemint.com/news/world/india-receives-new-oil-shipment-dorena-amid-blockade-says-iran-as-tehran-reimposes-restrictions-on-strait-of-hormuz-11776510037776.html",
-        "publishedAt": "2026-04-18T11:14:10+00:00"
       }
     ],
     "sourcesAvailable": [
