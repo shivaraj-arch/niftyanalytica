@@ -9,6 +9,7 @@ const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
 const WEEKDAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const AI_REFRESH_HOURS = [6, 9, 12, 15, 18, 21];
 const REALTIME_REFRESH_MS = 60 * 1000;
+const IST_TIMEZONE = 'Asia/Kolkata';
 const NSE_HOLIDAYS_URL = 'https://r.jina.ai/http://www.nseindia.com/api/holiday-master?type=trading';
 const MARKET_TAPE_PROXY_BASE = 'https://r.jina.ai/http://stooq.com/q/l/';
 const MARKET_TAPE_SPECS = [
@@ -35,11 +36,6 @@ const LIVE_NEWS_SOURCES = [
     source: 'Bloomberg Economics',
     url: 'https://feeds.bloomberg.com/economics/news.rss',
   },
-];
-const MARKET_NEWS_KEYWORDS = [
-  'market', 'stock', 'stocks', 'economy', 'economic', 'inflation', 'fed', 'ecb', 'bank', 'oil', 'trade',
-  'finance', 'nifty', 'sensex', 'wall street', 'bond', 'currency', 'rupee', 'dollar', 'ipo', 'earnings',
-  'shares', 'fii', 'dii', 'rates', 'gdp', 'tariff', 'commodity', 'crude', 'buyback', 'profit', 'results',
 ];
 
 const setText = (id, value) => {
@@ -95,6 +91,21 @@ const fetchLiveMarketTape = async () => {
   };
 };
 
+const toIstLabel = (value) => {
+  if (!value) return '-';
+  const date = new Date(value);
+  return Number.isNaN(date.getTime()) ? value : new Intl.DateTimeFormat('en-IN', {
+    timeZone: IST_TIMEZONE,
+    day: '2-digit',
+    month: 'short',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: true,
+  }).format(date).replace(',', '') + ' IST';
+};
+
 const fetchLiveHeadlines = async () => {
   const results = await Promise.allSettled(
     LIVE_NEWS_SOURCES.map(async ({ source, url }) => {
@@ -103,10 +114,9 @@ const fetchLiveHeadlines = async () => {
     })
   );
 
-  const candidates = [];
+  const items = [];
   const sourcesAvailable = [];
   const sourceErrors = [];
-  const maxItemsPerSource = 5;
 
   results.forEach((result, index) => {
     const source = LIVE_NEWS_SOURCES[index].source;
@@ -117,55 +127,29 @@ const fetchLiveHeadlines = async () => {
 
     const feedItems = result.value.payload?.items || [];
     sourcesAvailable.push(source);
-    const sourceItems = [];
-    const seenWithinSource = new Set();
 
-    feedItems.forEach((item) => {
-      const title = cleanHeadlineTitle(item.title || '', source);
-      const description = item.description || '';
-      const publishedAt = item.pubDate || item.publishedAt || '';
-      const titleKey = normalizeHeadlineKey(title);
-      if (!titleKey || seenWithinSource.has(titleKey) || !isMarketStory(title, description)) {
-        return;
-      }
-      if (!Number.isFinite(Date.parse(publishedAt))) {
-        return;
-      }
-
-      seenWithinSource.add(titleKey);
-
-      sourceItems.push({
+    feedItems
+      .map((item) => ({
         source,
-        title,
+        title: cleanHeadlineTitle(item.title || '', source),
         link: item.link,
-        publishedAt,
-      });
-    });
-
-    sourceItems
+        publishedAt: item.pubDate || item.publishedAt || '',
+      }))
+      .filter((item) => item.title && Number.isFinite(Date.parse(item.publishedAt)))
       .sort((left, right) => new Date(right.publishedAt) - new Date(left.publishedAt))
-      .slice(0, maxItemsPerSource)
+      .slice(0, 5)
       .forEach((item) => {
-        candidates.push(item);
+        items.push({
+          ...item,
+          publishedAtLabel: toIstLabel(item.publishedAt),
+        });
       });
   });
 
-  const items = [];
-  const seenTitles = new Set();
-  candidates
-    .sort((left, right) => new Date(right.publishedAt || 0) - new Date(left.publishedAt || 0))
-    .forEach((item) => {
-      const titleKey = normalizeHeadlineKey(item.title);
-      if (seenTitles.has(titleKey)) {
-        return;
-      }
-      seenTitles.add(titleKey);
-      items.push(item);
-    });
-
   return {
     updatedAt: new Date().toISOString(),
-    items,
+    updatedAtLabel: toIstLabel(new Date().toISOString()),
+    items: items.sort((left, right) => new Date(right.publishedAt) - new Date(left.publishedAt)),
     sourcesAvailable,
     sourceErrors,
   };
@@ -193,11 +177,6 @@ const fetchLiveSnapshot = async () => {
       apikey: SUPABASE_PUBLISHABLE_KEY,
     },
   });
-};
-
-const isMarketStory = (title, description) => {
-  const haystack = `${title} ${description}`.toLowerCase();
-  return MARKET_NEWS_KEYWORDS.some((keyword) => haystack.includes(keyword));
 };
 
 const cleanHeadlineTitle = (title, source) => {
@@ -244,7 +223,7 @@ const loadRealtimeData = async () => {
   if (headlinesResult.status === 'fulfilled') {
     try {
       renderNewsFeed(headlinesResult.value);
-      setText('newsFeedStamp', formatDateTime(headlinesResult.value.updatedAt) || '-');
+      setText('newsFeedStamp', headlinesResult.value.updatedAtLabel || formatDateTime(headlinesResult.value.updatedAt));
     } catch (error) {
       console.error('Headline render failed', error);
       renderHeadlineError(error?.message || 'Headline rail render failed.');
@@ -681,14 +660,14 @@ const renderNewsFeed = (newsFeed) => {
     return;
   }
 
-  meta.textContent = blocked ? `Showing up to 5 latest headlines per source. Sources: ${sources}. Unavailable right now: ${blocked}.` : `Showing up to 5 latest headlines per source. Sources: ${sources}.`;
+  meta.textContent = blocked ? `Showing 15 latest headlines in IST, with 5 per source. Sources: ${sources}. Unavailable right now: ${blocked}.` : `Showing 15 latest headlines in IST, with 5 per source. Sources: ${sources}.`;
 
   list.innerHTML = items.map((item) => `
     <li class="news-feed-item">
       <a href="${item.link}" target="_blank" rel="noreferrer">
         <span class="news-source">${item.source}</span>
         <span class="news-title">${item.title}</span>
-        <span class="news-time">${formatDateTime(item.publishedAt)}</span>
+        <span class="news-time">${escapeHtml(item.publishedAtLabel || formatDateTime(item.publishedAt))}</span>
       </a>
     </li>
   `).join('');
@@ -889,7 +868,16 @@ const erf = (value) => {
 const formatDateTime = (isoString) => {
   if (!isoString) return '-';
   const date = new Date(isoString);
-  return Number.isNaN(date.getTime()) ? isoString : date.toLocaleString('en-IN');
+  return Number.isNaN(date.getTime()) ? isoString : new Intl.DateTimeFormat('en-IN', {
+    timeZone: IST_TIMEZONE,
+    day: '2-digit',
+    month: 'short',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: true,
+  }).format(date).replace(',', '') + ' IST';
 };
 
 const formatNumber = (value) => {
