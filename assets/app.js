@@ -91,10 +91,24 @@ const fetchLiveMarketTape = async () => {
   };
 };
 
+const parseFeedDate = (value) => {
+  if (!value) return null;
+  const rawValue = String(value).trim();
+  if (!rawValue) return null;
+
+  // RSS feeds sometimes omit timezone info; treat those timestamps as UTC.
+  const normalizedValue = /(?:z|[+-]\d{2}:?\d{2}|gmt|utc)$/i.test(rawValue)
+    ? rawValue
+    : rawValue.replace(' ', 'T') + 'Z';
+
+  const date = new Date(normalizedValue);
+  return Number.isNaN(date.getTime()) ? null : date;
+};
+
 const toIstLabel = (value) => {
   if (!value) return '-';
-  const date = new Date(value);
-  return Number.isNaN(date.getTime()) ? value : new Intl.DateTimeFormat('en-IN', {
+  const date = parseFeedDate(value);
+  return !date ? value : new Intl.DateTimeFormat('en-IN', {
     timeZone: IST_TIMEZONE,
     day: '2-digit',
     month: 'short',
@@ -135,8 +149,8 @@ const fetchLiveHeadlines = async () => {
         link: item.link,
         publishedAt: item.pubDate || item.publishedAt || '',
       }))
-      .filter((item) => item.title && Number.isFinite(Date.parse(item.publishedAt)))
-      .sort((left, right) => new Date(right.publishedAt) - new Date(left.publishedAt))
+      .filter((item) => item.title && parseFeedDate(item.publishedAt))
+      .sort((left, right) => parseFeedDate(right.publishedAt) - parseFeedDate(left.publishedAt))
       .slice(0, 5)
       .forEach((item) => {
         items.push({
@@ -149,7 +163,7 @@ const fetchLiveHeadlines = async () => {
   return {
     updatedAt: new Date().toISOString(),
     updatedAtLabel: toIstLabel(new Date().toISOString()),
-    items: items.sort((left, right) => new Date(right.publishedAt) - new Date(left.publishedAt)),
+    items: items.sort((left, right) => parseFeedDate(right.publishedAt) - parseFeedDate(left.publishedAt)),
     sourcesAvailable,
     sourceErrors,
   };
@@ -867,8 +881,8 @@ const erf = (value) => {
 
 const formatDateTime = (isoString) => {
   if (!isoString) return '-';
-  const date = new Date(isoString);
-  return Number.isNaN(date.getTime()) ? isoString : new Intl.DateTimeFormat('en-IN', {
+  const date = parseFeedDate(isoString);
+  return !date ? isoString : new Intl.DateTimeFormat('en-IN', {
     timeZone: IST_TIMEZONE,
     day: '2-digit',
     month: 'short',
