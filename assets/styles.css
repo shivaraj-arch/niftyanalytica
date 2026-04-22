@@ -74,8 +74,7 @@ body.modal-open {
 .hero-copy,
 .hero-panel,
 .card,
-.section-nav,
-.footer {
+.section-nav {
   backdrop-filter: blur(20px);
   background: var(--card);
   border: 1px solid var(--card-border);
@@ -88,8 +87,7 @@ body.modal-open {
 }
 
 .hero-panel,
-.card,
-.footer {
+.card {
   padding: 28px;
 }
 
@@ -901,10 +899,41 @@ tbody tr:hover {
   align-items: center;
   gap: 12px;
   margin-top: 24px;
+  padding: 8px 0 0;
+  color: var(--muted);
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  backdrop-filter: none;
 }
 
 .footer a {
   color: var(--accent);
+}
+
+.footer-copy {
+  display: grid;
+  gap: 8px;
+}
+
+.footer-brandline {
+  margin: 0;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+}
+
+.footer-separator {
+  color: rgba(20, 49, 59, 0.44);
 }
 
 .playstore-footer {
@@ -978,6 +1007,7 @@ tbody tr:hover {
 
   .footer {
     display: grid;
+    gap: 16px;
   }
 }
 
@@ -1016,6 +1046,10 @@ tbody tr:hover {
 
   .toggle-control {
     align-items: flex-start;
+  }
+
+  .footer-links {
+    gap: 8px;
   }
 
   .ticker-grid {
