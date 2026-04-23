@@ -271,6 +271,7 @@ const loadRealtimeData = async () => {
 
 const renderAiError = (message) => {
   setText('aiAnalysisStamp', 'AI refresh pending');
+  setText('aiModelMeta', 'Model routing unavailable.');
   document.getElementById('aiSummaryText').innerHTML = `<p>${escapeHtml(message)}</p>`;
   renderMetricGrid('aiSummary', [
     { label: 'Agent', value: '-' },
@@ -318,11 +319,26 @@ const renderLiveError = (message) => {
   document.getElementById('bidAskChart').innerHTML = `<p>${message}</p>`;
 };
 
+const buildAiModelMeta = (aiAnalysis) => {
+  const activeModel = aiAnalysis.model || aiAnalysis.requestedModel || '-';
+  const requestedModel = aiAnalysis.requestedModel || activeModel;
+  const attemptedModels = Array.isArray(aiAnalysis.attemptedModels)
+    ? aiAnalysis.attemptedModels.filter(Boolean)
+    : [];
+
+  if (!attemptedModels.length) {
+    return `Active model: ${activeModel}`;
+  }
+
+  return `Active model: ${activeModel} | requested: ${requestedModel} | tried: ${attemptedModels.join(' -> ')}`;
+};
+
 const renderAiSection = (aiAnalysis) => {
   setText('aiAnalysisStamp', formatDateTime(aiAnalysis.generatedAt) || '-');
+  setText('aiModelMeta', buildAiModelMeta(aiAnalysis));
   renderMetricGrid('aiSummary', [
     { label: 'Agent', value: aiAnalysis.agent || 'ADK Multi-Agent' },
-    { label: 'Model', value: aiAnalysis.model || '-' },
+    { label: 'Model', value: aiAnalysis.model || aiAnalysis.requestedModel || '-' },
     { label: 'Bias', value: aiAnalysis.bias || '-' },
     { label: 'Status', value: aiAnalysis.status || '-', tone: aiAnalysis.status === 'ok' ? 'positive' : '' },
   ]);
