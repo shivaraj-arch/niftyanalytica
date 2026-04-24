@@ -1,27 +1,27 @@
 {
   "marketTape": {
-    "updatedAt": "2026-04-24T16:24:43.657728+05:30",
+    "updatedAt": "2026-04-24T19:46:04.002460+05:30",
     "items": [
       {
         "label": "S&P 500",
-        "last": 7108.4,
-        "changePercent": -0.14609203798393752,
+        "last": 7125.0,
+        "changePercent": -0.16394131741560972,
         "source": "Stooq",
-        "updatedAt": "2026-04-23 23:00:00"
+        "updatedAt": "2026-04-24 16:15:31"
       },
       {
         "label": "Dow Jones",
-        "last": 49310.32,
-        "changePercent": 0.0516791671274259,
+        "last": 49139.3,
+        "changePercent": -0.46023112839678143,
         "source": "Stooq",
-        "updatedAt": "2026-04-23 23:00:00"
+        "updatedAt": "2026-04-24 16:15:30"
       },
       {
         "label": "Nasdaq",
-        "last": 24438.5,
-        "changePercent": -0.46937840452069435,
+        "last": 24611.451,
+        "changePercent": 0.031706677667742295,
         "source": "Stooq",
-        "updatedAt": "2026-04-23 23:00:00"
+        "updatedAt": "2026-04-24 16:15:43"
       },
       {
         "label": "Nikkei 225",
@@ -39,102 +39,102 @@
       },
       {
         "label": "FTSE 100",
-        "last": 10399.8,
-        "changePercent": -0.596432872627186,
+        "last": 10409.2,
+        "changePercent": -0.5065856129685916,
         "source": "Stooq",
-        "updatedAt": "2026-04-24 12:54:21"
+        "updatedAt": "2026-04-24 16:15:49"
       },
       {
         "label": "DAX",
-        "last": 24073.86,
-        "changePercent": -0.5255557093597125,
+        "last": 24103.71,
+        "changePercent": -0.40221395352681044,
         "source": "Stooq",
-        "updatedAt": "2026-04-24 12:39:21"
+        "updatedAt": "2026-04-24 16:00:33"
       },
       {
         "label": "Crude Oil",
-        "last": 97.04,
-        "changePercent": 0.3204796857231493,
+        "last": 95.27,
+        "changePercent": -1.5093559392122484,
         "source": "Stooq",
-        "updatedAt": "2026-04-24 12:54:41"
+        "updatedAt": "2026-04-24 16:16:01"
       },
       {
         "label": "Gold",
-        "last": 4677.115,
-        "changePercent": -0.4952775245484826,
+        "last": 4729.825,
+        "changePercent": 0.6261175922448938,
         "source": "Stooq",
-        "updatedAt": "2026-04-24 12:54:40"
+        "updatedAt": "2026-04-24 16:16:00"
       }
     ]
   },
   "newsFeed": {
-    "updatedAt": "2026-04-24T16:24:44.798866+05:30",
+    "updatedAt": "2026-04-24T19:46:05.425128+05:30",
     "items": [
       {
         "source": "Bloomberg Economics",
-        "title": "Russia Cuts Key Rate to 14.5% Amid Economic Woes, Iran-War Risks",
+        "title": "US Consumer Sentiment Falls to Record Low on Inflation Anxiety",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-24/us-consumer-sentiment-falls-to-record-low-on-inflation-anxiety",
+        "publishedAt": "2026-04-24T14:00:00+00:00"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Indusind Bank reports turnaround Q4 numbers",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMFVabVBOcXhaQnhlN2JCakd2TW5PWTRHTjctUWQxY1U0d1U2Mkk0VkJiVHhGRDU2RXQzTkYyakpsZzlIOUVjR2Y2dUphcmhMZER5aXY4UXdheXN4d0RQTFFwcGdObFcyWDVjemZIYXgxNWZXOFRZbTJseXVJcnVrSVFpQWhmU3ZxUTBFa3NqeDJMT3ZNc2pMb2tXVUlSSUVLNWJxcHVmMVBMRVh6UWdHSmV6R3dQY0x2bXlhTUFkdnk3OTjSAcgBQVVfeXFMTnV5Vm1hbmpZRHhuWDlNTlQ1TWV5Rzh5SWRYX1FEcERYbndFX3BTaGRHcDRya01zdWl3QTU3cVVtNXBROGdWZk9BQ1dZaElBNEE3cVZiS1FxeTh5Qm80enRfZmxtcktVVmlkX3VsUVA0UVphdkRoYkJXZTNvdjExSlJLTXpxQmhwT1cyeEh4RGxEMFowcVVyd3pQMUNBc3IzR3JlVFRfZkJKaUJVUVRaeURDY0pPdGhaS0lzZnYtb3M0TlpSRmFsQTg?oc=5",
+        "publishedAt": "2026-04-24T13:34:02+00:00"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Sebi sets December 2026 deadline for net settlement of FPI trades",
+        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQU1A5TVFsN3FkVUxiSC1nQWp1WmhIdjNnajFKZC1PV1AyNjRoM3A0c0FGUnRSY2FlU0ppbXhFQTNYd0NkNGhoalBwa2xLb0I5c3R6LXFSeWdUR3RwNV8wZFpzeWpnRDFnMEt3bXFPUG9Ta21lbDczakc2MWtkdzVmbUJEMFRPNFBmZlNja1I1alUxcU8tQnpZZVRJaEptTHM0SVJrbm1DcEhiZ2NXdDBoVkFLdTlEeW9pQm00aGItQ3lqNFFFU2xfVGJVeVnSAdIBQVVfeXFMUEtXS19iREw2NklXXzBwaGc2OExkalBTWWxsbHpXd2RpRVpXYWVfUDQ5SnBPU0JHQlMxSEN3akw1MTZvblYxb0dKRnZGZ2RMU3ZCcHlNYU1UbGtmRmdXeFFlUHZlWWFxWnhmNkpyQU1qU2hRdzRzd0ROWFhNVV94QlQ2eVB5NmVjbXEwdDgwdkYwU0k4YkNucXVFdVJPSEUteF9TbkhrYWZVb29uOE5uMmltb1JXanVFX3llTTRXMFhsV2t5TVlJTHJ2YTVQRDJtcmVn?oc=5",
+        "publishedAt": "2026-04-24T13:06:30+00:00"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Govt bond yields ease after choppy trade; rupee remains under pressure",
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPaVBKUzZoXzdIUlZucmlONnNkbFAxSjJPT0Jsb2o5SFp1RTBWT1ZLQkNfN3V4UHBkWWdZVHFlcXFaN1d5b29HeVpJQV9Uc1FScFdMRkNuWUh1eHdnaEpUdnpsQy1rZUp0WUowdXBuVlpJRlZiQVh5WEh0RVI0MldWR2V5TGo1UmZ3bXBGTXQ2S0d0LUZLRVlENy1ISkk4ZGMtNDIzeHR1bFhDM05ycjFic0U2ZlNPRmhMb1J0dVhUYmdvMFVpd1UzRmdNVURhSWctRWfSAdcBQVVfeXFMTVExa2JLQUsxTmtmX2dBT2VVWTRuMXJCVy1VRllTNHNSS1N5Xy0xNEhVaXpra2NNZE5fM0h0X0trd1doWmI5NTUwUnRJVUVBRkxIY0xTb0hES3NTZGpsQzZrdFhzeDZXT1J4Rld5RjFfT1dsMm4xbE5TZHMxakhTMnkyUjJkcXBDcjVaS0x5YWc3bmNRMTBvMHZxNWlxTnNsQjJZdFZIbGZMSHcxRFZnazZ2X2w1enFXb0wzMFRCdHozWWV6NkJkbl8xdUlHck9VYWN3cktTYk0?oc=5",
+        "publishedAt": "2026-04-24T12:49:09+00:00"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Is India's inflation targeting sufficiently capturing the digital economy?",
+        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxORlJEV2hHX2QxY2o4WUQzT1JlS3JubXFJVW9WemFnYWRiSFYtQzJmVjdnR21ucldsQkxET09qcVpORy1YTW85cFVCTEFYQnM1Qk9KblNyVlFPWk5WY0RheDk4clk5b2pVb25tbWZlNFR2eUNyTUw1Q01CUE81SVVUSkZ3R3l6eTBDRm91ZWIzODdBVldrZG16aV9NZWJ3d0dsTDRUeG9DbXY5ZjIxakRNZWUzZGhNWTNSRS0tOWZBUjJ1M2l2bTBHYlJobFVGcmpMNGQ5RnR2ekFDNkE20gHiAUFVX3lxTFBobWc4RC10T1VmdlNBenFRRjRnRFo1WXVZNlJNZU51ODdkN1RReEV0UFpkeFBNbTNYdTBlZ2gwU1VqbjVNVWVhdlU1MFN0SjNjYUptX3VTck5rbVNvX2ZuUGFFdnVHc1hmVG1OdWVVOUkxampiQ0hPY3JjZERQTFJLTEVHd2FsSzJSc1g1Uk10X0FxcGxnS3BCNms2RUNEWkduTGlvRHZTQW5xVDRlMjYzd3hiQjlJT3BnaFM1dkZRMV84aGdvVllXSllGOHZnaktNdVg2ZGMwMVhTU2dPUHJ4MlE?oc=5",
+        "publishedAt": "2026-04-24T12:39:22+00:00"
+      },
+      {
+        "source": "Business Standard",
+        "title": "India' bio-economy has expanded from $10 billion in 2014 to over $165 billion",
+        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOYWM3VmVXNmpqdXJwcm5Bb2xtdVdvVlVBSi1PYTRpcGREQWNTU1RRYklrOXFicEEtOWswRnhtWVBzbi0yMGdTNWpCNHhOLXlWUnFteGF1ODBaYXduRnI5b0RleUpTaXFTZW9pN0dMd0lFbHZqLXlFMW9iM2o2ZjZlUVA5eUR3TXFDbk56bjYzU2ZiUndjNzRteUx1MjRYQkVxSVpPODYtVmI0R0JHOHo2c1JCRE51UXFPSXNsVlhpb0tCd1E1b3J2VmxDVkRJMlNHbEMtYktuMDdKXzcybWw3QW9nM3dzZW52UVZ4etIB8gFBVV95cUxPUUlHVVFpMUMtb0JQeTZlU0w2THVXMWJYTUU3Q3ZuY0lFekhRMzQ3aFFrc1AxNFFGWXA0cjBpM3FQZkh0ekRzYTdvTEphTWZzNkt6cFNDMThnczlQNlVKTUo0TVlCTjNRdGkyWk9NQkNfZGhWLWdseXlDb09hdlJPWDF2b002UDRpLUIwbDNWZnY0eVk1MTBQc0x5ZWs5MTB5YW9sOXMzRXh6bmtObUZLUmxrcVdpWXFyckFQRk9hNGVCSE8yZ3N5R1E1UHhQVzFhbVlBUXhXQ3dlQVJ2bGtoLU8xUmJESC1oMFJSQm1tWGlGdw?oc=5",
+        "publishedAt": "2026-04-24T12:34:01+00:00"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Canadian Consumer Spending Rises for Third Straight Month",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-24/canadian-consumer-spending-increases-for-third-straight-month",
+        "publishedAt": "2026-04-24T12:30:01+00:00"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Oil-Price Surge Fails to Stoke US Energy-Sector Enthusiasm",
+        "link": "https://www.bloomberg.com/news/newsletters/2026-04-24/oil-crisis-latest-dallas-fed-survey-shows-producers-lack-enthusiasm",
+        "publishedAt": "2026-04-24T11:00:01+00:00"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Russia Cuts Key Rate With Eye on Iran War and Budget Risks",
         "link": "https://www.bloomberg.com/news/articles/2026-04-24/russia-cuts-key-rate-to-14-5-amid-economic-woes-iran-war-risks",
         "publishedAt": "2026-04-24T10:39:12+00:00"
       },
       {
-        "source": "Business Standard",
-        "title": "Benchmarks bleed for 3rd day; IT stocks crumble",
-        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdDhmZjdOVVhOS0k1X3FRUERycUw4eUl0a3J6elctSnUxN2E5RUdIYUxINU8tTkRHb3M5RXFudWVyNzN5VmV3ZngzYlN0ZnFtNW9ScFk0UjBrTmFYaFBOMGNTcGhZOHJTSU10NjM5OXZIVUJVcGt4LXpJWFl3MWpIaE52eTFKWGdnNFNsODd4SE5HQkFMZ291aDBwcVRQUG00dVFHb3ZFeVZxSjMyWDZ3bXlQUk91MGNEZ0NjcDdnYTE2MVh4dnlN0gHMAUFVX3lxTE84eUVGaUg1SVNMZ1l5dnhNU2hfRDZNbTdZRmUxUjIxRWN3empidDJnNE1vRE5FaktTMUJLd2c5SkM4N0pzdWdHbEN0UW42VUUxY01JN0ZNM2M1YTBhN29KdWFoWHFhYUVmVHI4Umt0bzFjMGVpMmtsOVFyc3EtbzlYQUJ4NHpFejVLMHVxM2lHZUpydENfdGJDR2oxU2NfRjdvdXhLSFZJS00zZTh4UWZDOVQ3YnpWWmJzVEJZV2tyeGRrNm15SGdEREhtVQ?oc=5",
-        "publishedAt": "2026-04-24T10:34:02+00:00"
-      },
-      {
-        "source": "Business Standard",
-        "title": "PPP lens shows India as world's third-largest economy in real terms",
-        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOdy0yQWpGaGNSWVNLeHk0d05XV25GcDJxVGZPb3JfR2NfS2ExUFJjNVZ5V1h0OXlQR01ZLWtIUXo0WU1VLXZXbnJZNDBjcnlaNHF1bFNnMzZSTTVkY2RmTHZtNXdFM0pUWWNmY3AtYzA1OEU2UmstVTFIaVBEdFYxcmJoeUVOeTlqTFhTUXN5ajJib3MxN2lFOU5IZjFHS2tFczR4Umk1cjQxRXp4YXBDaU90QUVjV2FyWmxialg3ZHJscFRSM1RvU2xFeXo1WXFfcTc5MtIB2gFBVV95cUxOMFhLSHcwZXlFQ1NQTkVQTTNSWUFUVHpsOUEtWFVuNHRJX09EdVJ4WVRNc1BCN0RWbkhHOXAteVpkQ0Jqc0E2NDFwZF9xcFFCZ2hHVzBrczRJblNZU3RUcGpPWVN3ZWFQa3hIekdhdm5oYjlncTdGLXBBSzlLZ1ZudVdXUzBUSE1SMWsyMXBjbTVNUVBNUzQxYkZQRnVxNDFsWkd0d21kUUpIRVhsbnVranplWFZ6X3Vra2FuWi1mM3hZdWcyaG1pOVA3czBKYlRUZUE5UWVXZTc1dw?oc=5",
-        "publishedAt": "2026-04-24T10:22:02+00:00"
-      },
-      {
         "source": "Bloomberg Economics",
-        "title": "Kazimir Says Slight ECB Rate Increase May Be Necessary on War",
+        "title": "Kazimir Says Slight ECB Rate Increase May Be Needed on War",
         "link": "https://www.bloomberg.com/news/articles/2026-04-24/kazimir-says-slight-ecb-rate-increase-may-be-necessary-on-war",
         "publishedAt": "2026-04-24T10:18:23+00:00"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Bank of England Surveys Suggest Energy Shock Isn\u2019t Fueling Wages",
-        "link": "https://www.bloomberg.com/news/articles/2026-04-24/bank-of-england-surveys-suggest-energy-shock-isn-t-fueling-wages",
-        "publishedAt": "2026-04-24T10:08:46+00:00"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Economists Raise US Inflation Forecasts as Iran War Drags On",
-        "link": "https://www.bloomberg.com/news/articles/2026-04-24/economists-raise-us-inflation-forecasts-as-iran-war-drags-on",
-        "publishedAt": "2026-04-24T10:00:00+00:00"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "ECB Moves to Smooth Digital Euro Rollout With Standards Deals",
-        "link": "https://www.bloomberg.com/news/articles/2026-04-24/ecb-moves-to-smooth-digital-euro-rollout-with-standards-deals",
-        "publishedAt": "2026-04-24T09:30:00+00:00"
-      },
-      {
-        "source": "Business Standard",
-        "title": "IT stocks slump as Infosys guidance disappoints; Nifty IT tumbles over 5%",
-        "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPZG1abzlSd21YOG0yX0FvNnp4ZlhFTUZhVzRta21UX29DU3ZsWkZfN0lxTDZXTWdXQ09xUHVVX2EzcjBuSExlblpCNXBlTkR1ZjR5dG5YYmtwWk9zY2F0ME9JQXhrUFN3UlZmR3Bxc3lLeEdBVDVOOXlWQUJ1ck5OTUFVTUFaSUxHWEFjRTE3Tk9Ua3ZGNWUteldqcHBHc3J0eVZ5VlZiREJ2N1RReWtBUS1KSDE5NlhRaE9sTWpTVkRoNXVDaE5ubktXVkFGYUtUWGZ3VFBhU21XNFpPMnRyMVBfVGlfNjZk0gHuAUFVX3lxTE81YmJ6YUpfRFVfMVJvVGtRY2dWU3JvcHZNeVNUZkRjRmhhcGYzbmFBRTg0d0gtVi13VkNnUURYNDlzeTQtdXc3dWVmOHk0YUJ5SlNiNzg2TlJWb29NV1Bnc2ZLYjE5SmxlN3NONkxSUWZ6SkJCZ0Jid05CUjlKczY1VFFwS3hrZEpsZTRjakRpQWczcWczRmxJUWVmVlFOLXRYY0xwVlZneS1mY3dyUkxiNzRSdGpna1dDWXEwaS1Sd2xTQmdFa0wzd2dBM29RT0pnUndYc2tsUXI5SHZyVVotdGlSd1NBczV1UnAzYnc?oc=5",
-        "publishedAt": "2026-04-24T09:21:09+00:00"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Market under pressure; realty shares decline",
-        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNkpldlZOTm8xVklWUmc4UFVWdE9BaWtCVjVVdnF2dXlDelZiTDliRmduNjNJdmJIaDB6Uk5sM1BTalZOV21XR0dOYThVQTg0MXkwQ2pqd19LY0xVWlZVYXA3RkZINWlBazBYWFZqaWdiLWtZaV9tLXZ4YWxWRzNmemQ5c1lYdUM4ai16T2ZqX0lNRmhOZUVfaUtqaE1vcHhwQXk4R0pCT3pFSDlQRHJTZ2lqOF9pVTduUGE1b3RPYnpHZm_SAcgBQVVfeXFMTTVLX3k5VHl0Z1lReWQ0R2p3VTh4ZGg2TUh0THNCQUZvdXhXY1ZwYjNGcXoyS0ZNVGNOZG1YNENHTXhLaFNZYmNETWxqdnFoXzRxdzN1cHRUczB6d1BwekR0RWo3X2dPM0s0WUpDY0t1V3ZNV25KWEozZ2hMeGlGNHNPX0p1czI1emRJa0JaOWFYUzgxZG5XbE02VVBlTlBhUjFtWG1vUHEtOGJiWF9KWS1HVWVnS1RyTUxNNTk3Zkp5QWN0UTdhWGE?oc=5",
-        "publishedAt": "2026-04-24T09:20:02+00:00"
       },
       {
         "source": "Livemint",
         "title": "Energy shock from Iran war may make shopping from Zara, H&M more expensive; sneakers to get costly too",
         "link": "https://www.livemint.com/news/india/energy-shock-from-iran-war-may-make-shopping-from-zara-h-m-more-expensive-sneakers-to-get-costly-too-11777020040932.html",
         "publishedAt": "2026-04-24T09:03:49+00:00"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Solar stocks fall up to 7% as US slaps antidumping duties on Indian imports",
-        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPclNJdjhEbVRmX0pqbmpsUDRFcnZ1SHZxaGJNOTltcDM3MFI0a2UwN1JTeTZBYmQwMnk3dzZfd0plelJ2UUs5VnF1WU5CQVczLXd2Z09ubHgzdjAxcWxUaFpYZTRGRWNBS2hkbFVwWHdlWDN2clVnU05hMDlscUszSTQyT2oweVMzbWNNSG9ZZjV2cTZnLVdCcWVrRzNoZXR2cE51U2dZTlNNWjIzaDd2R0tveFFtY1R0bHRTeG5MajdDUkFiZ2t0OGNxSTJ6N1JIeWJkYzRzN2bSAd4BQVVfeXFMT0RjaFdoUUw0VGRVLThnRHJtbVh2aHVpTW5qeUxuX2otN3plOE84V0dYUUpXOHYzWUVwOVZyRW9KaFhCcXEyNFpaSkp0bkpwUVo0cDNYSEN1ZF9TRTFkOTVMeXFtOEh6YXlVTzRiY0h2TEhaZ0U2WEpaWFN1SldTcUFremxqaUo3STZENkNuMVlUVjRnX0w0MTZXVlhfNUl3bEVwaExfenc1OFRfdzlIYUgxVm40NENVeGRMbC1FaFpodXJrd2ZGNmJKOXprQUtiLUJKcGZ0c2JzV3NpWlFB?oc=5",
-        "publishedAt": "2026-04-24T08:45:57+00:00"
       },
       {
         "source": "Livemint",
@@ -153,12 +153,6 @@
         "title": "LPG cylinder price on 24 April: Check domestic and commercial gas rates in Delhi, Bengaluru, Mumbai, Kolkata today",
         "link": "https://www.livemint.com/news/india/lpg-cylinder-price-on-24-april-check-domestic-and-commercial-gas-rates-in-delhi-bengaluru-mumbai-kolkata-today-11777002630129.html",
         "publishedAt": "2026-04-24T04:35:04+00:00"
-      },
-      {
-        "source": "Livemint",
-        "title": "World News Today Live Updates on April 24, 2026 : Air defence systems engage \u2018hostile targets\u2019 in Tehran, Iranian media reports",
-        "link": "https://www.livemint.com/news/world/latest-world-news-on-april-24-2026-live-updates-11776969910373.html",
-        "publishedAt": "2026-04-23T18:45:09+00:00"
       }
     ],
     "sourcesAvailable": [
