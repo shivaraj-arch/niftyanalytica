@@ -1,27 +1,27 @@
 {
   "marketTape": {
-    "updatedAt": "2026-04-27T20:08:03.140073+05:30",
+    "updatedAt": "2026-04-27T22:41:17.600700+05:30",
     "items": [
       {
         "label": "S&P 500",
-        "last": 7161.8,
-        "changePercent": 0.09923546759473302,
+        "last": 7165.3,
+        "changePercent": 0.14815436007100735,
         "source": "Stooq",
-        "updatedAt": "2026-04-27 16:37:43"
+        "updatedAt": "2026-04-27 19:10:32"
       },
       {
         "label": "Dow Jones",
-        "last": 49207.0,
-        "changePercent": 0.12534235147134531,
+        "last": 49141.2,
+        "changePercent": -0.008546069418509902,
         "source": "Stooq",
-        "updatedAt": "2026-04-27 16:37:48"
+        "updatedAt": "2026-04-27 19:10:36"
       },
       {
         "label": "Nasdaq",
-        "last": 24785.332,
-        "changePercent": -0.029315198889991487,
+        "last": 24831.357,
+        "changePercent": 0.15632487113090773,
         "source": "Stooq",
-        "updatedAt": "2026-04-27 16:37:45"
+        "updatedAt": "2026-04-27 19:10:33"
       },
       {
         "label": "Nikkei 225",
@@ -39,44 +39,86 @@
       },
       {
         "label": "FTSE 100",
-        "last": 10334.1,
-        "changePercent": -0.4278074866310125,
+        "last": 10321.1,
+        "changePercent": -0.5530664354193731,
         "source": "Stooq",
-        "updatedAt": "2026-04-27 16:37:41"
+        "updatedAt": "2026-04-27 17:35:29"
       },
       {
         "label": "DAX",
-        "last": 24157.98,
-        "changePercent": -0.14879734545535708,
+        "last": 24094.32,
+        "changePercent": -0.41192065133557954,
         "source": "Stooq",
-        "updatedAt": "2026-04-27 16:22:48"
+        "updatedAt": "2026-04-27 17:31:24"
       },
       {
         "label": "Crude Oil",
-        "last": 96.17,
-        "changePercent": 0.5436487192890705,
+        "last": 96.91,
+        "changePercent": 1.3173026659696714,
         "source": "Stooq",
-        "updatedAt": "2026-04-27 16:37:58"
+        "updatedAt": "2026-04-27 19:11:13"
       },
       {
         "label": "Gold",
-        "last": 4692.075,
-        "changePercent": -0.031639096975442565,
+        "last": 4673.215,
+        "changePercent": -0.43346628145800314,
         "source": "Stooq",
-        "updatedAt": "2026-04-27 16:38:00"
+        "updatedAt": "2026-04-27 19:11:16"
       }
     ]
   },
   "newsFeed": {
-    "updatedAt": "2026-04-27T20:08:03.140088+05:30",
-    "updatedAtLabel": "27 Apr 2026, 08:08:03 PM IST",
+    "updatedAt": "2026-04-27T22:41:17.600719+05:30",
+    "updatedAtLabel": "27 Apr 2026, 10:41:17 PM IST",
     "items": [
       {
         "source": "Livemint",
-        "title": "India-New Zealand free trade agreement: How India plans to protect sensitive sectors, farmer incomes, rural economies",
-        "link": "https://www.livemint.com/news/india/indianew-zealand-free-trade-agreement-how-india-plans-to-protect-sensitive-sectors-farmer-incomes-rural-economies-11777296336367.html",
-        "publishedAt": "2026-04-27T19:56:33+05:30",
-        "publishedAtLabel": "27 Apr 2026, 07:56:33 PM IST"
+        "title": "Weather tomorrow: Delhi to get respite from heatwave? IMD predicts light rainfall, thunderstorm",
+        "link": "https://www.livemint.com/news/india/weather-april-28-delhi-ncr-to-get-respite-from-heatwave-imd-predicts-light-rainfall-thunderstorm-11777309377423.html",
+        "publishedAt": "2026-04-27T22:37:11+05:30",
+        "publishedAtLabel": "27 Apr 2026, 10:37:11 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Digital public infrastructure could account for 4% of GDP by 2030: NITI Aayog",
+        "link": "https://www.livemint.com/news/digital-public-infrastructure-could-account-for-4-of-gdp-by-2030-niti-aayog-11777307293581.html",
+        "publishedAt": "2026-04-27T22:34:46+05:30",
+        "publishedAtLabel": "27 Apr 2026, 10:34:46 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "India\u2019s Got Latent Returns: Samay Raina opens season 2 auditions following 2025 controversy",
+        "link": "https://www.livemint.com/news/trends/indias-got-latent-returns-samay-raina-opens-season-2-auditions-following-2025-controversy-11777307911264.html",
+        "publishedAt": "2026-04-27T22:34:27+05:30",
+        "publishedAtLabel": "27 Apr 2026, 10:34:27 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Putin assures Iran of full support, says Russia will do \u2018everything\u2019 for peace in Middle East",
+        "link": "https://www.livemint.com/news/world/putin-assures-iran-of-full-support-says-russia-will-do-everything-for-peace-in-middle-east-11777306811131.html",
+        "publishedAt": "2026-04-27T22:02:22+05:30",
+        "publishedAtLabel": "27 Apr 2026, 10:02:22 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Gunshots fired during White House Correspondents\u2019 Dinner, but some grabbed wine while others clicked selfies | Watch",
+        "link": "https://www.livemint.com/news/us-news/gunshots-fired-during-white-house-correspondents-dinner-but-some-grabbed-wine-while-others-clicked-selfies-11777305766508.html",
+        "publishedAt": "2026-04-27T22:02:14+05:30",
+        "publishedAtLabel": "27 Apr 2026, 10:02:14 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Productivity gains must offset energy shocks from West Asia: CEA Nageswaran",
+        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPTlFWZ1BQTzB5eFVxWGs2eF80NW0wUTJjZnMxUUI0OWo2QmRCdEdRUVJoU3ctem9UamNjNUtLbm91REUzUm5wY05FYkJfd3ZPNzZKYlZZUVFXb1ZTVHZ6V3VJN0x3QVhxSm5lZDYwVXF1TkJnWFJRd0hWM1RSejQ0VVhCSXpUdkVITWZFMkZzY3c3Ykg0R3RWQXl4cThQU3JMeno4VkVMallldHdBcnFROVpYOXZqWktVU09EUEpuZ1d6Sm5IMmRFY2s0WXNldWFXNWVGeEtlUGPSAd4BQVVfeXFMUGJNa3ZwZW85ZXAybXRKakhRNkZnb0lXQks0cFFrbXNHQUFNdTFYaFdLbnhOZl9uMl9OTV9teTJWRjFQMVEzOGtRc1FKMDNPMUFrSVJhMUxacjJwY3ZqZXZadFFjdjg5MXFXUlhHaWhVeXBNZzJuNWRDU0lJMWdJMVRrUkZueUhxUlZVSmN1aEIySGF5WUZveWhTWDhnLWlhM3JkOTNtaEh4aVlwOUNiZTlRNmw4T2FxcWh4VERwTTRTU2hzdEN6OVBIWFZJN1VvUVlQQ2VTeG9xREdqSTZB?oc=5",
+        "publishedAt": "2026-04-27T20:26:47+05:30",
+        "publishedAtLabel": "27 Apr 2026, 08:26:47 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "NCS portal registrations decline in FY26 amid Centre's digital push",
+        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOYmlXdF8zeTBHY3lnMVFZbWhYSWJKa0d0RDREekl5UlkyUDVmOENXMkxIYTJUV3lLaG9vUnF6MUowVERZdVFaOEZtUG5DYnRWOWNDOE5oLTFqUVZSYzNKQnM0aDJlOG1xZDZLUU9Nd3EwaTJ1UFhkMktkb3htM3c3SGhuaS1yX0l5Q2N6azFmaTI5Z3BES2Ewa1U3eDdKRmh1d1lNZzZtaGpTdkhNNVVyZUhOQ1ZHeThxLWQwM3FFSjZCYmticjhjUlBqNG1GeEHSAdQBQVVfeXFMTjNGWE8taFp3OFFlTl82YVBhTkZleUg1azg0ZDV0SkFIazFXWkg4TktZeDZ6QW5mR1lJTEE2ZXVDbnVIaFNoVGZDZHVlMVZPSTRfTl9MMUhNNWJOX1dLQy1zZVNfMlZWSXhCMWp2ME92dW5QUGdMUmRYTzVDWGlFSEQ1enRESGlKNkJOQ3JsS25FWko2RDgzZk5mUWFqdVRzVHBrY1RtVGNweUhPNmVsa3I1NUoyT2MzblFCYmpVMjd1VmsyUlNwMHB4Vmw0WGtLaTJ5N1o?oc=5",
+        "publishedAt": "2026-04-27T20:22:40+05:30",
+        "publishedAtLabel": "27 Apr 2026, 08:22:40 PM IST"
       },
       {
         "source": "Business Standard",
@@ -93,53 +135,11 @@
         "publishedAtLabel": "27 Apr 2026, 07:50:02 PM IST"
       },
       {
-        "source": "Livemint",
-        "title": "Texas tornadoes kill two, leave many families displaced as storm causes widespread damage",
-        "link": "https://www.livemint.com/news/us-news/texas-tornadoes-kill-two-leave-many-families-displaced-as-storm-causes-widespread-damage-11777298551645.html",
-        "publishedAt": "2026-04-27T19:48:09+05:30",
-        "publishedAtLabel": "27 Apr 2026, 07:48:09 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "Who is Sahil Parakh? Delhi Capitals' 18-year-old IPL debutant replacing Pathum Nissanka during DC vs RCB",
-        "link": "https://www.livemint.com/news/trends/who-is-sahil-parakh-delhi-capitals-18-year-old-ipl-debutant-replacing-pathum-nissanka-during-dc-vs-rcb-11777296767770.html",
-        "publishedAt": "2026-04-27T19:26:39+05:30",
-        "publishedAtLabel": "27 Apr 2026, 07:26:39 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "Iran proposes reopening Hormuz if US lifts blockade, ends war, pushes nuclear talks to later phase: Report",
-        "link": "https://www.livemint.com/news/world/iran-proposes-reopening-hormuz-if-us-lifts-blockade-ends-war-pushes-nuclear-talks-to-later-phase-report-11777296838840.html",
-        "publishedAt": "2026-04-27T19:20:51+05:30",
-        "publishedAtLabel": "27 Apr 2026, 07:20:51 PM IST"
-      },
-      {
         "source": "Business Standard",
         "title": "Surya Roshni secures export orders worth Rs 86 crore from USA",
         "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOSXc5djhzSnBuX0ozTGNINS1qQ2dNVXVFNFVSTUZ6X2RoOEdZV01qVkEyR0lOY2h3MHQ3cUdXWGx1WUt3aW9VMW5uVGpvbUZ2OC0zUDM2STZTR2lBbU9wcWgzMXlweS1xUnAzUXY2NE9kOWVxRmQxc19vSHhCSGtWbUFFTmF1UVhOR2hacG1GOFQ5R0VoS1BZS0tOTVNpX2lTSEExa3RwRUItWjBrcFpSMXlKMmE3bUtQZEpUalB1TzF6V2RXeW1MSWNPYXFOb3dnckVjVEtFVF9maFHSAeABQVVfeXFMTVctOFdwSGxlT2xhbTZpdzFGeHdEaGI2S19nLUdPZ1NiTG1IOHNRYkhJeUdESUV5MXp0TWwzS0o4M2JIQ0dlY1BHUHVZdWZyZ1FmTy1QUl90NWhKLVpvLVFoUEhtMXZLLUpDblkzUDVTNW1Fcy13Yk5Vb0NxRDEyR2l0TDlkS0xlUXJ2RnFFcGhoUVFMTWY2LUFXY3JmWmVDVUR4TzdGQ3FxZGVuc2FBTmRuR21LY1puNFRyV0JBaVJjb2h3RnJyWmZVYlFBTjg1clREVUF6LW44Wk1pQXRuNTk?oc=5",
         "publishedAt": "2026-04-27T19:04:02+05:30",
         "publishedAtLabel": "27 Apr 2026, 07:04:02 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "India-New Zealand FTA: PM Modi says deal reflects deep trust, Luxon says it offers \u2018unprecedented opportunities\u2019",
-        "link": "https://www.livemint.com/news/india/indianew-zealand-fta-pm-modi-says-deal-reflects-deep-trust-luxon-says-it-offers-unprecedented-opportunities-11777295856864.html",
-        "publishedAt": "2026-04-27T18:57:19+05:30",
-        "publishedAtLabel": "27 Apr 2026, 06:57:19 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "UP pushes pvt industrial park policy; firms eye plug-and-play projects",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPTGZjeFNtV0szOTNPTTl6Ynl2dDNib1B0c2MzNDhBSmFzV1U1SGk5NjVJcFRDLVM5dkwzQ1Q3MkUyd1VzZzV2Yi1RNTRob2ZYV2U2YnNqNmF4UkJQQlJxcEFDVFJUMUZmeGpzVGFJQThTRERkTFZKbHQzVGZJbUpXTFMzVTctWm56MVdvRWkxZk5BeDhmV2dBamZiNW1TTzRYRFlpV3dMV2RGRzZ2bmpvcDUyang5bFRLVEhNc3NVcVU0d3piNlctMWFPQnhFVm5fcEHSAdcBQVVfeXFMUHREdzBWblo5RmNKTzM4clAzc2REQk5nWTNMR0w0VHp1SWRpa3pnYTBYbkJHX19qRW5DeXVudV9YZ25jdE51cUM4YXg3ZnRSdkNyekZLVGl2bWpmMDU0LXJ2QlJUZVRBZHNESHc0S2V3UU9fQk9Kd0xOOVZWSC1XbE5KR2ptbHpqcTk2SktGcnU0WnRST0d2VlJpV3VKQlBhNk5JamZKd0Z1a2ZvT0MyYTVZbzAzbmRtOEh3TUNTTkZORHRjZm9lZThacGwtYUo1U2xiUGpLbTQ?oc=5",
-        "publishedAt": "2026-04-27T18:28:54+05:30",
-        "publishedAtLabel": "27 Apr 2026, 06:28:54 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Markets snap three-day losing streak on Reliance, Sun Pharma gains",
-        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPVWw1dWFKWmVTOHZvRmJOVHY4b01wUE10dTJCeVlmLVFydjYzVW5jeTVuRGRRektrUnE1TWNkT0dYSG9hcDEwSXljbFRQWDlManlITEFNbjVVWEZtYVpGQ2NTWjVEUTZDd1lOdmpieFg3X2FnTUMtcW9sR3N3U0xkWTNiXzVUTF9UWllEVEVfUGlQUnlyMFdRMW4tb3lZOEM2eENOUE01dVFTN1RaZUV0RUFQWnBBb2pZMElpT01RSlRYT240cjBzZlAwMGLSAdIBQVVfeXFMTjJKTXhpeTdmemZ3Q0UzcTlRN1JaSVNzR1dTclpyd1RaR1RIUmRvbDI0TkdiR3pJQTI1VUZZeHluYW9YQVNrbDVpeXVzQUIxc0ZmcFNUUzlGb3NnZzBVOC0yS21RQjNPX19qZ19oemI4eDBCa0syUzZaVDlLNGpkamdZMnA3SDBZVTltUXVkX0VlVEp5TWhMUUk1cUNZdlF1TzJjakpieUZnWmhNV0FEVDE4ODh2SE1xR016WHFRd05oRjNpb0I4ZlpTU0pfZ1ZGSUZn?oc=5",
-        "publishedAt": "2026-04-27T18:25:58+05:30",
-        "publishedAtLabel": "27 Apr 2026, 06:25:58 PM IST"
       },
       {
         "source": "Bloomberg Economics",
