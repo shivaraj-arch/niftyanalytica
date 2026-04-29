@@ -1,27 +1,27 @@
 {
   "marketTape": {
-    "updatedAt": "2026-04-29T20:09:30.764256+05:30",
+    "updatedAt": "2026-04-29T22:35:19.658664+05:30",
     "items": [
       {
         "label": "S&P 500",
-        "last": 7142.6,
-        "changePercent": 0.15424308710527793,
+        "last": 7117.4,
+        "changePercent": -0.19911380335409626,
         "source": "Stooq",
-        "updatedAt": "2026-04-29 16:38:41"
+        "updatedAt": "2026-04-29 19:04:41"
       },
       {
         "label": "Dow Jones",
-        "last": 48950.7,
-        "changePercent": -0.41136942072594773,
+        "last": 48819.5,
+        "changePercent": -0.6782916165678962,
         "source": "Stooq",
-        "updatedAt": "2026-04-29 16:39:00"
+        "updatedAt": "2026-04-29 19:04:53"
       },
       {
         "label": "Nasdaq",
-        "last": 24706.441,
-        "changePercent": 0.45840189254947716,
+        "last": 24563.568,
+        "changePercent": -0.12253136504088886,
         "source": "Stooq",
-        "updatedAt": "2026-04-29 16:38:48"
+        "updatedAt": "2026-04-29 19:05:05"
       },
       {
         "label": "Nikkei 225",
@@ -39,58 +39,128 @@
       },
       {
         "label": "FTSE 100",
-        "last": 10208.6,
-        "changePercent": -1.222072782513612,
+        "last": 10213.1,
+        "changePercent": -1.1785309969133642,
         "source": "Stooq",
-        "updatedAt": "2026-04-29 16:38:56"
+        "updatedAt": "2026-04-29 17:40:24"
       },
       {
         "label": "DAX",
-        "last": 24009.98,
-        "changePercent": -0.24027944378820404,
+        "last": 23943.74,
+        "changePercent": -0.5155018258827857,
         "source": "Stooq",
-        "updatedAt": "2026-04-29 16:23:56"
+        "updatedAt": "2026-04-29 17:31:08"
       },
       {
         "label": "Crude Oil",
-        "last": 104.64,
-        "changePercent": 5.176399638154595,
+        "last": 107.38,
+        "changePercent": 7.9304452708814965,
         "source": "Stooq",
-        "updatedAt": "2026-04-29 16:39:28"
+        "updatedAt": "2026-04-29 19:05:17"
       },
       {
         "label": "Gold",
-        "last": 4540.595,
-        "changePercent": -1.2651195155231423,
+        "last": 4544.295,
+        "changePercent": -1.1846633070763315,
         "source": "Stooq",
-        "updatedAt": "2026-04-29 16:39:28"
+        "updatedAt": "2026-04-29 19:05:16"
       }
     ]
   },
   "newsFeed": {
-    "updatedAt": "2026-04-29T20:09:30.764273+05:30",
-    "updatedAtLabel": "29 Apr 2026, 08:09:30 PM IST",
+    "updatedAt": "2026-04-29T22:35:19.658676+05:30",
+    "updatedAtLabel": "29 Apr 2026, 10:35:19 PM IST",
     "items": [
+      {
+        "source": "Bloomberg Economics",
+        "title": "Analysis of Fed Rate Decision, Powell News Conference",
+        "link": "https://www.bloomberg.com/news/live-blog/2026-04-29/fed-rate-decision-and-powell-news-conference",
+        "publishedAt": "2026-04-29T22:14:09+05:30",
+        "publishedAtLabel": "29 Apr 2026, 10:14:09 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "US Supreme Court curbs key Voting Rights Act provision in 6\u20133 conservative majority ruling",
+        "link": "https://www.livemint.com/news/us-news/us-supreme-court-curbs-key-voting-rights-act-provision-in-6-3-conservative-majority-ruling-11777479918821.html",
+        "publishedAt": "2026-04-29T22:07:34+05:30",
+        "publishedAtLabel": "29 Apr 2026, 10:07:34 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "YouTuber Lakhan Arjun alleges cook spat on utensils, shares CCTV clips; viral videos spark concerns",
+        "link": "https://www.livemint.com/news/trends/youtuber-lakhan-arjun-alleges-cook-spat-on-utensils-shares-cctv-clips-viral-videos-spark-concerns-11777478974100.html",
+        "publishedAt": "2026-04-29T21:58:50+05:30",
+        "publishedAtLabel": "29 Apr 2026, 09:58:50 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Quote of the Day by Cristiano Ronaldo: 'Talent without working hard is nothing'",
+        "link": "https://www.livemint.com/news/us-news/quote-of-the-day-by-cristiano-ronaldo-talent-without-working-hard-is-nothing-11777479065635.html",
+        "publishedAt": "2026-04-29T21:49:08+05:30",
+        "publishedAtLabel": "29 Apr 2026, 09:49:08 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "IRNA: Araghchi, Jaishankar discuss latest ceasefire and India-Iran ties amid West Asia tensions",
+        "link": "https://www.livemint.com/news/world/irna-araghchi-jaishankar-discuss-latest-ceasefire-and-india-iran-ties-amid-west-asia-tensions-11777476502083.html",
+        "publishedAt": "2026-04-29T21:43:08+05:30",
+        "publishedAtLabel": "29 Apr 2026, 09:43:08 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Focus on long-term stability, not short-term growth: Finance ministry",
+        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSE5XQ0poTXowLUNJcUdmUXZJZGFES1JxcUplaUtLbktKbG5LbzFqbU1RbEV3amc2Mkt3U2JtLU1US3hrVFJVRUQ0N0dCclVETWloZWhuSkNfYlhHSW1RZGM4amN1Qm1IRnk2S0JVcWVpSnpabEhhWTR3QjhMdzlIUVNoMlRDdHRhSW83UVY4MUVxYmJMVUdMVXVENWFJVTNfa001YmNjRVRKWjFWSURLUnJHUXVxdjJ6dEdOSNIBwgFBVV95cUxOSmFERkxHUU05bVlrVUNiOEd4TGZyVHdua2k1QS1NU0RpYUQyci1pa2VsZDdkZ2ZRc0pDX1NmTjg4Z1FsaUF1eVYwR1ZIdlFRQngxQkhtUnBzaHFDVC1uRi1VS2FyUGxvRFFKckp5eWJEejZHY3p3ZkJvNXVrN3hQNFNVZUFRWU95SFdZSWJwVWVIRkMwb1hEVThuNDl5d25oU0haNXNMcTUyazJFeExETjNodHhKakkxT010bWZUWlFvZw?oc=5",
+        "publishedAt": "2026-04-29T21:42:10+05:30",
+        "publishedAtLabel": "29 Apr 2026, 09:42:10 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "RBI caps unsecured lending, tightens housing loan norms for UCBs",
+        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTFFDeFFKRnVfMWUxYUdKbnZrX1hpaWQ4MUFFR0FFMHR2ZGNKRXhmSjBTM2FnWXJLLW1PXzdTdHkwNFFfOFhNMGVmeHlSS0hLSzkzSzgtTUVVWjRwU1IwX21UTnZ4X3ZFdXhrS2ZVNjJ1VEVBWmo4c0QwN3NYVUR5THNhdmVRYVg3OXdPQXNDN3Q1OTJ3NGE3VjJXRC10cXVPT28wWUhrVFY0NU5ncl93VHRmTHowQVMtQW1SbdIBwgFBVV95cUxPVWN2ajIxbmFuQ29lVmtobEdGRG9VeWk0VC1HaVBvX3Z3bTlzVldKNEt6bmwtU2o0U1ZTRThRX0JrdUtTNmEwSWhFYjZCUlBQVHpVSDFYaU5MMlhvQXVsRExtTGxOaS1xQl9NMXBZc2g2bUFlUHd2VElzYk5nT01fMW9zdGZ0NTl0SE9UVkNodzR4Yjl1bTN0LUxLVUZSc1pVWmdqajNrM0ViQjlPWlZ6NzltRkhZekNablRNYWR2VjhnZw?oc=5",
+        "publishedAt": "2026-04-29T21:35:49+05:30",
+        "publishedAtLabel": "29 Apr 2026, 09:35:49 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Ryan Rickelton goes past Sanath Jayasuriya en route to maiden IPL hundred during MI vs SRH; breaks 18-year-old record",
+        "link": "https://www.livemint.com/news/trends/ryan-rickelton-goes-past-sanath-jayasuriya-en-route-to-maiden-ipl-hundred-during-mi-vs-srh-breaks-18-year-old-record-11777476490854.html",
+        "publishedAt": "2026-04-29T21:11:10+05:30",
+        "publishedAtLabel": "29 Apr 2026, 09:11:10 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "EPFO to launch Aadhaar-based portal to unlock dormant PF accounts",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdWMwTjY0Z2ctSzBuSDRIRXZOcHd3OW9kR1FDeFhLekt4QklYQVdCMThNM2YzQWhjSm1kcVFxTnJ4eVRQN01JX0t6VTk5V2VOckE5MmJhTFhrYUMtbnF2VVVBV3dOMXM4WTRDbmIzSnpkZzJXNTBjNGg1ejhIV09nbFFmLXJWUVpWNE5RaE8wRE16d05jOUVra2FDMVF2Qm9NY0U2c1Z1M3VpYmJsbWNOZ3lKOHI2d9IBuwFBVV95cUxPcEhaYTYyazVRbGVrVEppU3BCQ0k1dVpQQkhBNDFtZy1MaGtTVW5kcW1FcGJ2WmJMWUNGdVpSRjZtaElUcS1Gcmh6MWVOZHZWeXpjOWdBTVpZOFdISHg0ZHM4Mzd3V2c5S0dxY1lyb0RBX3VoU2hFYzFBQzEtbXhZV0Z5RUpGVnNFaENFNlpEdmdKQjNqT0J1VW9aRWswa0tBLU5VZW90UUJMa3BtUmF5eUpmakNpSnRReHBJ?oc=5",
+        "publishedAt": "2026-04-29T21:09:42+05:30",
+        "publishedAtLabel": "29 Apr 2026, 09:09:42 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "US Treasury Yields Hit Highest Levels Since March as Oil Surges",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-29/us-treasury-yields-hit-highest-levels-since-march-as-oil-surges",
+        "publishedAt": "2026-04-29T20:18:57+05:30",
+        "publishedAtLabel": "29 Apr 2026, 08:18:57 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Israel Readies Sale of Stakes in State Defense Firms by Year-End",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-29/israel-readies-sale-of-stakes-in-state-defense-firms-by-year-end",
+        "publishedAt": "2026-04-29T20:15:20+05:30",
+        "publishedAtLabel": "29 Apr 2026, 08:15:20 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "US Naval Blockade Pushes Iran\u2019s Currency to Record Low",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-29/us-naval-blockade-pushes-iran-s-currency-to-record-low",
+        "publishedAt": "2026-04-29T20:14:38+05:30",
+        "publishedAtLabel": "29 Apr 2026, 08:14:38 PM IST"
+      },
       {
         "source": "Business Standard",
         "title": "Puravankara subsidiary receives LoI for project worth Rs 144.45 cr",
         "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPVk5QWnlYMHh5T2duYUZCQlFzN3A3SnJ2enNhT29uYl8yajlpU09odWlRdmRhanh1c3ZuV2QycUJsUF9uUXJYRlR5X3ZNNlpYX01OeDhLUTY1WTNPT2thVkViVWozY0FUclloQ0EwaW5rc2xXOC1NLXdSajR3VkVVbUQ5UkZPX2FOaWtybEJxaHdrbllhWmVDelZERHZCUjhxUV9CcXBBN3p4T0hhTlphNlJtS0lZT3hWM2ZncXExaXBCUXRfMmhZTWlmbW04cW5Ra3dxeGtfNHFveDVyNmVzRS1B0gHnAUFVX3lxTE0tWC1vLUpuWmRyV29VTFdtblN4RzF5X1NnWks0U3VuWEZBU3BBaVVBemU5aFp5MWtnbi1SWVhzWnJGdmhKMFJobGJaNWZLWC1LazB0V3BBaWE5YTlvMDZYU29EdVBjRjNfZmxsN1hIbkN0Z2dJU29GeG1QNUJWYVh5Rm15Q2ozOWY1X3pZZ0M3aC1qMGsyNXhOelkxRWR5bEljdnR4RlNnMXNTclk3eEpzNC1wNHk3Ulp2LWgyNWRmbVdyZzBpVEhkbU5BWnByTDBld1dPUnREb1FYWVZEY1VKU0xOVTFIVQ?oc=5",
         "publishedAt": "2026-04-29T20:04:25+05:30",
         "publishedAtLabel": "29 Apr 2026, 08:04:25 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "Quote of the Day: \u2018Government in its worst state, an intolerable one\u2019 \u2014 Thomas Paine\u2019s warning about abuse of authority",
-        "link": "https://www.livemint.com/news/trends/quote-of-the-day-government-in-its-worst-state-an-intolerable-one-thomas-paine-s-warning-about-abuse-of-authority-11777471738435.html",
-        "publishedAt": "2026-04-29T20:00:33+05:30",
-        "publishedAtLabel": "29 Apr 2026, 08:00:33 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "EPFO plans Aadhaar-based portal to unlock dormant PF accounts",
-        "link": "https://www.livemint.com/news/india/epfo-plans-aadhaar-based-portal-to-unlock-dormant-pf-accounts-11777469430647.html",
-        "publishedAt": "2026-04-29T19:49:16+05:30",
-        "publishedAtLabel": "29 Apr 2026, 07:49:16 PM IST"
       },
       {
         "source": "Bloomberg Economics",
@@ -100,81 +170,11 @@
         "publishedAtLabel": "29 Apr 2026, 07:43:01 PM IST"
       },
       {
-        "source": "Livemint",
-        "title": "Why Mumbai Indians are wearing black armbands in MI vs SRH IPL 2026 clash? Check details about emotional tribute",
-        "link": "https://www.livemint.com/news/trends/mumbai-indians-wearing-black-armbands-in-ipl-2026-clash-against-sunrisers-hyderabad-mi-vs-srh-11777470472396.html",
-        "publishedAt": "2026-04-29T19:37:52+05:30",
-        "publishedAtLabel": "29 Apr 2026, 07:37:52 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "King Charles jokes about Britain burning White House in war of 1814 amid Trump's ballroom project | Watch",
-        "link": "https://www.livemint.com/news/us-news/king-charles-jokes-about-britain-burning-white-house-in-war-of-1814-amid-trumps-ballroom-project-watch-11777469929227.html",
-        "publishedAt": "2026-04-29T19:32:25+05:30",
-        "publishedAtLabel": "29 Apr 2026, 07:32:25 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "Is Rohit Sharma playing today in MI vs SRH? Hardik Pandya shares \u2018couple of more\u2019 updates on Mumbai Indians opener",
-        "link": "https://www.livemint.com/news/trends/is-rohit-sharma-playing-today-in-mi-vs-srh-hardik-pandya-shares-couple-of-more-updates-on-mumbai-indians-opener-11777467979738.html",
-        "publishedAt": "2026-04-29T19:18:42+05:30",
-        "publishedAtLabel": "29 Apr 2026, 07:18:42 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Bank of Canada Holds at 2.25%, Says Rate \u2018Looks Appropriate\u2019",
-        "link": "https://www.bloomberg.com/news/articles/2026-04-29/bank-of-canada-holds-at-2-25-current-rate-looks-appropriate",
-        "publishedAt": "2026-04-29T19:15:00+05:30",
-        "publishedAtLabel": "29 Apr 2026, 07:15:00 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Force Motors Q4 PAT slides 36% YoY to Rs 279 cr",
-        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQUE5sN1pVMmh2c3I3YmdacTR6NlZGTk1FZTlCM1BLY3hqSjNZT2JhbjkzSFJTSENGLUhTLWxPXzBqNDdHNEZnbF9ZS0FKTmxYRXRFZVcwanU5UUtXRGdZWjU5UmZnaF9sZnE4RUR4ZVBmR3V2LVVZSlVJTWg2TFFLbjlWSVhEX3ZkLWpWcFpNMnVZVWp0X2dDTFFBVm1IRjFMaHlCMS05TndNQlNvRDh5UFBHNWZzeVQyc2dCRDBZc2xqdkdHLU1V0gHMAUFVX3lxTE5jOXp5M1NUOVJZMjd0VTJZZVotb3pxdnNVT1RwSFBZTjVDcW1CQ0k4aXU0YnZpUUYzY0NXTEJ2cWg1N01Oc0NuZy1KOVZnUks3S0FBX0oyNWFEZ21reldldkhNY2pCc0ctNEN2WEk1T1VRUTNwMmhuNVYyNzJqUDJpVUN5YkRXNVhrdE9IV1puUjFkbE9sMGJIX2dYUXFKRkZzcUJWM21FUEZEU19GYWNtRXFOekhyc2NrbGxXOGhIMUZYMW1OQmV0Z0V3Mg?oc=5",
-        "publishedAt": "2026-04-29T19:04:01+05:30",
-        "publishedAtLabel": "29 Apr 2026, 07:04:01 PM IST"
-      },
-      {
         "source": "Business Standard",
         "title": "Interest rate on GOI Floating Rate Bond 2034 to be 6.45% for next six-months",
         "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOMm53Q1g3UGh6ZE1GeVlIUEdXdExiSHVJQzhPWHBKNkdYN05ydHVhTmo5TldqNmc3Y0Z1cTlHa1JUcXg4VmVmcVZQSGVrc2g2cXpFX2VBMFVPd3RrNWpkRUZmSHFJRmF5YVNRNjdZRE1uU2JDc250YmtMcnVhZ2VmRGR2TDljV2FfUDUyU1NqUkRQeU5wdVRQeV9fcGQtbVJ2MlZ2SlJzYVB6ZHFJR3BvVGxEX0tSQUs4V3lvRXRyeGN4cG1uT1dYWGZMNUlTNXB4cy1vUF83cmJSd3FVOEJoZTlLTVp6TUdhUEpvaDdR0gHzAUFVX3lxTE5ZOGdKRHFwZW5od2VicE1xYmhRYUkxRUQtSjdvcC1DS1NURUlINk16ZVh0bk1xYWdGM3lLTXZQczFlLU9SN216dGVhcVpYa3FBam1XY2psQlVsR0lENmRfRlFoQTl1STRJZF82M2V1blZ4LWxqVUJZTmQ5N3FQUklTUWJxeFR0RXlrTFNkeVJWWmtoTjctcUJvN3FrVFQzbmhZT3EteG9pS1dvWHZiVVpJamZFNTgwR0hQa2EyUTNycnNuY3J3c19hQUZ4TlcxVTZuNWlmUGxTS1BSdWdlUlY1OURMTmlGdEVEYk9pMHVGU09FOA?oc=5",
         "publishedAt": "2026-04-29T18:50:02+05:30",
         "publishedAtLabel": "29 Apr 2026, 06:50:02 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Iran's Uranium Stockpile Must Be Addressed, Grossi Says",
-        "link": "https://www.bloomberg.com/news/videos/2026-04-29/iran-s-uranium-stockpile-must-be-addressed-grossi-says-video",
-        "publishedAt": "2026-04-29T18:45:07+05:30",
-        "publishedAtLabel": "29 Apr 2026, 06:45:07 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Axis Finance standalone net profit rises 31.85% in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPZFQ3SVFfNUtoeWdJbTd5ZzhqYmJIM1pENVdSVlBnUmpzVi1rMTZBSkZMSXFNc0xnWERQNDRNM1BWMkc0Wm80M1RmTlhaVFNkaEJWd0RZV1dMbTMzc1ZSVEJ6OXBxY1g1cDc1a09sc2F2eWVaT3lnUHc3WjYwS3hZbnRsTDhvTEVfMVhINWUzVnJ1cFYyQm9oalJ6REFpTmcyLTVkdlBkZDlFdFFkMGJ2QjdHd3BVSGRBbndYY3RPZ2VoUzdjT1ptRVNDbi1qWkZ4VFpjRXFtNUljVjlHTlpPVEx4allueERHUXfSAe8BQVVfeXFMTVlETzR6VERnWGZ3NnloaFNDV0gycVUwY3BFeFp3cklLZ2Fyd0VVWEdWRFJFV0h1bVNjOUdibXJESGdtUE1waHlfbU9idlFTWURLeElyQzdocVN5bFJfdVdiXzh2U1l0X2VZOHBKTGFLbFJWVEZrakptQnJTeGNEQS1kT290ZHh3UDVXYXAtNjc5aHYxdHZqYkN4UlhCaU1YdWZrbTQ0S3JWZ2huTXdfWC0xbjdnU08yX0k4MXpwVjlDWmx1N2RKalU0WU5tZDBrMUdXbGp5XzhuYll4c3N2U2NYWWphTE1LNVhQdjBkS1E?oc=5",
-        "publishedAt": "2026-04-29T18:05:16+05:30",
-        "publishedAtLabel": "29 Apr 2026, 06:05:16 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Jana Small Finance Bank standalone net profit rises 13.23% in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPX084dzljWm5VT2dJUWQzT1Nlc0ZVLXJmR2RvS2pIUjgyX1dJN0owM2R0NGIyVEZwWFp0VklKZDJTUEt3RDV2ZEtDeGhvdkw4NENBNlU3dnEwUGpHT2IxckpUbzdZUnZxY1llbEl5WWxJTnZOa09zVHFJNkhMenVXWHgzMkszbEVkT2JUbFRQU1hrRURjY2NMQjVpcDMtRGtTUldKSTNHbjlBQktjTWhaTUFaUVRmTlNNeWpqTHl1R1o3RWwwYnBnVzFUV1hOZGRLVEF6Qnhpal9penBRX0VTNWxPVW1ZT1ZVd0Y4R09JdEk3TzljbVVEN9IB_gFBVV95cUxOMmxhOUdsUkJYZmNuek1VSkhsTzU2Ql9iMElka1A0bDB0QkZWbk5MXzg4NEhXMDBYdFdYYXdSTklPbGlYYmJTZWxCclZISVlhX1BEM3ZlZ29vMGlWdmtLRjFrNEpjQnVjR0dMbDUxZUx0bW1CeXg0Vi1YNTVuOUxHcS1pRm5tRThfdUcyNDNkVm43Y01ZRDFUdmNNQTRnMGlnYTV3MHR5eFA4ajJ1V0h1eXhuTXFlc091d1lvWEFtdmdoSFdyLXhseUVDVTVvOWs4bWZ6d1BGejJsS1RLMTUxY1BRS0RreUluVFJPbnlTWDVPaTFza0NsUFlRRUQ1dw?oc=5",
-        "publishedAt": "2026-04-29T18:05:08+05:30",
-        "publishedAtLabel": "29 Apr 2026, 06:05:08 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "US Housing Starts Surge to Highest Level Since December 2024",
-        "link": "https://www.bloomberg.com/news/articles/2026-04-29/us-housing-starts-surge-to-highest-level-since-december-2024",
-        "publishedAt": "2026-04-29T18:02:56+05:30",
-        "publishedAtLabel": "29 Apr 2026, 06:02:56 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Euro Area Sentiment Falls as Confidence Weakens Across Sectors",
-        "link": "https://www.bloomberg.com/news/articles/2026-04-29/euro-area-sentiment-falls-as-confidence-weakens-across-sectors",
-        "publishedAt": "2026-04-29T17:38:26+05:30",
-        "publishedAtLabel": "29 Apr 2026, 05:38:26 PM IST"
       }
     ],
     "sourcesAvailable": [
