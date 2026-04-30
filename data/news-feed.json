@@ -1,27 +1,27 @@
 {
   "marketTape": {
-    "updatedAt": "2026-04-30T20:05:23.651140+05:30",
+    "updatedAt": "2026-04-30T22:28:21.141859+05:30",
     "items": [
       {
         "label": "S&P 500",
-        "last": 7138.2,
-        "changePercent": -0.4476800133885662,
+        "last": 7162.5,
+        "changePercent": -0.10878205932806412,
         "source": "Stooq",
-        "updatedAt": "2026-04-30 16:34:43"
+        "updatedAt": "2026-04-30 18:57:52"
       },
       {
         "label": "Dow Jones",
-        "last": 49458.2,
-        "changePercent": 0.7096357746025734,
+        "last": 49510.2,
+        "changePercent": 0.8155211699521684,
         "source": "Stooq",
-        "updatedAt": "2026-04-30 16:35:00"
+        "updatedAt": "2026-04-30 18:57:56"
       },
       {
         "label": "Nasdaq",
-        "last": 24536.521,
-        "changePercent": -1.2353251875406228,
+        "last": 24671.688,
+        "changePercent": -0.6912494891001036,
         "source": "Stooq",
-        "updatedAt": "2026-04-30 16:35:02"
+        "updatedAt": "2026-04-30 18:57:52"
       },
       {
         "label": "Nikkei 225",
@@ -39,38 +39,129 @@
       },
       {
         "label": "FTSE 100",
-        "last": 10380.1,
-        "changePercent": 1.697887682721334,
+        "last": 10378.8,
+        "changePercent": 1.6851510757534196,
         "source": "Stooq",
-        "updatedAt": "2026-04-30 16:34:43"
+        "updatedAt": "2026-04-30 17:35:29"
       },
       {
         "label": "DAX",
-        "last": 24150.31,
-        "changePercent": 1.811333163298644,
+        "last": 24272.32,
+        "changePercent": 2.3256951221825632,
         "source": "Stooq",
-        "updatedAt": "2026-04-30 16:19:46"
+        "updatedAt": "2026-04-30 17:31:26"
       },
       {
         "label": "Crude Oil",
-        "last": 105.78,
-        "changePercent": -2.3719427780341427,
+        "last": 104.98,
+        "changePercent": -3.1102907245039138,
         "source": "Stooq",
-        "updatedAt": "2026-04-30 16:35:20"
+        "updatedAt": "2026-04-30 18:58:18"
       },
       {
         "label": "Gold",
-        "last": 4616.035,
-        "changePercent": 1.5661665773715618,
+        "last": 4606.435,
+        "changePercent": 1.354938716416714,
         "source": "Stooq",
-        "updatedAt": "2026-04-30 16:35:20"
+        "updatedAt": "2026-04-30 18:58:20"
       }
     ]
   },
   "newsFeed": {
-    "updatedAt": "2026-04-30T20:05:23.651156+05:30",
-    "updatedAtLabel": "30 Apr 2026, 08:05:23 PM IST",
+    "updatedAt": "2026-04-30T22:28:21.141875+05:30",
+    "updatedAtLabel": "30 Apr 2026, 10:28:21 PM IST",
     "items": [
+      {
+        "source": "Livemint",
+        "title": "US General Dan Caine at Senate hearing says Putin aiding Iran war effort",
+        "link": "https://www.livemint.com/news/us-news/us-general-dan-caine-at-senate-hearing-says-putin-aiding-iran-war-effort-11777566364688.html",
+        "publishedAt": "2026-04-30T22:14:31+05:30",
+        "publishedAtLabel": "30 Apr 2026, 10:14:31 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Olivia Rodrigo's Unraveled Tour 2026: Tour dates, tickets, venues \u2013 All you need to know",
+        "link": "https://www.livemint.com/news/trends/olivia-rodrigos-unraveled-tour-2026-tour-dates-tickets-venues-all-you-need-to-know-11777564345330.html",
+        "publishedAt": "2026-04-30T22:12:53+05:30",
+        "publishedAtLabel": "30 Apr 2026, 10:12:53 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "ECB and BOE Edge Toward Rate Hikes as Energy Turmoil Deepens",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-30/ecb-and-boe-edge-toward-rate-hikes-as-energy-turmoil-deepens",
+        "publishedAt": "2026-04-30T22:02:25+05:30",
+        "publishedAtLabel": "30 Apr 2026, 10:02:25 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "AI Boom Boosts US Economy, Offering Way to Blunt War Impact",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-30/us-economy-boosted-by-ai-boom-in-way-to-blunt-iran-war-impact",
+        "publishedAt": "2026-04-30T22:00:01+05:30",
+        "publishedAtLabel": "30 Apr 2026, 10:00:01 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Over 77% of 880.5 metric tonnes gold reserves held domestically: RBI",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcG41NnpFRkRHZWVuWUlrejZLb1RHQUpDUGc4Mk4yU3JMZ0RVejJQTXFKTlNpQ1RLcXMyVUlDbkMzcU5lbmQxZmpvR3VFZ1VOVHE4LXRBcG9VZld1SFRyU3hBRlhXYUUxcXpUemxsZ2FmUXE3NnpJS21CcEh1VG1NOExOX19ETHhFYnU0SXptekpiNnlxa3hKRjg2U3JQaXRTUndDeWN3WUZpRDYzd2lDNU9hWi1mNEVqbUNrUVgwRUU2M2dXemNuRXVzZGdMd9IB0wFBVV95cUxNMWY3ZFRRYzVNN3JTYWtaeUhseHpmOVIwMUJ3d19DM3BQczJteHNfaVkwQkdkaWk2d0xTcmprNDZhdXhtX1U1WGV3TXg2OEMwUGdJMmdwRzhsWWJEXzAxQTJOT0dpU1M4OEZtaVNhanNSazVVZDk2dVpSeFhka01FSjBQcEl3WG00cE5XVjJFbWFDaGNqLWU4S2lLTkZqWDJpVFF4SkYzUU9XSk9vUVpzeTBFY2NjVi1Zc0NUUUkza2ZhcGdzRE1XNkF6LVlTMUU1UzNz?oc=5",
+        "publishedAt": "2026-04-30T21:40:15+05:30",
+        "publishedAtLabel": "30 Apr 2026, 09:40:15 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "India cuts Vodafone Idea's pending telecom dues to $6.75 billion",
+        "link": "https://www.livemint.com/news/india-cuts-vodafone-ideas-pending-telecom-dues-to-6-75-billion-11777564801817.html",
+        "publishedAt": "2026-04-30T21:32:38+05:30",
+        "publishedAtLabel": "30 Apr 2026, 09:32:38 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "\u2018It better be soon\u2019: Donald Trump asks when is ABC News firing \u2018seriously unfunny\u2019 Jimmy Kimmel, says \u2018people are angry\u2019",
+        "link": "https://www.livemint.com/news/us-news/donald-trump-asks-when-is-abc-news-firing-seriously-unfunny-jimmy-kimmel-11777564462176.html",
+        "publishedAt": "2026-04-30T21:31:23+05:30",
+        "publishedAtLabel": "30 Apr 2026, 09:31:23 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "India's oil trade deficit rises despite softer crude prices: Crisil",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNmxXbHpyWnRPQll3VFMtTnhjU3JsMDlrZGc1dkRsNEFROWNieFBWcTJRcnczY1B3UFNZSVRGREFtOFloc1RtdjZ0YlhURzE3aUowYm5SaUU2WmVaSTVNOGh1ektFcjVsWEJwM2MwYllTaU9TNGVfcEVYY3YyQjdEdnMtZmdScGFjNWowZUlaczlaeXByNG5ONEpVbVpPc29kQUI3bE1pcnVyV296VUpkRXlsWFlpVDlZd3BFMVRGTENIanpHNk44S0NKamJhd9IB0wFBVV95cUxObWhaWjZkYlVJOWdFWHNLUjhCeEVZbXdwTE5oNzZ3NnRSWHp4Zmkya3lsaDgxdU9qVWVRSVNGOEl0RG5sTnplSFNIN1VKZ0VnZ1A1SlZWRFZrUEI2QVd3WFVtRGlMOHJYbzMySHZBRzJTX0NvSnEtdHRua0c0UUxOOXozY2Z5LWRQUHRmMktQejkweWc2bXlpMGY5N0g5U2dwMWhJUGJNSWVKbndBSzd2LXFScXJ4dEhtblU1SjVCVVNPM0ZaVGI4UkJMSnFXbjFrOHQ4?oc=5",
+        "publishedAt": "2026-04-30T21:31:00+05:30",
+        "publishedAtLabel": "30 Apr 2026, 09:31:00 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "US Mortgage Rates Jump to 6.3% With First Increase in a Month",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-30/us-mortgage-rates-jump-to-6-3-with-first-increase-in-a-month",
+        "publishedAt": "2026-04-30T21:30:00+05:30",
+        "publishedAtLabel": "30 Apr 2026, 09:30:00 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Controversy hits GT vs RCB in IPL 2026 after Jason Holder's contentious catch leaves Virat Kohli fuming in Ahmedabad",
+        "link": "https://www.livemint.com/news/trends/controversy-hits-gt-vs-rcb-in-ipl-2026-after-jason-holders-contentious-catch-leaves-virat-kohli-fuming-in-ahmedabad-11777562876349.html",
+        "publishedAt": "2026-04-30T21:23:48+05:30",
+        "publishedAtLabel": "30 Apr 2026, 09:23:48 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "India emerges as largest market for ChatGPT Images 2.0 within a week",
+        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQMjFhekpLbDNZTUFYaGt5VWFraVZRNjNweXh6VzA2TXktVWlZQUhHM1RBMjFWTU01MEIzaVRObGxEZGdjcU1vQzFnZ25jaXdJWjJRMzhoN2JGckU2ZFl3ZmI3SE9UQ1h5ZFBNRVJzTjh6eHR4c2tqTkpZUjlCa2RhTnhleGhDTE1mckdfcFlxcEdXU194X19IWWQtd0h5Tzh0eC00S2tsS01QZ1hhY19tcUlUTEl4SEh0UllvRnUtV19Pc0s2M0UtUnNsX1FITzVJSzdKdFpVbDhGNzDSAeABQVVfeXFMUEZULXpuUlNCNUNIUkRHcnFCTlp3Z1k1VkEyd1dGMHJhVkpxdmxQV2hRSGl3bmRXYTVPb1JPaWlMaVUyemRPSTVvQktYaXJ6eUJxRmdPTVNzMEJ2SllUNmVhcFRCTk1COWRQUVRpN0Q1SjFmRFlONkJULTRsWEtJdkg2Y3M4RjkybG1EbHpyTjg1QWNxOE05UzNqWF9XSjVkaFJkdkVZcEMxZWhiS1VVSUgtTHctN0RQMTFZZ3pWS1pIMjQ5b01vS0xmTm1FaGkzMGx2ejJ1eDBQd0V1VmxaV2M?oc=5",
+        "publishedAt": "2026-04-30T21:16:16+05:30",
+        "publishedAtLabel": "30 Apr 2026, 09:16:16 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "ECB\u2019s Inflation Struggle with Pooja Kumra",
+        "link": "https://www.bloomberg.com/news/videos/2026-04-30/ecb-s-inflation-struggle-with-pooja-kumra-video",
+        "publishedAt": "2026-04-30T20:54:19+05:30",
+        "publishedAtLabel": "30 Apr 2026, 08:54:19 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "ECB Officials See June Hike If Energy Costs Don\u2019t Ease First",
+        "link": "https://www.bloomberg.com/news/articles/2026-04-30/ecb-officials-see-june-hike-if-energy-prices-don-t-ease-first",
+        "publishedAt": "2026-04-30T20:44:04+05:30",
+        "publishedAtLabel": "30 Apr 2026, 08:44:04 PM IST"
+      },
       {
         "source": "Business Standard",
         "title": "NBFCs return to banks for loans as bond yields stay elevated",
@@ -79,102 +170,11 @@
         "publishedAtLabel": "30 Apr 2026, 07:51:57 PM IST"
       },
       {
-        "source": "Livemint",
-        "title": "Quote of the Day by Henri Queuille: \u2018Politics is the art of postponing decisions until they are no longer relevant\u2019",
-        "link": "https://www.livemint.com/news/trends/quote-of-the-day-by-henri-queuille-politics-is-the-art-of-postponing-decisions-until-they-are-no-longer-relevant-11777556681330.html",
-        "publishedAt": "2026-04-30T19:39:57+05:30",
-        "publishedAtLabel": "30 Apr 2026, 07:39:57 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "Quote of the day by Paul Schrader: \u2018Good filmmaking unites the personal with the universal\u2019",
-        "link": "https://www.livemint.com/news/us-news/quote-of-the-day-by-paul-schrader-good-filmmaking-unites-the-personal-with-the-universal-11777557310537.html",
-        "publishedAt": "2026-04-30T19:38:49+05:30",
-        "publishedAtLabel": "30 Apr 2026, 07:38:49 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Lagarde Joins Powell in Rejecting Stagflation Label of 1970s",
-        "link": "https://www.bloomberg.com/news/articles/2026-04-30/lagarde-joins-powell-in-rejecting-stagflation-label-of-1970s",
-        "publishedAt": "2026-04-30T19:27:42+05:30",
-        "publishedAtLabel": "30 Apr 2026, 07:27:42 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "After nearly seven years, American Airlines' first commercial flight from US to Venezuela to take off today",
-        "link": "https://www.livemint.com/news/us-news/after-nearly-seven-years-american-airlines-first-commercial-flight-from-us-to-venezuela-to-take-off-today-11777556720639.html",
-        "publishedAt": "2026-04-30T19:25:37+05:30",
-        "publishedAtLabel": "30 Apr 2026, 07:25:37 PM IST"
-      },
-      {
         "source": "Business Standard",
         "title": "Markets fall as oil spikes on US-Iran crisis, but post strong monthly gains",
-        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVkJLQ2QxUEdoT25hRmJEVjhDcUd6U1ItcU9VcS03Nk5IaExQWGwyQUkwcjlUNHU3SHQzbVg1NjlINVRSWElTckJpd1UxdjExczI0UEpzdW02SXhBWS0tWm9fQ1ZaTjJhQnd0RVJuSTVHNno4VkVCRmxiRnhXN3A1NzVBcUt6RkR5bm96SjVYeUJyUnNaeTBOeVdGdEhUM1dzUVZEMU1mdjRtdTI1SFVYdVJVQ2JHNElFMVVwcFZEZUM4OTNKclNwa0M0UjdpbmppV19nLXlHRFjSAd4BQVVfeXFMTjZ3a1VOeERoVVZWQmJXYVR3TW80TW1peVNlcG1qSU5OaHVGSTE3WkVnbExpZzh0ajJRekkzWEZiZGxDbUUxSGNMTnBQMkppY2hWZ2w2VWZIVGFnV2RubF9qQ0Z1aVJKX01vV2ZjazhVaFN5d01rSEVnMlg3N1dpZ3FKZ0FicVdOYlVSR1lPWHR6dklMS2laajdGem80NVM1dmlNallWWVdaUEtWTVlqOWhweThTM3BUeUtxVUtSM25FQXktbFBtR3RfUDVEX0tZTnJZSGRLMzBGSEp2anpR?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVkJLQ2QxUEdoT25hRmJEVjhDcUd6U1ItcU9VcS03Nk5IaExQWGwyQUkwcjlUNHU3SHQzbVg1NjlINVRSWElTckJpd1UxdjExczI0UEpzdW02SXhBWS0tWm9fQ1ZaTjJhQnd0RVJuSTVHNno4VkVCRmxiRnhXN3A1NzVBcUt6RkR5bm96SjVYeUJyUnNaeTBOeVdGdEhUM1dzUVZEMU1mdjRtdTI1SFVYdVJVQ2JHNElFMVVwcFZEZUM4OTNKclNwa0M0UjdpbmppV19nLXlHRFg?oc=5",
         "publishedAt": "2026-04-30T19:18:02+05:30",
         "publishedAtLabel": "30 Apr 2026, 07:18:02 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Avila Arrives at Colombian Central Bank, Easing Boycott Fears",
-        "link": "https://www.bloomberg.com/news/articles/2026-04-30/avila-arrives-at-colombian-central-bank-easing-boycott-fears",
-        "publishedAt": "2026-04-30T19:17:21+05:30",
-        "publishedAtLabel": "30 Apr 2026, 07:17:21 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "The barefoot scientist: How a self-taught breeder gave mangoes a winter coat",
-        "link": "https://www.livemint.com/news/the-barefoot-scientist-eternal-mango-kongara-ramesh-11777547884772.html",
-        "publishedAt": "2026-04-30T19:14:26+05:30",
-        "publishedAtLabel": "30 Apr 2026, 07:14:26 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "INR tests record lows before modest rebound",
-        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbXphMG5QRHRieFNiZmtsZHA4cl93MVBMdVJmZzhuTzBtYWlKN0pKS2F1MzViVTlpWGd0M09iRVNJMnIyRURHQndUaE5paUpZaUlTRl9WNWVXcWp4M1FVeUpUSWZFNjRydmZoYWZWWTVQTU1LR0dmQXRKNF9pakQ4Z3d3TXRVY0Y1cExmeF9CeElFT2NZeTc4UU5uVERjLXpfT3NvUTYwZDB0Tl9kOWk1RGFEVlExSGdOWWVKamRPbDhQOXPSAcgBQVVfeXFMUDBvTjBHZXFzTVZ6TFYxbU9FeF8wQ0M4UGVHVm54b1EwLU42bjI5czJjOS1teVlfQ0dJMHFXbzBmYV9fbDZuMWQtZUFiaktPZWg3Z0cydXM0bXBuN1kxTjJJLW81cW9vODhxZEdrR3RoV3ZweXp0amhiRU94Um1neVp6NnRfOG9EN1ZVWkdxQXVGbEprZjM0R2FRdXJzTWhEVkdrSk5Ob3NUbFdLUEY1Mjh1OHlfU3F5MDBRUWxoTmNGVjZHT3I0N1k?oc=5",
-        "publishedAt": "2026-04-30T19:04:02+05:30",
-        "publishedAtLabel": "30 Apr 2026, 07:04:02 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Brazil Posts Biggest Monthly Budget Deficit Since Covid-19 Pandemic",
-        "link": "https://www.bloomberg.com/news/articles/2026-04-30/brazil-posts-biggest-monthly-budget-deficit-since-2020",
-        "publishedAt": "2026-04-30T18:42:03+05:30",
-        "publishedAtLabel": "30 Apr 2026, 06:42:03 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "\u2018Amend the law\u2019: Supreme Court allows 15-year-old rape victim to terminate 30-week pregnancy",
-        "link": "https://www.livemint.com/news/india/amend-the-law-supreme-court-allows-15-year-old-rape-victim-to-terminate-30-week-pregnancy-11777553242547.html",
-        "publishedAt": "2026-04-30T18:32:41+05:30",
-        "publishedAtLabel": "30 Apr 2026, 06:32:41 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Sona BLW Precision Forgings consolidated net profit rises 16.94% in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNRGVFWGJsZmZnZlNaMDF2blpEWVVPMnE2aUU5NEF4RVk4ZEI1Y3ZSdG9TSndnZEg5OE1JNEt1ZGlMaWN6cDdwOFo4MUZ5M2pqX3lTaDNSbkJ0WThhR2pGbkRfczRhcTB2UWtJbVVXUHQ5NDZCMm9IUDRBLVl2TlhPbUVscEZXZGJKekUzT0EzNEROUDZWRnBnb3Y0enViNF9Lc095N1BTUFd0Q2JJMWJpdnNsUHlUMFB0UnNPU2E2eVRSVHhRVlVOSHN3S1ZKUkJvUTRxX1R2YXBBQTl4NVJZRW1fajI1bEZsZzRSMlFNaERKM2gyc1ZzSEoyR1AyMHpK0gGGAkFVX3lxTFBTRUtnX2dNa0dzcXRENm9Vc2lWa1ZBbkx3T054Nm01aFRKTFJLenlhYmZYejZuQU11dHFJWExHZW9HdEtiU2RRb3dCNnVMNWRMX1pzdzNHeHNiTDMxekVsdjBycGI2dzFmUkpHVzZMTXgyeHFDTlhHVmNNYnRYZF9MNFhvZ0M2M3U5TXA5YXRTdmJtZTdJWWNob2Z0SUlWOTdiM01BZmd2T044M3hKQkl6eExWNVBxLW1KbmgxRXJiZnJFcmZZeTJ5dGF6UGlMY2wweDNGbWFVOVl2cXR5N1l2cTNabFo2MGhNT0FCTHVwR0lqNmJCeXpvbWVFYUlobFVLWlN4cUE?oc=5",
-        "publishedAt": "2026-04-30T18:19:31+05:30",
-        "publishedAtLabel": "30 Apr 2026, 06:19:31 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "ACC consolidated net profit declines 68.28% in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOSUJrQ1ZNallsQ19DMmUyODNIWl9NMldJQWQteW5faThQclc2YldkUnZENHpQSlhIazZTYl96YWd6bk15cmpfcExRakZVaFBsbHdBci15Y0lPbDVfeWx4NURHcFFVbm9UQkdnWEpraW1fN2J6NjJKWkZnTkNBZGFrMUdrR3g1ZlZ4N2hmdmxWSHVyS0VaNGJYNkwzbDIzVzZDVi1lMDVFZTJobEwyeVNWYkM1TVNWbFVuLWt5RDZGUU5VMm1DMm90ZTVRS0xzV08xTzktWlI5MWhWWnU1VUhaMDBkNUfSAeoBQVVfeXFMTVN1VXA4NTM4Y3k4Mks3TklwakNqQUFjNkVYWThLbWpuaGVDcXFWWkVGMHNVZUs1eGdLcV9seXVLTUZmQXpnVGRvS0xjWWQxeVg0d3ROZmpWcEJULTRzbVVXTi1YRmFSbzJvRFdsQkpiWWJrUVFJNkNXWWRVR3Z2azMyUDJqdDN5VkdIVDY2RlpyU0hlaGZ3ampURE5saE56M1BROFN1bEVJNTA3Y05qZGRpWUpnd0M3cGp0NkpsM0MwOHR4eUdoR0hiS05BZE1ic0xwR0NDaFhtaDR1ajloN01zY3liODBVMkd3?oc=5",
-        "publishedAt": "2026-04-30T18:19:31+05:30",
-        "publishedAtLabel": "30 Apr 2026, 06:19:31 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "US Jobless Claims Plunge to 189,000, Lowest Since 1969",
-        "link": "https://www.bloomberg.com/news/articles/2026-04-30/us-jobless-claims-plunge-to-189-000-lowest-since-1969",
-        "publishedAt": "2026-04-30T18:04:09+05:30",
-        "publishedAtLabel": "30 Apr 2026, 06:04:09 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "US Economy Grows Solid 2%, Boosted by Surging AI Investment",
-        "link": "https://www.bloomberg.com/news/articles/2026-04-30/us-gdp-rose-2-in-early-2026-in-sign-of-economy-s-resilience",
-        "publishedAt": "2026-04-30T18:03:10+05:30",
-        "publishedAtLabel": "30 Apr 2026, 06:03:10 PM IST"
       }
     ],
     "sourcesAvailable": [
