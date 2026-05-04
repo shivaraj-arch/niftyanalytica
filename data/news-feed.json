@@ -1,27 +1,27 @@
 {
   "marketTape": {
-    "updatedAt": "2026-05-04T20:13:33.630720+05:30",
+    "updatedAt": "2026-05-04T22:43:36.419301+05:30",
     "items": [
       {
         "label": "S&P 500",
-        "last": 7244.3,
-        "changePercent": 0.1964011562772274,
+        "last": 7195.6,
+        "changePercent": -0.4771718233496079,
         "source": "Stooq",
-        "updatedAt": "2026-05-04 16:43:07"
+        "updatedAt": "2026-05-04 19:13:25"
       },
       {
         "label": "Dow Jones",
-        "last": 49373.0,
-        "changePercent": -0.2551551234057914,
+        "last": 49009.6,
+        "changePercent": -0.9893069194917996,
         "source": "Stooq",
-        "updatedAt": "2026-05-04 16:43:13"
+        "updatedAt": "2026-05-04 19:13:24"
       },
       {
         "label": "Nasdaq",
-        "last": 25194.723,
-        "changePercent": 0.32869707050523483,
+        "last": 25026.387,
+        "changePercent": -0.3416389974904667,
         "source": "Stooq",
-        "updatedAt": "2026-05-04 16:43:10"
+        "updatedAt": "2026-05-04 19:13:25"
       },
       {
         "label": "Nikkei 225",
@@ -46,37 +46,86 @@
       },
       {
         "label": "DAX",
-        "last": 24190.12,
-        "changePercent": -0.34760757173165674,
+        "last": 24035.56,
+        "changePercent": -0.9843251148324319,
         "source": "Stooq",
-        "updatedAt": "2026-05-04 16:28:18"
+        "updatedAt": "2026-05-04 17:31:08"
       },
       {
         "label": "Crude Oil",
-        "last": 102.35,
-        "changePercent": 2.196704942586109,
+        "last": 105.48,
+        "changePercent": 5.32201697453819,
         "source": "Stooq",
-        "updatedAt": "2026-05-04 16:43:29"
+        "updatedAt": "2026-05-04 19:13:32"
       },
       {
         "label": "Gold",
-        "last": 4575.455,
-        "changePercent": -0.9697506200949793,
+        "last": 4524.325,
+        "changePercent": -2.0763982979312936,
         "source": "Stooq",
-        "updatedAt": "2026-05-04 16:43:32"
+        "updatedAt": "2026-05-04 19:13:32"
       }
     ]
   },
   "newsFeed": {
-    "updatedAt": "2026-05-04T20:13:33.630764+05:30",
-    "updatedAtLabel": "04 May 2026, 08:13:33 PM IST",
+    "updatedAt": "2026-05-04T22:43:36.419313+05:30",
+    "updatedAtLabel": "04 May 2026, 10:43:36 PM IST",
     "items": [
       {
         "source": "Livemint",
-        "title": "Quote of the Day by PM Modi: \u2018Na mai aaya hun, na mujhe kisi ne bheja hai, Maa Ganga ne...\u2019",
-        "link": "https://www.livemint.com/news/india/quote-of-the-day-by-pm-modi-na-mai-aaya-hun-na-mujhe-kisi-ne-bheja-hai-maa-ganga-ne-bengal-assembly-election-results-11777904643192.html",
-        "publishedAt": "2026-05-04T20:00:19+05:30",
-        "publishedAtLabel": "04 May 2026, 08:00:19 PM IST"
+        "title": "Quote of the Day: Thomas Jefferson\u2019s powerful reminder on liberty and sacrifice \u2013 \u2018The tree of liberty must be\u2026\u2019",
+        "link": "https://www.livemint.com/news/us-news/quote-of-the-day-thomas-jefferson-s-powerful-reminder-on-liberty-and-sacrifice-the-tree-of-liberty-must-be-11777913390109.html",
+        "publishedAt": "2026-05-04T22:34:05+05:30",
+        "publishedAtLabel": "04 May 2026, 10:34:05 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "UAE accuses Iran of missile and drone attacks, Strait of Hormuz tensions reignite",
+        "link": "https://www.livemint.com/news/world/uae-accuses-iran-of-missile-and-drone-attacks-strait-of-hormuz-tensions-reignite-11777913534149.html",
+        "publishedAt": "2026-05-04T22:28:37+05:30",
+        "publishedAtLabel": "04 May 2026, 10:28:37 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Fed\u2019s Williams Says Rates Well Positioned Amid War Uncertainty",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-04/fed-s-williams-says-rates-well-positioned-amid-war-uncertainty",
+        "publishedAt": "2026-05-04T22:20:00+05:30",
+        "publishedAtLabel": "04 May 2026, 10:20:00 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "\u2018No plans to support OMCs for losses on fuel sales\u2019",
+        "link": "https://www.livemint.com/news/india/government-no-fiscal-support-oil-marketing-companies-fuel-losses-petrol-diesel-atf-11777904041269.html",
+        "publishedAt": "2026-05-04T22:07:11+05:30",
+        "publishedAtLabel": "04 May 2026, 10:07:11 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Germany\u2019s Leipzig car attack: Vehicle rams into crowd; 2 dead, several injured",
+        "link": "https://www.livemint.com/news/world/germany-car-attack-two-killed-several-injured-after-rams-car-into-crowd-in-leipzig-11777912103774.html",
+        "publishedAt": "2026-05-04T22:04:21+05:30",
+        "publishedAtLabel": "04 May 2026, 10:04:21 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "J&K staff integration: EPFO sticks to 2019 cutoff, sparks concern",
+        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNUJWUDdLQ1E1TWFzRjhxS3VmUjZ4d0FOdzBQUG1rTXlxNlQ3a2hyd2xwY3R4SURyQXcwVHF6dVVkZE1OUzVDendVM0VuZlg1SGJqYk1rUTdoRHRzQXlnc090VEVFTUR1RzFNSjNabHFNeXJMZmJQbi1aeXlwdGFrMmZWdEo4Z2s2dUd5S1pPUGttM0ROQWllODBIVHJiOXlhcXA1Tlp2TG1FQzhTOWZPRjQwOXRLYnhxVWxRbWVESU5SVE9iMF9VRzJ30gHPAUFVX3lxTE5Fc2pvY294ZzRDRjdEZ1JnOEZGR1UtczlJNWJWeGdXZkFOR1pzQVNGX2dXTlkzLWlXN0c1QU5LVU1uY1RUZnFfdTkzUWxSUHYtNlZnb2Y4TEVtbXNER1pnQll0dE1DUzlSUGFhN25yWXI0VGZtOGZBMjZXdWlBR3VMaUJEMnlwUE82ckJEbVBIUWNBX1lDVzZiYXB5REg5dWZONGNyWmZsWFF0SU1TM3BEVzJNUzZieEZad3hmQi1HUnc1cUZZbG9WQ1ZsWExHWQ?oc=5",
+        "publishedAt": "2026-05-04T21:11:33+05:30",
+        "publishedAtLabel": "04 May 2026, 09:11:33 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Who is Akshat Raghuwanshi? MP batter whacks Will Jacks for first-ball six on IPL debut during MI vs LSG at Wankhede",
+        "link": "https://www.livemint.com/news/trends/who-is-akshat-raghuwanshi-mp-batter-whacks-will-jacks-for-first-ball-six-on-ipl-debut-during-mi-vs-lsg-at-wankhede-11777906295070.html",
+        "publishedAt": "2026-05-04T20:56:46+05:30",
+        "publishedAtLabel": "04 May 2026, 08:56:46 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "How the US Is Using Swap Lines to Project Financial Power",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-04/swap-lines-explained-how-the-us-extends-dollar-power-globally",
+        "publishedAt": "2026-05-04T20:42:25+05:30",
+        "publishedAtLabel": "04 May 2026, 08:42:25 PM IST"
       },
       {
         "source": "Bloomberg Economics",
@@ -87,10 +136,17 @@
       },
       {
         "source": "Bloomberg Economics",
-        "title": "Euro Finance Chiefs Want Mythos AI Access to Prepare Defenses",
+        "title": "Euro Finance Chiefs Want Mythos Access to Prepare Defenses",
         "link": "https://www.bloomberg.com/news/articles/2026-05-04/euro-finance-chiefs-want-mythos-ai-access-to-prepare-defenses",
         "publishedAt": "2026-05-04T19:53:36+05:30",
         "publishedAtLabel": "04 May 2026, 07:53:36 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Meghmani Crop Nutrition receives regulatory approval for manufacturing nano fertilizers",
+        "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPMXJlUmlOS2k4djAtTVhPeUg4QVJYYV9TT2wtRzBNbFdVeDF2dXQ3YjVjUGIxb25aaWN6OXZyT0lTdHdteXR5MzRtU3VPYTlxbFFYTDNRTlZ3aS1jT1VNWWIyTnNRck9CeHJfdHVCVzczdVdDajlOUjluVm9aT19qWjFBU2d3RGV6c3oyd1pGbmtZRXpNUlFCdUpaNjQ2RlBtcE9CeDNoSkpGWHR1SFpyUXJtbHQtZndSejFwZTYxWk5SM2VuVnBzbnROV29vTS1BckFzRzJ6MHdLWGo0d3BndWN3V05MeTByWUlfeEgxbXNXZWdXc01YRGFmUlpwd9IBgwJBVV95cUxNU3JINFFyM0lUYVlrcWNxVE0tcENsQTJzcUhoQW51dGtrdlhxSUx4bC1qNlpyRVQtTjFxc3hXOGtjRFoycWFfNG90aUIyZEI4bnhRUXlnRVdBU1JnMllLZExfX2stRlAwYThYYlRQQW1GMG9UejU3cFZON3Z4ZnFIaFRGSU9yUC1WM2dDbXNxeUU1QUNURmE3WTRVZ0VTbVBiZS13dFlsdkZnNXlvZERsM3g2M1N5Sm1LdzFfQWl5T3RfN2pReXpGZGx1c0tyTDB1RndPTVZrMGN4QTNxWDRYa1lRMWZoYVpDYlo0dk4yYlVPNVZzVlNuREZhck5MdG9fSldB?oc=5",
+        "publishedAt": "2026-05-04T19:50:25+05:30",
+        "publishedAtLabel": "04 May 2026, 07:50:25 PM IST"
       },
       {
         "source": "Bloomberg Economics",
@@ -100,53 +156,11 @@
         "publishedAtLabel": "04 May 2026, 07:50:01 PM IST"
       },
       {
-        "source": "Bloomberg Economics",
-        "title": "Europe Needs Bigger Banks, Cross-Border M&A, Top Official Says",
-        "link": "https://www.bloomberg.com/news/articles/2026-05-04/europe-needs-bigger-banks-cross-border-m-a-top-official-says",
-        "publishedAt": "2026-05-04T19:45:41+05:30",
-        "publishedAtLabel": "04 May 2026, 07:45:41 PM IST"
-      },
-      {
         "source": "Business Standard",
         "title": "EMS secures project of Rs 143.79 cr from UP Jal Nigam, Varanasi",
         "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOY2JJRUFiWHZaMlNhWVQtZkx2N3oyYnd0QXdoT0oxSzhZUDBoaEw3cHBrZGd2eks1UzMzeFlWTWN2X21BRTlXYU1XVW9CeVpqVkZPMGdYb05YQmJoa2JwcmFhdDJpQ2FDQ0xpcDUtTkVhYVYtSThwUVJDOUUxUkRiZjVnV2ZuRTdMV0ZKZWNldllpNkZGb3BEZGp0OHZMSjZSSUVZR29vR1Q2a3ZtZ2Iwb2xFZ21qMEplMkt1cXRBX19fVmRQYnJaUW5RSTBlRGpPWTZrOVBKY2pKdzFI0gHiAUFVX3lxTFBSMmNzZ21vYmNHeHRzWjNCbUxuYlpBaWxhbzVMTHFfVXluclVOOTJEekFVaEtHdTJhYV9ISHZCaVV5ZnYwLTJYN0s3MU1RYjRuRC1CNlB2OHhRTDZjR2Etc0F4QVBFY0gxeXZOUmpMcTRXbHBndGwwd1Z6Wmx0LWl5WWdtNnp4a190eWpyc0NnS2FSLXlRZ01ocUx4enplQ3hWZnBVLWxMQ2FoSnlFR1VsREkzR1dXQTNjTkU4YktjNlhVVGVoSC1JVHVQcFpWekliQ25PS1ZoQUw0dFBhcnVLN3c?oc=5",
         "publishedAt": "2026-05-04T19:31:02+05:30",
         "publishedAtLabel": "04 May 2026, 07:31:02 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "ECB Says Weaker Bank Capital Rules May Fuel Payouts, Not Lending",
-        "link": "https://www.bloomberg.com/news/articles/2026-05-04/ecb-says-weaker-bank-capital-rules-may-fuel-payouts-not-lending",
-        "publishedAt": "2026-05-04T19:30:00+05:30",
-        "publishedAtLabel": "04 May 2026, 07:30:00 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "Weather today in Delhi, Rajasthan, UP, Himachal: IMD predicts heavy rains, hailstorms in these states",
-        "link": "https://www.livemint.com/news/india/weather-today-in-delhi-rajasthan-up-himachal-imd-predicts-heavy-rains-hailstorms-in-these-states-11777902111048.html",
-        "publishedAt": "2026-05-04T19:19:50+05:30",
-        "publishedAtLabel": "04 May 2026, 07:19:50 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "Trump\u2019s approval tanks amid oil crisis, inflation fears and backlash over Iran war: New poll",
-        "link": "https://www.livemint.com/news/us-news/trumps-approval-tanks-amid-oil-crisis-inflation-fears-and-backlash-over-iran-war-new-poll-11777901100985.html",
-        "publishedAt": "2026-05-04T19:18:59+05:30",
-        "publishedAtLabel": "04 May 2026, 07:18:59 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "Suryakumar Yadav leads Mumbai Indians in MI v LSG in IPL 2026; what happened to Hardik Pandya? Rohit Sharma returns too",
-        "link": "https://www.livemint.com/news/trends/suryakumar-yadav-leads-mumbai-indians-in-mi-v-lsg-in-ipl-2026-what-happened-to-hardik-pandya-rohit-sharma-returns-too-11777901286426.html",
-        "publishedAt": "2026-05-04T19:08:53+05:30",
-        "publishedAtLabel": "04 May 2026, 07:08:53 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "From breakdown on national TV to TVK prediction success: The viral redemption of Axis My India\u2019s Pradeep Gupta",
-        "link": "https://www.livemint.com/news/trends/from-breakdown-on-national-tv-to-tvk-prediction-success-the-viral-redemption-of-axis-my-india-s-pradeep-gupta-11777900069249.html",
-        "publishedAt": "2026-05-04T19:00:47+05:30",
-        "publishedAtLabel": "04 May 2026, 07:00:47 PM IST"
       },
       {
         "source": "Business Standard",
@@ -161,20 +175,6 @@
         "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOVUJlQlRkc0daUlVKTVIzWkttME5za210Nk8xdjBHV0YwcDF6U1BEbmE2LVpCRFJWQzVTblpodk1CQ2o4bk9oTHBTYXJTTEJEOERES0RBWjVZckVkdWdSUGJIdjB5N3E0MFU5QTZ5aW16ZDI5LWNUSVI5WVVBQkJzOXgwSjV4ZEdVdk9rcU5DMV9HYUkyekwya0pPOW5mNk9aVkY2eERWSkRVbjh0RUV0aFcwYjV5NWR1dHhDUVNUWXN6S3FTVUFUT2pR0gHPAUFVX3lxTE81cnVadFM4LTF3R0RxdDJDNTgtTVhGQkNQWGJldGY0U29CZWpSVENiRnVMY0lqQkNDd29SY3h5YWxiTE5TMFdaYnVXYzRUaW5aNXNwMDNMYU42YmhfWExSVWxWbl9GTnNyQ1dWb0EyOWZuLWpSaXlmMEk0WnQ2TTJlZXY0TkFoMTdtWHpqeTFXVlFzQlJ0SFJDa0Q4MlNvdWxXbUV2TjZzdmtOeTRLQWhYSkxKOW1Sd1A1a3RPbTZkQUJWSEdQRzNxR3lXelZZZw?oc=5",
         "publishedAt": "2026-05-04T18:10:31+05:30",
         "publishedAtLabel": "04 May 2026, 06:10:31 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Petronet LNG consolidated net profit rises 25.19% in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNSF9SSE80VXdQSFRkSFVUNE54SVJWTmplcllhcVl4cmo3dXVLbWRVdkxvUWd1MlpUSS1DRGpvTzN2ZlVVRnRHMWY5c2p0ZlhBcjV6aGlPMk9nbEYyNnJqdVM3eUV5bW45VGJiSXRTcVMxNnJmVVdqOUFBUXZDbk82aTJLOW1TLVg5bmNoM0Q1cGFaRHZCZ0xBcU9INjYxVkRrRTBuLWVXZF94OGNfaE41d05zc0M5ZjNQeDRXVlFtTHRCdU0yWGNJdm9jT01lS3FYZkl4SF9sWE5yQTlZbXZVdHBYR1RvczhCenZ6btIB8gFBVV95cUxNeFVlTS1HVGNKV1ZNZjRYQ3dDeVVFQzNSUThobzJQTDlHcF9XdnpNWG83aVNTWl9EV01LMUMxRzd4SlBueWN4ajFucC1BNWw5NFdLSnJmbk1sMENXVWozQW93NXU2c291cDU3aU1sU2h6R1pseTN6cG5aYVJvbFFMazNtSjFYVDZvaVBKbmFWY3ZxZDYyNFNtdjd6eThsdU10SGVWQjRoQTE1NG43THZGU3h2UXRod2M4d0xqbFFaOTh3TGJGX01rLXI4TVdvRDFvbWNfd1dHMnREalhvZ182amx3NXFmRnFfTDJOQlNEZGQtZw?oc=5",
-        "publishedAt": "2026-05-04T17:51:40+05:30",
-        "publishedAtLabel": "04 May 2026, 05:51:40 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Krishival Foods consolidated net profit rises 32.68% in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPUGlqRFEwWUMtYzlFSU1QNXZaRWZRVkduSF9kVEk2UEl4cVIxalZuTjg2UnFPWE9KZUpyUXd3ZmdxQjFjcDVvSDBrRXNkelFiSlZrNVZVeWRfemc1ekJlQXRyMXZnQnh2ckdYbWsyb0k0LTk5aTVfaXVUTWxKbnRMVkpRSGdOeEVPTnlZTDVuZ296TkRPOC01N3ppNHJrUTZTOG1JS0FZaUZuUmpXcXYzQ3VSWWEyd2JvODZDeEV1cktEbXYzbDBseGl4MDVnUGFyWFVGaW9nYTU3cGEwNkpFdGkxXzRmUlZDYU8tX2NvdlXSAfYBQVVfeXFMTUg3RUtlb0tvQ0Nzc0ZJTHNXU3ZWWWtfWEJtX3dYRnJtYjBpSlhDZThYSFI4UFFUbFc2ZmtZZW1ieFhsbnA3REVELTJTVnZadElkMEZFZWhhOTcxRENsMmo4TkhpbktYSV9wLVdJUW9ORVdSTXdac3VTNGJ4el8zR2ZhbnhMcVhlRml3bE90SVdxc2xCUUlENFNJQ1NNaEQ5OVcwZ1VoNzNTdHNDV2xXdVNHMGowVDhyMkQtWmFtUzByTUh2TXlrQTh1anNnT3I3XzFrS2UzT3pZOW05Nm9BVm1jZUZzdHZVMnh3VlVackNDXzRub19R?oc=5",
-        "publishedAt": "2026-05-04T17:51:40+05:30",
-        "publishedAtLabel": "04 May 2026, 05:51:40 PM IST"
       }
     ],
     "sourcesAvailable": [
