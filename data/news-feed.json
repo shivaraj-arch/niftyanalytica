@@ -1,27 +1,27 @@
 {
   "marketTape": {
-    "updatedAt": "2026-05-04T18:52:56.016579+05:30",
+    "updatedAt": "2026-05-04T19:22:35.096499+05:30",
     "items": [
       {
         "label": "S&P 500",
-        "last": 7230.1,
-        "changePercent": 0.0,
+        "last": 7227.6,
+        "changePercent": -0.034577668358667234,
         "source": "Stooq",
-        "updatedAt": "2026-05-04 14:31:01"
+        "updatedAt": "2026-05-04 15:52:19"
       },
       {
         "label": "Dow Jones",
-        "last": 49499.3,
-        "changePercent": 0.0,
+        "last": 49291.8,
+        "changePercent": -0.4191978472422842,
         "source": "Stooq",
-        "updatedAt": "2026-05-04 14:30:43"
+        "updatedAt": "2026-05-04 15:52:01"
       },
       {
         "label": "Nasdaq",
-        "last": 25114.443,
-        "changePercent": 0.5470980419004181,
+        "last": 25148.56,
+        "changePercent": 0.14486993960699954,
         "source": "Stooq",
-        "updatedAt": "2026-05-01 23:15:59"
+        "updatedAt": "2026-05-04 15:52:09"
       },
       {
         "label": "Nikkei 225",
@@ -46,31 +46,94 @@
       },
       {
         "label": "DAX",
-        "last": 24230.94,
-        "changePercent": -0.17944756843601847,
+        "last": 24240.99,
+        "changePercent": -0.1380460977568988,
         "source": "Stooq",
-        "updatedAt": "2026-05-04 15:07:24"
+        "updatedAt": "2026-05-04 15:37:06"
       },
       {
         "label": "Crude Oil",
-        "last": 102.35,
-        "changePercent": 2.196704942586109,
+        "last": 102.4,
+        "changePercent": 2.2466300549176235,
         "source": "Stooq",
-        "updatedAt": "2026-05-04 15:22:52"
+        "updatedAt": "2026-05-04 15:52:32"
       },
       {
         "label": "Gold",
-        "last": 4563.685,
-        "changePercent": -1.2244981884136352,
+        "last": 4563.235,
+        "changePercent": -1.2342379000316117,
         "source": "Stooq",
-        "updatedAt": "2026-05-04 15:22:52"
+        "updatedAt": "2026-05-04 15:52:32"
       }
     ]
   },
   "newsFeed": {
-    "updatedAt": "2026-05-04T18:52:56.016595+05:30",
-    "updatedAtLabel": "04 May 2026, 06:52:56 PM IST",
+    "updatedAt": "2026-05-04T19:22:35.096516+05:30",
+    "updatedAtLabel": "04 May 2026, 07:22:35 PM IST",
     "items": [
+      {
+        "source": "Livemint",
+        "title": "Weather today in Delhi, Rajasthan, UP, Himachal: IMD predicts heavy rains, hailstorms in these states",
+        "link": "https://www.livemint.com/news/india/weather-today-in-delhi-rajasthan-up-himachal-imd-predicts-heavy-rains-hailstorms-in-these-states-11777902111048.html",
+        "publishedAt": "2026-05-04T19:19:50+05:30",
+        "publishedAtLabel": "04 May 2026, 07:19:50 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Trump\u2019s approval tanks amid oil crisis, inflation fears and backlash over Iran war: New poll",
+        "link": "https://www.livemint.com/news/us-news/trumps-approval-tanks-amid-oil-crisis-inflation-fears-and-backlash-over-iran-war-new-poll-11777901100985.html",
+        "publishedAt": "2026-05-04T19:18:59+05:30",
+        "publishedAtLabel": "04 May 2026, 07:18:59 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Suryakumar Yadav leads Mumbai Indians in MI v LSG in IPL 2026; what happened to Hardik Pandya? Rohit Sharma returns too",
+        "link": "https://www.livemint.com/news/trends/suryakumar-yadav-leads-mumbai-indians-in-mi-v-lsg-in-ipl-2026-what-happened-to-hardik-pandya-rohit-sharma-returns-too-11777901286426.html",
+        "publishedAt": "2026-05-04T19:08:53+05:30",
+        "publishedAtLabel": "04 May 2026, 07:08:53 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "EU Vows Action If Trump Adopts Car Tariffs, But Urges Restraint",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-04/eu-vows-action-if-trump-adopts-car-tariffs-but-urges-restraint",
+        "publishedAt": "2026-05-04T19:02:43+05:30",
+        "publishedAtLabel": "04 May 2026, 07:02:43 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Dudley Backs Powell Staying On After \u2018Merciless\u2019 Attacks on Fed",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-04/dudley-backs-powell-staying-on-after-merciless-attacks-on-fed",
+        "publishedAt": "2026-05-04T19:01:23+05:30",
+        "publishedAtLabel": "04 May 2026, 07:01:23 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "From breakdown on national TV to TVK prediction success: The viral redemption of Axis My India\u2019s Pradeep Gupta",
+        "link": "https://www.livemint.com/news/trends/from-breakdown-on-national-tv-to-tvk-prediction-success-the-viral-redemption-of-axis-my-india-s-pradeep-gupta-11777900069249.html",
+        "publishedAt": "2026-05-04T19:00:47+05:30",
+        "publishedAtLabel": "04 May 2026, 07:00:47 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "US-Iran military strikes to resume soon? UAE authorities send missile alert weeks after ceasefire",
+        "link": "https://www.livemint.com/news/world/usiran-military-strikes-to-resume-soon-uae-authorities-send-missile-alert-weeks-after-ceasefire-11777901097558.html",
+        "publishedAt": "2026-05-04T18:58:47+05:30",
+        "publishedAtLabel": "04 May 2026, 06:58:47 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "US Allies Look to Europe to Build a Post-Trump Global Order",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-04/us-allies-look-to-europe-to-rebuild-a-post-trumpian-global-order",
+        "publishedAt": "2026-05-04T18:58:03+05:30",
+        "publishedAtLabel": "04 May 2026, 06:58:03 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Crude oil prices expected to remain high and volatile, says CRISIL",
+        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZ1JQd2Jqd3FWenV4Rm5IZUhheW1nMXo2by1xdEZNcjE0R1N4b1VvSGxjOEx6aEFrbWFjaXN2VGd4aDZhVndBbE9wWEVsbUdEWVlhUkFvNENUMmtwTTFkMEt4SGVDRldjN2pxRmh0OFEyazVpcGlmOFJDMzVSNDBabC1hT1JWSUVNaWQ1WEw4enBvNG9JMzVJdno0X2NvUzVnQng2Qm55VHliUW1jdHlnZURpNXp4SmlOWXNncmE2bklDQTJTa1NmQ1BlMUnSAdIBQVVfeXFMUFU3Y2RNQVdUWkhCUWoteU1KU3R4UHBJeHZfSWxFcVluMEI5Wm5TU1F2UTl3RFFsVDBZaktpalNzVEhSQVVDQzkyRmJ1ZVpvT0lHbTJKRmZFSzNuQ2tXdDU1eXhOV2drNnRpdmtibWJmckp0REcwZ0xzSi1oVTAxQUF4Yng0enB5YmpCYmphdFJPOGNDdThvaHFRR0M2cGtoQzRsd0dHUkpfRGl0VlZDSFRZUkstbkRLNkt5MFZJTmNaRU1ZN0NTSV9rOUIzU2ZUcFFR?oc=5",
+        "publishedAt": "2026-05-04T18:54:22+05:30",
+        "publishedAtLabel": "04 May 2026, 06:54:22 PM IST"
+      },
       {
         "source": "Bloomberg Economics",
         "title": "Chile Economic Activity Sees Monthly Rise in End to Weak Quarter",
@@ -93,20 +156,6 @@
         "publishedAtLabel": "04 May 2026, 06:01:21 PM IST"
       },
       {
-        "source": "Livemint",
-        "title": "Delhi on \u2018flash flood risk\u2019 as national capital braces for heavy rain; IMD issues thunderstorm alert for multiple states",
-        "link": "https://www.livemint.com/news/india/delhi-on-flash-flood-risk-as-national-capital-braces-for-heavy-rain-imd-issues-thunderstorm-alert-for-multiple-states-11777891918159.html",
-        "publishedAt": "2026-05-04T18:01:04+05:30",
-        "publishedAtLabel": "04 May 2026, 06:01:04 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "Iran claims it forced US warship to retreat in Strait of Hormuz; Washington denies missile strike",
-        "link": "https://www.livemint.com/news/world/iran-claims-it-forced-us-warship-to-retreat-in-strait-of-hormuz-washington-denies-missile-strike-11777894560741.html",
-        "publishedAt": "2026-05-04T17:55:45+05:30",
-        "publishedAtLabel": "04 May 2026, 05:55:45 PM IST"
-      },
-      {
         "source": "Business Standard",
         "title": "Petronet LNG consolidated net profit rises 25.19% in the March 2026 quarter",
         "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNSF9SSE80VXdQSFRkSFVUNE54SVJWTmplcllhcVl4cmo3dXVLbWRVdkxvUWd1MlpUSS1DRGpvTzN2ZlVVRnRHMWY5c2p0ZlhBcjV6aGlPMk9nbEYyNnJqdVM3eUV5bW45VGJiSXRTcVMxNnJmVVdqOUFBUXZDbk82aTJLOW1TLVg5bmNoM0Q1cGFaRHZCZ0xBcU9INjYxVkRrRTBuLWVXZF94OGNfaE41d05zc0M5ZjNQeDRXVlFtTHRCdU0yWGNJdm9jT01lS3FYZkl4SF9sWE5yQTlZbXZVdHBYR1RvczhCenZ6btIB8gFBVV95cUxNeFVlTS1HVGNKV1ZNZjRYQ3dDeVVFQzNSUThobzJQTDlHcF9XdnpNWG83aVNTWl9EV01LMUMxRzd4SlBueWN4ajFucC1BNWw5NFdLSnJmbk1sMENXVWozQW93NXU2c291cDU3aU1sU2h6R1pseTN6cG5aYVJvbFFMazNtSjFYVDZvaVBKbmFWY3ZxZDYyNFNtdjd6eThsdU10SGVWQjRoQTE1NG43THZGU3h2UXRod2M4d0xqbFFaOTh3TGJGX01rLXI4TVdvRDFvbWNfd1dHMnREalhvZ182amx3NXFmRnFfTDJOQlNEZGQtZw?oc=5",
@@ -126,55 +175,6 @@
         "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPTXBRTVJqREx1RGdXSXplSGZvNzVfb2lJMHMyTVZ6cXI4WF9sYjVUYVZjN0sxSDhZVHF6MWNqSFNFd1Eza0lvUXp0VmoxSUhaangybkV5STdNQk1wZmtVNjItNWFScEpsbDAxWWo4R3RBTzB3cVdvRHhiekpEbF9wZHg4YUhRZ1JwUEdaSzFFcnVpZ2d6Z1VDc3d0QU5WNWEzSThtT21KVU5XWHFQS0VOZHEzbDVNTkZJbDFXTXRIVEd1RnBrTGdYdWQ3VW0tQdIB0wFBVV95cUxNZlJvWF9vZDJ5dFlNNUdDQUhKRlctdkYtNGxZWlRRQkM2UWNwUnZpSjVFYmFRbTgzbUdmR2lBclUwVVcxYXAtWVNqNVlaVGpncWFUWk8wcWI2aUVWUVNOR0xLSk5rdlZsTVBrYUd1ZnM5ZUpzenpsd1BQa2JQRi1MbkJ3czR3TjFDNkMzbVJVX0NadTBzSzJDR084Uk16cjRDaW1RNHNhV3hRS0hQVC1vb0VkRTJXanRnRFdSTUdkdl9wc2NoZzBsV2RlSW42MTNLSTFz?oc=5",
         "publishedAt": "2026-05-04T17:50:36+05:30",
         "publishedAtLabel": "04 May 2026, 05:50:36 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Tata Technologies consolidated net profit rises 8.10% in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNRGM4MFpJM2J5d3BtRHRtTi1LMXBNVkdMYjNGVVk0ekxUZ2pTZnA3eFRja0I3OGg3cE5Ka05ndzJHOEg5WVEzci0xYzREVFEycEwwckdLU1RtWVlWUC1Xd1FyWjRvX2x0M09ndXFsSEw2UklYT2pDZC03aTgyUUF2ZmF5V2t0cWptSG5fMTJfcm51ZDdFOVpKQzFTcUxhcUpQMkh1SlNTT3haV21CMVg0MzhDNl84WTFYQVJTbC1SdnJKeXdaZEZhV1JQV3I4cWR3VW9UV0gzMGZWSzRPUlJwWDFwU3NDUTIxRFFIdGV0ZENoZ9IB9wFBVV95cUxQU3JoLUhmZWNkNFFXZ2h6Y1JVRjFHR0pnY3Ata1VXdENfOEd3LWRtbzlPRW4yak13TUZ6Ni1sSEFoOEUybGdmcXh5bUotN2pnUExZTGhPb3lTOERUdGlzUUVxeFRKZllkYzZrcmdzZ1l4bkw1dzRsQ2xTbFBSN0xUSVRzY1Y1VVFWbmJwYVlZN2NXU0QtbWJTS2ZQZ1FKZ0NUMFVhNHJ1VVREUEo0Wkpwa2lLZ0FMUld6VHo5ZENIQVRwMVZjOVZLazhnSkFKQVdZUGpUNUVNSktJckhMcUd1ZlVQbFZ2NDlCdHJGY3FRVG5fWWVuQjFV?oc=5",
-        "publishedAt": "2026-05-04T17:50:23+05:30",
-        "publishedAtLabel": "04 May 2026, 05:50:23 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "China Eastern Airlines Flight MU5735 crash 2022: NTSB data suggests possible intentional fuel cutoff mid-flight",
-        "link": "https://www.livemint.com/news/world/china-eastern-airlines-flight-mu5735-crash-2022-ntsb-data-suggests-possible-intentional-fuel-cutoff-midflight-11777895514854.html",
-        "publishedAt": "2026-05-04T17:48:41+05:30",
-        "publishedAtLabel": "04 May 2026, 05:48:41 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "Watch: Security tightened outside Vijay\u2019s Chennai residence as TVK leads in Tamil Nadu poll trends",
-        "link": "https://www.livemint.com/news/trends/watch-security-tightened-outside-vijay-s-chennai-residence-as-tvk-leads-in-tamil-nadu-poll-trends-11777895165251.html",
-        "publishedAt": "2026-05-04T17:48:36+05:30",
-        "publishedAtLabel": "04 May 2026, 05:48:36 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "South Africa Gasoline Price Jumps to Highest in Four Years",
-        "link": "https://www.bloomberg.com/news/articles/2026-05-04/south-africa-gasoline-price-jumps-to-highest-in-four-years",
-        "publishedAt": "2026-05-04T17:28:24+05:30",
-        "publishedAtLabel": "04 May 2026, 05:28:24 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "Delhi\u2019s tougher challan rules mandate 50% fine before court appeal; repeat offenders may lose licences",
-        "link": "https://www.livemint.com/news/india/delhis-tougher-challan-rules-mandate-50-fine-before-court-appeal-repeat-offenders-may-lose-licences-11777892567526.html",
-        "publishedAt": "2026-05-04T17:11:07+05:30",
-        "publishedAtLabel": "04 May 2026, 05:11:07 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "How US and China\u2019s Allies Struggle to Balance Trade Ties With Both",
-        "link": "https://www.bloomberg.com/news/newsletters/2026-05-04/middle-powers-and-how-they-manage-us-china-ties",
-        "publishedAt": "2026-05-04T16:33:10+05:30",
-        "publishedAtLabel": "04 May 2026, 04:33:10 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Asia May Be Entering an AI-Fueled Industrial Super Cycle",
-        "link": "https://www.bloomberg.com/news/newsletters/2026-05-04/asia-may-be-entering-an-ai-fueled-industrial-super-cycle",
-        "publishedAt": "2026-05-04T16:30:01+05:30",
-        "publishedAtLabel": "04 May 2026, 04:30:01 PM IST"
       }
     ],
     "sourcesAvailable": [
