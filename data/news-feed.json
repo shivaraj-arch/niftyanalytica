@@ -1,27 +1,27 @@
 {
   "marketTape": {
-    "updatedAt": "2026-05-04T16:53:33.579176+05:30",
+    "updatedAt": "2026-05-04T18:47:00.386838+05:30",
     "items": [
       {
         "label": "S&P 500",
         "last": 7230.1,
-        "changePercent": -0.06081968346118787,
+        "changePercent": 0.0,
         "source": "Stooq",
-        "updatedAt": "2026-05-01 23:00:00"
+        "updatedAt": "2026-05-04 14:31:01"
       },
       {
         "label": "Dow Jones",
         "last": 49499.3,
-        "changePercent": -0.6688392738889716,
+        "changePercent": 0.0,
         "source": "Stooq",
-        "updatedAt": "2026-05-01 23:00:00"
+        "updatedAt": "2026-05-04 14:30:43"
       },
       {
         "label": "Nasdaq",
-        "last": 25114.44,
-        "changePercent": 0.5470860312301361,
+        "last": 25114.443,
+        "changePercent": 0.5470980419004181,
         "source": "Stooq",
-        "updatedAt": "2026-05-01 23:00:00"
+        "updatedAt": "2026-05-01 23:15:59"
       },
       {
         "label": "Nikkei 225",
@@ -46,44 +46,121 @@
       },
       {
         "label": "DAX",
-        "last": 24251.57,
-        "changePercent": -0.09446126593750764,
+        "last": 24187.76,
+        "changePercent": -0.3573297081299372,
         "source": "Stooq",
-        "updatedAt": "2026-05-04 13:08:08"
+        "updatedAt": "2026-05-04 15:01:12"
       },
       {
         "label": "Crude Oil",
-        "last": 105.47,
-        "changePercent": 5.312031952071885,
+        "last": 102.32,
+        "changePercent": 2.1667498751872065,
         "source": "Stooq",
-        "updatedAt": "2026-05-04 13:23:29"
+        "updatedAt": "2026-05-04 15:16:57"
       },
       {
         "label": "Gold",
         "last": 4564.225,
         "changePercent": -1.2128105344720828,
         "source": "Stooq",
-        "updatedAt": "2026-05-04 13:23:32"
+        "updatedAt": "2026-05-04 15:16:56"
       }
     ]
   },
   "newsFeed": {
-    "updatedAt": "2026-05-04T16:53:33.579193+05:30",
-    "updatedAtLabel": "04 May 2026, 04:53:33 PM IST",
+    "updatedAt": "2026-05-04T18:47:00.386854+05:30",
+    "updatedAtLabel": "04 May 2026, 06:47:00 PM IST",
     "items": [
+      {
+        "source": "Bloomberg Economics",
+        "title": "Chile Economic Activity Sees Monthly Rise in End to Weak Quarter",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-04/chile-economic-activity-sees-monthly-rise-in-end-to-weak-quarter",
+        "publishedAt": "2026-05-04T18:23:32+05:30",
+        "publishedAtLabel": "04 May 2026, 06:23:32 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Sebi flags GST hurdles in commodity market, seeks IGST mechanism",
+        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOVUJlQlRkc0daUlVKTVIzWkttME5za210Nk8xdjBHV0YwcDF6U1BEbmE2LVpCRFJWQzVTblpodk1CQ2o4bk9oTHBTYXJTTEJEOERES0RBWjVZckVkdWdSUGJIdjB5N3E0MFU5QTZ5aW16ZDI5LWNUSVI5WVVBQkJzOXgwSjV4ZEdVdk9rcU5DMV9HYUkyekwya0pPOW5mNk9aVkY2eERWSkRVbjh0RUV0aFcwYjV5NWR1dHhDUVNUWXN6S3FTVUFUT2pR0gHPAUFVX3lxTE81cnVadFM4LTF3R0RxdDJDNTgtTVhGQkNQWGJldGY0U29CZWpSVENiRnVMY0lqQkNDd29SY3h5YWxiTE5TMFdaYnVXYzRUaW5aNXNwMDNMYU42YmhfWExSVWxWbl9GTnNyQ1dWb0EyOWZuLWpSaXlmMEk0WnQ2TTJlZXY0TkFoMTdtWHpqeTFXVlFzQlJ0SFJDa0Q4MlNvdWxXbUV2TjZzdmtOeTRLQWhYSkxKOW1Sd1A1a3RPbTZkQUJWSEdQRzNxR3lXelZZZw?oc=5",
+        "publishedAt": "2026-05-04T18:10:31+05:30",
+        "publishedAtLabel": "04 May 2026, 06:10:31 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Delhi on \u2018flash flood risk\u2019 as national capital braces for heavy rain; IMD issues thunderstorm alert for multiple states",
+        "link": "https://www.livemint.com/news/india/delhi-on-flash-flood-risk-as-national-capital-braces-for-heavy-rain-imd-issues-thunderstorm-alert-for-multiple-states-11777891918159.html",
+        "publishedAt": "2026-05-04T18:01:04+05:30",
+        "publishedAtLabel": "04 May 2026, 06:01:04 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Iran claims it forced US warship to retreat in Strait of Hormuz; Washington denies missile strike",
+        "link": "https://www.livemint.com/news/world/iran-claims-it-forced-us-warship-to-retreat-in-strait-of-hormuz-washington-denies-missile-strike-11777894560741.html",
+        "publishedAt": "2026-05-04T17:55:45+05:30",
+        "publishedAtLabel": "04 May 2026, 05:55:45 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Petronet LNG consolidated net profit rises 25.19% in the March 2026 quarter",
+        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNSF9SSE80VXdQSFRkSFVUNE54SVJWTmplcllhcVl4cmo3dXVLbWRVdkxvUWd1MlpUSS1DRGpvTzN2ZlVVRnRHMWY5c2p0ZlhBcjV6aGlPMk9nbEYyNnJqdVM3eUV5bW45VGJiSXRTcVMxNnJmVVdqOUFBUXZDbk82aTJLOW1TLVg5bmNoM0Q1cGFaRHZCZ0xBcU9INjYxVkRrRTBuLWVXZF94OGNfaE41d05zc0M5ZjNQeDRXVlFtTHRCdU0yWGNJdm9jT01lS3FYZkl4SF9sWE5yQTlZbXZVdHBYR1RvczhCenZ6btIB8gFBVV95cUxNeFVlTS1HVGNKV1ZNZjRYQ3dDeVVFQzNSUThobzJQTDlHcF9XdnpNWG83aVNTWl9EV01LMUMxRzd4SlBueWN4ajFucC1BNWw5NFdLSnJmbk1sMENXVWozQW93NXU2c291cDU3aU1sU2h6R1pseTN6cG5aYVJvbFFMazNtSjFYVDZvaVBKbmFWY3ZxZDYyNFNtdjd6eThsdU10SGVWQjRoQTE1NG43THZGU3h2UXRod2M4d0xqbFFaOTh3TGJGX01rLXI4TVdvRDFvbWNfd1dHMnREalhvZ182amx3NXFmRnFfTDJOQlNEZGQtZw?oc=5",
+        "publishedAt": "2026-05-04T17:51:40+05:30",
+        "publishedAtLabel": "04 May 2026, 05:51:40 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Krishival Foods consolidated net profit rises 32.68% in the March 2026 quarter",
+        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPUGlqRFEwWUMtYzlFSU1QNXZaRWZRVkduSF9kVEk2UEl4cVIxalZuTjg2UnFPWE9KZUpyUXd3ZmdxQjFjcDVvSDBrRXNkelFiSlZrNVZVeWRfemc1ekJlQXRyMXZnQnh2ckdYbWsyb0k0LTk5aTVfaXVUTWxKbnRMVkpRSGdOeEVPTnlZTDVuZ296TkRPOC01N3ppNHJrUTZTOG1JS0FZaUZuUmpXcXYzQ3VSWWEyd2JvODZDeEV1cktEbXYzbDBseGl4MDVnUGFyWFVGaW9nYTU3cGEwNkpFdGkxXzRmUlZDYU8tX2NvdlXSAfYBQVVfeXFMTUg3RUtlb0tvQ0Nzc0ZJTHNXU3ZWWWtfWEJtX3dYRnJtYjBpSlhDZThYSFI4UFFUbFc2ZmtZZW1ieFhsbnA3REVELTJTVnZadElkMEZFZWhhOTcxRENsMmo4TkhpbktYSV9wLVdJUW9ORVdSTXdac3VTNGJ4el8zR2ZhbnhMcVhlRml3bE90SVdxc2xCUUlENFNJQ1NNaEQ5OVcwZ1VoNzNTdHNDV2xXdVNHMGowVDhyMkQtWmFtUzByTUh2TXlrQTh1anNnT3I3XzFrS2UzT3pZOW05Nm9BVm1jZUZzdHZVMnh3VlVackNDXzRub19R?oc=5",
+        "publishedAt": "2026-05-04T17:51:40+05:30",
+        "publishedAtLabel": "04 May 2026, 05:51:40 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Onemi Technology Solutions (Kissht) IPO subscribed 60%",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPTXBRTVJqREx1RGdXSXplSGZvNzVfb2lJMHMyTVZ6cXI4WF9sYjVUYVZjN0sxSDhZVHF6MWNqSFNFd1Eza0lvUXp0VmoxSUhaangybkV5STdNQk1wZmtVNjItNWFScEpsbDAxWWo4R3RBTzB3cVdvRHhiekpEbF9wZHg4YUhRZ1JwUEdaSzFFcnVpZ2d6Z1VDc3d0QU5WNWEzSThtT21KVU5XWHFQS0VOZHEzbDVNTkZJbDFXTXRIVEd1RnBrTGdYdWQ3VW0tQdIB0wFBVV95cUxNZlJvWF9vZDJ5dFlNNUdDQUhKRlctdkYtNGxZWlRRQkM2UWNwUnZpSjVFYmFRbTgzbUdmR2lBclUwVVcxYXAtWVNqNVlaVGpncWFUWk8wcWI2aUVWUVNOR0xLSk5rdlZsTVBrYUd1ZnM5ZUpzenpsd1BQa2JQRi1MbkJ3czR3TjFDNkMzbVJVX0NadTBzSzJDR084Uk16cjRDaW1RNHNhV3hRS0hQVC1vb0VkRTJXanRnRFdSTUdkdl9wc2NoZzBsV2RlSW42MTNLSTFz?oc=5",
+        "publishedAt": "2026-05-04T17:50:36+05:30",
+        "publishedAtLabel": "04 May 2026, 05:50:36 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Tata Technologies consolidated net profit rises 8.10% in the March 2026 quarter",
+        "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNRGM4MFpJM2J5d3BtRHRtTi1LMXBNVkdMYjNGVVk0ekxUZ2pTZnA3eFRja0I3OGg3cE5Ka05ndzJHOEg5WVEzci0xYzREVFEycEwwckdLU1RtWVlWUC1Xd1FyWjRvX2x0M09ndXFsSEw2UklYT2pDZC03aTgyUUF2ZmF5V2t0cWptSG5fMTJfcm51ZDdFOVpKQzFTcUxhcUpQMkh1SlNTT3haV21CMVg0MzhDNl84WTFYQVJTbC1SdnJKeXdaZEZhV1JQV3I4cWR3VW9UV0gzMGZWSzRPUlJwWDFwU3NDUTIxRFFIdGV0ZENoZ9IB9wFBVV95cUxQU3JoLUhmZWNkNFFXZ2h6Y1JVRjFHR0pnY3Ata1VXdENfOEd3LWRtbzlPRW4yak13TUZ6Ni1sSEFoOEUybGdmcXh5bUotN2pnUExZTGhPb3lTOERUdGlzUUVxeFRKZllkYzZrcmdzZ1l4bkw1dzRsQ2xTbFBSN0xUSVRzY1Y1VVFWbmJwYVlZN2NXU0QtbWJTS2ZQZ1FKZ0NUMFVhNHJ1VVREUEo0Wkpwa2lLZ0FMUld6VHo5ZENIQVRwMVZjOVZLazhnSkFKQVdZUGpUNUVNSktJckhMcUd1ZlVQbFZ2NDlCdHJGY3FRVG5fWWVuQjFV?oc=5",
+        "publishedAt": "2026-05-04T17:50:23+05:30",
+        "publishedAtLabel": "04 May 2026, 05:50:23 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "China Eastern Airlines Flight MU5735 crash 2022: NTSB data suggests possible intentional fuel cutoff mid-flight",
+        "link": "https://www.livemint.com/news/world/china-eastern-airlines-flight-mu5735-crash-2022-ntsb-data-suggests-possible-intentional-fuel-cutoff-midflight-11777895514854.html",
+        "publishedAt": "2026-05-04T17:48:41+05:30",
+        "publishedAtLabel": "04 May 2026, 05:48:41 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Watch: Security tightened outside Vijay\u2019s Chennai residence as TVK leads in Tamil Nadu poll trends",
+        "link": "https://www.livemint.com/news/trends/watch-security-tightened-outside-vijay-s-chennai-residence-as-tvk-leads-in-tamil-nadu-poll-trends-11777895165251.html",
+        "publishedAt": "2026-05-04T17:48:36+05:30",
+        "publishedAtLabel": "04 May 2026, 05:48:36 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "South Africa Gasoline Price Jumps to Highest in Four Years",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-04/south-africa-gasoline-price-jumps-to-highest-in-four-years",
+        "publishedAt": "2026-05-04T17:28:24+05:30",
+        "publishedAtLabel": "04 May 2026, 05:28:24 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Delhi\u2019s tougher challan rules mandate 50% fine before court appeal; repeat offenders may lose licences",
+        "link": "https://www.livemint.com/news/india/delhis-tougher-challan-rules-mandate-50-fine-before-court-appeal-repeat-offenders-may-lose-licences-11777892567526.html",
+        "publishedAt": "2026-05-04T17:11:07+05:30",
+        "publishedAtLabel": "04 May 2026, 05:11:07 PM IST"
+      },
       {
         "source": "Bloomberg Economics",
         "title": "How US and China\u2019s Allies Struggle to Balance Trade Ties With Both",
         "link": "https://www.bloomberg.com/news/newsletters/2026-05-04/middle-powers-and-how-they-manage-us-china-ties",
         "publishedAt": "2026-05-04T16:33:10+05:30",
         "publishedAtLabel": "04 May 2026, 04:33:10 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Australia's ASX 200 slips as rate hike concerns weigh on sentiment",
-        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPU0xDcERPS1FPaXAwMEx6TE1uMjhuOURZQl9SWVlacGZNZ0F4S2p6QUg3cVV4QVRhWXdUbnowNklfUldlNS1OSzltUjdGemRfSTJyMGlua3I5MkhYNmpoNWRXYkNZYTdtc25oLVE3NGVudE1ZSzRFY3lCZGZXRlZJd1otS2pCcGk0UEFLUVZzMFpod3B0Q0lPU3VFRjhMNC1qbEVaTkNmTVBmdU1tYWJoLXQ3RTZsamgxUGI0R25RTEZ1bTluZEhVOXpnRjQyXzZvUm1Pejk2a0ZjeEdXQk5RcGVn0gHnAUFVX3lxTFBRdmdwQ01sWFZDdGR3T2t1a19DZW1CSHBBUTlMbmJKRmtYajQyUjd2cHN0NmRDUXp5SHdCWVVuWEZRZUlTc0k2eHJLdWVQdzc1RnRkaFpWZ1Utd2EyY0VKQXR4a0Qya2Zfc2lUYzZYdkJxLW56SVRIbGhvUFRaMS12V0lvaTlVWlRuczR4UUJpUFBDS2ZFVGQ2akp6VkRfWjhBYkJZMUoyOWNrVzYxemFUdGd0a0p3SUhZOGppc2w1SF9JQ2hsRGI2Si1oMldVVEhCQTFYYVdiblF6bEJIR1lncm91MjNuYw?oc=5",
-        "publishedAt": "2026-05-04T16:31:58+05:30",
-        "publishedAtLabel": "04 May 2026, 04:31:58 PM IST"
       },
       {
         "source": "Bloomberg Economics",
@@ -93,88 +170,11 @@
         "publishedAtLabel": "04 May 2026, 04:30:01 PM IST"
       },
       {
-        "source": "Livemint",
-        "title": "Sweden arrests Chinese captain of Russia-linked 'shadow fleet' oil tanker",
-        "link": "https://www.livemint.com/news/world/sweden-arrests-chinese-captain-of-russia-linked-shadow-fleet-oil-tanker-11777888260747.html",
-        "publishedAt": "2026-05-04T16:23:07+05:30",
-        "publishedAtLabel": "04 May 2026, 04:23:07 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "Is Rohit Sharma playing today in MI vs LSG? Report says Mumbai Indians leave it to five-time IPL-winning former captain",
-        "link": "https://www.livemint.com/news/trends/is-rohit-sharma-playing-today-in-mi-vs-lsg-report-says-mumbai-indians-leave-it-to-five-time-ipl-winning-former-captain-11777888647365.html",
-        "publishedAt": "2026-05-04T16:22:55+05:30",
-        "publishedAtLabel": "04 May 2026, 04:22:55 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "JTL Industries receives ACRS certification for structural hollow sections",
-        "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOVVlKY25hZ3lvS0RZZkZyZ0J3UG9mVnB6MFFndGRuR2lkR3d5T3F4TF9IdnFMc2RkQ1pRZGFtc3pOYVZWMDIxVmJoMUc1b05GQ282Z3U2a3c3aG1icDZWWmozbzZ5Q1dMLTVobkVHVHR3cy01a1pLMTFJSVRaSHZERHFLQURlZVhzbWlEeEZWLUZCckJtc0tnTDFxaW1rdTJDNUFsOUdfc09meUx6RDdKMTNmYTIzMFVIQTM4d0dZZ1JzUHhVV3hfcU5xa3p1M2o5QnUtZVhHQjc5czZybnVWWmJNY3B3enl1NmRz0gHwAUFVX3lxTFBpczY3ckRLOEtuU1pnUEhNQ1NRTTFkdFNaV2wwTlFjLVF1Y1h6V1FNUHo0cHZvN0poY1Zlc1V0ck9RdU9BblFjR2Vnejg3b1JXbXoycGExNEgtZmh3RXdkYVZWekpCRXdMX2lYZmJnUWZuLUlBSVYzWjQxRkxrZEZQQ3hBa1NKSHFTZlpjQm80U2NVbVVRRHZoYnZZR1N4QzBkdlFDaU11djNJcDUxaUlQWEJGOGJaUHA5WWxfQ0RtZmRELWRpRFNCdkJzeGlMRTRubWhVQ0VKQXVvVThnWU1FaC1RMVliNG0tdndXaG9Mdg?oc=5",
-        "publishedAt": "2026-05-04T16:17:15+05:30",
-        "publishedAtLabel": "04 May 2026, 04:17:15 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Jyothy Labs standalone net profit declines 12.31% in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPSUp1WWNYQ2ZxOWxDSTY1YldhVFFVb3kyN0YwVk84ZGRlanh1Q1BaVFFMMUtZMFNueDV5WldOMG5tU2wxU0VVVXdFRGxZcmt5Z25ZWjlVUFZSLXVHMzFRdDMzRTUxNERfU2tZNWtVMlhzRXJqVEpmejFWbVRNX0xCVl9UVklwNENFdnVWYlRHX1E3UkltQU5YSnVTYnR0MlRUVE15LUZreVMwcFNyRnpzUjV0dlEyZEFzdk1PeGdXdTFuemRvdnM5Ylk3MEVKWWZMSzUyNHl1QjlzUHJxaDljejd3VGRaMzhUS2k2aNIB8gFBVV95cUxQVXFDdlZZcjVUSDB5QUd3RF83RUpGeWlnWU54WEhwTlE3VW9Yb0RiQUN1VE1hTUcycTVBNmVGNVJVLWJfdHVGcUc2QVZMMFN6NURxTXV4OVhnVTVEcFFpT0dJaXRMdXVtU3J3Unltck1QcU02bmRoVHdaclVGOXBiTW16QWktUXVwSE5kXzh4cDlDYXBRNVQ4SXB2emoyeVBudTRKaGtCUmVubm1fNzNjZjNRdkktR05POTY0TFdTTWtiLThPSl9vS09FSGUwWkw1dEJhY1EzNFctTUptMVUxZVpXWDZZeVltRHFOR29PVnRDZw?oc=5",
-        "publishedAt": "2026-05-04T16:17:04+05:30",
-        "publishedAtLabel": "04 May 2026, 04:17:04 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Kkalpana Plastick reports standalone net profit of Rs 0.03 crore in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPU19DMFk5VlgtVGcwR1ZtQkc0MlhkV0pNS1RfLS02MGMwVkFRZjAtRGtSUmNzbDJaMFhZZ0lLVTF5d0tMRkhNclRZYW9yVE9WN3BkRV9tM3ZBWXBlNy11amlxSzUtOF9yRE43Yk9vcktIakFyd2tYbm0zLUFjUUlKeGxYNFI4ZlFHLTZlNTUtLUNsWUgzVWROQUx3QWtrQlZuVDB3WnkwakxrdFJjd1ZqTUlSNlN0R3EyTmdCRkwyY1BraVc0ZVlnSnc4VmdzUUZjNFlGd3dOU1VnQWV4LUhOVmNxTEo4RTNHYmlkdDFXcmdlQjhxcG5DZU5wUWdDdVplQmfSAYcCQVVfeXFMT2piWHEtZlBnaTlEYWVYejNfOUh4REU1T0VONzU3V0FDc2gyQVFnTHdXSExCUElOYXpXc3IxbDMyUnB0bENSRlQxU2FXY3B3Uktib2lpTnhabzRkeklpTEl6Y1otUGVKVW1mQmNCYnhTRmNiQUJrWHo3ajFSbW5nLTJBX2dOM0p6WDdSeHpFSEs3NGRCZXJ0a1JVLXQ2REJLek80c3VwRnhpUlJrNTF0ZkhvSm9YR0F5R0x6TVo5VmFBMERod1V2V0JQN0VRc1dFRDN2bXRqTDNEUFVPX3A2ZHNxTlU2RVJ2ZDgtNE1INzRzM2lGXzhSejJRcndiT1Rnd2ZCT3lCak0?oc=5",
-        "publishedAt": "2026-05-04T16:16:56+05:30",
-        "publishedAtLabel": "04 May 2026, 04:16:56 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Aditya Birla Capital consolidated net profit rises 30.60% in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPemVHRVZ2M0lENmtCQlF1TmFmNTBoakprWUhXNU4tMXJhT0FKQzZud1k2OHJ6LWhXcW9aTk8zUjF6aFVkQ0hQTDdnQzRvYWNCNUlkdlI1dFdaQ0djcTUyakZ2UG5hbV9WZTlmeDFIcDAtNnJqWTZMWHIwajRCaVVNV2hNaFJOd240dlhzNkNzcXo4ZndickI3QnE4OGNXTE1pdXgydzhHUE8yc0gyNVYwRmJFUHo1cVR3dEw4bUxTX1d0c2F1alE3VXRhdVQ0ZEpPTmFpX1MxRVpRWHlZZzRCSGZxeUxHUzI5SjI0R1Y3SGt5Ui1nbEcw0gH8AUFVX3lxTFBYVmdzZ21PWUFxUmhLSDFiSVlHZ1c4WWUtYXc5azdoZVpCT0JvN21wR19YMDNRdjc2TjVIYWNQMVI2SDJ3c3l0a2U0bVJkWTVTQ1RsS2pkbVJWYmJEc3FHUktMODBDNjB3cWdYcEVnVER4a0RHRlppQVpzZ0xlWWxIRU9YRFdOdWowRjN0ak1DWXpKc0pZQVBlZ19zQkhKQ1FMUFAxU1U4QTNYTEZHRi02UnJXUFBNOWt4YUJqOE9RVUlnQy1NdDdEOTlOaXBzNFR2bHFIREZPajl1RzRGenpZQU1WYlFVVTRlOTlJVnY1djhzcjJYZXV0M0VmRg?oc=5",
-        "publishedAt": "2026-05-04T16:16:48+05:30",
-        "publishedAtLabel": "04 May 2026, 04:16:48 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "Delhi Traffic Alert! Police warns of road closure till 10 PM amid election result 2026 \u2014 Check routes to take and avoid",
-        "link": "https://www.livemint.com/news/india/delhi-traffic-alert-police-warns-of-road-closure-till-10-pm-amid-election-result-2026-check-routes-to-take-and-avoid-11777887827982.html",
-        "publishedAt": "2026-05-04T16:11:51+05:30",
-        "publishedAtLabel": "04 May 2026, 04:11:51 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "'Khela ho gaya\u2019: Dressed as Mamata Banerjee, social media influencer mimics TMC chief amid saffron surge",
-        "link": "https://www.livemint.com/news/trends/bengal-influencer-dressed-as-mamata-banerjee-reaches-bjp-hq-amid-saffron-surge-says-khela-ho-gaya-video-11777889074529.html",
-        "publishedAt": "2026-05-04T16:00:47+05:30",
-        "publishedAtLabel": "04 May 2026, 04:00:47 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "Polls to plates: Jhal muri, bhelpuri or churumuri? Mapping the many names of India\u2019s viral election snack",
-        "link": "https://www.livemint.com/news/trends/polls-to-plates-jhal-muri-bhelpuri-or-churumuri-mapping-the-many-names-of-india-s-viral-election-snack-11777889369739.html",
-        "publishedAt": "2026-05-04T15:54:35+05:30",
-        "publishedAtLabel": "04 May 2026, 03:54:35 PM IST"
-      },
-      {
         "source": "Bloomberg Economics",
         "title": "ECB Rate Hike in June Is \u2018All But Inevitable,\u2019 Kazimir Says",
         "link": "https://www.bloomberg.com/news/articles/2026-05-04/ecb-rate-hike-in-june-is-all-but-inevitable-kazimir-says",
         "publishedAt": "2026-05-04T14:30:00+05:30",
         "publishedAtLabel": "04 May 2026, 02:30:00 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "ECB\u2019s Villeroy Urges Caution and Readiness on Rate Hikes",
-        "link": "https://www.bloomberg.com/news/articles/2026-05-04/ecb-s-villeroy-urges-caution-and-readiness-on-rate-hikes",
-        "publishedAt": "2026-05-04T14:30:00+05:30",
-        "publishedAtLabel": "04 May 2026, 02:30:00 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Euro-Zone Inflation Jump Seen as Temporary, ECB Survey Shows",
-        "link": "https://www.bloomberg.com/news/articles/2026-05-04/euro-zone-inflation-jump-seen-as-temporary-ecb-survey-shows",
-        "publishedAt": "2026-05-04T13:30:00+05:30",
-        "publishedAtLabel": "04 May 2026, 01:30:00 PM IST"
       }
     ],
     "sourcesAvailable": [
