@@ -1,27 +1,27 @@
 {
   "marketTape": {
-    "updatedAt": "2026-05-04T19:36:29.442378+05:30",
+    "updatedAt": "2026-05-04T20:13:33.630720+05:30",
     "items": [
       {
         "label": "S&P 500",
-        "last": 7226.9,
-        "changePercent": -0.04425941549910412,
+        "last": 7244.3,
+        "changePercent": 0.1964011562772274,
         "source": "Stooq",
-        "updatedAt": "2026-05-04 16:05:55"
+        "updatedAt": "2026-05-04 16:43:07"
       },
       {
         "label": "Dow Jones",
-        "last": 49284.1,
-        "changePercent": -0.43475362277851276,
+        "last": 49373.0,
+        "changePercent": -0.2551551234057914,
         "source": "Stooq",
-        "updatedAt": "2026-05-04 16:05:55"
+        "updatedAt": "2026-05-04 16:43:13"
       },
       {
         "label": "Nasdaq",
-        "last": 25117.268,
-        "changePercent": 0.020261084461801956,
+        "last": 25194.723,
+        "changePercent": 0.32869707050523483,
         "source": "Stooq",
-        "updatedAt": "2026-05-04 16:06:03"
+        "updatedAt": "2026-05-04 16:43:10"
       },
       {
         "label": "Nikkei 225",
@@ -46,31 +46,80 @@
       },
       {
         "label": "DAX",
-        "last": 24189.89,
-        "changePercent": -0.3485550680755549,
+        "last": 24190.12,
+        "changePercent": -0.34760757173165674,
         "source": "Stooq",
-        "updatedAt": "2026-05-04 15:50:54"
+        "updatedAt": "2026-05-04 16:28:18"
       },
       {
         "label": "Crude Oil",
-        "last": 102.17,
-        "changePercent": 2.016974538192707,
+        "last": 102.35,
+        "changePercent": 2.196704942586109,
         "source": "Stooq",
-        "updatedAt": "2026-05-04 16:06:27"
+        "updatedAt": "2026-05-04 16:43:29"
       },
       {
         "label": "Gold",
-        "last": 4558.235,
-        "changePercent": -1.342456918008955,
+        "last": 4575.455,
+        "changePercent": -0.9697506200949793,
         "source": "Stooq",
-        "updatedAt": "2026-05-04 16:06:28"
+        "updatedAt": "2026-05-04 16:43:32"
       }
     ]
   },
   "newsFeed": {
-    "updatedAt": "2026-05-04T19:36:29.442389+05:30",
-    "updatedAtLabel": "04 May 2026, 07:36:29 PM IST",
+    "updatedAt": "2026-05-04T20:13:33.630764+05:30",
+    "updatedAtLabel": "04 May 2026, 08:13:33 PM IST",
     "items": [
+      {
+        "source": "Livemint",
+        "title": "Quote of the Day by PM Modi: \u2018Na mai aaya hun, na mujhe kisi ne bheja hai, Maa Ganga ne...\u2019",
+        "link": "https://www.livemint.com/news/india/quote-of-the-day-by-pm-modi-na-mai-aaya-hun-na-mujhe-kisi-ne-bheja-hai-maa-ganga-ne-bengal-assembly-election-results-11777904643192.html",
+        "publishedAt": "2026-05-04T20:00:19+05:30",
+        "publishedAtLabel": "04 May 2026, 08:00:19 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Pivotal Advisors CEO Tiffany McGhee Discusses Market Outlook",
+        "link": "https://www.bloomberg.com/news/videos/2026-05-04/pivotal-advisors-tiffany-mcghee-discusses-market-outlook-video",
+        "publishedAt": "2026-05-04T19:58:36+05:30",
+        "publishedAtLabel": "04 May 2026, 07:58:36 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Euro Finance Chiefs Want Mythos AI Access to Prepare Defenses",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-04/euro-finance-chiefs-want-mythos-ai-access-to-prepare-defenses",
+        "publishedAt": "2026-05-04T19:53:36+05:30",
+        "publishedAtLabel": "04 May 2026, 07:53:36 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "UAE Says Swap Talks With US Are About Joining \u2018Elite\u2019 Group",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-04/uae-signals-swap-talks-with-us-are-about-joining-elite-group",
+        "publishedAt": "2026-05-04T19:50:01+05:30",
+        "publishedAtLabel": "04 May 2026, 07:50:01 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Europe Needs Bigger Banks, Cross-Border M&A, Top Official Says",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-04/europe-needs-bigger-banks-cross-border-m-a-top-official-says",
+        "publishedAt": "2026-05-04T19:45:41+05:30",
+        "publishedAtLabel": "04 May 2026, 07:45:41 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "EMS secures project of Rs 143.79 cr from UP Jal Nigam, Varanasi",
+        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOY2JJRUFiWHZaMlNhWVQtZkx2N3oyYnd0QXdoT0oxSzhZUDBoaEw3cHBrZGd2eks1UzMzeFlWTWN2X21BRTlXYU1XVW9CeVpqVkZPMGdYb05YQmJoa2JwcmFhdDJpQ2FDQ0xpcDUtTkVhYVYtSThwUVJDOUUxUkRiZjVnV2ZuRTdMV0ZKZWNldllpNkZGb3BEZGp0OHZMSjZSSUVZR29vR1Q2a3ZtZ2Iwb2xFZ21qMEplMkt1cXRBX19fVmRQYnJaUW5RSTBlRGpPWTZrOVBKY2pKdzFI0gHiAUFVX3lxTFBSMmNzZ21vYmNHeHRzWjNCbUxuYlpBaWxhbzVMTHFfVXluclVOOTJEekFVaEtHdTJhYV9ISHZCaVV5ZnYwLTJYN0s3MU1RYjRuRC1CNlB2OHhRTDZjR2Etc0F4QVBFY0gxeXZOUmpMcTRXbHBndGwwd1Z6Wmx0LWl5WWdtNnp4a190eWpyc0NnS2FSLXlRZ01ocUx4enplQ3hWZnBVLWxMQ2FoSnlFR1VsREkzR1dXQTNjTkU4YktjNlhVVGVoSC1JVHVQcFpWekliQ25PS1ZoQUw0dFBhcnVLN3c?oc=5",
+        "publishedAt": "2026-05-04T19:31:02+05:30",
+        "publishedAtLabel": "04 May 2026, 07:31:02 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "ECB Says Weaker Bank Capital Rules May Fuel Payouts, Not Lending",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-04/ecb-says-weaker-bank-capital-rules-may-fuel-payouts-not-lending",
+        "publishedAt": "2026-05-04T19:30:00+05:30",
+        "publishedAtLabel": "04 May 2026, 07:30:00 PM IST"
+      },
       {
         "source": "Livemint",
         "title": "Weather today in Delhi, Rajasthan, UP, Himachal: IMD predicts heavy rains, hailstorms in these states",
@@ -93,39 +142,11 @@
         "publishedAtLabel": "04 May 2026, 07:08:53 PM IST"
       },
       {
-        "source": "Bloomberg Economics",
-        "title": "EU Vows Action If Trump Adopts Car Tariffs, But Urges Restraint",
-        "link": "https://www.bloomberg.com/news/articles/2026-05-04/eu-vows-action-if-trump-adopts-car-tariffs-but-urges-restraint",
-        "publishedAt": "2026-05-04T19:02:43+05:30",
-        "publishedAtLabel": "04 May 2026, 07:02:43 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Dudley Backs Powell Staying On After \u2018Merciless\u2019 Attacks on Fed",
-        "link": "https://www.bloomberg.com/news/articles/2026-05-04/dudley-backs-powell-staying-on-after-merciless-attacks-on-fed",
-        "publishedAt": "2026-05-04T19:01:23+05:30",
-        "publishedAtLabel": "04 May 2026, 07:01:23 PM IST"
-      },
-      {
         "source": "Livemint",
         "title": "From breakdown on national TV to TVK prediction success: The viral redemption of Axis My India\u2019s Pradeep Gupta",
         "link": "https://www.livemint.com/news/trends/from-breakdown-on-national-tv-to-tvk-prediction-success-the-viral-redemption-of-axis-my-india-s-pradeep-gupta-11777900069249.html",
         "publishedAt": "2026-05-04T19:00:47+05:30",
         "publishedAtLabel": "04 May 2026, 07:00:47 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "US-Iran military strikes to resume soon? UAE authorities send missile alert weeks after ceasefire",
-        "link": "https://www.livemint.com/news/world/usiran-military-strikes-to-resume-soon-uae-authorities-send-missile-alert-weeks-after-ceasefire-11777901097558.html",
-        "publishedAt": "2026-05-04T18:58:47+05:30",
-        "publishedAtLabel": "04 May 2026, 06:58:47 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "US Allies Look to Europe to Build a Post-Trump Global Order",
-        "link": "https://www.bloomberg.com/news/articles/2026-05-04/us-allies-look-to-europe-to-rebuild-a-post-trumpian-global-order",
-        "publishedAt": "2026-05-04T18:58:03+05:30",
-        "publishedAtLabel": "04 May 2026, 06:58:03 PM IST"
       },
       {
         "source": "Business Standard",
@@ -135,25 +156,11 @@
         "publishedAtLabel": "04 May 2026, 06:54:22 PM IST"
       },
       {
-        "source": "Bloomberg Economics",
-        "title": "Chile Economic Activity Sees Monthly Rise in End to Weak Quarter",
-        "link": "https://www.bloomberg.com/news/articles/2026-05-04/chile-economic-activity-sees-monthly-rise-in-end-to-weak-quarter",
-        "publishedAt": "2026-05-04T18:23:32+05:30",
-        "publishedAtLabel": "04 May 2026, 06:23:32 PM IST"
-      },
-      {
         "source": "Business Standard",
         "title": "Sebi flags GST hurdles in commodity market, seeks IGST mechanism",
         "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOVUJlQlRkc0daUlVKTVIzWkttME5za210Nk8xdjBHV0YwcDF6U1BEbmE2LVpCRFJWQzVTblpodk1CQ2o4bk9oTHBTYXJTTEJEOERES0RBWjVZckVkdWdSUGJIdjB5N3E0MFU5QTZ5aW16ZDI5LWNUSVI5WVVBQkJzOXgwSjV4ZEdVdk9rcU5DMV9HYUkyekwya0pPOW5mNk9aVkY2eERWSkRVbjh0RUV0aFcwYjV5NWR1dHhDUVNUWXN6S3FTVUFUT2pR0gHPAUFVX3lxTE81cnVadFM4LTF3R0RxdDJDNTgtTVhGQkNQWGJldGY0U29CZWpSVENiRnVMY0lqQkNDd29SY3h5YWxiTE5TMFdaYnVXYzRUaW5aNXNwMDNMYU42YmhfWExSVWxWbl9GTnNyQ1dWb0EyOWZuLWpSaXlmMEk0WnQ2TTJlZXY0TkFoMTdtWHpqeTFXVlFzQlJ0SFJDa0Q4MlNvdWxXbUV2TjZzdmtOeTRLQWhYSkxKOW1Sd1A1a3RPbTZkQUJWSEdQRzNxR3lXelZZZw?oc=5",
         "publishedAt": "2026-05-04T18:10:31+05:30",
         "publishedAtLabel": "04 May 2026, 06:10:31 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "ADB Urges Countries to Limit Fuel Subsidies to Vulnerable Groups",
-        "link": "https://www.bloomberg.com/news/articles/2026-05-04/adb-urges-countries-to-limit-fuel-subsidies-to-vulnerable-groups",
-        "publishedAt": "2026-05-04T18:01:21+05:30",
-        "publishedAtLabel": "04 May 2026, 06:01:21 PM IST"
       },
       {
         "source": "Business Standard",
@@ -168,13 +175,6 @@
         "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPUGlqRFEwWUMtYzlFSU1QNXZaRWZRVkduSF9kVEk2UEl4cVIxalZuTjg2UnFPWE9KZUpyUXd3ZmdxQjFjcDVvSDBrRXNkelFiSlZrNVZVeWRfemc1ekJlQXRyMXZnQnh2ckdYbWsyb0k0LTk5aTVfaXVUTWxKbnRMVkpRSGdOeEVPTnlZTDVuZ296TkRPOC01N3ppNHJrUTZTOG1JS0FZaUZuUmpXcXYzQ3VSWWEyd2JvODZDeEV1cktEbXYzbDBseGl4MDVnUGFyWFVGaW9nYTU3cGEwNkpFdGkxXzRmUlZDYU8tX2NvdlXSAfYBQVVfeXFMTUg3RUtlb0tvQ0Nzc0ZJTHNXU3ZWWWtfWEJtX3dYRnJtYjBpSlhDZThYSFI4UFFUbFc2ZmtZZW1ieFhsbnA3REVELTJTVnZadElkMEZFZWhhOTcxRENsMmo4TkhpbktYSV9wLVdJUW9ORVdSTXdac3VTNGJ4el8zR2ZhbnhMcVhlRml3bE90SVdxc2xCUUlENFNJQ1NNaEQ5OVcwZ1VoNzNTdHNDV2xXdVNHMGowVDhyMkQtWmFtUzByTUh2TXlrQTh1anNnT3I3XzFrS2UzT3pZOW05Nm9BVm1jZUZzdHZVMnh3VlVackNDXzRub19R?oc=5",
         "publishedAt": "2026-05-04T17:51:40+05:30",
         "publishedAtLabel": "04 May 2026, 05:51:40 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Onemi Technology Solutions (Kissht) IPO subscribed 60%",
-        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPTXBRTVJqREx1RGdXSXplSGZvNzVfb2lJMHMyTVZ6cXI4WF9sYjVUYVZjN0sxSDhZVHF6MWNqSFNFd1Eza0lvUXp0VmoxSUhaangybkV5STdNQk1wZmtVNjItNWFScEpsbDAxWWo4R3RBTzB3cVdvRHhiekpEbF9wZHg4YUhRZ1JwUEdaSzFFcnVpZ2d6Z1VDc3d0QU5WNWEzSThtT21KVU5XWHFQS0VOZHEzbDVNTkZJbDFXTXRIVEd1RnBrTGdYdWQ3VW0tQdIB0wFBVV95cUxNZlJvWF9vZDJ5dFlNNUdDQUhKRlctdkYtNGxZWlRRQkM2UWNwUnZpSjVFYmFRbTgzbUdmR2lBclUwVVcxYXAtWVNqNVlaVGpncWFUWk8wcWI2aUVWUVNOR0xLSk5rdlZsTVBrYUd1ZnM5ZUpzenpsd1BQa2JQRi1MbkJ3czR3TjFDNkMzbVJVX0NadTBzSzJDR084Uk16cjRDaW1RNHNhV3hRS0hQVC1vb0VkRTJXanRnRFdSTUdkdl9wc2NoZzBsV2RlSW42MTNLSTFz?oc=5",
-        "publishedAt": "2026-05-04T17:50:36+05:30",
-        "publishedAtLabel": "04 May 2026, 05:50:36 PM IST"
       }
     ],
     "sourcesAvailable": [
