@@ -1,42 +1,11 @@
 const currency = new Intl.NumberFormat('en-IN', { maximumFractionDigits: 2 });
 
 const chartState = {};
-const runtimeConfig = window.RUNTIME_CONFIG || {};
-const SUPABASE_URL = (runtimeConfig.SUPABASE_URL || '').replace(/\/$/, '');
-const SUPABASE_PUBLISHABLE_KEY = runtimeConfig.SUPABASE_PUBLISHABLE_KEY || '';
-const LIVE_SNAPSHOT_URL = `${SUPABASE_URL}/functions/v1/nse-snapshot`;
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const WEEKDAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const AI_REFRESH_HOURS = [6, 9, 12, 15, 18, 21];
 const REALTIME_REFRESH_MS = 60 * 1000;
 const IST_TIMEZONE = 'Asia/Kolkata';
-const NSE_HOLIDAYS_URL = 'https://r.jina.ai/http://www.nseindia.com/api/holiday-master?type=trading';
-const MARKET_TAPE_PROXY_BASE = 'https://r.jina.ai/http://stooq.com/q/l/';
-const MARKET_TAPE_SPECS = [
-  ['^spx', 'S&P 500'],
-  ['^dji', 'Dow Jones'],
-  ['^ndq', 'Nasdaq'],
-  ['^nkx', 'Nikkei 225'],
-  ['^hsi', 'Hang Seng'],
-  ['^ukx', 'FTSE 100'],
-  ['^dax', 'DAX'],
-  ['cl.f', 'Crude Oil'],
-  ['xauusd', 'Gold'],
-];
-const LIVE_NEWS_SOURCES = [
-  {
-    source: 'Business Standard',
-    url: 'https://news.google.com/rss/search?q=site%3Abusiness-standard.com%20%28market%20OR%20stocks%20OR%20nifty%20OR%20economy%20OR%20inflation%29&hl=en-IN&gl=IN&ceid=IN%3Aen',
-  },
-  {
-    source: 'Livemint',
-    url: 'https://www.livemint.com/rss/news',
-  },
-  {
-    source: 'Bloomberg Economics',
-    url: 'https://feeds.bloomberg.com/economics/news.rss',
-  },
-];
 
 const setText = (id, value) => {
   const element = document.getElementById(id);
@@ -73,23 +42,8 @@ const loadText = async (url, options = {}) => {
 
 const fetchAiAnalysis = async () => loadJson('data/ai-analysis.json', { cache: 'no-store' });
 const fetchNewsRailSnapshot = async () => loadJson(`data/news-feed.json?t=${Date.now()}`, { cache: 'no-store' });
-
-const fetchLiveMarketTape = async () => {
-  const results = await Promise.allSettled(
-    MARKET_TAPE_SPECS.map(async ([symbol, label]) => {
-      const url = `${MARKET_TAPE_PROXY_BASE}?s=${encodeURIComponent(symbol)}&f=sd2t2ohlcvn&p=1&i=d&_=${Date.now()}`;
-      const payload = await loadText(url, { cache: 'no-store' });
-      return parseStooqQuoteLine(payload, label);
-    })
-  );
-
-  return {
-    updatedAt: new Date().toISOString(),
-    items: results
-      .filter((result) => result.status === 'fulfilled')
-      .map((result) => result.value),
-  };
-};
+const fetchLiveSnapshotCache = async () => loadJson(`data/live-snapshot.json?t=${Date.now()}`, { cache: 'no-store' });
+const fetchHolidaySnapshot = async () => loadJson(`data/nse-holidays.json?t=${Date.now()}`, { cache: 'no-store' });
 
 const parseFeedDate = (value) => {
   if (!value) return null;
@@ -120,77 +74,23 @@ const toIstLabel = (value) => {
   }).format(date).replace(',', '') + ' IST';
 };
 
-const fetchLiveHeadlines = async () => {
-  const results = await Promise.allSettled(
-    LIVE_NEWS_SOURCES.map(async ({ source, url }) => {
-      const payload = await loadJson(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(url)}&_=${Date.now()}`, { cache: 'no-store' });
-      return { source, payload };
-    })
-  );
-
-  const items = [];
-  const sourcesAvailable = [];
-  const sourceErrors = [];
-
-  results.forEach((result, index) => {
-    const source = LIVE_NEWS_SOURCES[index].source;
-    if (result.status !== 'fulfilled') {
-      sourceErrors.push({ source, error: result.reason?.message || 'Feed fetch failed' });
-      return;
-    }
-
-    const feedItems = result.value.payload?.items || [];
-    sourcesAvailable.push(source);
-
-    feedItems
-      .map((item) => ({
-        source,
-        title: cleanHeadlineTitle(item.title || '', source),
-        link: item.link,
-        publishedAt: item.pubDate || item.publishedAt || '',
-      }))
-      .filter((item) => item.title && parseFeedDate(item.publishedAt))
-      .sort((left, right) => parseFeedDate(right.publishedAt) - parseFeedDate(left.publishedAt))
-      .slice(0, 5)
-      .forEach((item) => {
-        items.push({
-          ...item,
-          publishedAtLabel: toIstLabel(item.publishedAt),
-        });
-      });
-  });
-
-  return {
-    updatedAt: new Date().toISOString(),
-    updatedAtLabel: toIstLabel(new Date().toISOString()),
-    items: items.sort((left, right) => parseFeedDate(right.publishedAt) - parseFeedDate(left.publishedAt)),
-    sourcesAvailable,
-    sourceErrors,
-  };
-};
-
-const fetchNseHolidays = async () => {
-  const rawText = await loadText(`${NSE_HOLIDAYS_URL}&_=${Date.now()}`, { cache: 'no-store' });
-  const payload = parseEmbeddedJson(rawText);
-  const records = Array.isArray(payload.CM)
-    ? payload.CM
-    : Array.isArray(payload.FO)
-      ? payload.FO
-      : Object.values(payload).find(Array.isArray) || [];
-  return normalizeHolidayPayload(records);
-};
-
-const fetchLiveSnapshot = async () => {
-  if (!SUPABASE_URL || !SUPABASE_PUBLISHABLE_KEY) {
-    throw new Error('Supabase runtime configuration is missing.');
+const normalizeCachedHolidayPayload = (payload) => {
+  if (payload?.months && Array.isArray(payload.months)) {
+    return payload;
   }
 
-  return loadJson(LIVE_SNAPSHOT_URL, {
-    cache: 'no-store',
-    headers: {
-      apikey: SUPABASE_PUBLISHABLE_KEY,
-    },
-  });
+  const rawHolidays = payload?.holidays || payload || {};
+  const records = Array.isArray(rawHolidays.CM)
+    ? rawHolidays.CM
+    : Array.isArray(rawHolidays.FO)
+      ? rawHolidays.FO
+      : Object.values(rawHolidays).find(Array.isArray) || [];
+
+  const normalized = normalizeHolidayPayload(records);
+  if (payload?.updatedAt) {
+    normalized.updatedAt = payload.updatedAt;
+  }
+  return normalized;
 };
 
 const cleanHeadlineTitle = (title, source) => {
@@ -204,19 +104,15 @@ const loadAiData = async () => {
 };
 
 const loadRealtimeData = async () => {
-  const [liveResult, marketTapeLiveResult, marketTapeSnapshotResult, headlinesResult, holidaysResult] = await Promise.allSettled([
-    fetchLiveSnapshot(),
-    fetchLiveMarketTape(),
+  const [liveResult, newsRailResult, holidaysResult] = await Promise.allSettled([
+    fetchLiveSnapshotCache(),
     fetchNewsRailSnapshot(),
-    fetchLiveHeadlines(),
-    fetchNseHolidays(),
+    fetchHolidaySnapshot(),
   ]);
 
-  const marketTapePayload = marketTapeLiveResult.status === 'fulfilled' && (marketTapeLiveResult.value.items || []).length
-    ? marketTapeLiveResult.value
-    : marketTapeSnapshotResult.status === 'fulfilled'
-      ? (marketTapeSnapshotResult.value.marketTape || {})
-      : null;
+  const marketTapePayload = newsRailResult.status === 'fulfilled'
+    ? (newsRailResult.value.marketTape || {})
+    : null;
 
   if (marketTapePayload) {
     try {
@@ -228,22 +124,19 @@ const loadRealtimeData = async () => {
       renderMarketTapeError(error?.message || 'Market tape render failed.');
     }
   } else {
-    const errorMessage = marketTapeLiveResult.status === 'rejected'
-      ? marketTapeLiveResult.reason?.message
-      : marketTapeSnapshotResult.reason?.message;
-    renderMarketTapeError(errorMessage || 'Market tape refresh failed.');
+    renderMarketTapeError(newsRailResult.reason?.message || 'Market tape refresh failed.');
   }
 
-  if (headlinesResult.status === 'fulfilled') {
+  if (newsRailResult.status === 'fulfilled') {
     try {
-      renderNewsFeed(headlinesResult.value);
-      setText('newsFeedStamp', headlinesResult.value.updatedAtLabel || formatDateTime(headlinesResult.value.updatedAt));
+      renderNewsFeed(newsRailResult.value.newsFeed || {});
+      setText('newsFeedStamp', newsRailResult.value.newsFeed?.updatedAtLabel || formatDateTime(newsRailResult.value.newsFeed?.updatedAt));
     } catch (error) {
       console.error('Headline render failed', error);
       renderHeadlineError(error?.message || 'Headline rail render failed.');
     }
   } else {
-    renderHeadlineError(headlinesResult.reason?.message || 'Headline rail refresh failed.');
+    renderHeadlineError(newsRailResult.reason?.message || 'Headline rail refresh failed.');
   }
 
   if (liveResult.status === 'fulfilled') {
@@ -259,7 +152,7 @@ const loadRealtimeData = async () => {
 
   if (holidaysResult.status === 'fulfilled') {
     try {
-      renderHolidayCalendar(holidaysResult.value);
+      renderHolidayCalendar(normalizeCachedHolidayPayload(holidaysResult.value));
     } catch (error) {
       console.error('Holiday render failed', error);
       renderHolidayError(error?.message || 'Holiday calendar render failed.');
