@@ -5,6 +5,8 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - data/live-snapshot.json
 
 permissions:
   contents: read

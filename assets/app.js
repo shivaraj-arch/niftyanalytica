@@ -10,6 +10,7 @@ const runtimeConfig = window.RUNTIME_CONFIG || {};
 const SUPABASE_URL = String(runtimeConfig.SUPABASE_URL || '').trim().replace(/\/$/, '');
 const NEWSLETTER_SUBSCRIBE_URL = String(runtimeConfig.NEWSLETTER_SUBSCRIBE_URL || '').trim() || (SUPABASE_URL ? `${SUPABASE_URL}/functions/v1/newsletter-subscribe` : '');
 const SUPABASE_PUBLISHABLE_KEY = String(runtimeConfig.SUPABASE_PUBLISHABLE_KEY || '').trim();
+const LIVE_SNAPSHOT_URL = String(runtimeConfig.LIVE_SNAPSHOT_URL || '').trim() || (SUPABASE_URL ? `${SUPABASE_URL}/functions/v1/nse-snapshot` : '');
 
 const setText = (id, value) => {
   const element = document.getElementById(id);
@@ -46,7 +47,23 @@ const loadText = async (url, options = {}) => {
 
 const fetchAiAnalysis = async () => loadJson('data/ai-analysis.json', { cache: 'no-store' });
 const fetchNewsRailSnapshot = async () => loadJson(`data/news-feed.json?t=${Date.now()}`, { cache: 'no-store' });
-const fetchLiveSnapshotCache = async () => loadJson(`data/live-snapshot.json?t=${Date.now()}`, { cache: 'no-store' });
+const fetchLiveSnapshotCache = async () => {
+  const staticUrl = `data/live-snapshot.json?t=${Date.now()}`;
+
+  if (!LIVE_SNAPSHOT_URL) {
+    return loadJson(staticUrl, { cache: 'no-store' });
+  }
+
+  try {
+    return await loadJson(`${LIVE_SNAPSHOT_URL}?t=${Date.now()}`, {
+      cache: 'no-store',
+      headers: SUPABASE_PUBLISHABLE_KEY ? { apikey: SUPABASE_PUBLISHABLE_KEY } : undefined,
+    });
+  } catch (error) {
+    console.warn('Supabase live snapshot fetch failed, falling back to static cache.', error);
+    return loadJson(staticUrl, { cache: 'no-store' });
+  }
+};
 const fetchHolidaySnapshot = async () => loadJson(`data/nse-holidays.json?t=${Date.now()}`, { cache: 'no-store' });
 
 const parseFeedDate = (value) => {
