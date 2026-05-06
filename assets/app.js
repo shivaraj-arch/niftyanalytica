@@ -1155,18 +1155,15 @@ const bindNewsletterForm = () => {
     setStatus('Submitting your request...');
 
     try {
-      const headers = {
-        'Content-Type': 'application/json',
-      };
-      if (SUPABASE_PUBLISHABLE_KEY) {
-        headers.apikey = SUPABASE_PUBLISHABLE_KEY;
-        headers.Authorization = `Bearer ${SUPABASE_PUBLISHABLE_KEY}`;
-      }
-
       const response = await fetch(NEWSLETTER_SUBSCRIBE_URL, {
         method: 'POST',
-        headers,
-        body: JSON.stringify({ email }),
+        headers: {
+          'Content-Type': 'text/plain;charset=UTF-8',
+        },
+        body: JSON.stringify({
+          email,
+          publishableKey: SUPABASE_PUBLISHABLE_KEY || undefined,
+        }),
       });
 
       const payload = await response.json().catch(() => ({}));
@@ -1177,7 +1174,10 @@ const bindNewsletterForm = () => {
       emailInput.value = '';
       setStatus(payload?.message || 'Subscription saved. You will receive the 8 PM AI Brief newsletter on trading days.', 'is-success');
     } catch (error) {
-      setStatus(error?.message || 'Subscription failed. Please try again later.', 'is-error');
+      const message = error?.message === 'Failed to fetch'
+        ? 'Subscription request could not reach the newsletter endpoint. Check the Edge Function deployment and CORS settings.'
+        : (error?.message || 'Subscription failed. Please try again later.');
+      setStatus(message, 'is-error');
     } finally {
       submitButton.disabled = false;
     }
