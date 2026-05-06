@@ -66,7 +66,7 @@ body.modal-open {
 
 .hero {
   display: grid;
-  grid-template-columns: 1.35fr 0.95fr;
+  grid-template-columns: 1fr 1fr;
   gap: 24px;
   align-items: stretch;
 }
@@ -84,11 +84,18 @@ body.modal-open {
 
 .hero-copy {
   padding: 38px;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-panel,
 .card {
   padding: 28px;
+}
+
+.hero-panel {
+  display: flex;
+  flex-direction: column;
 }
 
 .eyebrow {
@@ -206,9 +213,15 @@ td,
 }
 
 .hero-panel .social-link-pill {
-  min-height: 42px;
-  padding: 0 14px;
-  font-size: 0.92rem;
+  justify-content: center;
+  min-width: 46px;
+  min-height: 46px;
+  padding: 0;
+  border-radius: 14px;
+}
+
+.hero-panel .social-link-pill span {
+  display: none;
 }
 
 .social-link-pill:hover,
@@ -283,7 +296,7 @@ td,
 
 .subscribe-form {
   display: grid;
-  gap: 10px;
+  gap: 8px;
 }
 
 .subscribe-label,
@@ -321,14 +334,14 @@ td,
 }
 
 .subscribe-button {
-  min-width: 132px;
+  min-width: 116px;
 }
 
 .subscribe-note,
 .subscribe-status {
   margin: 0;
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 0.86rem;
+  line-height: 1.45;
 }
 
 .subscribe-status.is-success {

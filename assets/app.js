@@ -7,7 +7,8 @@ const AI_REFRESH_HOURS = [6, 9, 12, 15, 18, 21];
 const REALTIME_REFRESH_MS = 60 * 1000;
 const IST_TIMEZONE = 'Asia/Kolkata';
 const runtimeConfig = window.RUNTIME_CONFIG || {};
-const NEWSLETTER_SUBSCRIBE_URL = String(runtimeConfig.NEWSLETTER_SUBSCRIBE_URL || '').trim();
+const SUPABASE_URL = String(runtimeConfig.SUPABASE_URL || '').trim().replace(/\/$/, '');
+const NEWSLETTER_SUBSCRIBE_URL = String(runtimeConfig.NEWSLETTER_SUBSCRIBE_URL || '').trim() || (SUPABASE_URL ? `${SUPABASE_URL}/functions/v1/newsletter-subscribe` : '');
 const SUPABASE_PUBLISHABLE_KEY = String(runtimeConfig.SUPABASE_PUBLISHABLE_KEY || '').trim();
 
 const setText = (id, value) => {
@@ -1137,7 +1138,7 @@ const bindNewsletterForm = () => {
   };
 
   if (!NEWSLETTER_SUBSCRIBE_URL) {
-    setStatus('Email signup will appear here once the subscription endpoint is connected.');
+    setStatus('Email signup is waiting for the Supabase subscription endpoint to be configured.', 'is-error');
     submitButton.disabled = true;
     return;
   }
