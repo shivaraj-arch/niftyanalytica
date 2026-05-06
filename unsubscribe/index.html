@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unsubscribe | Nifty Analytica</title>
+  <meta name="description" content="Manage your Nifty Analytica AI Brief email subscription.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#0f4c5c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css?v=20260420-1">
+  <script src="/assets/runtime-config.js"></script>
+  <style>
+    .unsubscribe-shell {
+      display: grid;
+      place-items: center;
+      min-height: calc(100vh - 56px);
+    }
+
+    .unsubscribe-card {
+      width: min(560px, 100%);
+      backdrop-filter: blur(20px);
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 32px;
+      text-align: center;
+    }
+
+    .unsubscribe-card p {
+      margin: 14px 0 0;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .unsubscribe-status {
+      min-height: 28px;
+      font-weight: 700;
+      color: var(--accent-strong);
+    }
+
+    .unsubscribe-status.is-error {
+      color: var(--rose);
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell unsubscribe-shell">
+    <main class="unsubscribe-card">
+      <p class="eyebrow">Email Preference</p>
+      <h1>Newsletter Unsubscribe</h1>
+      <p id="unsubscribeLead">Processing your request...</p>
+      <p id="unsubscribeStatus" class="unsubscribe-status" aria-live="polite"></p>
+      <div style="margin-top:24px;">
+        <a class="button button-secondary" href="/">Back to Nifty Analytica</a>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    (async () => {
+      const runtimeConfig = window.RUNTIME_CONFIG || {};
+      const supabaseUrl = String(runtimeConfig.SUPABASE_URL || '').trim().replace(/\/$/, '');
+      const subscribeUrl = String(runtimeConfig.NEWSLETTER_SUBSCRIBE_URL || '').trim() || (supabaseUrl ? `${supabaseUrl}/functions/v1/newsletter-subscribe` : '');
+      const status = document.getElementById('unsubscribeStatus');
+      const lead = document.getElementById('unsubscribeLead');
+      const email = new URLSearchParams(window.location.search).get('email') || '';
+
+      const setStatus = (message, tone = '') => {
+        status.textContent = message;
+        status.className = `unsubscribe-status${tone ? ` ${tone}` : ''}`;
+      };
+
+      if (!email) {
+        lead.textContent = 'This unsubscribe link is missing the email address.';
+        setStatus('No change was made.', 'is-error');
+        return;
+      }
+
+      if (!subscribeUrl) {
+        lead.textContent = 'The subscription endpoint is not configured right now.';
+        setStatus('Please try again later.', 'is-error');
+        return;
+      }
+
+      try {
+        const response = await fetch(subscribeUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'text/plain;charset=UTF-8',
+          },
+          body: JSON.stringify({
+            email,
+            action: 'unsubscribe',
+            source: 'email-footer',
+          }),
+        });
+
+        const payload = await response.json().catch(() => ({}));
+        if (!response.ok) {
+          throw new Error(payload?.error || `Unsubscribe failed: ${response.status}`);
+        }
+
+        lead.textContent = 'Your email preference has been updated.';
+        setStatus(payload?.message || 'You have been unsubscribed from the 8 PM AI Brief.');
+      } catch (error) {
+        lead.textContent = 'We could not complete your request automatically.';
+        setStatus(error?.message || 'Please try again later.', 'is-error');
+      }
+    })();
+  </script>
+</body>
+</html>

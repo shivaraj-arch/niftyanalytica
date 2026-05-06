@@ -10,6 +10,7 @@ const CORS_HEADERS = {
 type SubscriberRecord = {
   email: string;
   subscribedAt: string;
+  unsubscribedAt?: string | null;
   active: boolean;
   source: string;
 };
@@ -33,6 +34,11 @@ function toBase64(value: string) {
 
 function fromBase64(value: string) {
   return decodeURIComponent(escape(atob(value)));
+}
+
+function normalizeAction(value: string) {
+  const action = String(value || "subscribe").trim().toLowerCase();
+  return action === "unsubscribe" ? "unsubscribe" : "subscribe";
 }
 
 async function getGithubFile(owner: string, repo: string, path: string, branch: string, token: string) {
@@ -93,8 +99,10 @@ serve(async (request) => {
 
   try {
     const bodyText = await request.text();
-    const body = bodyText ? JSON.parse(bodyText) as { email?: string } : {};
+    const body = bodyText ? JSON.parse(bodyText) as { email?: string; action?: string; source?: string } : {};
     const email = normalizeEmail(body.email || "");
+    const action = normalizeAction(body.action || "subscribe");
+    const source = String(body.source || "website").trim() || "website";
 
     if (!isValidEmail(email)) {
       return new Response(JSON.stringify({ ok: false, error: "Enter a valid email address." }), {
@@ -124,20 +132,31 @@ serve(async (request) => {
     const existingSubscriber = subscribers.find((item) => normalizeEmail(item.email) === email);
     const nowIso = new Date().toISOString();
 
-    if (existingSubscriber) {
-      existingSubscriber.active = true;
-      existingSubscriber.subscribedAt = existingSubscriber.subscribedAt || nowIso;
+    if (action === "unsubscribe") {
+      if (existingSubscriber) {
+        payload.subscribers = subscribers.filter((item) => normalizeEmail(item.email) !== email);
+      }
     } else {
-      subscribers.push({
-        email,
-        subscribedAt: nowIso,
-        active: true,
-        source: "website",
-      });
+      if (existingSubscriber) {
+        existingSubscriber.active = true;
+        existingSubscriber.subscribedAt = existingSubscriber.subscribedAt || nowIso;
+        existingSubscriber.unsubscribedAt = null;
+        existingSubscriber.source = existingSubscriber.source || source;
+      } else {
+        subscribers.push({
+          email,
+          subscribedAt: nowIso,
+          unsubscribedAt: null,
+          active: true,
+          source,
+        });
+      }
     }
 
     payload = {
-      subscribers,
+      subscribers: action === "unsubscribe"
+        ? (payload.subscribers || [])
+        : subscribers,
       updatedAt: nowIso,
     };
 
@@ -153,9 +172,14 @@ serve(async (request) => {
 
     return new Response(JSON.stringify({
       ok: true,
-      message: existingSubscriber
-        ? "This email is already subscribed to the 8 PM AI Brief."
-        : "Subscription saved. You will receive the 8 PM AI Brief newsletter on trading days.",
+      action,
+      message: action === "unsubscribe"
+        ? (existingSubscriber
+          ? "You have been unsubscribed from the 8 PM AI Brief."
+          : "This email was not subscribed, so no change was needed.")
+        : (existingSubscriber && existingSubscriber.active
+          ? "This email is already subscribed to the 8 PM AI Brief."
+          : "Subscription saved. You will receive the 8 PM AI Brief newsletter on trading days."),
     }), {
       status: 200,
       headers: CORS_HEADERS,
