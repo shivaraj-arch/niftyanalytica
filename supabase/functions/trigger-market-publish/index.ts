@@ -57,12 +57,12 @@ function loadHolidaySet(): Set<string> {
 async function dispatchGithubWorkflow(triggerDate: string, triggerHour: number, newsletter: boolean) {
   const githubToken = Deno.env.get("GITHUB_TOKEN");
   const owner = Deno.env.get("GITHUB_OWNER");
-  const repo = Deno.env.get("GITHUB_REPO_APP") ?? Deno.env.get("GITHUB_REPO");
+  const repo = Deno.env.get("GITHUB_REPO_APP");
   const workflowId = Deno.env.get("GITHUB_WORKFLOW_ID") ?? "publish-market-data.yml";
   const ref = Deno.env.get("GITHUB_WORKFLOW_REF") ?? "main";
 
   if (!githubToken || !owner || !repo) {
-    throw new Error("Missing GITHUB_TOKEN, GITHUB_OWNER, or GITHUB_REPO_APP/GITHUB_REPO.");
+    throw new Error("Missing GITHUB_TOKEN, GITHUB_OWNER, or GITHUB_REPO_APP.");
   }
 
   const response = await fetch(

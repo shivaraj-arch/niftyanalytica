@@ -113,12 +113,12 @@ serve(async (request) => {
 
     const token = Deno.env.get("GITHUB_TOKEN");
     const owner = Deno.env.get("GITHUB_OWNER");
-    const repo = Deno.env.get("GITHUB_REPO_APP") ?? Deno.env.get("GITHUB_REPO");
+    const repo = Deno.env.get("GITHUB_REPO_APP");
     const branch = Deno.env.get("GITHUB_WORKFLOW_REF") ?? Deno.env.get("GITHUB_BRANCH") ?? "main";
     const subscribersPath = Deno.env.get("NEWSLETTER_SUBSCRIBERS_PATH") ?? "data/newsletter-subscribers.json";
 
     if (!token || !owner || !repo) {
-      throw new Error("Missing GITHUB_TOKEN, GITHUB_OWNER, or GITHUB_REPO_APP/GITHUB_REPO.");
+      throw new Error("Missing GITHUB_TOKEN, GITHUB_OWNER, or GITHUB_REPO_APP.");
     }
 
     const existingFile = await getGithubFile(owner, repo, subscribersPath, branch, token);
