@@ -5,25 +5,41 @@ type HolidayConfig = {
   dates: string[];
 };
 
-const IST_OFFSET_MS = 5.5 * 60 * 60 * 1000;
-
-function getIstNow() {
-  const now = new Date();
-  return new Date(now.getTime() + IST_OFFSET_MS);
-}
+const IST_TIME_ZONE = "Asia/Kolkata";
+const IST_PARTS_FORMATTER = new Intl.DateTimeFormat("en-CA", {
+  timeZone: IST_TIME_ZONE,
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+  hour: "2-digit",
+  minute: "2-digit",
+  weekday: "short",
+  hour12: false,
+});
 
 function toIstDateParts(date: Date) {
-  const year = date.getUTCFullYear();
-  const month = String(date.getUTCMonth() + 1).padStart(2, "0");
-  const day = String(date.getUTCDate()).padStart(2, "0");
-  const hour = date.getUTCHours();
-  const minute = date.getUTCMinutes();
+  const parts = Object.fromEntries(
+    IST_PARTS_FORMATTER.formatToParts(date)
+      .filter((part) => part.type !== "literal")
+      .map((part) => [part.type, part.value]),
+  ) as Record<string, string>;
+
+  const weekdayMap: Record<string, number> = {
+    Sun: 0,
+    Mon: 1,
+    Tue: 2,
+    Wed: 3,
+    Thu: 4,
+    Fri: 5,
+    Sat: 6,
+  };
+
   return {
-    year,
-    date: `${year}-${month}-${day}`,
-    hour,
-    minute,
-    weekday: date.getUTCDay(),
+    year: Number(parts.year),
+    date: `${parts.year}-${parts.month}-${parts.day}`,
+    hour: Number(parts.hour),
+    minute: Number(parts.minute),
+    weekday: weekdayMap[parts.weekday] ?? -1,
   };
 }
 
@@ -92,8 +108,7 @@ async function dispatchGithubWorkflow(triggerDate: string, triggerHour: number, 
 
 serve(async (request) => {
   try {
-    const istNow = getIstNow();
-    const parts = toIstDateParts(istNow);
+    const parts = toIstDateParts(new Date());
     const holidays = loadHolidaySet();
     const body = request.method === "POST"
       ? await request.json().catch(() => ({})) as { newsletter?: boolean }
