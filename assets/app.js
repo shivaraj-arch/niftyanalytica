@@ -6,6 +6,9 @@ const WEEKDAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const AI_REFRESH_HOURS = [6, 9, 12, 15, 18, 21];
 const REALTIME_REFRESH_MS = 60 * 1000;
 const IST_TIMEZONE = 'Asia/Kolkata';
+const runtimeConfig = window.RUNTIME_CONFIG || {};
+const NEWSLETTER_SUBSCRIBE_URL = String(runtimeConfig.NEWSLETTER_SUBSCRIBE_URL || '').trim();
+const SUPABASE_PUBLISHABLE_KEY = String(runtimeConfig.SUPABASE_PUBLISHABLE_KEY || '').trim();
 
 const setText = (id, value) => {
   const element = document.getElementById(id);
@@ -188,6 +191,11 @@ const renderHeadlineError = (message) => {
   document.getElementById('newsFeedList').innerHTML = `<li class="news-feed-item">${message}</li>`;
 };
 
+const emphasizeAgentHeadings = (value) => String(value || '')
+  .replace(/^Nifty Analysis Agent$/gm, '**Nifty Analysis Agent**')
+  .replace(/^Nifty Flow Agent$/gm, '**Nifty Flow Agent**')
+  .replace(/^Aggregator Agent$/gm, '**Aggregator Agent**');
+
 const renderHolidayError = (message) => {
   setText('holidayStamp', 'Holiday refresh pending');
   setText('holidayMeta', message);
@@ -220,7 +228,7 @@ const renderAiSection = (aiAnalysis) => {
     { label: 'Status', value: aiAnalysis.status || '-', tone: aiAnalysis.status === 'ok' ? 'positive' : '' },
   ]);
 
-  document.getElementById('aiSummaryText').innerHTML = renderMarkdown(aiAnalysis.summary || 'AI analysis is pending for the next refresh.');
+  document.getElementById('aiSummaryText').innerHTML = renderMarkdown(emphasizeAgentHeadings(aiAnalysis.summary || 'AI analysis is pending for the next refresh.'));
   renderChipList('aiKeyLevels', aiAnalysis.keyLevels || []);
   renderChipList('aiWatchlist', aiAnalysis.watchlist || []);
   setDisplay('aiKeyLevelsBlock', (aiAnalysis.keyLevels || []).length > 0);
@@ -557,17 +565,11 @@ const renderMarketTape = (items) => {
 
 const renderNewsFeed = (newsFeed) => {
   const items = newsFeed.items || [];
-  const meta = document.getElementById('newsFeedMeta');
   const list = document.getElementById('newsFeedList');
-  const sources = (newsFeed.sourcesAvailable || []).join(', ');
-  const blocked = (newsFeed.sourceErrors || []).map((item) => item.source).join(', ');
   if (!items.length) {
-    meta.textContent = blocked ? `Unavailable right now: ${blocked}.` : 'No RSS headlines available.';
     list.innerHTML = '<li class="news-feed-item">No headlines available.</li>';
     return;
   }
-
-  meta.textContent = blocked ? `Showing 15 latest headlines in IST, with 5 per source. Sources: ${sources}. Unavailable right now: ${blocked}.` : `Showing 15 latest headlines in IST, with 5 per source. Sources: ${sources}.`;
 
   list.innerHTML = items.map((item) => `
     <li class="news-feed-item">
@@ -1119,6 +1121,68 @@ const bindDonateModal = () => {
   });
 };
 
+const bindNewsletterForm = () => {
+  const form = document.getElementById('newsletterForm');
+  const emailInput = document.getElementById('newsletterEmail');
+  const submitButton = document.getElementById('newsletterSubmit');
+  const status = document.getElementById('newsletterStatus');
+
+  if (!form || !emailInput || !submitButton || !status) {
+    return;
+  }
+
+  const setStatus = (message, tone = '') => {
+    status.textContent = message;
+    status.className = `subscribe-status${tone ? ` ${tone}` : ''}`;
+  };
+
+  if (!NEWSLETTER_SUBSCRIBE_URL) {
+    setStatus('Email signup will appear here once the subscription endpoint is connected.');
+    submitButton.disabled = true;
+    return;
+  }
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const email = String(emailInput.value || '').trim();
+    if (!email) {
+      setStatus('Enter an email address to subscribe.', 'is-error');
+      return;
+    }
+
+    submitButton.disabled = true;
+    setStatus('Submitting your request...');
+
+    try {
+      const headers = {
+        'Content-Type': 'application/json',
+      };
+      if (SUPABASE_PUBLISHABLE_KEY) {
+        headers.apikey = SUPABASE_PUBLISHABLE_KEY;
+        headers.Authorization = `Bearer ${SUPABASE_PUBLISHABLE_KEY}`;
+      }
+
+      const response = await fetch(NEWSLETTER_SUBSCRIBE_URL, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify({ email }),
+      });
+
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        throw new Error(payload?.error || `Subscription failed: ${response.status}`);
+      }
+
+      emailInput.value = '';
+      setStatus(payload?.message || 'Subscription saved. You will receive the 8 PM AI Brief newsletter on trading days.', 'is-success');
+    } catch (error) {
+      setStatus(error?.message || 'Subscription failed. Please try again later.', 'is-error');
+    } finally {
+      submitButton.disabled = false;
+    }
+  });
+};
+
 const syncRefreshToggle = () => {
   const toggle = document.getElementById('autoRefreshToggle');
   if (!toggle) {
@@ -1169,6 +1233,7 @@ loadRealtimeData().catch((error) => {
 
 syncRefreshToggle();
 bindDonateModal();
+bindNewsletterForm();
 
 scheduleAiRefresh();
 startRealtimeRefresh();

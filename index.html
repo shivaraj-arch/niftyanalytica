@@ -60,15 +60,22 @@
           <h1>Nifty Analytica</h1>
         </div>
         <p class="hero-text">
-          Nifty Analytica is an Android app on Google Play for NSE Nifty 50 analytics.
-          This public dashboard mirrors the app with contributors, option-chain pressure,
-          Black-Scholes comparison, and low implied volatility opportunities.
+          Follow the market with a clearer daily view of NIFTY 50 activity, backed by
+          AI powered analysis, contributor moves, option positioning, and practical trade context.
         </p>
         <div class="hero-actions">
           <a class="button button-primary button-badge" href="https://play.google.com/store/apps/details?id=com.niftyanalytica" target="_blank" rel="noreferrer" aria-label="Open Nifty Analytica on Google Play">
             <img alt="Get it on Google Play" src="assets/google-play-badge.svg">
           </a>
-          <div class="social-link-row" aria-label="Nifty Analytica social links">
+          <button class="button button-donate" id="donateButton" type="button">Donate / GPay</button>
+        </div>
+      </div>
+      <aside class="hero-panel reveal delay-1">
+        <div class="panel-chip">Updated</div>
+        <div id="generatedAt" class="panel-value">Waiting for refresh</div>
+        <div class="hero-panel-block">
+          <div class="hero-panel-title">Follow Nifty Analytica</div>
+          <div class="social-link-row social-link-row-panel" aria-label="Nifty Analytica social links">
             <a class="social-link-pill" href="https://t.me/niftyanalytica" target="_blank" rel="noreferrer" aria-label="Open Nifty Analytica on Telegram">
               <img class="social-link-icon" src="assets/social-telegram.svg" alt="Telegram icon">
               <span>Telegram</span>
@@ -86,13 +93,19 @@
               <span>LinkedIn</span>
             </a>
           </div>
-          <button class="button button-donate" id="donateButton" type="button">Donate / GPay</button>
         </div>
-      </div>
-      <aside class="hero-panel reveal delay-1">
-        <div class="panel-chip">Updated</div>
-        <div id="generatedAt" class="panel-value">Waiting for refresh</div>
-        <p class="panel-note">Market sections stay fresh while you browse, and the AI brief updates on its own cycle.</p>
+        <div class="hero-panel-block">
+          <div class="hero-panel-title">Get The AI Brief By Email</div>
+          <form id="newsletterForm" class="subscribe-form" novalidate>
+            <label class="subscribe-label" for="newsletterEmail">Email address</label>
+            <div class="subscribe-row">
+              <input id="newsletterEmail" class="subscribe-input" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+              <button id="newsletterSubmit" class="button button-secondary subscribe-button" type="submit">Subscribe</button>
+            </div>
+            <p class="subscribe-note">Receive the AI Brief JSON as a market-day email update after the 8 PM IST run.</p>
+            <p id="newsletterStatus" class="subscribe-status" aria-live="polite"></p>
+          </form>
+        </div>
         <div class="refresh-control-row">
           <label class="toggle-control" for="autoRefreshToggle">
             <input id="autoRefreshToggle" type="checkbox" checked>
@@ -296,7 +309,7 @@
           </div>
           <div id="newsFeedStamp" class="stamp">-</div>
         </div>
-        <p id="newsFeedMeta" class="rail-note">Loading 5 latest headlines from each source.</p>
+        <p id="newsFeedMeta" class="rail-note" hidden></p>
         <ol id="newsFeedList" class="news-feed-list"></ol>
       </section>
     </aside>
