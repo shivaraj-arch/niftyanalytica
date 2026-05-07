@@ -15,6 +15,17 @@ const NSE_BASE_HEADERS = {
   "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
 };
 
+class NseRequestError extends Error {
+  status: number;
+  url: string;
+
+  constructor(status: number, url: string) {
+    super(`NSE request failed: ${status} ${url}`);
+    this.status = status;
+    this.url = url;
+  }
+}
+
 function jsonResponse(payload: unknown, status = 200) {
   return new Response(JSON.stringify(payload), {
     status,
@@ -56,10 +67,23 @@ async function fetchNseJson(url: string, cookieHeader: string) {
   });
 
   if (!response.ok) {
-    throw new Error(`NSE request failed: ${response.status} ${url}`);
+    throw new NseRequestError(response.status, url);
   }
 
   return await response.json();
+}
+
+async function fetchNseJsonWithFallback(url: string) {
+  try {
+    return await fetchNseJson(url, "");
+  } catch (error) {
+    if (!(error instanceof NseRequestError) || ![401, 403].includes(error.status)) {
+      throw error;
+    }
+
+    const cookieHeader = await bootstrapCookie();
+    return await fetchNseJson(url, cookieHeader);
+  }
 }
 
 serve(async (request) => {
@@ -72,11 +96,10 @@ serve(async (request) => {
   }
 
   try {
-    const cookieHeader = await bootstrapCookie();
     const [contributors, fiiDii, expiryInfo] = await Promise.all([
-      fetchNseJson(`${NSE_ORIGIN}/api/equity-stockIndices?index=NIFTY%2050`, cookieHeader),
-      fetchNseJson(`${NSE_ORIGIN}/api/fiidiiTradeReact`, cookieHeader),
-      fetchNseJson(`${NSE_ORIGIN}/api/option-chain-contract-info?symbol=NIFTY`, cookieHeader),
+      fetchNseJsonWithFallback(`${NSE_ORIGIN}/api/equity-stockIndices?index=NIFTY%2050`),
+      fetchNseJsonWithFallback(`${NSE_ORIGIN}/api/fiidiiTradeReact`),
+      fetchNseJsonWithFallback(`${NSE_ORIGIN}/api/option-chain-contract-info?symbol=NIFTY`),
     ]);
 
     const expiryDates = Array.isArray(expiryInfo?.expiryDates) ? expiryInfo.expiryDates : [];
@@ -84,9 +107,8 @@ serve(async (request) => {
       throw new Error("No option-chain expiry dates returned by NSE.");
     }
 
-    const optionChain = await fetchNseJson(
+    const optionChain = await fetchNseJsonWithFallback(
       `${NSE_ORIGIN}/api/option-chain-v3?type=Indices&symbol=NIFTY&expiry=${encodeURIComponent(expiryDates[0])}`,
-      cookieHeader,
     );
 
     return jsonResponse({
