@@ -60,8 +60,10 @@ async function ensurePublicBucket(supabaseUrl: string, serviceRoleKey: string, b
     return;
   }
 
-  if (existingBucket.status !== 404) {
-    throw new Error(`Bucket lookup failed: ${existingBucket.status} ${await existingBucket.text()}`);
+  const existingBucketText = await existingBucket.text();
+  const bucketMissing = existingBucket.status === 404 || /bucket not found/i.test(existingBucketText);
+  if (!bucketMissing) {
+    throw new Error(`Bucket lookup failed: ${existingBucket.status} ${existingBucketText}`);
   }
 
   const createdBucket = await fetch(`${supabaseUrl}/storage/v1/bucket`, {
