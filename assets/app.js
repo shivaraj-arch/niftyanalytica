@@ -9,10 +9,11 @@ const IST_TIMEZONE = 'Asia/Kolkata';
 const MARKET_OPEN_MINUTE_IST = 9 * 60;
 const MARKET_CLOSE_MINUTE_IST = 16 * 60;
 const runtimeConfig = window.RUNTIME_CONFIG || {};
+const LIVE_SNAPSHOT_BUCKET = String(runtimeConfig.LIVE_SNAPSHOT_BUCKET || '').trim() || 'public-data';
+const LIVE_SNAPSHOT_PATH = String(runtimeConfig.LIVE_SNAPSHOT_PATH || '').trim() || 'live/live-snapshot.json';
 const SUPABASE_URL = String(runtimeConfig.SUPABASE_URL || '').trim().replace(/\/$/, '');
 const NEWSLETTER_SUBSCRIBE_URL = String(runtimeConfig.NEWSLETTER_SUBSCRIBE_URL || '').trim() || (SUPABASE_URL ? `${SUPABASE_URL}/functions/v1/newsletter-subscribe` : '');
-const SUPABASE_PUBLISHABLE_KEY = String(runtimeConfig.SUPABASE_PUBLISHABLE_KEY || '').trim();
-const LIVE_SNAPSHOT_URL = String(runtimeConfig.LIVE_SNAPSHOT_URL || '').trim() || (SUPABASE_URL ? `${SUPABASE_URL}/functions/v1/nse-snapshot` : '');
+const LIVE_SNAPSHOT_URL = String(runtimeConfig.LIVE_SNAPSHOT_URL || '').trim() || (SUPABASE_URL ? `${SUPABASE_URL}/storage/v1/object/public/${LIVE_SNAPSHOT_BUCKET}/${LIVE_SNAPSHOT_PATH}` : '');
 
 const setText = (id, value) => {
   const element = document.getElementById(id);
@@ -79,18 +80,20 @@ const fetchAiAnalysis = async () => loadJson('data/ai-analysis.json', { cache: '
 const fetchNewsRailSnapshot = async () => loadJson(`data/news-feed.json?t=${Date.now()}`, { cache: 'no-store' });
 const fetchLiveSnapshotCache = async () => {
   const staticUrl = `data/live-snapshot.json?t=${Date.now()}`;
+  const liveUrl = LIVE_SNAPSHOT_URL
+    ? `${LIVE_SNAPSHOT_URL}${LIVE_SNAPSHOT_URL.includes('?') ? '&' : '?'}t=${Date.now()}`
+    : '';
 
-  if (!LIVE_SNAPSHOT_URL) {
+  if (!liveUrl) {
     return loadJson(staticUrl, { cache: 'no-store' });
   }
 
   try {
-    return await loadJson(`${LIVE_SNAPSHOT_URL}?t=${Date.now()}`, {
+    return await loadJson(liveUrl, {
       cache: 'no-store',
-      headers: SUPABASE_PUBLISHABLE_KEY ? { apikey: SUPABASE_PUBLISHABLE_KEY } : undefined,
     });
   } catch (error) {
-    console.warn('Supabase live snapshot fetch failed, falling back to static cache.', error);
+    console.warn('Stored live snapshot fetch failed, falling back to bundled cache.', error);
     return loadJson(staticUrl, { cache: 'no-store' });
   }
 };

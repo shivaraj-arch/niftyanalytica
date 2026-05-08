@@ -29,11 +29,15 @@ jobs:
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+          LIVE_SNAPSHOT_BUCKET: ${{ secrets.LIVE_SNAPSHOT_BUCKET }}
+          LIVE_SNAPSHOT_PATH: ${{ secrets.LIVE_SNAPSHOT_PATH }}
         run: |
           cat <<EOF > assets/runtime-config.js
           window.RUNTIME_CONFIG = window.RUNTIME_CONFIG || {
             SUPABASE_URL: '${SUPABASE_URL}',
             SUPABASE_PUBLISHABLE_KEY: '${SUPABASE_PUBLISHABLE_KEY}',
+            LIVE_SNAPSHOT_BUCKET: '${LIVE_SNAPSHOT_BUCKET:-public-data}',
+            LIVE_SNAPSHOT_PATH: '${LIVE_SNAPSHOT_PATH:-live/live-snapshot.json}',
           };
           EOF
 

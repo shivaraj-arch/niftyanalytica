@@ -2,4 +2,6 @@ window.RUNTIME_CONFIG = window.RUNTIME_CONFIG || {
   SUPABASE_URL: '',
   SUPABASE_PUBLISHABLE_KEY: '',
   NEWSLETTER_SUBSCRIBE_URL: '',
+  LIVE_SNAPSHOT_BUCKET: 'public-data',
+  LIVE_SNAPSHOT_PATH: 'live/live-snapshot.json',
 };
