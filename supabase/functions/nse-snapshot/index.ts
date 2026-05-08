@@ -3,7 +3,7 @@ import { fetchNseSnapshot, getMarketWindowState } from "../_shared/nse_snapshot.
 
 const CORS_HEADERS = {
   "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
+  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type, x-snapshot-secret",
   "Access-Control-Allow-Methods": "GET, OPTIONS",
   "Content-Type": "application/json",
 };
@@ -16,9 +16,14 @@ function jsonResponse(payload: unknown, status = 200) {
 }
 
 function hasValidSnapshotSecret(request: Request) {
+  const allowPublic = Deno.env.get("NSE_SNAPSHOT_ALLOW_PUBLIC") === "true";
+  if (allowPublic) {
+    return true;
+  }
+
   const expectedSecret = Deno.env.get("NSE_SNAPSHOT_SECRET");
   if (!expectedSecret) {
-    return true;
+    return false;
   }
 
   const bearerToken = request.headers.get("authorization")?.replace(/^Bearer\s+/i, "");
