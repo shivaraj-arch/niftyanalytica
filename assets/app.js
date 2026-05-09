@@ -19,6 +19,7 @@ const LIVE_SNAPSHOT_PATH = String(runtimeConfig.LIVE_SNAPSHOT_PATH || '').trim()
 const SUPABASE_URL = String(runtimeConfig.SUPABASE_URL || '').trim().replace(/\/$/, '');
 const DATA_BASE_URL = String(runtimeConfig.DATA_BASE_URL || '').trim().replace(/\/$/, '');
 const NEWSLETTER_SUBSCRIBE_URL = String(runtimeConfig.NEWSLETTER_SUBSCRIBE_URL || '').trim() || (SUPABASE_URL ? `${SUPABASE_URL}/functions/v1/newsletter-subscribe` : '');
+const HEADLINE_REFRESH_URL = String(runtimeConfig.HEADLINE_REFRESH_URL || '').trim() || (SUPABASE_URL ? `${SUPABASE_URL}/functions/v1/refresh-news-feed` : '');
 const LIVE_SNAPSHOT_URL = String(runtimeConfig.LIVE_SNAPSHOT_URL || '').trim() || (SUPABASE_URL ? `${SUPABASE_URL}/storage/v1/object/public/${LIVE_SNAPSHOT_BUCKET}/${LIVE_SNAPSHOT_PATH}` : '');
 
 const setText = (id, value) => {
@@ -35,9 +36,17 @@ const setDisplay = (id, visible) => {
   }
 };
 
+const setHidden = (id, hidden) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.hidden = hidden;
+  }
+};
+
 let realtimeRefreshTimer = null;
 let aiRefreshTimer = null;
 let marketActivityRows = [];
+let isHeadlineRefreshPending = false;
 
 const loadJson = async (url, options = {}) => {
   const response = await fetch(url, options);
@@ -102,6 +111,8 @@ const parseTimestampValue = (value) => {
 const getSnapshotTimestamp = (payload) => (
   payload?.fetchedAt
   || payload?.updatedAt
+  || payload?.newsFeed?.updatedAt
+  || payload?.marketTape?.updatedAt
   || payload?.generatedAt
   || payload?.contributors?.timestamp
   || payload?.marketStatus?.tradeDate
@@ -173,10 +184,15 @@ const getMarketSessionLabel = (state) => {
 
 const isRealtimeRefreshWindow = (date = new Date()) => getMarketSessionState(date).canFetchLiveSnapshot;
 
+const isManualHeadlineRefreshAllowed = (date = new Date()) => {
+  const state = getMarketSessionState(date);
+  return state.session === 'post-market' || state.session === 'closed';
+};
+
 const fetchAiAnalysis = async () => loadJsonData('data/ai-analysis.json');
-const fetchNewsRailSnapshot = async () => loadJsonData('data/news-feed.json');
+const fetchLegacyNewsRailSnapshot = async () => loadJsonData('data/news-feed.json');
 const fetchMarketActivityHistory = async () => loadTextData('data/market-activity-history.csv');
-const fetchLiveSnapshotCache = async () => {
+const fetchLiveSnapshotCache = async ({ preferLive = false } = {}) => {
   const liveUrl = LIVE_SNAPSHOT_URL
     ? `${LIVE_SNAPSHOT_URL}${LIVE_SNAPSHOT_URL.includes('?') ? '&' : '?'}t=${Date.now()}`
     : '';
@@ -187,7 +203,7 @@ const fetchLiveSnapshotCache = async () => {
     return staticSnapshot;
   }
 
-  if (!marketSessionState.canFetchLiveSnapshot && getSnapshotAgeMs(staticSnapshot) <= STALE_SNAPSHOT_MAX_AGE_MS) {
+  if (!preferLive && !marketSessionState.canFetchLiveSnapshot && getSnapshotAgeMs(staticSnapshot) <= STALE_SNAPSHOT_MAX_AGE_MS) {
     return staticSnapshot;
   }
 
@@ -261,44 +277,74 @@ const loadAiData = async () => {
   renderAiSection(aiResult);
 };
 
-const loadRealtimeData = async () => {
-  const [liveResult, newsRailResult, holidaysResult, marketActivityResult] = await Promise.allSettled([
-    fetchLiveSnapshotCache(),
-    fetchNewsRailSnapshot(),
+const hasEmbeddedNewsRail = (payload) => (
+  Array.isArray(payload?.newsFeed?.items)
+  || Array.isArray(payload?.marketTape?.items)
+);
+
+const resolveNewsRailSnapshot = async (snapshotPayload) => {
+  if (hasEmbeddedNewsRail(snapshotPayload)) {
+    return {
+      marketTape: snapshotPayload.marketTape || {},
+      newsFeed: snapshotPayload.newsFeed || {},
+    };
+  }
+
+  return await fetchLegacyNewsRailSnapshot();
+};
+
+const renderNewsRailSnapshot = (payload) => {
+  const marketTape = payload?.marketTape || {};
+  const newsFeed = payload?.newsFeed || {};
+
+  try {
+    setText('marketTapeStamp', formatDateTime(marketTape.updatedAt) || '-');
+    renderMarketTape(marketTape.items || []);
+  } catch (error) {
+    console.error('Market tape render failed', error);
+    renderMarketTapeError(error?.message || 'Market tape render failed.');
+  }
+
+  try {
+    renderNewsFeed(newsFeed);
+    setText('newsFeedStamp', newsFeed.updatedAtLabel || formatDateTime(newsFeed.updatedAt));
+    setText('newsFeedMeta', '');
+    setHidden('newsFeedMeta', true);
+  } catch (error) {
+    console.error('Headline render failed', error);
+    renderHeadlineError(error?.message || 'Headline rail render failed.');
+  }
+};
+
+const updateHeadlineRefreshButton = () => {
+  const button = document.getElementById('newsFeedRefreshButton');
+  if (!button) {
+    return;
+  }
+
+  const enabled = Boolean(HEADLINE_REFRESH_URL) && isManualHeadlineRefreshAllowed();
+  button.hidden = !enabled;
+  button.disabled = !enabled || isHeadlineRefreshPending;
+  button.textContent = isHeadlineRefreshPending ? 'Refreshing...' : 'Refresh';
+};
+
+const loadRealtimeData = async ({ preferLive = false } = {}) => {
+  const [liveResult, holidaysResult, marketActivityResult] = await Promise.allSettled([
+    fetchLiveSnapshotCache({ preferLive }),
     fetchHolidaySnapshot(),
     fetchMarketActivityHistory(),
   ]);
 
-  const marketTapePayload = newsRailResult.status === 'fulfilled'
-    ? (newsRailResult.value.marketTape || {})
-    : null;
-
-  if (marketTapePayload) {
-    try {
-      const marketTape = marketTapePayload;
-      setText('marketTapeStamp', formatDateTime(marketTape.updatedAt) || '-');
-      renderMarketTape(marketTape.items || []);
-    } catch (error) {
-      console.error('Market tape render failed', error);
-      renderMarketTapeError(error?.message || 'Market tape render failed.');
-    }
-  } else {
-    renderMarketTapeError(newsRailResult.reason?.message || 'Market tape refresh failed.');
-  }
-
-  if (newsRailResult.status === 'fulfilled') {
-    try {
-      renderNewsFeed(newsRailResult.value.newsFeed || {});
-      setText('newsFeedStamp', newsRailResult.value.newsFeed?.updatedAtLabel || formatDateTime(newsRailResult.value.newsFeed?.updatedAt));
-    } catch (error) {
-      console.error('Headline render failed', error);
-      renderHeadlineError(error?.message || 'Headline rail render failed.');
-    }
-  } else {
-    renderHeadlineError(newsRailResult.reason?.message || 'Headline rail refresh failed.');
-  }
-
   if (liveResult.status === 'fulfilled') {
+    try {
+      const newsRailSnapshot = await resolveNewsRailSnapshot(liveResult.value);
+      renderNewsRailSnapshot(newsRailSnapshot);
+    } catch (error) {
+      console.error('News rail render failed', error);
+      renderMarketTapeError(error?.message || 'Market tape refresh failed.');
+      renderHeadlineError(error?.message || 'Headline rail refresh failed.');
+    }
+
     try {
       renderLiveSections(normalizeLiveSnapshot(liveResult.value));
     } catch (error) {
@@ -306,6 +352,8 @@ const loadRealtimeData = async () => {
       renderLiveError(error?.message || 'Live market render failed.');
     }
   } else {
+    renderMarketTapeError(liveResult.reason?.message || 'Market tape refresh failed.');
+    renderHeadlineError(liveResult.reason?.message || 'Headline rail refresh failed.');
     renderLiveError(liveResult.reason?.message || 'Live market refresh failed.');
   }
 
@@ -330,6 +378,8 @@ const loadRealtimeData = async () => {
   } else {
     renderHolidayError(holidaysResult.reason?.message || 'Holiday calendar refresh failed.');
   }
+
+  updateHeadlineRefreshButton();
 };
 
 const renderAiError = (message) => {
@@ -355,6 +405,7 @@ const renderMarketTapeError = (message) => {
 const renderHeadlineError = (message) => {
   setText('newsFeedStamp', 'Headline refresh pending');
   setText('newsFeedMeta', message);
+  setHidden('newsFeedMeta', false);
   document.getElementById('newsFeedList').innerHTML = `<li class="news-feed-item">${message}</li>`;
 };
 
@@ -1007,6 +1058,41 @@ const renderNewsFeed = (newsFeed) => {
       </a>
     </li>
   `).join('');
+};
+
+const bindHeadlineRefreshButton = () => {
+  const button = document.getElementById('newsFeedRefreshButton');
+  if (!button) {
+    return;
+  }
+
+  button.onclick = async () => {
+    if (!HEADLINE_REFRESH_URL || isHeadlineRefreshPending || !isManualHeadlineRefreshAllowed()) {
+      return;
+    }
+
+    isHeadlineRefreshPending = true;
+    updateHeadlineRefreshButton();
+    setText('newsFeedMeta', 'Refreshing headlines from RSS...');
+    setHidden('newsFeedMeta', false);
+
+    try {
+      await loadJson(`${HEADLINE_REFRESH_URL}${HEADLINE_REFRESH_URL.includes('?') ? '&' : '?'}t=${Date.now()}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        cache: 'no-store',
+      });
+
+      await loadRealtimeData({ preferLive: true });
+    } catch (error) {
+      renderHeadlineError(error?.message || 'Headline refresh failed.');
+    } finally {
+      isHeadlineRefreshPending = false;
+      updateHeadlineRefreshButton();
+    }
+  };
 };
 
 const renderBarChart = (id, rows, mapper, legendId, title, expanded = false) => {
@@ -1884,6 +1970,8 @@ loadRealtimeData().catch((error) => {
 syncRefreshToggle();
 bindDonateModal();
 bindNewsletterForm();
+bindHeadlineRefreshButton();
+updateHeadlineRefreshButton();
 
 scheduleAiRefresh();
 startRealtimeRefresh();

@@ -40,18 +40,15 @@ jobs:
       - name: Update index summary history
         run: node scripts/update-index-summary-history.mjs
 
-      - name: Update news feed
-        run: node scripts/update-news-feed.mjs
-
       - name: Commit snapshot update
         run: |
-          if git diff --quiet -- data/live-snapshot.json data/market-activity-history.csv data/index-summary-history.csv data/news-feed.json data/index-cache; then
+          if git diff --quiet -- data/live-snapshot.json data/market-activity-history.csv data/index-summary-history.csv data/index-cache; then
             echo "No nightly market data changes to commit."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/live-snapshot.json data/market-activity-history.csv data/index-summary-history.csv data/news-feed.json data/index-cache
+          git add data/live-snapshot.json data/market-activity-history.csv data/index-summary-history.csv data/index-cache
           git commit -m "Sync nightly market data"
           git push

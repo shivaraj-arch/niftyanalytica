@@ -1,11 +1,11 @@
 import { serve } from "https://deno.land/std@0.224.0/http/server.ts";
-import { fetchNseSnapshot, getMarketWindowState } from "../_shared/nse_snapshot.ts";
+import { getMarketWindowState } from "../_shared/nse_snapshot.ts";
 import { buildNewsBundle } from "../_shared/news_feed.ts";
 
 const CORS_HEADERS = {
   "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type, x-refresh-secret",
-  "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
+  "Access-Control-Allow-Methods": "POST, OPTIONS",
   "Content-Type": "application/json",
 };
 
@@ -34,31 +34,6 @@ function encodeObjectPath(objectPath: string) {
 
 function getPublicSnapshotUrl(supabaseUrl: string, bucket: string, objectPath: string) {
   return `${supabaseUrl.replace(/\/$/, "")}/storage/v1/object/public/${bucket}/${encodeObjectPath(objectPath)}`;
-}
-
-async function loadExistingSnapshot(publicUrl: string) {
-  try {
-    const response = await fetch(`${publicUrl}${publicUrl.includes("?") ? "&" : "?"}t=${Date.now()}`, {
-      cache: "no-store",
-    });
-    if (!response.ok) {
-      return null;
-    }
-    return await response.json();
-  } catch {
-    return null;
-  }
-}
-
-function hasValidRefreshSecret(request: Request) {
-  const expectedSecret = Deno.env.get("LIVE_SNAPSHOT_REFRESH_SECRET");
-  if (!expectedSecret) {
-    return true;
-  }
-
-  const bearerToken = request.headers.get("authorization")?.replace(/^Bearer\s+/i, "");
-  const headerToken = request.headers.get("x-refresh-secret");
-  return bearerToken === expectedSecret || headerToken === expectedSecret;
 }
 
 async function ensurePublicBucket(supabaseUrl: string, serviceRoleKey: string, bucket: string) {
@@ -124,26 +99,37 @@ async function uploadSnapshot(
   }
 }
 
+async function loadExistingSnapshot(publicUrl: string) {
+  const response = await fetch(`${publicUrl}${publicUrl.includes("?") ? "&" : "?"}t=${Date.now()}`, {
+    cache: "no-store",
+  });
+
+  if (!response.ok) {
+    throw new Error(`Existing snapshot fetch failed: ${response.status}`);
+  }
+
+  return await response.json();
+}
+
 serve(async (request) => {
   if (request.method === "OPTIONS") {
     return new Response("ok", { headers: CORS_HEADERS });
   }
 
-  if (!["GET", "POST"].includes(request.method)) {
+  if (request.method !== "POST") {
     return jsonResponse({ ok: false, error: "Method not allowed" }, 405);
   }
 
   try {
-    if (!hasValidRefreshSecret(request)) {
-      return jsonResponse({ ok: false, error: "Unauthorized" }, 401);
-    }
-
-    const body = request.method === "POST"
-      ? await request.json().catch(() => ({})) as { force?: boolean }
-      : {};
-
     const marketWindow = getMarketWindowState();
-    const forceRefresh = body.force === true;
+    if (marketWindow.session === "pre-market" || marketWindow.session === "open") {
+      return jsonResponse({
+        ok: false,
+        error: "Headline refresh is only available after market hours.",
+        session: marketWindow.session,
+        at: marketWindow.at,
+      }, 409);
+    }
 
     const supabaseUrl = getEnv("SUPABASE_URL").replace(/\/$/, "");
     const serviceRoleKey = getEnv("SUPABASE_SERVICE_ROLE_KEY");
@@ -152,24 +138,13 @@ serve(async (request) => {
     const cacheControl = Deno.env.get("LIVE_SNAPSHOT_CACHE_CONTROL") ?? DEFAULT_CACHE_CONTROL;
     const publicUrl = getPublicSnapshotUrl(supabaseUrl, bucket, objectPath);
 
-    if (!forceRefresh && !marketWindow.canFetchSnapshot) {
-      return jsonResponse({
-        ok: true,
-        skipped: true,
-        session: marketWindow.session,
-        reason: marketWindow.reason,
-        at: marketWindow.at,
-        storage: { bucket, objectPath, publicUrl },
-      });
-    }
-
     const existingSnapshot = await loadExistingSnapshot(publicUrl);
-    const snapshot = await fetchNseSnapshot();
     const newsBundle = await buildNewsBundle(existingSnapshot ?? undefined);
     const snapshotPayload = {
-      ...snapshot,
+      ...existingSnapshot,
       ...newsBundle,
     };
+
     await ensurePublicBucket(supabaseUrl, serviceRoleKey, bucket);
     await uploadSnapshot(supabaseUrl, serviceRoleKey, bucket, objectPath, cacheControl, snapshotPayload);
 
@@ -181,12 +156,9 @@ serve(async (request) => {
       snapshot: snapshotPayload,
     });
   } catch (error) {
-    return jsonResponse(
-      {
-        ok: false,
-        error: error instanceof Error ? error.message : String(error),
-      },
-      500,
-    );
+    return jsonResponse({
+      ok: false,
+      error: error instanceof Error ? error.message : String(error),
+    }, 500);
   }
 });

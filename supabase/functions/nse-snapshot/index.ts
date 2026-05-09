@@ -1,5 +1,6 @@
 import { serve } from "https://deno.land/std@0.224.0/http/server.ts";
 import { fetchNseSnapshot, getMarketWindowState } from "../_shared/nse_snapshot.ts";
+import { buildNewsBundle } from "../_shared/news_feed.ts";
 
 const CORS_HEADERS = {
   "Access-Control-Allow-Origin": "*",
@@ -57,8 +58,12 @@ serve(async (request: Request) => {
     }
 
     const snapshot = await fetchNseSnapshot();
+    const newsBundle = await buildNewsBundle();
 
-    return jsonResponse(snapshot);
+    return jsonResponse({
+      ...snapshot,
+      ...newsBundle,
+    });
   } catch (error) {
     return jsonResponse(
       {

@@ -529,6 +529,38 @@ main {
   margin-bottom: 14px;
 }
 
+.rail-heading-side {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.inline-action-button {
+  font: inherit;
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 76, 92, 0.18);
+  background: rgba(255, 255, 255, 0.86);
+  color: var(--accent);
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.inline-action-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(10, 38, 47, 0.1);
+  border-color: rgba(15, 76, 92, 0.28);
+}
+
+.inline-action-button:disabled {
+  opacity: 0.62;
+  cursor: not-allowed;
+}
+
 .rail-note {
   margin: 0 0 14px;
   color: var(--muted);
@@ -1530,6 +1562,18 @@ tbody tr:hover {
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 18px 40px rgba(10, 38, 47, 0.14);
+  }
+
+  @media (max-width: 640px) {
+    .rail-heading-side {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .inline-action-button {
+      min-height: 32px;
+      padding: 0 10px;
+    }
   }
 
   .playstore-footer img {
