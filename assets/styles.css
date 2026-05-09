@@ -220,6 +220,11 @@ td,
   border-radius: 14px;
 }
 
+.social-link-button {
+  font: inherit;
+  cursor: pointer;
+}
+
 .hero-panel .social-link-pill span {
   display: none;
 }
@@ -299,6 +304,14 @@ td,
   gap: 8px;
 }
 
+.newsletter-tray {
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(15, 76, 92, 0.1);
+}
+
 .subscribe-label,
 .subscribe-note,
 .subscribe-status {
@@ -342,6 +355,10 @@ td,
   margin: 0;
   font-size: 0.86rem;
   line-height: 1.45;
+}
+
+.hero-panel-block .subscribe-status {
+  margin-top: 10px;
 }
 
 .subscribe-status.is-success {
@@ -464,15 +481,34 @@ td,
 }
 
 .dashboard-shell {
+  display: block;
+}
+
+main {
+  display: grid;
+  gap: 22px;
+}
+
+.analysis-shell {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 340px);
   gap: 22px;
   align-items: start;
 }
 
-main {
+.analysis-shell > * {
+  min-width: 0;
+}
+
+.section-pair {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
+  align-items: start;
+}
+
+.section-pair > .card {
+  height: 100%;
 }
 
 .news-rail {
@@ -743,6 +779,24 @@ tbody tr:hover {
   gap: 18px;
 }
 
+#open-interest > .chart-panel {
+  margin-bottom: 20px;
+}
+
+.section-pair-primary #open-interest .chart-stack {
+  grid-template-columns: 1fr;
+}
+
+.section-pair-primary #open-interest .svg-chart {
+  min-height: 300px;
+}
+
+.section-pair-primary #contributors table,
+.section-pair-secondary #black-scholes table,
+.section-pair-secondary #low-iv table {
+  min-width: 640px;
+}
+
 .chart-panel {
   cursor: zoom-in;
 }
@@ -922,6 +976,28 @@ tbody tr:hover {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
+}
+
+.holiday-disclosure {
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.46);
+  border: 1px solid rgba(15, 76, 92, 0.08);
+}
+
+.holiday-disclosure-toggle {
+  cursor: pointer;
+  list-style: none;
+  padding: 16px 18px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.holiday-disclosure-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.holiday-disclosure-body {
+  padding: 0 18px 18px;
 }
 
 .holiday-month {
@@ -1120,7 +1196,8 @@ tbody tr:hover {
 
 @media (max-width: 1120px) {
   .hero,
-  .dashboard-shell,
+  .analysis-shell,
+  .section-pair,
   .news-rail,
   .chart-stack,
   .summary-grid,

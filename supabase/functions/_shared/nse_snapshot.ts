@@ -1,7 +1,12 @@
 const NSE_ORIGIN = "https://www.nseindia.com";
 const IST_TIME_ZONE = "Asia/Kolkata";
 const MARKET_OPEN_MINUTE_IST = 9 * 60;
+const PRE_MARKET_END_MINUTE_IST = (9 * 60) + 15;
+const LAST_SNAPSHOT_FETCH_MINUTE_IST = (15 * 60) + 35;
+const POST_MARKET_START_MINUTE_IST = (15 * 60) + 40;
 const MARKET_CLOSE_MINUTE_IST = 16 * 60;
+
+export type MarketSession = "closed" | "pre-market" | "open" | "post-market";
 
 const IST_PARTS_FORMATTER = new Intl.DateTimeFormat("en-CA", {
   timeZone: IST_TIME_ZONE,
@@ -78,18 +83,42 @@ export function getMarketWindowState(date = new Date()) {
   const currentMinute = at.hour * 60 + at.minute;
 
   if (at.weekday === 0 || at.weekday === 6) {
-    return { open: false, reason: "Weekend", at };
+    return { open: false, canFetchSnapshot: false, session: "closed" as MarketSession, reason: "Weekend", at };
   }
 
   if (loadHolidaySet().has(at.date)) {
-    return { open: false, reason: "NSE holiday", at };
+    return { open: false, canFetchSnapshot: false, session: "closed" as MarketSession, reason: "NSE holiday", at };
   }
 
   if (currentMinute < MARKET_OPEN_MINUTE_IST || currentMinute >= MARKET_CLOSE_MINUTE_IST) {
-    return { open: false, reason: "Outside market hours", at };
+    return {
+      open: false,
+      canFetchSnapshot: false,
+      session: "closed" as MarketSession,
+      reason: "Market closed",
+      at,
+    };
   }
 
-  return { open: true, reason: "Market hours", at };
+  const session: MarketSession = currentMinute < PRE_MARKET_END_MINUTE_IST
+    ? "pre-market"
+    : currentMinute < POST_MARKET_START_MINUTE_IST
+    ? "open"
+    : "post-market";
+
+  const reason = session === "pre-market"
+    ? "Pre-market session"
+    : session === "open"
+    ? "Regular market session"
+    : "Post-market session";
+
+  return {
+    open: true,
+    canFetchSnapshot: currentMinute <= LAST_SNAPSHOT_FETCH_MINUTE_IST,
+    session,
+    reason,
+    at,
+  };
 }
 
 function getCookieHeader(response: Response) {

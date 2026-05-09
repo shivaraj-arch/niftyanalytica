@@ -137,10 +137,11 @@ serve(async (request) => {
     const cacheControl = Deno.env.get("LIVE_SNAPSHOT_CACHE_CONTROL") ?? DEFAULT_CACHE_CONTROL;
     const publicUrl = getPublicSnapshotUrl(supabaseUrl, bucket, objectPath);
 
-    if (!forceRefresh && !marketWindow.open) {
+    if (!forceRefresh && !marketWindow.canFetchSnapshot) {
       return jsonResponse({
         ok: true,
         skipped: true,
+        session: marketWindow.session,
         reason: marketWindow.reason,
         at: marketWindow.at,
         storage: { bucket, objectPath, publicUrl },
@@ -154,6 +155,7 @@ serve(async (request) => {
     return jsonResponse({
       ok: true,
       skipped: false,
+      session: marketWindow.session,
       storage: { bucket, objectPath, publicUrl },
       snapshot,
     });

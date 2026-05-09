@@ -46,8 +46,14 @@ serve(async (request: Request) => {
     }
 
     const marketWindow = getMarketWindowState();
-    if (!marketWindow.open) {
-      return jsonResponse({ ok: true, skipped: true, reason: marketWindow.reason, at: marketWindow.at });
+    if (!marketWindow.canFetchSnapshot) {
+      return jsonResponse({
+        ok: true,
+        skipped: true,
+        session: marketWindow.session,
+        reason: marketWindow.reason,
+        at: marketWindow.at,
+      });
     }
 
     const snapshot = await fetchNseSnapshot();

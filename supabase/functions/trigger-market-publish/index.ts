@@ -5,6 +5,17 @@ type HolidayConfig = {
   dates: string[];
 };
 
+type DispatchRequestBody = {
+  newsletter?: boolean;
+  telegram?: boolean;
+  x?: boolean;
+  linkedin?: boolean;
+  buffer?: boolean;
+  whatsapp?: boolean;
+  dry_run?: boolean;
+  generate_ai?: boolean;
+};
+
 const IST_TIME_ZONE = "Asia/Kolkata";
 const IST_PARTS_FORMATTER = new Intl.DateTimeFormat("en-CA", {
   timeZone: IST_TIME_ZONE,
@@ -54,12 +65,17 @@ function loadHolidaySet(): Set<string> {
   return new Set(dates);
 }
 
-async function dispatchGithubWorkflow(triggerDate: string, triggerHour: number, newsletter: boolean) {
+function resolveBoolean(value: boolean | undefined, fallback: boolean) {
+  return typeof value === "boolean" ? value : fallback;
+}
+
+async function dispatchGithubWorkflow(triggerDate: string, triggerHour: number, body: DispatchRequestBody, newsletter: boolean) {
   const githubToken = Deno.env.get("GITHUB_TOKEN");
   const owner = Deno.env.get("GITHUB_OWNER");
   const repo = Deno.env.get("GITHUB_REPO_APP");
   const workflowId = Deno.env.get("GITHUB_WORKFLOW_ID") ?? "publish-market-data.yml";
   const ref = Deno.env.get("GITHUB_WORKFLOW_REF") ?? "main";
+  const defaultSocialEnabled = !newsletter;
 
   if (!githubToken || !owner || !repo) {
     throw new Error("Missing GITHUB_TOKEN, GITHUB_OWNER, or GITHUB_REPO_APP.");
@@ -78,13 +94,13 @@ async function dispatchGithubWorkflow(triggerDate: string, triggerHour: number, 
       body: JSON.stringify({
         ref,
         inputs: {
-          telegram: "true",
-          x: "false",
-          linkedin: "false",
-          buffer: "true",
-          whatsapp: "false",
-          dry_run: "false",
-          generate_ai: "true",
+          telegram: resolveBoolean(body.telegram, defaultSocialEnabled) ? "true" : "false",
+          x: resolveBoolean(body.x, false) ? "true" : "false",
+          linkedin: resolveBoolean(body.linkedin, false) ? "true" : "false",
+          buffer: resolveBoolean(body.buffer, defaultSocialEnabled) ? "true" : "false",
+          whatsapp: resolveBoolean(body.whatsapp, false) ? "true" : "false",
+          dry_run: resolveBoolean(body.dry_run, false) ? "true" : "false",
+          generate_ai: resolveBoolean(body.generate_ai, true) ? "true" : "false",
           newsletter: newsletter ? "true" : "false",
         },
       }),
@@ -111,7 +127,7 @@ serve(async (request) => {
     const parts = toIstDateParts(new Date());
     const holidays = loadHolidaySet();
     const body = request.method === "POST"
-      ? await request.json().catch(() => ({})) as { newsletter?: boolean }
+      ? await request.json().catch(() => ({})) as DispatchRequestBody
       : {};
 
     if (parts.weekday === 0 || parts.weekday === 6) {
@@ -133,7 +149,7 @@ serve(async (request) => {
     }
 
     const newsletter = typeof body.newsletter === "boolean" ? body.newsletter : parts.hour === 20;
-    const result = await dispatchGithubWorkflow(parts.date, parts.hour, newsletter);
+    const result = await dispatchGithubWorkflow(parts.date, parts.hour, body, newsletter);
     return Response.json({
       ok: true,
       skipped: false,

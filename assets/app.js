@@ -1,4 +1,5 @@
 const currency = new Intl.NumberFormat('en-IN', { maximumFractionDigits: 2 });
+const compactNumber = new Intl.NumberFormat('en-IN', { notation: 'compact', maximumFractionDigits: 1 });
 
 const chartState = {};
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -6,12 +7,17 @@ const WEEKDAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const AI_REFRESH_HOURS = [6, 9, 12, 15, 18, 21];
 const REALTIME_REFRESH_MS = 60 * 1000;
 const IST_TIMEZONE = 'Asia/Kolkata';
+const STALE_SNAPSHOT_MAX_AGE_MS = 36 * 60 * 60 * 1000;
 const MARKET_OPEN_MINUTE_IST = 9 * 60;
+const PRE_MARKET_END_MINUTE_IST = (9 * 60) + 15;
+const LAST_LIVE_FETCH_MINUTE_IST = (15 * 60) + 35;
+const POST_MARKET_START_MINUTE_IST = (15 * 60) + 40;
 const MARKET_CLOSE_MINUTE_IST = 16 * 60;
 const runtimeConfig = window.RUNTIME_CONFIG || {};
 const LIVE_SNAPSHOT_BUCKET = String(runtimeConfig.LIVE_SNAPSHOT_BUCKET || '').trim() || 'public-data';
 const LIVE_SNAPSHOT_PATH = String(runtimeConfig.LIVE_SNAPSHOT_PATH || '').trim() || 'live/live-snapshot.json';
 const SUPABASE_URL = String(runtimeConfig.SUPABASE_URL || '').trim().replace(/\/$/, '');
+const DATA_BASE_URL = String(runtimeConfig.DATA_BASE_URL || '').trim().replace(/\/$/, '');
 const NEWSLETTER_SUBSCRIBE_URL = String(runtimeConfig.NEWSLETTER_SUBSCRIBE_URL || '').trim() || (SUPABASE_URL ? `${SUPABASE_URL}/functions/v1/newsletter-subscribe` : '');
 const LIVE_SNAPSHOT_URL = String(runtimeConfig.LIVE_SNAPSHOT_URL || '').trim() || (SUPABASE_URL ? `${SUPABASE_URL}/storage/v1/object/public/${LIVE_SNAPSHOT_BUCKET}/${LIVE_SNAPSHOT_PATH}` : '');
 
@@ -31,6 +37,8 @@ const setDisplay = (id, visible) => {
 
 let realtimeRefreshTimer = null;
 let aiRefreshTimer = null;
+let marketActivityRows = [];
+let indexSummaryHistoryRows = [];
 
 const loadJson = async (url, options = {}) => {
   const response = await fetch(url, options);
@@ -46,6 +54,70 @@ const loadText = async (url, options = {}) => {
     throw new Error(`Failed to load text: ${response.status}`);
   }
   return response.text();
+};
+
+const buildDataUrl = (path, { bust = false, source = 'auto' } = {}) => {
+  const normalizedPath = String(path || '').replace(/^\/+/, '');
+  const baseUrl = source === 'local'
+    ? ''
+    : (source === 'remote' ? DATA_BASE_URL : (DATA_BASE_URL || ''));
+  const target = baseUrl ? `${baseUrl}/${normalizedPath}` : normalizedPath;
+  if (!bust) {
+    return target;
+  }
+  return `${target}${target.includes('?') ? '&' : '?'}t=${Date.now()}`;
+};
+
+const loadDataWithFallback = async (path, loader) => {
+  const localUrl = buildDataUrl(path, { bust: true, source: 'local' });
+  if (!DATA_BASE_URL) {
+    return loader(localUrl, { cache: 'no-store' });
+  }
+
+  const remoteUrl = buildDataUrl(path, { bust: true, source: 'remote' });
+  try {
+    return await loader(remoteUrl, { cache: 'no-store' });
+  } catch (error) {
+    console.warn(`Remote data load failed for ${path}, falling back to local data.`, error);
+    return loader(localUrl, { cache: 'no-store' });
+  }
+};
+
+const loadJsonData = async (path) => loadDataWithFallback(path, loadJson);
+const loadTextData = async (path) => loadDataWithFallback(path, loadText);
+
+const parseTimestampValue = (value) => {
+  if (!value) {
+    return null;
+  }
+
+  const date = parseFeedDate(value);
+  if (date) {
+    return date;
+  }
+
+  const parsed = new Date(value);
+  return Number.isNaN(parsed.getTime()) ? null : parsed;
+};
+
+const getSnapshotTimestamp = (payload) => (
+  payload?.fetchedAt
+  || payload?.updatedAt
+  || payload?.generatedAt
+  || payload?.contributors?.timestamp
+  || payload?.marketStatus?.tradeDate
+  || ''
+);
+
+const getSnapshotAgeMs = (payload) => {
+  const date = parseTimestampValue(getSnapshotTimestamp(payload));
+  return date ? Math.max(0, Date.now() - date.getTime()) : Number.POSITIVE_INFINITY;
+};
+
+const pickFresherSnapshot = (left, right) => {
+  if (!left) return right;
+  if (!right) return left;
+  return getSnapshotAgeMs(left) <= getSnapshotAgeMs(right) ? left : right;
 };
 
 const getIstClock = (date = new Date()) => {
@@ -68,36 +140,70 @@ const getIstClock = (date = new Date()) => {
   };
 };
 
-const isRealtimeRefreshWindow = (date = new Date()) => {
+const getMarketSessionState = (date = new Date()) => {
   const { weekday, minutes } = getIstClock(date);
   if (weekday === 'Sat' || weekday === 'Sun') {
-    return false;
+    return { session: 'closed', canFetchLiveSnapshot: false };
   }
-  return minutes >= MARKET_OPEN_MINUTE_IST && minutes < MARKET_CLOSE_MINUTE_IST;
+
+  if (minutes < MARKET_OPEN_MINUTE_IST || minutes >= MARKET_CLOSE_MINUTE_IST) {
+    return { session: 'closed', canFetchLiveSnapshot: false };
+  }
+
+  if (minutes < PRE_MARKET_END_MINUTE_IST) {
+    return { session: 'pre-market', canFetchLiveSnapshot: true };
+  }
+
+  if (minutes < POST_MARKET_START_MINUTE_IST) {
+    return {
+      session: 'open',
+      canFetchLiveSnapshot: minutes <= LAST_LIVE_FETCH_MINUTE_IST,
+    };
+  }
+
+  return { session: 'post-market', canFetchLiveSnapshot: false };
 };
 
-const fetchAiAnalysis = async () => loadJson('data/ai-analysis.json', { cache: 'no-store' });
-const fetchNewsRailSnapshot = async () => loadJson(`data/news-feed.json?t=${Date.now()}`, { cache: 'no-store' });
+const getMarketSessionLabel = (state) => {
+  if (!state) return '-';
+  if (state.session === 'pre-market') return 'Pre-Market';
+  if (state.session === 'open') return 'Open';
+  if (state.session === 'post-market') return 'Post-Market';
+  return 'Closed';
+};
+
+const isRealtimeRefreshWindow = (date = new Date()) => getMarketSessionState(date).canFetchLiveSnapshot;
+
+const fetchAiAnalysis = async () => loadJsonData('data/ai-analysis.json');
+const fetchNewsRailSnapshot = async () => loadJsonData('data/news-feed.json');
+const fetchMarketActivityHistory = async () => loadTextData('data/market-activity-history.csv');
+const fetchIndexSummaryHistory = async () => loadTextData('data/index-summary-history.csv');
 const fetchLiveSnapshotCache = async () => {
-  const staticUrl = `data/live-snapshot.json?t=${Date.now()}`;
   const liveUrl = LIVE_SNAPSHOT_URL
     ? `${LIVE_SNAPSHOT_URL}${LIVE_SNAPSHOT_URL.includes('?') ? '&' : '?'}t=${Date.now()}`
     : '';
+  const marketSessionState = getMarketSessionState();
+  const staticSnapshot = await loadJsonData('data/live-snapshot.json');
 
   if (!liveUrl) {
-    return loadJson(staticUrl, { cache: 'no-store' });
+    return staticSnapshot;
+  }
+
+  if (!marketSessionState.canFetchLiveSnapshot && getSnapshotAgeMs(staticSnapshot) <= STALE_SNAPSHOT_MAX_AGE_MS) {
+    return staticSnapshot;
   }
 
   try {
-    return await loadJson(liveUrl, {
+    const liveSnapshot = await loadJson(liveUrl, {
       cache: 'no-store',
     });
+    return pickFresherSnapshot(staticSnapshot, liveSnapshot);
   } catch (error) {
     console.warn('Stored live snapshot fetch failed, falling back to bundled cache.', error);
-    return loadJson(staticUrl, { cache: 'no-store' });
+    return staticSnapshot;
   }
 };
-const fetchHolidaySnapshot = async () => loadJson(`data/nse-holidays.json?t=${Date.now()}`, { cache: 'no-store' });
+const fetchHolidaySnapshot = async () => loadJsonData('data/nse-holidays.json');
 
 const parseFeedDate = (value) => {
   if (!value) return null;
@@ -158,10 +264,12 @@ const loadAiData = async () => {
 };
 
 const loadRealtimeData = async () => {
-  const [liveResult, newsRailResult, holidaysResult] = await Promise.allSettled([
+  const [liveResult, newsRailResult, holidaysResult, marketActivityResult, indexSummaryHistoryResult] = await Promise.allSettled([
     fetchLiveSnapshotCache(),
     fetchNewsRailSnapshot(),
     fetchHolidaySnapshot(),
+    fetchMarketActivityHistory(),
+    fetchIndexSummaryHistory(),
   ]);
 
   const marketTapePayload = newsRailResult.status === 'fulfilled'
@@ -202,6 +310,28 @@ const loadRealtimeData = async () => {
     }
   } else {
     renderLiveError(liveResult.reason?.message || 'Live market refresh failed.');
+  }
+
+  if (marketActivityResult.status === 'fulfilled') {
+    try {
+      renderMarketActivitySection(normalizeMarketActivityHistory(marketActivityResult.value));
+    } catch (error) {
+      console.error('Market activity render failed', error);
+      renderMarketActivityError(error?.message || 'Market activity render failed.');
+    }
+  } else {
+    renderMarketActivityError(marketActivityResult.reason?.message || 'Market activity refresh failed.');
+  }
+
+  if (indexSummaryHistoryResult.status === 'fulfilled') {
+    try {
+      renderIndexSummaryHistory(normalizeIndexSummaryHistory(indexSummaryHistoryResult.value));
+    } catch (error) {
+      console.error('Index summary history render failed', error);
+      renderIndexSummaryHistoryError(error?.message || 'Index summary trend render failed.');
+    }
+  } else {
+    renderIndexSummaryHistoryError(indexSummaryHistoryResult.reason?.message || 'Index summary trend refresh failed.');
   }
 
   if (holidaysResult.status === 'fulfilled') {
@@ -253,12 +383,26 @@ const renderHolidayError = (message) => {
   document.getElementById('holidayCalendarGrid').innerHTML = `<p>${message}</p>`;
 };
 
+const renderMarketActivityError = (message) => {
+  setText('heroMarketCap', '-');
+  document.getElementById('optionChainMarketActivityChart').innerHTML = `<p>${message}</p>`;
+  document.getElementById('optionChainMarketActivityLegend').innerHTML = '';
+};
+
+const renderIndexSummaryHistoryError = (message) => {
+  document.getElementById('optionChainMarketActivityChart').innerHTML = `<p>${message}</p>`;
+  document.getElementById('optionChainMarketActivityLegend').innerHTML = '';
+};
+
 const renderLiveError = (message) => {
   setText('generatedAt', 'Live refresh pending');
   setText('heroSpot', '-');
   setText('heroExpiry', '-');
   setText('heroTopContributor', '-');
   setText('heroLowestIv', '-');
+  setText('heroTradedValue', '-');
+  setText('heroMarketCap', '-');
+  setText('heroBreadth', '-');
   setText('contributorsStamp', 'Live refresh pending');
   setText('openInterestStamp', 'Live refresh pending');
   setText('blackScholesStamp', 'Live refresh pending');
@@ -291,12 +435,19 @@ const renderLiveSections = (snapshot) => {
   const openInterest = snapshot.openInterest;
   const blackScholes = snapshot.blackScholes;
   const lowIv = snapshot.lowIV;
+  const indexSummary = snapshot.indexSummary;
+  const signedChangeValue = signed(indexSummary.percentChange);
+  const dayRangeLabel = indexSummary.low > 0 || indexSummary.high > 0
+    ? `${formatNumber(indexSummary.low)} - ${formatNumber(indexSummary.high)}`
+    : '-';
 
   setText('generatedAt', formatDateTime(snapshot.fetchedAt));
-  setText('heroSpot', formatNumber(openInterest.spot));
-  setText('heroExpiry', openInterest.expiry || '-');
-  setText('heroTopContributor', contributors.rows[0] ? `${contributors.rows[0].symbol} ${signed(contributors.rows[0].contributingPoints)}` : '-');
-  setText('heroLowestIv', getLowestIvLabel(lowIv));
+  setText('heroSpot', formatNumber(indexSummary.last));
+  setText('heroExpiry', indexSummary.marketStatusLabel);
+  setText('heroTopContributor', `${signedChangeValue}%`);
+  setText('heroLowestIv', dayRangeLabel);
+  setText('heroTradedValue', `${formatNumber(indexSummary.tradedValueCrores)} Cr`);
+  setText('heroBreadth', `${contributors.advances} / ${contributors.declines}`);
   setText('contributorsStamp', contributors.timestamp || '-');
   setText('openInterestStamp', openInterest.timestamp || '-');
   setText('blackScholesStamp', blackScholes.timestamp || '-');
@@ -370,12 +521,75 @@ const renderLiveSections = (snapshot) => {
   bindChartExpansion();
 };
 
+const OPTION_CHAIN_MARKET_ACTIVITY_SERIES = [
+  { key: 'marketCapCrores', label: 'Market Cap (Cr)', color: '#b94a48' },
+  { key: 'tradedValueCrores', label: 'Traded Value (Cr)', color: '#0f4c5c' },
+  { key: 'ffmcCrores', label: 'FFMC (Cr)', color: '#1f8f6b' },
+];
+
+const renderMarketActivitySection = (rows) => {
+  marketActivityRows = rows;
+  const latest = rows[rows.length - 1];
+  setText('heroMarketCap', formatNumber(latest.totalMarketCapitalisationCrores));
+  renderOptionChainMarketActivity();
+};
+
+const renderIndexSummaryHistory = (rows) => {
+  indexSummaryHistoryRows = rows;
+  renderOptionChainMarketActivity();
+};
+
+const renderOptionChainMarketActivity = () => {
+  if (!marketActivityRows.length || !indexSummaryHistoryRows.length) {
+    return;
+  }
+
+  const summaryHistoryByDate = new Map(indexSummaryHistoryRows.map((row) => [normalizeHistoryDateKey(row.date), row]));
+  const rows = marketActivityRows
+    .map((row) => {
+      const summaryRow = summaryHistoryByDate.get(normalizeHistoryDateKey(row.date));
+      if (!summaryRow) {
+        return null;
+      }
+
+      return {
+        date: row.date,
+        marketCapCrores: parseNumber(row.totalMarketCapitalisationCrores),
+        tradedValueCrores: parseNumber(row.tradedValueCrores),
+        ffmcCrores: parseNumber(summaryRow.ffmcSum) / 10000000,
+      };
+    })
+    .filter(Boolean)
+    .slice(-10);
+
+  if (!rows.length) {
+    renderIndexSummaryHistoryError('No option-chain market activity history available.');
+    return;
+  }
+
+  renderStackedSeriesChart(
+    'optionChainMarketActivityChart',
+    rows,
+    (row) => ({
+      label: formatArchiveDateLabel(row.date),
+      segments: OPTION_CHAIN_MARKET_ACTIVITY_SERIES.map((series) => ({
+        value: parseNumber(row[series.key]),
+        color: series.color,
+        label: series.label,
+      })),
+    }),
+    'optionChainMarketActivityLegend',
+    'Option Chain and Market Activity',
+  );
+};
+
 const normalizeLiveSnapshot = (payload) => {
   const contributors = normalizeContributors(payload.contributors || {});
   const fiiDii = normalizeFiiDii(payload.fiiDii || {});
   const openInterest = extractOpenInterest(payload.optionChain || {});
   const blackScholes = buildBlackScholes(openInterest);
   const lowIV = buildLowIv(payload.optionChain || {});
+  const indexSummary = normalizeIndexSummary(payload);
 
   return {
     fetchedAt: payload.fetchedAt || new Date().toISOString(),
@@ -384,7 +598,175 @@ const normalizeLiveSnapshot = (payload) => {
     openInterest,
     blackScholes,
     lowIV,
+    indexSummary,
   };
+};
+
+const normalizeIndexSummary = (payload) => {
+  const contributorsPayload = payload.contributors || {};
+  const metadata = contributorsPayload.metadata || buildIndexMetadataFallback(contributorsPayload);
+  const marketStatus = payload.marketStatus || buildMarketStatusFallback(contributorsPayload);
+
+  return {
+    last: parseNumber(metadata.last),
+    open: parseNumber(metadata.open),
+    high: parseNumber(metadata.high),
+    low: parseNumber(metadata.low),
+    previousClose: parseNumber(metadata.previousClose),
+    change: parseNumber(metadata.change || marketStatus.variation),
+    percentChange: parseNumber(metadata.percChange || marketStatus.percentChange),
+    tradedValueCrores: parseNumber(metadata.totalTradedValue) / 10000000,
+    totalTradedVolume: parseNumber(metadata.totalTradedVolume),
+    ffmc: parseNumber(metadata.ffmc_sum),
+    marketStatusLabel: getMarketSessionLabel(getMarketSessionState()),
+    marketStatus,
+  };
+};
+
+const buildIndexMetadataFallback = (contributorsPayload) => {
+  const rows = Array.isArray(contributorsPayload.data) ? contributorsPayload.data : [];
+  const niftyRow = rows.find((item) => item.symbol === 'NIFTY 50') || rows[0] || {};
+  return {
+    indexName: contributorsPayload.name || niftyRow.symbol || 'NIFTY 50',
+    open: niftyRow.open,
+    high: niftyRow.dayHigh,
+    low: niftyRow.dayLow,
+    previousClose: niftyRow.previousClose,
+    last: niftyRow.lastPrice,
+    percChange: niftyRow.pChange,
+    change: niftyRow.change,
+    totalTradedVolume: niftyRow.totalTradedVolume,
+    totalTradedValue: niftyRow.totalTradedValue,
+    ffmc_sum: niftyRow.ffmc,
+    timeVal: contributorsPayload.timestamp || niftyRow.lastUpdateTime || '',
+  };
+};
+
+const buildMarketStatusFallback = (contributorsPayload) => {
+  const rows = Array.isArray(contributorsPayload.data) ? contributorsPayload.data : [];
+  const niftyRow = rows.find((item) => item.symbol === 'NIFTY 50') || rows[0] || {};
+  return {
+    market: 'Capital Market',
+    marketStatus: getMarketSessionLabel(getMarketSessionState()),
+    tradeDate: contributorsPayload.timestamp || niftyRow.lastUpdateTime || '',
+    index: contributorsPayload.name || niftyRow.symbol || 'NIFTY 50',
+    last: parseNumber(niftyRow.lastPrice),
+    variation: parseNumber(niftyRow.change),
+    percentChange: parseNumber(niftyRow.pChange),
+  };
+};
+
+const normalizeMarketActivityHistory = (csvText) => {
+  const lines = String(csvText || '').split(/\r?\n/).filter(Boolean);
+  if (lines.length < 2) {
+    throw new Error('No market activity history available.');
+  }
+
+  const [headerLine, ...dataLines] = lines;
+  const headers = parseCsvLine(headerLine);
+  const rows = dataLines.map((line) => {
+    const values = parseCsvLine(line);
+    return Object.fromEntries(headers.map((header, index) => [header, values[index] || '']));
+  }).map((row) => ({
+    ...row,
+    tradedValueCrores: parseNumber(row.tradedValueCrores),
+    tradedQuantityLakhs: parseNumber(row.tradedQuantityLakhs),
+    numberOfTrades: parseNumber(row.numberOfTrades),
+    totalMarketCapitalisationCrores: parseNumber(row.totalMarketCapitalisationCrores),
+  })).filter((row) => row.date);
+
+  if (!rows.length) {
+    throw new Error('No market activity rows available.');
+  }
+
+  return rows;
+};
+
+const normalizeIndexSummaryHistory = (csvText) => {
+  const lines = String(csvText || '').split(/\r?\n/).filter(Boolean);
+  if (lines.length < 2) {
+    throw new Error('No index summary history available.');
+  }
+
+  const [headerLine, ...dataLines] = lines;
+  const headers = parseCsvLine(headerLine);
+  const rows = dataLines.map((line) => {
+    const values = parseCsvLine(line);
+    return Object.fromEntries(headers.map((header, index) => [header, values[index] || '']));
+  }).map((row) => ({
+    ...row,
+    last: parseNumber(row.last),
+    open: parseNumber(row.open),
+    high: parseNumber(row.high),
+    low: parseNumber(row.low),
+    previousClose: parseNumber(row.previousClose),
+    change: parseNumber(row.change),
+    percentChange: parseNumber(row.percentChange),
+    totalTradedValue: parseNumber(row.totalTradedValue),
+    totalTradedValueCrores: parseNumber(row.totalTradedValue) / 10000000,
+    totalTradedVolume: parseNumber(row.totalTradedVolume),
+    ffmcSum: parseNumber(row.ffmcSum),
+  })).filter((row) => row.date);
+
+  if (!rows.length) {
+    throw new Error('No index summary history rows available.');
+  }
+
+  return rows;
+};
+
+const parseCsvLine = (line) => {
+  const values = [];
+  let current = '';
+  let inQuotes = false;
+
+  for (let index = 0; index < line.length; index += 1) {
+    const character = line[index];
+    if (character === '"') {
+      if (inQuotes && line[index + 1] === '"') {
+        current += '"';
+        index += 1;
+      } else {
+        inQuotes = !inQuotes;
+      }
+      continue;
+    }
+
+    if (character === ',' && !inQuotes) {
+      values.push(current);
+      current = '';
+      continue;
+    }
+
+    current += character;
+  }
+
+  values.push(current);
+  return values;
+};
+
+const normalizeHistoryDateKey = (value) => {
+  const raw = String(value || '').trim();
+  if (!raw) {
+    return '';
+  }
+
+  if (/^\d{4}-\d{2}-\d{2}$/.test(raw)) {
+    return raw;
+  }
+
+  const match = raw.match(/^(\d{2})-([A-Za-z]{3})-(\d{4})$/);
+  if (!match) {
+    return raw;
+  }
+
+  const [, day, monthLabel, year] = match;
+  const monthIndex = MONTHS.findIndex((label) => label.toLowerCase() === monthLabel.toLowerCase());
+  if (monthIndex < 0) {
+    return raw;
+  }
+
+  return `${year}-${String(monthIndex + 1).padStart(2, '0')}-${day}`;
 };
 
 const normalizeContributors = (payload) => {
@@ -661,7 +1043,11 @@ const renderBarChart = (id, rows, mapper, legendId, title, expanded = false) => 
     document.getElementById(legendId).innerHTML = renderLegend(mapped[0]);
   }
 
-  chartState[id] = { rows, mapper, title };
+  chartState[id] = {
+    title,
+    legendHtml: renderLegend(mapped[0]),
+    render: (targetId, expandedMode) => renderBarChart(targetId, rows, mapper, null, title, expandedMode),
+  };
 
   document.getElementById(id).innerHTML = `
     <svg viewBox="0 0 ${width} ${height}" preserveAspectRatio="none" role="img" aria-label="${title}">
@@ -669,6 +1055,123 @@ const renderBarChart = (id, rows, mapper, legendId, title, expanded = false) => 
       <text x="18" y="24" font-size="${expanded ? 14 : 11}" fill="#4d6971">${formatCompact(maxValue)}</text>
       <text x="18" y="${baseline - 6}" font-size="${expanded ? 14 : 11}" fill="#4d6971">0</text>
       <text x="18" y="${height - 42}" font-size="${expanded ? 14 : 11}" fill="#4d6971">-${formatCompact(maxValue)}</text>
+      ${bars}
+    </svg>
+  `;
+};
+
+const renderSingleSeriesChart = (id, rows, mapper, legendId, title, expanded = false) => {
+  if (!rows.length) {
+    document.getElementById(id).innerHTML = '<p>No data available.</p>';
+    return;
+  }
+
+  const mapped = rows.map(mapper);
+  const maxValue = Math.max(...mapped.map((item) => Math.abs(item.value) || 0), 1);
+  const width = expanded ? 1400 : 960;
+  const height = expanded ? 520 : 360;
+  const top = 24;
+  const baseline = height - 48;
+  const left = 60;
+  const groupWidth = (width - left - 20) / mapped.length;
+  const barWidth = Math.max(expanded ? 26 : 18, groupWidth * 0.55);
+
+  const bars = mapped.map((item, index) => {
+    const scaledHeight = (Math.abs(item.value) / maxValue) * (expanded ? 360 : 240);
+    const x = left + index * groupWidth + (groupWidth - barWidth) / 2;
+    const y = baseline - scaledHeight;
+    return [
+      `<rect x="${x}" y="${y}" width="${barWidth}" height="${scaledHeight}" rx="6" fill="${item.color}" opacity="0.9"></rect>`,
+      `<text x="${x + barWidth / 2}" y="${height - 12}" text-anchor="middle" font-size="${expanded ? 15 : 11}" fill="#4d6971">${item.label}</text>`,
+    ].join('');
+  }).join('');
+
+  const legendHtml = `<div class="legend-item"><span class="legend-swatch" style="background:${mapped[0].color}"></span>${mapped[0].labelA}</div>`;
+  if (legendId) {
+    document.getElementById(legendId).innerHTML = legendHtml;
+  }
+
+  chartState[id] = {
+    title,
+    legendHtml,
+    render: (targetId, expandedMode) => renderSingleSeriesChart(targetId, rows, mapper, null, title, expandedMode),
+  };
+
+  document.getElementById(id).innerHTML = `
+    <svg viewBox="0 0 ${width} ${height}" preserveAspectRatio="none" role="img" aria-label="${title}">
+      <line x1="${left}" x2="${width - 10}" y1="${baseline}" y2="${baseline}" stroke="rgba(15,76,92,0.18)" stroke-width="1.2"></line>
+      <text x="18" y="24" font-size="${expanded ? 14 : 11}" fill="#4d6971">${formatLargeCompact(maxValue)}</text>
+      <text x="18" y="${baseline - 6}" font-size="${expanded ? 14 : 11}" fill="#4d6971">0</text>
+      ${bars}
+    </svg>
+  `;
+};
+
+const renderStackedSeriesChart = (id, rows, mapper, legendId, title, expanded = false) => {
+  if (!rows.length) {
+    document.getElementById(id).innerHTML = '<p>No data available.</p>';
+    return;
+  }
+
+  const mapped = rows.map(mapper);
+  const maxValue = Math.max(
+    ...mapped.map((item) => item.segments.reduce((sum, segment) => sum + Math.abs(segment.value || 0), 0)),
+    1,
+  );
+  const width = expanded ? 1400 : 960;
+  const height = expanded ? 520 : 360;
+  const top = 24;
+  const baseline = height - 48;
+  const left = 60;
+  const groupWidth = (width - left - 20) / mapped.length;
+  const barWidth = Math.max(expanded ? 30 : 22, groupWidth * 0.58);
+  const chartHeight = baseline - top;
+
+  const bars = mapped.map((item, index) => {
+    const total = item.segments.reduce((sum, segment) => sum + Math.abs(segment.value || 0), 0);
+    const x = left + index * groupWidth + (groupWidth - barWidth) / 2;
+    let currentY = baseline;
+
+    const segments = item.segments.map((segment) => {
+      if (!segment.value) {
+        return '';
+      }
+
+      let scaledHeight = (Math.abs(segment.value) / maxValue) * chartHeight;
+      if (scaledHeight > 0 && scaledHeight < 3) {
+        scaledHeight = 3;
+      }
+
+      currentY -= scaledHeight;
+      return `<rect x="${x}" y="${currentY}" width="${barWidth}" height="${scaledHeight}" rx="6" fill="${segment.color}" opacity="0.92"></rect>`;
+    }).join('');
+
+    return [
+      segments,
+      `<text x="${x + barWidth / 2}" y="${height - 12}" text-anchor="middle" font-size="${expanded ? 15 : 11}" fill="#4d6971">${item.label}</text>`,
+      `<text x="${x + barWidth / 2}" y="${Math.max(currentY - 8, top + 12)}" text-anchor="middle" font-size="${expanded ? 13 : 10}" fill="#14313b">${formatCompact(total)}</text>`,
+    ].join('');
+  }).join('');
+
+  const legendHtml = OPTION_CHAIN_MARKET_ACTIVITY_SERIES
+    .map((series) => `<div class="legend-item"><span class="legend-swatch" style="background:${series.color}"></span>${series.label}</div>`)
+    .join('');
+
+  if (legendId) {
+    document.getElementById(legendId).innerHTML = legendHtml;
+  }
+
+  chartState[id] = {
+    title,
+    legendHtml,
+    render: (targetId, expandedMode) => renderStackedSeriesChart(targetId, rows, mapper, null, title, expandedMode),
+  };
+
+  document.getElementById(id).innerHTML = `
+    <svg viewBox="0 0 ${width} ${height}" preserveAspectRatio="none" role="img" aria-label="${title}">
+      <line x1="${left}" x2="${width - 10}" y1="${baseline}" y2="${baseline}" stroke="rgba(15,76,92,0.18)" stroke-width="1.2"></line>
+      <text x="18" y="24" font-size="${expanded ? 14 : 11}" fill="#4d6971">${formatCompact(maxValue)}</text>
+      <text x="18" y="${baseline - 6}" font-size="${expanded ? 14 : 11}" fill="#4d6971">0</text>
       ${bars}
     </svg>
   `;
@@ -713,8 +1216,8 @@ const openChartModal = (chartId, title) => {
   document.getElementById('chartModalTitle').textContent = title;
   modal.hidden = false;
   document.body.classList.add('modal-open');
-  modalLegend.innerHTML = renderLegend(state.mapper(state.rows[0]));
-  renderBarChart('chartModalBody', state.rows, state.mapper, null, title, true);
+  modalLegend.innerHTML = state.legendHtml || '';
+  state.render('chartModalBody', true);
 };
 
 const closeChartModal = () => {
@@ -851,6 +1354,17 @@ const formatCompact = (value) => {
   if (abs >= 100000) return `${(value / 100000).toFixed(1)}L`;
   if (abs >= 1000) return `${(value / 1000).toFixed(1)}K`;
   return Number(value).toFixed(0);
+};
+
+const formatLargeCompact = (value) => {
+  if (value === null || value === undefined || Number.isNaN(Number(value))) return '-';
+  return compactNumber.format(Number(value));
+};
+
+const formatArchiveDateLabel = (value) => {
+  if (!value) return '-';
+  const [day, month] = String(value).split('-');
+  return `${day} ${month || ''}`.trim();
 };
 
 const formatTickerValue = (value) => {
@@ -1177,9 +1691,26 @@ const bindNewsletterForm = () => {
   const emailInput = document.getElementById('newsletterEmail');
   const submitButton = document.getElementById('newsletterSubmit');
   const status = document.getElementById('newsletterStatus');
+  const toggleButton = document.getElementById('newsletterToggle');
+  const tray = document.getElementById('newsletterTray');
 
   if (!form || !emailInput || !submitButton || !status) {
     return;
+  }
+
+  const setTrayState = (open) => {
+    if (!tray || !toggleButton) {
+      return;
+    }
+    tray.hidden = !open;
+    toggleButton.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (open) {
+      emailInput.focus();
+    }
+  };
+
+  if (toggleButton && tray) {
+    toggleButton.onclick = () => setTrayState(tray.hidden);
   }
 
   const setStatus = (message, tone = '') => {
@@ -1223,6 +1754,7 @@ const bindNewsletterForm = () => {
 
       emailInput.value = '';
       setStatus(payload?.message || 'Subscription saved. You will receive the 8 PM AI Brief newsletter on trading days.', 'is-success');
+      setTrayState(false);
     } catch (error) {
       const message = error?.message === 'Failed to fetch'
         ? 'Subscription request could not reach the newsletter endpoint. Check the Edge Function deployment and CORS settings.'
@@ -1254,14 +1786,7 @@ const syncRefreshToggle = () => {
 
 const startRealtimeRefresh = () => {
   stopRealtimeRefresh();
-  if (!isRealtimeRefreshWindow()) {
-    return;
-  }
   realtimeRefreshTimer = window.setInterval(() => {
-    if (!isRealtimeRefreshWindow()) {
-      stopRealtimeRefresh();
-      return;
-    }
     loadRealtimeData().catch((error) => {
       console.error('Scheduled realtime load failed', error);
     });

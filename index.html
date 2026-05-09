@@ -12,6 +12,7 @@
   <meta name="theme-color" content="#0f4c5c">
   <meta name="author" content="playai">
   <link rel="canonical" href="https://niftyanalytica.com/">
+  <link rel="icon" type="image/png" href="assets/icon-app1.png">
   <meta property="og:title" content="Nifty Analytica - Android App on Google Play">
   <meta
     property="og:description"
@@ -27,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/styles.css?v=20260420-1">
+  <link rel="stylesheet" href="assets/styles.css?v=20260509-2">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -61,9 +62,9 @@
         </div>
         <p class="hero-text">
           Follow the market with a clearer daily view of NIFTY 50 activity, backed by
-          AI powered analysis, contributor moves, option positioning, and practical trade context.
+          AI powered analysis, contributor moves, market cap, option positioning, and practical trade context.
           Track fresh AI briefs, live market snapshots, latest headlines, low IV ideas, contributor shifts,
-          and open-interest structure in one place while social channels stay in sync with each publish cycle.
+          and option-chain market activity in one place while social channels stay in sync with each publish cycle.
           The dashboard is built to give both a quick scan and a deeper read before the next market move.
         </p>
         <div class="hero-actions">
@@ -91,19 +92,22 @@
             <a class="social-link-pill" href="https://www.linkedin.com/company/niftyanalytica" target="_blank" rel="noreferrer" aria-label="Open Nifty Analytica on LinkedIn">
               <img class="social-link-icon" src="assets/social-linkedin.svg" alt="LinkedIn icon">
             </a>
+            <button class="social-link-pill social-link-button" id="newsletterToggle" type="button" aria-expanded="false" aria-controls="newsletterTray" aria-label="Open email newsletter signup">
+              <img class="social-link-icon" src="assets/social-email.svg" alt="Email icon">
+            </button>
           </div>
-        </div>
-        <div class="hero-panel-block">
-          <div class="hero-panel-title">Get The AI Brief By Email</div>
-          <form id="newsletterForm" class="subscribe-form" novalidate>
-            <label class="subscribe-label" for="newsletterEmail">Email address</label>
-            <div class="subscribe-row">
-              <input id="newsletterEmail" class="subscribe-input" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
-              <button id="newsletterSubmit" class="button button-secondary subscribe-button" type="submit">Subscribe</button>
-            </div>
-            <p class="subscribe-note">Receive the AI Brief as a market-day email update at 8 PM IST.</p>
-            <p id="newsletterStatus" class="subscribe-status" aria-live="polite"></p>
-          </form>
+          <div id="newsletterTray" class="newsletter-tray" hidden>
+            <div class="hero-panel-title">Get The AI Brief By Email</div>
+            <form id="newsletterForm" class="subscribe-form" novalidate>
+              <label class="subscribe-label" for="newsletterEmail">Email address</label>
+              <div class="subscribe-row">
+                <input id="newsletterEmail" class="subscribe-input" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+                <button id="newsletterSubmit" class="button button-secondary subscribe-button" type="submit">Submit</button>
+              </div>
+              <p class="subscribe-note">Receive the AI Brief as a market-day email update at 8 PM IST.</p>
+            </form>
+          </div>
+          <p id="newsletterStatus" class="subscribe-status" aria-live="polite"></p>
         </div>
         <div class="refresh-control-row">
           <label class="toggle-control" for="autoRefreshToggle">
@@ -114,20 +118,32 @@
         </div>
         <dl class="hero-metrics">
           <div>
-            <dt>Nifty Spot</dt>
+            <dt>Nifty Last</dt>
             <dd id="heroSpot">-</dd>
           </div>
           <div>
-            <dt>Nearest Expiry</dt>
+            <dt>Session</dt>
             <dd id="heroExpiry">-</dd>
           </div>
           <div>
-            <dt>Top Contributor</dt>
+            <dt>Change</dt>
             <dd id="heroTopContributor">-</dd>
           </div>
           <div>
-            <dt>Lowest IV</dt>
+            <dt>Day Range</dt>
             <dd id="heroLowestIv">-</dd>
+          </div>
+          <div>
+            <dt>Traded Value (Cr)</dt>
+            <dd id="heroTradedValue">-</dd>
+          </div>
+          <div>
+            <dt>Market Cap (Cr)</dt>
+            <dd id="heroMarketCap">-</dd>
+          </div>
+          <div>
+            <dt>Adv / Dec</dt>
+            <dd id="heroBreadth">-</dd>
           </div>
         </dl>
       </aside>
@@ -157,134 +173,160 @@
 
     <div class="dashboard-shell">
     <main>
-      <section id="ai-analysis" class="card reveal">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">AI Brief</p>
-            <h2>Agent Market Analysis</h2>
+      <div class="analysis-shell">
+        <section id="ai-analysis" class="card reveal">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">AI Brief</p>
+              <h2>Agent Market Analysis</h2>
+            </div>
+            <div id="aiAnalysisStamp" class="stamp">-</div>
           </div>
-          <div id="aiAnalysisStamp" class="stamp">-</div>
-        </div>
-        <div class="summary-grid" id="aiSummary"></div>
-        <article class="ai-copy">
-          <div id="aiSummaryText" class="ai-summary-text">Waiting for AI analysis.</div>
-          <div id="aiKeyLevelsBlock">
-            <h3>Key Levels</h3>
-            <ul id="aiKeyLevels" class="chip-list"></ul>
-          </div>
-          <div id="aiWatchlistBlock">
-            <h3>Watchlist</h3>
-            <ul id="aiWatchlist" class="chip-list"></ul>
-          </div>
-        </article>
-      </section>
+          <div class="summary-grid" id="aiSummary"></div>
+          <article class="ai-copy">
+            <div id="aiSummaryText" class="ai-summary-text">Waiting for AI analysis.</div>
+            <div id="aiKeyLevelsBlock">
+              <h3>Key Levels</h3>
+              <ul id="aiKeyLevels" class="chip-list"></ul>
+            </div>
+            <div id="aiWatchlistBlock">
+              <h3>Watchlist</h3>
+              <ul id="aiWatchlist" class="chip-list"></ul>
+            </div>
+          </article>
+        </section>
 
-      <section id="contributors" class="card reveal">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Index Impact</p>
-            <h2>NIFTY 50 Contributors</h2>
-          </div>
-          <div id="contributorsStamp" class="stamp">-</div>
-        </div>
-        <div class="summary-grid" id="contributorsSummary"></div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Symbol</th>
-                <th>Last</th>
-                <th>%</th>
-                <th>CP</th>
-                <th>Traded Value (Cr)</th>
-              </tr>
-            </thead>
-            <tbody id="contributorsRows"></tbody>
-          </table>
-        </div>
-      </section>
+        <aside class="news-rail">
+          <section class="card news-card reveal delay-2">
+            <div class="section-heading rail-heading">
+              <div>
+                <p class="eyebrow">News Rail</p>
+                <h2>Latest Headlines</h2>
+              </div>
+              <div id="newsFeedStamp" class="stamp">-</div>
+            </div>
+            <p id="newsFeedMeta" class="rail-note" hidden></p>
+            <ol id="newsFeedList" class="news-feed-list"></ol>
+          </section>
+        </aside>
+      </div>
 
-      <section id="open-interest" class="card reveal delay-1">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Option Chain</p>
-            <h2>Open Interest and Pressure</h2>
+      <div class="section-pair section-pair-primary">
+        <section id="contributors" class="card reveal">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Index Impact</p>
+              <h2>NIFTY 50 Contributors</h2>
+            </div>
+            <div id="contributorsStamp" class="stamp">-</div>
           </div>
-          <div id="openInterestStamp" class="stamp">-</div>
-        </div>
-        <div class="summary-grid" id="openInterestSummary"></div>
-        <div class="chart-stack">
-          <div class="chart-panel" data-chart-title="Net OI Change by Strike" data-chart-target="oiChart">
-            <h3>Net OI Change by Strike</h3>
-            <div id="oiLegend" class="chart-legend"></div>
-            <div id="oiChart" class="svg-chart"></div>
-            <button class="chart-expand" type="button" data-chart-target="oiChart" data-chart-title="Net OI Change by Strike">Expand chart</button>
+          <div class="summary-grid" id="contributorsSummary"></div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Symbol</th>
+                  <th>Last</th>
+                  <th>%</th>
+                  <th>CP</th>
+                  <th>Traded Value (Cr)</th>
+                </tr>
+              </thead>
+              <tbody id="contributorsRows"></tbody>
+            </table>
           </div>
-          <div class="chart-panel" data-chart-title="Buy Minus Sell by Strike" data-chart-target="bidAskChart">
-            <h3>Buy Minus Sell by Strike</h3>
-            <div id="bidAskLegend" class="chart-legend"></div>
-            <div id="bidAskChart" class="svg-chart"></div>
-            <button class="chart-expand" type="button" data-chart-target="bidAskChart" data-chart-title="Buy Minus Sell by Strike">Expand chart</button>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="black-scholes" class="card reveal delay-2">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Model Check</p>
-            <h2>Black-Scholes vs Market</h2>
+        <section id="open-interest" class="card reveal delay-1">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Option Chain and Market Activity</p>
+              <h2>Open Interest and Pressure</h2>
+            </div>
+            <div id="openInterestStamp" class="stamp">-</div>
           </div>
-          <div id="blackScholesStamp" class="stamp">-</div>
-        </div>
-        <div class="summary-grid" id="blackScholesSummary"></div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Strike</th>
-                <th>Call Market</th>
-                <th>Call BS</th>
-                <th>Put Market</th>
-                <th>Put BS</th>
-                <th>Call IV</th>
-                <th>Put IV</th>
-              </tr>
-            </thead>
-            <tbody id="blackScholesRows"></tbody>
-          </table>
-        </div>
-      </section>
+          <div class="chart-panel" data-chart-title="Option Chain and Market Activity" data-chart-target="optionChainMarketActivityChart">
+            <h3>Daily Market Activity</h3>
+            <div id="optionChainMarketActivityLegend" class="chart-legend"></div>
+            <div id="optionChainMarketActivityChart" class="svg-chart"></div>
+            <button class="chart-expand" type="button" data-chart-target="optionChainMarketActivityChart" data-chart-title="Option Chain and Market Activity">Expand chart</button>
+          </div>
+          <div class="summary-grid" id="openInterestSummary"></div>
+          <div class="chart-stack">
+            <div class="chart-panel" data-chart-title="Net OI Change by Strike" data-chart-target="oiChart">
+              <h3>Net OI Change by Strike</h3>
+              <div id="oiLegend" class="chart-legend"></div>
+              <div id="oiChart" class="svg-chart"></div>
+              <button class="chart-expand" type="button" data-chart-target="oiChart" data-chart-title="Net OI Change by Strike">Expand chart</button>
+            </div>
+            <div class="chart-panel" data-chart-title="Buy Minus Sell by Strike" data-chart-target="bidAskChart">
+              <h3>Buy Minus Sell by Strike</h3>
+              <div id="bidAskLegend" class="chart-legend"></div>
+              <div id="bidAskChart" class="svg-chart"></div>
+              <button class="chart-expand" type="button" data-chart-target="bidAskChart" data-chart-title="Buy Minus Sell by Strike">Expand chart</button>
+            </div>
+          </div>
+        </section>
+      </div>
 
-      <section id="low-iv" class="card reveal delay-3">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Opportunity Scanner</p>
-            <h2>Lowest Implied Volatility</h2>
+      <div class="section-pair section-pair-secondary">
+        <section id="black-scholes" class="card reveal delay-2">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Model Check</p>
+              <h2>Black-Scholes vs Market</h2>
+            </div>
+            <div id="blackScholesStamp" class="stamp">-</div>
           </div>
-          <div id="lowIvStamp" class="stamp">-</div>
-        </div>
-        <div class="summary-grid" id="lowIvSummary"></div>
-        <div class="filter-row">
-          <label class="select-label" for="lowIvExpirySelect">Expiry</label>
-          <select id="lowIvExpirySelect" class="select-control"></select>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Type</th>
-                <th>Strike</th>
-                <th>Expiry</th>
-                <th>IV</th>
-                <th>OI Change %</th>
-                <th>Last Price</th>
-              </tr>
-            </thead>
-            <tbody id="lowIvRows"></tbody>
-          </table>
-        </div>
-      </section>
+          <div class="summary-grid" id="blackScholesSummary"></div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Strike</th>
+                  <th>Call Market</th>
+                  <th>Call BS</th>
+                  <th>Put Market</th>
+                  <th>Put BS</th>
+                  <th>Call IV</th>
+                  <th>Put IV</th>
+                </tr>
+              </thead>
+              <tbody id="blackScholesRows"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="low-iv" class="card reveal delay-3">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Opportunity Scanner</p>
+              <h2>Lowest Implied Volatility</h2>
+            </div>
+            <div id="lowIvStamp" class="stamp">-</div>
+          </div>
+          <div class="summary-grid" id="lowIvSummary"></div>
+          <div class="filter-row">
+            <label class="select-label" for="lowIvExpirySelect">Expiry</label>
+            <select id="lowIvExpirySelect" class="select-control"></select>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Strike</th>
+                  <th>Expiry</th>
+                  <th>IV</th>
+                  <th>OI Change %</th>
+                  <th>Last Price</th>
+                </tr>
+              </thead>
+              <tbody id="lowIvRows"></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
 
       <section id="nse-holidays" class="card reveal delay-3">
         <div class="section-heading">
@@ -294,24 +336,16 @@
           </div>
           <div id="holidayStamp" class="stamp">-</div>
         </div>
-        <p id="holidayMeta" class="rail-note">Loading trading holiday calendar.</p>
-        <div id="holidayCalendarGrid" class="holiday-calendar-grid"></div>
+        <details class="holiday-disclosure">
+          <summary class="holiday-disclosure-toggle">Expand holiday calendar</summary>
+          <div class="holiday-disclosure-body">
+            <p id="holidayMeta" class="rail-note">Loading trading holiday calendar.</p>
+            <div id="holidayCalendarGrid" class="holiday-calendar-grid"></div>
+          </div>
+        </details>
       </section>
     </main>
 
-    <aside class="news-rail">
-      <section class="card news-card reveal delay-2">
-        <div class="section-heading rail-heading">
-          <div>
-            <p class="eyebrow">News Rail</p>
-            <h2>Latest Headlines</h2>
-          </div>
-          <div id="newsFeedStamp" class="stamp">-</div>
-        </div>
-        <p id="newsFeedMeta" class="rail-note" hidden></p>
-        <ol id="newsFeedList" class="news-feed-list"></ol>
-      </section>
-    </aside>
     </div>
 
     <footer class="footer reveal delay-3">
@@ -372,7 +406,7 @@
     </div>
   </div>
 
-  <script src="assets/runtime-config.js?v=20260420-1"></script>
-  <script src="assets/app.js?v=20260420-1"></script>
+  <script src="assets/runtime-config.js?v=20260509-2"></script>
+  <script src="assets/app.js?v=20260509-3"></script>
 </body>
 </html>
