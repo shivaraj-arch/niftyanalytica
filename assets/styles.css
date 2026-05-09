@@ -779,6 +779,10 @@ tbody tr:hover {
   gap: 18px;
 }
 
+.chart-panel h3 {
+  margin: 0 0 12px;
+}
+
 #open-interest > .chart-panel {
   margin-bottom: 20px;
 }
@@ -828,6 +832,10 @@ tbody tr:hover {
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.54);
   border: 1px solid rgba(15, 76, 92, 0.08);
+}
+
+#open-interest .svg-chart {
+  min-height: 280px;
 }
 
 .svg-chart svg {

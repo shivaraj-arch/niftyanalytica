@@ -38,7 +38,6 @@ const setDisplay = (id, visible) => {
 let realtimeRefreshTimer = null;
 let aiRefreshTimer = null;
 let marketActivityRows = [];
-let indexSummaryHistoryRows = [];
 
 const loadJson = async (url, options = {}) => {
   const response = await fetch(url, options);
@@ -177,7 +176,6 @@ const isRealtimeRefreshWindow = (date = new Date()) => getMarketSessionState(dat
 const fetchAiAnalysis = async () => loadJsonData('data/ai-analysis.json');
 const fetchNewsRailSnapshot = async () => loadJsonData('data/news-feed.json');
 const fetchMarketActivityHistory = async () => loadTextData('data/market-activity-history.csv');
-const fetchIndexSummaryHistory = async () => loadTextData('data/index-summary-history.csv');
 const fetchLiveSnapshotCache = async () => {
   const liveUrl = LIVE_SNAPSHOT_URL
     ? `${LIVE_SNAPSHOT_URL}${LIVE_SNAPSHOT_URL.includes('?') ? '&' : '?'}t=${Date.now()}`
@@ -264,12 +262,11 @@ const loadAiData = async () => {
 };
 
 const loadRealtimeData = async () => {
-  const [liveResult, newsRailResult, holidaysResult, marketActivityResult, indexSummaryHistoryResult] = await Promise.allSettled([
+  const [liveResult, newsRailResult, holidaysResult, marketActivityResult] = await Promise.allSettled([
     fetchLiveSnapshotCache(),
     fetchNewsRailSnapshot(),
     fetchHolidaySnapshot(),
     fetchMarketActivityHistory(),
-    fetchIndexSummaryHistory(),
   ]);
 
   const marketTapePayload = newsRailResult.status === 'fulfilled'
@@ -323,17 +320,6 @@ const loadRealtimeData = async () => {
     renderMarketActivityError(marketActivityResult.reason?.message || 'Market activity refresh failed.');
   }
 
-  if (indexSummaryHistoryResult.status === 'fulfilled') {
-    try {
-      renderIndexSummaryHistory(normalizeIndexSummaryHistory(indexSummaryHistoryResult.value));
-    } catch (error) {
-      console.error('Index summary history render failed', error);
-      renderIndexSummaryHistoryError(error?.message || 'Index summary trend render failed.');
-    }
-  } else {
-    renderIndexSummaryHistoryError(indexSummaryHistoryResult.reason?.message || 'Index summary trend refresh failed.');
-  }
-
   if (holidaysResult.status === 'fulfilled') {
     try {
       renderHolidayCalendar(normalizeCachedHolidayPayload(holidaysResult.value));
@@ -385,13 +371,10 @@ const renderHolidayError = (message) => {
 
 const renderMarketActivityError = (message) => {
   setText('heroMarketCap', '-');
-  document.getElementById('optionChainMarketActivityChart').innerHTML = `<p>${message}</p>`;
-  document.getElementById('optionChainMarketActivityLegend').innerHTML = '';
-};
-
-const renderIndexSummaryHistoryError = (message) => {
-  document.getElementById('optionChainMarketActivityChart').innerHTML = `<p>${message}</p>`;
-  document.getElementById('optionChainMarketActivityLegend').innerHTML = '';
+  document.getElementById('optionChainMarketCapChart').innerHTML = `<p>${message}</p>`;
+  document.getElementById('optionChainMarketCapLegend').innerHTML = '';
+  document.getElementById('optionChainMarketFlowChart').innerHTML = `<p>${message}</p>`;
+  document.getElementById('optionChainMarketFlowLegend').innerHTML = '';
 };
 
 const renderLiveError = (message) => {
@@ -521,10 +504,17 @@ const renderLiveSections = (snapshot) => {
   bindChartExpansion();
 };
 
-const OPTION_CHAIN_MARKET_ACTIVITY_SERIES = [
-  { key: 'marketCapCrores', label: 'Market Cap (Cr)', color: '#b94a48' },
+const OPTION_CHAIN_MARKET_CAP_SERIES = {
+  key: 'marketCapCrores',
+  label: 'Market Cap (Cr)',
+  color: '#b94a48',
+};
+
+const OPTION_CHAIN_MARKET_FLOW_SERIES = [
   { key: 'tradedValueCrores', label: 'Traded Value (Cr)', color: '#0f4c5c' },
   { key: 'ffmcCrores', label: 'FFMC (Cr)', color: '#1f8f6b' },
+  { key: 'fiiNetCrores', label: 'FII Net (Cr)', color: '#b47b19' },
+  { key: 'diiNetCrores', label: 'DII Net (Cr)', color: '#7a4cc2' },
 ];
 
 const renderMarketActivitySection = (rows) => {
@@ -534,52 +524,53 @@ const renderMarketActivitySection = (rows) => {
   renderOptionChainMarketActivity();
 };
 
-const renderIndexSummaryHistory = (rows) => {
-  indexSummaryHistoryRows = rows;
-  renderOptionChainMarketActivity();
-};
-
 const renderOptionChainMarketActivity = () => {
-  if (!marketActivityRows.length || !indexSummaryHistoryRows.length) {
+  if (!marketActivityRows.length) {
     return;
   }
 
-  const summaryHistoryByDate = new Map(indexSummaryHistoryRows.map((row) => [normalizeHistoryDateKey(row.date), row]));
   const rows = marketActivityRows
-    .map((row) => {
-      const summaryRow = summaryHistoryByDate.get(normalizeHistoryDateKey(row.date));
-      if (!summaryRow) {
-        return null;
-      }
-
-      return {
-        date: row.date,
-        marketCapCrores: parseNumber(row.totalMarketCapitalisationCrores),
-        tradedValueCrores: parseNumber(row.tradedValueCrores),
-        ffmcCrores: parseNumber(summaryRow.ffmcSum) / 10000000,
-      };
-    })
-    .filter(Boolean)
-    .slice(-10);
+    .map((row) => ({
+      date: row.date,
+      marketCapCrores: parseNumber(row.totalMarketCapitalisationCrores),
+      tradedValueCrores: parseNumber(row.tradedValueCrores),
+      ffmcCrores: parseNumber(row.ffmcCrores),
+      fiiNetCrores: parseNumber(row.fiiNetCrores),
+      diiNetCrores: parseNumber(row.diiNetCrores),
+    }))
+    .slice(-22);
 
   if (!rows.length) {
-    renderIndexSummaryHistoryError('No option-chain market activity history available.');
+    renderMarketActivityError('No option-chain market activity history available.');
     return;
   }
 
-  renderStackedSeriesChart(
-    'optionChainMarketActivityChart',
+  renderSingleSeriesChart(
+    'optionChainMarketCapChart',
     rows,
     (row) => ({
       label: formatArchiveDateLabel(row.date),
-      segments: OPTION_CHAIN_MARKET_ACTIVITY_SERIES.map((series) => ({
+      value: parseNumber(row.marketCapCrores),
+      color: OPTION_CHAIN_MARKET_CAP_SERIES.color,
+      labelA: OPTION_CHAIN_MARKET_CAP_SERIES.label,
+    }),
+    'optionChainMarketCapLegend',
+    'Daily Market Cap',
+  );
+
+  renderGroupedSeriesChart(
+    'optionChainMarketFlowChart',
+    rows,
+    (row) => ({
+      label: formatArchiveDateLabel(row.date),
+      series: OPTION_CHAIN_MARKET_FLOW_SERIES.map((series) => ({
         value: parseNumber(row[series.key]),
         color: series.color,
         label: series.label,
       })),
     }),
-    'optionChainMarketActivityLegend',
-    'Option Chain and Market Activity',
+    'optionChainMarketFlowLegend',
+    'Daily Market Activity and Flows',
   );
 };
 
@@ -673,6 +664,9 @@ const normalizeMarketActivityHistory = (csvText) => {
     tradedQuantityLakhs: parseNumber(row.tradedQuantityLakhs),
     numberOfTrades: parseNumber(row.numberOfTrades),
     totalMarketCapitalisationCrores: parseNumber(row.totalMarketCapitalisationCrores),
+    ffmcCrores: parseNumber(row.ffmcCrores),
+    fiiNetCrores: parseNumber(row.fiiNetCrores),
+    diiNetCrores: parseNumber(row.diiNetCrores),
   })).filter((row) => row.date);
 
   if (!rows.length) {
@@ -1074,7 +1068,7 @@ const renderSingleSeriesChart = (id, rows, mapper, legendId, title, expanded = f
   const baseline = height - 48;
   const left = 60;
   const groupWidth = (width - left - 20) / mapped.length;
-  const barWidth = Math.max(expanded ? 26 : 18, groupWidth * 0.55);
+  const barWidth = Math.max(expanded ? 8 : 6, Math.min(expanded ? 18 : 12, groupWidth * 0.34));
 
   const bars = mapped.map((item, index) => {
     const scaledHeight = (Math.abs(item.value) / maxValue) * (expanded ? 360 : 240);
@@ -1082,7 +1076,7 @@ const renderSingleSeriesChart = (id, rows, mapper, legendId, title, expanded = f
     const y = baseline - scaledHeight;
     return [
       `<rect x="${x}" y="${y}" width="${barWidth}" height="${scaledHeight}" rx="6" fill="${item.color}" opacity="0.9"></rect>`,
-      `<text x="${x + barWidth / 2}" y="${height - 12}" text-anchor="middle" font-size="${expanded ? 15 : 11}" fill="#4d6971">${item.label}</text>`,
+      `<text x="${x + barWidth / 2}" y="${height - 12}" text-anchor="middle" font-size="${expanded ? 15 : 11}" font-weight="700" fill="#26444d">${item.label}</text>`,
     ].join('');
   }).join('');
 
@@ -1100,8 +1094,81 @@ const renderSingleSeriesChart = (id, rows, mapper, legendId, title, expanded = f
   document.getElementById(id).innerHTML = `
     <svg viewBox="0 0 ${width} ${height}" preserveAspectRatio="none" role="img" aria-label="${title}">
       <line x1="${left}" x2="${width - 10}" y1="${baseline}" y2="${baseline}" stroke="rgba(15,76,92,0.18)" stroke-width="1.2"></line>
-      <text x="18" y="24" font-size="${expanded ? 14 : 11}" fill="#4d6971">${formatLargeCompact(maxValue)}</text>
-      <text x="18" y="${baseline - 6}" font-size="${expanded ? 14 : 11}" fill="#4d6971">0</text>
+      <text x="18" y="24" font-size="${expanded ? 14 : 11}" font-weight="700" fill="#26444d">${formatLargeCompact(maxValue)}</text>
+      <text x="18" y="${baseline - 6}" font-size="${expanded ? 14 : 11}" font-weight="700" fill="#26444d">0</text>
+      ${bars}
+    </svg>
+  `;
+};
+
+const renderGroupedSeriesChart = (id, rows, mapper, legendId, title, expanded = false) => {
+  if (!rows.length) {
+    document.getElementById(id).innerHTML = '<p>No data available.</p>';
+    return;
+  }
+
+  const mapped = rows.map(mapper);
+  const seriesCount = Math.max(...mapped.map((item) => item.series.length), 1);
+  const maxValue = Math.max(
+    ...mapped.flatMap((item) => item.series.map((series) => Math.abs(series.value || 0))),
+    1,
+  );
+  const hasNegative = mapped.some((item) => item.series.some((series) => (series.value || 0) < 0));
+  const width = expanded ? 1440 : 980;
+  const height = expanded ? 520 : 360;
+  const top = 28;
+  const bottom = 56;
+  const left = 72;
+  const chartHeight = height - top - bottom;
+  const baseline = hasNegative ? top + chartHeight / 2 : height - bottom;
+  const groupWidth = (width - left - 24) / mapped.length;
+  const gap = expanded ? 4 : 3;
+  const barWidth = Math.max(
+    expanded ? 5 : 4,
+    Math.min(expanded ? 14 : 9, (groupWidth - gap * (seriesCount - 1)) / Math.max(seriesCount, 1)),
+  );
+  const usedWidth = seriesCount * barWidth + (seriesCount - 1) * gap;
+
+  const bars = mapped.map((item, index) => {
+    const startX = left + index * groupWidth + Math.max((groupWidth - usedWidth) / 2, 0);
+    const seriesRects = item.series.map((series, seriesIndex) => {
+      if (!series.value) {
+        return '';
+      }
+
+      let scaledHeight = (Math.abs(series.value) / maxValue) * (hasNegative ? chartHeight / 2 : chartHeight);
+      if (scaledHeight > 0 && scaledHeight < 3) {
+        scaledHeight = 3;
+      }
+
+      const x = startX + seriesIndex * (barWidth + gap);
+      const y = series.value >= 0 ? baseline - scaledHeight : baseline;
+      return `<rect x="${x}" y="${y}" width="${barWidth}" height="${scaledHeight}" rx="4" fill="${series.color}" opacity="0.92"></rect>`;
+    }).join('');
+
+    return `${seriesRects}<text x="${left + index * groupWidth + groupWidth / 2}" y="${height - 16}" text-anchor="middle" font-size="${expanded ? 15 : 11}" font-weight="700" fill="#26444d">${item.label}</text>`;
+  }).join('');
+
+  const legendHtml = mapped[0].series
+    .map((series) => `<div class="legend-item"><span class="legend-swatch" style="background:${series.color}"></span>${series.label}</div>`)
+    .join('');
+
+  if (legendId) {
+    document.getElementById(legendId).innerHTML = legendHtml;
+  }
+
+  chartState[id] = {
+    title,
+    legendHtml,
+    render: (targetId, expandedMode) => renderGroupedSeriesChart(targetId, rows, mapper, null, title, expandedMode),
+  };
+
+  document.getElementById(id).innerHTML = `
+    <svg viewBox="0 0 ${width} ${height}" preserveAspectRatio="none" role="img" aria-label="${title}">
+      <line x1="${left}" x2="${width - 10}" y1="${baseline}" y2="${baseline}" stroke="rgba(15,76,92,0.22)" stroke-width="1.4"></line>
+      <text x="18" y="26" font-size="${expanded ? 15 : 11}" font-weight="700" fill="#26444d">${formatCompact(maxValue)}</text>
+      <text x="18" y="${baseline - 8}" font-size="${expanded ? 15 : 11}" font-weight="700" fill="#26444d">0</text>
+      ${hasNegative ? `<text x="18" y="${height - 18}" font-size="${expanded ? 15 : 11}" font-weight="700" fill="#26444d">-${formatCompact(maxValue)}</text>` : ''}
       ${bars}
     </svg>
   `;

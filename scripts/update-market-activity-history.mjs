@@ -3,6 +3,7 @@ import https from "node:https";
 import path from "node:path";
 
 const HISTORY_FILE = path.resolve("data/market-activity-history.csv");
+const LIVE_SNAPSHOT_FILE = path.resolve("data/live-snapshot.json");
 const IST_TIME_ZONE = "Asia/Kolkata";
 const METRIC_LABELS = {
   "Traded Value (Rs. In Crores)": "tradedValueCrores",
@@ -29,6 +30,14 @@ function toIstParts(date = new Date()) {
     isoDate: `${parts.year}-${parts.month}-${parts.day}`,
     compactDate: `${parts.day}${parts.month}${String(parts.year).slice(-2)}`,
   };
+}
+
+function resolveArchiveDate(date = new Date()) {
+  const candidate = new Date(date);
+  while ([0, 6].includes(candidate.getUTCDay())) {
+    candidate.setUTCDate(candidate.getUTCDate() - 1);
+  }
+  return toIstParts(candidate).compactDate;
 }
 
 function fetchText(url) {
@@ -90,6 +99,40 @@ function parseArchiveCsv(body, archiveFile, lastModified) {
   return row;
 }
 
+function parseNumber(value) {
+  const parsed = Number.parseFloat(String(value ?? "").replace(/,/g, ""));
+  return Number.isFinite(parsed) ? parsed : 0;
+}
+
+async function loadLiveSnapshotMetrics() {
+  try {
+    const raw = await fs.readFile(LIVE_SNAPSHOT_FILE, "utf8");
+    const payload = JSON.parse(raw);
+    const metadata = payload?.contributors?.metadata || {};
+    const fiiDiiRows = Array.isArray(payload?.fiiDii) ? payload.fiiDii : [];
+    const fii = fiiDiiRows.find((row) => row.category === "FII/FPI") || {};
+    const dii = fiiDiiRows.find((row) => row.category === "DII") || {};
+
+    return {
+      ffmcCrores: parseNumber(metadata.ffmc_sum) / 100,
+      fiiDiiDate: fii.date || dii.date || "",
+      fiiNetCrores: parseNumber(fii.netValue),
+      diiNetCrores: parseNumber(dii.netValue),
+    };
+  } catch (error) {
+    if (error && typeof error === "object" && "code" in error && error.code === "ENOENT") {
+      return {
+        ffmcCrores: 0,
+        fiiDiiDate: "",
+        fiiNetCrores: 0,
+        diiNetCrores: 0,
+      };
+    }
+
+    throw error;
+  }
+}
+
 function escapeCsv(value) {
   const stringValue = String(value ?? "");
   if (!/[",\n]/.test(stringValue)) {
@@ -112,12 +155,17 @@ async function loadExistingRows() {
 }
 
 async function main() {
-  const archiveDate = process.env.NSE_ARCHIVE_DATE || toIstParts().compactDate;
+  const archiveDate = process.env.NSE_ARCHIVE_DATE || resolveArchiveDate();
   const archiveFile = `MA${archiveDate}.csv`;
   const archiveUrl = `https://nsearchives.nseindia.com/archives/equities/mkt/${archiveFile}`;
 
   const { body, lastModified } = await fetchText(archiveUrl);
   const parsed = parseArchiveCsv(body, archiveFile, lastModified);
+  const snapshotMetrics = await loadLiveSnapshotMetrics();
+  parsed.ffmcCrores = snapshotMetrics.ffmcCrores;
+  parsed.fiiDiiDate = snapshotMetrics.fiiDiiDate;
+  parsed.fiiNetCrores = snapshotMetrics.fiiNetCrores;
+  parsed.diiNetCrores = snapshotMetrics.diiNetCrores;
 
   const header = [
     "date",
@@ -128,6 +176,10 @@ async function main() {
     "tradedQuantityLakhs",
     "numberOfTrades",
     "totalMarketCapitalisationCrores",
+    "ffmcCrores",
+    "fiiDiiDate",
+    "fiiNetCrores",
+    "diiNetCrores",
   ].join(",");
 
   const rowValue = [
@@ -139,6 +191,10 @@ async function main() {
     parsed.tradedQuantityLakhs,
     parsed.numberOfTrades,
     parsed.totalMarketCapitalisationCrores,
+    parsed.ffmcCrores,
+    parsed.fiiDiiDate,
+    parsed.fiiNetCrores,
+    parsed.diiNetCrores,
   ].map(escapeCsv).join(",");
 
   const existingRows = await loadExistingRows();

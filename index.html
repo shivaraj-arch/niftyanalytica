@@ -241,15 +241,21 @@
           <div class="section-heading">
             <div>
               <p class="eyebrow">Option Chain and Market Activity</p>
-              <h2>Open Interest and Pressure</h2>
+              <h2>Market Capitalization</h2>
             </div>
             <div id="openInterestStamp" class="stamp">-</div>
           </div>
-          <div class="chart-panel" data-chart-title="Option Chain and Market Activity" data-chart-target="optionChainMarketActivityChart">
-            <h3>Daily Market Activity</h3>
-            <div id="optionChainMarketActivityLegend" class="chart-legend"></div>
-            <div id="optionChainMarketActivityChart" class="svg-chart"></div>
-            <button class="chart-expand" type="button" data-chart-target="optionChainMarketActivityChart" data-chart-title="Option Chain and Market Activity">Expand chart</button>
+          <div class="chart-panel" data-chart-title="Daily Market Cap" data-chart-target="optionChainMarketCapChart">
+            <h3>Daily Market Cap</h3>
+            <div id="optionChainMarketCapLegend" class="chart-legend"></div>
+            <div id="optionChainMarketCapChart" class="svg-chart"></div>
+            <button class="chart-expand" type="button" data-chart-target="optionChainMarketCapChart" data-chart-title="Daily Market Cap">Expand chart</button>
+          </div>
+          <div class="chart-panel" data-chart-title="Daily Market Activity and Flows" data-chart-target="optionChainMarketFlowChart">
+            <h3>Daily Traded Value, FFMC and Flows</h3>
+            <div id="optionChainMarketFlowLegend" class="chart-legend"></div>
+            <div id="optionChainMarketFlowChart" class="svg-chart"></div>
+            <button class="chart-expand" type="button" data-chart-target="optionChainMarketFlowChart" data-chart-title="Daily Market Activity and Flows">Expand chart</button>
           </div>
           <div class="summary-grid" id="openInterestSummary"></div>
           <div class="chart-stack">
