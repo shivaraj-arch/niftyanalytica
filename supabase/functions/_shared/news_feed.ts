@@ -2,18 +2,7 @@ const IST_TIME_ZONE = "Asia/Kolkata";
 const MAX_HEADLINES = 12;
 const MAX_HEADLINE_AGE_MS = 48 * 60 * 60 * 1000;
 const UPSTREAM_FETCH_TIMEOUT_MS = 12000;
-
-const MARKET_TAPE_SYMBOLS = [
-  { label: "S&P 500", symbol: "^spx" },
-  { label: "Dow Jones", symbol: "^dji" },
-  { label: "Nasdaq", symbol: "^ndq" },
-  { label: "Nikkei 225", symbol: "^nkx" },
-  { label: "Hang Seng", symbol: "^hsi" },
-  { label: "FTSE 100", symbol: "^ukx" },
-  { label: "DAX", symbol: "^dax" },
-  { label: "Crude Oil", symbol: "cl.f" },
-  { label: "Gold", symbol: "xauusd" },
-] as const;
+const SGX_NIFTY_URL = "https://sgxnifty.org/";
 
 const RSS_QUERIES = [
   "india stock market OR nifty OR sensex when:1d",
@@ -112,8 +101,15 @@ function decodeHtml(value: string) {
     .replace(/&apos;/g, "'")
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
+    .replace(/&nbsp;/g, " ")
     .trim();
 }
+
+  function stripHtml(value: string) {
+    return decodeHtml(String(value || "").replace(/<[^>]+>/g, " "))
+    .replace(/\s+/g, " ")
+    .trim();
+  }
 
 function extractTagValue(xml: string, tagName: string) {
   const match = String(xml || "").match(new RegExp(`<${tagName}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${tagName}>`, "i"));
@@ -231,60 +227,75 @@ function parseNumber(value: string | number) {
   return Number.isFinite(numericValue) ? numericValue : 0;
 }
 
-function parseStooqQuoteLine(rawText: string, label: string): MarketTapeItem {
-  const quoteLine = String(rawText || "")
-    .split(/\r?\n/)
-    .map((line) => line.trim())
-    .find((line) => /^[^,]+,\d{4}-\d{2}-\d{2},/.test(line));
-
-  if (!quoteLine) {
-    throw new Error(`No quote line returned for ${label}.`);
+function extractInternationalSection(html: string) {
+  const start = html.indexOf('<h2 class="widgettitle">International</h2>');
+  if (start === -1) {
+    throw new Error("International widget not found on SGX Nifty page.");
   }
 
-  const parts = quoteLine.split(",");
-  if (parts.length < 7 || parts[1] === "N/D") {
-    throw new Error(`Incomplete quote returned for ${label}.`);
+  const endCandidates = [
+    html.indexOf('<div id="recent-posts-widget-with-thumbnails', start),
+    html.indexOf('<div class="widget recent-posts-widget-with-thumbnails', start),
+    html.indexOf('<h2 class="widgettitle">Latest News</h2>', start),
+  ].filter((value) => value > start);
+  const end = endCandidates.length ? Math.min(...endCandidates) : html.length;
+  return html.slice(start, end);
+}
+
+function parseInternationalMarketTape(html: string) {
+  const section = extractInternationalSection(html);
+  const tables = [...section.matchAll(/<table class="index-table">([\s\S]*?)<\/table>/g)];
+  const items: MarketTapeItem[] = [];
+
+  for (const tableMatch of tables) {
+    const tableHtml = tableMatch[1] || "";
+    const category = stripHtml(extractTagValue(tableHtml, "th")) || "International";
+    const rowMatches = [...tableHtml.matchAll(/<tr class="index-line">([\s\S]*?)<\/tr>/g)];
+
+    for (const rowMatch of rowMatches) {
+      const rowHtml = rowMatch[1] || "";
+      const cells = [...rowHtml.matchAll(/<td class="([^"]+)">([\s\S]*?)<\/td>/g)];
+      const cellMap = new Map(cells.map((cell) => [cell[1], cell[2]]));
+      const rawName = stripHtml(cellMap.get("index-name left-align") || cellMap.get("index-name") || "");
+      const last = parseNumber(stripHtml(cellMap.get("index-price") || ""));
+      const changePercent = parseNumber(stripHtml(cellMap.get("index-percent") || "").replace(/%/g, ""));
+      const clockCell = rowHtml.match(/<td class="index-clock\s+([^"]+)"[^>]*>[\s\S]*?title="([^"]+)"/i);
+      const status = stripHtml(clockCell?.[2] || clockCell?.[1] || "").replace(/[^A-Za-z]/g, "") || "Unknown";
+
+      if (!rawName || !Number.isFinite(last) || last <= 0) {
+        continue;
+      }
+
+      items.push({
+        label: `${rawName} (${status})`,
+        last,
+        changePercent,
+        source: `SGX Nifty / ${category}`,
+        updatedAt: new Date().toISOString(),
+      });
+    }
   }
 
-  const openPrice = parseNumber(parts[3]);
-  const closePrice = parseNumber(parts[6]);
-  const changePercent = openPrice ? ((closePrice - openPrice) / openPrice) * 100 : 0;
-
-  return {
-    label,
-    last: closePrice,
-    changePercent,
-    source: "Stooq",
-    updatedAt: `${parts[1]} ${parts[2]}`,
-  };
+  return items;
 }
 
 async function buildMarketTape(existingPayload?: ExistingNewsPayload["marketTape"]) {
-  const items: MarketTapeItem[] = [];
+  let parsedItems: MarketTapeItem[] = [];
 
-  await Promise.all(MARKET_TAPE_SYMBOLS.map(async ({ label, symbol }) => {
-    try {
-      const csv = await fetchText(`https://stooq.com/q/d/l/?s=${encodeURIComponent(symbol)}&i=d`);
-      items.push(parseStooqQuoteLine(csv, label));
-    } catch (error) {
-      const existingItem = (existingPayload?.items || []).find((item) => item.label === label);
-      if (existingItem) {
-        items.push(existingItem);
-      } else {
-        console.warn(error instanceof Error ? error.message : String(error));
-      }
-    }
-  }));
+  try {
+    const html = await fetchText(SGX_NIFTY_URL);
+    parsedItems = parseInternationalMarketTape(html);
+  } catch (error) {
+    console.warn(error instanceof Error ? error.message : String(error));
+  }
 
-  const sortedItems = MARKET_TAPE_SYMBOLS
-    .map(({ label }) => items.find((item) => item.label === label))
-    .filter(Boolean) as MarketTapeItem[];
+  const sortedItems = parsedItems.length ? parsedItems : (existingPayload?.items || []);
 
   return {
     updatedAt: sortedItems.length
       ? new Date().toISOString()
       : (existingPayload?.updatedAt || new Date().toISOString()),
-    items: sortedItems.length ? sortedItems : (existingPayload?.items || []),
+    items: sortedItems,
   };
 }
 
