@@ -559,6 +559,8 @@ const renderLiveError = (message) => {
   setText('openInterestStamp', 'Live refresh pending');
   setText('blackScholesStamp', 'Live refresh pending');
   setText('lowIvStamp', 'Live refresh pending');
+  setText('openInterestPositioningNote', message);
+  setText('openInterestSignalNote', message);
   document.getElementById('contributorsRows').innerHTML = `<tr><td colspan="5">${message}</td></tr>`;
   document.getElementById('blackScholesRows').innerHTML = `<tr><td colspan="7">${message}</td></tr>`;
   document.getElementById('lowIvRows').innerHTML = `<tr><td colspan="6">${message}</td></tr>`;
@@ -619,9 +621,12 @@ const renderLiveSections = (snapshot) => {
     { label: 'Flow Imbalance', value: signed(openInterest.positioning.flowImbalance), tone: tone(openInterest.positioning.flowImbalance) },
     { label: 'IV Skew', value: `${signed(openInterest.positioning.ivSkew)}%`, tone: tone(openInterest.positioning.ivSkew) },
     { label: 'Strongest Shift', value: openInterest.positioning.strongestShiftLabel },
+    { label: 'Divergence Score', value: String(openInterest.signals.divergenceScore), tone: openInterest.signals.divergenceScore > 0 ? 'negative' : '' },
+    { label: 'Trap Risk', value: openInterest.signals.trapRiskLabel, tone: openInterest.signals.trapRiskTone },
   ]);
 
   setText('openInterestPositioningNote', openInterest.positioning.note);
+  setText('openInterestSignalNote', openInterest.signals.note);
 
   renderMetricGrid('blackScholesSummary', [
     { label: 'Spot', value: formatNumber(blackScholes.spot) },
@@ -754,6 +759,7 @@ const normalizeLiveSnapshot = (payload) => {
   const blackScholes = buildBlackScholes(openInterest);
   const lowIV = buildLowIv(payload.optionChain || {});
   const indexSummary = normalizeIndexSummary(payload);
+  openInterest.signals = buildOpenInterestSignals({ openInterest, contributors, fiiDii, indexSummary });
 
   return {
     fetchedAt: payload.fetchedAt || new Date().toISOString(),
@@ -1078,6 +1084,66 @@ const buildPositioningChanges = (strikes) => {
     directionLabel,
     strongestShiftLabel,
     note,
+  };
+};
+
+const signalDirection = (value) => (value > 0 ? 1 : value < 0 ? -1 : 0);
+
+const buildOpenInterestSignals = ({ openInterest, contributors, fiiDii, indexSummary }) => {
+  const priceDirection = signalDirection(indexSummary.percentChange);
+  const positioningDirection = signalDirection(openInterest.positioning.netPositioningChange);
+  const breadthDirection = signalDirection(contributors.advances - contributors.declines);
+  const institutionalDirection = signalDirection((fiiDii.fiiNet || 0) + (fiiDii.diiNet || 0));
+  const divergences = [];
+
+  if (priceDirection > 0 && positioningDirection < 0) divergences.push('Price up vs defensive options');
+  if (priceDirection < 0 && positioningDirection > 0) divergences.push('Price down vs supportive options');
+  if (priceDirection > 0 && breadthDirection < 0) divergences.push('Price up vs weak breadth');
+  if (priceDirection < 0 && breadthDirection > 0) divergences.push('Price down vs resilient breadth');
+  if (priceDirection > 0 && institutionalDirection < 0) divergences.push('Price up vs net negative institutions');
+  if (priceDirection < 0 && institutionalDirection > 0) divergences.push('Price down vs supportive institutions');
+
+  const nearSpotRows = (openInterest.strikes || []).filter((row) => Math.abs(row.strikePrice - openInterest.spot) <= 150);
+  const trapCandidates = nearSpotRows.flatMap((row) => {
+    const upsideScore = row.strikePrice >= openInterest.spot && row.callOIChange > row.putOIChange && row.callBidAsk < 0
+      ? row.callOIChange + Math.abs(row.callBidAsk)
+      : 0;
+    const downsideScore = row.strikePrice <= openInterest.spot && row.putOIChange > row.callOIChange && row.putBidAsk < 0
+      ? row.putOIChange + Math.abs(row.putBidAsk)
+      : 0;
+
+    return [
+      upsideScore > 0 ? { label: `Upside trap @ ${row.strikePrice}`, score: upsideScore, tone: 'negative' } : null,
+      downsideScore > 0 ? { label: `Downside trap @ ${row.strikePrice}`, score: downsideScore, tone: 'positive' } : null,
+    ].filter(Boolean);
+  });
+
+  const topTrap = trapCandidates.reduce((best, current) => {
+    if (!best) return current;
+    return current.score > best.score ? current : best;
+  }, null);
+
+  const divergenceSummary = divergences.length
+    ? divergences[0]
+    : 'Aligned sentiment';
+  const trapRiskLabel = topTrap?.label || 'No clear trap';
+  const trapRiskTone = topTrap?.tone || '';
+  const noteParts = [];
+
+  noteParts.push(divergenceSummary);
+  if (divergences.length > 1) {
+    noteParts.push(`${divergences.length} divergences active`);
+  }
+  if (topTrap) {
+    noteParts.push(`${topTrap.label} near spot`);
+  }
+
+  return {
+    divergenceScore: divergences.length,
+    divergenceSummary,
+    trapRiskLabel,
+    trapRiskTone,
+    note: noteParts.join('. ') + '.',
   };
 };
 

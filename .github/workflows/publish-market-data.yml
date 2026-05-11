@@ -1,4 +1,4 @@
-name: Sync Closing Snapshot
+name: Publish Market Data
 
 on:
   workflow_dispatch:
@@ -6,22 +6,49 @@ on:
       newsletter:
         description: Send the 8 PM newsletter after syncing close data
         required: false
-        default: false
+        default: true
         type: boolean
       dry_run:
         description: Build the newsletter and run delivery in dry-run mode
         required: false
         default: false
         type: boolean
-  schedule:
-    - cron: '35 10 * * 1-5'
-    - cron: '30 14 * * 1-5'
+      telegram:
+        description: Reserved for future social publishing
+        required: false
+        default: false
+        type: boolean
+      x:
+        description: Reserved for future social publishing
+        required: false
+        default: false
+        type: boolean
+      linkedin:
+        description: Reserved for future social publishing
+        required: false
+        default: false
+        type: boolean
+      buffer:
+        description: Reserved for future social publishing
+        required: false
+        default: false
+        type: boolean
+      whatsapp:
+        description: Reserved for future social publishing
+        required: false
+        default: false
+        type: boolean
+      generate_ai:
+        description: Reserved for future AI generation controls
+        required: false
+        default: true
+        type: boolean
 
 permissions:
   contents: write
 
 jobs:
-  sync-close-snapshot:
+  publish-market-data:
     runs-on: ubuntu-latest
 
     steps:
@@ -34,33 +61,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-
-      - name: Decide newsletter mode
-        id: newsletter_mode
-        shell: bash
-        env:
-          EVENT_NAME: ${{ github.event_name }}
-          EVENT_SCHEDULE: ${{ github.event.schedule }}
-          INPUT_NEWSLETTER: ${{ inputs.newsletter }}
-          INPUT_DRY_RUN: ${{ inputs.dry_run }}
-        run: |
-          should_send="false"
-          dry_run="false"
-
-          if [[ "$EVENT_NAME" == "schedule" && "$EVENT_SCHEDULE" == "30 14 * * 1-5" ]]; then
-            should_send="true"
-          fi
-
-          if [[ "$INPUT_NEWSLETTER" == "true" ]]; then
-            should_send="true"
-          fi
-
-          if [[ "$INPUT_DRY_RUN" == "true" ]]; then
-            dry_run="true"
-          fi
-
-          echo "should_send=$should_send" >> "$GITHUB_OUTPUT"
-          echo "dry_run=$dry_run" >> "$GITHUB_OUTPUT"
 
       - name: Fetch latest closing snapshot
         env:
@@ -97,22 +97,22 @@ jobs:
           git push
 
       - name: Build 8 PM newsletter
-        if: steps.newsletter_mode.outputs.should_send == 'true'
+        if: inputs.newsletter
         env:
           NEWSLETTER_WEBSITE_URL: https://www.niftyanalytica.com
         run: node scripts/build-newsletter.mjs
 
       - name: Send 8 PM newsletter
-        if: steps.newsletter_mode.outputs.should_send == 'true'
+        if: inputs.newsletter
         env:
-          NEWSLETTER_DRY_RUN: ${{ steps.newsletter_mode.outputs.dry_run }}
+          NEWSLETTER_DRY_RUN: ${{ inputs.dry_run }}
           NEWSLETTER_FROM_EMAIL: ${{ secrets.NEWSLETTER_FROM_EMAIL }}
           NEWSLETTER_REPLY_TO_EMAIL: ${{ secrets.NEWSLETTER_REPLY_TO_EMAIL }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
         run: node scripts/send-newsletter.mjs
 
       - name: Upload newsletter artifacts
-        if: steps.newsletter_mode.outputs.should_send == 'true'
+        if: inputs.newsletter
         uses: actions/upload-artifact@v4
         with:
           name: newsletter-${{ github.run_id }}
