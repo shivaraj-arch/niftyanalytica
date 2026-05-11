@@ -1,0 +1,7 @@
+project_id = "gthnjueqoufdtwtzjcxg"
+
+[functions.nse-snapshot]
+verify_jwt = false
+
+[functions.refresh-news-feed]
+verify_jwt = false

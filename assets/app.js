@@ -20,6 +20,7 @@ const SUPABASE_URL = String(runtimeConfig.SUPABASE_URL || '').trim().replace(/\/
 const DATA_BASE_URL = String(runtimeConfig.DATA_BASE_URL || '').trim().replace(/\/$/, '');
 const NEWSLETTER_SUBSCRIBE_URL = String(runtimeConfig.NEWSLETTER_SUBSCRIBE_URL || '').trim() || (SUPABASE_URL ? `${SUPABASE_URL}/functions/v1/newsletter-subscribe` : '');
 const HEADLINE_REFRESH_URL = String(runtimeConfig.HEADLINE_REFRESH_URL || '').trim() || (SUPABASE_URL ? `${SUPABASE_URL}/functions/v1/refresh-news-feed` : '');
+const NSE_SNAPSHOT_URL = String(runtimeConfig.NSE_SNAPSHOT_URL || '').trim() || (SUPABASE_URL ? `${SUPABASE_URL}/functions/v1/nse-snapshot` : '');
 const LIVE_SNAPSHOT_URL = String(runtimeConfig.LIVE_SNAPSHOT_URL || '').trim() || (SUPABASE_URL ? `${SUPABASE_URL}/storage/v1/object/public/${LIVE_SNAPSHOT_BUCKET}/${LIVE_SNAPSHOT_PATH}` : '');
 
 const setText = (id, value) => {
@@ -192,6 +193,20 @@ const isManualHeadlineRefreshAllowed = (date = new Date()) => {
 const fetchAiAnalysis = async () => loadJsonData('data/ai-analysis.json');
 const fetchLegacyNewsRailSnapshot = async () => loadJsonData('data/news-feed.json');
 const fetchMarketActivityHistory = async () => loadTextData('data/market-activity-history.csv');
+const fetchRealtimeSnapshot = async () => {
+  const liveUrl = NSE_SNAPSHOT_URL
+    ? `${NSE_SNAPSHOT_URL}${NSE_SNAPSHOT_URL.includes('?') ? '&' : '?'}t=${Date.now()}`
+    : '';
+
+  if (!liveUrl) {
+    throw new Error('Realtime snapshot endpoint is not configured.');
+  }
+
+  return await loadJson(liveUrl, {
+    cache: 'no-store',
+  });
+};
+
 const fetchLiveSnapshotCache = async ({ preferLive = false } = {}) => {
   const liveUrl = LIVE_SNAPSHOT_URL
     ? `${LIVE_SNAPSHOT_URL}${LIVE_SNAPSHOT_URL.includes('?') ? '&' : '?'}t=${Date.now()}`
@@ -328,9 +343,23 @@ const updateHeadlineRefreshButton = () => {
   button.textContent = isHeadlineRefreshPending ? 'Refreshing...' : 'Refresh';
 };
 
+const getPrimarySnapshot = async ({ preferLive = false } = {}) => {
+  const marketSessionState = getMarketSessionState();
+
+  if (marketSessionState.canFetchLiveSnapshot) {
+    try {
+      return await fetchRealtimeSnapshot();
+    } catch (error) {
+      console.warn('Realtime snapshot fetch failed, falling back to cached snapshot.', error);
+    }
+  }
+
+  return await fetchLiveSnapshotCache({ preferLive });
+};
+
 const loadRealtimeData = async ({ preferLive = false } = {}) => {
   const [liveResult, holidaysResult, marketActivityResult] = await Promise.allSettled([
-    fetchLiveSnapshotCache({ preferLive }),
+    getPrimarySnapshot({ preferLive }),
     fetchHolidaySnapshot(),
     fetchMarketActivityHistory(),
   ]);
@@ -1077,13 +1106,21 @@ const bindHeadlineRefreshButton = () => {
     setHidden('newsFeedMeta', false);
 
     try {
-      await loadJson(`${HEADLINE_REFRESH_URL}${HEADLINE_REFRESH_URL.includes('?') ? '&' : '?'}t=${Date.now()}`, {
+      const payload = await loadJson(`${HEADLINE_REFRESH_URL}${HEADLINE_REFRESH_URL.includes('?') ? '&' : '?'}t=${Date.now()}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         cache: 'no-store',
       });
+
+      if (payload?.snapshot) {
+        try {
+          renderNewsRailSnapshot(payload.snapshot);
+        } catch (error) {
+          console.error('Headline refresh render failed', error);
+        }
+      }
 
       await loadRealtimeData({ preferLive: true });
     } catch (error) {
