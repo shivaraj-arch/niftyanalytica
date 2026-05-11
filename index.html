@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/styles.css?v=20260509-2">
+  <link rel="stylesheet" href="assets/styles.css?v=20260511-1">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -167,7 +167,8 @@
         </div>
         <div id="marketTapeStamp" class="stamp">-</div>
       </div>
-      <p class="rail-note">Global market pulse for the current session.</p>
+      <p id="marketTapeMeta" class="rail-note">Global market pulse for the current session. Refreshes every 3 minutes. Hover to pause the tape and read each move.</p>
+      <p id="marketTapeHighlights" class="market-tape-highlights">Top Movements: Waiting for world markets.</p>
       <div id="marketTape" class="market-tape"></div>
     </section>
 
@@ -416,6 +417,6 @@
   </div>
 
   <script src="assets/runtime-config.js?v=20260509-2"></script>
-  <script src="assets/app.js?v=20260509-3"></script>
+  <script src="assets/app.js?v=20260511-1"></script>
 </body>
 </html>

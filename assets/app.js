@@ -6,6 +6,7 @@ const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', '
 const WEEKDAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const AI_REFRESH_HOURS = [6, 9, 12, 15, 18, 21];
 const REALTIME_REFRESH_MS = 60 * 1000;
+const MARKET_TAPE_REFRESH_MS = 3 * 60 * 1000;
 const IST_TIMEZONE = 'Asia/Kolkata';
 const STALE_SNAPSHOT_MAX_AGE_MS = 36 * 60 * 60 * 1000;
 const DEFAULT_FETCH_TIMEOUT_MS = 12000;
@@ -52,6 +53,7 @@ let aiRefreshTimer = null;
 let marketActivityRows = [];
 let isHeadlineRefreshPending = false;
 let lastNewsRailSnapshot = null;
+let lastMarketTapeLoadAt = 0;
 
 const fetchWithTimeout = async (url, options = {}, timeoutMs = DEFAULT_FETCH_TIMEOUT_MS) => {
   const controller = new AbortController();
@@ -448,7 +450,18 @@ const loadRealtimeData = async ({ preferLive = false } = {}) => {
   if (liveResult.status === 'fulfilled') {
     try {
       const newsRailSnapshot = await resolveNewsRailSnapshot(liveResult.value);
-      renderNewsRailSnapshot(newsRailSnapshot);
+      const shouldRefreshMarketTape = preferLive || !lastMarketTapeLoadAt || (Date.now() - lastMarketTapeLoadAt) >= MARKET_TAPE_REFRESH_MS;
+      renderNewsRailSnapshot(
+        shouldRefreshMarketTape
+          ? newsRailSnapshot
+          : {
+            marketTape: lastNewsRailSnapshot?.marketTape || newsRailSnapshot?.marketTape || {},
+            newsFeed: newsRailSnapshot?.newsFeed || {},
+          },
+      );
+      if (shouldRefreshMarketTape && hasMarketTapeItems(newsRailSnapshot)) {
+        lastMarketTapeLoadAt = Date.now();
+      }
     } catch (error) {
       console.error('News rail render failed', error);
       renderMarketTapeError(error?.message || 'Market tape refresh failed.');
@@ -510,10 +523,13 @@ const renderAiError = (message) => {
 const renderMarketTapeError = (message) => {
   if (hasMarketTapeItems(lastNewsRailSnapshot)) {
     setText('marketTapeStamp', formatDateTime(lastNewsRailSnapshot.marketTape?.updatedAt) || 'Using previous world markets');
+    setText('marketTapeMeta', `${message} Showing previous world markets. Tape refreshes every 3 minutes.`);
     return;
   }
 
   setText('marketTapeStamp', 'Market tape refresh pending');
+  setText('marketTapeMeta', `${message} Tape refreshes every 3 minutes.`);
+  setText('marketTapeHighlights', 'Top Movements: Waiting for world markets.');
   document.getElementById('marketTape').innerHTML = `<p>${message}</p>`;
 };
 
@@ -1141,20 +1157,50 @@ const renderChipList = (id, items) => {
   document.getElementById(id).innerHTML = items.map((item) => `<li>${item}</li>`).join('');
 };
 
+const getMarketTapeCategory = (item) => String(item?.source || '').split('/').pop()?.trim() || 'International';
+
+const buildMarketTapeHighlights = (items) => {
+  const orderedCategories = ['Indices', 'Futures', 'Commodities', 'Currencies'];
+  const parts = orderedCategories.map((category) => {
+    const categoryItems = items.filter((item) => getMarketTapeCategory(item) === category);
+    if (!categoryItems.length) {
+      return null;
+    }
+
+    const topMover = categoryItems.reduce((best, current) => {
+      if (!best) return current;
+      return Math.abs(current.changePercent) > Math.abs(best.changePercent) ? current : best;
+    }, null);
+
+    if (!topMover) {
+      return null;
+    }
+
+    const shortLabel = String(topMover.label || '').replace(/\s*\((Open|Close)\)\s*$/i, '').trim();
+    return `${category} - ${shortLabel} ${signed(topMover.changePercent)}%`;
+  }).filter(Boolean);
+
+  return parts.length ? `Top Movements: ${parts.join(' , ')}` : 'Top Movements: Waiting for world markets.';
+};
+
 const renderMarketTape = (items) => {
   const host = document.getElementById('marketTape');
   if (!items.length) {
+    setText('marketTapeHighlights', 'Top Movements: Waiting for world markets.');
     host.innerHTML = '<p>No market tape available.</p>';
     return;
   }
 
   const chips = items.map((item) => `
-    <article class="ticker-chip">
+    <article class="ticker-chip ${tone(item.changePercent)}" tabindex="0">
       <span class="ticker-label">${item.label}</span>
       <span class="ticker-value">${formatTickerValue(item.last)}</span>
       <span class="ticker-change ${tone(item.changePercent)}">${signed(item.changePercent)}%</span>
     </article>
   `).join('');
+
+  setText('marketTapeMeta', 'Global market pulse for the current session. Refreshes every 3 minutes. Hover to pause the tape and read each move.');
+  setText('marketTapeHighlights', buildMarketTapeHighlights(items));
 
   host.innerHTML = `
     <div class="ticker-marquee">
@@ -2070,7 +2116,7 @@ const syncRefreshToggle = () => {
 const startRealtimeRefresh = () => {
   stopRealtimeRefresh();
   realtimeRefreshTimer = window.setInterval(() => {
-    loadRealtimeData().catch((error) => {
+    loadRealtimeData({ preferLive: (Date.now() - lastMarketTapeLoadAt) >= MARKET_TAPE_REFRESH_MS }).catch((error) => {
       console.error('Scheduled realtime load failed', error);
     });
   }, REALTIME_REFRESH_MS);

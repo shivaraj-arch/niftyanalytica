@@ -567,6 +567,17 @@ main {
   line-height: 1.5;
 }
 
+.market-tape-highlights {
+  margin: 0 0 14px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(15, 76, 92, 0.08);
+  border: 1px solid rgba(15, 76, 92, 0.08);
+  color: var(--ink);
+  line-height: 1.6;
+  font-weight: 600;
+}
+
 .section-heading {
   display: flex;
   justify-content: space-between;
@@ -693,16 +704,22 @@ main {
 
 .ticker-marquee {
   overflow: hidden;
-  padding: 12px 0;
+  padding: 14px 0;
   mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.ticker-marquee:hover .ticker-track,
+.ticker-marquee:focus-within .ticker-track {
+  animation-play-state: paused;
 }
 
 .ticker-track {
   display: inline-flex;
-  gap: 12px;
+  gap: 14px;
   min-width: max-content;
-  animation: ticker-slide 42s linear infinite;
-  padding-right: 12px;
+  animation: ticker-slide 110s linear infinite;
+  padding-right: 14px;
+  will-change: transform;
 }
 
 .ticker-grid {
@@ -715,10 +732,27 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 12px;
+  padding: 11px 14px;
   border-radius: 999px;
   background: rgba(15, 76, 92, 0.08);
+  border: 1px solid rgba(15, 76, 92, 0.1);
   white-space: nowrap;
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+.ticker-chip.positive {
+  background: rgba(31, 143, 107, 0.12);
+  border-color: rgba(31, 143, 107, 0.22);
+}
+
+.ticker-chip.negative {
+  background: rgba(185, 74, 72, 0.12);
+  border-color: rgba(185, 74, 72, 0.22);
+}
+
+.ticker-chip:focus-visible {
+  outline: 2px solid rgba(15, 76, 92, 0.32);
+  outline-offset: 2px;
 }
 
 .ticker-label {
@@ -732,6 +766,16 @@ main {
 
 .ticker-change {
   font-weight: 700;
+}
+
+@keyframes ticker-slide {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(calc(-50% - 7px), 0, 0);
+  }
 }
 
 .news-feed-list {
