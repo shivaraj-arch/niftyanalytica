@@ -2,9 +2,9 @@ const NSE_ORIGIN = "https://www.nseindia.com";
 const IST_TIME_ZONE = "Asia/Kolkata";
 const MARKET_OPEN_MINUTE_IST = 9 * 60;
 const PRE_MARKET_END_MINUTE_IST = (9 * 60) + 15;
-const LAST_SNAPSHOT_FETCH_MINUTE_IST = (15 * 60) + 35;
-const POST_MARKET_START_MINUTE_IST = (15 * 60) + 40;
-const MARKET_CLOSE_MINUTE_IST = 16 * 60;
+const LAST_SNAPSHOT_FETCH_MINUTE_IST = 16 * 60;
+const MARKET_CLOSE_MINUTE_IST = (16 * 60) + 1;
+const POST_MARKET_START_MINUTE_IST = MARKET_CLOSE_MINUTE_IST;
 
 export type MarketSession = "closed" | "pre-market" | "open" | "post-market";
 

@@ -11,12 +11,11 @@ const IST_TIMEZONE = 'Asia/Kolkata';
 const STALE_SNAPSHOT_MAX_AGE_MS = 36 * 60 * 60 * 1000;
 const DEFAULT_FETCH_TIMEOUT_MS = 12000;
 const LIVE_SNAPSHOT_FETCH_TIMEOUT_MS = 18000;
-const MANUAL_HEADLINE_REFRESH_TIMEOUT_MS = 20000;
 const MARKET_OPEN_MINUTE_IST = 9 * 60;
 const PRE_MARKET_END_MINUTE_IST = (9 * 60) + 15;
-const LAST_LIVE_FETCH_MINUTE_IST = (15 * 60) + 35;
-const POST_MARKET_START_MINUTE_IST = (15 * 60) + 40;
-const MARKET_CLOSE_MINUTE_IST = 16 * 60;
+const LAST_LIVE_FETCH_MINUTE_IST = 16 * 60;
+const MARKET_CLOSE_MINUTE_IST = (16 * 60) + 1;
+const POST_MARKET_START_MINUTE_IST = MARKET_CLOSE_MINUTE_IST;
 const runtimeConfig = window.RUNTIME_CONFIG || {};
 const LIVE_SNAPSHOT_BUCKET = String(runtimeConfig.LIVE_SNAPSHOT_BUCKET || '').trim() || 'public-data';
 const LIVE_SNAPSHOT_PATH = String(runtimeConfig.LIVE_SNAPSHOT_PATH || '').trim() || 'live/live-snapshot.json';
@@ -51,7 +50,6 @@ const setHidden = (id, hidden) => {
 let realtimeRefreshTimer = null;
 let aiRefreshTimer = null;
 let marketActivityRows = [];
-let isHeadlineRefreshPending = false;
 let lastNewsRailSnapshot = null;
 let lastMarketTapeLoadAt = 0;
 
@@ -209,11 +207,6 @@ const getMarketSessionLabel = (state) => {
 };
 
 const isRealtimeRefreshWindow = (date = new Date()) => getMarketSessionState(date).canFetchLiveSnapshot;
-
-const isManualHeadlineRefreshAllowed = (date = new Date()) => {
-  const state = getMarketSessionState(date);
-  return state.session === 'post-market' || state.session === 'closed';
-};
 
 const fetchAiAnalysis = async () => loadJsonData('data/ai-analysis.json');
 const fetchLegacyNewsRailSnapshot = async () => loadJsonData('data/news-feed.json');
@@ -414,18 +407,6 @@ const renderNewsRailSnapshot = (payload) => {
   cacheNewsRailSnapshot(mergedSnapshot);
 };
 
-const updateHeadlineRefreshButton = () => {
-  const button = document.getElementById('newsFeedRefreshButton');
-  if (!button) {
-    return;
-  }
-
-  const enabled = Boolean(HEADLINE_REFRESH_URL) && isManualHeadlineRefreshAllowed();
-  button.hidden = !enabled;
-  button.disabled = !enabled || isHeadlineRefreshPending;
-  button.textContent = isHeadlineRefreshPending ? 'Refreshing...' : 'Refresh';
-};
-
 const getPrimarySnapshot = async ({ preferLive = false } = {}) => {
   const marketSessionState = getMarketSessionState();
 
@@ -502,7 +483,6 @@ const loadRealtimeData = async ({ preferLive = false } = {}) => {
     renderHolidayError(holidaysResult.reason?.message || 'Holiday calendar refresh failed.');
   }
 
-  updateHeadlineRefreshButton();
 };
 
 const renderAiError = (message) => {
@@ -1226,49 +1206,6 @@ const renderNewsFeed = (newsFeed) => {
       </a>
     </li>
   `).join('');
-};
-
-const bindHeadlineRefreshButton = () => {
-  const button = document.getElementById('newsFeedRefreshButton');
-  if (!button) {
-    return;
-  }
-
-  button.onclick = async () => {
-    if (!HEADLINE_REFRESH_URL || isHeadlineRefreshPending || !isManualHeadlineRefreshAllowed()) {
-      return;
-    }
-
-    isHeadlineRefreshPending = true;
-    updateHeadlineRefreshButton();
-    setText('newsFeedMeta', 'Refreshing headlines from RSS...');
-    setHidden('newsFeedMeta', false);
-
-    try {
-      const payload = await loadJson(`${HEADLINE_REFRESH_URL}${HEADLINE_REFRESH_URL.includes('?') ? '&' : '?'}t=${Date.now()}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        cache: 'no-store',
-      }, MANUAL_HEADLINE_REFRESH_TIMEOUT_MS);
-
-      if (payload?.snapshot) {
-        try {
-          renderNewsRailSnapshot(payload.snapshot);
-        } catch (error) {
-          console.error('Headline refresh render failed', error);
-        }
-      }
-
-      await loadRealtimeData({ preferLive: true });
-    } catch (error) {
-      renderHeadlineError(error?.message || 'Headline refresh failed.');
-    } finally {
-      isHeadlineRefreshPending = false;
-      updateHeadlineRefreshButton();
-    }
-  };
 };
 
 const renderBarChart = (id, rows, mapper, legendId, title, expanded = false) => {
@@ -2146,8 +2083,6 @@ loadRealtimeData().catch((error) => {
 syncRefreshToggle();
 bindDonateModal();
 bindNewsletterForm();
-bindHeadlineRefreshButton();
-updateHeadlineRefreshButton();
 
 scheduleAiRefresh();
 startRealtimeRefresh();
