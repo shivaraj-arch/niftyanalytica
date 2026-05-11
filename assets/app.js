@@ -503,12 +503,12 @@ const renderAiError = (message) => {
 const renderMarketTapeError = (message) => {
   if (hasMarketTapeItems(lastNewsRailSnapshot)) {
     setText('marketTapeStamp', formatDateTime(lastNewsRailSnapshot.marketTape?.updatedAt) || 'Using previous world markets');
-    setText('marketTapeMeta', `${message} Showing previous world markets. Tape refreshes every 3 minutes.`);
+    setText('marketTapeMeta', `${message} Showing previous world markets.`);
     return;
   }
 
   setText('marketTapeStamp', 'Market tape refresh pending');
-  setText('marketTapeMeta', `${message} Tape refreshes every 3 minutes.`);
+  setText('marketTapeMeta', message);
   setText('marketTapeHighlights', 'Top Movements: Waiting for world markets.');
   document.getElementById('marketTape').innerHTML = `<p>${message}</p>`;
 };
@@ -615,9 +615,13 @@ const renderLiveSections = (snapshot) => {
   renderMetricGrid('openInterestSummary', [
     { label: 'Spot', value: formatNumber(openInterest.spot) },
     { label: 'Expiry', value: openInterest.expiry || '-' },
-    { label: 'Strongest Call ΔOI', value: peakLabel(openInterest.strikes, 'callOIChange') },
-    { label: 'Strongest Put ΔOI', value: peakLabel(openInterest.strikes, 'putOIChange') },
+    { label: 'Net Positioning Δ', value: signed(openInterest.positioning.netPositioningChange), tone: tone(openInterest.positioning.netPositioningChange) },
+    { label: 'Flow Imbalance', value: signed(openInterest.positioning.flowImbalance), tone: tone(openInterest.positioning.flowImbalance) },
+    { label: 'IV Skew', value: `${signed(openInterest.positioning.ivSkew)}%`, tone: tone(openInterest.positioning.ivSkew) },
+    { label: 'Strongest Shift', value: openInterest.positioning.strongestShiftLabel },
   ]);
+
+  setText('openInterestPositioningNote', openInterest.positioning.note);
 
   renderMetricGrid('blackScholesSummary', [
     { label: 'Spot', value: formatNumber(blackScholes.spot) },
@@ -988,27 +992,92 @@ const extractOpenInterest = (payload) => {
   const atm = Math.round(spot / 50) * 50;
   const strikes = Array.from({ length: 13 }, (_, index) => atm - 300 + index * 50);
   const expiry = formatExpiryLabel(getFirstExpiry(data));
+  const normalizedStrikes = strikes.map((strikePrice) => {
+    const ce = (data.find((item) => item.CE?.strikePrice === strikePrice) || {}).CE || {};
+    const pe = (data.find((item) => item.PE?.strikePrice === strikePrice) || {}).PE || {};
+    return {
+      strikePrice,
+      callOI: parseNumber(ce.openInterest),
+      callOIChange: parseNumber(ce.changeinOpenInterest),
+      callBidAsk: parseNumber(ce.totalBuyQuantity) - parseNumber(ce.totalSellQuantity),
+      callIV: parseNumber(ce.impliedVolatility),
+      putOI: parseNumber(pe.openInterest),
+      putOIChange: parseNumber(pe.changeinOpenInterest),
+      putBidAsk: parseNumber(pe.totalBuyQuantity) - parseNumber(pe.totalSellQuantity),
+      putIV: parseNumber(pe.impliedVolatility),
+    };
+  });
+
+  const positioning = buildPositioningChanges(normalizedStrikes);
 
   return {
     timestamp: records.timestamp || '',
     spot,
     expiry,
-    strikes: strikes.map((strikePrice) => {
-      const ce = (data.find((item) => item.CE?.strikePrice === strikePrice) || {}).CE || {};
-      const pe = (data.find((item) => item.PE?.strikePrice === strikePrice) || {}).PE || {};
-      return {
-        strikePrice,
-        callOI: parseNumber(ce.openInterest),
-        callOIChange: parseNumber(ce.changeinOpenInterest),
-        callBidAsk: parseNumber(ce.totalBuyQuantity) - parseNumber(ce.totalSellQuantity),
-        callIV: parseNumber(ce.impliedVolatility),
-        putOI: parseNumber(pe.openInterest),
-        putOIChange: parseNumber(pe.changeinOpenInterest),
-        putBidAsk: parseNumber(pe.totalBuyQuantity) - parseNumber(pe.totalSellQuantity),
-        putIV: parseNumber(pe.impliedVolatility),
-      };
-    }),
+    strikes: normalizedStrikes,
+    positioning,
     rawRecords: data,
+  };
+};
+
+const buildPositioningChanges = (strikes) => {
+  const totals = strikes.reduce((accumulator, strikeRow) => {
+    const netOIChange = strikeRow.putOIChange - strikeRow.callOIChange;
+    const netFlow = strikeRow.putBidAsk - strikeRow.callBidAsk;
+    const ivSkew = strikeRow.putIV - strikeRow.callIV;
+
+    return {
+      netPositioningChange: accumulator.netPositioningChange + netOIChange,
+      flowImbalance: accumulator.flowImbalance + netFlow,
+      ivSkewTotal: accumulator.ivSkewTotal + ivSkew,
+    };
+  }, {
+    netPositioningChange: 0,
+    flowImbalance: 0,
+    ivSkewTotal: 0,
+  });
+
+  const strongestShift = strikes.reduce((best, current) => {
+    const currentNetChange = current.putOIChange - current.callOIChange;
+    if (!best) {
+      return {
+        strikePrice: current.strikePrice,
+        netChange: currentNetChange,
+      };
+    }
+
+    return Math.abs(currentNetChange) > Math.abs(best.netChange)
+      ? {
+        strikePrice: current.strikePrice,
+        netChange: currentNetChange,
+      }
+      : best;
+  }, null);
+
+  const averageIvSkew = strikes.length ? totals.ivSkewTotal / strikes.length : 0;
+  const directionLabel = totals.netPositioningChange > 0 && totals.flowImbalance > 0
+    ? 'Bullish positioning build'
+    : totals.netPositioningChange < 0 && totals.flowImbalance < 0
+      ? 'Bearish positioning build'
+      : totals.netPositioningChange > 0
+        ? 'Put-side hedge build'
+        : totals.netPositioningChange < 0
+          ? 'Call-side hedge build'
+          : 'Balanced positioning';
+  const strongestShiftLabel = strongestShift
+    ? `${strongestShift.strikePrice} (${signed(strongestShift.netChange)})`
+    : '-';
+  const note = strongestShift
+    ? `${directionLabel} led by ${strongestShift.strikePrice}, with net OI shift ${signed(totals.netPositioningChange)}, flow imbalance ${signed(totals.flowImbalance)}, and IV skew ${signed(averageIvSkew)}%.`
+    : 'Positioning changes are waiting for the next option-chain refresh.';
+
+  return {
+    netPositioningChange: totals.netPositioningChange,
+    flowImbalance: totals.flowImbalance,
+    ivSkew: averageIvSkew,
+    directionLabel,
+    strongestShiftLabel,
+    note,
   };
 };
 
@@ -1179,7 +1248,7 @@ const renderMarketTape = (items) => {
     </article>
   `).join('');
 
-  setText('marketTapeMeta', 'Global market pulse for the current session. Refreshes every 3 minutes. Hover to pause the tape and read each move.');
+  setText('marketTapeMeta', 'Global market pulse for the current session. Hover to pause the tape and read each move.');
   setText('marketTapeHighlights', buildMarketTapeHighlights(items));
 
   host.innerHTML = `
