@@ -1,6 +1,7 @@
 const IST_TIME_ZONE = "Asia/Kolkata";
 const MAX_HEADLINES = 12;
 const MAX_HEADLINE_AGE_MS = 48 * 60 * 60 * 1000;
+const UPSTREAM_FETCH_TIMEOUT_MS = 12000;
 
 const MARKET_TAPE_SYMBOLS = [
   { label: "S&P 500", symbol: "^spx" },
@@ -55,32 +56,49 @@ function buildGoogleNewsRssUrl(query: string) {
   return `https://news.google.com/rss/search?q=${encodeURIComponent(query)}&hl=en-IN&gl=IN&ceid=IN:en`;
 }
 
+async function fetchTextWithTimeout(url: string, redirectCount = 0): Promise<string> {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), UPSTREAM_FETCH_TIMEOUT_MS);
+
+  try {
+    const response = await fetch(url, {
+      headers: {
+        "user-agent": "Mozilla/5.0",
+        accept: "application/rss+xml, application/xml, text/xml;q=0.9, */*;q=0.8",
+      },
+      redirect: "manual",
+      signal: controller.signal,
+    });
+
+    if (response.status >= 300 && response.status < 400) {
+      const location = response.headers.get("location");
+      if (!location) {
+        throw new Error(`Redirect without location for ${url}`);
+      }
+      if (redirectCount >= 5) {
+        throw new Error(`Too many redirects for ${url}`);
+      }
+      const nextUrl = location.startsWith("http") ? location : new URL(location, url).toString();
+      return await fetchTextWithTimeout(nextUrl, redirectCount + 1);
+    }
+
+    if (!response.ok) {
+      throw new Error(`Request failed: ${response.status} ${url}`);
+    }
+
+    return await response.text();
+  } catch (error) {
+    if (error instanceof Error && error.name === "AbortError") {
+      throw new Error(`Request timed out for ${url}`);
+    }
+    throw error;
+  } finally {
+    clearTimeout(timeoutId);
+  }
+}
+
 async function fetchText(url: string, redirectCount = 0): Promise<string> {
-  const response = await fetch(url, {
-    headers: {
-      "user-agent": "Mozilla/5.0",
-      accept: "application/rss+xml, application/xml, text/xml;q=0.9, */*;q=0.8",
-    },
-    redirect: "manual",
-  });
-
-  if (response.status >= 300 && response.status < 400) {
-    const location = response.headers.get("location");
-    if (!location) {
-      throw new Error(`Redirect without location for ${url}`);
-    }
-    if (redirectCount >= 5) {
-      throw new Error(`Too many redirects for ${url}`);
-    }
-    const nextUrl = location.startsWith("http") ? location : new URL(location, url).toString();
-    return await fetchText(nextUrl, redirectCount + 1);
-  }
-
-  if (!response.ok) {
-    throw new Error(`Request failed: ${response.status} ${url}`);
-  }
-
-  return await response.text();
+  return await fetchTextWithTimeout(url, redirectCount);
 }
 
 function decodeHtml(value: string) {
@@ -159,7 +177,7 @@ function parseRssItems(xml: string) {
   }>;
 }
 
-async function buildHeadlines() {
+async function buildHeadlines(existingPayload?: ExistingNewsPayload["newsFeed"]) {
   const now = Date.now();
   const sourceErrors: string[] = [];
   const seen = new Set<string>();
@@ -202,9 +220,9 @@ async function buildHeadlines() {
     }));
 
   return {
-    items,
+    items: items.length ? items : (existingPayload?.items || []),
     sourceErrors,
-    sourcesAvailable: [...new Set(items.map((item) => item.source))],
+    sourcesAvailable: [...new Set((items.length ? items : (existingPayload?.items || [])).map((item) => item.source))],
   };
 }
 
@@ -263,8 +281,10 @@ async function buildMarketTape(existingPayload?: ExistingNewsPayload["marketTape
     .filter(Boolean) as MarketTapeItem[];
 
   return {
-    updatedAt: new Date().toISOString(),
-    items: sortedItems,
+    updatedAt: sortedItems.length
+      ? new Date().toISOString()
+      : (existingPayload?.updatedAt || new Date().toISOString()),
+    items: sortedItems.length ? sortedItems : (existingPayload?.items || []),
   };
 }
 
@@ -272,14 +292,18 @@ export async function buildNewsBundle(existingPayload?: ExistingNewsPayload) {
   const now = new Date();
   const [marketTape, headlinePayload] = await Promise.all([
     buildMarketTape(existingPayload?.marketTape),
-    buildHeadlines(),
+    buildHeadlines(existingPayload?.newsFeed),
   ]);
 
   return {
     marketTape,
     newsFeed: {
-      updatedAt: now.toISOString(),
-      updatedAtLabel: formatIstDateLabel(now),
+      updatedAt: headlinePayload.items.length
+        ? now.toISOString()
+        : (existingPayload?.newsFeed?.updatedAt || now.toISOString()),
+      updatedAtLabel: headlinePayload.items.length
+        ? formatIstDateLabel(now)
+        : (existingPayload?.newsFeed?.updatedAtLabel || formatIstDateLabel(now)),
       items: headlinePayload.items,
       sourcesAvailable: headlinePayload.sourcesAvailable,
       sourceErrors: headlinePayload.sourceErrors,

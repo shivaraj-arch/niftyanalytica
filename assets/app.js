@@ -8,6 +8,9 @@ const AI_REFRESH_HOURS = [6, 9, 12, 15, 18, 21];
 const REALTIME_REFRESH_MS = 60 * 1000;
 const IST_TIMEZONE = 'Asia/Kolkata';
 const STALE_SNAPSHOT_MAX_AGE_MS = 36 * 60 * 60 * 1000;
+const DEFAULT_FETCH_TIMEOUT_MS = 12000;
+const LIVE_SNAPSHOT_FETCH_TIMEOUT_MS = 18000;
+const MANUAL_HEADLINE_REFRESH_TIMEOUT_MS = 20000;
 const MARKET_OPEN_MINUTE_IST = 9 * 60;
 const PRE_MARKET_END_MINUTE_IST = (9 * 60) + 15;
 const LAST_LIVE_FETCH_MINUTE_IST = (15 * 60) + 35;
@@ -48,17 +51,37 @@ let realtimeRefreshTimer = null;
 let aiRefreshTimer = null;
 let marketActivityRows = [];
 let isHeadlineRefreshPending = false;
+let lastNewsRailSnapshot = null;
 
-const loadJson = async (url, options = {}) => {
-  const response = await fetch(url, options);
+const fetchWithTimeout = async (url, options = {}, timeoutMs = DEFAULT_FETCH_TIMEOUT_MS) => {
+  const controller = new AbortController();
+  const timeoutId = window.setTimeout(() => controller.abort(), timeoutMs);
+
+  try {
+    return await fetch(url, {
+      ...options,
+      signal: controller.signal,
+    });
+  } catch (error) {
+    if (error?.name === 'AbortError') {
+      throw new Error(`Request timed out after ${Math.round(timeoutMs / 1000)}s`);
+    }
+    throw error;
+  } finally {
+    window.clearTimeout(timeoutId);
+  }
+};
+
+const loadJson = async (url, options = {}, timeoutMs = DEFAULT_FETCH_TIMEOUT_MS) => {
+  const response = await fetchWithTimeout(url, options, timeoutMs);
   if (!response.ok) {
     throw new Error(`Failed to load data: ${response.status}`);
   }
   return response.json();
 };
 
-const loadText = async (url, options = {}) => {
-  const response = await fetch(url, options);
+const loadText = async (url, options = {}, timeoutMs = DEFAULT_FETCH_TIMEOUT_MS) => {
+  const response = await fetchWithTimeout(url, options, timeoutMs);
   if (!response.ok) {
     throw new Error(`Failed to load text: ${response.status}`);
   }
@@ -204,7 +227,7 @@ const fetchRealtimeSnapshot = async () => {
 
   return await loadJson(liveUrl, {
     cache: 'no-store',
-  });
+  }, LIVE_SNAPSHOT_FETCH_TIMEOUT_MS);
 };
 
 const fetchLiveSnapshotCache = async ({ preferLive = false } = {}) => {
@@ -225,7 +248,7 @@ const fetchLiveSnapshotCache = async ({ preferLive = false } = {}) => {
   try {
     const liveSnapshot = await loadJson(liveUrl, {
       cache: 'no-store',
-    });
+    }, LIVE_SNAPSHOT_FETCH_TIMEOUT_MS);
     return pickFresherSnapshot(staticSnapshot, liveSnapshot);
   } catch (error) {
     console.warn('Stored live snapshot fetch failed, falling back to bundled cache.', error);
@@ -297,38 +320,96 @@ const hasEmbeddedNewsRail = (payload) => (
   || Array.isArray(payload?.marketTape?.items)
 );
 
+const hasNewsFeedItems = (payload) => Array.isArray(payload?.newsFeed?.items) && payload.newsFeed.items.length > 0;
+
+const hasMarketTapeItems = (payload) => Array.isArray(payload?.marketTape?.items) && payload.marketTape.items.length > 0;
+
+const mergeNewsRailSnapshot = (payload) => {
+  const previous = lastNewsRailSnapshot || {};
+  const nextMarketTape = hasMarketTapeItems(payload)
+    ? payload.marketTape
+    : (hasMarketTapeItems(previous) ? previous.marketTape : payload?.marketTape || {});
+  const nextNewsFeed = hasNewsFeedItems(payload)
+    ? payload.newsFeed
+    : (hasNewsFeedItems(previous) ? previous.newsFeed : payload?.newsFeed || {});
+
+  return {
+    marketTape: nextMarketTape || {},
+    newsFeed: nextNewsFeed || {},
+  };
+};
+
+const cacheNewsRailSnapshot = (payload) => {
+  if (!payload) {
+    return;
+  }
+
+  if (hasMarketTapeItems(payload) || hasNewsFeedItems(payload)) {
+    lastNewsRailSnapshot = {
+      marketTape: payload.marketTape || {},
+      newsFeed: payload.newsFeed || {},
+    };
+  }
+};
+
 const resolveNewsRailSnapshot = async (snapshotPayload) => {
   if (hasEmbeddedNewsRail(snapshotPayload)) {
-    return {
+    const embeddedSnapshot = {
       marketTape: snapshotPayload.marketTape || {},
       newsFeed: snapshotPayload.newsFeed || {},
     };
+
+    if (hasMarketTapeItems(embeddedSnapshot) && hasNewsFeedItems(embeddedSnapshot)) {
+      return embeddedSnapshot;
+    }
+
+    try {
+      const legacySnapshot = await fetchLegacyNewsRailSnapshot();
+      return {
+        marketTape: hasMarketTapeItems(embeddedSnapshot) ? embeddedSnapshot.marketTape : (legacySnapshot?.marketTape || {}),
+        newsFeed: hasNewsFeedItems(embeddedSnapshot) ? embeddedSnapshot.newsFeed : (legacySnapshot?.newsFeed || {}),
+      };
+    } catch (error) {
+      console.warn('Legacy news rail fallback failed.', error);
+      return embeddedSnapshot;
+    }
   }
 
   return await fetchLegacyNewsRailSnapshot();
 };
 
 const renderNewsRailSnapshot = (payload) => {
-  const marketTape = payload?.marketTape || {};
-  const newsFeed = payload?.newsFeed || {};
+  const mergedSnapshot = mergeNewsRailSnapshot(payload);
+  const marketTape = mergedSnapshot.marketTape || {};
+  const newsFeed = mergedSnapshot.newsFeed || {};
 
   try {
-    setText('marketTapeStamp', formatDateTime(marketTape.updatedAt) || '-');
-    renderMarketTape(marketTape.items || []);
+    if (hasMarketTapeItems(mergedSnapshot)) {
+      setText('marketTapeStamp', formatDateTime(marketTape.updatedAt) || '-');
+      renderMarketTape(marketTape.items || []);
+    } else {
+      renderMarketTapeError('World markets are waiting for the next successful refresh.');
+    }
   } catch (error) {
     console.error('Market tape render failed', error);
     renderMarketTapeError(error?.message || 'Market tape render failed.');
   }
 
   try {
-    renderNewsFeed(newsFeed);
-    setText('newsFeedStamp', newsFeed.updatedAtLabel || formatDateTime(newsFeed.updatedAt));
-    setText('newsFeedMeta', '');
-    setHidden('newsFeedMeta', true);
+    if (hasNewsFeedItems(mergedSnapshot)) {
+      renderNewsFeed(newsFeed);
+      setText('newsFeedStamp', newsFeed.updatedAtLabel || formatDateTime(newsFeed.updatedAt));
+      setText('newsFeedMeta', '');
+      setHidden('newsFeedMeta', true);
+    } else {
+      renderHeadlineError('Headlines are waiting for the next successful refresh.');
+    }
   } catch (error) {
     console.error('Headline render failed', error);
     renderHeadlineError(error?.message || 'Headline rail render failed.');
   }
+
+  cacheNewsRailSnapshot(mergedSnapshot);
 };
 
 const updateHeadlineRefreshButton = () => {
@@ -427,11 +508,23 @@ const renderAiError = (message) => {
 };
 
 const renderMarketTapeError = (message) => {
+  if (hasMarketTapeItems(lastNewsRailSnapshot)) {
+    setText('marketTapeStamp', formatDateTime(lastNewsRailSnapshot.marketTape?.updatedAt) || 'Using previous world markets');
+    return;
+  }
+
   setText('marketTapeStamp', 'Market tape refresh pending');
   document.getElementById('marketTape').innerHTML = `<p>${message}</p>`;
 };
 
 const renderHeadlineError = (message) => {
+  if (hasNewsFeedItems(lastNewsRailSnapshot)) {
+    setText('newsFeedStamp', lastNewsRailSnapshot.newsFeed?.updatedAtLabel || formatDateTime(lastNewsRailSnapshot.newsFeed?.updatedAt));
+    setText('newsFeedMeta', `${message} Showing previous headlines.`);
+    setHidden('newsFeedMeta', false);
+    return;
+  }
+
   setText('newsFeedStamp', 'Headline refresh pending');
   setText('newsFeedMeta', message);
   setHidden('newsFeedMeta', false);
@@ -1112,7 +1205,7 @@ const bindHeadlineRefreshButton = () => {
           'Content-Type': 'application/json',
         },
         cache: 'no-store',
-      });
+      }, MANUAL_HEADLINE_REFRESH_TIMEOUT_MS);
 
       if (payload?.snapshot) {
         try {

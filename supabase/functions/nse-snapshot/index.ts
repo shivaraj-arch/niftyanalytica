@@ -9,11 +9,36 @@ const CORS_HEADERS = {
   "Content-Type": "application/json",
 };
 
+const DEFAULT_BUCKET = "public-data";
+const DEFAULT_OBJECT_PATH = "live/live-snapshot.json";
+
 function jsonResponse(payload: unknown, status = 200) {
   return new Response(JSON.stringify(payload), {
     status,
     headers: CORS_HEADERS,
   });
+}
+
+function encodeObjectPath(objectPath: string) {
+  return objectPath.split("/").map((segment) => encodeURIComponent(segment)).join("/");
+}
+
+function getPublicSnapshotUrl(supabaseUrl: string, bucket: string, objectPath: string) {
+  return `${supabaseUrl.replace(/\/$/, "")}/storage/v1/object/public/${bucket}/${encodeObjectPath(objectPath)}`;
+}
+
+async function loadExistingSnapshot(publicUrl: string) {
+  try {
+    const response = await fetch(`${publicUrl}${publicUrl.includes("?") ? "&" : "?"}t=${Date.now()}`, {
+      cache: "no-store",
+    });
+    if (!response.ok) {
+      return null;
+    }
+    return await response.json();
+  } catch {
+    return null;
+  }
 }
 
 function hasValidSnapshotSecret(request: Request) {
@@ -57,8 +82,14 @@ serve(async (request: Request) => {
       });
     }
 
+    const supabaseUrl = Deno.env.get("SUPABASE_URL")?.replace(/\/$/, "");
+    const bucket = Deno.env.get("LIVE_SNAPSHOT_BUCKET") ?? DEFAULT_BUCKET;
+    const objectPath = Deno.env.get("LIVE_SNAPSHOT_OBJECT_PATH") ?? DEFAULT_OBJECT_PATH;
+    const existingSnapshot = supabaseUrl
+      ? await loadExistingSnapshot(getPublicSnapshotUrl(supabaseUrl, bucket, objectPath))
+      : null;
     const snapshot = await fetchNseSnapshot();
-    const newsBundle = await buildNewsBundle();
+    const newsBundle = await buildNewsBundle(existingSnapshot ?? undefined);
 
     return jsonResponse({
       ...snapshot,
