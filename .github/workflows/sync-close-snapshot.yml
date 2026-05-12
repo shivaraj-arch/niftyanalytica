@@ -4,12 +4,12 @@ on:
   workflow_dispatch:
     inputs:
       newsletter:
-        description: Send the 8 PM newsletter after syncing close data
+        description: Reserved for compatibility. Newsletter delivery is handled outside this repo.
         required: false
         default: false
         type: boolean
       dry_run:
-        description: Build the newsletter and run delivery in dry-run mode
+        description: Reserved for compatibility. Newsletter delivery is handled outside this repo.
         required: false
         default: false
         type: boolean
@@ -34,33 +34,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-
-      - name: Decide newsletter mode
-        id: newsletter_mode
-        shell: bash
-        env:
-          EVENT_NAME: ${{ github.event_name }}
-          EVENT_SCHEDULE: ${{ github.event.schedule }}
-          INPUT_NEWSLETTER: ${{ inputs.newsletter }}
-          INPUT_DRY_RUN: ${{ inputs.dry_run }}
-        run: |
-          should_send="false"
-          dry_run="false"
-
-          if [[ "$EVENT_NAME" == "schedule" && "$EVENT_SCHEDULE" == "30 14 * * 1-5" ]]; then
-            should_send="true"
-          fi
-
-          if [[ "$INPUT_NEWSLETTER" == "true" ]]; then
-            should_send="true"
-          fi
-
-          if [[ "$INPUT_DRY_RUN" == "true" ]]; then
-            dry_run="true"
-          fi
-
-          echo "should_send=$should_send" >> "$GITHUB_OUTPUT"
-          echo "dry_run=$dry_run" >> "$GITHUB_OUTPUT"
 
       - name: Fetch latest closing snapshot
         env:
@@ -95,26 +68,3 @@ jobs:
           git add data/live-snapshot.json data/market-activity-history.csv data/index-summary-history.csv data/index-cache
           git commit -m "Sync nightly market data"
           git push
-
-      - name: Build 8 PM newsletter
-        if: steps.newsletter_mode.outputs.should_send == 'true'
-        env:
-          NEWSLETTER_WEBSITE_URL: https://www.niftyanalytica.com
-        run: node scripts/build-newsletter.mjs
-
-      - name: Send 8 PM newsletter
-        if: steps.newsletter_mode.outputs.should_send == 'true'
-        env:
-          NEWSLETTER_DRY_RUN: ${{ steps.newsletter_mode.outputs.dry_run }}
-          NEWSLETTER_FROM_EMAIL: ${{ secrets.NEWSLETTER_FROM_EMAIL }}
-          NEWSLETTER_REPLY_TO_EMAIL: ${{ secrets.NEWSLETTER_REPLY_TO_EMAIL }}
-          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-        run: node scripts/send-newsletter.mjs
-
-      - name: Upload newsletter artifacts
-        if: steps.newsletter_mode.outputs.should_send == 'true'
-        uses: actions/upload-artifact@v4
-        with:
-          name: newsletter-${{ github.run_id }}
-          path: tmp/newsletter
-          if-no-files-found: error
