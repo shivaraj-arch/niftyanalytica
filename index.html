@@ -75,8 +75,15 @@
         </div>
       </div>
       <aside class="hero-panel reveal delay-1">
-        <div class="panel-chip">Updated</div>
-        <div id="generatedAt" class="panel-value">Waiting for refresh</div>
+        <div class="hero-status-row">
+          <div class="panel-chip">Updated</div>
+          <div id="generatedAt" class="panel-value panel-value-inline">Waiting for refresh</div>
+          <label class="toggle-control toggle-control-compact" for="autoRefreshToggle">
+            <input id="autoRefreshToggle" type="checkbox" checked>
+            <span class="toggle-slider" aria-hidden="true"></span>
+            <span class="toggle-label">Auto refresh</span>
+          </label>
+        </div>
         <div class="hero-panel-block">
           <div class="hero-panel-title">Follow Nifty Analytica</div>
           <div class="social-link-row social-link-row-panel" aria-label="Nifty Analytica social links">
@@ -108,13 +115,6 @@
             </form>
           </div>
           <p id="newsletterStatus" class="subscribe-status" aria-live="polite"></p>
-        </div>
-        <div class="refresh-control-row">
-          <label class="toggle-control" for="autoRefreshToggle">
-            <input id="autoRefreshToggle" type="checkbox" checked>
-            <span class="toggle-slider" aria-hidden="true"></span>
-            <span class="toggle-label">Auto refresh every minute</span>
-          </label>
         </div>
         <dl class="hero-metrics">
           <div>
@@ -153,7 +153,9 @@
     <nav class="section-nav reveal delay-2">
       <a href="#ai-analysis">AI Analysis</a>
       <a href="#contributors">Contributors</a>
-      <a href="#open-interest">Open Interest</a>
+      <a href="#market-tape-section">World Markets</a>
+      <a href="#latest-headlines">Latest Headlines</a>
+      <a href="#open-interest">Market Activity and OI</a>
       <a href="#black-scholes">Black-Scholes</a>
       <a href="#low-iv">Low IV</a>
       <a href="#nse-holidays">NSE Holidays</a>
@@ -199,7 +201,7 @@
         </section>
 
         <aside class="news-rail">
-          <section class="card news-card reveal delay-2">
+          <section id="latest-headlines" class="card news-card reveal delay-2">
             <div class="section-heading rail-heading">
               <div>
                 <p class="eyebrow">News Rail</p>
@@ -247,14 +249,14 @@
             </div>
             <div id="openInterestStamp" class="stamp">-</div>
           </div>
-          <div class="chart-panel" data-chart-title="Daily Market Cap" data-chart-target="optionChainMarketCapChart">
-            <h3>Daily Market Cap</h3>
+          <div class="chart-panel" data-chart-title="Daily Market Cap and FFMC" data-chart-target="optionChainMarketCapChart">
+            <h3>Daily Market Cap and FFMC</h3>
             <div id="optionChainMarketCapLegend" class="chart-legend"></div>
             <div id="optionChainMarketCapChart" class="svg-chart"></div>
-            <button class="chart-expand" type="button" data-chart-target="optionChainMarketCapChart" data-chart-title="Daily Market Cap">Expand chart</button>
+            <button class="chart-expand" type="button" data-chart-target="optionChainMarketCapChart" data-chart-title="Daily Market Cap and FFMC">Expand chart</button>
           </div>
           <div class="chart-panel" data-chart-title="Daily Market Activity and Flows" data-chart-target="optionChainMarketFlowChart">
-            <h3>Daily Traded Value, FFMC and Flows</h3>
+            <h3>Daily Traded Value and Flows</h3>
             <div id="optionChainMarketFlowLegend" class="chart-legend"></div>
             <div id="optionChainMarketFlowChart" class="svg-chart"></div>
             <button class="chart-expand" type="button" data-chart-target="optionChainMarketFlowChart" data-chart-title="Daily Market Activity and Flows">Expand chart</button>
@@ -344,7 +346,6 @@
             <p class="eyebrow">Market Calendar</p>
             <h2>NSE Holidays</h2>
           </div>
-          <div id="holidayStamp" class="stamp">-</div>
         </div>
         <details class="holiday-disclosure">
           <summary class="holiday-disclosure-toggle">Expand holiday calendar</summary>

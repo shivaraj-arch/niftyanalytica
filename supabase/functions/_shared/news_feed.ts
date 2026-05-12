@@ -216,9 +216,9 @@ async function buildHeadlines(existingPayload?: ExistingNewsPayload["newsFeed"])
     }));
 
   return {
-    items: items.length ? items : (existingPayload?.items || []),
+    items,
     sourceErrors,
-    sourcesAvailable: [...new Set((items.length ? items : (existingPayload?.items || [])).map((item) => item.source))],
+    sourcesAvailable: [...new Set(items.map((item) => item.source))],
   };
 }
 
@@ -289,12 +289,10 @@ async function buildMarketTape(existingPayload?: ExistingNewsPayload["marketTape
     console.warn(error instanceof Error ? error.message : String(error));
   }
 
-  const sortedItems = parsedItems.length ? parsedItems : (existingPayload?.items || []);
+  const sortedItems = parsedItems;
 
   return {
-    updatedAt: sortedItems.length
-      ? new Date().toISOString()
-      : (existingPayload?.updatedAt || new Date().toISOString()),
+    updatedAt: new Date().toISOString(),
     items: sortedItems,
   };
 }
@@ -309,12 +307,8 @@ export async function buildNewsBundle(existingPayload?: ExistingNewsPayload) {
   return {
     marketTape,
     newsFeed: {
-      updatedAt: headlinePayload.items.length
-        ? now.toISOString()
-        : (existingPayload?.newsFeed?.updatedAt || now.toISOString()),
-      updatedAtLabel: headlinePayload.items.length
-        ? formatIstDateLabel(now)
-        : (existingPayload?.newsFeed?.updatedAtLabel || formatIstDateLabel(now)),
+      updatedAt: now.toISOString(),
+      updatedAtLabel: formatIstDateLabel(now),
       items: headlinePayload.items,
       sourcesAvailable: headlinePayload.sourcesAvailable,
       sourceErrors: headlinePayload.sourceErrors,

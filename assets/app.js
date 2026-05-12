@@ -321,20 +321,10 @@ const hasNewsFeedItems = (payload) => Array.isArray(payload?.newsFeed?.items) &&
 
 const hasMarketTapeItems = (payload) => Array.isArray(payload?.marketTape?.items) && payload.marketTape.items.length > 0;
 
-const mergeNewsRailSnapshot = (payload) => {
-  const previous = lastNewsRailSnapshot || {};
-  const nextMarketTape = hasMarketTapeItems(payload)
-    ? payload.marketTape
-    : (hasMarketTapeItems(previous) ? previous.marketTape : payload?.marketTape || {});
-  const nextNewsFeed = hasNewsFeedItems(payload)
-    ? payload.newsFeed
-    : (hasNewsFeedItems(previous) ? previous.newsFeed : payload?.newsFeed || {});
-
-  return {
-    marketTape: nextMarketTape || {},
-    newsFeed: nextNewsFeed || {},
-  };
-};
+const mergeNewsRailSnapshot = (payload) => ({
+  marketTape: payload?.marketTape || {},
+  newsFeed: payload?.newsFeed || {},
+});
 
 const cacheNewsRailSnapshot = (payload) => {
   if (!payload) {
@@ -355,21 +345,7 @@ const resolveNewsRailSnapshot = async (snapshotPayload) => {
       marketTape: snapshotPayload.marketTape || {},
       newsFeed: snapshotPayload.newsFeed || {},
     };
-
-    if (hasMarketTapeItems(embeddedSnapshot) && hasNewsFeedItems(embeddedSnapshot)) {
-      return embeddedSnapshot;
-    }
-
-    try {
-      const legacySnapshot = await fetchLegacyNewsRailSnapshot();
-      return {
-        marketTape: hasMarketTapeItems(embeddedSnapshot) ? embeddedSnapshot.marketTape : (legacySnapshot?.marketTape || {}),
-        newsFeed: hasNewsFeedItems(embeddedSnapshot) ? embeddedSnapshot.newsFeed : (legacySnapshot?.newsFeed || {}),
-      };
-    } catch (error) {
-      console.warn('Legacy news rail fallback failed.', error);
-      return embeddedSnapshot;
-    }
+    return embeddedSnapshot;
   }
 
   return await fetchLegacyNewsRailSnapshot();
@@ -503,12 +479,6 @@ const renderAiError = (message) => {
 };
 
 const renderMarketTapeError = (message) => {
-  if (hasMarketTapeItems(lastNewsRailSnapshot)) {
-    setText('marketTapeStamp', formatDateTime(lastNewsRailSnapshot.marketTape?.updatedAt) || 'Using previous world markets');
-    setText('marketTapeMeta', `${message} Showing previous world markets.`);
-    return;
-  }
-
   setText('marketTapeStamp', 'Market tape refresh pending');
   setText('marketTapeMeta', message);
   setText('marketTapeHighlights', 'Top Movements: Waiting for world markets.');
@@ -516,13 +486,6 @@ const renderMarketTapeError = (message) => {
 };
 
 const renderHeadlineError = (message) => {
-  if (hasNewsFeedItems(lastNewsRailSnapshot)) {
-    setText('newsFeedStamp', lastNewsRailSnapshot.newsFeed?.updatedAtLabel || formatDateTime(lastNewsRailSnapshot.newsFeed?.updatedAt));
-    setText('newsFeedMeta', `${message} Showing previous headlines.`);
-    setHidden('newsFeedMeta', false);
-    return;
-  }
-
   setText('newsFeedStamp', 'Headline refresh pending');
   setText('newsFeedMeta', message);
   setHidden('newsFeedMeta', false);
@@ -535,7 +498,6 @@ const emphasizeAgentHeadings = (value) => String(value || '')
   .replace(/^Aggregator Agent$/gm, '**Aggregator Agent**');
 
 const renderHolidayError = (message) => {
-  setText('holidayStamp', 'Holiday refresh pending');
   setText('holidayMeta', message);
   document.getElementById('holidayCalendarGrid').innerHTML = `<p>${message}</p>`;
 };
@@ -686,15 +648,13 @@ const renderLiveSections = (snapshot) => {
   bindChartExpansion();
 };
 
-const OPTION_CHAIN_MARKET_CAP_SERIES = {
-  key: 'marketCapCrores',
-  label: 'Market Cap (Cr)',
-  color: '#b94a48',
-};
+const OPTION_CHAIN_MARKET_CAP_SERIES = [
+  { key: 'marketCapCrores', label: 'Market Cap (Cr)', color: '#b94a48' },
+  { key: 'ffmcCrores', label: 'FFMC (Cr)', color: '#1f8f6b' },
+];
 
 const OPTION_CHAIN_MARKET_FLOW_SERIES = [
   { key: 'tradedValueCrores', label: 'Traded Value (Cr)', color: '#0f4c5c' },
-  { key: 'ffmcCrores', label: 'FFMC (Cr)', color: '#1f8f6b' },
   { key: 'fiiNetCrores', label: 'FII Net (Cr)', color: '#b47b19' },
   { key: 'diiNetCrores', label: 'DII Net (Cr)', color: '#7a4cc2' },
 ];
@@ -727,17 +687,21 @@ const renderOptionChainMarketActivity = () => {
     return;
   }
 
-  renderSingleSeriesChart(
+  renderGroupedSeriesChart(
     'optionChainMarketCapChart',
     rows,
     (row) => ({
       label: formatArchiveDateLabel(row.date),
-      value: parseNumber(row.marketCapCrores),
-      color: OPTION_CHAIN_MARKET_CAP_SERIES.color,
-      labelA: OPTION_CHAIN_MARKET_CAP_SERIES.label,
+      series: OPTION_CHAIN_MARKET_CAP_SERIES.map((series) => ({
+        value: parseNumber(row[series.key]),
+        color: series.color,
+        label: series.label,
+      })),
     }),
     'optionChainMarketCapLegend',
-    'Daily Market Cap',
+    'Daily Market Cap and FFMC',
+    false,
+    { axisFormatter: formatCroresAxisCompact, tooltipFormatter: formatCroresValueLabel },
   );
 
   renderGroupedSeriesChart(
@@ -753,6 +717,8 @@ const renderOptionChainMarketActivity = () => {
     }),
     'optionChainMarketFlowLegend',
     'Daily Market Activity and Flows',
+    false,
+    { axisFormatter: formatAxisValueCompact, tooltipFormatter: formatCroresValueLabel },
   );
 };
 
@@ -1238,7 +1204,6 @@ const buildLowIv = (payload) => {
 };
 
 const renderHolidayCalendar = (holidayPayload) => {
-  setText('holidayStamp', formatDateTime(holidayPayload.updatedAt) || '-');
   setText('holidayMeta', 'Exchange holidays are marked in red. Saturdays and Sundays are treated as market holidays.');
   document.getElementById('holidayCalendarGrid').innerHTML = holidayPayload.months.map((month) => `
     <article class="holiday-month">
@@ -1279,9 +1244,10 @@ const renderChipList = (id, items) => {
 const getMarketTapeCategory = (item) => String(item?.source || '').split('/').pop()?.trim() || 'International';
 
 const buildMarketTapeHighlights = (items) => {
+  const filteredItems = items.filter((item) => !/\bvix\b/i.test(String(item.label || '')));
   const orderedCategories = ['Indices', 'Futures', 'Commodities', 'Currencies'];
   const parts = orderedCategories.map((category) => {
-    const categoryItems = items.filter((item) => getMarketTapeCategory(item) === category);
+    const categoryItems = filteredItems.filter((item) => getMarketTapeCategory(item) === category);
     if (!categoryItems.length) {
       return null;
     }
@@ -1347,7 +1313,7 @@ const renderNewsFeed = (newsFeed) => {
   `).join('');
 };
 
-const renderBarChart = (id, rows, mapper, legendId, title, expanded = false) => {
+const renderBarChart = (id, rows, mapper, legendId, title, expanded = false, options = {}) => {
   if (!rows.length) {
     document.getElementById(id).innerHTML = '<p>No data available.</p>';
     return;
@@ -1357,16 +1323,21 @@ const renderBarChart = (id, rows, mapper, legendId, title, expanded = false) => 
   const maxValue = Math.max(...mapped.flatMap((item) => [Math.abs(item.valueA), Math.abs(item.valueB), 1]));
   const width = expanded ? 1400 : 960;
   const height = expanded ? 520 : 360;
-  const baseline = Math.round(height / 2);
+  const top = 28;
+  const bottom = 48;
+  const chartHeight = height - top - bottom;
+  const baseline = top + chartHeight / 2;
   const left = 60;
   const groupWidth = (width - left - 20) / mapped.length;
   const barWidth = Math.max(expanded ? 12 : 8, groupWidth / 3);
+  const axisFormatter = options.axisFormatter || formatAxisValueCompact;
+  const tooltipFormatter = options.tooltipFormatter || formatSignedValueLabel;
 
   const bars = mapped.map((item, index) => {
     const x = left + index * groupWidth + groupWidth * 0.15;
     return [
-      buildSvgRect(x, baseline, barWidth, item.valueA, maxValue, item.colorA, expanded),
-      buildSvgRect(x + barWidth + 6, baseline, barWidth, item.valueB, maxValue, item.colorB, expanded),
+      buildSvgRect(x, baseline, barWidth, item.valueA, maxValue, item.colorA, chartHeight / 2, `${item.label} - ${item.labelA}: ${tooltipFormatter(item.valueA)}`),
+      buildSvgRect(x + barWidth + 6, baseline, barWidth, item.valueB, maxValue, item.colorB, chartHeight / 2, `${item.label} - ${item.labelB}: ${tooltipFormatter(item.valueB)}`),
       `<text x="${x + barWidth}" y="${height - 12}" text-anchor="middle" font-size="${expanded ? 15 : 11}" fill="#4d6971">${item.label}</text>`,
     ].join('');
   }).join('');
@@ -1378,21 +1349,18 @@ const renderBarChart = (id, rows, mapper, legendId, title, expanded = false) => 
   chartState[id] = {
     title,
     legendHtml: renderLegend(mapped[0]),
-    render: (targetId, expandedMode) => renderBarChart(targetId, rows, mapper, null, title, expandedMode),
+    render: (targetId, expandedMode) => renderBarChart(targetId, rows, mapper, null, title, expandedMode, options),
   };
 
   document.getElementById(id).innerHTML = `
     <svg viewBox="0 0 ${width} ${height}" preserveAspectRatio="none" role="img" aria-label="${title}">
-      <line x1="${left}" x2="${width - 10}" y1="${baseline}" y2="${baseline}" stroke="rgba(15,76,92,0.18)" stroke-width="1.2"></line>
-      <text x="18" y="24" font-size="${expanded ? 14 : 11}" fill="#4d6971">${formatCompact(maxValue)}</text>
-      <text x="18" y="${baseline - 6}" font-size="${expanded ? 14 : 11}" fill="#4d6971">0</text>
-      <text x="18" y="${height - 42}" font-size="${expanded ? 14 : 11}" fill="#4d6971">-${formatCompact(maxValue)}</text>
+      ${renderSignedAxisGrid({ left, width, top, height, bottom, baseline, maxValue, expanded, formatter: axisFormatter })}
       ${bars}
     </svg>
   `;
 };
 
-const renderSingleSeriesChart = (id, rows, mapper, legendId, title, expanded = false) => {
+const renderSingleSeriesChart = (id, rows, mapper, legendId, title, expanded = false, options = {}) => {
   if (!rows.length) {
     document.getElementById(id).innerHTML = '<p>No data available.</p>';
     return;
@@ -1405,15 +1373,18 @@ const renderSingleSeriesChart = (id, rows, mapper, legendId, title, expanded = f
   const top = 24;
   const baseline = height - 48;
   const left = 60;
+  const chartHeight = baseline - top;
   const groupWidth = (width - left - 20) / mapped.length;
   const barWidth = Math.max(expanded ? 8 : 6, Math.min(expanded ? 18 : 12, groupWidth * 0.34));
+  const axisFormatter = options.axisFormatter || formatAxisValueCompact;
+  const tooltipFormatter = options.tooltipFormatter || formatCroresValueLabel;
 
   const bars = mapped.map((item, index) => {
-    const scaledHeight = (Math.abs(item.value) / maxValue) * (expanded ? 360 : 240);
+    const scaledHeight = (Math.abs(item.value) / maxValue) * chartHeight;
     const x = left + index * groupWidth + (groupWidth - barWidth) / 2;
     const y = baseline - scaledHeight;
     return [
-      `<rect x="${x}" y="${y}" width="${barWidth}" height="${scaledHeight}" rx="6" fill="${item.color}" opacity="0.9"></rect>`,
+      `<rect x="${x}" y="${y}" width="${barWidth}" height="${scaledHeight}" rx="6" fill="${item.color}" opacity="0.9"><title>${item.label}: ${tooltipFormatter(item.value)}</title></rect>`,
       `<text x="${x + barWidth / 2}" y="${height - 12}" text-anchor="middle" font-size="${expanded ? 15 : 11}" font-weight="700" fill="#26444d">${item.label}</text>`,
     ].join('');
   }).join('');
@@ -1426,20 +1397,18 @@ const renderSingleSeriesChart = (id, rows, mapper, legendId, title, expanded = f
   chartState[id] = {
     title,
     legendHtml,
-    render: (targetId, expandedMode) => renderSingleSeriesChart(targetId, rows, mapper, null, title, expandedMode),
+    render: (targetId, expandedMode) => renderSingleSeriesChart(targetId, rows, mapper, null, title, expandedMode, options),
   };
 
   document.getElementById(id).innerHTML = `
     <svg viewBox="0 0 ${width} ${height}" preserveAspectRatio="none" role="img" aria-label="${title}">
-      <line x1="${left}" x2="${width - 10}" y1="${baseline}" y2="${baseline}" stroke="rgba(15,76,92,0.18)" stroke-width="1.2"></line>
-      <text x="18" y="24" font-size="${expanded ? 14 : 11}" font-weight="700" fill="#26444d">${formatLargeCompact(maxValue)}</text>
-      <text x="18" y="${baseline - 6}" font-size="${expanded ? 14 : 11}" font-weight="700" fill="#26444d">0</text>
+      ${renderPositiveAxisGrid({ left, width, top, baseline, maxValue, expanded, formatter: axisFormatter })}
       ${bars}
     </svg>
   `;
 };
 
-const renderGroupedSeriesChart = (id, rows, mapper, legendId, title, expanded = false) => {
+const renderGroupedSeriesChart = (id, rows, mapper, legendId, title, expanded = false, options = {}) => {
   if (!rows.length) {
     document.getElementById(id).innerHTML = '<p>No data available.</p>';
     return;
@@ -1466,6 +1435,8 @@ const renderGroupedSeriesChart = (id, rows, mapper, legendId, title, expanded = 
     Math.min(expanded ? 14 : 9, (groupWidth - gap * (seriesCount - 1)) / Math.max(seriesCount, 1)),
   );
   const usedWidth = seriesCount * barWidth + (seriesCount - 1) * gap;
+  const axisFormatter = options.axisFormatter || formatAxisValueCompact;
+  const tooltipFormatter = options.tooltipFormatter || formatCroresValueLabel;
 
   const bars = mapped.map((item, index) => {
     const startX = left + index * groupWidth + Math.max((groupWidth - usedWidth) / 2, 0);
@@ -1481,7 +1452,7 @@ const renderGroupedSeriesChart = (id, rows, mapper, legendId, title, expanded = 
 
       const x = startX + seriesIndex * (barWidth + gap);
       const y = series.value >= 0 ? baseline - scaledHeight : baseline;
-      return `<rect x="${x}" y="${y}" width="${barWidth}" height="${scaledHeight}" rx="4" fill="${series.color}" opacity="0.92"></rect>`;
+      return `<rect x="${x}" y="${y}" width="${barWidth}" height="${scaledHeight}" rx="4" fill="${series.color}" opacity="0.92"><title>${item.label} - ${series.label}: ${tooltipFormatter(series.value)}</title></rect>`;
     }).join('');
 
     return `${seriesRects}<text x="${left + index * groupWidth + groupWidth / 2}" y="${height - 16}" text-anchor="middle" font-size="${expanded ? 15 : 11}" font-weight="700" fill="#26444d">${item.label}</text>`;
@@ -1498,15 +1469,14 @@ const renderGroupedSeriesChart = (id, rows, mapper, legendId, title, expanded = 
   chartState[id] = {
     title,
     legendHtml,
-    render: (targetId, expandedMode) => renderGroupedSeriesChart(targetId, rows, mapper, null, title, expandedMode),
+    render: (targetId, expandedMode) => renderGroupedSeriesChart(targetId, rows, mapper, null, title, expandedMode, options),
   };
 
   document.getElementById(id).innerHTML = `
     <svg viewBox="0 0 ${width} ${height}" preserveAspectRatio="none" role="img" aria-label="${title}">
-      <line x1="${left}" x2="${width - 10}" y1="${baseline}" y2="${baseline}" stroke="rgba(15,76,92,0.22)" stroke-width="1.4"></line>
-      <text x="18" y="26" font-size="${expanded ? 15 : 11}" font-weight="700" fill="#26444d">${formatCompact(maxValue)}</text>
-      <text x="18" y="${baseline - 8}" font-size="${expanded ? 15 : 11}" font-weight="700" fill="#26444d">0</text>
-      ${hasNegative ? `<text x="18" y="${height - 18}" font-size="${expanded ? 15 : 11}" font-weight="700" fill="#26444d">-${formatCompact(maxValue)}</text>` : ''}
+      ${hasNegative
+        ? renderSignedAxisGrid({ left, width, top, height, bottom, baseline, maxValue, expanded, formatter: axisFormatter })
+        : renderPositiveAxisGrid({ left, width, top, baseline, maxValue, expanded, formatter: axisFormatter })}
       ${bars}
     </svg>
   `;
@@ -1582,10 +1552,40 @@ const renderStackedSeriesChart = (id, rows, mapper, legendId, title, expanded = 
   `;
 };
 
-const buildSvgRect = (x, baseline, width, value, maxValue, color, expanded) => {
-  const scaledHeight = (Math.abs(value) / maxValue) * (expanded ? 210 : 145);
+const buildSvgRect = (x, baseline, width, value, maxValue, color, maxHeight, tooltip) => {
+  const scaledHeight = (Math.abs(value) / maxValue) * maxHeight;
   const y = value >= 0 ? baseline - scaledHeight : baseline;
-  return `<rect x="${x}" y="${y}" width="${width}" height="${scaledHeight}" rx="5" fill="${color}" opacity="0.88"></rect>`;
+  return `<rect x="${x}" y="${y}" width="${width}" height="${scaledHeight}" rx="5" fill="${color}" opacity="0.88"><title>${escapeHtml(tooltip)}</title></rect>`;
+};
+
+const renderPositiveAxisGrid = ({ left, width, top, baseline, maxValue, expanded, formatter }) => {
+  const ticks = [maxValue, maxValue * 0.75, maxValue * 0.5, maxValue * 0.25, 0];
+  return ticks.map((tick) => {
+    const y = baseline - ((tick / maxValue) * (baseline - top));
+    return `
+      <line x1="${left}" x2="${width - 10}" y1="${y}" y2="${y}" stroke="rgba(15,76,92,0.1)" stroke-width="1"></line>
+      <text x="18" y="${y + 4}" font-size="${expanded ? 14 : 11}" font-weight="700" fill="#26444d">${formatter(tick)}</text>
+    `;
+  }).join('');
+};
+
+const renderSignedAxisGrid = ({ left, width, top, height, bottom, baseline, maxValue, expanded, formatter }) => {
+  const upperHeight = baseline - top;
+  const lowerHeight = height - bottom - baseline;
+  const ticks = [maxValue, maxValue / 2, 0, -maxValue / 2, -maxValue];
+  return ticks.map((tick) => {
+    let y = baseline;
+    if (tick > 0) {
+      y = baseline - ((tick / maxValue) * upperHeight);
+    } else if (tick < 0) {
+      y = baseline + ((Math.abs(tick) / maxValue) * lowerHeight);
+    }
+
+    return `
+      <line x1="${left}" x2="${width - 10}" y1="${y}" y2="${y}" stroke="rgba(15,76,92,0.1)" stroke-width="1"></line>
+      <text x="18" y="${y + 4}" font-size="${expanded ? 14 : 11}" font-weight="700" fill="#26444d">${formatter(tick)}</text>
+    `;
+  }).join('');
 };
 
 const renderLegend = (sample) => `
@@ -1760,6 +1760,21 @@ const formatCompact = (value) => {
   if (abs >= 1000) return `${(value / 1000).toFixed(1)}K`;
   return Number(value).toFixed(0);
 };
+
+const formatAxisValueCompact = (value) => {
+  const number = Number(value);
+  if (Number.isNaN(number) || number === 0) return '0';
+  const abs = Math.abs(number);
+  if (abs >= 100000) return `${(number / 100000).toFixed(1)}L`;
+  if (abs >= 1000) return `${(number / 1000).toFixed(1)}K`;
+  return number.toFixed(0);
+};
+
+const formatCroresAxisCompact = (value) => `${formatAxisValueCompact(value)} Cr`;
+
+const formatCroresValueLabel = (value) => `${currency.format(Number(value || 0))} Cr`;
+
+const formatSignedValueLabel = (value) => signed(value);
 
 const formatLargeCompact = (value) => {
   if (value === null || value === undefined || Number.isNaN(Number(value))) return '-';

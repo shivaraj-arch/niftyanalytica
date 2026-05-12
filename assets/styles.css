@@ -95,8 +95,15 @@ body.modal-open {
   border: 1px solid rgba(15, 76, 92, 0.12);
   background: rgba(255, 255, 255, 0.6);
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.55;
+}
+
+.hero-status-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .hero-signal-note a {
@@ -405,6 +412,13 @@ td,
   color: var(--ink);
 }
 
+.panel-value-inline {
+  margin-top: 0;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
 .refresh-control-row {
   margin-top: 18px;
 }
@@ -456,6 +470,33 @@ td,
 
 .toggle-label {
   font-size: 0.94rem;
+}
+
+.toggle-control-compact {
+  gap: 8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.toggle-control-compact .toggle-slider {
+  width: 40px;
+  height: 22px;
+}
+
+.toggle-control-compact .toggle-slider::after {
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+}
+
+.toggle-control-compact input:checked + .toggle-slider::after {
+  transform: translateX(18px);
+}
+
+.toggle-control-compact .toggle-label {
+  font-size: 0.82rem;
 }
 
 .hero-metrics {
