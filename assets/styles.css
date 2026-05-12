@@ -88,6 +88,22 @@ body.modal-open {
   flex-direction: column;
 }
 
+.hero-signal-note {
+  margin: 16px 0 0;
+  padding: 12px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(15, 76, 92, 0.12);
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.hero-signal-note a {
+  color: var(--accent);
+  font-weight: 700;
+}
+
 .hero-panel,
 .card {
   padding: 28px;

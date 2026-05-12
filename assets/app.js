@@ -33,6 +33,13 @@ const setText = (id, value) => {
   }
 };
 
+const setHtml = (id, value) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.innerHTML = value;
+  }
+};
+
 const setDisplay = (id, visible) => {
   const element = document.getElementById(id);
   if (element) {
@@ -555,6 +562,7 @@ const renderLiveError = (message) => {
   setText('heroTradedValue', '-');
   setText('heroMarketCap', '-');
   setText('heroBreadth', '-');
+  setHtml('heroSignalNote', `${message} See <a href="#open-interest">Market Capitalization</a> for details.`);
   setText('contributorsStamp', 'Live refresh pending');
   setText('openInterestStamp', 'Live refresh pending');
   setText('blackScholesStamp', 'Live refresh pending');
@@ -602,6 +610,7 @@ const renderLiveSections = (snapshot) => {
   setText('heroLowestIv', dayRangeLabel);
   setText('heroTradedValue', `${formatNumber(indexSummary.tradedValueCrores)} Cr`);
   setText('heroBreadth', `${contributors.advances} / ${contributors.declines}`);
+  setHtml('heroSignalNote', `Sentiment: ${openInterest.signals.divergenceSummary}. Trap: ${openInterest.signals.trapRiskLabel}. See <a href="#open-interest">Market Capitalization</a> for details.`);
   setText('contributorsStamp', contributors.timestamp || '-');
   setText('openInterestStamp', openInterest.timestamp || '-');
   setText('blackScholesStamp', blackScholes.timestamp || '-');
