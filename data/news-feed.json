@@ -1,27 +1,27 @@
 {
   "marketTape": {
-    "updatedAt": "2026-05-12T18:36:00.965119+05:30",
+    "updatedAt": "2026-05-12T20:02:55.327695+05:30",
     "items": [
       {
         "label": "S&P 500",
-        "last": 7412.8,
-        "changePercent": 0.37236131233666875,
+        "last": 7359.7,
+        "changePercent": -0.4369588744588769,
         "source": "Stooq",
-        "updatedAt": "2026-05-11 23:00:00"
+        "updatedAt": "2026-05-12 16:32:31"
       },
       {
         "label": "Dow Jones",
-        "last": 49704.5,
-        "changePercent": 0.3136283000094885,
+        "last": 49375.7,
+        "changePercent": -0.7316102260573094,
         "source": "Stooq",
-        "updatedAt": "2026-05-11 23:00:00"
+        "updatedAt": "2026-05-12 16:32:28"
       },
       {
         "label": "Nasdaq",
-        "last": 26274.13,
-        "changePercent": 0.5299279183245248,
+        "last": 25980.576,
+        "changePercent": -0.38363337081964693,
         "source": "Stooq",
-        "updatedAt": "2026-05-11 23:00:00"
+        "updatedAt": "2026-05-12 16:32:33"
       },
       {
         "label": "Nikkei 225",
@@ -39,93 +39,121 @@
       },
       {
         "label": "FTSE 100",
-        "last": 10227.6,
-        "changePercent": -0.15034657815092878,
+        "last": 10240.2,
+        "changePercent": -0.027335741481980595,
         "source": "Stooq",
-        "updatedAt": "2026-05-12 15:05:39"
+        "updatedAt": "2026-05-12 16:32:33"
       },
       {
         "label": "DAX",
-        "last": 24137.09,
-        "changePercent": 0.3694239705591889,
+        "last": 24054.78,
+        "changePercent": 0.02715374299584725,
         "source": "Stooq",
-        "updatedAt": "2026-05-12 14:50:14"
+        "updatedAt": "2026-05-12 16:17:33"
       },
       {
         "label": "Crude Oil",
-        "last": 101.23,
-        "changePercent": 3.0016280016280046,
+        "last": 102.08,
+        "changePercent": 3.8665038665038636,
         "source": "Stooq",
-        "updatedAt": "2026-05-12 15:05:57"
+        "updatedAt": "2026-05-12 16:32:49"
       },
       {
         "label": "Gold",
-        "last": 4696.61,
-        "changePercent": -0.877131888471718,
+        "last": 4680.21,
+        "changePercent": -1.2232570802651663,
         "source": "Stooq",
-        "updatedAt": "2026-05-12 15:05:56"
+        "updatedAt": "2026-05-12 16:32:52"
       }
     ]
   },
   "newsFeed": {
-    "updatedAt": "2026-05-12T18:36:00.965135+05:30",
-    "updatedAtLabel": "12 May 2026, 06:36:00 PM IST",
+    "updatedAt": "2026-05-12T20:02:55.327712+05:30",
+    "updatedAtLabel": "12 May 2026, 08:02:55 PM IST",
     "items": [
       {
         "source": "Livemint",
-        "title": "Four Cheetah cubs found dead in MP's Kuno National Park",
-        "link": "https://www.livemint.com/news/india/four-cheetah-cubs-found-dead-in-mps-kuno-national-park-11778590383085.html",
-        "publishedAt": "2026-05-12T18:30:06+05:30",
-        "publishedAtLabel": "12 May 2026, 06:30:06 PM IST"
+        "title": "Baltimore bridge collapse: US DOJ charges ship operators with misconduct, obstruction",
+        "link": "https://www.livemint.com/news/us-news/baltimore-bridge-collapse-us-doj-charges-ship-operators-with-misconduct-obstruction-11778595933386.html",
+        "publishedAt": "2026-05-12T19:59:47+05:30",
+        "publishedAtLabel": "12 May 2026, 07:59:47 PM IST"
       },
       {
         "source": "Livemint",
-        "title": "Chandranath Rath killing: Arrested suspect\u2019s mother claims he was at Lucknow wedding \u2013 \u2018cameras can be checked\u2019",
-        "link": "https://www.livemint.com/news/india/chandranath-rath-killing-mother-of-arrested-suspect-says-he-was-in-lucknow-wedding-on-may-7-8-cameras-can-be-checked-11778575230970.html",
-        "publishedAt": "2026-05-12T18:23:12+05:30",
-        "publishedAtLabel": "12 May 2026, 06:23:12 PM IST"
+        "title": "Trump shares mock-up of redesigned $100 note featuring his image and signature",
+        "link": "https://www.livemint.com/news/us-news/trump-shares-mock-up-of-redesigned-100-note-featuring-his-image-and-signature-11778592525023.html",
+        "publishedAt": "2026-05-12T19:52:41+05:30",
+        "publishedAtLabel": "12 May 2026, 07:52:41 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "Sacheta Metals standalone net profit declines 38.98% in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQUXkzc0M1UkpfRl9FeVVCT0VDb05RVjE3U19PWkUwQk5XMzFnTTZZSTZHc3A3SjFkcUZkWmh3bTNZS1VZNjc4WkJpdDFfZ05TU1pXczBVcHJES0lfMjlmeGlWd0JQLUNqMFF1TVlIMUh3M2x4Q3lzRkt0Q0xiQjNkZEh0RHg5TGJtU0lqWktXRG1FRUw1djdjeVNyUDNXZThZUVYyZVFoOFE3bEJpTmVBZG9IVkdLNDdYM1VWRlFJdG4wLVBQb0czYlV2R0QySE50eHdqejFDeFZlQXp3c1gxSVJka2VkZ1RCMjNlZDZzeWLSAfYBQVVfeXFMUFpUZDgtbmJObUVIejAzUVVZOGRPTXh0a3M1c2ZTYTh2NnhoN014QURKRmhvRi1GU1VGTG1Sc2tLUnBYU3Ficm5QMEFrTlVXZldjTnlQSWw4bkRGZkx6MXBaZnhpdGFsTW1vVl9yZ2hWa3dweVZ5S3h0enRGNVg0Wi1WVzNRYnV3TGZFelp3RHVyMTRYZExUbXdPRWVBVzd1aGZ1SVNUbWdhSmRuWWhxTHBPd0V6M2VZUTdBZzVYbDR3ZUVEQ2hFRm5FWkRJS3VEanE3OXZzUnV5b0EyaGNSZDJsM19GaXRQVFc2SGdhdVpJZkRXajN3?oc=5",
-        "publishedAt": "2026-05-12T18:22:14+05:30",
-        "publishedAtLabel": "12 May 2026, 06:22:14 PM IST"
+        "title": "Board of Borosil Renewables approves fund raising of up to Rs 750 cr",
+        "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPRFNYQ3I1QUdTNVczUGd5b2tDQlpGNlFpdjIyMVZoTGdQT3otMy11VTM0SnFCZV9DeTZYNFBHdWFqbnV2YjBMb3BNSklEYXZQbU9uUWdZZldhYzhkbk1RVkpfOEg5TUxfSHpISElZYUh6U0tYUHdEN2dobmV4YkZkazRYYnl0MGF6MFR5ZGI2NTRUTXR6TGVTUktZaEVfZzkzQ251c1BnRDBEdF9ITUo1SUFwVlVXWVJCNWdTMTZnbml0alJVdjExaU5jMTgzUzhlSVdacTJCOG1ZUWFUNUQ5c0Z6blbSAeoBQVVfeXFMUERTSE9XYm96VDhudWdCbE04bDV2bUJzUzNSd0p3Q2VoN0JjMy1sczlueDU0VUlVZk5NdlloejI3cDlKenZjWUtGQ20tcFdTUzMxTm50eXA4cElYSmQyWXhpcUZZczI1YURLdkFZemdjb2VhcVVRVTluRXhzd2x4QU5zZkY3Y2k0QmZCQ1l3RjV6c09BRmxscjF0OXpIaEIyRnphOFZxcVI0MWNjNW1sRkRUaFlKdWtpcEU0amVIUWp6SnhIQU1LbXhZQ0I2Q1ctb2k5UFNRVm04OVZvNVh5NFF2TzN1TEtEd1dR?oc=5",
+        "publishedAt": "2026-05-12T19:50:36+05:30",
+        "publishedAtLabel": "12 May 2026, 07:50:36 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "Aakash Exploration Services standalone net profit rises 571.43% in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPMWhEYTFjYjluajh4cFNITHVxRzJfMmtsVm9nX2xWU1piY2RzSnN2VHI3UGNaX2ItRURxSnA0d0JZMXduRUJKNDJxSXQ5eUZXSmNrRzV2QjhoQnBZaHNIN0I0cGxyV3k1OVFfOGtuSXBVQi0xRkpsTGpsWHpEc2xnUE5VRGt4WlhDX2U1VGJmazZtY1dmVkVJRGx6eFN4TFNvc3ZyVlBGd2VrclZtUUlHLTRXVVlsVjVMWlg1U19QbVp5bmJ3b2xQY1dvdU1pSDhxdEpEUEhrQ3daNFo4YXIyR3JaR09iWDJMeFp2c2ZEeU5hMGdQMm9wanlvbTkzdGvSAYQCQVVfeXFMT0I0RG5LY3FON2lvRUZJVjBKdFNWZGNWUkRVc3p6aU93MXNVMlR1RmpZNE9keHBfX05TWW1hdUwwTVAxRjAxY2tYeDBYSENYR09yRkdhekc5MHRHWjVKLXZKdVh5WDFtUzJqS2FUdWhMMV96SHV1bmpOYWdFNzV6cWhIUzZvSVRxVHB3Q3BuVTRmeVltUG8zZjFzcTVjOWU0cVpod1hnM1F3d1dfbnAzSmdZWi1IamlFbDZ0T09UWEc5UE1wbUJ0VXJBUElabDNPS2ZqSHBqZGR1LWVZU3oxNldWUHhmZWtILUMxVzN5UTdpR2dlbUo1ZWdaM0NaRmxrd2pmZS0?oc=5",
-        "publishedAt": "2026-05-12T18:22:14+05:30",
-        "publishedAtLabel": "12 May 2026, 06:22:14 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Patel Integrated Logistics consolidated net profit rises 60.22% in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPMzFUU180cURqa3dWUUhlTndNNllpeXczSVQ1bEFXVWRyN3k3ZzRfTmZhNVFqdGw3QWEzZk9DRG5SLU5odUthc2hqd0VuNmFzeWYyRzZPcGlMT0NicHN6RXdTRHJKYTRCZWxSbTdNZmtJYXZuc2wyOWp4ZElITU9WTnZFemMtdDFCR05XV0ZnVURFYU93bHJ6MnZpSWxoUU9mcnlyY2habEp3dlZ4ZHVCdUJyVTVyV2UzQzV0R3lCd1BXT0JTZ1RieGhVU3FvQlptSmtBNElDWkFFMGlvVjBjeWFnbXhoZG92cVFVRkxmU0I3VXFZYmEyOTVmNDdYYjDSAYQCQVVfeXFMUGdrdDhJMHhWOG9UNzFBYUhMMnhSNFp0djNYanZHZmlWMTlkcU1QQk5Wd0M0dHNDelpYUTVIN0x4UDVjRjJpTEJMbGJMeGphNVlHVXYtX3k3V2hrX09sN1pPSWlMdmM5RkQyeXNMRktPNGlJT3RaMklwdUctVzFtWEtndVpSa3QzVlZ5Q1JieUlXbHdMdW1FZGh6WVZ1YjV2ZzhtbENQUzgtN2dfempEOHhIQTRhOEJGcmpzVDZPamtvakVxRHBLX1Y3VTM5VHB0UFFRTExpUzU5TXRwbUdGbGU5ZDdkWWI2WjR5eTA2TVRLMUtGNW5sS1BpdURlcFJKZ0IxVVg?oc=5",
-        "publishedAt": "2026-05-12T18:13:38+05:30",
-        "publishedAtLabel": "12 May 2026, 06:13:38 PM IST"
+        "title": "Neuland Laboratories board approves capacity additional at Unit 1",
+        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQOF9UclItY1c2U1l0aGFuQi1SR01jOFhuenNIR1hBWVIxb0dyNmgtRzI3czFsVkpzaThZNThVRzBTbHdSUGd3SENUQl9fc2plLWFCQ1lwTlpBLTQtZ0J1d08tNGhacWx4WjU2MWczZ1J0N1dqZE5TNTBnVjQ0U0VIZ0Zjd0JPYk5FR3pDaGtUVzVPY3BHRW55MTdVTnhyNUxlLTIyNGJjUWItWEVvZ09RR2ViVGtISl9EaHZPd1EyYnNjYm0xQnZyWnZiMGFNMUVyVDBaWGpzdU5FcU96UjlZWdIB5gFBVV95cUxOTmRCMXB5Q0dqeU5lZm55dWFwd1BGakYyN3MzajlWTF95Mk1iR0I5c1pLaHQzaFlRR0NTbk9pSFBOQlZzZ25EVGF1ekN2Z3MzRUxYNmdFUlVxb0VKS2Z4b2s1eXVlYjA0cURKV3V2b21XajNmYkNibjJYckRuT3ZaX0JNTFFESmQ2UTVrZVlSblhVbFVvNUxnTm1yZ195cGFEY3Vvb2EzN1Bta1g1OVNwMnpVTW9tTUZjcHNKclJ6QUJnMTZoT3hBQlBCdkF5YlFQWVdHcjdhcTNmUlRxT282R0ROVmJjQQ?oc=5",
+        "publishedAt": "2026-05-12T19:50:26+05:30",
+        "publishedAtLabel": "12 May 2026, 07:50:26 PM IST"
       },
       {
         "source": "Livemint",
-        "title": "US inflation jumps to 3.8% in April, highest in nearly three years as war in Iran disrupts economy",
-        "link": "https://www.livemint.com/news/us-news/us-inflation-jumps-to-3-8-in-april-highest-in-nearly-three-years-as-war-in-iran-disrupts-economy-11778589648330.html",
-        "publishedAt": "2026-05-12T18:12:51+05:30",
-        "publishedAtLabel": "12 May 2026, 06:12:51 PM IST"
+        "title": "One dead, four ill after eating watermelon at family function in Chhattisgarh village",
+        "link": "https://www.livemint.com/news/india/one-dead-four-ill-after-eating-watermelon-at-family-function-in-chhattisgarh-village-11778591765532.html",
+        "publishedAt": "2026-05-12T19:42:18+05:30",
+        "publishedAtLabel": "12 May 2026, 07:42:18 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "India, Russia in advanced talks for critical minerals agreement: Report",
-        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNWEJ5UTV3LWl2dTh2bE1BenpRR2NVeFBybWVEZy02RVZQM3BTMDE4bFl6UjlQeVo3YWtEZWNsMXRRVlZmSkF5cFBzdUFvQThxdnB4Zm4wQjJhMUJPMlJPX2w0WE1TTVI3SjBsUUVEaUZXaWJyVHI5MzFKTHc4S09odE5JdkdnQ0lLbHZvWXNUckl6WWN1aUN1bnZzWm84QnNYemFpNElTNFo2WU1xM3pqb0hGdUVuSU9HWVBpNExhSHlMbGPSAcgBQVVfeXFMTl9Kc2lnZW54VmJpbmRPZ09WMndQOTJ4c1YtanhaenRpb2g4VFNDZnJXUG93OG5xT0lBSU1IZlFqMGhaQmRGQ3IyRDlFbm9JdmR4T3RVT0ozb0Qyb1hzU2w0WHM2dU1kak9wRGN0VWpFYjlNclNFQVdFendFaU5iTm1lMEZRN0QzdTF1MnFVNXhBbG9nRGFPVVhDSXRMQ3JoUjlGczZ6SkViY192UWpkWUwySk95Q0NQZGpzT1NfTlVOc2NTUjYxWTE?oc=5",
-        "publishedAt": "2026-05-12T18:05:30+05:30",
-        "publishedAtLabel": "12 May 2026, 06:05:30 PM IST"
+        "title": "Stove Kraft board approves change in CFO",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOczZuTGF4bVREcUVzQVQ1bk5pOVF6V3lsSjFKZjJNNk9KT0JLRzBYd2pGaW95MUJQd3lQcnNmQW45bWJBQ1A0Y3VsMUZCNE95YzdqN28yOXRiYnk4UW8zbWFJRlpueFY1TkRYNXBsMDc2dzdHcnI2azZJWGV4ZnVPcVJRUVpPOVJRTzRadkdvZlAzcHNSa21GTG1MMHR0ZUc2UXU3U0lmMkgyWUpIT01EdWFRS1Npa25IeG0wMk13MNIBxAFBVV95cUxObVd3NS04aTlnVUV4ekwtSmdMeEw1Z0pyZG5SeXVMUDc0ZUFnZFVFTWsxY1lVTGZZMjQ1clh4M2ZDQTQ4a19nUTBqRFhMem5ITDZmeVdKbDlfZDJzanVSNDVJdnFRbFFuSjhJNnV2TVJpNXExMXo4aTZwbzl2ZXJIdi1mTzhSdG1hMEdNaW1pRUg2YUkyQlk5WWVlX1JCc2RTaVB3SmVLZXlQNnZpZjQ4b3BMd0lCYWdNQnFydV9VNFlkRjRE?oc=5",
+        "publishedAt": "2026-05-12T19:31:11+05:30",
+        "publishedAtLabel": "12 May 2026, 07:31:11 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "Ugar Sugar Works standalone net profit declines 10.42% in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQV1RFSEhDMG9LMGZwRXg0QUJyZ3MwbjVKMXljSFd0NjNKNzR6Yk9GVmc1TjByT25zaWN2T2ZGQWFSZnVsRFVkMmF1SFNFS3N4UU9OZ3AxN3J6QUtCLWpSSEttNC1BNEhTcDZnb2JnXzltalJiemFXNzlWajNyTDVvc0FZWjZDaDRGSVJULVkySTR5Q1VRYzRCN3RfNjAzSFFoOE9SdzUtYk4xZE95N3JQLXZnaWJ5WEw3eWF3Tm5WWUZ0S2Q5NVdwM2IzUmhXUkxoWEJKZHFmTmZzRjdrcnI4SGszY21QQVJIVFUxWlduUi1uUnfSAfgBQVVfeXFMUG1kR3hFSFh1VW9STmJVRGU2TVpDUEhUWmd0Mm5ybkltc3ZwWVVTeHB2R0RoU285MjZ1VTBWdEltaXplSllCcllWd1pHMzNTX0R1OUs5cmhWUy13dzB6eU41bS1YQkdoMXY2eUpGM3FMdFlJTFBwbUlMc0FQTW56LWxhNzBFUXdkREJOTWZFcUhmUFN1cnJBa1ZjcVduU3dWSUlmU0tQNndONGdPaTQyWFZ6T1lNZnhwZUJXLVZyUTVDSm5wQjNzTjhMM00xVTIyRUZPUmZ5dEowSVdPbUU1QXZST1RJUXJmLUF4M21GU0pqUnFHNnpTSDE?oc=5",
-        "publishedAt": "2026-05-12T18:05:19+05:30",
-        "publishedAtLabel": "12 May 2026, 06:05:19 PM IST"
+        "title": "Markets tumble for second day as crude surge sparks inflation concerns",
+        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOcjBJZDFDRHBLZS12b2NHWVpYRzlna2pWay0zdFRfZ0E2d0w5Y0c3NlhpUGZoSklyTzBvazlGbk5hcmUyN18wSzBqYmlWTHlYbndGWG5CNDYxLXZmTGQ5NEJyeXl6ZmFFbC1yc204eV8xbmdaamNEdGpVVUEyV2p0Z2JyejdQemlEMGJIR0VadEx6eXkxY1p3TDlRVXBMZ1pQcnpzTk9mcjgyd2VOQkZXZnlKb25LRGtXdFN3LW9kSC03RFp1Z2JPeU5UWDNJelQ2YVpz0gHYAUFVX3lxTE53ZDVKc3pJTHQ1VC1rUEI0cFN6d0RmdmdwUGl1NnJPdWd1ZjBEQTFCRERxUC03ZUplY1dPZGdMODRqWHc5c0pZRzdITVBZbnpnWHE0UWEzWTJBZWUwdldROXBhYWhEdGZRLXFJdGJITk1MZWE0VWRMTkl1eGt2S2ZvVkhOR0Z6TzZrY1Z1ek1NZ1l4RHk0dGhWOWdPbksxQWlKSDkyREJrSElSNXRPSkdBNE1RY0Zfc0hyYWhmMXpBWEVXMWp6a2VEMURsMWVkQnJFLXo4N09VSw?oc=5",
+        "publishedAt": "2026-05-12T19:22:01+05:30",
+        "publishedAtLabel": "12 May 2026, 07:22:01 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Who is Prof Susan Elias, first woman principal in Delhi St Stephen\u2019s College's 145-year history?",
+        "link": "https://www.livemint.com/news/india/who-is-prof-susan-elias-first-woman-principal-in-delhi-st-stephen-s-colleges-145-year-history-11778587470880.html",
+        "publishedAt": "2026-05-12T19:03:40+05:30",
+        "publishedAtLabel": "12 May 2026, 07:03:40 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Fed\u2019s Goolsbee Says Services Inflation May Point to Overheating",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-12/fed-s-goolsbee-says-services-inflation-may-point-to-overheating",
+        "publishedAt": "2026-05-12T19:01:01+05:30",
+        "publishedAtLabel": "12 May 2026, 07:01:01 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Here Are the Key Takeaways for the US CPI Report for April",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-12/us-cpi-report-april-2026-key-takeaways-on-inflation-consumer-price-index",
+        "publishedAt": "2026-05-12T19:00:05+05:30",
+        "publishedAtLabel": "12 May 2026, 07:00:05 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "India\u2019s midcap boom amid market volatility: Top gainers and expert stock picks",
+        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQZ0s4c2Z2NHJDbFRHb0dDMGFadlBBRDg0ME1ua1Y0eXRhOUduQ3I0VUJ6UWZXOWlWTmlESEJWMnphTkh6cURDZzNvdWFOd3BVYWx1OHkxb1hEVGtzU1E0b0x0Z2lLWDE0ZkNEakU3WklyWnNmTjdmNTExYTBqYl90c3dJVmlBdGM2SUtFNF9jdUJoUE1HT3ZvU1VYRjMtV3FVdTFqa3JDc1Z5cE5RZGdvZXJIUTZGZ3JzSndvVVpuQTg1T3Ztb1JLMENnemFDR0Z3OWRaMHFKR3A3S3M?oc=5",
+        "publishedAt": "2026-05-12T18:58:00+05:30",
+        "publishedAtLabel": "12 May 2026, 06:58:00 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Kash Patel set for Senate hearing as lawmakers review FBI budget amid allegations of misconduct",
+        "link": "https://www.livemint.com/news/us-news/kash-patel-set-for-senate-hearing-as-lawmakers-review-fbi-budget-amid-allegations-of-misconduct-11778590868361.html",
+        "publishedAt": "2026-05-12T18:49:36+05:30",
+        "publishedAtLabel": "12 May 2026, 06:49:36 PM IST"
       },
       {
         "source": "Bloomberg Economics",
@@ -135,22 +163,8 @@
         "publishedAtLabel": "12 May 2026, 06:02:26 PM IST"
       },
       {
-        "source": "Livemint",
-        "title": "NEET UG 2026 cancelled: CBI probe begins, first arrest made | Do students need to register again?",
-        "link": "https://www.livemint.com/news/india/neet-ug-2026-cancelled-nta-official-notice-re-exam-date-cbi-probe-no-fresh-registration-check-details-11778587699513.html",
-        "publishedAt": "2026-05-12T17:57:05+05:30",
-        "publishedAtLabel": "12 May 2026, 05:57:05 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "\u2018Neither credible nor attractive\u2019: eBay turns down $56 billion takeover bid from GameStop",
-        "link": "https://www.livemint.com/news/us-news/neither-credible-nor-attractive-ebay-turns-down-56-billion-takeover-bid-from-gamestop-11778586819649.html",
-        "publishedAt": "2026-05-12T17:56:13+05:30",
-        "publishedAtLabel": "12 May 2026, 05:56:13 PM IST"
-      },
-      {
         "source": "Bloomberg Economics",
-        "title": "Brazil Inflation Picks Up Again, Nearing Top of Target Ceiling",
+        "title": "Brazil Inflation Jumps, Bumping Up Against Target Ceiling",
         "link": "https://www.bloomberg.com/news/articles/2026-05-12/brazil-inflation-picks-up-again-nearing-top-of-target-ceiling",
         "publishedAt": "2026-05-12T17:52:07+05:30",
         "publishedAtLabel": "12 May 2026, 05:52:07 PM IST"
@@ -161,20 +175,6 @@
         "link": "https://www.bloomberg.com/news/live-blog/2026-05-12/us-cpi-report-for-april",
         "publishedAt": "2026-05-12T16:49:04+05:30",
         "publishedAtLabel": "12 May 2026, 04:49:04 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "EU Seeks to Overcome Complacency in Global Race for Rare Earths",
-        "link": "https://www.bloomberg.com/news/newsletters/2026-05-12/europe-and-rare-earth-supplies",
-        "publishedAt": "2026-05-12T16:30:01+05:30",
-        "publishedAtLabel": "12 May 2026, 04:30:01 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Michigan Town Has a Potential US-China Investment Blueprint",
-        "link": "https://www.bloomberg.com/news/newsletters/2026-05-12/trump-and-xi-prepare-to-meet-with-investment-deal-seen-as-wild-card",
-        "publishedAt": "2026-05-12T16:30:01+05:30",
-        "publishedAtLabel": "12 May 2026, 04:30:01 PM IST"
       }
     ],
     "sourcesAvailable": [
