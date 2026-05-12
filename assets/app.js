@@ -236,14 +236,9 @@ const fetchLiveSnapshotCache = async ({ preferLive = false } = {}) => {
   const liveUrl = LIVE_SNAPSHOT_URL
     ? `${LIVE_SNAPSHOT_URL}${LIVE_SNAPSHOT_URL.includes('?') ? '&' : '?'}t=${Date.now()}`
     : '';
-  const marketSessionState = getMarketSessionState();
   const staticSnapshot = await loadJsonData('data/live-snapshot.json');
 
   if (!liveUrl) {
-    return staticSnapshot;
-  }
-
-  if (!preferLive && !marketSessionState.canFetchLiveSnapshot && getSnapshotAgeMs(staticSnapshot) <= STALE_SNAPSHOT_MAX_AGE_MS) {
     return staticSnapshot;
   }
 
