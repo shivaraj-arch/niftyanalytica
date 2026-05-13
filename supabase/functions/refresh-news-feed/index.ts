@@ -13,6 +13,10 @@ const DEFAULT_BUCKET = "public-data";
 const DEFAULT_OBJECT_PATH = "live/live-snapshot.json";
 const DEFAULT_CACHE_CONTROL = "60";
 
+type RefreshRequestBody = {
+  force?: boolean;
+};
+
 function jsonResponse(payload: unknown, status = 200) {
   return new Response(JSON.stringify(payload), {
     status,
@@ -121,7 +125,31 @@ serve(async (request) => {
   }
 
   try {
+    const body = await request.json().catch(() => ({})) as RefreshRequestBody;
     const marketWindow = getMarketWindowState();
+    const forceRefresh = body.force === true;
+
+    if (!forceRefresh) {
+      if (marketWindow.reason === "Weekend" || marketWindow.reason === "NSE holiday") {
+        return jsonResponse({
+          ok: true,
+          skipped: true,
+          session: marketWindow.session,
+          reason: marketWindow.reason,
+          at: marketWindow.at,
+        });
+      }
+
+      if ((marketWindow.at.hour ?? 0) < 6) {
+        return jsonResponse({
+          ok: true,
+          skipped: true,
+          session: marketWindow.session,
+          reason: "Outside news refresh window",
+          at: marketWindow.at,
+        });
+      }
+    }
 
     const supabaseUrl = getEnv("SUPABASE_URL").replace(/\/$/, "");
     const serviceRoleKey = getEnv("SUPABASE_SERVICE_ROLE_KEY");
