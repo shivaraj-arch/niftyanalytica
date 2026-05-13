@@ -1,186 +1,302 @@
 {
   "marketTape": {
-    "updatedAt": "2026-05-13T15:19:17.822728+05:30",
+    "updatedAt": "2026-05-13T11:30:15.801Z",
     "items": [
       {
-        "label": "S&P 500",
-        "last": 7401.0,
-        "changePercent": 0.14071929207371034,
-        "source": "Stooq",
-        "updatedAt": "2026-05-12 23:00:00"
-      },
-      {
-        "label": "Dow Jones",
+        "label": "DOW 30 (Close)",
         "last": 49760.6,
-        "changePercent": 0.042219881140982234,
-        "source": "Stooq",
-        "updatedAt": "2026-05-12 23:00:00"
+        "changePercent": 0.11,
+        "source": "SGX Nifty / Indices",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
       },
       {
-        "label": "Nasdaq",
+        "label": "S&P 500 (Close)",
+        "last": 7400.96,
+        "changePercent": -0.16,
+        "source": "SGX Nifty / Indices",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
+      },
+      {
+        "label": "NASDAQ COMPO (Close)",
         "last": 26088.2,
-        "changePercent": 0.0045616573152780955,
-        "source": "Stooq",
-        "updatedAt": "2026-05-12 23:00:00"
+        "changePercent": -0.71,
+        "source": "SGX Nifty / Indices",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
       },
       {
-        "label": "Nikkei 225",
-        "last": 63272.11,
-        "changePercent": 1.3816088325801168,
-        "source": "Stooq",
-        "updatedAt": "2026-05-13 08:45:03"
+        "label": "FTSE 100 (Open)",
+        "last": 10268.6,
+        "changePercent": 0.03,
+        "source": "SGX Nifty / Indices",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
       },
       {
-        "label": "Hang Seng",
-        "last": 26388.44,
-        "changePercent": 0.15382624276460197,
-        "source": "Stooq",
-        "updatedAt": "2026-05-13 10:08:38"
+        "label": "DAX (Open)",
+        "last": 24119.7,
+        "changePercent": 0.69,
+        "source": "SGX Nifty / Indices",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
       },
       {
-        "label": "FTSE 100",
-        "last": 10296.1,
-        "changePercent": 0.3039484067063559,
-        "source": "Stooq",
-        "updatedAt": "2026-05-13 11:48:36"
+        "label": "NIKKEI 225 (Close)",
+        "last": 63272.1,
+        "changePercent": 0.84,
+        "source": "SGX Nifty / Indices",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
       },
       {
-        "label": "DAX",
-        "last": 24085.52,
-        "changePercent": -0.2415522965692272,
-        "source": "Stooq",
-        "updatedAt": "2026-05-13 11:33:37"
+        "label": "SHANGHAI COM (Close)",
+        "last": 4242.57,
+        "changePercent": 0.67,
+        "source": "SGX Nifty / Indices",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
       },
       {
-        "label": "Crude Oil",
-        "last": 101.55,
-        "changePercent": -0.6165590135055878,
-        "source": "Stooq",
-        "updatedAt": "2026-05-13 11:49:12"
+        "label": "DOW 30 FUTUR (Open)",
+        "last": 49720,
+        "changePercent": -0.3,
+        "source": "SGX Nifty / Futures",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
       },
       {
-        "label": "Gold",
-        "last": 4695.08,
-        "changePercent": -0.35802587039335926,
-        "source": "Stooq",
-        "updatedAt": "2026-05-13 11:49:16"
+        "label": "S&P 500 FUTU (Open)",
+        "last": 7440.5,
+        "changePercent": 0.19,
+        "source": "SGX Nifty / Futures",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
+      },
+      {
+        "label": "NASDAQ 100 F (Open)",
+        "last": 29367.2,
+        "changePercent": 0.68,
+        "source": "SGX Nifty / Futures",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
+      },
+      {
+        "label": "FTSE 100 FUT (Open)",
+        "last": 10262,
+        "changePercent": 0.14,
+        "source": "SGX Nifty / Futures",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
+      },
+      {
+        "label": "DAX FUTURES (Open)",
+        "last": 24183,
+        "changePercent": 0.68,
+        "source": "SGX Nifty / Futures",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
+      },
+      {
+        "label": "US DOLLAR IN (Open)",
+        "last": 98.478,
+        "changePercent": 0.18,
+        "source": "SGX Nifty / Futures",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
+      },
+      {
+        "label": "S&P 500 VIX (Open)",
+        "last": 17.9,
+        "changePercent": -0.5,
+        "source": "SGX Nifty / Futures",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
+      },
+      {
+        "label": "GOLD (Open)",
+        "last": 4704.8,
+        "changePercent": 0.39,
+        "source": "SGX Nifty / Commodities",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
+      },
+      {
+        "label": "SILVER (Open)",
+        "last": 87.645,
+        "changePercent": 2.4,
+        "source": "SGX Nifty / Commodities",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
+      },
+      {
+        "label": "COPPER (Open)",
+        "last": 6.656,
+        "changePercent": 1.91,
+        "source": "SGX Nifty / Commodities",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
+      },
+      {
+        "label": "CRUDE OIL (Open)",
+        "last": 102.06,
+        "changePercent": -0.12,
+        "source": "SGX Nifty / Commodities",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
+      },
+      {
+        "label": "BRENT OIL (Open)",
+        "last": 107.95,
+        "changePercent": 0.17,
+        "source": "SGX Nifty / Commodities",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
+      },
+      {
+        "label": "NATURAL GAS (Open)",
+        "last": 2.824,
+        "changePercent": -0.67,
+        "source": "SGX Nifty / Commodities",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
+      },
+      {
+        "label": "EUR/USD (Open)",
+        "last": 1.1713,
+        "changePercent": -0.2,
+        "source": "SGX Nifty / Currencies",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
+      },
+      {
+        "label": "USD/JPY (Open)",
+        "last": 157.78,
+        "changePercent": 0.11,
+        "source": "SGX Nifty / Currencies",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
+      },
+      {
+        "label": "GBP/USD (Open)",
+        "last": 1.3506,
+        "changePercent": -0.22,
+        "source": "SGX Nifty / Currencies",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
+      },
+      {
+        "label": "USD/CHF (Open)",
+        "last": 0.7814,
+        "changePercent": 0.13,
+        "source": "SGX Nifty / Currencies",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
+      },
+      {
+        "label": "USD/CAD (Open)",
+        "last": 1.3691,
+        "changePercent": -0.01,
+        "source": "SGX Nifty / Currencies",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
+      },
+      {
+        "label": "AUD/USD (Open)",
+        "last": 0.7248,
+        "changePercent": 0.12,
+        "source": "SGX Nifty / Currencies",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
+      },
+      {
+        "label": "USD/CNY (Close)",
+        "last": 6.7908,
+        "changePercent": -0.02,
+        "source": "SGX Nifty / Currencies",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
+      },
+      {
+        "label": "USD/INR (Close)",
+        "last": 95.705,
+        "changePercent": 0.08,
+        "source": "SGX Nifty / Currencies",
+        "updatedAt": "2026-05-13T11:30:15.801Z"
       }
     ]
   },
   "newsFeed": {
-    "updatedAt": "2026-05-13T15:19:17.822745+05:30",
-    "updatedAtLabel": "13 May 2026, 03:19:17 PM IST",
+    "updatedAt": "2026-05-13T11:30:15.023Z",
+    "updatedAtLabel": "13 May 2026, 05:00:15 pm IST",
     "items": [
       {
-        "source": "Livemint",
-        "title": "Quote of the day by Demi Moore on body-image issues: \u2018When I\u2019m at the greatest odds with my body because\u2026\u2019",
-        "link": "https://www.livemint.com/news/us-news/quote-of-the-day-by-demi-moore-on-body-image-issues-when-i-m-at-the-greatest-odds-with-my-body-because-11778663584241.html",
-        "publishedAt": "2026-05-13T15:08:47+05:30",
-        "publishedAtLabel": "13 May 2026, 03:08:47 PM IST"
+        "source": "NDTV Profit",
+        "title": "Sensex At 89,000? Morgan Stanley Turns Bullish On India Despite D-Street Weakness - NDTV Profit",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQVJfWWVkekRLSENOU25fUFc0VmhvbHZhRWlCVjRnb3I2OG1pWWU5Zlp5eXVCSWR1M2Nnel9FNGhzZGZXd09VT1VUZnZ0UUpkYWpNcll2WEduMGhsVDNrYk1qTzB0OWZYTTRfYnBIVEd5SmRIczZjYTJNRVNpV1hLak5xcDY3d04teFVDUy1GTzFRVmhPcDRMdDhuaHdoSzBaSjhRQUN3TzFjS09YYzBpS1BUdzdTWDI0enhQaHFRQ0czZ9IBygFBVV95cUxPbldIT0NUZzdzQ0JfdFY3bjZYTVpuaHBDYTNVbi1FVzdabHFaZmVrS1k3Tkxid01FU3pPYlNQZnc5SVpaX3RSZHZuY0tmLXZMZHpadlpHQlgyWUJiVjM2T1FYaGduNUVFNkU3OE83c0JQS0JmSWMxckw5eXVMdlVZRmpybzI3X1hmQlFWaVZCR2xSdlJ4ZjhycFJ4aU55LUNOaDFCdEl3WW9OZDctQVpySWVjT254a1hrNHEtWEt1RzFPNkF2ODJMU2J3?oc=5",
+        "publishedAt": "2026-05-13T11:24:59.000Z",
+        "publishedAtLabel": "13 May 2026, 04:54:59 pm IST"
+      },
+      {
+        "source": "Mint",
+        "title": "After a dull Q4, Dixon’s FY27 revenue and volume targets are in focus - Mint",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQV3BvTDloMWZONUtxRF9zS3JkQzVxbkxKSS1PUjRBYmppdHR5cnA4Y25DR3hYc2xxdzVhR25XcEN4MzFublMxeXFKRzlHRnphczYxZW9Ka2U2QW9fYnBwOXBJOU5zZXRndWE5bWpWZlp5NDJydzkyQlpZT0dXcXVKLUpsMi1XUEpSbk5EYmNQdVd6UDV4TWVsUHU2UHZ6MFVCdGViWmtFVVhRbnhJeVduZjJ0c9IBuAFBVV95cUxNa3ZGR0ZiYU1sQVAtWVQtVnhaQjZyZW1BamVKXzc0bXlKRlQtOUNJSk5JMjctTHJPM05rdVlodXpab0VnbVhvZ0JsTVJFNW1sc1I5R0FPWlBqcDJpNkp6LTM1WXd6cVZ5Rjh0Mk1MVjRKT0V6d2lXT1hlSjd6cVp0d0l5WkRBQlM4M0hMUWxSOXk4ZXlFcjZKb0lhZlFPMHowM0hPZ1NDXzRvX0tYMHl2dF9uMXZQTVg0?oc=5",
+        "publishedAt": "2026-05-13T11:17:42.000Z",
+        "publishedAtLabel": "13 May 2026, 04:47:42 pm IST"
+      },
+      {
+        "source": "Equitymaster",
+        "title": "Sensex Today Ends Flat | Nifty Above 23,400 | Texmaco Rail & Engineering Up 15% - Equitymaster",
+        "link": "https://news.google.com/rss/articles/CBMizgJBVV95cUxQRWNITzc2ZFlEUllFQkZuRE1RdmM1c0M3S0c4c05SbU9xbnh0SHZ2TzVkaUdCUGQyNXZuNmNYazhXVnRGNjRhbGs3amZSMS1ZaFZkdmRrMzUxYTVvVzF0bExlOU5jeTdac2cwd0FRZUFaSWozb1cyamlCQjJoX3RmYWVmQ1RDYnlDNmxQT1BRdTBvYjFmYlB2MTlSbkFRaGJZeXhLaHJZZmwtRTdkajBzTEdPcnVDWndmcmpNbHVLMWhIT3BoekJnMnRfTWJ1M0N0cWdqRHJQUFNQUzh5U1ZaZU5SMGYxQ2hpR2pCZWU0UldPcEFwQ01SQmJ6OXZIM3JzeDFxS1dNQ3VFYVVfMmtXNjRkYWZna01Na3J5SnBxQUJ0dmhPWVpMZlZrUmdHem5md1E4MUNBS090Mjk3Tm1HNElnMzJpamRmWWlleVlB?oc=5",
+        "publishedAt": "2026-05-13T11:13:39.000Z",
+        "publishedAtLabel": "13 May 2026, 04:43:39 pm IST"
+      },
+      {
+        "source": "Bloomberg.com",
+        "title": "SoftBank Logs Surprise Profit Jump in Boon for Son’s AI Bets - Bloomberg.com",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQWnZKT3BCdUlWaTI2VDV2Yk5xSS1YdjJ4VGM0aF9fZ3JwMjRzLUN1U2RVUTAxZjI1T3pENWFzYkpvRlQtZHp4VnZ2clpVWmRXT1hWZmNJRmpqWlJCSUIwdnV0RmRjNXNaRC1Gb2lHS3BZMkJtMVdTaE1SZXllVHNQMnBlSFN6TnAxd1Y4Q0JuT1MwbnJxT1lXM3JCSEhuYlQyR3JpUWRVN0d0UWlGVHljaw?oc=5",
+        "publishedAt": "2026-05-13T11:05:42.000Z",
+        "publishedAtLabel": "13 May 2026, 04:35:42 pm IST"
+      },
+      {
+        "source": "India Today",
+        "title": "Sensex, Nifty recover after 4-day slide even as rupee hits record low - India Today",
+        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQTlE0NW9Mc2ZSdEhGcFJ3LWplVndzNVEwTm9XYmJlT0w2T19NS2d0VHZ1MHBLMEw2RURXdzk4N0NaMjFDcVBTd2tGZnljcmUtQ3dqaDU1aDNzYUc4R2h1RHY5UFhIYmJyY2lFTS1ieGl1RVdoUHJEX29fakk4bkQ4aWRBaUFWU0Z6UEVJdnJTaUlBaU03YV9RSl9rMmhDbWZwYnRYYmszUjhNQzlHQjlRVElaUHpTcjNvRzdXMjI1TmVLNUplTkJvX2VFSEpxNV9lc3BKbjB0cVRQbXhUdG9PamEwY9IB6AFBVV95cUxNQmJUenV6VG9BR05ka041UXJ4SFZNT2JzODhLclRMdVNhckJsWjNDYWhUYmpLWGVWRVQzZUVfb3ZReTFRQXBFSldBTHJnRVhIS3R2ZHZOeXdlamdZSFViQlRXNGRWckFoT3hBYmFDWXhlaWpEUk5LS3FIUUtTR1d1dDk5Q1ppNmRUa0ZpVXZoRG9MRG14QUo2UHVhZVRIZjZEcVM3d3dSQk5wNjRGQmRVUFV0SzkweEVkNEE0MGI5QTc2amNhWjdZU09ubkZEWmw1TGk5Yk1GekYzYkVBYWpabjZLdGZwY2Y4?oc=5",
+        "publishedAt": "2026-05-13T11:02:50.000Z",
+        "publishedAtLabel": "13 May 2026, 04:32:50 pm IST"
       },
       {
         "source": "Business Standard",
-        "title": "NIIT Learning Systems Ltd leads losers in 'A' group",
-        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPZzRiamZuWU9ySUUzVzVDUkNjWWZ3WF80RnNTQkI0b1g5QXZWYk1DeDlpdVdUcmJPT3ZYWFNMSHRUVFIyLVAza0Z0OVJRWFhJRnhuVVp3ZVNIanFxMDJmYVFhNUl0bGJ2QlB4cFhWbUNyakdiMlZIWjkyZGZrVkxPS09OR2hobjUtemFsMzFPX2ItM0xKUlhIZDlCd1NPQmtOTXlBZmp0LTZSZFdZbjVnbHdnM0xMUzVndEpnb0lUVHJJS0pjMFYyNW4yQdIB0AFBVV95cUxNNEJKY3lOMi1aRGdwVUhLQng2TzdXMEZzR2Y5U1dUcVpqTlhrVXpRWGREaWxUUFFGWHhYT3J3dDMyOXRLdEw5WGF1Tk1na1BFVUZwRW1NWG5JRjUtZ25VNVdHVnFrQ2dJSjRQWXBRYXBlak1xQVkxVkN5Rm1yNGI2WV9PMTJYb0pKWlFGREdqSlBkeFR3RkZRT1J3M0VBU2xSTDlTQVpBNlJnUEc0VTRSczg0TmFMSjV0RnJDb2F5cjczSjQwSTJ3Z0tXcWhwVVdJ?oc=5",
-        "publishedAt": "2026-05-13T15:04:01+05:30",
-        "publishedAtLabel": "13 May 2026, 03:04:01 PM IST"
+        "title": "Government raises Rs 24,000 crore through Treasury Bill auction - Business Standard",
+        "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNV1FwdFJ4VmRWNldMeHpzRWpXanNKdVBOX1BtdTRJeVY0cnQ2X1BHLWNCbmJrZzFUVHFUaEtQTDRGZXVDTmlPYXVFZ3pEODJaRFpnMDZDcmFkSEFzSXhyVk9wekMtNmZ0S0FQTzlxbmF4djE4YjRSbnpQUERjVFVod295TmxCNXhHRGhsQ0gtV2FlNXBmeWplNExhM0hCN2wtRUV1MHZFYk90MGNXTWw3OVBHcG5RN0tiaVZZYVY4bjdKQXVaLWd1bUxITHZZajhjcjJ4QXRkU1ZDdWw4bWfSAeMBQVVfeXFMTlZEZV9ySF8tekRfd1NNcEJva1g5OElYRjNwOTJ4RGhHdG81Yk1jOHhNWWxrU0dGdnFKZHBCOGpYQ1M2b2VCZnYzQkh4dG43QUpnU0MtclotTkx3MjJXa0hOcDhxSGU2QmZaUk5qbDhDVHFLLTU4eXpYWmR3dkxiRy1FYTRCcnhIRnktTnU1NW1HeEtKcFMtRmQ0T3RFcmNETXNZMm0wRXBWOHY5eHpBVm5ta2dNWlozT0wxdDhLckM4bS1QcnhrcWlHaV9yUWRDcmdHQWYzcU5vN0NjcGViYnB5Z2s?oc=5",
+        "publishedAt": "2026-05-13T11:01:11.000Z",
+        "publishedAtLabel": "13 May 2026, 04:31:11 pm IST"
       },
       {
-        "source": "Livemint",
-        "title": "Quote of the Day: Mark Ruffalo on uncertainty \u2014 \u2018There are no sure bets in life\u2019",
-        "link": "https://www.livemint.com/news/us-news/quote-of-the-day-mark-ruffalo-on-uncertainty-there-are-no-sure-bets-in-life-11778662742638.html",
-        "publishedAt": "2026-05-13T14:56:50+05:30",
-        "publishedAtLabel": "13 May 2026, 02:56:50 PM IST"
+        "source": "Bloomberg.com",
+        "title": "Australia Cracks Down on Property Investors - Bloomberg.com",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNM1NYem1WejR6NjRjUGFZMG1sNXotOFJVc3Q0bEZ6Q1ZDOWhvSlktTlNVMklDQnc0cmR4VWlHSGNSZU5Yc0VJTHdxY29jWkN2bzFRSmNpZ281M1RTX3pxZ25uckViTHo1cGVQYThUUUliMjNDZVUyc2VSY1FKajcxWE5IcmRERGdib3ZyZzFEcmVFRzhldENJdGlqMWotWXkzRENwZg?oc=5",
+        "publishedAt": "2026-05-13T10:59:39.000Z",
+        "publishedAtLabel": "13 May 2026, 04:29:39 pm IST"
       },
       {
-        "source": "Business Standard",
-        "title": "EIA expects India's liquid fuels consumption to rise modestly next year",
-        "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQdXNwanlaMFN0ZVc4R1Q4LTQwcjYwOEQ1WGxzYTVhcGgxdnphRGRRYng1SnJXSGVnS2EwTnMweUZielF4bEd6ZDdBeVJRcFNJRDlZem1kN05JS29RODNhRFB6SThrT28yNW1mTV9nOHlNZzZ3N2lxV2pjNDM0MmtwWWZmZ0JfTzZGeWlGUC1uWUl4T2ctRkluNzlJQkF6Rzk1QlNfcnA2dXVMN2FOWGp2M0ZvWEZoV2lSR1A0ZG81ODl3SUd2MVJHbmxuLXp4TlpsN0dTV1V0WE5GZjh0YjF4MEE2VG9GUnBJ0gHuAUFVX3lxTE9rdU5HY2g5akFPYkwyZEZwSlNMYnJuVU82ZmpnaWVoNVhtdUdjbWlhaTBlbGZBZ0piYy1EVmlmZUJNSkUzcDNvYktVaGdyZGFjOHhBb2dmV0pEM2VJcjJwZml3SVljU2NKQWlPUFV5eHdEaUhDNFVzd2h2N0k5TmpNNEhvWDlQWld4MGhXTXBRa2Z3UUVqVnd2TnF4TVR6LU93TzAyN2Y2eG5BX1NsQzZleFdTem85b0doMEV2QnEzdWp0bFk2d3ZZNDhTOEtsSlJ2T19ORkhtNUJRcmxIV3ZRMk9XMEoyWHFyVjlCZFE?oc=5",
-        "publishedAt": "2026-05-13T14:50:31+05:30",
-        "publishedAtLabel": "13 May 2026, 02:50:31 PM IST"
+        "source": "Mint",
+        "title": "Tata Motors Q4 results 2026: Profit jumps nearly 70% to ₹2,406 crore; board recommends a final dividend of ₹4 - Mint",
+        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOUm5IeWpYcWhkOVFseTl4NVAxOGZvUUpVV3c2SGFCeW9VSTI1b25OVExEY1hOelpfV2JHQ0hfYVFDajVRb3lCV2lUeC1CQ2Z0a19ibEV0Q3JMWGxZWjJ3VFd0Nkdmb0lEdjFUeEhHb05TWWg4YkRuN05vOXA0bDBpdk5ZaFB6TGVLTVdZU09CT0xnTlgxdWdmd2lGSWt3OFVSN3Y1YzJJY3AtVV9Fa3JRcHBMTEMzbDZBY19aWm5WeldJb085VDQ1c3BuTXk1OUtucEVZOUNoVmpPdVlNYVJ6Vl9ocHZYSjhzdHlCZ1l3UTPSAfYBQVVfeXFMTUxaTnRUbXNZaGVLczZBOHhRODBhcFFEREIzOFBCSi00TlU2SmloMXBJNURkYTlpQThBbzQwNHNSbVVaWm1lNWpnYm1pOXhmaFJQVG8zZ0I2TlJPVTJWRUlXVzEtNjkxY2NTZFVqcUNEWWpfRFRpMGZ3N09Ya19IY01ja3lnZjl6WnU4SkJjNm1HczNwY1BlVkc3QVJ0Mk5tMmd1LTd6U2pOVi1lazdrcTVSSG1sRFNxVVAxSWxGV05rOFJBTXd5bUhoaGxVMV9zM2t5aGhUNFFIXzVZNFNqUXhnVGV2Z1cyY0tKNER3dW84emFjMTRR?oc=5",
+        "publishedAt": "2026-05-13T10:56:27.000Z",
+        "publishedAtLabel": "13 May 2026, 04:26:27 pm IST"
       },
       {
-        "source": "Livemint",
-        "title": "How will Bharat Maritime Insurance Pool help India tackle shipping risks?",
-        "link": "https://www.livemint.com/news/india/bharat-maritime-insurance-pool-india-global-trade-risks-shipping-security-11778658304127.html",
-        "publishedAt": "2026-05-13T14:42:08+05:30",
-        "publishedAtLabel": "13 May 2026, 02:42:08 PM IST"
+        "source": "Bloomberg.com",
+        "title": "Chinese Oil Supertanker Seen Attempting Strait of Hormuz Exit - Bloomberg.com",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQOXFwUmsxemhyUlZiZDhGT0w2YnV5RXEtcldGbjd4S0t2Q3lzZksyaDlxN2JpLXNpd19GR290QVczTGNGWXRxc1NnbkJkNHBpWXZHYkwwUXNmTW0tdGFvek5KZTZ0TXVzM1o0TTFJZHpfa0ZuWGJ6RVpuRmplXzBGc0ZYM1g0clFlYUZ0WV9LQXBxaUY3RERWU1RpTVJqNmtxaVQ2cm0tVXdjMW5pdFFRMmxR?oc=5",
+        "publishedAt": "2026-05-13T10:48:57.000Z",
+        "publishedAtLabel": "13 May 2026, 04:18:57 pm IST"
       },
       {
-        "source": "Livemint",
-        "title": "CBSE Class 12 Result 2026: How to check marksheet on DigiLocker and UMANG app",
-        "link": "https://www.livemint.com/news/india/cbse-class-12-result-2026-how-to-check-marksheet-on-digilocker-and-umang-app-11778662749448.html",
-        "publishedAt": "2026-05-13T14:38:20+05:30",
-        "publishedAtLabel": "13 May 2026, 02:38:20 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Transnet to Allow 11 Firms to Operate Trains on Its Rail Lines",
-        "link": "https://www.bloomberg.com/news/articles/2026-05-13/transnet-to-allow-11-firms-to-operate-trains-on-its-rail-lines",
-        "publishedAt": "2026-05-13T14:20:30+05:30",
-        "publishedAtLabel": "13 May 2026, 02:20:30 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "Italy Says Suspected Hantavirus Case Is Negative, Easing Worries",
-        "link": "https://www.livemint.com/news/italy-says-suspected-hantavirus-case-is-negative-easing-worries-11778661684459.html",
-        "publishedAt": "2026-05-13T14:11:24+05:30",
-        "publishedAtLabel": "13 May 2026, 02:11:24 PM IST"
+        "source": "financialexpress.com",
+        "title": "4 Stocks to Watch Amid Global AI Investments in India - financialexpress.com",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPcHNtVjZvOHpjRVlmZktTaFFTX3p1alhIMkNWcU1Xc0EybElEZ1E0Rk9BRlVyeEFXazJaV2JEZk9weTIyU1BxbDJoeTgtNUFGcjJHQVNBeWFMdXR0VzhMLUdqWG9JV2YwZGFlRUFSOGFRVHU3MnVmR1lEQmVtbFJXXzNjTkVEX3dadXpCSXRGVTk2N01IY1E4d3V5M3YyTy0wbFF0ZkdCbFRubUd2RGN4S0E1Z0ZmN3ZQ0gG_AUFVX3lxTE9mX2ZwQVY2U0FxYzFKaUVvcERBLV9ZdUZrYlZzSllRaktBVFlqZ3FhOFVTSHZNVVljODdKaEFzYVE4bnZDVmlUUzk5U0JxNWloVGhXcXZFLVlTcFg0RjZYSmJnQVQ5SGNaby1CMjFMQnUwdWllUkRXNW5fdHhtalN2UVZSMW14U0Foay1BR01TVW05VVV6V0dpNXQ5VHpGdU9VM0drZXJTdjNvdU12RTh4eXZGV2tJdWI5ZkZwZ0lJ?oc=5",
+        "publishedAt": "2026-05-13T10:47:31.000Z",
+        "publishedAtLabel": "13 May 2026, 04:17:31 pm IST"
       },
       {
         "source": "Business Standard",
-        "title": "Gold imports from Dubai may increase after import duty hike: GTRI",
-        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQaVBRSFNBaGQ0SHR5YkYwOFlLOGtXQkFMLTAxNTVTWWc4Ynh0WEc0RWo3YTRXUTM3Y1dpUW1ncldTTGtGWkgwN3dlMjJMNjZRNWNRRzRpZzJXMkhKZDQ2ZV9uMk9mc1hoU1JsbEFTNHJPWGJlejRGZW9kWVRwbkplN0ludVNta3d1c2xjRXNBWjRwYkxSeWRLSThVbTVNTkpYamdCMGFUUGFzWnhBX01SYTh5TEVpOUlrQ0otNDB1M3JSM1BVNzJld18xQdIB0AFBVV95cUxPaTRxbFZOR1d4WDFhYV84NjQ4ZlpwVzlJdW9PMTR1ZUR6VTZFV2dEbDE2TkZaUHROTVYtTG84WHJvLVhtNC1wbnB0d082S0NKS2VCajdlMnI1NVNoWFFDS0l4LUxSeGRQUDRCcUxPSW5xdUtoQkx3b1VoRm5WdUprOFgxenMtTlJNdUdoSlA5LXpIN3lEbzhRNzBpMVlJSG51a1Y0NGhyQUlqbXNZSEs1S1piRUs5WXlpQ0pfTmFyS2dDQXRKRlJIUTNJRTlObVVE?oc=5",
-        "publishedAt": "2026-05-13T14:05:14+05:30",
-        "publishedAtLabel": "13 May 2026, 02:05:14 PM IST"
+        "title": "JSl Inds ends higher after reporting turnaround Q4 performace - Business Standard",
+        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQUldyakpTVzh0ckhlU0N0YXBmRTlJakRieHA5LTF2bDFXTDU5a2NtVjhsWjM2ajNNRVEtZXlDSE9QZFdFRFRmNDhJLThoLUotNmFGT2ZhNm9POGtBX3UtUVMzUXJHbjBBRlN3R2h3bnRXeE5EekJiR3NaU3FqSmtSRWhFZ0l1V3JNZDA3ak1neWI1ZTNWUUZwaTlfb0xRWV9qVkt6a21IbnlQbXJLNnFlVGt0R1kzaERfM3hfV3paRVdsVnR5Sk51RzNxeS0yTjJ3M2x6TGQ1d1YycDDSAeABQVVfeXFMUC1xU0dVb2RDOE1qc3huaE1SVWVNOHlRTWFEQlU0cXd3bkYzblhsMkFYU0FCQ2NRQkY2TmhkbmlQRTI5SkZkVVN3SjY0WU5yNDFqQ1EySlpDNFUzMmxzUTFkcnIwTjJhbS02eWptUXV0bllfLXZmalJudHZJWENpLU9FWVpLTkpqSlpPeDNDbmU4X3VHM3RONFhDWVdad2RIQVEzN2FHQ1ZMUDRsVWFqR0Rpa1dObk0xSk5NUXo5bmpicXlPU0RJendmXzUteFV6THMyYnY2NkJhd0c0UVNQWW0?oc=5",
+        "publishedAt": "2026-05-13T10:46:12.000Z",
+        "publishedAtLabel": "13 May 2026, 04:16:12 pm IST"
       },
       {
         "source": "Business Standard",
-        "title": "Cipla Q4 profit declines 55% YoY",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNR2prdW1fM3AzdnNmLTZUQVlYOVc2YlJIN0VWOF9rRVJLLV9HV0NfSnlmeTE0R2xFd3dtSVNfYXROX2xpX1R4TDVDR2ZRMlZNMnM4a2R1alhFazJMSE9pclMwdF9JTEFsMnF2N0ZQbWhIRE8tVGJjUFgyM1NGcll1Ul9acTRROHFuX0xHemMtWkVqdTRJU1phZFlSdEJSWkk0M2Z0SVFkUGNXeVJfYmpKSnRUb9IBuAFBVV95cUxOT3NMS2tzNTdMai1paEt1eVdlalI0ajFjaU9keXZDam56cUhqcW5ndXhyQV93cldVU1V6aU5oMVk3RzBicHNSOXU2clh0QlBTdXN2SnJsWFN1cW9EZnhsd0xob05JQmpENThTQ3VmRjRnTFpsNFNNU1lGVXRwSUJmYU5MOFZKMExacTQtZ29kMEFKT3Y5bHBBU2xMVmVKSG9rRkZndGFmNThSMzhieDRuclVKRURSeHQt?oc=5",
-        "publishedAt": "2026-05-13T13:51:12+05:30",
-        "publishedAtLabel": "13 May 2026, 01:51:12 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Dr Reddys Laboratories Ltd drops for fifth straight session",
-        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPOWR3SjBTVVVuVmJPaDlmV3ZyWVRSNkZiYWhXRzBMbjJhbHlNZjJpb2t0TzdSbFpuQzVWSXlyZnNCbnVzNHh4ZVVTN3d0ZlVCdEZxUVdMZ2g3TjM3MWh6Z0RQTU4wcjFJX0FGYUlVTy0tNVY0S0pQNE1aMkJ1Y0xlVEJ3Tm82NFJsM0NiTzZzNGpyRVN6WlpPQ1dseEd6NFZ3b1NQWEVQMTlOVUFySkFqWkVfa2FUWDJTSjNNaDBTQThUcF9DR1ExYmVjVmxTNmVpZUtNemxkZXbSAd4BQVVfeXFMTUFLV1hlUmlCRmloM3VMN1pfd1BRVTAwV3Z2Q2xLNlpTLV90NnFvN2lQNDU3bGhUMUszaE9TRGhWQUJ4VXFDb1RVOGxMWkM2RGIta2REcmhjVl9OQ2ZtT1VpYWRfU01iZ093NmVYZVVtLWxGY2NxSTZmbkUySlFMTXllaXIzdXZaWTZqT3FuRGRHTWRudzZ6WlNVZG9EMHpIczhIRVd3N180S2dycmh0R0V5bC1VSVNKUmRnM1MwVlp0SEQ5aE9Rdmk2RUJ1WjMzWWZFZ0dFbGJIaFFmS2tn?oc=5",
-        "publishedAt": "2026-05-13T13:51:04+05:30",
-        "publishedAtLabel": "13 May 2026, 01:51:04 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Greece Weighs Further Early Repayment of Bailout Era Loans",
-        "link": "https://www.bloomberg.com/news/articles/2026-05-13/greece-weighs-further-early-repayment-of-bailout-era-loans",
-        "publishedAt": "2026-05-13T12:50:05+05:30",
-        "publishedAtLabel": "13 May 2026, 12:50:05 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "ECB\u2019s Rehn Says Data Show First Sign of Stagflationary Shock",
-        "link": "https://www.bloomberg.com/news/articles/2026-05-13/ecb-s-rehn-says-data-show-first-signs-of-stagflationary-shock",
-        "publishedAt": "2026-05-13T12:45:52+05:30",
-        "publishedAtLabel": "13 May 2026, 12:45:52 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Global Rice Production Set to Fall for First Time in Decade",
-        "link": "https://www.bloomberg.com/news/articles/2026-05-13/global-rice-production-is-set-to-fall-for-first-time-in-a-decade",
-        "publishedAt": "2026-05-13T11:08:52+05:30",
-        "publishedAtLabel": "13 May 2026, 11:08:52 AM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "French Jobless Rate Jumps Above 8% for First Time Since 2021",
-        "link": "https://www.bloomberg.com/news/articles/2026-05-13/french-unemployment-jumps-above-8-for-first-time-in-five-years",
-        "publishedAt": "2026-05-13T11:00:00+05:30",
-        "publishedAtLabel": "13 May 2026, 11:00:00 AM IST"
+        "title": "JSL Inds ends higher after reporting turnaround Q4 performance - Business Standard",
+        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNa2x1R0tadGRGNjFUdlZ6YzUtcEV5ZkRuOFBTSElxdU9SNzdONHlhRXRSXy1vdGxpM0E4SU9Tc3ljY2ktb3Y4Z1JXRGFoN1QtcXVEeS1iNklvUTFLbzRmX0wydjVLUFJKQTlnNHBpbElYYTdnWDkxMU5nUnpOUERrNE1ISC1sandodk5KXzJ6ZGYyZGRzZzM2cDU3UFR5SVlRU1NtYVFqaEp3VkJfdlM1QlZuNi1ybVVaTDhQWFhtUnhxY1BsWWdOdl9UZU9oQXhwdS1xQ1k5ZWtpOGZX0gHiAUFVX3lxTFB3bWk3dUFmc19mQlUxYVpUWXptTzJMSjVDX0VEU3MzT2VzWmZ6a29YQUg4cC1GTVJkZDllVXRqXy1ZN3EzLTZKZlVVdW42QlMwNndWZnRYbThGTWFfZ2FpOERtaENncFVVcWlhWGtwTUlpNkpXTXExMmxMNF9ZZFFGRmtpV2NZZ25RTTJMdDgxT0REVEVDMnZLWGZ0N1Jxa0REYlgwU2VwcV9qRkpUaC1CdTduSll6TnVzVWZ1LWQyczZTemlLUlFrVXhVY2VlTHBzVXRmSEcycjJfU3RJcl9USFE?oc=5",
+        "publishedAt": "2026-05-13T10:46:12.000Z",
+        "publishedAtLabel": "13 May 2026, 04:16:12 pm IST"
       }
     ],
     "sourcesAvailable": [
+      "NDTV Profit",
+      "Mint",
+      "Equitymaster",
+      "Bloomberg.com",
+      "India Today",
       "Business Standard",
-      "Livemint",
-      "Bloomberg Economics"
+      "financialexpress.com"
     ],
     "sourceErrors": []
   }
