@@ -10,7 +10,7 @@ concurrency:
 jobs:
   refresh-news-window:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 10
     permissions:
       contents: write
 
@@ -26,36 +26,18 @@ jobs:
         with:
           node-version: 20
 
-      - name: Refresh GitHub news rails every 3 minutes
+      - name: Refresh GitHub news rails once
         shell: bash
         run: |
           set -euo pipefail
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          started_at=$(date +%s)
-          duration_seconds=$((30 * 60))
+          node scripts/update-news-feed.mjs
 
-          while true; do
-            elapsed=$(( $(date +%s) - started_at ))
-            if (( elapsed >= duration_seconds )); then
-              break
-            fi
-
-            node scripts/update-news-feed.mjs
-
-            if ! git diff --quiet -- data/news-feed.json; then
-              git add data/news-feed.json
-              git commit -m "Refresh news rails"
-              git pull --rebase --autostash origin main
-              git push origin HEAD:main
-            fi
-
-            elapsed=$(( $(date +%s) - started_at ))
-            remaining=$(( duration_seconds - elapsed ))
-            if (( remaining <= 0 )); then
-              break
-            fi
-
-            sleep "$(( remaining < 180 ? remaining : 180 ))"
-          done
+          if ! git diff --quiet -- data/news-feed.json; then
+            git add data/news-feed.json
+            git commit -m "Refresh news rails"
+            git pull --rebase --autostash origin main
+            git push origin HEAD:main
+          fi
