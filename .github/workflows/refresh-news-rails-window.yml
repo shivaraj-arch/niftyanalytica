@@ -11,16 +11,28 @@ jobs:
   refresh-news-window:
     runs-on: ubuntu-latest
     timeout-minutes: 35
+    permissions:
+      contents: write
 
     steps:
-      - name: Refresh world markets and headlines every 3 minutes
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_CLASSIC_PAT != '' && secrets.GITHUB_CLASSIC_PAT || github.token }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Refresh GitHub news rails every 3 minutes
         shell: bash
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         run: |
           set -euo pipefail
 
-          news_endpoint="${SUPABASE_URL%/}/functions/v1/refresh-news-feed"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           started_at=$(date +%s)
           duration_seconds=$((30 * 60))
 
@@ -30,9 +42,14 @@ jobs:
               break
             fi
 
-            curl --fail --silent --show-error -X POST "$news_endpoint" \
-              -H "Content-Type: application/json" \
-              -d '{}'
+            node scripts/update-news-feed.mjs
+
+            if ! git diff --quiet -- data/news-feed.json; then
+              git add data/news-feed.json
+              git commit -m "Refresh news rails"
+              git pull --rebase --autostash origin main
+              git push origin HEAD:main
+            fi
 
             elapsed=$(( $(date +%s) - started_at ))
             remaining=$(( duration_seconds - elapsed ))

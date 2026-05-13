@@ -17,14 +17,10 @@ const LAST_LIVE_FETCH_MINUTE_IST = 16 * 60;
 const MARKET_CLOSE_MINUTE_IST = (16 * 60) + 1;
 const POST_MARKET_START_MINUTE_IST = MARKET_CLOSE_MINUTE_IST;
 const runtimeConfig = window.RUNTIME_CONFIG || {};
-const LIVE_SNAPSHOT_BUCKET = String(runtimeConfig.LIVE_SNAPSHOT_BUCKET || '').trim() || 'public-data';
-const LIVE_SNAPSHOT_PATH = String(runtimeConfig.LIVE_SNAPSHOT_PATH || '').trim() || 'live/live-snapshot.json';
 const SUPABASE_URL = String(runtimeConfig.SUPABASE_URL || '').trim().replace(/\/$/, '');
+const SUPABASE_PUBLISHABLE_KEY = String(runtimeConfig.SUPABASE_PUBLISHABLE_KEY || '').trim();
 const DATA_BASE_URL = String(runtimeConfig.DATA_BASE_URL || '').trim().replace(/\/$/, '');
 const NEWSLETTER_SUBSCRIBE_URL = String(runtimeConfig.NEWSLETTER_SUBSCRIBE_URL || '').trim() || (SUPABASE_URL ? `${SUPABASE_URL}/functions/v1/newsletter-subscribe` : '');
-const HEADLINE_REFRESH_URL = String(runtimeConfig.HEADLINE_REFRESH_URL || '').trim() || (SUPABASE_URL ? `${SUPABASE_URL}/functions/v1/refresh-news-feed` : '');
-const NSE_SNAPSHOT_URL = String(runtimeConfig.NSE_SNAPSHOT_URL || '').trim() || (SUPABASE_URL ? `${SUPABASE_URL}/functions/v1/nse-snapshot` : '');
-const LIVE_SNAPSHOT_URL = String(runtimeConfig.LIVE_SNAPSHOT_URL || '').trim() || (SUPABASE_URL ? `${SUPABASE_URL}/storage/v1/object/public/${LIVE_SNAPSHOT_BUCKET}/${LIVE_SNAPSHOT_PATH}` : '');
 
 const setText = (id, value) => {
   const element = document.getElementById(id);
@@ -124,6 +120,7 @@ const loadDataWithFallback = async (path, loader) => {
 
 const loadJsonData = async (path) => loadDataWithFallback(path, loadJson);
 const loadTextData = async (path) => loadDataWithFallback(path, loadText);
+const loadLocalJsonData = async (path) => loadJson(buildDataUrl(path, { bust: true, source: 'local' }), { cache: 'no-store' });
 
 const parseTimestampValue = (value) => {
   if (!value) {
@@ -216,41 +213,11 @@ const getMarketSessionLabel = (state) => {
 const isRealtimeRefreshWindow = (date = new Date()) => getMarketSessionState(date).canFetchLiveSnapshot;
 
 const fetchAiAnalysis = async () => loadJsonData('data/ai-analysis.json');
-const fetchLegacyNewsRailSnapshot = async () => loadJsonData('data/news-feed.json');
+const fetchLegacyNewsRailSnapshot = async () => loadLocalJsonData('data/news-feed.json');
 const fetchMarketActivityHistory = async () => loadTextData('data/market-activity-history.csv');
-const fetchRealtimeSnapshot = async () => {
-  const liveUrl = NSE_SNAPSHOT_URL
-    ? `${NSE_SNAPSHOT_URL}${NSE_SNAPSHOT_URL.includes('?') ? '&' : '?'}t=${Date.now()}`
-    : '';
-
-  if (!liveUrl) {
-    throw new Error('Realtime snapshot endpoint is not configured.');
-  }
-
-  return await loadJson(liveUrl, {
-    cache: 'no-store',
-  }, LIVE_SNAPSHOT_FETCH_TIMEOUT_MS);
-};
-
 const fetchLiveSnapshotCache = async ({ preferLive = false } = {}) => {
-  const liveUrl = LIVE_SNAPSHOT_URL
-    ? `${LIVE_SNAPSHOT_URL}${LIVE_SNAPSHOT_URL.includes('?') ? '&' : '?'}t=${Date.now()}`
-    : '';
-  const staticSnapshot = await loadJsonData('data/live-snapshot.json');
-
-  if (!liveUrl) {
-    return staticSnapshot;
-  }
-
-  try {
-    const liveSnapshot = await loadJson(liveUrl, {
-      cache: 'no-store',
-    }, LIVE_SNAPSHOT_FETCH_TIMEOUT_MS);
-    return pickFresherSnapshot(staticSnapshot, liveSnapshot);
-  } catch (error) {
-    console.warn('Stored live snapshot fetch failed, falling back to bundled cache.', error);
-    return staticSnapshot;
-  }
+  const staticSnapshot = await loadLocalJsonData('data/live-snapshot.json');
+  return staticSnapshot;
 };
 const fetchHolidaySnapshot = async () => loadJsonData('data/nse-holidays.json');
 
@@ -340,15 +307,18 @@ const cacheNewsRailSnapshot = (payload) => {
 };
 
 const resolveNewsRailSnapshot = async (snapshotPayload) => {
-  if (hasEmbeddedNewsRail(snapshotPayload)) {
-    const embeddedSnapshot = {
-      marketTape: snapshotPayload.marketTape || {},
-      newsFeed: snapshotPayload.newsFeed || {},
-    };
-    return embeddedSnapshot;
-  }
+  try {
+    return await fetchLegacyNewsRailSnapshot();
+  } catch (error) {
+    if (hasEmbeddedNewsRail(snapshotPayload)) {
+      return {
+        marketTape: snapshotPayload.marketTape || {},
+        newsFeed: snapshotPayload.newsFeed || {},
+      };
+    }
 
-  return await fetchLegacyNewsRailSnapshot();
+    throw error;
+  }
 };
 
 const renderNewsRailSnapshot = (payload) => {
@@ -386,16 +356,6 @@ const renderNewsRailSnapshot = (payload) => {
 };
 
 const getPrimarySnapshot = async ({ preferLive = false } = {}) => {
-  const marketSessionState = getMarketSessionState();
-
-  if (marketSessionState.canFetchLiveSnapshot) {
-    try {
-      return await fetchRealtimeSnapshot();
-    } catch (error) {
-      console.warn('Realtime snapshot fetch failed, falling back to cached snapshot.', error);
-    }
-  }
-
   return await fetchLiveSnapshotCache({ preferLive });
 };
 

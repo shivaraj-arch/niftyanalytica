@@ -11,40 +11,40 @@ jobs:
   refresh-live-window:
     runs-on: ubuntu-latest
     timeout-minutes: 185
+    permissions:
+      contents: write
 
     steps:
-      - name: Refresh live snapshot every minute with 3-minute news rail sync
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_CLASSIC_PAT != '' && secrets.GITHUB_CLASSIC_PAT || github.token }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Refresh GitHub live snapshot every minute
         shell: bash
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          LIVE_SNAPSHOT_REFRESH_SECRET: ${{ secrets.LIVE_SNAPSHOT_REFRESH_SECRET }}
         run: |
           set -euo pipefail
 
-          live_endpoint="${SUPABASE_URL%/}/functions/v1/refresh-live-snapshot"
-          news_endpoint="${SUPABASE_URL%/}/functions/v1/refresh-news-feed"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           started_at=$(date +%s)
           duration_seconds=$((180 * 60))
-          iteration=0
-          live_payload='{"refreshNewsBundle":false}'
 
-          trigger_live_refresh() {
-            if [[ -n "${LIVE_SNAPSHOT_REFRESH_SECRET:-}" ]]; then
-              curl --fail --silent --show-error -X POST "$live_endpoint" \
-                -H "Content-Type: application/json" \
-                -H "x-refresh-secret: $LIVE_SNAPSHOT_REFRESH_SECRET" \
-                -d "$live_payload"
-            else
-              curl --fail --silent --show-error -X POST "$live_endpoint" \
-                -H "Content-Type: application/json" \
-                -d "$live_payload"
+          commit_and_push() {
+            if git diff --quiet -- data/live-snapshot.json; then
+              return
             fi
-          }
 
-          trigger_news_refresh() {
-            curl --fail --silent --show-error -X POST "$news_endpoint" \
-              -H "Content-Type: application/json" \
-              -d '{}'
+            git add data/live-snapshot.json
+            git commit -m "Refresh live market data"
+            git pull --rebase --autostash origin main
+            git push origin HEAD:main
           }
 
           while true; do
@@ -53,13 +53,10 @@ jobs:
               break
             fi
 
-            trigger_live_refresh
+            REFRESH_NEWS_BUNDLE=false node scripts/update-live-snapshot.mjs
 
-            if (( iteration % 3 == 0 )); then
-              trigger_news_refresh
-            fi
+            commit_and_push
 
-            iteration=$((iteration + 1))
             elapsed=$(( $(date +%s) - started_at ))
             remaining=$(( duration_seconds - elapsed ))
             if (( remaining <= 0 )); then
