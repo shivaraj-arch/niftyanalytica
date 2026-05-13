@@ -1,0 +1,44 @@
+name: Refresh News Rails Window
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: refresh-news-rails-window
+  cancel-in-progress: false
+
+jobs:
+  refresh-news-window:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+
+    steps:
+      - name: Refresh world markets and headlines every 3 minutes
+        shell: bash
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        run: |
+          set -euo pipefail
+
+          news_endpoint="${SUPABASE_URL%/}/functions/v1/refresh-news-feed"
+          started_at=$(date +%s)
+          duration_seconds=$((30 * 60))
+
+          while true; do
+            elapsed=$(( $(date +%s) - started_at ))
+            if (( elapsed >= duration_seconds )); then
+              break
+            fi
+
+            curl --fail --silent --show-error -X POST "$news_endpoint" \
+              -H "Content-Type: application/json" \
+              -d '{}'
+
+            elapsed=$(( $(date +%s) - started_at ))
+            remaining=$(( duration_seconds - elapsed ))
+            if (( remaining <= 0 )); then
+              break
+            fi
+
+            sleep "$(( remaining < 180 ? remaining : 180 ))"
+          done

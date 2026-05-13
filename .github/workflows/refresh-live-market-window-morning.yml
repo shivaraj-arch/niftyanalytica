@@ -1,0 +1,70 @@
+name: Refresh Live Market Window 09-12
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: refresh-live-market-window-morning
+  cancel-in-progress: false
+
+jobs:
+  refresh-live-window:
+    runs-on: ubuntu-latest
+    timeout-minutes: 185
+
+    steps:
+      - name: Refresh live snapshot every minute with 3-minute news rail sync
+        shell: bash
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          LIVE_SNAPSHOT_REFRESH_SECRET: ${{ secrets.LIVE_SNAPSHOT_REFRESH_SECRET }}
+        run: |
+          set -euo pipefail
+
+          live_endpoint="${SUPABASE_URL%/}/functions/v1/refresh-live-snapshot"
+          news_endpoint="${SUPABASE_URL%/}/functions/v1/refresh-news-feed"
+          started_at=$(date +%s)
+          duration_seconds=$((180 * 60))
+          iteration=0
+          live_payload='{"refreshNewsBundle":false}'
+
+          trigger_live_refresh() {
+            if [[ -n "${LIVE_SNAPSHOT_REFRESH_SECRET:-}" ]]; then
+              curl --fail --silent --show-error -X POST "$live_endpoint" \
+                -H "Content-Type: application/json" \
+                -H "x-refresh-secret: $LIVE_SNAPSHOT_REFRESH_SECRET" \
+                -d "$live_payload"
+            else
+              curl --fail --silent --show-error -X POST "$live_endpoint" \
+                -H "Content-Type: application/json" \
+                -d "$live_payload"
+            fi
+          }
+
+          trigger_news_refresh() {
+            curl --fail --silent --show-error -X POST "$news_endpoint" \
+              -H "Content-Type: application/json" \
+              -d '{}'
+          }
+
+          while true; do
+            elapsed=$(( $(date +%s) - started_at ))
+            if (( elapsed >= duration_seconds )); then
+              break
+            fi
+
+            trigger_live_refresh
+
+            if (( iteration % 3 == 0 )); then
+              trigger_news_refresh
+            fi
+
+            iteration=$((iteration + 1))
+            elapsed=$(( $(date +%s) - started_at ))
+            remaining=$(( duration_seconds - elapsed ))
+            if (( remaining <= 0 )); then
+              break
+            fi
+
+            sleep "$(( remaining < 60 ? remaining : 60 ))"
+          done

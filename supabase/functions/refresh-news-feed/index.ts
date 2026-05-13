@@ -122,14 +122,6 @@ serve(async (request) => {
 
   try {
     const marketWindow = getMarketWindowState();
-    if (marketWindow.session === "pre-market" || marketWindow.session === "open") {
-      return jsonResponse({
-        ok: false,
-        error: "Headline refresh is only available after market hours.",
-        session: marketWindow.session,
-        at: marketWindow.at,
-      }, 409);
-    }
 
     const supabaseUrl = getEnv("SUPABASE_URL").replace(/\/$/, "");
     const serviceRoleKey = getEnv("SUPABASE_SERVICE_ROLE_KEY");

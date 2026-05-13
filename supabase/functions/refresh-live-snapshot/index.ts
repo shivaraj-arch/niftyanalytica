@@ -13,6 +13,11 @@ const DEFAULT_BUCKET = "public-data";
 const DEFAULT_OBJECT_PATH = "live/live-snapshot.json";
 const DEFAULT_CACHE_CONTROL = "60";
 
+type RefreshRequestBody = {
+  force?: boolean;
+  refreshNewsBundle?: boolean;
+};
+
 function jsonResponse(payload: unknown, status = 200) {
   return new Response(JSON.stringify(payload), {
     status,
@@ -139,11 +144,12 @@ serve(async (request) => {
     }
 
     const body = request.method === "POST"
-      ? await request.json().catch(() => ({})) as { force?: boolean }
+      ? await request.json().catch(() => ({})) as RefreshRequestBody
       : {};
 
     const marketWindow = getMarketWindowState();
     const forceRefresh = body.force === true;
+    const refreshNewsBundle = body.refreshNewsBundle !== false;
 
     const supabaseUrl = getEnv("SUPABASE_URL").replace(/\/$/, "");
     const serviceRoleKey = getEnv("SUPABASE_SERVICE_ROLE_KEY");
@@ -165,8 +171,14 @@ serve(async (request) => {
 
     const existingSnapshot = await loadExistingSnapshot(publicUrl);
     const snapshot = await fetchNseSnapshot();
-    const newsBundle = await buildNewsBundle(existingSnapshot ?? undefined);
+    const newsBundle = refreshNewsBundle || !existingSnapshot
+      ? await buildNewsBundle(existingSnapshot ?? undefined)
+      : {
+        newsFeed: existingSnapshot.newsFeed,
+        marketTape: existingSnapshot.marketTape,
+      };
     const snapshotPayload = {
+      ...existingSnapshot,
       ...snapshot,
       ...newsBundle,
     };

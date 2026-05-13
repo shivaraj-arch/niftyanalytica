@@ -6,6 +6,7 @@ type HolidayConfig = {
 };
 
 type DispatchRequestBody = {
+  target?: "app-publish" | "pages-live-morning" | "pages-live-afternoon" | "pages-news-window";
   newsletter?: boolean;
   telegram?: boolean;
   x?: boolean;
@@ -69,16 +70,76 @@ function resolveBoolean(value: boolean | undefined, fallback: boolean) {
   return typeof value === "boolean" ? value : fallback;
 }
 
+function getPagesRepo() {
+  return Deno.env.get("GITHUB_REPO_PAGES") ?? "niftyanalytica";
+}
+
+function getPagesRef() {
+  return Deno.env.get("GITHUB_WORKFLOW_REF_PAGES")
+    ?? Deno.env.get("GITHUB_WORKFLOW_REF")
+    ?? "main";
+}
+
+function buildDispatchRequest(body: DispatchRequestBody, newsletter: boolean) {
+  const target = body.target ?? "app-publish";
+  const defaultSocialEnabled = !newsletter;
+
+  if (target === "pages-live-morning") {
+    return {
+      target,
+      repo: getPagesRepo(),
+      workflowId: Deno.env.get("GITHUB_PAGES_LIVE_MORNING_WORKFLOW_ID") ?? "refresh-live-market-window-morning.yml",
+      ref: getPagesRef(),
+      inputs: undefined,
+    };
+  }
+
+  if (target === "pages-live-afternoon") {
+    return {
+      target,
+      repo: getPagesRepo(),
+      workflowId: Deno.env.get("GITHUB_PAGES_LIVE_AFTERNOON_WORKFLOW_ID") ?? "refresh-live-market-window-afternoon.yml",
+      ref: getPagesRef(),
+      inputs: undefined,
+    };
+  }
+
+  if (target === "pages-news-window") {
+    return {
+      target,
+      repo: getPagesRepo(),
+      workflowId: Deno.env.get("GITHUB_PAGES_NEWS_WINDOW_WORKFLOW_ID") ?? "refresh-news-rails-window.yml",
+      ref: getPagesRef(),
+      inputs: undefined,
+    };
+  }
+
+  return {
+    target,
+    repo: Deno.env.get("GITHUB_REPO_APP"),
+    workflowId: Deno.env.get("GITHUB_WORKFLOW_ID") ?? "publish-market-data.yml",
+    ref: Deno.env.get("GITHUB_WORKFLOW_REF") ?? "main",
+    inputs: {
+      telegram: resolveBoolean(body.telegram, defaultSocialEnabled) ? "true" : "false",
+      x: resolveBoolean(body.x, false) ? "true" : "false",
+      linkedin: resolveBoolean(body.linkedin, false) ? "true" : "false",
+      buffer: resolveBoolean(body.buffer, defaultSocialEnabled) ? "true" : "false",
+      whatsapp: resolveBoolean(body.whatsapp, false) ? "true" : "false",
+      dry_run: resolveBoolean(body.dry_run, false) ? "true" : "false",
+      generate_ai: resolveBoolean(body.generate_ai, true) ? "true" : "false",
+      newsletter: newsletter ? "true" : "false",
+    },
+  };
+}
+
 async function dispatchGithubWorkflow(triggerDate: string, triggerHour: number, body: DispatchRequestBody, newsletter: boolean) {
   const githubToken = Deno.env.get("GITHUB_TOKEN");
   const owner = Deno.env.get("GITHUB_OWNER");
-  const repo = Deno.env.get("GITHUB_REPO_APP");
-  const workflowId = Deno.env.get("GITHUB_WORKFLOW_ID") ?? "publish-market-data.yml";
-  const ref = Deno.env.get("GITHUB_WORKFLOW_REF") ?? "main";
-  const defaultSocialEnabled = !newsletter;
+  const dispatchRequest = buildDispatchRequest(body, newsletter);
+  const { target, repo, workflowId, ref, inputs } = dispatchRequest;
 
   if (!githubToken || !owner || !repo) {
-    throw new Error("Missing GITHUB_TOKEN, GITHUB_OWNER, or GITHUB_REPO_APP.");
+    throw new Error("Missing GITHUB_TOKEN, GITHUB_OWNER, or target repository configuration.");
   }
 
   const response = await fetch(
@@ -93,16 +154,7 @@ async function dispatchGithubWorkflow(triggerDate: string, triggerHour: number, 
       },
       body: JSON.stringify({
         ref,
-        inputs: {
-          telegram: resolveBoolean(body.telegram, defaultSocialEnabled) ? "true" : "false",
-          x: resolveBoolean(body.x, false) ? "true" : "false",
-          linkedin: resolveBoolean(body.linkedin, false) ? "true" : "false",
-          buffer: resolveBoolean(body.buffer, defaultSocialEnabled) ? "true" : "false",
-          whatsapp: resolveBoolean(body.whatsapp, false) ? "true" : "false",
-          dry_run: resolveBoolean(body.dry_run, false) ? "true" : "false",
-          generate_ai: resolveBoolean(body.generate_ai, true) ? "true" : "false",
-          newsletter: newsletter ? "true" : "false",
-        },
+        ...(inputs ? { inputs } : {}),
       }),
     },
   );
@@ -114,8 +166,10 @@ async function dispatchGithubWorkflow(triggerDate: string, triggerHour: number, 
 
   return {
     ok: true,
+    target,
     triggerDate,
     triggerHour,
+    repo,
     workflowId,
     ref,
     newsletter,
