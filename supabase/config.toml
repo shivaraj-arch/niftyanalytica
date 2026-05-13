@@ -8,3 +8,9 @@ verify_jwt = false
 
 [functions.refresh-news-feed]
 verify_jwt = false
+
+[functions.trigger-pages-refresh]
+verify_jwt = false
+
+[functions.trigger-market-publish]
+verify_jwt = false
