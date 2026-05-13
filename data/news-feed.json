@@ -1,299 +1,186 @@
 {
   "marketTape": {
-    "updatedAt": "2026-05-13T14:30:17.609Z",
+    "updatedAt": "2026-05-13T20:19:11.178169+05:30",
     "items": [
       {
-        "label": "DOW 30 (Open)",
-        "last": 49641.9,
-        "changePercent": -0.24,
-        "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-05-13T14:30:17.608Z"
+        "label": "S&P 500",
+        "last": 7404.6,
+        "changePercent": -0.006752103280171773,
+        "source": "Stooq",
+        "updatedAt": "2026-05-13 16:48:33"
       },
       {
-        "label": "S&P 500 (Open)",
-        "last": 7406.94,
-        "changePercent": 0.08,
-        "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
+        "label": "Dow Jones",
+        "last": 49528.1,
+        "changePercent": -0.2949193350323908,
+        "source": "Stooq",
+        "updatedAt": "2026-05-13 16:48:31"
       },
       {
-        "label": "NASDAQ COMPO (Open)",
-        "last": 26184.1,
-        "changePercent": 0.37,
-        "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
+        "label": "Nasdaq",
+        "last": 26199.344,
+        "changePercent": 0.23636479665818314,
+        "source": "Stooq",
+        "updatedAt": "2026-05-13 16:48:27"
       },
       {
-        "label": "FTSE 100 (Open)",
-        "last": 10305.8,
-        "changePercent": 0.39,
-        "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
+        "label": "Nikkei 225",
+        "last": 63272.11,
+        "changePercent": 1.3816088325801168,
+        "source": "Stooq",
+        "updatedAt": "2026-05-13 08:45:03"
       },
       {
-        "label": "DAX (Open)",
-        "last": 24104.9,
-        "changePercent": 0.63,
-        "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
+        "label": "Hang Seng",
+        "last": 26388.44,
+        "changePercent": 0.15382624276460197,
+        "source": "Stooq",
+        "updatedAt": "2026-05-13 10:08:38"
       },
       {
-        "label": "NIKKEI 225 (Close)",
-        "last": 63272.1,
-        "changePercent": 0.84,
-        "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
+        "label": "FTSE 100",
+        "last": 10309.2,
+        "changePercent": 0.43156776977857647,
+        "source": "Stooq",
+        "updatedAt": "2026-05-13 16:48:51"
       },
       {
-        "label": "SHANGHAI COM (Close)",
-        "last": 4242.57,
-        "changePercent": 0.67,
-        "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
+        "label": "DAX",
+        "last": 24119.21,
+        "changePercent": -0.10201359849966293,
+        "source": "Stooq",
+        "updatedAt": "2026-05-13 16:33:42"
       },
       {
-        "label": "DOW 30 FUTUR (Open)",
-        "last": 49652,
-        "changePercent": -0.44,
-        "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
+        "label": "Crude Oil",
+        "last": 103.01,
+        "changePercent": 0.8122920336660778,
+        "source": "Stooq",
+        "updatedAt": "2026-05-13 16:49:06"
       },
       {
-        "label": "S&P 500 FUTU (Open)",
-        "last": 7416,
-        "changePercent": -0.14,
-        "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
-      },
-      {
-        "label": "NASDAQ 100 F (Open)",
-        "last": 29155.8,
-        "changePercent": -0.05,
-        "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
-      },
-      {
-        "label": "FTSE 100 FUT (Open)",
-        "last": 10304,
-        "changePercent": 0.55,
-        "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
-      },
-      {
-        "label": "DAX FUTURES (Open)",
-        "last": 24165,
-        "changePercent": 0.61,
-        "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
-      },
-      {
-        "label": "US DOLLAR IN (Open)",
-        "last": 98.508,
-        "changePercent": 0.21,
-        "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
-      },
-      {
-        "label": "S&P 500 VIX (Open)",
-        "last": 18.01,
-        "changePercent": 0.11,
-        "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
-      },
-      {
-        "label": "GOLD (Open)",
-        "last": 4682.2,
-        "changePercent": -0.1,
-        "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
-      },
-      {
-        "label": "SILVER (Open)",
-        "last": 87.885,
-        "changePercent": 2.68,
-        "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
-      },
-      {
-        "label": "COPPER (Open)",
-        "last": 6.702,
-        "changePercent": 2.62,
-        "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
-      },
-      {
-        "label": "CRUDE OIL (Open)",
-        "last": 103.51,
-        "changePercent": 1.3,
-        "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
-      },
-      {
-        "label": "BRENT OIL (Open)",
-        "last": 107.98,
-        "changePercent": 0.19,
-        "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
-      },
-      {
-        "label": "NATURAL GAS (Open)",
-        "last": 2.886,
-        "changePercent": 1.51,
-        "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
-      },
-      {
-        "label": "EUR/USD (Open)",
-        "last": 1.1708,
-        "changePercent": -0.25,
-        "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
-      },
-      {
-        "label": "USD/JPY (Open)",
-        "last": 157.83,
-        "changePercent": 0.14,
-        "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
-      },
-      {
-        "label": "GBP/USD (Open)",
-        "last": 1.3511,
-        "changePercent": -0.18,
-        "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
-      },
-      {
-        "label": "USD/CHF (Open)",
-        "last": 0.7824,
-        "changePercent": 0.26,
-        "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
-      },
-      {
-        "label": "USD/CAD (Open)",
-        "last": 1.3698,
-        "changePercent": 0.04,
-        "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
-      },
-      {
-        "label": "AUD/USD (Open)",
-        "last": 0.7252,
-        "changePercent": 0.18,
-        "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
-      },
-      {
-        "label": "USD/CNY (Close)",
-        "last": 6.7908,
-        "changePercent": -0.02,
-        "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
-      },
-      {
-        "label": "USD/INR (Close)",
-        "last": 95.609,
-        "changePercent": -0.02,
-        "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-05-13T14:30:17.609Z"
+        "label": "Gold",
+        "last": 4681.7,
+        "changePercent": -0.6419847409246703,
+        "source": "Stooq",
+        "updatedAt": "2026-05-13 16:49:08"
       }
     ]
   },
   "newsFeed": {
-    "updatedAt": "2026-05-13T14:30:17.052Z",
-    "updatedAtLabel": "13 May 2026, 08:00:17 pm IST",
+    "updatedAt": "2026-05-13T20:19:11.178184+05:30",
+    "updatedAtLabel": "13 May 2026, 08:19:11 PM IST",
     "items": [
       {
-        "source": "Bloomberg.com",
-        "title": "Nebius Reports 684% Sales Jump On AI Data Center Growth - Bloomberg.com",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbUJRMDRlMWZXaV8ydmtBRXVoeldTQmJjRFN5SEVjOENqN0hDUWhtQldNbkVLQ0hYWE82RFJPeFJ5M3VId1l5UkJ1bzAyM1BzQ0twNmtYV3kwRGFvMW52Y3pBQjdkb2FIVFNfaWZhOFZxZFZSQVNKMWZnVjJGbUNuWFB6VVRyd3ZvUGtGQ0dtcG43Z1lvaGZSM0FOY1BDSm1waWxxOTFXc1E?oc=5",
-        "publishedAt": "2026-05-13T14:25:41.000Z",
-        "publishedAtLabel": "13 May 2026, 07:55:41 pm IST"
+        "source": "Livemint",
+        "title": "Passengers alert! IndiGo issues travel advisory amid rain, hailstorm in Delhi NCR: \u2018Flight operations are impacted\u2019",
+        "link": "https://www.livemint.com/news/india/passengers-alert-indigo-travel-advisory-rain-hailstorm-in-delhi-ncr-flight-status-operations-impacted-gurugram-news-11778683311091.html",
+        "publishedAt": "2026-05-13T20:17:20+05:30",
+        "publishedAtLabel": "13 May 2026, 08:17:20 PM IST"
       },
       {
-        "source": "Mint",
-        "title": "DLF Q4 Results: Net profit flat at ₹1,265 crore, revenue falls 42% YoY; ₹8 dividend announced - Mint",
-        "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOX1ZWS29SeUJHNzdMTW1adWtFano2ZW9Wd3QwSW1DZmZYa1RSLS0wQVY1RkdhRU82SHBBaDVkRVVrSkFoTkh4bnZrVC1oTHN3eGMtb2Q4LUJmN054d2p3a1Exel91MVA0dllnTW1hZ0JQd1ZWcXlUOTgwY1ljTERSTFEtaWw2WHIybmwtcVhfMkdYU1BBVWdjaGtMZ2xLRmx6N3U5ZUwzQ3FqQmoxTjE2d0k2anZyTWQ5UEVUMFFJdWpUWlBidVlkcE1QTmVXMjVKRTZmRjY3NUhGUWo3NDU4bGJVRFAxUnhBUG56Mnp6WmZxN1YyMUHSAfsBQVVfeXFMTjBaNzBVQ2VuaWozbk1iZ05mOVIzenFKSkJRM1g4aTN5ck5VTWl6b1N1V3F5NEpCSTczXzZlY3AtNEdoOW1SeVZSa3Rwdy1PWXpMbWNWS0lIdnVWMG96Y050dGh5S28xM1Nfc0toZTVIVmROeGZ4dEYzaWo0ejRPU244Snp4cVZLbl96RXB2eVhCQUJKWlI0Nzg2T0tfc0VUSENCYkV6MVZVTVhLUVBPOXo5X0ZrUHFCVHJyVmg3QkhfZGVuUUlUWElnTUdSeVp3dXBUcjBNa1VhTWtaVGRYUS1Vb3h5cnpKLXZGNHNpNElOclJFOXJHVElzUDQ?oc=5",
-        "publishedAt": "2026-05-13T14:11:24.000Z",
-        "publishedAtLabel": "13 May 2026, 07:41:24 pm IST"
+        "source": "Livemint",
+        "title": "NEET-UG 2026 paper leak case: Who are the five people arrested by the CBI?",
+        "link": "https://www.livemint.com/news/india/neetug-2026-paper-leak-case-who-are-the-five-people-arrested-by-the-cbi-11778678949444.html",
+        "publishedAt": "2026-05-13T20:15:01+05:30",
+        "publishedAtLabel": "13 May 2026, 08:15:01 PM IST"
       },
       {
-        "source": "Mint",
-        "title": "Wall Street slips after sharply higher inflation - Mint",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNSG1TbE5jNllESmp0VTh4bGlyYUFfRHRrRmUxZWN6bE1TNTlWZ2lPRFZRYmhNdkEyeWJYUDVMenNUNkJLR2tvQjBxQ0ZFWkpIQkRqa2luRzRRcmcwcnE4cGM4Ui1LRjVaMHM3QUxHa09YTV9aYzJQYmlyZUFMd29UcFc4WU5jbDRpZXRiRmlnaFNEQWI1b1Z4S05vYXE2eTBWN1NIUm5GNHpuMUtsaExhV1R0REQwclJHeGfSAb8BQVVfeXFMT0U4aWdPWVZFYXhzWVBjN2ZwbkV5UWtuZXliaVV6N1dJVzk3anlHcjlSYU9xZFo1RE12OWhtWldndzN0V3VjUFNNcFctdEUyczJ0dDEyWUQwN04ySkdfMy1FNTA2OUs2OTdZZmpvR05jUDcyRDYwRUxXMXo3Vm0zNVlpZEM1LURwR2J1MVlVQkJEbWx1d210OXF4aEwyeXFvOTBySm1YTnFpdnJZTzZQYU1ycmFRUWk2N2lHWkJjMUk?oc=5",
-        "publishedAt": "2026-05-13T14:05:49.000Z",
-        "publishedAtLabel": "13 May 2026, 07:35:49 pm IST"
+        "source": "Livemint",
+        "title": "Alexandria Ocasio-Cortez leads 2028 Democratic Presidential race, Marco Rubio dominates GOP contenders, new poll shows",
+        "link": "https://www.livemint.com/news/us-news/alexandria-ocasio-cortez-leads-2028-democratic-presidential-race-marco-rubio-dominates-gop-contenders-new-poll-shows-11778682157044.html",
+        "publishedAt": "2026-05-13T20:09:36+05:30",
+        "publishedAtLabel": "13 May 2026, 08:09:36 PM IST"
       },
       {
-        "source": "Bloomberg.com",
-        "title": "Trump on US Banknotes? A Social Media Post Spurs Speculation - Bloomberg.com",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPclpjYl9pbTZ2NHRYNnJ2SkNvWVRyQlFUbHBqSHlaYTVTMXRQQjUxQzhQVExZd1o4RThhQ0xzVlJDa1Zyck5TbE5IRWVUMjdtbnhralpacDF4Y25xdXE2Qk1RdFVSUnRxYXZkeEl2bGRjdjdGSWE5b1J6Q2J6MkVJRWlkN2xxYUE2R3Y3aVFTZjBRYklKSVZ3ZktrblZsWTc5Mm1udHItOGMwaFhfdTB1dEJBdw?oc=5",
-        "publishedAt": "2026-05-13T14:01:50.000Z",
-        "publishedAtLabel": "13 May 2026, 07:31:50 pm IST"
+        "source": "Livemint",
+        "title": "Govt weighs banning crop-protection chemicals paraquat and carbosulfan",
+        "link": "https://www.livemint.com/news/india/india-government-considers-nationwide-ban-crop-protection-chemicals-11778675462852.html",
+        "publishedAt": "2026-05-13T19:48:55+05:30",
+        "publishedAtLabel": "13 May 2026, 07:48:55 PM IST"
       },
       {
-        "source": "Business Standard",
-        "title": "Sebi rejects Bajaj Hindusthan's jurisdiction plea in fund diversion probe - Business Standard",
-        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNNWY4RHF4UUJHdHAzM0hSd3FrczJWWC1Cb2huOEJyTEloYzlscjU2U0dmU2l0VWF5UzZHQ0NnbmtydFJfRHVGaEV1LUNieFpsZUQxVTR1Z0xodENpWVZWbkd2QjlXNkJ0SWlGME9YVXYxR2JWeDRHa0hsSElNc2k4Sm9sWmdRRnE0dlhxcDlZcnBXVjlUWU15ZVpITlM4N1M3aVIxdG1USTlyTjlaQjN1LXIzVTFMSU5VczNwS2ExZmUyR2kxRnNGNEREUmVRWW1GeFFTS3hhWdIB3AFBVV95cUxOTDZsWGlodjBuaGpMMnh5akloNlJzYWNmbWNQVko4NVpNSGw0ZEJNMGU5MHhEZkRMODBCTG1pZDF3VG1HRW11eDBKUlU1NVpGaVlwbFB0cHdSdDMtWFFLbUU2WEE1dUpXdjhsZ0p1WXY5dWQ4RVE1bGRxdzJ5R2hvMTRueDNsS25lQVpUQ1lVOFdnZk1tbEdkWlBCSVFyTHZoRE1OeWtSYmVOQzlvOVFUWEJCX0R6ZWk1V19aeFc1MXI0N2hBY2xxajkxaWZWd0F4ejV5bE5TdVRzZFdP?oc=5",
-        "publishedAt": "2026-05-13T13:54:47.000Z",
-        "publishedAtLabel": "13 May 2026, 07:24:47 pm IST"
-      },
-      {
-        "source": "Bloomberg.com",
-        "title": "US 10-Year Treasury Yield Hits Highest Since July After PPI Data - Bloomberg.com",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPX1FCeHFVTXNZVG5ZNER1eFBiS1pyRWZWa2YyVjNYTTdFNHVueHhHYXFCSkUwYUdxbVJScEVaLWJ5anV6LTBDdHBncG9acHc2RFh1M19hNXozVGIxZUNBVDlja3BBMFJ0MjA0dXhIaDhxMHZHODBWMWxVeHdaYTNRQ3ZKX09GZ1A2MUc1bTVxYTBrZXViVkxIMTlBakljXzA1MU80VWoxeTlBMWUzLXYtVDhPX3dHdw?oc=5",
-        "publishedAt": "2026-05-13T13:47:50.000Z",
-        "publishedAtLabel": "13 May 2026, 07:17:50 pm IST"
+        "source": "Livemint",
+        "title": "Air India cuts June-August international flights by 37% as airspace curbs, fuel spike hurt",
+        "link": "https://www.livemint.com/news/air-india-cuts-international-flights-37-summer-atf-west-asia-war-airlines-11778673856209.html",
+        "publishedAt": "2026-05-13T19:47:20+05:30",
+        "publishedAtLabel": "13 May 2026, 07:47:20 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "Board of Kaynes Technology India appoints directors - Business Standard",
+        "title": "Board of Kaynes Technology India appoints directors",
         "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPVDljcDRrR19pVUZxQmtzMU1SbTRNZjdBMGJFaTlyWVp2Wm9qa243dm1yTkdxcmlvM1h1UzBLZTh4OXU1WnNBNmhQZ1pDbTFkSl9DcUI0NEhNWjJKV2FWRkZtcHdQNi1UX2hieXRQZ2MzaFcxZmxxQjZoQTFuR2hrdnBVWjk5UnZNTDAybUotcXIxTk9menNacXFiV1dJdjJmcjB4U2p2OWZEb2JrWE9TakswWTRRNHhXa0pPLVc4MFpqTkRSS0FBeVVZZUdoUdIB0wFBVV95cUxPR0xVYnRZQlhwdzI1TERHVEJOZXloVlhYSW9ZNjFVLXRQT2wta3ZHVTQzcGNEaGxkSU1ROC1KenlnVU5YcDJyNk1RWktFTDRNR1kwcmJOYjhTZ3BJcDQ0cThfZnR2Wno1SlNLNTNrZVJaZnRQS2lhZnl5ZHBRSnRJZng2Q2FkejRwYzJtVXNtNUZraDJwbi01dmZKcTZvVGxWei1XM09XanJMYW5jQVM4VmVZSllKYjloNGJYLWQ0MUFPNWozMGhzYlRQbTZLNTRrenA4?oc=5",
-        "publishedAt": "2026-05-13T13:34:08.000Z",
-        "publishedAtLabel": "13 May 2026, 07:04:08 pm IST"
+        "publishedAt": "2026-05-13T19:04:08+05:30",
+        "publishedAtLabel": "13 May 2026, 07:04:08 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Pakistan Growth Accelerates Even as Iran War Raises Risks",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-13/pakistan-growth-accelerates-even-as-iran-war-raises-risks",
+        "publishedAt": "2026-05-13T19:00:55+05:30",
+        "publishedAtLabel": "13 May 2026, 07:00:55 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "Interarch Building Solutions board approves collaboration with ER Steel, Canada - Business Standard",
+        "title": "Board of ZF Commercial Vehicle Control System India approves bonus issue and increase in authorised share capital",
+        "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPd3hhdFFuZ0MxTndhRVZKRFg5MlZlSmYtYjV1Umo2Z1VxUGtSOWdCbEl2VTVlallySkNKeUVjbXUxSGZwdXlPR2ZyRkdmaUo5QzhkODU0LXVBLXNmR1JFbzNYUEstSkRjaXh5bjFlNVNtcnhZZFVjM04wR0FraFVIMmkzb19lV2E2Z2lrd3d3aS1RbGozZlU3ZThZUEViRXYza2ZHd3NmbXg4TFdtRUJ0NzB2QS0wM2x2LWpPcU82SVpuNGtfVV94Ykk5SmZiTmJ0WTJxdVF6TkExVU8tZHQ5Tjg5RDJZaG9NVTYwV2ZnM1libFNOd204U210azlDQ1VIcG5RZVlCTVpfWlBILTA0S1l6YmRUTnhHdnRXQWNVM3rSAaYCQVVfeXFMUHF1Yjh4OTRUN3VvYjZhcGdUSmxBYXc3V3JBbmI3RkNYN0g4M0FPMkdqMU5XRGQtcjFtdVRpR2xsZ205N2lEbEczZjJFRnFxU1Q5RkZCR0ZoVEVLT2tkQ2xaTzlleFVtamVsV2NKWmVLczV4UWRIWnR4OHZrS2trMUt3U3M0eGUxSTZNQ1ZUbkpsc3Mwc01hdEtLcFJQNEI4V2pvdFExa1Zzc0lrTmVBT0QtTFJlRHF0U09qenA1MVE5RHZRR3puajZNTlgtUHhIOEJNLUVGanF6bVdWNHlNVzIyX1Z1R3FtNVNQc29Ha3VZZXBVMTJrNHdCZUFxSkNDaE8zWUN1eXNGeTY3RGk1TUg4Nm92bWR1cmRRZ3c2SWtZaGN4c0pn?oc=5",
+        "publishedAt": "2026-05-13T18:50:36+05:30",
+        "publishedAtLabel": "13 May 2026, 06:50:36 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Board of ZF Commercial Vehicle Control System India approves investment of Rs 30 cr in ZF MIPL",
+        "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQazVpalVxZkdSQzlzeUx1aDhxX05ibmY4QXIzeS1mcW91ZHJLWF9sQ3ZGRFFyQjNqZHFYZ0FfUVdXZ3dBMTZlOUJxQmVNTHVUNXliOHdQRmtHNXN4MFRxeEUwRi1aMmUwZlVTVjB1UDU0T004V0NMN09INW9hMmRZdUU5dlVpbGZHYjFtV2xNckppMUFJQV9aU2RucWpFc0k0NFBJWk15M1NNdVJ2bmV4QnRETGYxYzRRVHE0ZjNMeVptUWswX2FCN09NWWRNQ3ZGLTFIWXpzN19qZU1PNVhEUGM0XzJSMENaWGs2cUtTRF93WWNwVnU2T1M0T18xYzNha1lPaHRad9IBjAJBVV95cUxOaVF4VTdHeC1td003M1dNeGNNQnpsYlpETWxQNENIR2ZLbkt6UnFveTBUcUF4ZFl1b1B1R0pwZWVYbXNNc1E2LWo0SjVycFNZUFBRTTQ2R3VYc0R5Uno4WEZBNzU3VC1raE4xYkRib1NIbWtCV201TnAtczBIMGlYcWt1M1lNVzZYNl9Ra3lkcU1mSTY3QlJYVUM2ci1xdzVvSXJWaUh5OExLM1puelZIQ3duaVdLSHhEVkdMRDA5bm9mbHRWNEdJcmc3WWhtdE56bTB3YUNNYWhNLTdVamFxeWRQVFBfOGd1bUI3a1BFVm91OTVDSVBOZEVlazRNVnNsaUlsaFlMdDdmeWFz?oc=5",
+        "publishedAt": "2026-05-13T18:50:30+05:30",
+        "publishedAtLabel": "13 May 2026, 06:50:30 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Board of Oil India approves JV for execution of CBG projects",
+        "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQRERwT2owQUtadlplNDI0a1Z1eWVsRms4RUdXRHQ5MXg3WXNGekNudmowYUVJU0ROX2JvczJVcGJOdk9nMnpsYUJHU0ZfLW4tUmdPMVNyVG9rd3loNE1fVmdMLTl1djRmNDhkQmxJTmtxNUF0UWR5M2RCTDE5akF6UnpOSVRJT2YzQjZjQkRaNzdVY2VQaHp0QklNQ2hqZ2pkZENsYWJjZlFXa0plM0xVbXhONTYzZFdWX0ppS1FwSTVhVnlWczdFdDl2TThqTGxWLWhqamo5czQ0d9IB3wFBVV95cUxQbWZwMWlwdHNzMllBYWtLVTZBbGE1VzQ0bFh4ZExyQnozY1hWS3p3VjZSZ3JLM1BFeVZOUDBoMVZtYjdnUWhVYU0ySnJKQTJkYkZXTTV2UTVWekxISHNCd3JxQllNaWswQ2h2R1l1eWNwZ2dxTjlXaDF2X0FZdW9ZaEpNOWJpZlVrR2w4Xy1ablR1V0VKVEJGRkhtMnk4OUtyQkU1clhtRS1JcVp4TzZkSVNpeEdLcWtpd0RtcTBJZV9DTERrZll3ZExqQy1xeDlqVkt6N29XR0Noejgxd0Rz?oc=5",
+        "publishedAt": "2026-05-13T18:50:23+05:30",
+        "publishedAtLabel": "13 May 2026, 06:50:23 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Interarch Building Solutions board approves collaboration with ER Steel, Canada",
         "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPclgwb1I5VGRjMEtYSk1XbXdtdWpweE9OSzJCZ0JkeFJ0cmpUMm1JVVdyOGlfRmJGN2NtOTJ2QnVnTTBZSExhN1NSM2dFVjBidjRUYng4eDdXSlllSWF3OE8tS042WHd1Slo1Wi12TFRpWmNpb0FKUnpxMFpPT0phRUtKTGFNUFJLQm5PbnMxb0U5RlJBNldXM29nZ1JZU3JyOTdWS3ZWdG1XN2RRSV9oZzZwNlVjallubGdtcXIwR0c3T242V1N4ekQwSWNhSmJBQXBrX1pCd2t1TmVGa0VJTVRXamZXWGxRWjRzeHRoSlhWd9IB9wFBVV95cUxQSEJfZ2haYUJzQy11UmliZjFiWm9ycjNmVk5iN3V2Q01TbVkwcVRVMkw2NWlZQkpISEgzQzFtSXREQm44MjZQSkl0anZOX0R1Mnc3eVRvRktRQjJmaDM3YTN4SE9ORVRydGp0RjRDZ3pYT043Mllsc2R2Y25yR0lJXzU5aEZFcnljZl81WDQyakhYUG55ZE44aG5oMm13SzFldE9FcEpjMEVZbW1KMjFITEphbG9JM2dIcFZaS2VRU2MxMWZ1Nk5sUEl3UVVpVVV5eXVsNmpIUlN4Z0lHRnJYSnhNUEVmYndHWDFGSkxpQTJmMHpvXzE4?oc=5",
-        "publishedAt": "2026-05-13T13:20:17.000Z",
-        "publishedAtLabel": "13 May 2026, 06:50:17 pm IST"
+        "publishedAt": "2026-05-13T18:50:17+05:30",
+        "publishedAtLabel": "13 May 2026, 06:50:17 PM IST"
       },
       {
-        "source": "Bloomberg.com",
-        "title": "Starmer Rival Streeting Set to Resign and Challenge UK PM - Bloomberg.com",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQOWNySm5kQ2p3ZmdSSkZvQVpMZXExeTNoWVhEa3ZkN3lFWUtoVkItcU5ZU3dFTW8tNTR2dmNoOGVoVFpsZk94ekUySkJXYlVBd0RIWTRUR2lBS2JDM3RPd180RDd2b2diWEE1TUd5U0lseXRvb284SUx5Wm56elRjYUR3aXRhT0d1VG5oQi16UGpGTDEtUUMxcVJoVjZUNXlRTm9rcmV6V19zUmtLajJuMlZBemtTdw?oc=5",
-        "publishedAt": "2026-05-13T13:19:42.000Z",
-        "publishedAtLabel": "13 May 2026, 06:49:42 pm IST"
+        "source": "Bloomberg Economics",
+        "title": "Fitch Cuts Bangladesh Outlook to \u2018Negative\u2019 as Iran War Weighs",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-13/fitch-cuts-bangladesh-outlook-to-negative-as-iran-war-weighs",
+        "publishedAt": "2026-05-13T18:47:56+05:30",
+        "publishedAtLabel": "13 May 2026, 06:47:56 PM IST"
       },
       {
-        "source": "Mint",
-        "title": "Sebi proposes overhaul of municipal bond rules to deepen urban infrastructure financing market - Mint",
-        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQX3dlbENHajJCdkdxRnd6aG8tSzd3NkdjbTBpX0NDQWFnVnlrQld0MjJGSjBNQ0FGMWhQV0xDaExldzVKLTU3LWJvT252cVZmSjB5bndKTlEtT09EemR1TThsMjBpMDhCZlVtMU14eGNpbS1lQ1o5aVl3OExsLVJ1TEJSQnJacFJYdVVfQkZzdUVWMV9TVUxIYm1DR2jSAaIBQVVfeXFMTklaOXZjblB0aTFBZHdLeXVEeFhwbzlkWGgzUlZKb1VpLU5LOTh0QWU2QzBULUFBQnpVWGJvTFdCVHlxaV9TR1FIakcwTDJxUXQwMjVDbnpRSWFkbXpiQzJxNHFmbC15SXZrZ095Q2lWMkQ2RndjZFFDOWRlZWlHX2RJX2hnenNjclQ1MVVoSWoxVE5Db241aV8yd1RqdTVmWVNn?oc=5",
-        "publishedAt": "2026-05-13T13:06:34.000Z",
-        "publishedAtLabel": "13 May 2026, 06:36:34 pm IST"
+        "source": "Bloomberg Economics",
+        "title": "Iran War Tests Turkish Central Bank\u2019s Ambitious Inflation Target",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-13/iran-war-tests-turkish-central-bank-s-ambitious-inflation-target",
+        "publishedAt": "2026-05-13T18:09:01+05:30",
+        "publishedAtLabel": "13 May 2026, 06:09:01 PM IST"
       },
       {
-        "source": "Business Standard",
-        "title": "Max Estates launches new residential project 'The Terraces' at Gurugram - Business Standard",
-        "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOeUxVNjJZaFpKNzNUYnd3LUdiY1BGTTNOeEF2YzI3cV8wYjBMUVcya2JLODZFcHJkUWhJSkRCaVNEZHpMNjR5QkU4RUJlQkR6cnIzTm9CRkhCQUhsYjBuaEpvY1pKYm05cW5lUFJFY3dyMFVrcERsREdTa0dGTjNXaEdMdGo2TVdKOXVOZUdvdTNzbTNmZUtucnotNk1HUVZwLWFRMGtTck5pX1lnS0g5U2ZfTC1pX192U2FiM1NIS21HODFTZjJZM0RkVmpfRWlIbk9GbUhidEpxQnFwVkZzYkJtMExNQdIB6wFBVV95cUxNbnJLRzQ1XzJiNGhXZjdhX19aVXk3NmtaMjFJVnNOdjVQZ1BGbnRubWI0b3ZmR0l6OUtXWnQyYXVlY0FVVG0xZ2FqYTViTHZPMDRtamY4aXg5bTBFNVEwelNVejVuUDgxV3M5Q2VELVpJZDdGdGE0VGhPUUM0dEhOOXpSWXJTSGtWeEtqbTM1TzFTczhfX1VWQzdJcXRlWFl2TU5ITWNJOWh5UW9JVTJ2VXdibTNaT0NXMDQzallGcDhVMVVLWlIxUXRLenZVbWJCNDlteDhtVVNnR1ByQzMwdHc1Zjh3RExBaEow?oc=5",
-        "publishedAt": "2026-05-13T13:01:26.000Z",
-        "publishedAtLabel": "13 May 2026, 06:31:26 pm IST"
+        "source": "Bloomberg Economics",
+        "title": "US Producer Prices Rise Most Since 2022 on Energy Costs",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-13/us-producer-prices-rise-most-since-2022-on-higher-energy-costs",
+        "publishedAt": "2026-05-13T18:03:49+05:30",
+        "publishedAtLabel": "13 May 2026, 06:03:49 PM IST"
       },
       {
-        "source": "The Times of India",
-        "title": "Stock market today (May 13, 2026): Which are the top gainers and losers in BSE Sensex and Nifty50? Check - The Times of India",
-        "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPNDBPMUhNdnh3S2xVOHo0VFZUbWNwZVhRUk9NVXUtbEZuWHdVUGR3aU9xVjRuaDJmRGFvZjR1SEFHdmZNVXJ5Smo2MGtLQXdYd1JKZFd1TF9ZaGkxRksyVDJuUGhOQVFjdk1mc09YUVFDaDFyamNuTzBia3J1bHlmMFFSMXIwemdhdTlUQlRJWlV3SVRrVEU0WWNWdW1RWDdrWGVpLTU2dU50WWJwcnhuY1hpMzJzaG94TVMxRi0wRldjVFFub2tMcjRvRWNrZFpfcHgtMnkxdzhzc3YwcHlKLUN3NkxsWmdXQVFpb1RsTXhyTVBfS2Q0THdEYVJkdzZMMUl6cmVBc0J6RVYxWGtneHFsUUk4YjRGZFHSAZ8CQVVfeXFMTmZINWY1LTQyd05FQ0tlNkRtOVVwQUxvRncwek00aklmN2xrZkpySmZwRjRoLXExTDN1bFNhSnJWaXpudkZEaFJ3RVUwOU9rZ3k2dEpyZnBTNXFVZjBkWjFXVkc1a0Q4Y2RRV0JuVEJqNTBDdUVzQUU4eE5iaHlhUWpVN3dneUlLWVR1MVRCc0w5Q01kRHNVNmcxcWRBRHpnVVdQdmJXYUJGQjNfU2ViRzIwVnBtejFfME9JeGdFS0lIVXZDc0c5YWRQNmhwdHRDOUZrelU2THJQblltVTdGbll4WFV1WWp5bkk1M0pZdmFBSzZhcWdMZ29fTVJKZGprNWw3VGZtTzRjNko1Yi1PVTYwQXR3Q0NIblAteENCTzQ?oc=5",
-        "publishedAt": "2026-05-13T12:47:00.000Z",
-        "publishedAtLabel": "13 May 2026, 06:17:00 pm IST"
+        "source": "Bloomberg Economics",
+        "title": "Czechs Say Monetary Policy Still Tight After Jump in Inflation",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-13/czechs-say-monetary-policy-still-tight-after-jump-in-inflation",
+        "publishedAt": "2026-05-13T17:50:37+05:30",
+        "publishedAtLabel": "13 May 2026, 05:50:37 PM IST"
       }
     ],
     "sourcesAvailable": [
-      "Bloomberg.com",
-      "Mint",
       "Business Standard",
-      "The Times of India"
+      "Livemint",
+      "Bloomberg Economics"
     ],
     "sourceErrors": []
   }
