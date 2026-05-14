@@ -1,27 +1,27 @@
 {
   "marketTape": {
-    "updatedAt": "2026-05-14T17:43:55.548297+05:30",
+    "updatedAt": "2026-05-14T19:12:42.985329+05:30",
     "items": [
       {
         "label": "S&P 500",
-        "last": 7444.3,
-        "changePercent": 0.4750914416055906,
+        "last": 7477.8,
+        "changePercent": 0.31390856406955014,
         "source": "Stooq",
-        "updatedAt": "2026-05-13 23:00:00"
+        "updatedAt": "2026-05-14 15:42:13"
       },
       {
         "label": "Dow Jones",
-        "last": 49693.2,
-        "changePercent": 0.03744368349216409,
+        "last": 50013.8,
+        "changePercent": -0.08410596952606694,
         "source": "Stooq",
-        "updatedAt": "2026-05-13 23:00:00"
+        "updatedAt": "2026-05-14 15:41:54"
       },
       {
         "label": "Nasdaq",
-        "last": 26402.34,
-        "changePercent": 0.9740454687132446,
+        "last": 26505.805,
+        "changePercent": 0.3040097415111131,
         "source": "Stooq",
-        "updatedAt": "2026-05-13 23:00:00"
+        "updatedAt": "2026-05-14 15:41:58"
       },
       {
         "label": "Nikkei 225",
@@ -39,107 +39,128 @@
       },
       {
         "label": "FTSE 100",
-        "last": 10368.2,
-        "changePercent": 0.4164568240808894,
+        "last": 10343.5,
+        "changePercent": 0.17723627629488312,
         "source": "Stooq",
-        "updatedAt": "2026-05-14 14:13:33"
+        "updatedAt": "2026-05-14 15:42:04"
       },
       {
         "label": "DAX",
-        "last": 24489.59,
-        "changePercent": 0.4615813139150868,
+        "last": 24410.55,
+        "changePercent": 0.13734218263310383,
         "source": "Stooq",
-        "updatedAt": "2026-05-14 13:58:34"
+        "updatedAt": "2026-05-14 15:27:06"
       },
       {
         "label": "Crude Oil",
-        "last": 99.85,
-        "changePercent": -1.285219970341089,
+        "last": 100.96,
+        "changePercent": -0.18783984181909236,
         "source": "Stooq",
-        "updatedAt": "2026-05-14 14:13:52"
+        "updatedAt": "2026-05-14 15:42:38"
       },
       {
         "label": "Gold",
-        "last": 4701.9,
-        "changePercent": 0.21334686022049343,
+        "last": 4668.82,
+        "changePercent": -0.49169950702170373,
         "source": "Stooq",
-        "updatedAt": "2026-05-14 14:13:52"
+        "updatedAt": "2026-05-14 15:42:40"
       }
     ]
   },
   "newsFeed": {
-    "updatedAt": "2026-05-14T17:43:55.548316+05:30",
-    "updatedAtLabel": "14 May 2026, 05:43:55 PM IST",
+    "updatedAt": "2026-05-14T19:12:42.985346+05:30",
+    "updatedAtLabel": "14 May 2026, 07:12:42 PM IST",
     "items": [
+      {
+        "source": "Livemint",
+        "title": "Roche launches India's first 7-minute under-the-skin lung cancer injection",
+        "link": "https://www.livemint.com/news/roche-lung-cancer-immunotherapy-injection-pharma-healthcare-11778757287072.html",
+        "publishedAt": "2026-05-14T19:09:07+05:30",
+        "publishedAtLabel": "14 May 2026, 07:09:07 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Russian Oil Price at Highest Since 2023 Boosts Kremlin Windfall",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-14/russian-oil-price-at-highest-since-2023-boosts-kremlin-windfall",
+        "publishedAt": "2026-05-14T18:58:50+05:30",
+        "publishedAtLabel": "14 May 2026, 06:58:50 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Quote of the day: Greek philosopher Aristotle on human connection- \u2018Man is by nature\u2026\u2019",
+        "link": "https://www.livemint.com/news/us-news/quote-of-the-day-greek-philosopher-aristotle-on-human-connection-man-is-by-nature-11778764110743.html",
+        "publishedAt": "2026-05-14T18:47:40+05:30",
+        "publishedAtLabel": "14 May 2026, 06:47:40 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Emmanuel Macron's \u2018flirty\u2019 text to actress Golshifteh Farahani allegedly irked wife Brigitte: What did he write?",
+        "link": "https://www.livemint.com/news/world/emmanuel-macrons-flirty-text-to-actress-golshifteh-farahani-allegedly-irked-wife-brigitte-what-did-he-write-11778763317219.html",
+        "publishedAt": "2026-05-14T18:38:05+05:30",
+        "publishedAtLabel": "14 May 2026, 06:38:05 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Soaring Household Defaults Rock Argentina\u2019s Banks and Fintechs",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-14/household-defaults-rock-argentina-s-banks-and-fintechs-in-blow-to-milei",
+        "publishedAt": "2026-05-14T18:30:00+05:30",
+        "publishedAtLabel": "14 May 2026, 06:30:00 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Shree Ganesh Remedies consolidated net profit declines 4.86% in the March 2026 quarter",
+        "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOWmtla1FaZ0J1eXVwSmhvbnp2dHZTYWVmQV8wQ01yRXNYX1kydTBxbWE1eVVNTzhfQVJMQ1JkOGtNZ3hxTkNuWlVOdEpCLWtrcmNLYnBXSThFSjljQzZYNURUc0dpNm1nQXA2ZlRTYXhVeVVaTmdzTHlVNllNcEtVMkpXQVZuVXdIYU10Rm5xX2p3U3h2OU1PZW9xRE9YeVBsU2JmUHQ1Q21RVjhoYTlDZS1oRzFsQ2piLW5iS1ZKQy1rWnpoVFI1NEY3OGp0eVBKOWRqRE5OUXJWN0VMSzBjbzJERW51Tmh4US1jaDVvc3JxOUQ1U3I1enE0c9IBgAJBVV95cUxPeXBNYnBHRnFMUjkzQjFhT1BCVWxLTGhIZFMzcV9WajQ2MUtfZzBqeERJUTZYc2V2dVg4NUtmQ2RCOE1sWkpPR3F0dkdoVGtFbmgxaG9hZC1lTl9tVzdpX2FVZGtjSDRCbnNmVVN5Z3JRRWwzbzMxNkRVS1dhSi1QOV80Vm1EU0UtYWQ1NVEyRnlxMDJVVWt2X1FxR1ZBQ0pWSWM4cGNjOTVaY18zOHhiOV9tYVFvSWppNXFONGtIVHdScTZJTHoxUVRSTmVsbi1VQk94SEJCWExTajlOQTNlM2Z5NEplNERuVkpINFVqOEVKYnB1WGs2Rk1kcGxBajYz?oc=5",
+        "publishedAt": "2026-05-14T18:19:23+05:30",
+        "publishedAtLabel": "14 May 2026, 06:19:23 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Apollo Tyres consolidated net profit rises 241.77% in the March 2026 quarter",
+        "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNUnN6U1ViVEc3TDJaVEJ6MDZ1UE1rd003TUtIdy03WXBET0xhSGtTTDZRVC05bHRTZEU4c0ticVlxbkU3T3d0VlJMNkw4STZiejI4T19pUjVVQ3o4UmdQNFNqYXItcEVIamZpXzVYcHBsZ1M2TndNenpLc2VPU3RYVkxVa2w5X1FuN3hxS2xlbklmUzhxdjNiRk9xcWxYSDJnYmthZGMzOGNEa2Frcy1sRktSY0tBUUxoUFU1MlZVZ1ROMFBxaUxncm1HYU1yQTBBMGVlbmlWV1BHa2d2SldWX2JwUXhVY044TDhNTVV30gHzAUFVX3lxTFA4V2xaNmRNQkd6U0NZZGRNSncycXJkd1Z5Y2Ezc0RSTEJ1TXJfLUlhdEVFaGtRajR2RHlBQm5sZHlhZlp5M3NEMlNjYVRlQkxXMWN2cU5fRHN5V05kMV9yRnNIbThtOW9jTndBY29SUVQ1YUtqNC1hLWxpcUQwd3IzN0tTTmpYUGROMTBJRTIwdWhpOEVYQklFRUdldFVkdEs5ckJUQ2x5YWozR3dSTGZ0UjJuUzhScHg0eEFEb2VXcnY2aG5obUdNQnFJZkl6dXpDbjVhcGdneTlPeWptaE9UM1poN0tJc1ZuemtVQ1VuWU90UQ?oc=5",
+        "publishedAt": "2026-05-14T18:19:23+05:30",
+        "publishedAtLabel": "14 May 2026, 06:19:23 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "VD Satheesan to be Kerala CM: 3 reasons why Congress chose him for top post",
+        "link": "https://www.livemint.com/news/india/vd-satheesan-kerala-cm-three-reasons-why-congress-chose-him-for-top-post-kc-venugopal-ramesh-chennithala-11778762240585.html",
+        "publishedAt": "2026-05-14T18:14:55+05:30",
+        "publishedAtLabel": "14 May 2026, 06:14:55 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "US Retail Sales Rise for Third Month Despite Gas Price Surge",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-14/us-retail-sales-moderated-in-april-as-gas-surge-crimped-budgets",
+        "publishedAt": "2026-05-14T18:04:13+05:30",
+        "publishedAtLabel": "14 May 2026, 06:04:13 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Omega Ag Seeds (Punjab) standalone net profit declines 44.83% in the March 2026 quarter",
+        "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNaDNoUm1xU3E1andLR1MybEJKd3luRU5RRy1hY2VHd0c5UG9nT3BNT1pTc1RjVlMxQVVKUGtBR2d5Q3Rmb3Jqckd1U1BsV3FHbVZSSVVGakhHQmN3al9ZME9BWGZERHVsZmZZb3Zsek81aVZhS3FKSUdRT3BZeUN6eG9OVDhVTFBfUGpic2JUd2ExRDZxR2Zab2xaZ09vRWhZSS13Zi1Hei01UDd4LXpLSFVySTVVMkl1cHdsRy01cklsT0dKN0ZyVVN2UmJETFQtdXUxSlJRRUVHbk0tbk0zUjF0LWJLdjBSZjQwSXhTR0xWUnJScFdjalJB0gH_AUFVX3lxTE5yOUxHaFhQdVlZZmJEbHVZUTFLdTB1NFhZMkptQm1KOEZ3bUlOeHU2aUpUcEc0TnRqZmVJdFpvcVdCdnNWMGdQSjRqLUV5T1dTZmxzRFQ3OENEX0Q5Z2o2bFlIcnByNVpILVpWdnVscFdZQl9ZRkJwUHN1bDBUMTRyNlZ5YXBrNEFwVERVUjY4aXgzZjJJYTBxakFnNElsV25rakJNMmx6SWFmcy03Tmc0M0tHdnp0ajhVNWc0WE1Ccmt2Zm92UDQxZEdrSlNiV3FkS2xvc2ZmVS1tczZBdks5M0JRNXV2aS1PYkJlR0N5enBzQlRnREFYaGVNVElINA?oc=5",
+        "publishedAt": "2026-05-14T17:59:14+05:30",
+        "publishedAtLabel": "14 May 2026, 05:59:14 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Dilip Buildcon consolidated net profit declines 63.68% in the March 2026 quarter",
+        "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPc0MtRkFRaW1YY3lIRFdGdUZxZGJfX1FlTFZVME1zbng0V201aGltNXB3aEVOa0FMYU9nbTZKZG5TaVo1c1RkOE1sNnh6LTU3d1AwN25lbGdiYjFRMEg4RlprWVQyZ1lBanA5WnFSVHNWamFiUWN4QWxfRmM1Rk85dEVmOHFyYUFzZHo0U29DcGlSRm9EREh0czNOZkZfTzNWYnA3WUdza3ptX0hHV1ZOZ0lhWXFuRDlPTjN6eUJBaFRoQWl3TGk2bkVwanVkTUpkajBsWmp4ZkQtQWpCOWdQNHlQb1dBdUpQQkhLQTlUYkpqZzTSAfgBQVVfeXFMTm5VU29CYlg4MjlJZHJaS3RUVzBNbXdLM09VbjFoZVRDOTdmMWdnUmNBNUVUSUFUeEFEZnZscEl1QTBqUnhnQ3JjUWlOdGlJekJHc20zV2RBTjFtdHVNXzZ2amd6LU5uWGFOczRqUWV5b0hUaFNuMVBkVHFNR1BlV1M1SnVhRmg2NjVHNm1MNDJES0k3MHFlRVRpTzREMXJFbFRqNlRSbzliUlJVXzl2UUR1NkxSRFotd0tWMHMzVFNMbF8zbzVHSFFEVVZIa0YwZ2FJUndfSDFGdkJ6aVVZcW1QUldGZWx4dXl5d3JkQjNWdnpTWTVUa2I?oc=5",
+        "publishedAt": "2026-05-14T17:51:12+05:30",
+        "publishedAtLabel": "14 May 2026, 05:51:12 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "L T Foods consolidated net profit declines 15.48% in the March 2026 quarter",
+        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQdGl1cDNNMVNtSjZOSGdob2E0WklPOXVQakJFM2QzVlRQaTlJZXRLWllldXZXZzJPT2treVlxMDAzLWNFd0dlVXoxN25rend2bTZfbTRBMDZnLWR0TUxoWDJySWg3UDh0eDBHWlZQNmMwOC01MkxFczBZSEZ3UXdlQWhRWWNQOWVJc2RQLTg4cFlvUnVVV3JXekpCdklOZ25xSC1GbXFOb2ZJTm9HM0NnNTdjNWVDU3lBbW0xZXc5Rnd0czFLUmx1SnI5YURkN0dMdmJkNGYzdHEtVXJYbnMtUG5BUXZUTWhlQ0hjSdIB8gFBVV95cUxObXllNWsyanVYUmxqX1Bmck1rNjBFaGw5LUtZeXdwUkhvV19kME5oU3pYVU5xb3NfWUhENERmMzMyTlBMSzlkd2RQdUNGVlIzUWpPc1lDUnVMa1ZvTU5ZTENVak00X3l2SW41aTdQbjdUNnJPMmo1V3lMTW85RUctcXUxSUxHdFUyTFNWLVJFZ21PeDh5a3dJSno2eVpzSEJ2dlg5TXU5aGtXbV8yam9CMmxyRDVKUmxVdzBvdGU2cjhGcER5TDJMSmhONWFzdjBQYWpZZURfUFU5Y0QwQUdQbElkajFINklHVVMzb0pGVFNadw?oc=5",
+        "publishedAt": "2026-05-14T17:51:04+05:30",
+        "publishedAtLabel": "14 May 2026, 05:51:04 PM IST"
+      },
       {
         "source": "Livemint",
         "title": "BCI seeks report from WB Bar Council on Mamata Banerjee\u2019s law practice status after HC appearance in lawyer\u2019s gown",
         "link": "https://www.livemint.com/news/india/bci-seeks-report-from-wb-bar-council-on-mamata-banerjee-s-law-practice-status-after-hc-appearance-in-lawyer-s-gown-11778757765902.html",
         "publishedAt": "2026-05-14T17:40:20+05:30",
         "publishedAtLabel": "14 May 2026, 05:40:20 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "PBKS vs MI prediction: Who\u2019ll win, Punjab Kings or Mumbai Indians? We asked ChatGPT",
-        "link": "https://www.livemint.com/news/trends/pbks-vs-mi-prediction-who-ll-win-punjab-kings-or-mumbai-indians-we-asked-chatgpt-11778759825169.html",
-        "publishedAt": "2026-05-14T17:32:36+05:30",
-        "publishedAtLabel": "14 May 2026, 05:32:36 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Nifty ends above 23,650 as global cues, U.S.-China optimism lift markets",
-        "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPbzBWSHJYQTdDMXVIUjM1R1FwUEphYUhvUktldnNRSVBzYzhWaTNiWmVTaVFkUHhNT0VaVUxoZmQ2c2JLLXVCNjlRTjViSE4wYmdvVkUxMjUxeTNvRzRFaC1SSU1zanBnSEVIbEJka3U1bzlwQ0RLcm5TamJYNW5jeDVGOHJwcXhsRWhlUDlneFJ1aUlKZU94ZjQ2Tk5tTFQyRFpJdnY3WHVSWTEtdm1MMVpRSl9pYlluTGN1dUVKTnFaU3pxdXQyRDJCQ0YxZWExQU1RcFlRajFWTGpMYUJib241SGRXMXfSAewBQVVfeXFMTk8xbmxtcXpPQ3NFZzllT3Z4MENjcmdoSk9iRk9yaGR6RWxyQzc0WUJyVkFZQVBRZUtIQWU2S292TXpRdkRmV0tXbU4xOGFrY2t0NU9ROFFZdEI5cG9qaWMySnBnWkp1NGNKNWRGQmpwR3cyUWlNSGYxUGl3YUVvUklHcWlUSHlDMlJCRnZDWUVDbWJ3U19YTUw5bFdWSlR4LVBiNUZrOVZ1d3NmcHhsQ0l3YXp5VWd3UmZPVjBMZldPRU8yY1pocjJtbWVoX0syY05GWU1HSmktb3VBTlI4VmY4eXdyZDVwQjNLR2s?oc=5",
-        "publishedAt": "2026-05-14T17:31:09+05:30",
-        "publishedAtLabel": "14 May 2026, 05:31:09 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Quick Wrap: Nifty Pharma Index rises 2.74%, NIFTY jumps 1.18%",
-        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNc19RZ0Y3RHNfUzlMaWxURkk0NUtkb3d6NGJKTUxpaTFMN1AyNDJLZlphSWJuRlJOS0tySFZEWTV0VGJHZXVJRFgxUGJ4VkdzYWExd0VzVTlKdU16bTAxaDU3eEJCVGRVei1MOHBRZDdWcC01Y0prUmNjWkdEOHFuY2VHc004V2dlcERXNDBiNHdwMEVjWVFVNXZiMzFNVW5lQnZfdkZNNkk0Wkcza3RCaDNTalhqaFp0UjFzM3hJZ0VpLVlHb2dCdC1zNWh6SnZxRVl4OW930gHbAUFVX3lxTE80T01OZk5VUGU0VkJPLU5ITVFubzJSTmRNX2ZJMThaVjZ6bUktQk5wYlZoVk1wcmhvLVZUbkdNSWRvQndsbFJoYlpaNmZHZ19lcTQzWHBmWUZtMzhkRGdLSlg0ZEdHZ3FzQ0lfWUxHY2JUQUlGVmtYekdiLTJhMkZXSGh4cVA3MDZaZTNlMjVSdlIydGZBTHdQSlhnRG9rQjdnaDZseUdnTmQza2JOWGF0MFJ3OWNhQnB1S09nSEFPMVpiRXhnaUcyYTRhN3A0MjR6aU1OWGxrZ0Zmcw?oc=5",
-        "publishedAt": "2026-05-14T17:31:02+05:30",
-        "publishedAtLabel": "14 May 2026, 05:31:02 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "Delhi CM Rekha Gupta announces 2 days' WFH for government offices, metro use by ministers",
-        "link": "https://www.livemint.com/news/india/delhi-cm-rekha-gupta-announces-2-days-wfh-for-government-offices-metro-use-by-ministers-11778758316226.html",
-        "publishedAt": "2026-05-14T17:06:01+05:30",
-        "publishedAtLabel": "14 May 2026, 05:06:01 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Mystic Electronics standalone net profit declines 63.95% in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOLWd4SU16aXFfZ0dYZFVGMXFJczhHRGJPcWJCUi1DYTNxTmZTd0k1bWZPdXNPNHdyc3d4U2psRTNPOVNQbHhWVk00eExuX2pSQ19kOHlMbVhISzYwdURvOXFhVDI1X1VSblBYbTVfcGgtM3B6YkdEdXNrZnRBSmlPd2lPWjdTWkdKZGhINVNSQ29Nb1hVbUVEcnFfRDdsSDBWdkpaQmhsTTBLRUtxOV9DRzJzM0lpLTNIemh0RnVsV083cmRIczdvLWNnZWtORTdYdFVVVU1BbXVPYjlQOUoxbVRHVFpJcGd3SHJGcjFySW1XUmVJZ2fSAfsBQVVfeXFMT1NhRUU1eTg3VzFHTndQaU5qbXNNUTZEci1EQUVNNDNnTUdJbjFoeHRIdlczeDlIY0JHUFBFc2hreGRqNWJndU0xcWpKTGluNElTbmVyNFJua2pUZlBzSkcwYXgxT1F1QTdtVi15bjN3RG1BSERmQ2o5bXZSTlVVaWZNa2FSY2tCbkl0NDJsRXN2aDJnVDdtLTFzY2VCU2JkXzVsZ0FBdHd0ZTh5cElsQTNTb041X1BDXzhDTmNyc09XVmwyNmtHQldaN1hpZlRKRzFjQVlqRU9HaVhPSy1hMVRPVmI1QjRNQlhlMllXQXF1SnkwSjRFbnNNVUk?oc=5",
-        "publishedAt": "2026-05-14T17:05:46+05:30",
-        "publishedAtLabel": "14 May 2026, 05:05:46 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Patel Engineering consolidated net profit rises 15.95% in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQMjBJUVFTUUNwWm5pWlFEeG1lSG1hdG95WEdYOVF4YlVTazBtdml6dURWR0dKdlNNdDlkbHlGUmVhUUYzZWRkZzIxdnRyc1c4czlMeC1iN24wSll6a1U4eDhfWDRxenFqZHVjNW54b3YzSFFqMldWelpqelhaOVdqbC1OUl82dnl5V0JGQ1VrNnFibHIwNTluQmZILU52MFlJOFY0VjlzTHNkNXIzRFdQT1pQcXBCd19WNXl6OU1YaEZGVnVrZEZVYmNQRU1ndU1kSzU3OHdNVmkxc0w0VHpkYThnSlpQc01KS3BLM1dnSVRrdjTSAfgBQVVfeXFMTWluWVFDWTVIVmZHbU1DTFE3Y2ZYX0R1ZE9LemRwNm5sdkxReHg0bkFhX3JKd0hFYzF6ZVJRZTNDa0FpNjZ1Tm1jUVQxSXBUTGlrcGtUYXNJeXQyeGlzTjZTdXVEd0kxVjF5eUNBMmxjUWFCOV9ZcG8zc2dxLUdjWWFFVXJDSlRrZks2R3AtT2Z1UWltMmxHeDBLYjV1U3k3M0hyNUpSV3VOdGNaTzBnenZxVzRfYjU4OTdNVHpnSnhlbnk3V1R5UzlOVjFmYUdVU1RYeElodDZiQWlab2lIel9EREdVSUtPWHY0dEF1NVJNUVpHQi0zLTI?oc=5",
-        "publishedAt": "2026-05-14T17:05:46+05:30",
-        "publishedAtLabel": "14 May 2026, 05:05:46 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Dilip Buildcon Q4 PAT slumps 64% YoY to Rs 62 cr",
-        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQQnBXX3VidXFWaTd5OHB3TjNmYnB5elFUM0VmdUFsVDFvRk1SQjhmZ1UtaVN1UHhJVkVvUU5YcWZNYklQS25aeElUamJuX0x1eUUwdmNYYWZoS0I1ak9VZnZ2a3dkSWc0WHZ4VGN2UkFpLVhDRWdsM2VKRGhEUEFHY0RwWlBmZTVkYmxFZE5ac2pyaml2eEpGN3hQZFR0VTFJR1pnNmdBUnV3dFBKRkJhNjhHaHNSQjBJSVhKZzhyY3pQWDZJSnNuSNIBzgFBVV95cUxPN3VGSjRhZXhpWVVRUE1US05yeDNwQjVJTE5oQ3FRYnlLZFhZZDVOT2tDWHBKVURheTdGWldjaUROZXB0eHhDMXVpX1Y2TFBWdmtJWlRlUlVEaGc1YXZWVTRObHR3NWlGazhscVZRZTRiajNIbUVHVTJyMXFwb29VTVM0Um8zQW9ITHBiaGV5d255OWF2WjlSS1NOb0lTWjBEZ2FDQUtybXJWQ04wMXh6Zkd5R05udWE2bF9sSEI2Ty0tS2hvM0R2OVVKNV9mdw?oc=5",
-        "publishedAt": "2026-05-14T17:04:02+05:30",
-        "publishedAtLabel": "14 May 2026, 05:04:02 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "PBKS vs MI: What if it rains? Punjab Kings\u2019 playoff scenario explained in case Dharamshala match gets washed out",
-        "link": "https://www.livemint.com/news/trends/pbks-vs-mi-what-if-it-rains-punjab-kings-playoff-scenario-explained-in-case-dharamshala-match-gets-washed-out-11778757254185.html",
-        "publishedAt": "2026-05-14T16:57:09+05:30",
-        "publishedAtLabel": "14 May 2026, 04:57:09 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "Uttar Pradesh rains: 104 dead due to violent storm; relief ops underway \u2014 Top points",
-        "link": "https://www.livemint.com/news/india/uttar-pradesh-rains-104-dead-due-to-violent-storm-relief-ops-underway-top-points-11778757344888.html",
-        "publishedAt": "2026-05-14T16:50:11+05:30",
-        "publishedAtLabel": "14 May 2026, 04:50:11 PM IST"
       },
       {
         "source": "Bloomberg Economics",
@@ -154,27 +175,6 @@
         "link": "https://www.bloomberg.com/news/newsletters/2026-05-14/uk-politics-and-the-economy",
         "publishedAt": "2026-05-14T16:31:04+05:30",
         "publishedAtLabel": "14 May 2026, 04:31:04 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Poland\u2019s Economic Growth Miss Set to Temper Rate-Hike Bets",
-        "link": "https://www.bloomberg.com/news/articles/2026-05-14/polish-economy-slows-in-early-2026-casting-doubt-on-rates-path",
-        "publishedAt": "2026-05-14T13:51:51+05:30",
-        "publishedAtLabel": "14 May 2026, 01:51:51 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Myanmar Junta\u2019s Forced Remittance Rules Pull in $5.6 Billion",
-        "link": "https://www.bloomberg.com/news/articles/2026-05-14/myanmar-junta-s-forced-remittance-rules-pull-in-5-6-billion",
-        "publishedAt": "2026-05-14T12:17:13+05:30",
-        "publishedAtLabel": "14 May 2026, 12:17:13 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "UK Economy Posts Best Growth in a Year as Headwinds Build",
-        "link": "https://www.bloomberg.com/news/articles/2026-05-14/uk-growth-surge-under-threat-from-iran-war-political-turmoil",
-        "publishedAt": "2026-05-14T11:34:47+05:30",
-        "publishedAtLabel": "14 May 2026, 11:34:47 AM IST"
       }
     ],
     "sourcesAvailable": [
