@@ -1,27 +1,27 @@
 {
   "marketTape": {
-    "updatedAt": "2026-05-14T20:03:01.933841+05:30",
+    "updatedAt": "2026-05-14T21:15:32.002257+05:30",
     "items": [
       {
         "label": "S&P 500",
-        "last": 7480.9,
-        "changePercent": 0.35549474136080705,
+        "last": 7509.7,
+        "changePercent": 0.7418437432925545,
         "source": "Stooq",
-        "updatedAt": "2026-05-14 16:32:33"
+        "updatedAt": "2026-05-14 17:44:57"
       },
       {
         "label": "Dow Jones",
-        "last": 49924.1,
-        "changePercent": -0.263305624312025,
+        "last": 50075.9,
+        "changePercent": 0.03995532994112582,
         "source": "Stooq",
-        "updatedAt": "2026-05-14 16:32:31"
+        "updatedAt": "2026-05-14 17:45:07"
       },
       {
         "label": "Nasdaq",
-        "last": 26541.031,
-        "changePercent": 0.4373129574351096,
+        "last": 26677.486,
+        "changePercent": 0.9536897907091064,
         "source": "Stooq",
-        "updatedAt": "2026-05-14 16:32:28"
+        "updatedAt": "2026-05-14 17:45:02"
       },
       {
         "label": "Nikkei 225",
@@ -39,38 +39,87 @@
       },
       {
         "label": "FTSE 100",
-        "last": 10335.5,
-        "changePercent": 0.0997559369309967,
+        "last": 10372.9,
+        "changePercent": 0.4619765234571621,
         "source": "Stooq",
-        "updatedAt": "2026-05-14 16:32:33"
+        "updatedAt": "2026-05-14 17:40:49"
       },
       {
         "label": "DAX",
-        "last": 24447.44,
-        "changePercent": 0.28867292090476415,
+        "last": 24452.62,
+        "changePercent": 0.30992239838503677,
         "source": "Stooq",
-        "updatedAt": "2026-05-14 16:17:34"
+        "updatedAt": "2026-05-14 17:30:24"
       },
       {
         "label": "Crude Oil",
-        "last": 101.48,
-        "changePercent": 0.3262481463173488,
+        "last": 100.76,
+        "changePercent": -0.3855659911023238,
         "source": "Stooq",
-        "updatedAt": "2026-05-14 16:32:59"
+        "updatedAt": "2026-05-14 17:45:29"
       },
       {
         "label": "Gold",
-        "last": 4689.56,
-        "changePercent": -0.049660158273103744,
+        "last": 4682.07,
+        "changePercent": -0.20929731941713506,
         "source": "Stooq",
-        "updatedAt": "2026-05-14 16:33:00"
+        "updatedAt": "2026-05-14 17:45:28"
       }
     ]
   },
   "newsFeed": {
-    "updatedAt": "2026-05-14T20:03:01.933861+05:30",
-    "updatedAtLabel": "14 May 2026, 08:03:01 PM IST",
+    "updatedAt": "2026-05-14T21:15:32.002275+05:30",
+    "updatedAtLabel": "14 May 2026, 09:15:32 PM IST",
     "items": [
+      {
+        "source": "Business Standard",
+        "title": "Geothermal energy has 450 GW power potential in India, says report",
+        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQdTE1alkzQ0FiOWEyT0RYMFpTMUtmMlpEaE1vSVQ1c1hOeDFlVmltT2szajdmbGNFUkxRb0UyeWI0WFpIZ2VoOWIxTDhWSGZTY3BVOUJYd2xqd0RIWFZXT040cE9QbHpSRjJxdkJfa3dlRmJVWXlYUEVUN25xRUN5SEJDWE5vVFRLWEJzbDlPektzeGlnVjJqbWFyZmdyR3pTTnF4SHpzbFJocmE5SnR0TDN6YXgwcWtCZEtnTDV0Qkl1S090aWMyUFdYaFrSAdIBQVVfeXFMTTVXUlFXenNIREtpQnR6NklrRFpkNmkzZ3BTZVY0QzR2ZHpoelp4NFhkLTc0b3o5clljcEs5OEMwTEJzU2hYeXVCN1lfdk9ubHBwSGlNZzNBNVpvRmRESHRjbVRORkRDWllmRDNOOHFDNUVPaDFGeHdMTVpjT2JCSk96R0plelIyS1NETXpDb0xESjB4WXFHVzRXN2lVcFR2YnhGRmkxajlja1dVSjU0QjJWMzRZS3h4aGMyMFA1SW1BZGtOX3NWN2tKNS1LVF9kdFdB?oc=5",
+        "publishedAt": "2026-05-14T20:43:07+05:30",
+        "publishedAtLabel": "14 May 2026, 08:43:07 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Delhi HC judge Swarana Kanta Sharma recuses from excise policy case, files contempt case against Kejriwal: Report",
+        "link": "https://www.livemint.com/news/india/delhi-hc-judge-swarana-kanta-sharma-recuses-from-excise-policy-case-files-contempt-case-against-kejriwal-report-11778770677995.html",
+        "publishedAt": "2026-05-14T20:34:24+05:30",
+        "publishedAtLabel": "14 May 2026, 08:34:24 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "IMF to Vote Next Week on Argentina\u2019s Review To Unlock $1 Billion",
+        "link": "https://www.bloomberg.com/news/articles/2026-05-14/imf-to-vote-next-week-on-argentina-s-review-to-unlock-1-billion",
+        "publishedAt": "2026-05-14T20:33:18+05:30",
+        "publishedAtLabel": "14 May 2026, 08:33:18 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Xi Jinping's \u2018blunt\u2019 warning to Trump: What's the \u2018Taiwan question\u2019 haunting US-China ties?",
+        "link": "https://www.livemint.com/news/world/xi-jinpings-blunt-warning-to-trump-whats-the-taiwan-question-haunting-us-china-ties-11778770241773.html",
+        "publishedAt": "2026-05-14T20:31:51+05:30",
+        "publishedAtLabel": "14 May 2026, 08:31:51 PM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "EU includes India in eligible list of countries for marine exports",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxONDk3VEUzX0IyR0ZYRlpCTGNiUmlzSFdYRHFDbG1OVEdPOVBHZVlWRWs4TnpHbFZzYjg5UUE2RVZUbndOT0diNVhkUHVCRW11dTFJZWcybmh4cTVIUEJrNnlTOXhIY0JvdlRJYXJERUpyR3BCTVFpcDBrellQcEJiMEdKZ1V1cGJsWGdTNGtlRDUwZFVxbmRIOVNLSk1uU2FYWDBrYXpyY0lKVk01bjFqV2xqZ3RCd2YzT2lNSjB4c3dmMW5yYTZTM25zSlJ3UdIB0wFBVV95cUxPMXZOMWMwTk5WSjgtb0NXOFY4bWUwdFEyRWpQTk9sZWN4LTFhQ2k2dTdQMDhFeG0xVDIwV2tETWJobDlnN2tkZkFneThkZC1oaWw2dUU5ODUyR1J1YWx3dThIZUFUclFEUDl3bEczdFNoejJRcWliQ3BJb3g5cG1LdENPQXpIYXBaNDNwenhtcklXRXNXUnZaRVg5ekxoZmRhTlI2NktTV0VPVEtGOXhycndtS3lCQkI4c0RidFVTZFJ3TUdaSER5YkwzVkdrRDRKVS0w?oc=5",
+        "publishedAt": "2026-05-14T20:22:24+05:30",
+        "publishedAtLabel": "14 May 2026, 08:22:24 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Tough time for Trump ahead? Major Supreme Court rulings loom on elections, citizenship, immigration: What to expect",
+        "link": "https://www.livemint.com/news/us-news/tough-time-for-trump-ahead-major-supreme-court-rulings-loom-on-elections-citizenship-immigration-what-to-expect-11778768895271.html",
+        "publishedAt": "2026-05-14T20:11:19+05:30",
+        "publishedAtLabel": "14 May 2026, 08:11:19 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Trump, Xi agree Strait of Hormuz must stay open and Iran can\u2019t have nuclear weapons, says Rubio",
+        "link": "https://www.livemint.com/news/world/trump-xi-agree-strait-of-hormuz-must-stay-open-and-iran-can-t-have-nuclear-weapons-says-rubio-11778768542461.html",
+        "publishedAt": "2026-05-14T20:11:13+05:30",
+        "publishedAtLabel": "14 May 2026, 08:11:13 PM IST"
+      },
       {
         "source": "Livemint",
         "title": "Social media questions Mamata Banerjee's qualification; former Bengal CM appears as lawyer, \u2018NO bar council membership\u2019",
@@ -79,32 +128,11 @@
         "publishedAtLabel": "14 May 2026, 07:51:13 PM IST"
       },
       {
-        "source": "Livemint",
-        "title": "Israel to sue NYT over \u2018most hideous and distorted lies\u2019 report on sex abuse of Palestinian detainees",
-        "link": "https://www.livemint.com/news/world/israel-to-sue-nyt-over-most-hideous-and-distorted-lies-report-on-sex-abuse-of-palestinian-detainees-11778764763961.html",
-        "publishedAt": "2026-05-14T19:45:18+05:30",
-        "publishedAtLabel": "14 May 2026, 07:45:18 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "Hamas accused of sexual torture, rape, forced nudity across multiple locations in Israel, October 7 report says",
-        "link": "https://www.livemint.com/news/world/hamas-accused-of-sexual-torture-rape-forced-nudity-across-multiple-locations-in-israel-october-7-report-says-11778764496036.html",
-        "publishedAt": "2026-05-14T19:24:51+05:30",
-        "publishedAtLabel": "14 May 2026, 07:24:51 PM IST"
-      },
-      {
         "source": "Business Standard",
         "title": "India's electric bus push gains speed amid strong market recovery: Report",
         "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNb0pxaS0xdlJSTlRBN2VnMUlTZF80LVVvYXhZZEJ6SVBQc1FQdlV4RlA1eUVTRE9WWXFnMlp2VURQTG5lZUkxWUJuRUVjYzh1R1Y4NzR5UWZ6d1dGS3pKUFYzWjFVOVI3OXdmRF91bG9hSEtfYW5Hd2Ztam1lOWF2YS00MENjT2ZaSnFUaGFCTzdGbWVsM1ppZTJJUXgzUHhZNFNQYVR2R2NRZmtzYlBBTmJTYS1jTldQNUptemxpRzYxWENyVWxTczZhS2lVNWFmTi00ckdKONIB3AFBVV95cUxPUFluZ3RfeEN3RlRhNnZNN1lVUXlCekNudEwtQWZQQ1ROejBPVTYxVGE0dkpiS2lnSzBLdGtHMF9zUGkzLVFLOWZCVm1FS1U3NFFvZWYyWUY1SDNCZjhrRmRPalRoTXRUWUw4UU1JWmc5bG4ySmw1c0Uyb0dTbDJQdWtfUVBRUHpaUUczc2Jnd2czZkJidzYzNU1IZEZsd0w0WW1ZMmo5RG45dXVpcnZlWlJlb1FQaDNYTG9FZUZJUmpHR1Q2eFBpLTgtbnN3THpEbWh3WXAydXltVGVH?oc=5",
         "publishedAt": "2026-05-14T19:09:40+05:30",
         "publishedAtLabel": "14 May 2026, 07:09:40 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "Roche launches India's first 7-minute under-the-skin lung cancer injection",
-        "link": "https://www.livemint.com/news/roche-lung-cancer-immunotherapy-injection-pharma-healthcare-11778757287072.html",
-        "publishedAt": "2026-05-14T19:09:07+05:30",
-        "publishedAtLabel": "14 May 2026, 07:09:07 PM IST"
       },
       {
         "source": "Business Standard",
@@ -128,32 +156,11 @@
         "publishedAtLabel": "14 May 2026, 06:58:50 PM IST"
       },
       {
-        "source": "Livemint",
-        "title": "Quote of the day: Greek philosopher Aristotle on human connection- \u2018Man is by nature\u2026\u2019",
-        "link": "https://www.livemint.com/news/us-news/quote-of-the-day-greek-philosopher-aristotle-on-human-connection-man-is-by-nature-11778764110743.html",
-        "publishedAt": "2026-05-14T18:47:40+05:30",
-        "publishedAtLabel": "14 May 2026, 06:47:40 PM IST"
-      },
-      {
         "source": "Bloomberg Economics",
         "title": "Soaring Household Defaults Rock Argentina\u2019s Banks and Fintechs",
         "link": "https://www.bloomberg.com/news/articles/2026-05-14/household-defaults-rock-argentina-s-banks-and-fintechs-in-blow-to-milei",
         "publishedAt": "2026-05-14T18:30:00+05:30",
         "publishedAtLabel": "14 May 2026, 06:30:00 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Shree Ganesh Remedies consolidated net profit declines 4.86% in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOWmtla1FaZ0J1eXVwSmhvbnp2dHZTYWVmQV8wQ01yRXNYX1kydTBxbWE1eVVNTzhfQVJMQ1JkOGtNZ3hxTkNuWlVOdEpCLWtrcmNLYnBXSThFSjljQzZYNURUc0dpNm1nQXA2ZlRTYXhVeVVaTmdzTHlVNllNcEtVMkpXQVZuVXdIYU10Rm5xX2p3U3h2OU1PZW9xRE9YeVBsU2JmUHQ1Q21RVjhoYTlDZS1oRzFsQ2piLW5iS1ZKQy1rWnpoVFI1NEY3OGp0eVBKOWRqRE5OUXJWN0VMSzBjbzJERW51Tmh4US1jaDVvc3JxOUQ1U3I1enE0c9IBgAJBVV95cUxPeXBNYnBHRnFMUjkzQjFhT1BCVWxLTGhIZFMzcV9WajQ2MUtfZzBqeERJUTZYc2V2dVg4NUtmQ2RCOE1sWkpPR3F0dkdoVGtFbmgxaG9hZC1lTl9tVzdpX2FVZGtjSDRCbnNmVVN5Z3JRRWwzbzMxNkRVS1dhSi1QOV80Vm1EU0UtYWQ1NVEyRnlxMDJVVWt2X1FxR1ZBQ0pWSWM4cGNjOTVaY18zOHhiOV9tYVFvSWppNXFONGtIVHdScTZJTHoxUVRSTmVsbi1VQk94SEJCWExTajlOQTNlM2Z5NEplNERuVkpINFVqOEVKYnB1WGs2Rk1kcGxBajYz?oc=5",
-        "publishedAt": "2026-05-14T18:19:23+05:30",
-        "publishedAtLabel": "14 May 2026, 06:19:23 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Apollo Tyres consolidated net profit rises 241.77% in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNUnN6U1ViVEc3TDJaVEJ6MDZ1UE1rd003TUtIdy03WXBET0xhSGtTTDZRVC05bHRTZEU4c0ticVlxbkU3T3d0VlJMNkw4STZiejI4T19pUjVVQ3o4UmdQNFNqYXItcEVIamZpXzVYcHBsZ1M2TndNenpLc2VPU3RYVkxVa2w5X1FuN3hxS2xlbklmUzhxdjNiRk9xcWxYSDJnYmthZGMzOGNEa2Frcy1sRktSY0tBUUxoUFU1MlZVZ1ROMFBxaUxncm1HYU1yQTBBMGVlbmlWV1BHa2d2SldWX2JwUXhVY044TDhNTVV30gHzAUFVX3lxTFA4V2xaNmRNQkd6U0NZZGRNSncycXJkd1Z5Y2Ezc0RSTEJ1TXJfLUlhdEVFaGtRajR2RHlBQm5sZHlhZlp5M3NEMlNjYVRlQkxXMWN2cU5fRHN5V05kMV9yRnNIbThtOW9jTndBY29SUVQ1YUtqNC1hLWxpcUQwd3IzN0tTTmpYUGROMTBJRTIwdWhpOEVYQklFRUdldFVkdEs5ckJUQ2x5YWozR3dSTGZ0UjJuUzhScHg0eEFEb2VXcnY2aG5obUdNQnFJZkl6dXpDbjVhcGdneTlPeWptaE9UM1poN0tJc1ZuemtVQ1VuWU90UQ?oc=5",
-        "publishedAt": "2026-05-14T18:19:23+05:30",
-        "publishedAtLabel": "14 May 2026, 06:19:23 PM IST"
       },
       {
         "source": "Bloomberg Economics",
@@ -168,13 +175,6 @@
         "link": "https://www.bloomberg.com/news/newsletters/2026-05-14/trump-and-xi-meet-to-discuss-trade-and-economic-security",
         "publishedAt": "2026-05-14T16:37:21+05:30",
         "publishedAtLabel": "14 May 2026, 04:37:21 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "UK Economy Looks to Have Peaked for 2026 Amid War Headwinds",
-        "link": "https://www.bloomberg.com/news/newsletters/2026-05-14/uk-politics-and-the-economy",
-        "publishedAt": "2026-05-14T16:31:04+05:30",
-        "publishedAtLabel": "14 May 2026, 04:31:04 PM IST"
       }
     ],
     "sourcesAvailable": [
