@@ -40,6 +40,16 @@ function resolveArchiveDate(date = new Date()) {
   return toIstParts(candidate).compactDate;
 }
 
+function compactDateFromIsoDate(isoDate) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(isoDate ?? "").trim());
+  if (!match) {
+    throw new Error(`Invalid NSE_TARGET_DATE: ${isoDate}. Expected YYYY-MM-DD.`);
+  }
+
+  const [, year, month, day] = match;
+  return `${day}${month}${year.slice(-2)}`;
+}
+
 function fetchText(url) {
   return new Promise((resolve, reject) => {
     https.get(url, {
@@ -155,7 +165,10 @@ async function loadExistingRows() {
 }
 
 async function main() {
-  const archiveDate = process.env.NSE_ARCHIVE_DATE || resolveArchiveDate();
+  const archiveDate =
+    process.env.NSE_ARCHIVE_DATE
+    || (process.env.NSE_TARGET_DATE ? compactDateFromIsoDate(process.env.NSE_TARGET_DATE) : null)
+    || resolveArchiveDate();
   const archiveFile = `MA${archiveDate}.csv`;
   const archiveUrl = `https://nsearchives.nseindia.com/archives/equities/mkt/${archiveFile}`;
 
