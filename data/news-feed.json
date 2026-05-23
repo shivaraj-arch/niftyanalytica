@@ -1,79 +1,29 @@
 {
   "marketTape": {
-    "updatedAt": "2026-05-23T14:18:26.750573+05:30",
-    "items": [
-      {
-        "label": "S&P 500",
-        "last": 7473.5,
-        "changePercent": 0.06292844901456483,
-        "source": "Stooq",
-        "updatedAt": "2026-05-22 23:00:00"
-      },
-      {
-        "label": "Dow Jones",
-        "last": 50579.7,
-        "changePercent": 0.2875004709059438,
-        "source": "Stooq",
-        "updatedAt": "2026-05-22 23:00:00"
-      },
-      {
-        "label": "Nasdaq",
-        "last": 26343.97,
-        "changePercent": -0.1424858878701644,
-        "source": "Stooq",
-        "updatedAt": "2026-05-22 23:00:00"
-      },
-      {
-        "label": "Nikkei 225",
-        "last": 63339.07,
-        "changePercent": 2.302750165715443,
-        "source": "Stooq",
-        "updatedAt": "2026-05-22 23:00:00"
-      },
-      {
-        "label": "Hang Seng",
-        "last": 25606.03,
-        "changePercent": 0.8646714870726605,
-        "source": "Stooq",
-        "updatedAt": "2026-05-22 10:08:42"
-      },
-      {
-        "label": "FTSE 100",
-        "last": 10466.3,
-        "changePercent": 0.22215625628404312,
-        "source": "Stooq",
-        "updatedAt": "2026-05-22 23:00:00"
-      },
-      {
-        "label": "DAX",
-        "last": 24888.56,
-        "changePercent": 0.4847691562949526,
-        "source": "Stooq",
-        "updatedAt": "2026-05-22 23:00:00"
-      },
-      {
-        "label": "Crude Oil",
-        "last": 96.6,
-        "changePercent": -1.4285714285714344,
-        "source": "Stooq",
-        "updatedAt": "2026-05-22 23:00:00"
-      },
-      {
-        "label": "Gold",
-        "last": 4508.32,
-        "changePercent": -0.786957976091975,
-        "source": "Stooq",
-        "updatedAt": "2026-05-22 22:00:32"
-      }
-    ]
+    "updatedAt": "2026-05-23T14:34:22.271125+05:30",
+    "items": []
   },
   "newsFeed": {
-    "updatedAt": "2026-05-23T14:18:26.750589+05:30",
-    "updatedAtLabel": "23 May 2026, 02:18:26 PM IST",
+    "updatedAt": "2026-05-23T14:34:22.271143+05:30",
+    "updatedAtLabel": "23 May 2026, 02:34:22 PM IST",
     "items": [
       {
         "source": "Livemint",
-        "title": "Bar Council chairman defends CJI Surya Kant's \u2018cockroach\u2019 rebuttal, says 40% lawyers hold fake degrees",
+        "title": "Spanish Proverb of the Day: \u2018Shrimp that falls asleep gets swept away\u2026\u2019; meaning and why it still matters today",
+        "link": "https://www.livemint.com/news/trends/spanish-proverb-of-the-day-shrimp-that-falls-asleep-gets-swept-away-meaning-and-why-it-still-matters-today-11779525596646.html",
+        "publishedAt": "2026-05-23T14:32:32+05:30",
+        "publishedAtLabel": "23 May 2026, 02:32:32 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Cockroach Janta Party website is no more; founder says \u2018cockroaches never die\u2019",
+        "link": "https://www.livemint.com/news/india/cockroach-janta-party-website-taken-down-founder-abhijeet-dipke-cockroaches-never-die-11779525878005.html",
+        "publishedAt": "2026-05-23T14:18:47+05:30",
+        "publishedAtLabel": "23 May 2026, 02:18:47 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Bar Council chairman defends CJI Surya Kant's \u2018cockroach\u2019 rebuttal, claims 40% lawyers hold fake degrees",
         "link": "https://www.livemint.com/news/india/bar-council-chairman-defends-cji-surya-kants-cockroach-rebuttal-says-40-lawyers-hold-fake-degrees-11779521555614.html",
         "publishedAt": "2026-05-23T14:04:05+05:30",
         "publishedAtLabel": "23 May 2026, 02:04:05 PM IST"
@@ -107,13 +57,6 @@
         "publishedAtLabel": "23 May 2026, 01:50:10 PM IST"
       },
       {
-        "source": "Livemint",
-        "title": "Kevin Warsh takes over the Fed: What his \u2018reform-oriented\u2019 vision means for the US economy?",
-        "link": "https://www.livemint.com/news/us-news/kevin-warsh-takes-over-the-fed-what-his-reform-oriented-vision-means-for-the-us-economy-11779517662302.html",
-        "publishedAt": "2026-05-23T13:50:06+05:30",
-        "publishedAtLabel": "23 May 2026, 01:50:06 PM IST"
-      },
-      {
         "source": "Business Standard",
         "title": "Divi's Laboratories consolidated net profit rises 13.44% in the March 2026 quarter",
         "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPbWpvcWh6S3ZCX0czbXdYbDZER0NWa1kybzFBa2dHNlVEOFMybWZ2S1JxZGhhRXFfR01vNld2NS0zVmpIUDMwNjJxeHBIQWpTVzZ0Yl9EWXdQcUt5bS1kRS1qMWp5WFJ1RFFtODNwcVB2eXJhaGltdVoxdmpicGU2b2czcWpoa1FGUTB1MzM5emNJOVo3SzdRZHljX2hqUHY0OEhrVFJhTkFwdkFCOTFVQm1pc0E1SVlNczV3ektnVmNKRU56c2NYQzJ5TThsbGduNnI1MHg0dXNXbVNNU2RPaXNJNTlsNjcyTjBXLXFUM3hmcmdvWUHSAfsBQVVfeXFMUFo3ckl0NDY2cU51czRoeFR5d0NmbHoxZ2U2bmNRM1FmYTZiYUpzSUtJXzVTSFJNYjlPUzE5MGRMbEFmSG9Kd0FCSHlEUDF5MHQyMFg3b3Q5Ulh6bXQ4RHhzbUpfLU1kYmtuZjBMQ05fZC1MNERjb2dfODBsMmFfb3Z3eUVPQnk2MExaU1dOUTNqclAyWnRudHJjQlNiZW0yWVFnYWN2OWoxQVRDRlhkUzRsdWd4cUh0bEdFVzlrWDl6YUkybF9IRHJ5T1FKWkRMcGlSdnJJeThHNTlCOEJ1VE52Y3JJYkJ4c2FPcVlzdmN1dmptWUxvYmhlSmM?oc=5",
@@ -133,13 +76,6 @@
         "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPZHk3am1EQ0ExRi1lRHZMdWQxc3ZGOGQ5QkVuRTJjZFFpdHpqUXpkU1EzSlNUdkVzVXlXZHhfQ09hMmVob192eGV0QnpETnp1MnlUdEl4dWpmLVRkc0p4aG1BbmpZWUlVOTluX2dGQmJhQmp5dnNIQUwtS0dHLThBc2hxLXFRdC1WT3A5Q2x0clpnNlYxV0pGN3dxaUJCME1odG5jRGl6NHRBMk1CTGhxTi1ycmFRbUZUVjdKaUxjQ2c3bkhyQXVEZ2RpRnFWU05JVE5GUXZuN1duNW1WZzlJWXJ4b1VXUVE0ZncxctIB8gFBVV95cUxQRGlpWEI2NGlVd3ZoTHFTbFlXWGFLeE9YVGE1Z2lScXpBZG1xTl9nNnVNaDM5QnhBMWstTi1yUGlCOVlveENidlNlMUhsZC1CNS1ka0dUcWR0WUZjWlh3d2oxVGxxSWpBRDVtR2tkX3l6blVFcnJyZ0ktRlQxMER2ZE1KS3NHSjJ2ZVRtaXJnQm9GZ25oQWNuaHJNQUo2bHJ6dWlwRy01NjJKbmxYOGQ5cDB3VTZFT19pLUlXMDVIMVQtQzZGWlhsMHhyb1lIcmZaUWxRMHZocnl4MGludl9jUVpTQWdhbFk2dHlKR2xoaHI0dw?oc=5",
         "publishedAt": "2026-05-23T13:04:29+05:30",
         "publishedAtLabel": "23 May 2026, 01:04:29 PM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "Quote of the Day by Bill Gates on creativity: \u2018If you give people tools, and they use their natural abilities\u2026.\u2019",
-        "link": "https://www.livemint.com/news/us-news/quote-of-the-day-by-bill-gates-on-creativity-if-you-give-people-tools-and-they-use-their-natural-abilities-11779517163638.html",
-        "publishedAt": "2026-05-23T12:51:12+05:30",
-        "publishedAtLabel": "23 May 2026, 12:51:12 PM IST"
       },
       {
         "source": "Bloomberg Economics",
