@@ -1,11 +1,75 @@
 {
   "marketTape": {
-    "updatedAt": "2026-05-23T14:34:22.271125+05:30",
-    "items": []
+    "updatedAt": "2026-05-23T14:45:38.279078+05:30",
+    "items": [
+      {
+        "label": "S&P 500",
+        "last": 7473.5,
+        "changePercent": 0.06292844901456483,
+        "source": "Stooq",
+        "updatedAt": "2026-05-22 23:00:00"
+      },
+      {
+        "label": "Dow Jones",
+        "last": 50579.7,
+        "changePercent": 0.2875004709059438,
+        "source": "Stooq",
+        "updatedAt": "2026-05-22 23:00:00"
+      },
+      {
+        "label": "Nasdaq",
+        "last": 26343.97,
+        "changePercent": -0.1424858878701644,
+        "source": "Stooq",
+        "updatedAt": "2026-05-22 23:00:00"
+      },
+      {
+        "label": "Nikkei 225",
+        "last": 63339.07,
+        "changePercent": 2.302750165715443,
+        "source": "Stooq",
+        "updatedAt": "2026-05-22 23:00:00"
+      },
+      {
+        "label": "Hang Seng",
+        "last": 25606.03,
+        "changePercent": 0.8646714870726605,
+        "source": "Stooq",
+        "updatedAt": "2026-05-22 10:08:42"
+      },
+      {
+        "label": "FTSE 100",
+        "last": 10466.3,
+        "changePercent": 0.22215625628404312,
+        "source": "Stooq",
+        "updatedAt": "2026-05-22 23:00:00"
+      },
+      {
+        "label": "DAX",
+        "last": 24888.56,
+        "changePercent": 0.4847691562949526,
+        "source": "Stooq",
+        "updatedAt": "2026-05-22 23:00:00"
+      },
+      {
+        "label": "Crude Oil",
+        "last": 96.6,
+        "changePercent": -1.4285714285714344,
+        "source": "Stooq",
+        "updatedAt": "2026-05-22 23:00:00"
+      },
+      {
+        "label": "Gold",
+        "last": 4508.32,
+        "changePercent": -0.786957976091975,
+        "source": "Stooq",
+        "updatedAt": "2026-05-22 22:00:32"
+      }
+    ]
   },
   "newsFeed": {
-    "updatedAt": "2026-05-23T14:34:22.271143+05:30",
-    "updatedAtLabel": "23 May 2026, 02:34:22 PM IST",
+    "updatedAt": "2026-05-23T14:45:38.279093+05:30",
+    "updatedAtLabel": "23 May 2026, 02:45:38 PM IST",
     "items": [
       {
         "source": "Livemint",
