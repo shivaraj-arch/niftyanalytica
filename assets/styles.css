@@ -499,6 +499,19 @@ td,
   font-size: 0.82rem;
 }
 
+.api-unavailable-banner {
+  display: inline-flex;
+  align-items: center;
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffc107;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+
 .hero-metrics {
   margin: 24px 0 0;
   display: grid;
