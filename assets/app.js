@@ -536,7 +536,7 @@ const renderLiveSections = (snapshot) => {
   setText('heroExpiry', indexSummary.marketStatusLabel);
   setText('heroTopContributor', `${signedChangeValue}%`);
   setText('heroLowestIv', dayRangeLabel);
-  setText('heroTradedValue', `${formatNumber(indexSummary.tradedValueCrores)} Cr`);
+  setText('heroTradedValue', indexSummary.tradedValueCrores > 0 ? `${formatNumber(indexSummary.tradedValueCrores)} Cr` : '-');
   setText('heroBreadth', `${contributors.advances} / ${contributors.declines}`);
   if (snapshot.vix) {
     const vixTone = snapshot.vix.last >= 20 ? 'negative' : snapshot.vix.last <= 13 ? 'positive' : '';
@@ -555,9 +555,9 @@ const renderLiveSections = (snapshot) => {
 
   renderMetricGrid('contributorsSummary', [
     { label: 'Nifty Last', value: formatNumber(contributors.lastPrice) },
-    { label: 'Total CP', value: signed(contributors.totalPoints), tone: tone(contributors.totalPoints) },
+    { label: 'Total CP', value: contributors.rows.length ? signed(contributors.totalPoints) : '-', tone: contributors.rows.length ? tone(contributors.totalPoints) : '' },
     { label: 'Adv / Dec', value: `${contributors.advances} / ${contributors.declines}` },
-    { label: 'Tracked Stocks', value: String(contributors.rows.length) },
+    { label: 'Tracked Stocks', value: contributors.rows.length ? String(contributors.rows.length) : '-' },
   ]);
 
   renderMetricGrid('openInterestSummary', [
@@ -581,7 +581,8 @@ const renderLiveSections = (snapshot) => {
     { label: 'Avg Put Gap', value: signed(averageGap(blackScholes.rows, 'put')), tone: tone(averageGap(blackScholes.rows, 'put')) },
   ]);
 
-  document.getElementById('contributorsRows').innerHTML = contributors.rows.map((row) => `
+  document.getElementById('contributorsRows').innerHTML = contributors.rows.length
+    ? contributors.rows.map((row) => `
     <tr style="${rowColors(row.pChange)}">
       <td>${row.symbol}</td>
       <td>${formatNumber(row.last)}</td>
@@ -589,7 +590,8 @@ const renderLiveSections = (snapshot) => {
       <td class="${tone(row.contributingPoints)}">${signed(row.contributingPoints)}</td>
       <td>${formatNumber(row.tradedValueCr)}</td>
     </tr>
-  `).join('');
+  `).join('')
+    : '<tr><td colspan="5" style="text-align:center;padding:12px;color:#888;">Constituent stock data unavailable — NSE discontinued this API. Advance/Decline above still reflects live breadth.</td></tr>';
 
   document.getElementById('blackScholesRows').innerHTML = blackScholes.rows.map((row) => `
     <tr>
