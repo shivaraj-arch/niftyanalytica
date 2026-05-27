@@ -538,6 +538,15 @@ const renderLiveSections = (snapshot) => {
   setText('heroLowestIv', dayRangeLabel);
   setText('heroTradedValue', `${formatNumber(indexSummary.tradedValueCrores)} Cr`);
   setText('heroBreadth', `${contributors.advances} / ${contributors.declines}`);
+  if (snapshot.vix) {
+    const vixTone = snapshot.vix.last >= 20 ? 'negative' : snapshot.vix.last <= 13 ? 'positive' : '';
+    setHtml('heroVix', `<span class="${vixTone}">${formatNumber(snapshot.vix.last)}</span>`);
+  }
+  if (openInterest.pcr > 0) {
+    const pcrLabel = openInterest.pcr > 1.2 ? 'Bullish' : openInterest.pcr < 0.8 ? 'Bearish' : 'Neutral';
+    const pcrTone = openInterest.pcr > 1.2 ? 'positive' : openInterest.pcr < 0.8 ? 'negative' : '';
+    setHtml('heroPcr', `<span class="${pcrTone}">${openInterest.pcr.toFixed(2)} (${pcrLabel})</span>`);
+  }
   setHtml('heroSignalNote', `Sentiment: ${openInterest.signals.divergenceSummary}. Trap: ${openInterest.signals.trapRiskLabel}. See <a href="#open-interest">Market Capitalization</a> for details.`);
   setText('contributorsStamp', contributors.timestamp || '-');
   setText('openInterestStamp', openInterest.timestamp || '-');
@@ -693,6 +702,17 @@ const renderOptionChainMarketActivity = () => {
   );
 };
 
+const normalizeVix = (payload) => {
+  if (!payload) return null;
+  const last = parseNumber(payload.last);
+  if (!last) return null;
+  return {
+    last,
+    change: parseNumber(payload.change),
+    percentChange: parseNumber(payload.percentChange),
+  };
+};
+
 const normalizeLiveSnapshot = (payload) => {
   const contributors = normalizeContributors(payload.contributors || {});
   const fiiDii = normalizeFiiDii(payload.fiiDii || {});
@@ -700,6 +720,7 @@ const normalizeLiveSnapshot = (payload) => {
   const blackScholes = buildBlackScholes(openInterest);
   const lowIV = buildLowIv(payload.optionChain || {});
   const indexSummary = normalizeIndexSummary(payload);
+  const vix = normalizeVix(payload.vix || null);
   openInterest.signals = buildOpenInterestSignals({ openInterest, contributors, fiiDii, indexSummary });
 
   return {
@@ -710,6 +731,7 @@ const normalizeLiveSnapshot = (payload) => {
     blackScholes,
     lowIV,
     indexSummary,
+    vix,
   };
 };
 
@@ -957,12 +979,17 @@ const extractOpenInterest = (payload) => {
 
   const positioning = buildPositioningChanges(normalizedStrikes);
 
+  const totalCallOI = normalizedStrikes.reduce((s, r) => s + r.callOI, 0);
+  const totalPutOI = normalizedStrikes.reduce((s, r) => s + r.putOI, 0);
+  const pcr = totalCallOI > 0 ? totalPutOI / totalCallOI : 0;
+
   return {
     timestamp: records.timestamp || '',
     spot,
     expiry,
     strikes: normalizedStrikes,
     positioning,
+    pcr,
     rawRecords: data,
   };
 };
