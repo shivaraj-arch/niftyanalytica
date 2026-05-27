@@ -588,10 +588,12 @@ const renderLiveSections = (snapshot) => {
       <td>${formatNumber(row.last)}</td>
       <td class="${tone(row.pChange)}">${signed(row.pChange)}%</td>
       <td class="${tone(row.contributingPoints)}">${signed(row.contributingPoints)}</td>
-      <td>${formatNumber(row.tradedValueCr)}</td>
+      <td>${row.yearHigh > 0 ? formatNumber(row.yearHigh) : '-'}</td>
+      <td>${row.yearLow > 0 ? formatNumber(row.yearLow) : '-'}</td>
+      <td class="${tone(row.perChange365d)}">${row.perChange365d !== 0 ? signed(row.perChange365d) + '%' : '-'}</td>
     </tr>
   `).join('')
-    : '<tr><td colspan="5" style="text-align:center;padding:12px;color:#888;">Constituent stock data unavailable — NSE discontinued this API. Advance/Decline above still reflects live breadth.</td></tr>';
+    : '<tr><td colspan="7" style="text-align:center;padding:12px;color:#888;">Constituent stock data unavailable — NSE discontinued this API. Advance/Decline above still reflects live breadth.</td></tr>';
 
   document.getElementById('blackScholesRows').innerHTML = blackScholes.rows.map((row) => `
     <tr>
@@ -926,8 +928,11 @@ const normalizeContributors = (payload) => {
         symbol: row.symbol || '',
         last: parseNumber(row.lastPrice),
         pChange: pctChange,
-        tradedValueCr: parseNumber(row.totalTradedValue) / 10000000,
         contributingPoints: (niftyPreviousClose * (ffmc / niftyFfmc) * pctChange) / 10000000,
+        yearHigh: parseNumber(row.yearHigh),
+        yearLow: parseNumber(row.yearLow),
+        perChange365d: parseNumber(row.perChange365d),
+        perChange30d: parseNumber(row.perChange30d),
       };
     })
     .sort((left, right) => Math.abs(right.contributingPoints) - Math.abs(left.contributingPoints));
