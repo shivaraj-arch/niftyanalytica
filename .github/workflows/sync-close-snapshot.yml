@@ -37,13 +37,19 @@ jobs:
 
       - name: Derive date environment
         run: |
-          if [ -n "${TARGET_DATE}" ]; then
-            ARCHIVE_DATE="$(node -e "const [y,m,d]=process.argv[1].split('-'); console.log(`${d}${m}${y.slice(-2)}`)" "${TARGET_DATE}")"
-            echo "NSE_TARGET_DATE=${TARGET_DATE}" >> "$GITHUB_ENV"
-            echo "NSE_ARCHIVE_DATE=${ARCHIVE_DATE}" >> "$GITHUB_ENV"
-            echo "NSE_INDEX_CACHE_DATE=${TARGET_DATE}" >> "$GITHUB_ENV"
-            echo "NSE_INDEX_HISTORY_DATE=${TARGET_DATE}" >> "$GITHUB_ENV"
+          # Resolve to the last trading weekday if not explicitly provided
+          if [ -z "${TARGET_DATE}" ]; then
+            _d="$(date -u +%Y-%m-%d)"
+            while [ "$(date -u -d "$_d" +%u)" -ge "6" ]; do
+              _d="$(date -u -d "$_d - 1 day" +%Y-%m-%d)"
+            done
+            TARGET_DATE="$_d"
           fi
+          ARCHIVE_DATE="$(node -e "const [y,m,d]=process.argv[1].split('-'); console.log(\`\${d}\${m}\${y.slice(-2)}\`)" "${TARGET_DATE}")"
+          echo "NSE_TARGET_DATE=${TARGET_DATE}" >> "$GITHUB_ENV"
+          echo "NSE_ARCHIVE_DATE=${ARCHIVE_DATE}" >> "$GITHUB_ENV"
+          echo "NSE_INDEX_CACHE_DATE=${TARGET_DATE}" >> "$GITHUB_ENV"
+          echo "NSE_INDEX_HISTORY_DATE=${TARGET_DATE}" >> "$GITHUB_ENV"
 
       - name: Fetch latest closing snapshot
         env:
