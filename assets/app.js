@@ -587,13 +587,13 @@ const renderLiveSections = (snapshot) => {
       <td>${row.symbol}</td>
       <td>${formatNumber(row.last)}</td>
       <td class="${tone(row.pChange)}">${signed(row.pChange)}%</td>
-      <td class="${tone(row.contributingPoints)}">${signed(row.contributingPoints)}</td>
-      <td>${row.yearHigh > 0 ? formatNumber(row.yearHigh) : '-'}</td>
-      <td>${row.yearLow > 0 ? formatNumber(row.yearLow) : '-'}</td>
-      <td class="${tone(row.perChange365d)}">${row.perChange365d !== 0 ? signed(row.perChange365d) + '%' : '-'}</td>
+      <td>${row.previousClose > 0 ? formatNumber(row.previousClose) : '-'}</td>
+      <td>${row.open > 0 ? formatNumber(row.open) : '-'}</td>
+      <td>${row.dayHigh > 0 ? formatNumber(row.dayHigh) : '-'}</td>
+      <td>${row.dayLow > 0 ? formatNumber(row.dayLow) : '-'}</td>
     </tr>
   `).join('')
-    : '<tr><td colspan="7" style="text-align:center;padding:12px;color:#888;">Constituent stock data unavailable — NSE discontinued this API. Advance/Decline above still reflects live breadth.</td></tr>';
+    : '<tr><td colspan="7" style="text-align:center;padding:12px;color:#888;">Constituent data pending — refreshes during market hours.</td></tr>';
 
   document.getElementById('blackScholesRows').innerHTML = blackScholes.rows.map((row) => `
     <tr>
@@ -634,7 +634,6 @@ const renderLiveSections = (snapshot) => {
 
 const OPTION_CHAIN_MARKET_CAP_SERIES = [
   { key: 'marketCapCrores', label: 'Market Cap (Cr)', color: '#b94a48' },
-  { key: 'ffmcCrores', label: 'FFMC (Cr)', color: '#1f8f6b' },
 ];
 
 const OPTION_CHAIN_MARKET_FLOW_SERIES = [
@@ -683,7 +682,7 @@ const renderOptionChainMarketActivity = () => {
       })),
     }),
     'optionChainMarketCapLegend',
-    'Daily Market Cap and FFMC',
+    'Daily Market Cap',
     false,
     { axisFormatter: formatCroresAxisCompact, tooltipFormatter: formatCroresValueLabel },
   );
