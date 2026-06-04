@@ -1,27 +1,27 @@
 {
   "marketTape": {
-    "updatedAt": "2026-06-04T15:01:33.118194+05:30",
+    "updatedAt": "2026-06-04T20:01:40.222470+05:30",
     "items": [
       {
         "label": "S&P 500",
-        "last": 7553.7,
-        "changePercent": -0.6784742219241892,
+        "last": 7551.3,
+        "changePercent": 0.3348347749830565,
         "source": "Stooq",
-        "updatedAt": "2026-06-03 23:00:00"
+        "updatedAt": "2026-06-04 16:31:20"
       },
       {
         "label": "Dow Jones",
-        "last": 50687.1,
-        "changePercent": -1.0421527150050134,
+        "last": 51395.6,
+        "changePercent": 0.3914429477763569,
         "source": "Stooq",
-        "updatedAt": "2026-06-03 23:00:00"
+        "updatedAt": "2026-06-04 16:31:19"
       },
       {
         "label": "Nasdaq",
-        "last": 26853.97,
-        "changePercent": -0.8816720580049894,
+        "last": 26670.871,
+        "changePercent": 0.38197349181950346,
         "source": "Stooq",
-        "updatedAt": "2026-06-03 23:00:00"
+        "updatedAt": "2026-06-04 16:31:19"
       },
       {
         "label": "Nikkei 225",
@@ -39,118 +39,149 @@
       },
       {
         "label": "FTSE 100",
-        "last": 10280.2,
-        "changePercent": -0.39338035811176025,
+        "last": 10337.3,
+        "changePercent": 0.1598713278040462,
         "source": "Stooq",
-        "updatedAt": "2026-06-04 11:31:13"
+        "updatedAt": "2026-06-04 16:31:18"
       },
       {
         "label": "DAX",
-        "last": 24862.53,
-        "changePercent": 0.06564378806916171,
+        "last": 24978.96,
+        "changePercent": 0.534246255567237,
         "source": "Stooq",
-        "updatedAt": "2026-06-04 11:16:09"
+        "updatedAt": "2026-06-04 16:16:17"
       },
       {
         "label": "Crude Oil",
-        "last": 94.85,
-        "changePercent": -0.9399477806788572,
+        "last": 92.71,
+        "changePercent": -3.17493472584857,
         "source": "Stooq",
-        "updatedAt": "2026-06-04 11:31:28"
+        "updatedAt": "2026-06-04 16:31:39"
       },
       {
         "label": "Gold",
-        "last": 4462.95,
-        "changePercent": 0.530250641414061,
+        "last": 4483.12,
+        "changePercent": 0.9845902946562728,
         "source": "Stooq",
-        "updatedAt": "2026-06-04 11:31:32"
+        "updatedAt": "2026-06-04 16:31:36"
       }
     ]
   },
   "newsFeed": {
-    "updatedAt": "2026-06-04T15:01:33.118215+05:30",
-    "updatedAtLabel": "04 Jun 2026, 03:01:33 PM IST",
+    "updatedAt": "2026-06-04T20:01:40.222486+05:30",
+    "updatedAtLabel": "04 Jun 2026, 08:01:40 PM IST",
     "items": [
       {
         "source": "Business Standard",
-        "title": "India should reassess FTAs, modernise investment screening: Report",
-        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPaUZ5b2s4RHVYMXhkNHBjeEthaGJ2NVk1RjFMSjJlOUNicTBwMjRrX3M4Wjktc29DeEx0ZTI5NE9yck9jTUIzcC14RTZUS0I1QnVPYkNXaXRqSmRIdVdsRGRFODhkSUY1cFZyNm12blRxb3pkT1REUDg1QjVseUhXeXRiQ3ZxVlh4MWlkNHVESHY1VFJwb3hUeGFhYWxRdnItQzFya3FCS0lhclQ4MzVCeVkzVnZJWFdqcjEybTFVdlVERkQ4LVotaWY1ONIB0AFBVV95cUxQaGk3ZEdyWXcxTy1qOHNkanFpQ2dTVk5nUU9rZVh4RUdIY21IV0NxWkh4aFdnR1VsQmJwMkR0WXFUUDlsZjhJNFd5M3pkZzdyYTdZQ2tGWk5aRWc5MkR6MkZpZ0lmc2ZRYmNBUm83cG80cHZRMWtJenRsb0RaYWRNdDN0RnN1bFItcTBWMm44VklZdkVfTzZxMEFiLVdNb1lJQnBvTEl6ZGxYdjUyRmI4MHpqZW5jWmwwYUpEMmdDdkExclpzbWVmUEFhOFZKYW9m?oc=5",
-        "publishedAt": "2026-06-04T14:33:35+05:30",
-        "publishedAtLabel": "04 Jun 2026, 02:33:35 PM IST"
+        "title": "India should audit existing FTAs to assess effectiveness: Report",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZG1xbE5OQnlPYmFrYjBXbnViNXUzUlhPUWNZcE85cDBZb0t5OXlBRlFoTl9zeU5MS0hlaV9weHY4ZGoyVXd0a2VqQVFTcHJ6eGw3dTJGZ3dvVi1LNjhLTEpRbE5JanpTU0h4VmhYdGNzNm42V3RTVG9zN1ZSUWt4Wjh2QUVPSFRKYXZLT08zM1hpTk8xdnFna3VHbnZVLU9QQzVDT2V1ZnloOGVvRjNRLWR6Rkx0Q1dhQ2hYTC1tRDfSAcYBQVVfeXFMTjFYN1FpTkF2bXZyZXFHaFR4Qm9Gb1JWTEJNQThoclVOQTBPZkcxR0dwaGFnRVE3Nkx3alNlbGhTSHhxSTgwamZGZElhemZqMkptRkVmVEstalotdjV0Z2ZBaXN4SldZdHR5RzBhbGhVcHJlSUhRczZrSHRXbXhZZW4zaDFRTnU5MEtuRXBhY2ItYXN2dXNFWW9XYUpoYTlINXlYcDluR3FkbGdSM010ZGFZZWtJQmlBNzRjbV9GYXdLUjE1REtn?oc=5",
+        "publishedAt": "2026-06-04T19:35:38+05:30",
+        "publishedAtLabel": "04 Jun 2026, 07:35:38 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "UPSC rolls out face authentication at exam centres to curb impersonation: Here's how it works",
+        "link": "https://www.livemint.com/news/india/upsc-rolls-out-face-authentication-at-exam-centres-to-curb-impersonation-heres-how-it-works-11780578091955.html",
+        "publishedAt": "2026-06-04T19:25:32+05:30",
+        "publishedAtLabel": "04 Jun 2026, 07:25:32 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Gurgaon tenants claim they lost  \u20b970,000 after owner asked them to vacate flat. Internet offers help",
+        "link": "https://www.livemint.com/news/trends/gurgaon-tenants-claim-they-lost-70-000-after-owner-asked-them-to-vacate-flat-internet-offers-help-11780580843893.html",
+        "publishedAt": "2026-06-04T19:22:57+05:30",
+        "publishedAtLabel": "04 Jun 2026, 07:22:57 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Shooting after California high school graduation: One dead and three wounded, police launch investigation",
+        "link": "https://www.livemint.com/news/us-news/shooting-after-california-high-school-graduation-one-dead-and-three-wounded-police-launch-investigation-11780580608791.html",
+        "publishedAt": "2026-06-04T19:22:44+05:30",
+        "publishedAtLabel": "04 Jun 2026, 07:22:44 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "Angel One announces change in Chief Technology Officer",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOTFlwUUNLNngxaWF4MzFkeGNRelpyaG1PNXg1aWcyclFFbjhUSFlLT1JHNHlPV0tacmdVZDhuVkZNdGJfNFpQLURLNUdiOHZHNElCdDBwUXN6OEtTZ0RDajFSTVhoaHNESWJzanpVUU8tbVdRT1FZSHI5ek1KRkdVc3F4ZXFSUU9HM1JVckRJc29ITWdGb2ZyMWRVVF9jV0Q1WHRNMWtQa3VyYnNjRUZGZFg4VXExdzE4NzdTSzVTZVR1dzJTLXRHQmg0RmpSOW5iLUHSAdcBQVVfeXFMUG1wc3NRX0VqNjBpWml1Y1BIUFBvWEYySE5RT2FLTTNWR0F1TEpIUndyV0ZvLWVReFFzY1hHUWhZamNOSlhGZVpzNW5ESFRYYXRZbWFZeVFVTUVKYW5KcFI0Y19aTjktU1ZEQWhBSjh5RjNOYS05XzZYUV9FWXVPck1iUGFTOVdrMzJRVV9DM3JYc3pjWXNrNy1fNmlMU3RaNUVuYkZoZzJGUC1weTlpRWw5LXI5Y2ZVYU84NGxvQnVPM2JRaEk4VlUtUVRYMlVhMjJsLVYtQzg?oc=5",
-        "publishedAt": "2026-06-04T14:04:20+05:30",
-        "publishedAtLabel": "04 Jun 2026, 02:04:20 PM IST"
+        "title": "Aurobindo Pharma receives USFDA approval for Tofacitinib Tablets",
+        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQR2VHOFRKUHFrZWFWdllQYTVVUlo0N2ppeklPLWpHWmNOY2hZNUktdG1icnNNdi1xSW42T3lWZUQyNTJWMHBDaGlwME0zX00yN3dPU1l3TVFBc2dHbjRLeHFGeVhaSnE2NzR5Y3ktQ0hub1VDRGtGdlZuWlZhdGNoSXJtSGd1YXM4bVI5NzZMYmkxN1A0SFdCX29wX19aaTZSSFhNWEFNYzNHZnJLM2FsempNNUdGSU9TWThLMndEOU9zcFI3SnBoZTF3UjBQeGVYMzJrRXEzajB3LTBrY1RV0gHkAUFVX3lxTE1yN0c0UVNfZVF0Wi1FdXhCdU4zYk14eW9nZGE5QXF3dHcxSXJzcHZEZGJoR25DRnA4cUNzVHlBY1ZweW5zc2FoWE8tUWs2aWx0U3hPNTNiMkJfTFhZN2MzTm5fUGRlTGFremFmOEJjMlhpZmFOMTlXYkRzQ1hNQ0JnRFRWclpkMno5aVNISHRpNlJSRGJBcFI4Umpva2VtcVVsZ1ctM1ZLbHFEX1RsdjJKc296ZXNLTDBrdVJRdGc2bnZYOXl1MDZ0RlpsTTVSMHJTQnh0SlFJTnNXVDZLQTBoWTM0NA?oc=5",
+        "publishedAt": "2026-06-04T19:16:01+05:30",
+        "publishedAtLabel": "04 Jun 2026, 07:16:01 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "UAE employers move beyond paychecks to retain top talent: Here are the steps they are taking amid \u2018modest pay rises\u2019",
+        "link": "https://www.livemint.com/news/trends/uae-employers-move-beyond-paychecks-to-retain-top-talent-here-are-the-steps-they-are-taking-amid-modest-pay-rises-11780576168345.html",
+        "publishedAt": "2026-06-04T19:08:32+05:30",
+        "publishedAtLabel": "04 Jun 2026, 07:08:32 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Laid-off Oracle techie lands job in 45 days; shares blueprint to beat market slump \u2014 \u2018Soak knowledge like sponge\u2019",
+        "link": "https://www.livemint.com/news/trends/laidoff-oracle-techie-lands-job-in-45-days-shares-blueprint-to-beat-market-slump-soak-knowledge-like-sponge-11780575802809.html",
+        "publishedAt": "2026-06-04T19:00:46+05:30",
+        "publishedAtLabel": "04 Jun 2026, 07:00:46 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Greer Says \u2018Deal\u2019s a Deal\u2019 for Economies With Capped US Tariffs",
+        "link": "https://www.bloomberg.com/news/articles/2026-06-04/greer-says-deal-s-a-deal-for-economies-with-capped-us-tariffs",
+        "publishedAt": "2026-06-04T19:00:00+05:30",
+        "publishedAtLabel": "04 Jun 2026, 07:00:00 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "US Jobless Claims Rose in Holiday Week to Most Since February",
+        "link": "https://www.bloomberg.com/news/articles/2026-06-04/us-jobless-claims-rose-to-225-000-in-holiday-week",
+        "publishedAt": "2026-06-04T18:04:52+05:30",
+        "publishedAtLabel": "04 Jun 2026, 06:04:52 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "IL&FS Investment Managers consolidated net profit declines 81.92% in the March 2026 quarter",
-        "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQT0NXZUpaWThQMU4wdkI3czNIUFp2MmpfRzZTdThQWF9KTVU4Vi1aN1V4cmNheUgxeFptNUc0MjJJUkJFcHhrai1SY1F6cWp4ck40SFNnOHVFd1lENlhpaTN2QmYzRXR4YTRvdTc4cDRzalVKaWZBMzRUVlgyM3BGU3NCSVdvQzVTMFpMT0toVUlsQVJ6bUN5M2xVd044M1V4QXRtbl9BLUZPRDRueE1sQ1J4ZFFmYW5EbkpPVXhwU0ZvT1lJbDJpQ2ZNVVliWWowaVZ1S3h1ZGFlb2dmOUVnejZUWEw1NHJzd0JkQ1dWNjl2N210aTBWZjd4cGhJcGtvREHSAYcCQVVfeXFMT0FaUmtHSUxQNVFsbWEzaEd6RW5mVUdoVU05ZkxPOG9pT3ZWYUwzQ0E0cHZtRFAwSXBrVVQ3R3FvUWN2eHNqRnNjdWJTNWZGMU9zbEdIdEFYUGZlSmR6WTlfSllhQkthMWg2d1gtZ1BGSEJnVzJ1ZTAzRzFsaVhGQnVDUTdITFRFUGFkcUV6V0FNT2E1UGFVWi00cXZyaGtxc2hQcl9yRnJxQk1qVFdLZk0zRk9JOHZmMWRGcGktR0ZXd3ljcldNVldWYlZTRV8yYzNRQWxzMGVWZkNZaWxib2lINXdmN0JNOGlrWFB4RUZYeE5sVGIyRVQtUnlRTVdaN2pvMjZ3bDg?oc=5",
-        "publishedAt": "2026-06-04T14:04:01+05:30",
-        "publishedAtLabel": "04 Jun 2026, 02:04:01 PM IST"
+        "title": "Southwest Monsoon has set in over Kerala, says IMD",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPVWtQWTZ1VzZRaVpmUHRCZ1RjdXk4a1RBamotSS1jQVNjd1dpdU85NExLblFDbllrd1pFWGRTRXE1Vzk2ZVYwUDRST1IxNlBGU0wwZXgtMlhUWGVIMExpN1VLRF93YTYwM24zUHVqX044eWNXNFRmS2tTZER6VUp2c2c2NUVyTGdBVG1GRWpYRklrRHpKbWdDNVBBelNJVm8tYkJOXzNkdWtzZFdkNk5rR0hvcjhpdDVoNFZibHd3MUtpdlhONmFibFlTRdIB0AFBVV95cUxNVGdsX3hWT1JSSG5xSzZiYnN4TWUtRTZHSlFoX04yZVZGSUpVejk1Z3J4OHJ3cjJMa0pWcXZqMWxwVE84R1FzenI2YkVqYzUxZllEYW1yR04wSFhoWVBlMG5wQ19aZXU3MEptNTlnUzB0TkYwMG9Xek9uQmp3VmVQZ2d5amh0NlY1Zm5NMGdyX3VBSDNzR1dyVlljSkpyNmgyNk9mM09lTnd2MmRURUwyRkQyZlpUUW9TUy11T1dreWo0MTI1Z1BpUno2NkRyeXZD?oc=5",
+        "publishedAt": "2026-06-04T17:31:02+05:30",
+        "publishedAtLabel": "04 Jun 2026, 05:31:02 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "Ceigall India to divest Ceigall Malout Abohar Sadhuwali Highways",
-        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOYVgyeUxKa0hEV3dlbGFDZGwyS01pQTd6LWNKbWhlOXFWeVpwZGZ4c0hGcklGMjBwejJTb3ZKTVhxVTllQWZFZFJZcGYtWEVkTUg3dHRKUU5VV2xhWUViVzVLaWtwMm9OeFZnRTJkZ0VobENFMnFmSHZhSVNGRkM0ZXFsUHBJZFZaRU5sTTBVQU9meGU5MHRtOS1LYk5NMkN4SElRNnhRTmQxX3hacDFhd1Z5blpia3ZnVWkyYV83VjRuNXpfbDZRLXZyQWNWc0ZHajV2VFJ2Zl83RkxBVEQw0gHkAUFVX3lxTE5YbHJPRk1RczR0WlliOG5fQm40SjY3Y2lBdF9DNUJJUFJfWG95bmtubmZtSUpabWh6ZUV2cGlzd1hocnF0N0thWl9iZTQxbFI0RXJjX19rYjFjRkJKNjl3NEVvbUJOVkNBdVJqVkVpYWxaTTMxdkQ0M3hOTVZhZjg4UnFXYWpEVVZyQmZFbktrblRDcXBjTmU3SnJ1ZUxPTW9zMFRNWnNaZEc2YmRuaFREbHJfUzBwR0EwTlR3VG1hdFFBNk5GZzF2UEt2VmlEUDNBY3VTeGlBRXh3cHhfclRmUWdKSg?oc=5",
-        "publishedAt": "2026-06-04T13:50:20+05:30",
-        "publishedAtLabel": "04 Jun 2026, 01:50:20 PM IST"
+        "title": "CMR Green Technologies IPO subscribed 9.59 times",
+        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOYWdTVm5MQWlZYko4bWRFRXQ4Zmw5enhybWRaaWk1UzFqWndGdHoySDNWb1V3ZjMtWmpXWW5Nck10VEptZC04VVJCSjN3X3dBcU1HQzNZS0NrOV9PVWNRdE9ZN0phTkJaRjloTzJBdWNHQWVvcmt6M1hoQ1NpUmpMTEFQUnlCLVlScjVwRXNXaVJjTmJjdUdOWi1zSTA4V1hUcE5vYTAyMllGT2ZreDZYaGRtT3hBM3Z1enowaE9MWGdPT19UaWZfV09B0gHPAUFVX3lxTE9faS1QdVViQ3FlcGxnX2Q3RUtnbHhTZ1p6NVFYOFdKQUZ1bDd5d3FfRk1CSUlVN3gyWllzUkpxSl9pejcxNVlZYThLLXQwaEwyWkR0RHhEZ3VFUE94UFAwM3N1RThHMjgwc2FMejRKN0lqM25wRzRaelhyRUZvQU15SmNFTHpHd0gwM2Fic0JJQzJNNksta1JCb1MzLVhodTlEM0RGc0VBTThMVlQ0dkdCb1UzcU1BUjAwMHEzbXdPVVBtNmkxWGN5OEQ2Z3Nvbw?oc=5",
+        "publishedAt": "2026-06-04T17:16:28+05:30",
+        "publishedAtLabel": "04 Jun 2026, 05:16:28 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "Satin Creditcare Network raises Rs 100 cr via convertible warrants",
-        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNNzhTUTd5ZDRqLXhKb2l6aDRrTEJQUWJ5MGhBci1Pb2RnWjRqX2FsTDFKZkVnUndMaHN3U3I1R3JBWXg3N1ZvZE9WQ3hfdzE3VEZkMjQtU0pQbEVmdDNDQmk3UWR3V1JzYTZBdl9SaENYN0dwZG5NWVhaNkRrUEo3bHc2QkxxcDAxWTJ3M2FGUTdpR3E0S0Vva2twdU4xamU1WjEzQ0otazA2bFBhdzkyWHFJczRNMEdmUEhwSVVVeWdrdFl6Yy1GYmRBSHBlNkJvM2FYTVdjWnlkdThFM0tqWkZR0gHnAUFVX3lxTE9wS2Z2T0RoZVFra0tLWE1vM2VTeDl4bDRnTUp4RVJ4U25waXo1Tm4wWlVUSldZQmYxbGpUSG5IV1FhSUp3T0JFdVVzeFhNTE5nRDNyelVFUUpOWXM2czFLbGNSenlwb3BjbDMtLU9qV1BFenZzU18zeVJjWTZHdHltajdzeVB2V18wc2EtSk1VN3hZY3Z4NlpaTFJmY3lCNUliaWZJWnRCbDIwcmNTV2dlYkw3Z3VLQXJMT3VjQ2VNV0s2X2xHT0o4NTRqSGRmRGdXZVUtMmVscnkzVXJGbGxPZzdSZ1FwTQ?oc=5",
-        "publishedAt": "2026-06-04T13:50:12+05:30",
-        "publishedAtLabel": "04 Jun 2026, 01:50:12 PM IST"
+        "title": "Artificial Electronics appoints Girija Sankar Tripathy as new CFO",
+        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQSmJUZFFTS3N3b3dqdkZVUDhVMzAxMF96Nmt2S2hMTTZzNlRvYm1vOEI4dENjTmNVMDNVTEpfUHliUG5zU2k0dEZnbmZ4ZWs2cTRhSFFMbDJKQlJVb2k0OXVZaG5keDB3WGpreDRSS01kWjA1OVVsYmMtdWRQZmlBRFh6X1A4cE9HR21iVVVaeGJ6ZnVVbVVGeW9CS1hzdExQQlUwYVdtcnAtcS12MGFrR25ab2hrOVBNYUFNRzA2bV9ETVktZ3IxLUdBMUZER0R6dFlHS1AwcUw5QnEzS3B5bdIB5gFBVV95cUxPSjV1UWhHMHdOOXFZR3A4dXdRbFRJNmxpOG12SUJfQzBVWThOT2dMVWQ5TTFMMHhfSlVoVWpfMVN3LWl1eXh5LU1CZHJZVkRtWjBwcVY0MEVEMVBqNi1hYWFYc21lUWJqX29veFJ1ZUxFa3NMdHB5a2dGVjJfTDdYWTFycUJYV2V1YTMwX2VsMmZvUS1VR3N6Z2JpVzl5bVdPWmZoWVZ5RGI2bDQ0ZHhUaEtVM0tyWjFIVWlWTXk0NjVvM2cwV0xZa2JRVEtsU0hTRGo2UW1NTWtjenRtX0JiX0UyUldfUQ?oc=5",
+        "publishedAt": "2026-06-04T17:16:20+05:30",
+        "publishedAtLabel": "04 Jun 2026, 05:16:20 PM IST"
       },
       {
         "source": "Bloomberg Economics",
-        "title": "Czech Inflation Slows, Weakening Case for an Imminent Rate Hike",
-        "link": "https://www.bloomberg.com/news/articles/2026-06-04/czech-inflation-slows-weakening-case-for-an-imminent-rate-hike",
-        "publishedAt": "2026-06-04T13:17:14+05:30",
-        "publishedAtLabel": "04 Jun 2026, 01:17:14 PM IST"
+        "title": "UK Job Cut Notices Surge to Highest Since 2020 as Iran War Bites",
+        "link": "https://www.bloomberg.com/news/articles/2026-06-04/uk-job-cut-notices-surge-to-highest-since-2020-as-iran-war-bites",
+        "publishedAt": "2026-06-04T17:04:13+05:30",
+        "publishedAtLabel": "04 Jun 2026, 05:04:13 PM IST"
       },
       {
         "source": "Bloomberg Economics",
-        "title": "Swiss Inflation Unexpectedly Holds Before SNB Rate Decision",
-        "link": "https://www.bloomberg.com/news/articles/2026-06-04/swiss-inflation-unexpectedly-holds-at-0-6-before-snb-meeting",
-        "publishedAt": "2026-06-04T12:00:00+05:30",
-        "publishedAtLabel": "04 Jun 2026, 12:00:00 PM IST"
+        "title": "KPMG Australia Fallout Widens as RBA and Pension Giant Reassess",
+        "link": "https://www.bloomberg.com/news/articles/2026-06-04/kpmg-australia-fallout-widens-as-rba-and-pension-giant-reassess",
+        "publishedAt": "2026-06-04T16:59:20+05:30",
+        "publishedAtLabel": "04 Jun 2026, 04:59:20 PM IST"
       },
       {
         "source": "Bloomberg Economics",
-        "title": "Sweden\u2019s Subdued Inflation Gives Riksbank Rate Hike Reprieve",
-        "link": "https://www.bloomberg.com/news/articles/2026-06-04/sweden-s-subdued-inflation-gives-riksbank-rate-hike-reprieve",
-        "publishedAt": "2026-06-04T11:43:41+05:30",
-        "publishedAtLabel": "04 Jun 2026, 11:43:41 AM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "RBA Is Already Seeing Signs Rate Hikes Are Working, Bullock Says",
-        "link": "https://www.bloomberg.com/news/articles/2026-06-04/rba-is-already-seeing-signs-rate-hikes-are-working-bullock-says",
-        "publishedAt": "2026-06-04T11:05:16+05:30",
-        "publishedAtLabel": "04 Jun 2026, 11:05:16 AM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Oil Rally Spurs Nigeria to Weigh Refinancing High-Cost Debt",
-        "link": "https://www.bloomberg.com/news/articles/2026-06-04/oil-rally-spurs-nigeria-to-weigh-refinancing-high-cost-debt",
-        "publishedAt": "2026-06-04T10:49:27+05:30",
-        "publishedAtLabel": "04 Jun 2026, 10:49:27 AM IST"
+        "title": "Denmark to Study Whether Wegovy Can Get More People Working",
+        "link": "https://www.bloomberg.com/news/articles/2026-06-04/denmark-to-study-whether-wegovy-can-get-more-people-working",
+        "publishedAt": "2026-06-04T16:41:00+05:30",
+        "publishedAtLabel": "04 Jun 2026, 04:41:00 PM IST"
       }
     ],
     "sourcesAvailable": [
       "Business Standard",
+      "Livemint",
       "Bloomberg Economics"
     ],
-    "sourceErrors": [
-      {
-        "source": "Livemint",
-        "error": "XML or text declaration not at start of entity: line 308, column 0"
-      }
-    ]
+    "sourceErrors": []
   }
 }
