@@ -475,10 +475,14 @@ const renderHolidayError = (message) => {
 
 const renderMarketActivityError = (message) => {
   setText('heroMarketCap', '-');
-  document.getElementById('optionChainMarketCapChart').innerHTML = `<p>${message}</p>`;
-  document.getElementById('optionChainMarketCapLegend').innerHTML = '';
-  document.getElementById('optionChainMarketFlowChart').innerHTML = `<p>${message}</p>`;
-  document.getElementById('optionChainMarketFlowLegend').innerHTML = '';
+  ['optionChainMarketCapChart', 'optionChainTradedValueChart', 'optionChainFiiDiiChart'].forEach((id) => {
+    const el = document.getElementById(id);
+    if (el) el.innerHTML = `<p>${message}</p>`;
+  });
+  ['optionChainMarketCapLegend', 'optionChainTradedValueLegend', 'optionChainFiiDiiLegend'].forEach((id) => {
+    const el = document.getElementById(id);
+    if (el) el.innerHTML = '';
+  });
 };
 
 const renderLiveError = (message) => {
@@ -636,8 +640,11 @@ const OPTION_CHAIN_MARKET_CAP_SERIES = [
   { key: 'marketCapCrores', label: 'Market Cap (Cr)', color: '#b94a48' },
 ];
 
-const OPTION_CHAIN_MARKET_FLOW_SERIES = [
+const OPTION_CHAIN_TRADED_VALUE_SERIES = [
   { key: 'tradedValueCrores', label: 'Traded Value (Cr)', color: '#0f4c5c' },
+];
+
+const OPTION_CHAIN_FII_DII_SERIES = [
   { key: 'fiiNetCrores', label: 'FII Net (Cr)', color: '#b47b19' },
   { key: 'diiNetCrores', label: 'DII Net (Cr)', color: '#7a4cc2' },
 ];
@@ -670,36 +677,77 @@ const renderOptionChainMarketActivity = () => {
     return;
   }
 
+  // Market Cap — baseline near observed min so small daily moves are visible
+  const mktCapValues = rows.map((r) => r.marketCapCrores).filter(Boolean);
+  const minMktCap = mktCapValues.length > 1 ? Math.min(...mktCapValues) * 0.992 : 0;
+
   renderGroupedSeriesChart(
     'optionChainMarketCapChart',
     rows,
-    (row) => ({
+    (row, idx) => ({
       label: formatArchiveDateLabel(row.date),
-      series: OPTION_CHAIN_MARKET_CAP_SERIES.map((series) => ({
-        value: parseNumber(row[series.key]),
-        color: series.color,
-        label: series.label,
-      })),
+      series: OPTION_CHAIN_MARKET_CAP_SERIES.map((series) => {
+        const value = parseNumber(row[series.key]);
+        const prev = idx > 0 ? parseNumber(rows[idx - 1][series.key]) : null;
+        const delta = prev != null ? value - prev : null;
+        const deltaStr = delta != null
+          ? `  ${delta >= 0 ? '▲' : '▼'} ${formatCroresValueLabel(Math.abs(delta))}`
+          : '';
+        return {
+          value,
+          color: series.color,
+          label: series.label,
+          tooltip: `${formatArchiveDateLabel(row.date)} — ${formatCroresValueLabel(value)}${deltaStr}`,
+        };
+      }),
     }),
     'optionChainMarketCapLegend',
     'Daily Market Cap',
     false,
+    { axisFormatter: formatCroresAxisCompact, tooltipFormatter: formatCroresValueLabel, minBaseline: minMktCap },
+  );
+
+  // Traded Value — always positive; separate axis so scale isn't squashed by FII/DII negatives
+  renderGroupedSeriesChart(
+    'optionChainTradedValueChart',
+    rows,
+    (row, idx) => ({
+      label: formatArchiveDateLabel(row.date),
+      series: OPTION_CHAIN_TRADED_VALUE_SERIES.map((series) => {
+        const value = parseNumber(row[series.key]);
+        const prev = idx > 0 ? parseNumber(rows[idx - 1][series.key]) : null;
+        const delta = prev != null ? value - prev : null;
+        const deltaStr = delta != null
+          ? `  ${delta >= 0 ? '▲' : '▼'} ${formatCroresValueLabel(Math.abs(delta))}`
+          : '';
+        return {
+          value,
+          color: series.color,
+          label: series.label,
+          tooltip: `${formatArchiveDateLabel(row.date)} — ${formatCroresValueLabel(value)}${deltaStr}`,
+        };
+      }),
+    }),
+    'optionChainTradedValueLegend',
+    'Daily Traded Value',
+    false,
     { axisFormatter: formatCroresAxisCompact, tooltipFormatter: formatCroresValueLabel },
   );
 
+  // FII / DII Flows — signed chart, can go negative
   renderGroupedSeriesChart(
-    'optionChainMarketFlowChart',
+    'optionChainFiiDiiChart',
     rows,
     (row) => ({
       label: formatArchiveDateLabel(row.date),
-      series: OPTION_CHAIN_MARKET_FLOW_SERIES.map((series) => ({
+      series: OPTION_CHAIN_FII_DII_SERIES.map((series) => ({
         value: parseNumber(row[series.key]),
         color: series.color,
         label: series.label,
       })),
     }),
-    'optionChainMarketFlowLegend',
-    'Daily Market Activity and Flows',
+    'optionChainFiiDiiLegend',
+    'Daily FII / DII Flows',
     false,
     { axisFormatter: formatAxisValueCompact, tooltipFormatter: formatCroresValueLabel },
   );
@@ -1429,6 +1477,8 @@ const renderGroupedSeriesChart = (id, rows, mapper, legendId, title, expanded = 
     1,
   );
   const hasNegative = mapped.some((item) => item.series.some((series) => (series.value || 0) < 0));
+  const minBaseline = (!hasNegative && options.minBaseline != null) ? options.minBaseline : 0;
+  const effectiveRange = maxValue - minBaseline;
   const width = expanded ? 1440 : 980;
   const height = expanded ? 520 : 360;
   const top = 28;
@@ -1453,14 +1503,20 @@ const renderGroupedSeriesChart = (id, rows, mapper, legendId, title, expanded = 
         return '';
       }
 
-      let scaledHeight = (Math.abs(series.value) / maxValue) * (hasNegative ? chartHeight / 2 : chartHeight);
+      let scaledHeight;
+      if (hasNegative) {
+        scaledHeight = (Math.abs(series.value) / maxValue) * (chartHeight / 2);
+      } else {
+        scaledHeight = (Math.max(series.value - minBaseline, 0) / Math.max(effectiveRange, 1)) * chartHeight;
+      }
       if (scaledHeight > 0 && scaledHeight < 3) {
         scaledHeight = 3;
       }
 
       const x = startX + seriesIndex * (barWidth + gap);
       const y = series.value >= 0 ? baseline - scaledHeight : baseline;
-      return `<rect x="${x}" y="${y}" width="${barWidth}" height="${scaledHeight}" rx="4" fill="${series.color}" opacity="0.92"><title>${item.label} - ${series.label}: ${tooltipFormatter(series.value)}</title></rect>`;
+      const tooltipText = series.tooltip || `${item.label} - ${series.label}: ${tooltipFormatter(series.value)}`;
+      return `<rect x="${x}" y="${y}" width="${barWidth}" height="${scaledHeight}" rx="4" fill="${series.color}" opacity="0.92"><title>${tooltipText}</title></rect>`;
     }).join('');
 
     return `${seriesRects}<text x="${left + index * groupWidth + groupWidth / 2}" y="${height - 16}" text-anchor="middle" font-size="${expanded ? 15 : 11}" font-weight="700" fill="#26444d">${item.label}</text>`;
@@ -1484,7 +1540,7 @@ const renderGroupedSeriesChart = (id, rows, mapper, legendId, title, expanded = 
     <svg viewBox="0 0 ${width} ${height}" preserveAspectRatio="none" role="img" aria-label="${title}">
       ${hasNegative
         ? renderSignedAxisGrid({ left, width, top, height, bottom, baseline, maxValue, expanded, formatter: axisFormatter })
-        : renderPositiveAxisGrid({ left, width, top, baseline, maxValue, expanded, formatter: axisFormatter })}
+        : renderPositiveAxisGrid({ left, width, top, baseline, maxValue, expanded, formatter: axisFormatter, minBaseline })}
       ${bars}
     </svg>
   `;
@@ -1566,10 +1622,15 @@ const buildSvgRect = (x, baseline, width, value, maxValue, color, maxHeight, too
   return `<rect x="${x}" y="${y}" width="${width}" height="${scaledHeight}" rx="5" fill="${color}" opacity="0.88"><title>${escapeHtml(tooltip)}</title></rect>`;
 };
 
-const renderPositiveAxisGrid = ({ left, width, top, baseline, maxValue, expanded, formatter }) => {
-  const ticks = [maxValue, maxValue * 0.75, maxValue * 0.5, maxValue * 0.25, 0];
+const renderPositiveAxisGrid = ({ left, width, top, baseline, maxValue, expanded, formatter, minBaseline = 0 }) => {
+  const range = maxValue - minBaseline;
+  const ticks = range > 0
+    ? [maxValue, minBaseline + range * 0.75, minBaseline + range * 0.5, minBaseline + range * 0.25, minBaseline]
+    : [maxValue, maxValue * 0.75, maxValue * 0.5, maxValue * 0.25, 0];
   return ticks.map((tick) => {
-    const y = baseline - ((tick / maxValue) * (baseline - top));
+    const y = range > 0
+      ? baseline - (((tick - minBaseline) / range) * (baseline - top))
+      : baseline - ((tick / maxValue) * (baseline - top));
     return `
       <line x1="${left}" x2="${width - 10}" y1="${y}" y2="${y}" stroke="rgba(15,76,92,0.1)" stroke-width="1"></line>
       <text x="18" y="${y + 4}" font-size="${expanded ? 14 : 11}" font-weight="700" fill="#26444d">${formatter(tick)}</text>
