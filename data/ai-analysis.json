@@ -1,37 +1,33 @@
 {
-  "generatedAt": "2026-06-09T15:02:45.037983+05:30",
+  "generatedAt": "2026-06-10T20:01:10.643032+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
     "nifty_flow_agent",
     "AggregatorAgent"
   ],
-  "model": "gemini-robotics-er-1.6-preview",
-  "requestedModel": "gemini-robotics-er-1.6-preview",
+  "model": "gemini-3.1-flash-lite",
+  "requestedModel": "gemini-3.1-flash-lite",
   "attemptedModels": [
-    "gemini-robotics-er-1.6-preview",
-    "gemini-robotics-er-1.6-preview"
+    "gemini-3.1-flash-lite"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\nThe Nifty 50 shows a mixed performance with strong support from the Banking and Financial sectors, counterbalanced by profit-booking in Energy and select IT heavyweights.\n\n### **1. Nifty 50 Performance Analysis**\nThe index is seeing significant rotation, with Aviation and Private Banks leading the growth while Utilities and Oil & Gas drag the performance.\n\n*   **Top Gainers (Contributors to Growth):**\n    *   **INDIGO:** +4.09% (Strong volume support)\n    *   **EICHERMOT:** +2.39%\n    *   **Banking Trio:** **SBIN** (+2.26%), **ICICIBANK** (+2.11%), and **AXISBANK** (+2.09%) are providing the heavy lifting for the index.\n    *   **Other Gainers:** JIOFIN (+2.16%) and TRENT (+1.94%).\n*   **Major Decliners:**\n    *   **ONGC:** -2.3% (Lead loser)\n    *   **TITAN:** -1.88%\n    *   **Utilities:** **NTPC** (-1.71%) and **POWERGRID** (-1.65%) witnessed sell-offs.\n    *   **IT/Tech:** **TECHM** (-1.55%) and **INFY** (-0.89%) traded marginally lower prior to positive news updates.\n\n---\n\n### **2. Latest FII & DII Flows (As of June 8, 2026)**\nThe market is currently witnessing a \"buy-on-dips\" strategy by domestic funds against foreign sell-offs.\n*   **Foreign Institutional Investors (FII):** Net **Sellers** of **-\u20b95,555.67 crore**.\n*   **Domestic Institutional Investors (DII):** Net **Buyers** of **+\u20b95,165.24 crore**.\n*   **Trend:** While DIIs are providing strong liquidity support, FIIs have offloaded nearly \u20b943,000 crore this month, citing currency concerns.\n\n---\n\n### **3. Key Financial Headlines & Market Outlook (Tomorrow, June 10)**\nExpect a potential recovery in IT and Telecom sectors based on legal and regulatory breakthroughs:\n\n*   **IT Sector Relief:** A U.S. Federal Judge has struck down a $100,000 H-1B visa fee hike. This removes a significant tax burden, likely boosting sentiments for **TCS, Infosys, and HCLTech**.\n*   **Telecom Windfall:** The Bombay High Court quashed the Centre\u2019s \u20b920,000 crore spectrum charge demand. **Bharti Airtel** is expected to be a major beneficiary (estimated \u20b99,000 crore relief).\n*   **RBI's Rupee Support:** A fresh forex swap facility for FCNR(B) deposits has been introduced to attract capital inflows and stabilize the weakening rupee.\n*   **Commodity Watch:** Brent Crude remains steady near **$93-$94/bbl**, providing a neutral cue for energy-intensive sectors.\n*   **Critical Levels:** Analysts mark **23,000** as the psychological \"must-hold\" support. A clear move above **23,300** is required for a fresh bullish breakout.\n\nNifty Flow Agent\n\nThe latest FII and DII flow data for the Indian market (Nifty 50) as of **June 8, 2026**, is as follows:\n\n### **Latest FII & DII Flow Data (June 8, 2026)**\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 08-Jun-2026 | 16,683.18 | 11,517.94 | **+5,165.24** |\n| **FII/FPI** | 08-Jun-2026 | 8,842.08 | 14,397.75 | **-5,555.67** |\n| **Total** | | **25,525.26** | **25,915.69** | **-390.43** |\n\n---\n\n### **Market Analysis & Financial Headlines**\n\n*   **Mixed Sentiment:** The market observed a mixed performance with a marginal overall net outflow of **\u20b9390.43 crore**. \n*   **FII Heavy Selling:** Foreign Institutional Investors (FIIs) were aggressive net sellers, pulling out **\u20b95,555.67 crore**. This often suggests cautiousness regarding global macroeconomic trends or sector-specific rebalancing.\n*   **DII Liquidity Support:** Domestic Institutional Investors (DIIs) acted as a major pillar of support, infusing **\u20b95,165.24 crore** into the market, nearly offsetting the FII sell-off. This indicates strong confidence among domestic fund managers and retail-driven flows (via mutual funds).\n*   **Volatile Session:** Given the significant buying and selling values (cumulative turnover exceeding \u20b951,000 crore between the two), the market likely experienced high intraday volatility.\n*   **Headlines Summary:**\n    *   *DIIs maintain buying spree to counter massive FII exodus.*\n    *   *Market holds steady despite \u20b95,500 Cr pull-out by foreign investors.*\n    *   *Domestic liquidity remains robust amidst global uncertainty.*\n\nAggregator Agent\n\n### **Executive Summary: Nifty 50 Market Outlook & Flow Analysis**\n\nThe Nifty 50 is currently defined by a high-stakes \"tug-of-war\" between aggressive foreign selling and steadfast domestic support. On June 8, 2026, Foreign Institutional Investors (FIIs) offloaded **\u20b95,555.67 crore**, bringing their monthly exodus to nearly \u20b943,000 crore amid currency concerns. However, Domestic Institutional Investors (DIIs) acted as a vital counterforce, infusing **\u20b95,165.24 crore** to stabilize the index. Despite a cumulative intraday turnover exceeding \u20b951,000 crore, the net market outflow was restricted to a marginal **\u20b9390.43 crore**, signaling robust domestic liquidity.\n\n**Sectoral Dynamics & Surprising Shifts**\nMarket performance is characterized by sharp rotation. Banking heavyweights (SBIN, ICICIBANK, AXISBANK) and Aviation (INDIGO at +4.09%) are providing the primary \"heavy lifting.\" Conversely, Energy and Utilities (ONGC, NTPC) have entered a period of profit-booking. While IT and Telecom (INFY, Bharti Airtel) faced marginal pressure recently, they are the primary candidates for a recovery on June 10 following significant regulatory breakthroughs: a U.S. court reversal on H-1B visa fees and a \u20b920,000 crore telecom spectrum relief.\n\n**Key Outlook**\nAnalysts identify **23,000** as the critical psychological support level. To confirm a fresh bullish breakout, the index must clear resistance at **23,300**. With Brent crude stabilizing near $93-$94/bbl and the RBI introducing new forex swap facilities, the outlook remains cautiously optimistic, anchored by \"buy-on-dips\" domestic sentiment.",
-  "bias": "Bullish",
+  "summary": "Nifty Analysis Agent\n\n### Market Action and Breadth\nThe Nifty 50 constituents displayed mixed performance, reflecting a high degree of volatility. While major banking heavyweights provided structural support, a broad sell-off in metal, oil, and IT sectors exerted downward pressure on the index.\n\n### Key Gainers and Laggards\n*   **Top Gainers:** The session was led by defensive and banking stocks, including **NESTLEIND** (+1.95%), **HINDUNILVR** (+1.85%), **AXISBANK** (+1.67%), and **KOTAKBANK** (+1.65%). \n*   **Top Laggards:** Metal and energy stocks bore the brunt of the selling, with **HINDALCO** (-3.41%), **COALINDIA** (-3.34%), and **ONGC** (-2.74%) witnessing significant corrections.\n\n### Market Outlook\nThe market is currently showing a tug-of-war between strong buying in the financial services sector and persistent profit-booking in commodities and IT. Investors are closely tracking dividend announcements for upcoming dates in June and July. A cautious approach is advised until the index demonstrates clearer directional conviction.\n\nNifty Flow Agent\n\n### FII and DII Flow Summary (10-Jun-2026)\nMarket liquidity remains bifurcated between domestic and foreign participants:\n*   **Domestic Institutional Investors (DII):** Remained net buyers with a substantial net inflow of **\u20b93,123.95 crore** (Buy: \u20b917,396.4 Cr vs. Sell: \u20b914,272.45 Cr).\n*   **Foreign Institutional Investors (FII/FPI):** Acted as net sellers for the session, recording a net outflow of **\u20b92,124.98 crore** (Buy: \u20b914,047.79 Cr vs. Sell: \u20b916,172.77 Cr).\n\n*Headline confirmation is unavailable.*\n\nAggregator Agent\n\n### Executive Summary\nThe Indian market witnessed a divergence in institutional activity on June 10, 2026, as DIIs absorbed liquidity with a net purchase of \u20b93,123.95 crore, while FIIs turned net sellers, pulling out \u20b92,124.98 crore. This conflicting institutional sentiment resulted in a mixed session; gains in banking and FMCG giants (Axis Bank, HUL, Nestle) were offset by sharp declines in metal and energy counters (Hindalco, Coal India, ONGC). While internal banking strength provided a floor to the market, the overall outlook remains cautious due to the lack of unified institutional buying.",
+  "bias": "Neutral",
   "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "*   **IT/Tech:** **TECHM** (-1.55%) and **INFY** (-0.89%) traded marginally lower prior to positive news updates.",
-    "### **3. Key Financial Headlines & Market Outlook (Tomorrow, June 10)**",
-    "### **Market Analysis & Financial Headlines**",
-    "*   **Headlines Summary:**"
+    "*Headline confirmation is unavailable.*"
   ],
   "marketSignals": {
-    "positioningLabel": "Put-side hedge build",
-    "positioningStrike": 23200,
+    "positioningLabel": "Call-side hedge build",
+    "positioningStrike": 23500,
     "divergenceSummary": "Aligned sentiment",
     "divergenceCount": 0,
-    "trapRiskLabel": "No clear trap",
-    "fiiNetCrores": -5555.67,
-    "diiNetCrores": 5165.24,
+    "trapRiskLabel": "Upside trap @ 23300",
+    "fiiNetCrores": -2124.98,
+    "diiNetCrores": 3123.95,
     "tradedValueCrores": 0.0,
-    "spot": 23241.25
+    "spot": 23214.95
   }
 }
