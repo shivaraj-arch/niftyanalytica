@@ -559,7 +559,6 @@ const renderLiveSections = (snapshot) => {
 
   renderMetricGrid('contributorsSummary', [
     { label: 'Nifty Last', value: formatNumber(contributors.lastPrice) },
-    { label: 'Total CP', value: contributors.rows.length ? signed(contributors.totalPoints) : '-', tone: contributors.rows.length ? tone(contributors.totalPoints) : '' },
     { label: 'Adv / Dec', value: `${contributors.advances} / ${contributors.declines}` },
     { label: 'Tracked Stocks', value: contributors.rows.length ? String(contributors.rows.length) : '-' },
   ]);
@@ -960,41 +959,28 @@ const normalizeContributors = (payload) => {
   const rows = payload.data || [];
   const advance = payload.advance || {};
   const niftyRow = rows.find((item) => item.symbol === 'NIFTY 50');
-  if (!niftyRow) {
-    throw new Error('NIFTY 50 row missing in contributor payload.');
-  }
 
-  const niftyPreviousClose = parseNumber(niftyRow.previousClose);
-  const niftyFfmc = parseNumber(niftyRow.ffmc) || 1;
   const transformed = rows
     .filter((row) => row.symbol !== 'NIFTY 50')
-    .map((row) => {
-      const ffmc = parseNumber(row.ffmc);
-      const pctChange = parseNumber(row.pChange);
-      return {
-        symbol: row.symbol || '',
-        last: parseNumber(row.lastPrice),
-        pChange: pctChange,
-        contributingPoints: (niftyPreviousClose * (ffmc / niftyFfmc) * pctChange) / 10000000,
-        previousClose: parseNumber(row.previousClose),
-        open: parseNumber(row.open),
-        dayHigh: parseNumber(row.dayHigh),
-        dayLow: parseNumber(row.dayLow),
-        yearHigh: parseNumber(row.yearHigh),
-        yearLow: parseNumber(row.yearLow),
-        perChange365d: parseNumber(row.perChange365d),
-        perChange30d: parseNumber(row.perChange30d),
-      };
-    })
-    .sort((left, right) => Math.abs(right.contributingPoints) - Math.abs(left.contributingPoints));
+    .map((row) => ({
+      symbol: row.symbol || '',
+      last: parseNumber(row.lastPrice),
+      pChange: parseNumber(row.pChange),
+      previousClose: parseNumber(row.previousClose),
+      open: parseNumber(row.open),
+      dayHigh: parseNumber(row.dayHigh),
+      dayLow: parseNumber(row.dayLow),
+      yearHigh: parseNumber(row.yearHigh),
+      yearLow: parseNumber(row.yearLow),
+      perChange365d: parseNumber(row.perChange365d),
+      perChange30d: parseNumber(row.perChange30d),
+    }))
+    .sort((left, right) => Math.abs(right.pChange) - Math.abs(left.pChange));
 
   return {
     timestamp: payload.timestamp || '',
-    lastPrice: parseNumber(niftyRow.lastPrice),
-    indexChange: parseNumber(niftyRow.pChange),
-    totalPoints: transformed.reduce((sum, row) => sum + row.contributingPoints, 0),
-    positiveSum: transformed.filter((row) => row.contributingPoints > 0).reduce((sum, row) => sum + row.contributingPoints, 0),
-    negativeSum: transformed.filter((row) => row.contributingPoints < 0).reduce((sum, row) => sum + row.contributingPoints, 0),
+    lastPrice: parseNumber(niftyRow?.lastPrice),
+    indexChange: parseNumber(niftyRow?.pChange),
     advances: Number(advance.advances || 0),
     declines: Number(advance.declines || 0),
     rows: transformed,
