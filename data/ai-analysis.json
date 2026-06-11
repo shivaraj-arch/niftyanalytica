@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-10T20:01:10.643032+05:30",
+  "generatedAt": "2026-06-11T09:01:07.219080+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
@@ -12,22 +12,22 @@
     "gemini-3.1-flash-lite"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\n### Market Action and Breadth\nThe Nifty 50 constituents displayed mixed performance, reflecting a high degree of volatility. While major banking heavyweights provided structural support, a broad sell-off in metal, oil, and IT sectors exerted downward pressure on the index.\n\n### Key Gainers and Laggards\n*   **Top Gainers:** The session was led by defensive and banking stocks, including **NESTLEIND** (+1.95%), **HINDUNILVR** (+1.85%), **AXISBANK** (+1.67%), and **KOTAKBANK** (+1.65%). \n*   **Top Laggards:** Metal and energy stocks bore the brunt of the selling, with **HINDALCO** (-3.41%), **COALINDIA** (-3.34%), and **ONGC** (-2.74%) witnessing significant corrections.\n\n### Market Outlook\nThe market is currently showing a tug-of-war between strong buying in the financial services sector and persistent profit-booking in commodities and IT. Investors are closely tracking dividend announcements for upcoming dates in June and July. A cautious approach is advised until the index demonstrates clearer directional conviction.\n\nNifty Flow Agent\n\n### FII and DII Flow Summary (10-Jun-2026)\nMarket liquidity remains bifurcated between domestic and foreign participants:\n*   **Domestic Institutional Investors (DII):** Remained net buyers with a substantial net inflow of **\u20b93,123.95 crore** (Buy: \u20b917,396.4 Cr vs. Sell: \u20b914,272.45 Cr).\n*   **Foreign Institutional Investors (FII/FPI):** Acted as net sellers for the session, recording a net outflow of **\u20b92,124.98 crore** (Buy: \u20b914,047.79 Cr vs. Sell: \u20b916,172.77 Cr).\n\n*Headline confirmation is unavailable.*\n\nAggregator Agent\n\n### Executive Summary\nThe Indian market witnessed a divergence in institutional activity on June 10, 2026, as DIIs absorbed liquidity with a net purchase of \u20b93,123.95 crore, while FIIs turned net sellers, pulling out \u20b92,124.98 crore. This conflicting institutional sentiment resulted in a mixed session; gains in banking and FMCG giants (Axis Bank, HUL, Nestle) were offset by sharp declines in metal and energy counters (Hindalco, Coal India, ONGC). While internal banking strength provided a floor to the market, the overall outlook remains cautious due to the lack of unified institutional buying.",
+  "summary": "Nifty Analysis Agent\n\n### Market Action and Breadth\nThe Nifty market session witnessed mixed performance with notable divergence between heavyweights. While banking stocks provided support, widespread selling pressure in the metals and IT sectors weighed on the index. Breadth remained cautious as investors reacted to varied corporate actions, including upcoming dividend payments.\n\n### Key Gainers and Laggards\n*   **Top Gainers:** NESTLEIND (+1.95%), HINDUNILVR (+1.85%), AXISBANK (+1.67%), KOTAKBANK (+1.65%), and ICICIBANK (+1.41%). The banking and FMCG sectors showed resilience.\n*   **Top Laggards:** HINDALCO (-3.41%), COALINDIA (-3.34%), INFY (-3.08%), ONGC (-2.74%), and ETERNAL (-2.36%). Metal and energy stocks faced significant downside pressure.\n\n### Outlook\nThe market is currently showing signs of consolidation. While financial services remain a pillar of strength, volatility in global-facing sectors like IT and commodity-linked stocks like Metals suggests a defensive stance in the near term. Investors should monitor dividend ex-dates as they may trigger technical price adjustments.\n\nNifty Flow Agent\n\n### FII and DII Flow Summary (June 10, 2026)\nInstitutional activity reflected diverging strategies between domestic and foreign players:\n\n*   **DII (Domestic Institutional Investors):** Remained net buyers with a significant inflow of **\u20b93,123.95 Cr** (Buy: \u20b917,396.4 Cr vs. Sell: \u20b914,272.45 Cr).\n*   **FII/FPI (Foreign Institutional Investors):** Recorded net selling of **\u20b92,124.98 Cr** (Buy: \u20b914,047.79 Cr vs. Sell: \u20b916,172.77 Cr).\n\nOverall, domestic liquidity continues to provide a crucial buffer against foreign institutional outflows.\n\nAggregator Agent\n\n### Executive Summary\nThe Indian market exhibits a tug-of-war between domestic optimism and foreign caution. On June 10, 2026, DIIs acted as the primary support system with a net purchase of over \u20b93,100 crore, helping counteract an FII net sell-off of approximately \u20b92,100 crore. Market leadership was concentrated in the banking and consumer goods sectors, which successfully mitigated heavy losses in metals and IT. Verified recent headline confirmation is unavailable; market participants are advised to monitor institutional flows closely as domestic buying continues to underpin current price levels despite sectoral volatility.",
   "bias": "Neutral",
   "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "*Headline confirmation is unavailable.*"
+    "The Indian market exhibits a tug-of-war between domestic optimism and foreign caution. On June 10, 2026, DIIs acted as the primary support system with a net purchase of over \u20b93,100 crore, helping counteract an FII net sell-off of approximately \u20b92,100 crore. Market leadership was concentrated in the banking and consumer goods sectors, which successfully mitigated heavy losses in metals and IT. Verified recent headline confirmation is unavailable; market participants are advised to monitor institutional flows closely as domestic buying continues to underpin current price levels despite sectoral volatility."
   ],
   "marketSignals": {
-    "positioningLabel": "Call-side hedge build",
-    "positioningStrike": 23500,
+    "positioningLabel": "Bullish positioning build",
+    "positioningStrike": 22800,
     "divergenceSummary": "Aligned sentiment",
     "divergenceCount": 0,
-    "trapRiskLabel": "Upside trap @ 23300",
+    "trapRiskLabel": "No clear trap",
     "fiiNetCrores": -2124.98,
     "diiNetCrores": 3123.95,
     "tradedValueCrores": 0.0,
-    "spot": 23214.95
+    "spot": 22965.85
   }
 }
