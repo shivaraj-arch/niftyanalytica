@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T09:01:07.219080+05:30",
+  "generatedAt": "2026-06-11T15:01:04.809830+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
@@ -12,22 +12,22 @@
     "gemini-3.1-flash-lite"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\n### Market Action and Breadth\nThe Nifty market session witnessed mixed performance with notable divergence between heavyweights. While banking stocks provided support, widespread selling pressure in the metals and IT sectors weighed on the index. Breadth remained cautious as investors reacted to varied corporate actions, including upcoming dividend payments.\n\n### Key Gainers and Laggards\n*   **Top Gainers:** NESTLEIND (+1.95%), HINDUNILVR (+1.85%), AXISBANK (+1.67%), KOTAKBANK (+1.65%), and ICICIBANK (+1.41%). The banking and FMCG sectors showed resilience.\n*   **Top Laggards:** HINDALCO (-3.41%), COALINDIA (-3.34%), INFY (-3.08%), ONGC (-2.74%), and ETERNAL (-2.36%). Metal and energy stocks faced significant downside pressure.\n\n### Outlook\nThe market is currently showing signs of consolidation. While financial services remain a pillar of strength, volatility in global-facing sectors like IT and commodity-linked stocks like Metals suggests a defensive stance in the near term. Investors should monitor dividend ex-dates as they may trigger technical price adjustments.\n\nNifty Flow Agent\n\n### FII and DII Flow Summary (June 10, 2026)\nInstitutional activity reflected diverging strategies between domestic and foreign players:\n\n*   **DII (Domestic Institutional Investors):** Remained net buyers with a significant inflow of **\u20b93,123.95 Cr** (Buy: \u20b917,396.4 Cr vs. Sell: \u20b914,272.45 Cr).\n*   **FII/FPI (Foreign Institutional Investors):** Recorded net selling of **\u20b92,124.98 Cr** (Buy: \u20b914,047.79 Cr vs. Sell: \u20b916,172.77 Cr).\n\nOverall, domestic liquidity continues to provide a crucial buffer against foreign institutional outflows.\n\nAggregator Agent\n\n### Executive Summary\nThe Indian market exhibits a tug-of-war between domestic optimism and foreign caution. On June 10, 2026, DIIs acted as the primary support system with a net purchase of over \u20b93,100 crore, helping counteract an FII net sell-off of approximately \u20b92,100 crore. Market leadership was concentrated in the banking and consumer goods sectors, which successfully mitigated heavy losses in metals and IT. Verified recent headline confirmation is unavailable; market participants are advised to monitor institutional flows closely as domestic buying continues to underpin current price levels despite sectoral volatility.",
+  "summary": "Nifty Analysis Agent\n\n### Market Action & Breadth\nThe market session saw a divergent performance across Nifty constituents. The banking sector outperformed, led by **ICICIBANK (+1.83%)**, **KOTAKBANK (+1.62%)**, and **AXISBANK (+0.32%)**. Significant gains were also seen in **M&M (+1.6%)** and **JSWSTEEL (+0.8%)**. Conversely, the IT sector faced notable pressure, with **INFY (-2.44%)** and **HCLTECH (-1.89%)** emerging as top laggards. \n\n### Key Gainers & Laggards\n*   **Top Gainers:** ICICIBANK (+1.83%), KOTAKBANK (+1.62%), M&M (+1.6%), JSWSTEEL (+0.8%), RELIANCE (+0.66%).\n*   **Top Laggards:** INFY (-2.44%), HCLTECH (-1.89%), ADANIPORTS (-1.5%), ETERNAL (-1.42%), BAJFINANCE (-1.41%).\n\n### Outlook\nMarket sentiment remains mixed as strong buying in the financial sector provided a floor, offsetting substantial weakness in IT stocks. Investors are navigating a period of dividend announcements and corporate actions (e.g., M&M, ICICIBANK). The outlook remains cautious as broader index performance is currently constrained by selling pressure in key IT bellwethers.\n\nNifty Flow Agent\n\n### FII and DII Flow (As of June 10, 2026)\n*   **DII Flow:** Domestic Institutional Investors acted as net buyers, contributing \u20b93,123.95 crore (Buy: \u20b917,396.4 Cr, Sell: \u20b914,272.45 Cr).\n*   **FII/FPI Flow:** Foreign Institutional Investors were net sellers for the session, with a net outflow of \u20b92,124.98 crore (Buy: \u20b914,047.79 Cr, Sell: \u20b916,172.77 Cr).\n*   **Summary:** Market liquidity was supported by strong domestic buying, which partially absorbed the net selling pressure exerted by foreign investors.\n\nAggregator Agent\n\n### Executive Summary\nThe Indian market showcased a split performance on June 10, 2026. While banking and auto stocks (led by ICICIBANK and M&M) provided upward momentum, significant selling in the IT sector (INFY, HCLTECH) weighed on the indices. Institutional flows reflect a divergence in strategy: DIIs provided a robust cushion with a net inflow of \u20b93,123.95 crore, effectively offsetting the \u20b92,124.98 crore net outflow from FIIs. Headline confirmation regarding broader macroeconomic news is currently unavailable.",
   "bias": "Neutral",
   "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "The Indian market exhibits a tug-of-war between domestic optimism and foreign caution. On June 10, 2026, DIIs acted as the primary support system with a net purchase of over \u20b93,100 crore, helping counteract an FII net sell-off of approximately \u20b92,100 crore. Market leadership was concentrated in the banking and consumer goods sectors, which successfully mitigated heavy losses in metals and IT. Verified recent headline confirmation is unavailable; market participants are advised to monitor institutional flows closely as domestic buying continues to underpin current price levels despite sectoral volatility."
+    "The Indian market showcased a split performance on June 10, 2026. While banking and auto stocks (led by ICICIBANK and M&M) provided upward momentum, significant selling in the IT sector (INFY, HCLTECH) weighed on the indices. Institutional flows reflect a divergence in strategy: DIIs provided a robust cushion with a net inflow of \u20b93,123.95 crore, effectively offsetting the \u20b92,124.98 crore net outflow from FIIs. Headline confirmation regarding broader macroeconomic news is currently unavailable."
   ],
   "marketSignals": {
-    "positioningLabel": "Bullish positioning build",
-    "positioningStrike": 22800,
+    "positioningLabel": "Put-side hedge build",
+    "positioningStrike": 23000,
     "divergenceSummary": "Aligned sentiment",
     "divergenceCount": 0,
     "trapRiskLabel": "No clear trap",
     "fiiNetCrores": -2124.98,
     "diiNetCrores": 3123.95,
     "tradedValueCrores": 0.0,
-    "spot": 22965.85
+    "spot": 23188.25
   }
 }
