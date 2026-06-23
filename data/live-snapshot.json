@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-22T20:00:57.314187+05:30",
+  "fetchedAt": "2026-06-23T09:00:50.466846+05:30",
   "contributors": {
     "data": [
       {
@@ -579,22 +579,6 @@
         "perChange": -0.27
       },
       {
-        "symbol": "ONGC",
-        "series": "EQ",
-        "open_price": 244.95,
-        "high_price": 247.75,
-        "low_price": 243.8,
-        "ltp": 245.6,
-        "prev_price": 246.25,
-        "net_price": -0.26,
-        "trade_quantity": 7334095,
-        "turnover": 18034.539605,
-        "market_type": "N",
-        "ca_ex_dt": "18-Feb-2026",
-        "ca_purpose": "Interim Dividend - Rs 6.25 Per Share",
-        "perChange": -0.26
-      },
-      {
         "symbol": "LT",
         "series": "EQ",
         "open_price": 4228,
@@ -608,6 +592,22 @@
         "market_type": "N",
         "ca_ex_dt": "22-May-2026",
         "ca_purpose": "Dividend - Rs 38 Per Share",
+        "perChange": -0.26
+      },
+      {
+        "symbol": "ONGC",
+        "series": "EQ",
+        "open_price": 244.95,
+        "high_price": 247.75,
+        "low_price": 243.8,
+        "ltp": 245.6,
+        "prev_price": 246.25,
+        "net_price": -0.26,
+        "trade_quantity": 7334095,
+        "turnover": 18034.539605,
+        "market_type": "N",
+        "ca_ex_dt": "18-Feb-2026",
+        "ca_purpose": "Interim Dividend - Rs 6.25 Per Share",
         "perChange": -0.26
       },
       {
@@ -671,7 +671,7 @@
             "totalSellQuantity": 0,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -55.55555555555556,
@@ -694,7 +694,7 @@
             "totalSellQuantity": 622765,
             "totalTradedVolume": 137895,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21200
         },
@@ -721,7 +721,7 @@
             "totalSellQuantity": 780,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -50,
@@ -744,7 +744,7 @@
             "totalSellQuantity": 44785,
             "totalTradedVolume": 4378,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21250
         },
@@ -771,7 +771,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -60,
@@ -794,7 +794,7 @@
             "totalSellQuantity": 121030,
             "totalTradedVolume": 19813,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21300
         },
@@ -821,7 +821,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -45.45454545454545,
@@ -844,7 +844,7 @@
             "totalSellQuantity": 27300,
             "totalTradedVolume": 748,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21350
         },
@@ -871,7 +871,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -60,
@@ -894,7 +894,7 @@
             "totalSellQuantity": 35295,
             "totalTradedVolume": 6986,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21400
         },
@@ -921,7 +921,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -54.54545454545455,
@@ -944,7 +944,7 @@
             "totalSellQuantity": 33280,
             "totalTradedVolume": 1059,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21450
         },
@@ -971,7 +971,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -45.45454545454545,
@@ -994,7 +994,7 @@
             "totalSellQuantity": 83720,
             "totalTradedVolume": 21434,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21500
         },
@@ -1021,7 +1021,7 @@
             "totalSellQuantity": 780,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -27.272727272727273,
@@ -1044,7 +1044,7 @@
             "totalSellQuantity": 37700,
             "totalTradedVolume": 1117,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21550
         },
@@ -1071,7 +1071,7 @@
             "totalSellQuantity": 780,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -50,
@@ -1094,7 +1094,7 @@
             "totalSellQuantity": 29120,
             "totalTradedVolume": 8229,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21600
         },
@@ -1121,7 +1121,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -46.15384615384615,
@@ -1144,7 +1144,7 @@
             "totalSellQuantity": 37700,
             "totalTradedVolume": 750,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21650
         },
@@ -1171,7 +1171,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -50,
@@ -1194,7 +1194,7 @@
             "totalSellQuantity": 152750,
             "totalTradedVolume": 6601,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21700
         },
@@ -1221,7 +1221,7 @@
             "totalSellQuantity": 780,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -46.15384615384615,
@@ -1244,7 +1244,7 @@
             "totalSellQuantity": 31785,
             "totalTradedVolume": 901,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21750
         },
@@ -1271,7 +1271,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -38.46153846153846,
@@ -1294,7 +1294,7 @@
             "totalSellQuantity": 72150,
             "totalTradedVolume": 28402,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21800
         },
@@ -1321,7 +1321,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -46.15384615384615,
@@ -1344,7 +1344,7 @@
             "totalSellQuantity": 34320,
             "totalTradedVolume": 2817,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21850
         },
@@ -1371,7 +1371,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -50,
@@ -1394,7 +1394,7 @@
             "totalSellQuantity": 26455,
             "totalTradedVolume": 16127,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21900
         },
@@ -1421,7 +1421,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -57.142857142857146,
@@ -1444,7 +1444,7 @@
             "totalSellQuantity": 23270,
             "totalTradedVolume": 5464,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21950
         },
@@ -1471,7 +1471,7 @@
             "totalSellQuantity": 1235,
             "totalTradedVolume": 27,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -53.333333333333336,
@@ -1494,7 +1494,7 @@
             "totalSellQuantity": 76440,
             "totalTradedVolume": 118932,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22000
         },
@@ -1521,7 +1521,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -53.333333333333336,
@@ -1544,7 +1544,7 @@
             "totalSellQuantity": 30160,
             "totalTradedVolume": 2725,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22050
         },
@@ -1571,7 +1571,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -46.666666666666664,
@@ -1594,7 +1594,7 @@
             "totalSellQuantity": 53950,
             "totalTradedVolume": 28595,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22100
         },
@@ -1621,7 +1621,7 @@
             "totalSellQuantity": 780,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -50,
@@ -1644,7 +1644,7 @@
             "totalSellQuantity": 53170,
             "totalTradedVolume": 2538,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22150
         },
@@ -1671,7 +1671,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -50,
@@ -1694,7 +1694,7 @@
             "totalSellQuantity": 63960,
             "totalTradedVolume": 27370,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22200
         },
@@ -1721,7 +1721,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -44.44444444444444,
@@ -1744,7 +1744,7 @@
             "totalSellQuantity": 32175,
             "totalTradedVolume": 8606,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22250
         },
@@ -1771,7 +1771,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -64.70588235294117,
@@ -1794,7 +1794,7 @@
             "totalSellQuantity": 107900,
             "totalTradedVolume": 34237,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22300
         },
@@ -1821,7 +1821,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -63.1578947368421,
@@ -1844,7 +1844,7 @@
             "totalSellQuantity": 24310,
             "totalTradedVolume": 15156,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22350
         },
@@ -1871,7 +1871,7 @@
             "totalSellQuantity": 2080,
             "totalTradedVolume": 1,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -61.111111111111114,
@@ -1894,7 +1894,7 @@
             "totalSellQuantity": 34450,
             "totalTradedVolume": 24454,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22400
         },
@@ -1921,7 +1921,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -50,
@@ -1944,7 +1944,7 @@
             "totalSellQuantity": 46735,
             "totalTradedVolume": 12702,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22450
         },
@@ -1971,7 +1971,7 @@
             "totalSellQuantity": 2470,
             "totalTradedVolume": 1050,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -40,
@@ -1994,7 +1994,7 @@
             "totalSellQuantity": 379730,
             "totalTradedVolume": 223998,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22500
         },
@@ -2021,7 +2021,7 @@
             "totalSellQuantity": 780,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -63.63636363636363,
@@ -2044,7 +2044,7 @@
             "totalSellQuantity": 61100,
             "totalTradedVolume": 58591,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22550
         },
@@ -2071,7 +2071,7 @@
             "totalSellQuantity": 1755,
             "totalTradedVolume": 28,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -52.38095238095238,
@@ -2094,7 +2094,7 @@
             "totalSellQuantity": 41990,
             "totalTradedVolume": 71110,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22600
         },
@@ -2121,7 +2121,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -56.52173913043478,
@@ -2144,7 +2144,7 @@
             "totalSellQuantity": 6500,
             "totalTradedVolume": 50651,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22650
         },
@@ -2171,7 +2171,7 @@
             "totalSellQuantity": 2080,
             "totalTradedVolume": 31,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -52.17391304347826,
@@ -2194,7 +2194,7 @@
             "totalSellQuantity": 79495,
             "totalTradedVolume": 135571,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22700
         },
@@ -2221,7 +2221,7 @@
             "totalSellQuantity": 1885,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -54.166666666666664,
@@ -2244,7 +2244,7 @@
             "totalSellQuantity": 8190,
             "totalTradedVolume": 35780,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22750
         },
@@ -2271,7 +2271,7 @@
             "totalSellQuantity": 2470,
             "totalTradedVolume": 100,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -55.55555555555556,
@@ -2294,7 +2294,7 @@
             "totalSellQuantity": 99710,
             "totalTradedVolume": 228103,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22800
         },
@@ -2321,7 +2321,7 @@
             "totalSellQuantity": 2535,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -64.28571428571429,
@@ -2344,7 +2344,7 @@
             "totalSellQuantity": 26260,
             "totalTradedVolume": 88257,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22850
         },
@@ -2371,7 +2371,7 @@
             "totalSellQuantity": 2665,
             "totalTradedVolume": 129,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -64.51612903225806,
@@ -2394,7 +2394,7 @@
             "totalSellQuantity": 173290,
             "totalTradedVolume": 233459,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22900
         },
@@ -2421,7 +2421,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 22,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -58.8235294117647,
@@ -2444,7 +2444,7 @@
             "totalSellQuantity": 42770,
             "totalTradedVolume": 111059,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22950
         },
@@ -2471,7 +2471,7 @@
             "totalSellQuantity": 7345,
             "totalTradedVolume": 1738,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -61.111111111111114,
@@ -2494,7 +2494,7 @@
             "totalSellQuantity": 472940,
             "totalTradedVolume": 749760,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23000
         },
@@ -2521,7 +2521,7 @@
             "totalSellQuantity": 2990,
             "totalTradedVolume": 67,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -58.97435897435897,
@@ -2544,7 +2544,7 @@
             "totalSellQuantity": 82550,
             "totalTradedVolume": 97903,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23050
         },
@@ -2571,7 +2571,7 @@
             "totalSellQuantity": 2795,
             "totalTradedVolume": 312,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -66.66666666666667,
@@ -2594,7 +2594,7 @@
             "totalSellQuantity": 35165,
             "totalTradedVolume": 310334,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23100
         },
@@ -2621,7 +2621,7 @@
             "totalSellQuantity": 2535,
             "totalTradedVolume": 121,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -60.869565217391305,
@@ -2644,7 +2644,7 @@
             "totalSellQuantity": 57135,
             "totalTradedVolume": 172505,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23150
         },
@@ -2671,7 +2671,7 @@
             "totalSellQuantity": 2990,
             "totalTradedVolume": 1915,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -63.265306122448976,
@@ -2694,7 +2694,7 @@
             "totalSellQuantity": 60840,
             "totalTradedVolume": 608125,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23200
         },
@@ -2721,7 +2721,7 @@
             "totalSellQuantity": 3380,
             "totalTradedVolume": 330,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -64.81481481481481,
@@ -2744,7 +2744,7 @@
             "totalSellQuantity": 53755,
             "totalTradedVolume": 329284,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23250
         },
@@ -2771,7 +2771,7 @@
             "totalSellQuantity": 3185,
             "totalTradedVolume": 2751,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -63.793103448275865,
@@ -2794,7 +2794,7 @@
             "totalSellQuantity": 154180,
             "totalTradedVolume": 644732,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23300
         },
@@ -2821,7 +2821,7 @@
             "totalSellQuantity": 3445,
             "totalTradedVolume": 790,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -71.64179104477611,
@@ -2844,7 +2844,7 @@
             "totalSellQuantity": 44915,
             "totalTradedVolume": 326726,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23350
         },
@@ -2871,7 +2871,7 @@
             "totalSellQuantity": 4160,
             "totalTradedVolume": 4196,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -74.68354430379746,
@@ -2894,7 +2894,7 @@
             "totalSellQuantity": 330265,
             "totalTradedVolume": 710638,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23400
         },
@@ -2921,7 +2921,7 @@
             "totalSellQuantity": 3705,
             "totalTradedVolume": 525,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -74.46808510638297,
@@ -2944,7 +2944,7 @@
             "totalSellQuantity": 50440,
             "totalTradedVolume": 337221,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23450
         },
@@ -2971,7 +2971,7 @@
             "totalSellQuantity": 8970,
             "totalTradedVolume": 8110,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -72.97297297297297,
@@ -2994,7 +2994,7 @@
             "totalSellQuantity": 375635,
             "totalTradedVolume": 1133433,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23500
         },
@@ -3021,7 +3021,7 @@
             "totalSellQuantity": 3510,
             "totalTradedVolume": 1049,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -76.55172413793103,
@@ -3044,7 +3044,7 @@
             "totalSellQuantity": 58890,
             "totalTradedVolume": 578485,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23550
         },
@@ -3071,7 +3071,7 @@
             "totalSellQuantity": 11310,
             "totalTradedVolume": 7395,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -78.07486631016043,
@@ -3094,7 +3094,7 @@
             "totalSellQuantity": 153335,
             "totalTradedVolume": 1011877,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23600
         },
@@ -3121,7 +3121,7 @@
             "totalSellQuantity": 5200,
             "totalTradedVolume": 3544,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -80.48780487804878,
@@ -3144,7 +3144,7 @@
             "totalSellQuantity": 93860,
             "totalTradedVolume": 649634,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23650
         },
@@ -3171,7 +3171,7 @@
             "totalSellQuantity": 15340,
             "totalTradedVolume": 19470,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -81.53846153846153,
@@ -3194,7 +3194,7 @@
             "totalSellQuantity": 260390,
             "totalTradedVolume": 1061873,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23700
         },
@@ -3221,7 +3221,7 @@
             "totalSellQuantity": 8125,
             "totalTradedVolume": 12178,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -83.6322869955157,
@@ -3244,7 +3244,7 @@
             "totalSellQuantity": 226070,
             "totalTradedVolume": 826766,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23750
         },
@@ -3271,7 +3271,7 @@
             "totalSellQuantity": 48035,
             "totalTradedVolume": 94058,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -83.36106489184692,
@@ -3294,7 +3294,7 @@
             "totalSellQuantity": 456690,
             "totalTradedVolume": 1565111,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23800
         },
@@ -3321,7 +3321,7 @@
             "totalSellQuantity": 13650,
             "totalTradedVolume": 54458,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -82.60325406758449,
@@ -3344,7 +3344,7 @@
             "totalSellQuantity": 223080,
             "totalTradedVolume": 1278079,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23850
         },
@@ -3371,7 +3371,7 @@
             "totalSellQuantity": 115960,
             "totalTradedVolume": 347416,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -80.26315789473684,
@@ -3394,7 +3394,7 @@
             "totalSellQuantity": 656435,
             "totalTradedVolume": 2553178,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23900
         },
@@ -3421,7 +3421,7 @@
             "totalSellQuantity": 96590,
             "totalTradedVolume": 404559,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -77.37490935460478,
@@ -3444,7 +3444,7 @@
             "totalSellQuantity": 557960,
             "totalTradedVolume": 1914200,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23950
         },
@@ -3471,7 +3471,7 @@
             "totalSellQuantity": 462995,
             "totalTradedVolume": 2145599,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -72.54217568353694,
@@ -3494,7 +3494,7 @@
             "totalSellQuantity": 1297400,
             "totalTradedVolume": 4550998,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24000
         },
@@ -3521,7 +3521,7 @@
             "totalSellQuantity": 309855,
             "totalTradedVolume": 1883868,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -67.36304549675023,
@@ -3544,7 +3544,7 @@
             "totalSellQuantity": 519350,
             "totalTradedVolume": 3234941,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24050
         },
@@ -3571,7 +3571,7 @@
             "totalSellQuantity": 1561235,
             "totalTradedVolume": 7560987,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -60.85549964054637,
@@ -3594,7 +3594,7 @@
             "totalSellQuantity": 1490840,
             "totalTradedVolume": 8010738,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24100
         },
@@ -3621,7 +3621,7 @@
             "totalSellQuantity": 1402050,
             "totalTradedVolume": 6854954,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -53.32555425904317,
@@ -3644,7 +3644,7 @@
             "totalSellQuantity": 458055,
             "totalTradedVolume": 5003757,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24150
         },
@@ -3671,7 +3671,7 @@
             "totalSellQuantity": 1841580,
             "totalTradedVolume": 6252817,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -45.36256323777403,
@@ -3694,7 +3694,7 @@
             "totalSellQuantity": 307970,
             "totalTradedVolume": 3268394,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24200
         },
@@ -3721,7 +3721,7 @@
             "totalSellQuantity": 735540,
             "totalTradedVolume": 2849956,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -38.948840927258196,
@@ -3744,7 +3744,7 @@
             "totalSellQuantity": 74295,
             "totalTradedVolume": 736078,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24250
         },
@@ -3771,7 +3771,7 @@
             "totalSellQuantity": 929565,
             "totalTradedVolume": 3352762,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -31.75150992234685,
@@ -3794,7 +3794,7 @@
             "totalSellQuantity": 54665,
             "totalTradedVolume": 698982,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24300
         },
@@ -3821,7 +3821,7 @@
             "totalSellQuantity": 391300,
             "totalTradedVolume": 1866958,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -27.237757064654534,
@@ -3844,7 +3844,7 @@
             "totalSellQuantity": 24050,
             "totalTradedVolume": 126415,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24350
         },
@@ -3871,7 +3871,7 @@
             "totalSellQuantity": 606905,
             "totalTradedVolume": 2120258,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -22.618890791727043,
@@ -3894,7 +3894,7 @@
             "totalSellQuantity": 21125,
             "totalTradedVolume": 122331,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24400
         },
@@ -3921,7 +3921,7 @@
             "totalSellQuantity": 217360,
             "totalTradedVolume": 1020096,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -21.288837744533947,
@@ -3944,7 +3944,7 @@
             "totalSellQuantity": 9165,
             "totalTradedVolume": 28256,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24450
         },
@@ -3971,7 +3971,7 @@
             "totalSellQuantity": 953290,
             "totalTradedVolume": 1728793,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -16.92210125779516,
@@ -3994,7 +3994,7 @@
             "totalSellQuantity": 16640,
             "totalTradedVolume": 64381,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24500
         },
@@ -4021,7 +4021,7 @@
             "totalSellQuantity": 93860,
             "totalTradedVolume": 1032747,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -17.045986700384002,
@@ -4044,7 +4044,7 @@
             "totalSellQuantity": 4160,
             "totalTradedVolume": 9555,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24550
         },
@@ -4071,7 +4071,7 @@
             "totalSellQuantity": 140075,
             "totalTradedVolume": 1093591,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -16.638312351139845,
@@ -4094,7 +4094,7 @@
             "totalSellQuantity": 6890,
             "totalTradedVolume": 6503,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24600
         },
@@ -4121,7 +4121,7 @@
             "totalSellQuantity": 95030,
             "totalTradedVolume": 597266,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -15.15961629186979,
@@ -4144,7 +4144,7 @@
             "totalSellQuantity": 4160,
             "totalTradedVolume": 1213,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24650
         },
@@ -4171,7 +4171,7 @@
             "totalSellQuantity": 129220,
             "totalTradedVolume": 756377,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -11.323859386686612,
@@ -4194,7 +4194,7 @@
             "totalSellQuantity": 5265,
             "totalTradedVolume": 1580,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24700
         },
@@ -4221,7 +4221,7 @@
             "totalSellQuantity": 105105,
             "totalTradedVolume": 344629,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -12.110583866309057,
@@ -4244,7 +4244,7 @@
             "totalSellQuantity": 2340,
             "totalTradedVolume": 299,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24750
         },
@@ -4271,7 +4271,7 @@
             "totalSellQuantity": 273975,
             "totalTradedVolume": 840247,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -10.215193155302048,
@@ -4294,7 +4294,7 @@
             "totalSellQuantity": 3575,
             "totalTradedVolume": 1092,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24800
         },
@@ -4321,7 +4321,7 @@
             "totalSellQuantity": 36595,
             "totalTradedVolume": 216353,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -13.158977372906259,
@@ -4344,7 +4344,7 @@
             "totalSellQuantity": 975,
             "totalTradedVolume": 77,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24850
         },
@@ -4371,7 +4371,7 @@
             "totalSellQuantity": 76050,
             "totalTradedVolume": 429351,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -10.950098674936566,
@@ -4394,7 +4394,7 @@
             "totalSellQuantity": 2730,
             "totalTradedVolume": 219,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24900
         },
@@ -4421,7 +4421,7 @@
             "totalSellQuantity": 31525,
             "totalTradedVolume": 157577,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -12.550101504346468,
@@ -4444,7 +4444,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 66,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24950
         },
@@ -4471,7 +4471,7 @@
             "totalSellQuantity": 404755,
             "totalTradedVolume": 1010835,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -8.640706873523065,
@@ -4494,7 +4494,7 @@
             "totalSellQuantity": 3770,
             "totalTradedVolume": 2214,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25000
         },
@@ -4521,7 +4521,7 @@
             "totalSellQuantity": 131300,
             "totalTradedVolume": 106992,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 8.624277456647398,
@@ -4544,7 +4544,7 @@
             "totalSellQuantity": 1170,
             "totalTradedVolume": 37,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25050
         },
@@ -4571,7 +4571,7 @@
             "totalSellQuantity": 193375,
             "totalTradedVolume": 377891,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -9.739400301218566,
@@ -4594,7 +4594,7 @@
             "totalSellQuantity": 1105,
             "totalTradedVolume": 26,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25100
         },
@@ -4621,7 +4621,7 @@
             "totalSellQuantity": 51220,
             "totalTradedVolume": 115326,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -10.216450216450216,
@@ -4644,7 +4644,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 7,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25150
         },
@@ -4671,7 +4671,7 @@
             "totalSellQuantity": 81965,
             "totalTradedVolume": 219902,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -8.668315379134008,
@@ -4694,7 +4694,7 @@
             "totalSellQuantity": 1235,
             "totalTradedVolume": 95,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25200
         },
@@ -4721,7 +4721,7 @@
             "totalSellQuantity": 38285,
             "totalTradedVolume": 58533,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -4744,7 +4744,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25250
         },
@@ -4771,7 +4771,7 @@
             "totalSellQuantity": 47385,
             "totalTradedVolume": 297412,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -9.837743574190613,
@@ -4794,7 +4794,7 @@
             "totalSellQuantity": 1885,
             "totalTradedVolume": 6,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25300
         },
@@ -4821,7 +4821,7 @@
             "totalSellQuantity": 18720,
             "totalTradedVolume": 56707,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -14.975023913274525,
@@ -4844,7 +4844,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 8,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25350
         },
@@ -4871,7 +4871,7 @@
             "totalSellQuantity": 37635,
             "totalTradedVolume": 176231,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -8.928571428571429,
@@ -4894,7 +4894,7 @@
             "totalSellQuantity": 780,
             "totalTradedVolume": 1,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25400
         },
@@ -4921,7 +4921,7 @@
             "totalSellQuantity": 63635,
             "totalTradedVolume": 25415,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -4944,7 +4944,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25450
         },
@@ -4971,7 +4971,7 @@
             "totalSellQuantity": 304460,
             "totalTradedVolume": 303671,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -4.576533241711046,
@@ -4994,7 +4994,7 @@
             "totalSellQuantity": 1625,
             "totalTradedVolume": 233,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25500
         },
@@ -5021,7 +5021,7 @@
             "totalSellQuantity": 80535,
             "totalTradedVolume": 31806,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -5044,7 +5044,7 @@
             "totalSellQuantity": 845,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25550
         },
@@ -5071,7 +5071,7 @@
             "totalSellQuantity": 50505,
             "totalTradedVolume": 65997,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -7.672955974842767,
@@ -5094,7 +5094,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 17,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25600
         },
@@ -5121,7 +5121,7 @@
             "totalSellQuantity": 38545,
             "totalTradedVolume": 24717,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -12.89198606271777,
@@ -5144,7 +5144,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 8,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25650
         },
@@ -5171,7 +5171,7 @@
             "totalSellQuantity": 48685,
             "totalTradedVolume": 42022,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -5194,7 +5194,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25700
         },
@@ -5221,7 +5221,7 @@
             "totalSellQuantity": 41860,
             "totalTradedVolume": 12613,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -5244,7 +5244,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25750
         },
@@ -5271,7 +5271,7 @@
             "totalSellQuantity": 72345,
             "totalTradedVolume": 44433,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -0.8403361344537815,
@@ -5294,7 +5294,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25800
         },
@@ -5321,7 +5321,7 @@
             "totalSellQuantity": 39715,
             "totalTradedVolume": 5971,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -5344,7 +5344,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25850
         },
@@ -5371,7 +5371,7 @@
             "totalSellQuantity": 31590,
             "totalTradedVolume": 8663,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -5394,7 +5394,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25900
         },
@@ -5421,7 +5421,7 @@
             "totalSellQuantity": 31590,
             "totalTradedVolume": 6237,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -5444,7 +5444,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25950
         },
@@ -5471,7 +5471,7 @@
             "totalSellQuantity": 240175,
             "totalTradedVolume": 152849,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -3.497164461247637,
@@ -5494,7 +5494,7 @@
             "totalSellQuantity": 975,
             "totalTradedVolume": 222,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 26000
         },
@@ -5521,7 +5521,7 @@
             "totalSellQuantity": 55380,
             "totalTradedVolume": 3498,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -5544,7 +5544,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 26050
         },
@@ -5571,7 +5571,7 @@
             "totalSellQuantity": 79170,
             "totalTradedVolume": 11922,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -5594,7 +5594,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 26100
         },
@@ -5621,7 +5621,7 @@
             "totalSellQuantity": 41990,
             "totalTradedVolume": 5178,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -5644,7 +5644,7 @@
             "totalSellQuantity": 0,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 26150
         },
@@ -5671,7 +5671,7 @@
             "totalSellQuantity": 108420,
             "totalTradedVolume": 16341,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -5694,7 +5694,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 26200
         },
@@ -5721,7 +5721,7 @@
             "totalSellQuantity": 76115,
             "totalTradedVolume": 7753,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -5744,7 +5744,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 26250
         },
@@ -5771,7 +5771,7 @@
             "totalSellQuantity": 108095,
             "totalTradedVolume": 39046,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -6.606412739401764,
@@ -5794,13 +5794,13 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 3,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 26300
         }
       ],
       "timestamp": "22-Jun-2026 15:30:00",
-      "underlyingValue": 24102.9,
+      "underlyingValue": 24171.1,
       "expiryDates": [
         "23-Jun-2026",
         "30-Jun-2026",
@@ -6135,7 +6135,7 @@
             "totalSellQuantity": 0,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -55.55555555555556,
@@ -6158,7 +6158,7 @@
             "totalSellQuantity": 622765,
             "totalTradedVolume": 137895,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21200
         },
@@ -6185,7 +6185,7 @@
             "totalSellQuantity": 780,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -50,
@@ -6208,7 +6208,7 @@
             "totalSellQuantity": 44785,
             "totalTradedVolume": 4378,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21250
         },
@@ -6235,7 +6235,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -60,
@@ -6258,7 +6258,7 @@
             "totalSellQuantity": 121030,
             "totalTradedVolume": 19813,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21300
         },
@@ -6285,7 +6285,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -45.45454545454545,
@@ -6308,7 +6308,7 @@
             "totalSellQuantity": 27300,
             "totalTradedVolume": 748,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21350
         },
@@ -6335,7 +6335,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -60,
@@ -6358,7 +6358,7 @@
             "totalSellQuantity": 35295,
             "totalTradedVolume": 6986,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21400
         },
@@ -6385,7 +6385,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -54.54545454545455,
@@ -6408,7 +6408,7 @@
             "totalSellQuantity": 33280,
             "totalTradedVolume": 1059,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21450
         },
@@ -6435,7 +6435,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -45.45454545454545,
@@ -6458,7 +6458,7 @@
             "totalSellQuantity": 83720,
             "totalTradedVolume": 21434,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21500
         },
@@ -6485,7 +6485,7 @@
             "totalSellQuantity": 780,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -27.272727272727273,
@@ -6508,7 +6508,7 @@
             "totalSellQuantity": 37700,
             "totalTradedVolume": 1117,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21550
         },
@@ -6535,7 +6535,7 @@
             "totalSellQuantity": 780,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -50,
@@ -6558,7 +6558,7 @@
             "totalSellQuantity": 29120,
             "totalTradedVolume": 8229,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21600
         },
@@ -6585,7 +6585,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -46.15384615384615,
@@ -6608,7 +6608,7 @@
             "totalSellQuantity": 37700,
             "totalTradedVolume": 750,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21650
         },
@@ -6635,7 +6635,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -50,
@@ -6658,7 +6658,7 @@
             "totalSellQuantity": 152750,
             "totalTradedVolume": 6601,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21700
         },
@@ -6685,7 +6685,7 @@
             "totalSellQuantity": 780,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -46.15384615384615,
@@ -6708,7 +6708,7 @@
             "totalSellQuantity": 31785,
             "totalTradedVolume": 901,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21750
         },
@@ -6735,7 +6735,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -38.46153846153846,
@@ -6758,7 +6758,7 @@
             "totalSellQuantity": 72150,
             "totalTradedVolume": 28402,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21800
         },
@@ -6785,7 +6785,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -46.15384615384615,
@@ -6808,7 +6808,7 @@
             "totalSellQuantity": 34320,
             "totalTradedVolume": 2817,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21850
         },
@@ -6835,7 +6835,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -50,
@@ -6858,7 +6858,7 @@
             "totalSellQuantity": 26455,
             "totalTradedVolume": 16127,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21900
         },
@@ -6885,7 +6885,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -57.142857142857146,
@@ -6908,7 +6908,7 @@
             "totalSellQuantity": 23270,
             "totalTradedVolume": 5464,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 21950
         },
@@ -6935,7 +6935,7 @@
             "totalSellQuantity": 1235,
             "totalTradedVolume": 27,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -53.333333333333336,
@@ -6958,7 +6958,7 @@
             "totalSellQuantity": 76440,
             "totalTradedVolume": 118932,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22000
         },
@@ -6985,7 +6985,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -53.333333333333336,
@@ -7008,7 +7008,7 @@
             "totalSellQuantity": 30160,
             "totalTradedVolume": 2725,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22050
         },
@@ -7035,7 +7035,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -46.666666666666664,
@@ -7058,7 +7058,7 @@
             "totalSellQuantity": 53950,
             "totalTradedVolume": 28595,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22100
         },
@@ -7085,7 +7085,7 @@
             "totalSellQuantity": 780,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -50,
@@ -7108,7 +7108,7 @@
             "totalSellQuantity": 53170,
             "totalTradedVolume": 2538,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22150
         },
@@ -7135,7 +7135,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -50,
@@ -7158,7 +7158,7 @@
             "totalSellQuantity": 63960,
             "totalTradedVolume": 27370,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22200
         },
@@ -7185,7 +7185,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -44.44444444444444,
@@ -7208,7 +7208,7 @@
             "totalSellQuantity": 32175,
             "totalTradedVolume": 8606,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22250
         },
@@ -7235,7 +7235,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -64.70588235294117,
@@ -7258,7 +7258,7 @@
             "totalSellQuantity": 107900,
             "totalTradedVolume": 34237,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22300
         },
@@ -7285,7 +7285,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -63.1578947368421,
@@ -7308,7 +7308,7 @@
             "totalSellQuantity": 24310,
             "totalTradedVolume": 15156,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22350
         },
@@ -7335,7 +7335,7 @@
             "totalSellQuantity": 2080,
             "totalTradedVolume": 1,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -61.111111111111114,
@@ -7358,7 +7358,7 @@
             "totalSellQuantity": 34450,
             "totalTradedVolume": 24454,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22400
         },
@@ -7385,7 +7385,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -50,
@@ -7408,7 +7408,7 @@
             "totalSellQuantity": 46735,
             "totalTradedVolume": 12702,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22450
         },
@@ -7435,7 +7435,7 @@
             "totalSellQuantity": 2470,
             "totalTradedVolume": 1050,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -40,
@@ -7458,7 +7458,7 @@
             "totalSellQuantity": 379730,
             "totalTradedVolume": 223998,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22500
         },
@@ -7485,7 +7485,7 @@
             "totalSellQuantity": 780,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -63.63636363636363,
@@ -7508,7 +7508,7 @@
             "totalSellQuantity": 61100,
             "totalTradedVolume": 58591,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22550
         },
@@ -7535,7 +7535,7 @@
             "totalSellQuantity": 1755,
             "totalTradedVolume": 28,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -52.38095238095238,
@@ -7558,7 +7558,7 @@
             "totalSellQuantity": 41990,
             "totalTradedVolume": 71110,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22600
         },
@@ -7585,7 +7585,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -56.52173913043478,
@@ -7608,7 +7608,7 @@
             "totalSellQuantity": 6500,
             "totalTradedVolume": 50651,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22650
         },
@@ -7635,7 +7635,7 @@
             "totalSellQuantity": 2080,
             "totalTradedVolume": 31,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -52.17391304347826,
@@ -7658,7 +7658,7 @@
             "totalSellQuantity": 79495,
             "totalTradedVolume": 135571,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22700
         },
@@ -7685,7 +7685,7 @@
             "totalSellQuantity": 1885,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -54.166666666666664,
@@ -7708,7 +7708,7 @@
             "totalSellQuantity": 8190,
             "totalTradedVolume": 35780,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22750
         },
@@ -7735,7 +7735,7 @@
             "totalSellQuantity": 2470,
             "totalTradedVolume": 100,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -55.55555555555556,
@@ -7758,7 +7758,7 @@
             "totalSellQuantity": 99710,
             "totalTradedVolume": 228103,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22800
         },
@@ -7785,7 +7785,7 @@
             "totalSellQuantity": 2535,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -64.28571428571429,
@@ -7808,7 +7808,7 @@
             "totalSellQuantity": 26260,
             "totalTradedVolume": 88257,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22850
         },
@@ -7835,7 +7835,7 @@
             "totalSellQuantity": 2665,
             "totalTradedVolume": 129,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -64.51612903225806,
@@ -7858,7 +7858,7 @@
             "totalSellQuantity": 173290,
             "totalTradedVolume": 233459,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22900
         },
@@ -7885,7 +7885,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 22,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -58.8235294117647,
@@ -7908,7 +7908,7 @@
             "totalSellQuantity": 42770,
             "totalTradedVolume": 111059,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 22950
         },
@@ -7935,7 +7935,7 @@
             "totalSellQuantity": 7345,
             "totalTradedVolume": 1738,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -61.111111111111114,
@@ -7958,7 +7958,7 @@
             "totalSellQuantity": 472940,
             "totalTradedVolume": 749760,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23000
         },
@@ -7985,7 +7985,7 @@
             "totalSellQuantity": 2990,
             "totalTradedVolume": 67,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -58.97435897435897,
@@ -8008,7 +8008,7 @@
             "totalSellQuantity": 82550,
             "totalTradedVolume": 97903,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23050
         },
@@ -8035,7 +8035,7 @@
             "totalSellQuantity": 2795,
             "totalTradedVolume": 312,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -66.66666666666667,
@@ -8058,7 +8058,7 @@
             "totalSellQuantity": 35165,
             "totalTradedVolume": 310334,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23100
         },
@@ -8085,7 +8085,7 @@
             "totalSellQuantity": 2535,
             "totalTradedVolume": 121,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -60.869565217391305,
@@ -8108,7 +8108,7 @@
             "totalSellQuantity": 57135,
             "totalTradedVolume": 172505,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23150
         },
@@ -8135,7 +8135,7 @@
             "totalSellQuantity": 2990,
             "totalTradedVolume": 1915,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -63.265306122448976,
@@ -8158,7 +8158,7 @@
             "totalSellQuantity": 60840,
             "totalTradedVolume": 608125,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23200
         },
@@ -8185,7 +8185,7 @@
             "totalSellQuantity": 3380,
             "totalTradedVolume": 330,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -64.81481481481481,
@@ -8208,7 +8208,7 @@
             "totalSellQuantity": 53755,
             "totalTradedVolume": 329284,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23250
         },
@@ -8235,7 +8235,7 @@
             "totalSellQuantity": 3185,
             "totalTradedVolume": 2751,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -63.793103448275865,
@@ -8258,7 +8258,7 @@
             "totalSellQuantity": 154180,
             "totalTradedVolume": 644732,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23300
         },
@@ -8285,7 +8285,7 @@
             "totalSellQuantity": 3445,
             "totalTradedVolume": 790,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -71.64179104477611,
@@ -8308,7 +8308,7 @@
             "totalSellQuantity": 44915,
             "totalTradedVolume": 326726,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23350
         },
@@ -8335,7 +8335,7 @@
             "totalSellQuantity": 4160,
             "totalTradedVolume": 4196,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -74.68354430379746,
@@ -8358,7 +8358,7 @@
             "totalSellQuantity": 330265,
             "totalTradedVolume": 710638,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23400
         },
@@ -8385,7 +8385,7 @@
             "totalSellQuantity": 3705,
             "totalTradedVolume": 525,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -74.46808510638297,
@@ -8408,7 +8408,7 @@
             "totalSellQuantity": 50440,
             "totalTradedVolume": 337221,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23450
         },
@@ -8435,7 +8435,7 @@
             "totalSellQuantity": 8970,
             "totalTradedVolume": 8110,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -72.97297297297297,
@@ -8458,7 +8458,7 @@
             "totalSellQuantity": 375635,
             "totalTradedVolume": 1133433,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23500
         },
@@ -8485,7 +8485,7 @@
             "totalSellQuantity": 3510,
             "totalTradedVolume": 1049,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -76.55172413793103,
@@ -8508,7 +8508,7 @@
             "totalSellQuantity": 58890,
             "totalTradedVolume": 578485,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23550
         },
@@ -8535,7 +8535,7 @@
             "totalSellQuantity": 11310,
             "totalTradedVolume": 7395,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -78.07486631016043,
@@ -8558,7 +8558,7 @@
             "totalSellQuantity": 153335,
             "totalTradedVolume": 1011877,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23600
         },
@@ -8585,7 +8585,7 @@
             "totalSellQuantity": 5200,
             "totalTradedVolume": 3544,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -80.48780487804878,
@@ -8608,7 +8608,7 @@
             "totalSellQuantity": 93860,
             "totalTradedVolume": 649634,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23650
         },
@@ -8635,7 +8635,7 @@
             "totalSellQuantity": 15340,
             "totalTradedVolume": 19470,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -81.53846153846153,
@@ -8658,7 +8658,7 @@
             "totalSellQuantity": 260390,
             "totalTradedVolume": 1061873,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23700
         },
@@ -8685,7 +8685,7 @@
             "totalSellQuantity": 8125,
             "totalTradedVolume": 12178,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -83.6322869955157,
@@ -8708,7 +8708,7 @@
             "totalSellQuantity": 226070,
             "totalTradedVolume": 826766,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23750
         },
@@ -8735,7 +8735,7 @@
             "totalSellQuantity": 48035,
             "totalTradedVolume": 94058,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -83.36106489184692,
@@ -8758,7 +8758,7 @@
             "totalSellQuantity": 456690,
             "totalTradedVolume": 1565111,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23800
         },
@@ -8785,7 +8785,7 @@
             "totalSellQuantity": 13650,
             "totalTradedVolume": 54458,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -82.60325406758449,
@@ -8808,7 +8808,7 @@
             "totalSellQuantity": 223080,
             "totalTradedVolume": 1278079,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23850
         },
@@ -8835,7 +8835,7 @@
             "totalSellQuantity": 115960,
             "totalTradedVolume": 347416,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -80.26315789473684,
@@ -8858,7 +8858,7 @@
             "totalSellQuantity": 656435,
             "totalTradedVolume": 2553178,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23900
         },
@@ -8885,7 +8885,7 @@
             "totalSellQuantity": 96590,
             "totalTradedVolume": 404559,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -77.37490935460478,
@@ -8908,7 +8908,7 @@
             "totalSellQuantity": 557960,
             "totalTradedVolume": 1914200,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 23950
         },
@@ -8935,7 +8935,7 @@
             "totalSellQuantity": 462995,
             "totalTradedVolume": 2145599,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -72.54217568353694,
@@ -8958,7 +8958,7 @@
             "totalSellQuantity": 1297400,
             "totalTradedVolume": 4550998,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24000
         },
@@ -8985,7 +8985,7 @@
             "totalSellQuantity": 309855,
             "totalTradedVolume": 1883868,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -67.36304549675023,
@@ -9008,7 +9008,7 @@
             "totalSellQuantity": 519350,
             "totalTradedVolume": 3234941,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24050
         },
@@ -9035,7 +9035,7 @@
             "totalSellQuantity": 1561235,
             "totalTradedVolume": 7560987,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -60.85549964054637,
@@ -9058,7 +9058,7 @@
             "totalSellQuantity": 1490840,
             "totalTradedVolume": 8010738,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24100
         },
@@ -9085,7 +9085,7 @@
             "totalSellQuantity": 1402050,
             "totalTradedVolume": 6854954,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -53.32555425904317,
@@ -9108,7 +9108,7 @@
             "totalSellQuantity": 458055,
             "totalTradedVolume": 5003757,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24150
         },
@@ -9135,7 +9135,7 @@
             "totalSellQuantity": 1841580,
             "totalTradedVolume": 6252817,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -45.36256323777403,
@@ -9158,7 +9158,7 @@
             "totalSellQuantity": 307970,
             "totalTradedVolume": 3268394,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24200
         },
@@ -9185,7 +9185,7 @@
             "totalSellQuantity": 735540,
             "totalTradedVolume": 2849956,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -38.948840927258196,
@@ -9208,7 +9208,7 @@
             "totalSellQuantity": 74295,
             "totalTradedVolume": 736078,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24250
         },
@@ -9235,7 +9235,7 @@
             "totalSellQuantity": 929565,
             "totalTradedVolume": 3352762,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -31.75150992234685,
@@ -9258,7 +9258,7 @@
             "totalSellQuantity": 54665,
             "totalTradedVolume": 698982,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24300
         },
@@ -9285,7 +9285,7 @@
             "totalSellQuantity": 391300,
             "totalTradedVolume": 1866958,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -27.237757064654534,
@@ -9308,7 +9308,7 @@
             "totalSellQuantity": 24050,
             "totalTradedVolume": 126415,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24350
         },
@@ -9335,7 +9335,7 @@
             "totalSellQuantity": 606905,
             "totalTradedVolume": 2120258,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -22.618890791727043,
@@ -9358,7 +9358,7 @@
             "totalSellQuantity": 21125,
             "totalTradedVolume": 122331,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24400
         },
@@ -9385,7 +9385,7 @@
             "totalSellQuantity": 217360,
             "totalTradedVolume": 1020096,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -21.288837744533947,
@@ -9408,7 +9408,7 @@
             "totalSellQuantity": 9165,
             "totalTradedVolume": 28256,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24450
         },
@@ -9435,7 +9435,7 @@
             "totalSellQuantity": 953290,
             "totalTradedVolume": 1728793,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -16.92210125779516,
@@ -9458,7 +9458,7 @@
             "totalSellQuantity": 16640,
             "totalTradedVolume": 64381,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24500
         },
@@ -9485,7 +9485,7 @@
             "totalSellQuantity": 93860,
             "totalTradedVolume": 1032747,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -17.045986700384002,
@@ -9508,7 +9508,7 @@
             "totalSellQuantity": 4160,
             "totalTradedVolume": 9555,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24550
         },
@@ -9535,7 +9535,7 @@
             "totalSellQuantity": 140075,
             "totalTradedVolume": 1093591,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -16.638312351139845,
@@ -9558,7 +9558,7 @@
             "totalSellQuantity": 6890,
             "totalTradedVolume": 6503,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24600
         },
@@ -9585,7 +9585,7 @@
             "totalSellQuantity": 95030,
             "totalTradedVolume": 597266,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -15.15961629186979,
@@ -9608,7 +9608,7 @@
             "totalSellQuantity": 4160,
             "totalTradedVolume": 1213,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24650
         },
@@ -9635,7 +9635,7 @@
             "totalSellQuantity": 129220,
             "totalTradedVolume": 756377,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -11.323859386686612,
@@ -9658,7 +9658,7 @@
             "totalSellQuantity": 5265,
             "totalTradedVolume": 1580,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24700
         },
@@ -9685,7 +9685,7 @@
             "totalSellQuantity": 105105,
             "totalTradedVolume": 344629,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -12.110583866309057,
@@ -9708,7 +9708,7 @@
             "totalSellQuantity": 2340,
             "totalTradedVolume": 299,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24750
         },
@@ -9735,7 +9735,7 @@
             "totalSellQuantity": 273975,
             "totalTradedVolume": 840247,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -10.215193155302048,
@@ -9758,7 +9758,7 @@
             "totalSellQuantity": 3575,
             "totalTradedVolume": 1092,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24800
         },
@@ -9785,7 +9785,7 @@
             "totalSellQuantity": 36595,
             "totalTradedVolume": 216353,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -13.158977372906259,
@@ -9808,7 +9808,7 @@
             "totalSellQuantity": 975,
             "totalTradedVolume": 77,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24850
         },
@@ -9835,7 +9835,7 @@
             "totalSellQuantity": 76050,
             "totalTradedVolume": 429351,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -10.950098674936566,
@@ -9858,7 +9858,7 @@
             "totalSellQuantity": 2730,
             "totalTradedVolume": 219,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24900
         },
@@ -9885,7 +9885,7 @@
             "totalSellQuantity": 31525,
             "totalTradedVolume": 157577,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -12.550101504346468,
@@ -9908,7 +9908,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 66,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 24950
         },
@@ -9935,7 +9935,7 @@
             "totalSellQuantity": 404755,
             "totalTradedVolume": 1010835,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -8.640706873523065,
@@ -9958,7 +9958,7 @@
             "totalSellQuantity": 3770,
             "totalTradedVolume": 2214,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25000
         },
@@ -9985,7 +9985,7 @@
             "totalSellQuantity": 131300,
             "totalTradedVolume": 106992,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 8.624277456647398,
@@ -10008,7 +10008,7 @@
             "totalSellQuantity": 1170,
             "totalTradedVolume": 37,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25050
         },
@@ -10035,7 +10035,7 @@
             "totalSellQuantity": 193375,
             "totalTradedVolume": 377891,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -9.739400301218566,
@@ -10058,7 +10058,7 @@
             "totalSellQuantity": 1105,
             "totalTradedVolume": 26,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25100
         },
@@ -10085,7 +10085,7 @@
             "totalSellQuantity": 51220,
             "totalTradedVolume": 115326,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -10.216450216450216,
@@ -10108,7 +10108,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 7,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25150
         },
@@ -10135,7 +10135,7 @@
             "totalSellQuantity": 81965,
             "totalTradedVolume": 219902,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -8.668315379134008,
@@ -10158,7 +10158,7 @@
             "totalSellQuantity": 1235,
             "totalTradedVolume": 95,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25200
         },
@@ -10185,7 +10185,7 @@
             "totalSellQuantity": 38285,
             "totalTradedVolume": 58533,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -10208,7 +10208,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25250
         },
@@ -10235,7 +10235,7 @@
             "totalSellQuantity": 47385,
             "totalTradedVolume": 297412,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -9.837743574190613,
@@ -10258,7 +10258,7 @@
             "totalSellQuantity": 1885,
             "totalTradedVolume": 6,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25300
         },
@@ -10285,7 +10285,7 @@
             "totalSellQuantity": 18720,
             "totalTradedVolume": 56707,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -14.975023913274525,
@@ -10308,7 +10308,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 8,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25350
         },
@@ -10335,7 +10335,7 @@
             "totalSellQuantity": 37635,
             "totalTradedVolume": 176231,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -8.928571428571429,
@@ -10358,7 +10358,7 @@
             "totalSellQuantity": 780,
             "totalTradedVolume": 1,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25400
         },
@@ -10385,7 +10385,7 @@
             "totalSellQuantity": 63635,
             "totalTradedVolume": 25415,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -10408,7 +10408,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25450
         },
@@ -10435,7 +10435,7 @@
             "totalSellQuantity": 304460,
             "totalTradedVolume": 303671,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -4.576533241711046,
@@ -10458,7 +10458,7 @@
             "totalSellQuantity": 1625,
             "totalTradedVolume": 233,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25500
         },
@@ -10485,7 +10485,7 @@
             "totalSellQuantity": 80535,
             "totalTradedVolume": 31806,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -10508,7 +10508,7 @@
             "totalSellQuantity": 845,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25550
         },
@@ -10535,7 +10535,7 @@
             "totalSellQuantity": 50505,
             "totalTradedVolume": 65997,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -7.672955974842767,
@@ -10558,7 +10558,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 17,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25600
         },
@@ -10585,7 +10585,7 @@
             "totalSellQuantity": 38545,
             "totalTradedVolume": 24717,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -12.89198606271777,
@@ -10608,7 +10608,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 8,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25650
         },
@@ -10635,7 +10635,7 @@
             "totalSellQuantity": 48685,
             "totalTradedVolume": 42022,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -10658,7 +10658,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25700
         },
@@ -10685,7 +10685,7 @@
             "totalSellQuantity": 41860,
             "totalTradedVolume": 12613,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -10708,7 +10708,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25750
         },
@@ -10735,7 +10735,7 @@
             "totalSellQuantity": 72345,
             "totalTradedVolume": 44433,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -0.8403361344537815,
@@ -10758,7 +10758,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25800
         },
@@ -10785,7 +10785,7 @@
             "totalSellQuantity": 39715,
             "totalTradedVolume": 5971,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -10808,7 +10808,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25850
         },
@@ -10835,7 +10835,7 @@
             "totalSellQuantity": 31590,
             "totalTradedVolume": 8663,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -10858,7 +10858,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25900
         },
@@ -10885,7 +10885,7 @@
             "totalSellQuantity": 31590,
             "totalTradedVolume": 6237,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -10908,7 +10908,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 25950
         },
@@ -10935,7 +10935,7 @@
             "totalSellQuantity": 240175,
             "totalTradedVolume": 152849,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -3.497164461247637,
@@ -10958,7 +10958,7 @@
             "totalSellQuantity": 975,
             "totalTradedVolume": 222,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 26000
         },
@@ -10985,7 +10985,7 @@
             "totalSellQuantity": 55380,
             "totalTradedVolume": 3498,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -11008,7 +11008,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 26050
         },
@@ -11035,7 +11035,7 @@
             "totalSellQuantity": 79170,
             "totalTradedVolume": 11922,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -11058,7 +11058,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 26100
         },
@@ -11085,7 +11085,7 @@
             "totalSellQuantity": 41990,
             "totalTradedVolume": 5178,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -11108,7 +11108,7 @@
             "totalSellQuantity": 0,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 26150
         },
@@ -11135,7 +11135,7 @@
             "totalSellQuantity": 108420,
             "totalTradedVolume": 16341,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -11158,7 +11158,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 26200
         },
@@ -11185,7 +11185,7 @@
             "totalSellQuantity": 76115,
             "totalTradedVolume": 7753,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": 0,
@@ -11208,7 +11208,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 26250
         },
@@ -11235,7 +11235,7 @@
             "totalSellQuantity": 108095,
             "totalTradedVolume": 39046,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "PE": {
             "PChange": -6.606412739401764,
@@ -11258,7 +11258,7 @@
             "totalSellQuantity": 1560,
             "totalTradedVolume": 3,
             "underlying": "NIFTY",
-            "underlyingValue": 24102.9
+            "underlyingValue": 24171.1
           },
           "strikePrice": 26300
         }
