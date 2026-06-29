@@ -198,6 +198,12 @@
           <div class="summary-grid" id="aiSummary"></div>
           <article class="ai-copy">
             <div id="aiSummaryText" class="ai-summary-text">Waiting for AI analysis.</div>
+            <div id="aiFinbertBlock" class="ai-finbert" style="display:none">
+              <h3>FinBERT News Sentiment</h3>
+              <div id="aiFinbertNote" class="rail-note"></div>
+              <div id="aiFinbertText" class="ai-summary-text"></div>
+              <ul id="aiFinbertHeadlines" class="chip-list"></ul>
+            </div>
             <div id="aiKeyLevelsBlock">
               <h3>Key Levels</h3>
               <ul id="aiKeyLevels" class="chip-list"></ul>
@@ -281,6 +287,7 @@
           <div class="summary-grid" id="openInterestSummary"></div>
           <p id="openInterestPositioningNote" class="rail-note">Positioning change analysis will appear with the next live refresh.</p>
           <p id="openInterestSignalNote" class="rail-note">Divergence and trap signals will appear with the next live refresh.</p>
+          <p id="openInterestFinbertNote" class="rail-note">News sentiment (FinBERT) appears with the next refresh.</p>
           <div class="chart-stack">
             <div class="chart-panel" data-chart-title="Net OI Change by Strike" data-chart-target="oiChart">
               <h3>Net OI Change by Strike</h3>

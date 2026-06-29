@@ -508,6 +508,24 @@ const renderLiveError = (message) => {
   document.getElementById('bidAskChart').innerHTML = `<p>${message}</p>`;
 };
 
+const escapeFinbert = (text) => String(text == null ? '' : text)
+  .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+const renderFinbertSection = (finbert) => {
+  const hasData = finbert && Array.isArray(finbert.headlines) && finbert.headlines.length > 0;
+  setDisplay('aiFinbertBlock', hasData);
+  if (!hasData) {
+    setText('openInterestFinbertNote', 'News sentiment (FinBERT): awaiting next refresh.');
+    return;
+  }
+  const arrow = (label) => (label === 'positive' ? '▲' : label === 'negative' ? '▼' : '■');
+  setText('aiFinbertNote', `${finbert.model || 'FinBERT'} · ${finbert.note || ''}`);
+  setText('aiFinbertText', finbert.analysis || '');
+  renderChipList('aiFinbertHeadlines', finbert.headlines.map((item) =>
+    `${arrow(item.label)} ${escapeFinbert(item.title)} (${Number(item.score).toFixed(2)})`));
+  setText('openInterestFinbertNote', `News sentiment (FinBERT): ${finbert.note || finbert.bias || '-'}.`);
+};
+
 const renderAiSection = (aiAnalysis) => {
   setText('aiAnalysisStamp', formatDateTime(aiAnalysis.generatedAt) || '-');
   renderMetricGrid('aiSummary', [
@@ -522,6 +540,7 @@ const renderAiSection = (aiAnalysis) => {
   renderChipList('aiWatchlist', aiAnalysis.watchlist || []);
   setDisplay('aiKeyLevelsBlock', (aiAnalysis.keyLevels || []).length > 0);
   setDisplay('aiWatchlistBlock', (aiAnalysis.watchlist || []).length > 0);
+  renderFinbertSection(aiAnalysis.finbert);
 };
 
 const renderLiveSections = (snapshot) => {
