@@ -35,5 +35,29 @@
     "diiNetCrores": 5747.75,
     "tradedValueCrores": 0.0,
     "spot": 23981.1
+  },
+  "finbert": {
+    "model": "ProsusAI/finbert",
+    "bias": "Neutral",
+    "score": -0.0082,
+    "counts": {
+      "positive": 1,
+      "negative": 1,
+      "neutral": 0
+    },
+    "note": "Neutral (-0.01) \u00b7 2 headlines",
+    "analysis": "FinBERT read 2 headlines: 1 positive, 1 negative, 0 neutral. Net news tone is Neutral (score -0.01). Most positive: \"*   **Market Sentiment:** Financial headlines indicate that strong domestic mutual fund in\" (0.95). Most negative: \"*   **KOTAKBANK:** -3.06% (LTP: \u20b9396.5) \u2014 *Negatively impacted by CEO exit news.*\" (0.96).",
+    "headlines": [
+      {
+        "title": "*   **KOTAKBANK:** -3.06% (LTP: \u20b9396.5) \u2014 *Negatively impacted by CEO exit news.*",
+        "label": "negative",
+        "score": 0.9644
+      },
+      {
+        "title": "*   **Market Sentiment:** Financial headlines indicate that strong domestic mutual fund inflows and steady FPI participation are countering global macro uncertainties, keeping the Indian indices near stable levels.",
+        "label": "positive",
+        "score": 0.948
+      }
+    ]
   }
 }
