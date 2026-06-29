@@ -41,89 +41,33 @@
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
     "bias": "Bullish",
-    "score": 0.132,
-    "counts": {
-      "positive": 4,
-      "negative": 2,
-      "neutral": 9
-    },
-    "note": "Bullish (+0.13) \u00b7 15 headlines",
-    "analysis": "FinBERT read 15 headlines: 4 positive, 2 negative, 9 neutral. Net news tone is Bullish (score +0.13). Most positive: \"India's external debt to GDP ratio rises to 20.8% in Mar-26 from 19.8% in Mar-25\" (0.91). Most negative: \"Trump loses Supreme Court appeal in E. Jean Carroll sexual abuse case; $5 million verdict stands\" (0.71).",
+    "note": "Moderately positive news tone",
+    "analysis": "Recent market news shows a moderately positive news tone, with most headlines leaning supportive. The most supportive headline: \"**Liquidity Balance:** Despite FII selling, the net combined institutional activity remains positive at **+\u20b91,451.35 crore**, likely providing price support for the Nifty 50 and broader indices.\". The most cautious headline: \"**FIIs Turn Net Sellers:** Foreign Institutional Investors recorded a net sell-off of **\u20b91,350.10 crore**, suggesting cautious sentiment or profit-booking at higher levels.\".",
     "headlines": [
       {
-        "title": "Trump loses Supreme Court appeal in E. Jean Carroll sexual abuse case; $5 million verdict stands",
+        "title": "As of **June 29, 2026**, the Indian markets are displaying a cautious outlook as they head into the significant monthly and weekly derivatives expiry tomorrow. Below is the smart brief analysis of the Nifty 50 constituents, institutional activity, and the financial headlines for the upcoming session.",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "**DIIs Provide Support:** Domestic Institutional Investors continue to act as a significant buffer against foreign outflows, pumping in over **\u20b92,800 crore** net into the market.",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "**FIIs Turn Net Sellers:** Foreign Institutional Investors recorded a net sell-off of **\u20b91,350.10 crore**, suggesting cautious sentiment or profit-booking at higher levels.",
         "label": "negative",
-        "score": 0.7091
+        "sentiment": "Moderately negative"
       },
       {
-        "title": "Supreme Court Lets Fed\u2019s Lisa Cook Stay in Job for Now",
-        "label": "neutral",
-        "score": 0.857
-      },
-      {
-        "title": "American couple quit New York life, bought a  \u20b912.4 lakh home in Italy: \u2018Can\u2019t imagine moving back'",
-        "label": "neutral",
-        "score": 0.8524
-      },
-      {
-        "title": "Why is Southwest Airlines cutting seven routes from St. Louis? Here's what travelers need to know",
-        "label": "neutral",
-        "score": 0.4856
-      },
-      {
-        "title": "SIR begins in Delhi tomorrow: Key dates, required documents and everything you need to know",
-        "label": "neutral",
-        "score": 0.9491
-      },
-      {
-        "title": "Former NFL running back Chris Johnson reveals ALS diagnosis at 39",
-        "label": "neutral",
-        "score": 0.7021
-      },
-      {
-        "title": "Centre ends temporary petrol, diesel sale restrictions from July 1",
-        "label": "negative",
-        "score": 0.5883
-      },
-      {
-        "title": "India reclaims 5th spot in global mcap rankings, overtakes Taiwan, S Korea",
+        "title": "**Liquidity Balance:** Despite FII selling, the net combined institutional activity remains positive at **+\u20b91,451.35 crore**, likely providing price support for the Nifty 50 and broader indices.",
         "label": "positive",
-        "score": 0.8898
+        "sentiment": "Strongly positive"
       },
       {
-        "title": "India's external debt to GDP ratio rises to 20.8% in Mar-26 from 19.8% in Mar-25",
+        "title": "**Overall Market Sentiment:** The market remains resilient as domestic liquidity offsets global/foreign selling pressures. Traders should watch if FII selling intensifies or if DIIs sustain this level of aggressive buying to maintain the bullish trend.",
         "label": "positive",
-        "score": 0.9088
-      },
-      {
-        "title": "Mospi pushes harmonised data ecosystem to power citizen-centric governance",
-        "label": "positive",
-        "score": 0.6243
-      },
-      {
-        "title": "CSM Technologies IPO subscribed 1.36 times",
-        "label": "neutral",
-        "score": 0.9223
-      },
-      {
-        "title": "UK Growth Outlook Brightens After US-Iran Truce Lowers Oil Costs",
-        "label": "positive",
-        "score": 0.8542
-      },
-      {
-        "title": "Burnham Vows to Grow Economy by Taking Powers Out of London",
-        "label": "neutral",
-        "score": 0.6534
-      },
-      {
-        "title": "Warsh Joins ECB\u2019s Soul Searching in Sintra",
-        "label": "neutral",
-        "score": 0.8586
-      },
-      {
-        "title": "Global Trade Braces for Another Period of Policy Uncertainty",
-        "label": "neutral",
-        "score": 0.5346
+        "sentiment": "Strongly positive"
       }
     ]
   }
