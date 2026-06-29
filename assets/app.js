@@ -515,15 +515,15 @@ const renderFinbertSection = (finbert) => {
   const hasData = finbert && Array.isArray(finbert.headlines) && finbert.headlines.length > 0;
   setDisplay('aiFinbertBlock', hasData);
   if (!hasData) {
-    setText('openInterestFinbertNote', 'News sentiment (FinBERT): awaiting next refresh.');
+    setText('openInterestFinbertNote', 'News sentiment: awaiting next refresh.');
     return;
   }
   const arrow = (label) => (label === 'positive' ? '▲' : label === 'negative' ? '▼' : '■');
-  setText('aiFinbertNote', `${finbert.model || 'FinBERT'} · ${finbert.note || ''}`);
+  setText('aiFinbertNote', finbert.note || finbert.bias || '');
   setText('aiFinbertText', finbert.analysis || '');
   renderChipList('aiFinbertHeadlines', finbert.headlines.map((item) =>
-    `${arrow(item.label)} ${escapeFinbert(item.title)} (${Number(item.score).toFixed(2)})`));
-  setText('openInterestFinbertNote', `News sentiment (FinBERT): ${finbert.note || finbert.bias || '-'}.`);
+    `${arrow(item.label)} ${escapeFinbert(item.sentiment || item.label)} — ${escapeFinbert(item.title)}`));
+  setText('openInterestFinbertNote', `News sentiment: ${finbert.note || finbert.bias || '-'}.`);
 };
 
 const renderAiSection = (aiAnalysis) => {
