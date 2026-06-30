@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T20:01:27.604127+05:30",
+  "generatedAt": "2026-06-30T09:01:17.341728+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
@@ -12,62 +12,111 @@
     "gemini-robotics-er-1.6-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\nAs of **June 29, 2026**, the Indian markets are displaying a cautious outlook as they head into the significant monthly and weekly derivatives expiry tomorrow. Below is the smart brief analysis of the Nifty 50 constituents, institutional activity, and the financial headlines for the upcoming session.\n\n### **1. Nifty 50 Stock Analysis (Top Movers)**\nThe latest session saw defensive sectors like Healthcare and Power leading the gains, while major heavyweights in Banking and Auto faced selling pressure.\n\n**Top Gainers (Contributors to Resilience):**\n*   **MAXHEALTH:** +2.37% (LTP: \u20b91,150)\n*   **DRREDDY:** +2.26% (LTP: \u20b91,381)\n*   **COALINDIA:** +1.72% (LTP: \u20b9442.90)\n*   **ETERNAL:** +1.57% (LTP: \u20b9259.15)\n*   **BEL:** +1.55% (LTP: \u20b9413.50)\n\n**Major Losers (Drags on Index):**\n*   **KOTAKBANK:** -2.93% (LTP: \u20b9397) - Notably affected by the recent face value split.\n*   **M&M:** -2.43% (LTP: \u20b93,105)\n*   **ADANIENT:** -2.24% (LTP: \u20b92,970)\n*   **TMPV:** -2.10% (LTP: \u20b9345.80)\n*   **INDIGO:** -2.07% (LTP: \u20b95,337.30)\n\n---\n\n### **2. Latest FII & DII Flows (Provisional)**\nThe institutional stance remains mixed, with Domestic Institutional Investors (DIIs) actively absorbing the pressure from Foreign Institutional Investor (FII) outflows.\n*   **FIIs:** Net **Sellers** of approx. **\u20b91,350.10 Cr**.\n*   **DIIs:** Net **Buyers** of approx. **\u20b92,801.45 Cr**.\n*   **Combined Impact:** A net inflow of **+\u20b91,451.35 Cr**, suggesting strong local liquidity support despite foreign profit-booking at month-end.\n\n---\n\n### **3. Financial Headlines & Tomorrow's Outlook**\nTomorrow, **June 30, 2026**, is expected to be a high-volatility session due to the \"Convergence Expiry\" (Simultaneous Nifty and Bank Nifty weekly/monthly contract expiry).\n\n**Key Highlights:**\n*   **Expiry Volatility:** Traders should watch the **23,900** level closely. A break below this could accelerate selling toward the **23,750** zone as traders roll over positions to the July series.\n*   **Rising Fear Gauge:** The **India VIX** rose significantly by **3.91%** to **13.56**, indicating increased nervousness among market participants.\n*   **Sectoral Sentiment:** \n    *   **Weakness:** The Auto and IT sectors are currently underperforming.\n    *   **Defense:** Banking heavyweights like HDFC Bank and ICICI Bank are acting as the primary index anchors.\n*   **Global Headwinds:** Rising Brent Crude prices due to geopolitical tensions in the Middle East are creating a cautious environment for broader indices.\n\n**Summary Brief:** The index is likely to remain in a **\"Sell on Rise\"** mode for tomorrow's expiry unless it consistently holds above 24,050. Expect significant intraday whipsaws during the afternoon session (1:30 PM - 3:30 PM IST).\n\nNifty Flow Agent\n\nThe latest FII and DII trade flow data for the Indian market as of **June 29, 2026**, shows mixed sentiment between institutional participants:\n\n### **FII & DII Market Flow (\u20b9 Crores)**\n| Category | Date | Buy Value | Sell Value | Net Value |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 29-Jun-2026 | 55,273.85 | 52,472.40 | **+2,801.45** |\n| **FII/FPI** | 29-Jun-2026 | 24,754.26 | 26,104.36 | **-1,350.10** |\n\n---\n\n### **Market Summary & Headlines**\n\n1.  **DIIs Provide Support:** Domestic Institutional Investors continue to act as a significant buffer against foreign outflows, pumping in over **\u20b92,800 crore** net into the market.\n2.  **FIIs Turn Net Sellers:** Foreign Institutional Investors recorded a net sell-off of **\u20b91,350.10 crore**, suggesting cautious sentiment or profit-booking at higher levels.\n3.  **Liquidity Balance:** Despite FII selling, the net combined institutional activity remains positive at **+\u20b91,451.35 crore**, likely providing price support for the Nifty 50 and broader indices.\n4.  **Overall Market Sentiment:** The market remains resilient as domestic liquidity offsets global/foreign selling pressures. Traders should watch if FII selling intensifies or if DIIs sustain this level of aggressive buying to maintain the bullish trend.\n\nAggregator Agent\n\n**Executive Summary: Indian Market Analysis & Institutional Flow (June 29, 2026)**\n\nAs of June 29, 2026, the Indian market reflects a landscape of cautious resilience defined by a sharp divergence in institutional activity. The primary common theme across both reports is the critical stabilizing role of Domestic Institutional Investors (DIIs). While Foreign Institutional Investors (FIIs) recorded a net sell-off of \u20b91,350.10 crore, DIIs aggressively countered this with a net inflow of \u20b92,801.45 crore, resulting in a positive combined balance of +\u20b91,451.35 crore.\n\nA surprising connection emerges between sectoral movement and market volatility: while Healthcare and Power are leading gains as defensive plays, the \"Fear Gauge\" (India VIX) has simultaneously spiked by 3.91%. This suggests that despite strong domestic liquidity support, participants are heavily hedging against geopolitical headwinds and rising crude oil prices.\n\n**Key Takeaways:**\n*   **Institutional Buffering:** Strong local liquidity remains the market's backbone, successfully neutralizing month-end profit-booking by foreign funds.\n*   **Derivatives Volatility:** The upcoming \"Convergence Expiry\" on June 30 is expected to trigger significant intraday whipsaws, with 23,900 serving as a critical support level.\n*   **Sectoral Performance:** Heavyweight drags in Banking (Kotak Bank) and Auto (M&M) are being partially offset by resilient performances in defensive stocks like MAXHEALTH and DRREDDY.\n*   **Strategic Outlook:** The immediate market stance is \"Sell on Rise,\" likely remaining bearish to sideways unless the Nifty 50 sustains levels above 24,050.",
-  "executiveSummary": "**Executive Summary: Indian Market Analysis & Institutional Flow (June 29, 2026)**\n\nAs of June 29, 2026, the Indian market reflects a landscape of cautious resilience defined by a sharp divergence in institutional activity. The primary common theme across both reports is the critical stabilizing role of Domestic Institutional Investors (DIIs). While Foreign Institutional Investors (FIIs) recorded a net sell-off of \u20b91,350.10 crore, DIIs aggressively countered this with a net inflow of \u20b92,801.45 crore, resulting in a positive combined balance of +\u20b91,451.35 crore.\n\nA surprising connection emerges between sectoral movement and market volatility: while Healthcare and Power are leading gains as defensive plays, the \"Fear Gauge\" (India VIX) has simultaneously spiked by 3.91%. This suggests that despite strong domestic liquidity support, participants are heavily hedging against geopolitical headwinds and rising crude oil prices.\n\n**Key Takeaways:**\n*   **Institutional Buffering:** Strong local liquidity remains the market's backbone, successfully neutralizing month-end profit-booking by foreign funds.\n*   **Derivatives Volatility:** The upcoming \"Convergence Expiry\" on June 30 is expected to trigger significant intraday whipsaws, with 23,900 serving as a critical support level.\n*   **Sectoral Performance:** Heavyweight drags in Banking (Kotak Bank) and Auto (M&M) are being partially offset by resilient performances in defensive stocks like MAXHEALTH and DRREDDY.\n*   **Strategic Outlook:** The immediate market stance is \"Sell on Rise,\" likely remaining bearish to sideways unless the Nifty 50 sustains levels above 24,050.",
-  "bias": "Bearish",
+  "summary": "Nifty Analysis Agent\n\n### Nifty 50 Stock Analysis & Market Update\n\nBased on the latest exchange data and institutional flow figures for the session ending **June 29-30, 2026**, here is a brief analysis of the market movement:\n\n#### 1. Nifty 50: Stock Performance Summary\nThe index saw selective interest in defensive sectors (Healthcare) and public utilities, while large-cap banking and auto shares faced selling pressure.\n\n*   **Top Gainers (Contributors to Index Stability):**\n    *   **MAXHEALTH:** +2.37% (LTP: \u20b91,150.00) - Healthcare stocks saw robust demand.\n    *   **DRREDDY:** +2.26% (LTP: \u20b91,381.00) - Supported by positive sector-wide sentiment.\n    *   **COALINDIA:** +1.72% (LTP: \u20b9442.90) - Utilities outperformed in a volatile session.\n    *   **BEL:** +1.55% (LTP: \u20b9413.50) - Strong defense-related order visibility continues to support BEL.\n    *   **TRENT:** +1.53% (LTP: \u20b93,265.50) - Consumer/Retail pivot remains strong.\n\n*   **Top Losers (Major Drags):**\n    *   **KOTAKBANK:** -2.93% (LTP: \u20b9397.00*) - Felt the pressure of IT/Financial sector profit booking.\n    *   **M&M:** -2.43% (LTP: \u20b93,105.00) - Auto segment cooling after a strong run.\n    *   **ADANIENT:** -2.24% (LTP: \u20b92,970.00) - Volatility in group shares impacted market weightage.\n    *   **MARUTI:** -1.99% (LTP: \u20b913,472.00) - Weaker sentiment in auto pivot levels.\n\n#### 2. Institutional Flow (FII/DII Data - June 29)\nThe institutional split reveals that **Domestic Institutional Investors (DIIs)** continue to absorb the liquidity exiting from foreign desks:\n| Category | Net Buy/Sell Value (\u20b9 Cr) | Outlook |\n| :--- | :--- | :--- |\n| **FII (Foreign Institutional Investors)** | **-\u20b91,350.10** | Continued monthly trend of net selling. |\n| **DII (Domestic Institutional Investors)** | **+\u20b92,801.00** | Aggressive buying providing strong support at 23,800\u201323,900. |\n\n#### 3. Key Financial Headlines for Tomorrow\n*   **Support & Resistance:** Market participants are eyeing **23,800** as the primary psychological floor. Resistance remains stiff at **24,100** due to high Call options writing at that strike.\n*   **Global Cues:** Investors are tracking the **US-Iran deliberations in Doha**; any success here could significantly reduce global geopolitical risk premiums.\n*   **Crude Oil Edge:** Brent Crude hovering around **$72.52/barrel** is a positive structural cue for Indian inflation and fiscal health.\n*   **Opening Outlook:** GIFT Nifty points toward a modest start around **23,999**, aiming to reclaim the 24,000 level early in the session.\n\n**Smart Brief:** The index is currently in a \"Buy on Dips\" regime supported by DII flows, but the overhead resistance at 24k is proving difficult to breach without a reversal in FII sentiment. Watch heavyweights like **HDFC Bank** and **Reliance** for trend direction.\n\nNifty Flow Agent\n\nThe latest FII and DII flow data for the Indian market (specifically Nifty 50) as of **June 29, 2026**, is as follows:\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 29-Jun-2026 | 55,273.85 | 52,472.40 | **+2,801.45** |\n| **FII/FPI** | 29-Jun-2026 | 24,754.26 | 26,104.36 | **-1,350.10** |\n\n### **Market Analysis & Financial Headlines:**\n\n*   **Market Sentiment:** The market shows a mixed but overall positive liquidity stance. While Foreign Institutional Investors (FIIs) were net sellers of \u20b91,350.10 crore, the Domestic Institutional Investors (DIIs) strongly offset this by being net buyers of \u20b92,801.45 crore.\n*   **Net Inflow:** The combined net investment from institutional players stands at a positive **\u20b91,451.35 crore**, suggesting that domestic confidence remains robust despite foreign profit-booking or cautiousness.\n*   **Key Trends:** \n    *   **DII Support:** Domestic funds continue to provide a safety net for the indices, absorbing the selling pressure from foreign counterparts.\n    *   **FII Caution:** FIIs seem to be adopting a wait-and-watch approach or rotating capital, leading to marginal net outflows.\n\n**Suggested Headlines:**\n1. *\"Domestic Investors Save the Day: DIIs pump \u20b92,801 Cr to counter FII outflows.\"*\n2. *\"Indian Markets remain resilient as Institutional net inflow stays positive at \u20b91,450 Cr.\"*\n3. *\"FIIs turn net sellers for the session; DII buying interest peaks in Nifty 50 constituents.\"*\n\nAggregator Agent\n\n**Executive Summary: Nifty 50 Institutional Flow & Market Outlook**\n\nThe Indian market is currently defined by a decisive tug-of-war between persistent foreign outflows and robust domestic resilience. As of June 29, 2026, Foreign Institutional Investors (FIIs) continued their monthly selling streak with a net exit of **\u20b91,350.10 crore**. However, Domestic Institutional Investors (DIIs) acted as a vital stabilizer, aggressively pumping in **\u20b92,801.45 crore**. This resulted in a positive net institutional inflow of **\u20b91,451.35 crore**, underscoring a \"Buy on Dips\" regime powered by local capital.\n\nDespite this liquidity support, the Nifty 50 slipped below the psychological 24,000 mark due to heavy profit booking in the auto and banking sectors\u2014specifically **Kotak Bank (-2.93%)** and **M&M (-2.43%)**. In a surprising pivot, investors rotated into defensive havens, with **Healthcare (MAXHEALTH +2.37%)** and **Utilities (Coal India +1.72%)** emerging as primary index stabilizers.\n\n**Key Takeaways:**\n*   **Support & Resistance:** 23,800 is established as the critical floor, while 24,100 remains a stiff overhead hurdle due to heavy call options writing.\n*   **Macro Tailwinds:** Cooling Brent Crude prices ($72.52/barrel) and geopolitical deliberations in Doha provide a positive backdrop for domestic inflation and fiscal health.\n*   **Outlook:** While DIIs are providing a safety net, a sustained breach of 24,000 will likely require a reversal in FII sentiment or a significant lead from heavyweights like HDFC Bank and Reliance.",
+  "executiveSummary": "**Executive Summary: Nifty 50 Institutional Flow & Market Outlook**\n\nThe Indian market is currently defined by a decisive tug-of-war between persistent foreign outflows and robust domestic resilience. As of June 29, 2026, Foreign Institutional Investors (FIIs) continued their monthly selling streak with a net exit of **\u20b91,350.10 crore**. However, Domestic Institutional Investors (DIIs) acted as a vital stabilizer, aggressively pumping in **\u20b92,801.45 crore**. This resulted in a positive net institutional inflow of **\u20b91,451.35 crore**, underscoring a \"Buy on Dips\" regime powered by local capital.\n\nDespite this liquidity support, the Nifty 50 slipped below the psychological 24,000 mark due to heavy profit booking in the auto and banking sectors\u2014specifically **Kotak Bank (-2.93%)** and **M&M (-2.43%)**. In a surprising pivot, investors rotated into defensive havens, with **Healthcare (MAXHEALTH +2.37%)** and **Utilities (Coal India +1.72%)** emerging as primary index stabilizers.\n\n**Key Takeaways:**\n*   **Support & Resistance:** 23,800 is established as the critical floor, while 24,100 remains a stiff overhead hurdle due to heavy call options writing.\n*   **Macro Tailwinds:** Cooling Brent Crude prices ($72.52/barrel) and geopolitical deliberations in Doha provide a positive backdrop for domestic inflation and fiscal health.\n*   **Outlook:** While DIIs are providing a safety net, a sustained breach of 24,000 will likely require a reversal in FII sentiment or a significant lead from heavyweights like HDFC Bank and Reliance.",
+  "bias": "Neutral",
   "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "As of **June 29, 2026**, the Indian markets are displaying a cautious outlook as they head into the significant monthly and weekly derivatives expiry tomorrow. Below is the smart brief analysis of the Nifty 50 constituents, institutional activity, and the financial headlines for the upcoming session.",
-    "### **3. Financial Headlines & Tomorrow's Outlook**",
-    "### **Market Summary & Headlines**",
-    "**DIIs Provide Support:** Domestic Institutional Investors continue to act as a significant buffer against foreign outflows, pumping in over **\u20b92,800 crore** net into the market.",
-    "**FIIs Turn Net Sellers:** Foreign Institutional Investors recorded a net sell-off of **\u20b91,350.10 crore**, suggesting cautious sentiment or profit-booking at higher levels.",
-    "**Liquidity Balance:** Despite FII selling, the net combined institutional activity remains positive at **+\u20b91,451.35 crore**, likely providing price support for the Nifty 50 and broader indices.",
-    "**Overall Market Sentiment:** The market remains resilient as domestic liquidity offsets global/foreign selling pressures. Traders should watch if FII selling intensifies or if DIIs sustain this level of aggressive buying to maintain the bullish trend."
+    "#### 3. Key Financial Headlines for Tomorrow",
+    "### **Market Analysis & Financial Headlines:**",
+    "**Suggested Headlines:**",
+    "*\"Domestic Investors Save the Day: DIIs pump \u20b92,801 Cr to counter FII outflows.\"*",
+    "*\"Indian Markets remain resilient as Institutional net inflow stays positive at \u20b91,450 Cr.\"*",
+    "*\"FIIs turn net sellers for the session; DII buying interest peaks in Nifty 50 constituents.\"*"
   ],
   "marketSignals": {
     "positioningLabel": "Call-side hedge build",
-    "positioningStrike": 24100,
+    "positioningStrike": 24000,
     "divergenceSummary": "Aligned sentiment",
     "divergenceCount": 0,
-    "trapRiskLabel": "Upside trap @ 24050",
+    "trapRiskLabel": "Upside trap @ 24100",
     "fiiNetCrores": -1350.1,
     "diiNetCrores": 2801.45,
     "tradedValueCrores": 0.0,
-    "spot": 23946.25
+    "spot": 24093.3
   },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
-    "bias": "Bullish",
-    "note": "Moderately positive news tone",
-    "analysis": "Recent market news shows a moderately positive news tone, with most headlines leaning supportive. The most supportive headline: \"**Liquidity Balance:** Despite FII selling, the net combined institutional activity remains positive at **+\u20b91,451.35 crore**, likely providing price support for the Nifty 50 and broader indices.\". The most cautious headline: \"**FIIs Turn Net Sellers:** Foreign Institutional Investors recorded a net sell-off of **\u20b91,350.10 crore**, suggesting cautious sentiment or profit-booking at higher levels.\".",
+    "bias": "Neutral",
+    "note": "Mixed, broadly neutral news tone",
+    "analysis": "Recent market news shows a mixed, broadly neutral news tone, with supportive and cautious headlines roughly balanced. The most supportive headline: \"China\u2019s Factory Activity Returns to Growth as Exports Boom\". The most cautious headline: \"Massive fire breaks out at West Bengal's Haldia Refinery, several workers injured | Watch\".",
     "headlines": [
       {
-        "title": "As of **June 29, 2026**, the Indian markets are displaying a cautious outlook as they head into the significant monthly and weekly derivatives expiry tomorrow. Below is the smart brief analysis of the Nifty 50 constituents, institutional activity, and the financial headlines for the upcoming session.",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "**DIIs Provide Support:** Domestic Institutional Investors continue to act as a significant buffer against foreign outflows, pumping in over **\u20b92,800 crore** net into the market.",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "**FIIs Turn Net Sellers:** Foreign Institutional Investors recorded a net sell-off of **\u20b91,350.10 crore**, suggesting cautious sentiment or profit-booking at higher levels.",
+        "title": "Ram Mandir donation row: Congress' Ajay Rai placed under house arrest ahead of party delegation's Ayodhya visit | Video",
         "label": "negative",
         "sentiment": "Moderately negative"
       },
       {
-        "title": "**Liquidity Balance:** Despite FII selling, the net combined institutional activity remains positive at **+\u20b91,451.35 crore**, likely providing price support for the Nifty 50 and broader indices.",
+        "title": "Massive fire breaks out at West Bengal's Haldia Refinery, several workers injured | Watch",
+        "label": "negative",
+        "sentiment": "Strongly negative"
+      },
+      {
+        "title": "Nifty expiry day strategy: Analysts flag key support, resistance levels",
         "label": "positive",
         "sentiment": "Strongly positive"
       },
       {
-        "title": "**Overall Market Sentiment:** The market remains resilient as domestic liquidity offsets global/foreign selling pressures. Traders should watch if FII selling intensifies or if DIIs sustain this level of aggressive buying to maintain the bullish trend.",
+        "title": "Stocks to Watch today: HDFC Bank, Biocon, SJVN, Container Corp, Yes Bank",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "RailTel Corp bags Rs 27-cr work order from Goa Labour Welfare Board",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "Amid CJP protest, BJP chief Nitin Nabin says India's Gen Z are nation builders, not \u2018tukde tukde\u2019 mindset",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Born on 30 June? You share your birthday with Mike Tyson, Cheryl, Arvind Swami and more",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Ketan Agarwal murder: Police to conduct gait analysis of accused Chetan Chaudhary - here is why",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "China\u2019s Factory Activity Returns to Growth as Exports Boom",
         "label": "positive",
         "sentiment": "Strongly positive"
+      },
+      {
+        "title": "New Zealand Firms More Confident as Fuel Prices Ease, ANZ Says",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Small, midcaps set to steal a march over large-cap peers in H1",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Katayama Maintains \u2018Stable\u2019 Tone Even as Yen Hits 40-Year Low",
+        "label": "positive",
+        "sentiment": "Moderately positive"
+      },
+      {
+        "title": "South\u00a0Korea Tightens Property Curbs as Chip Boom Spurs Home Prices",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "Former BOJ Official Sees Next Hike Probably Before December",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Quarterly results of companies",
+        "label": "neutral",
+        "sentiment": "Neutral"
       }
     ]
   }
