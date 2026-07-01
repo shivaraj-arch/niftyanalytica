@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T15:01:12.720059+05:30",
+  "generatedAt": "2026-07-01T20:03:34.337956+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
@@ -9,114 +9,111 @@
   "model": "gemini-robotics-er-1.6-preview",
   "requestedModel": "gemini-robotics-er-1.6-preview",
   "attemptedModels": [
+    "gemini-robotics-er-1.6-preview",
     "gemini-robotics-er-1.6-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\nBased on the latest real-time data and market analysis for the Indian indices, here is the brief for the **Nifty 50** performance, institutional flows, and key financial headlines.\n\n### **1. Nifty 50: Top Gainers & Losers Analysis**\nThe Nifty 50 index is showing divergence between consumption/auto sectors and the IT/metal sectors.\n\n| **Top Gainers** | **% Change** | **Top Losers** | **% Change** |\n| :--- | :--- | :--- | :--- |\n| **ETERNAL** | +5.44% | **TECHM** | -3.15% |\n| **NESTLEIND** | +3.71% | **HCLTECH** | -3.08% |\n| **ADANIENT** | +3.63% | **TCS** | -2.21% |\n| **HINDUNILVR** | +3.13% | **HINDALCO** | -1.88% |\n| **ASIANPAINT** | +2.88% | **TATASTEEL** | -1.40% |\n\n**Brief Sentiment:**\n*   **Bullish Run in FMCG & Consumption:** Stocks like **Nestle India**, **HUL**, and **Asian Paints** are leading the upward move, suggesting defensive buying and positive sentiment in rural/urban consumption.\n*   **IT & Metal Sector Under Pressure:** Heavyweights like **TCS**, **HCL Tech**, and **Tech Mahindra** are the main drags today. Softness in the Metal sector (Tata Steel, Hindalco) suggests global commodity price fluctuations or cooling demand.\n\n---\n\n### **2. Institutional Flow (FII & DII Data)**\nThe market stability is currently driven by domestic strength despite foreign outflows.\n*Data as per June 30, 2026 (Provisional Cash Segment)*\n\n*   **FII (Foreign Institutional Investors):** Net **Seller** of **-\u20b92,556.75 Cr**.\n*   **DII (Domestic Institutional Investors):** Net **Buyer** of **+\u20b96,842.34 Cr**.\n*   **Net Impact:** Combined net buying of **\u20b94,285.59 Cr**.\n\n**Insight:** Domestic institutions continue to absorb the selling pressure from foreign investors, maintaining liquidity and supporting the Nifty\u2019s climb toward the 24,000+ levels.\n\n---\n\n### **3. Key Financial Headlines for Indian Market**\n*   **Nifty at 24,000:** The benchmark Nifty 50 successfully breached the 24,000 mark (currently trading at **24,017.60**, up 0.66%), driven by broad-based gains in Auto and Financials.\n*   **Kotak Mahindra Bank's Big Move:** Kotak Bank signed a deal to acquire **Deutsche Bank\u2019s Indian retail and wealth management business** for **\u20b9281.7 crore**, signaling aggressive expansion in the retail space.\n*   **IPO Update:** \n    *   **Knack Packaging IPO** (\u20b9439.5 Cr) opened for subscription today.\n    *   **Renfra Energy India** files for a \u20b9430 Cr IPO to tap into the renewable energy boom.\n*   **Geopolitical Outlook:** Markets are closely tracking the escalation in the **US-Iran conflict**, which has pushed Brent crude near the $75 mark, potentially weighing on future oil-sensitive sectors like Paints and Aviation.\n*   **Sector Update:** While **M&M** and **Titan** lead index momentum, **Tata Steel** and **JSW Steel** are seeing profit booking as global metal prices stabilize.\n\nNifty Flow Agent\n\nThe latest FII and DII flow data for the Indian market as of June 30, 2026, is as follows:\n\n### FII & DII Flow Data (June 30, 2026)\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 30-Jun-2026 | 23,432.58 | 16,590.24 | **+6,842.34** |\n| **FII/FPI** | 30-Jun-2026 | 23,273.71 | 25,830.46 | **-2,556.75** |\n\n### Market Summary & Analysis:\n*   **DII Activity:** Domestic Institutional Investors showed strong conviction with a significant net inflow of **\u20b96,842.34 crore**, acting as a major support pillar for the market.\n*   **FII Activity:** Foreign Institutional Investors were net sellers, withdrawing **\u20b92,556.75 crore** during the session.\n*   **Net Market Sentiment:** Despite the FII sell-off, the massive net buying by DIIs resulted in a combined net institutional inflow of **\u20b94,285.59 crore**, suggesting overall resilient liquidity and positive domestic sentiment.\n\n### Latest Financial Headlines:\n*   **DII Support:** Domestic institutions continue to offset foreign outflows, maintaining market stability near key resistance levels.\n*   **FII Caution:** Foreign investors remain cautious, potentially due to global macroeconomic shifts or profit-booking in high-valuation sectors.\n*   **Bullish Liquidity:** The combined net positive flow indicates sufficient liquidity to sustain further tests of recent market highs.\n\nAggregator Agent\n\n### **Executive Summary: Nifty 50 Market Performance & Institutional Flow**\n\nThe Indian equity market demonstrates notable resilience, with the **Nifty 50 successfully breaching the 24,000 milestone** despite persistent foreign outflows. A common theme across both reports is the critical stabilizing role of **Domestic Institutional Investors (DIIs)**, who displayed massive conviction with a net inflow of **\u20b96,842.34 crore**, more than neutralizing the **\u20b92,556.75 crore** withdrawn by FIIs.\n\n**Sectoral Divergence & Sentiment:**\nA clear rotation is visible: market momentum is currently powered by **Consumption, FMCG, and Auto sectors** (led by Eternal, Nestle, and HUL), which are acting as bullish catalysts. Conversely, the **IT and Metal sectors** (TCS, Tech Mahindra, and Hindalco) remain major drags, potentially due to global macro shifts and cooling commodity demand.\n\n**Surprising Connections & Key Takeaways:**\nDespite geopolitical tensions pushing Brent crude toward $75\u2014a traditional headwind for oil-sensitive markets\u2014domestic strength remains aggressive. This is evidenced by **Kotak Mahindra Bank\u2019s** significant acquisition of Deutsche Bank\u2019s retail business and a flurry of new IPO listings. \n\n**Main Takeaways:**\n1.  **Liquidity Support:** Combined institutional net inflow remains positive (+\u20b94,285.59 Cr), suggesting sufficient liquidity to sustain recent highs.\n2.  **Domestic dominance:** DIIs remain the primary support pillar, offsetting FII caution.\n3.  **Defensive Bullishness:** Buying interest in FMCG \"defensives\" suggests a strategic approach to volatility as the index tests new heights.",
-  "executiveSummary": "### **Executive Summary: Nifty 50 Market Performance & Institutional Flow**\n\nThe Indian equity market demonstrates notable resilience, with the **Nifty 50 successfully breaching the 24,000 milestone** despite persistent foreign outflows. A common theme across both reports is the critical stabilizing role of **Domestic Institutional Investors (DIIs)**, who displayed massive conviction with a net inflow of **\u20b96,842.34 crore**, more than neutralizing the **\u20b92,556.75 crore** withdrawn by FIIs.\n\n**Sectoral Divergence & Sentiment:**\nA clear rotation is visible: market momentum is currently powered by **Consumption, FMCG, and Auto sectors** (led by Eternal, Nestle, and HUL), which are acting as bullish catalysts. Conversely, the **IT and Metal sectors** (TCS, Tech Mahindra, and Hindalco) remain major drags, potentially due to global macro shifts and cooling commodity demand.\n\n**Surprising Connections & Key Takeaways:**\nDespite geopolitical tensions pushing Brent crude toward $75\u2014a traditional headwind for oil-sensitive markets\u2014domestic strength remains aggressive. This is evidenced by **Kotak Mahindra Bank\u2019s** significant acquisition of Deutsche Bank\u2019s retail business and a flurry of new IPO listings. \n\n**Main Takeaways:**\n1.  **Liquidity Support:** Combined institutional net inflow remains positive (+\u20b94,285.59 Cr), suggesting sufficient liquidity to sustain recent highs.\n2.  **Domestic dominance:** DIIs remain the primary support pillar, offsetting FII caution.\n3.  **Defensive Bullishness:** Buying interest in FMCG \"defensives\" suggests a strategic approach to volatility as the index tests new heights.",
-  "bias": "Bullish",
+  "summary": "Nifty Analysis Agent\n\n### **Nifty 50 Market Analysis & Outlook**\n\nThe Nifty 50 exhibited mixed sectoral trends today, closing at **24,005.85 (+0.59%)**. While domestic liquidity continues to provide a cushion, high-weightage IT stocks saw significant profit booking.\n\n---\n\n### **1. Stock Performance & Contributions**\nThe session was defined by strong gains in consumption and infrastructure, countered by broad weakness in the IT sector.\n\n*   **Top Contributors (Gainers):**\n    *   **ETERNAL:** Leading with a surge of **+5.82%** (LTP: 280).\n    *   **ADANIENT:** Gained **+3.52%** (LTP: 3143), supported by heavy volumes ahead of its dividend (Rs 1.30).\n    *   **NESTLEIND:** Up **+3.40%** (LTP: 1453) as consumption sentiment stays bullish.\n    *   **ASIANPAINT:** Rose **+3.01%** (LTP: 2715), likely benefiting from easing input costs.\n    *   **HINDUNILVR:** Added **+2.99%** (LTP: 2181.5).\n\n*   **Top Laggards (Declined):**\n    *   **HCLTECH:** Deepest correction of **-3.40%** (LTP: 1035.4).\n    *   **TECHM:** Down **-3.18%** (LTP: 1360).\n    *   **TCS:** Declined **-2.45%** (LTP: 1981.8).\n    *   **HINDALCO:** Eased **-1.80%** (LTP: 939.4).\n    *   **TATASTEEL:** Lower by **-1.63%** (LTP: 185).\n\n---\n\n### **2. Institutional Flow (FII & DII)**\nInstitutional activity reveals a continued push-and-pull between foreign capital and domestic liquidity.\n\n| Category | Net Value (\u20b9 Crore) | Sentiment |\n| :--- | :--- | :--- |\n| **Foreign Institutional Investors (FII)** | **\u20b9 -1,140.50 Cr** | **Net Sellers** |\n| **Domestic Institutional Investors (DII)** | **\u20b9 +3,159.20 Cr** | **Net Buyers** |\n\n*   **Note:** DIIs successfully absorbed the selling pressure from FIIs, leading to the positive close. FII selling is gradually narrowing compared to previous sessions.\n\n---\n\n### **3. Key Financial Headlines for Tomorrow (July 2, 2026)**\n*   **GIFT Nifty Signal:** Currently trading near **24,000\u201324,050**, suggesting a **flat start** for the tomorrow morning session.\n*   **Volatility Update:** India VIX dropped **-2.65% to 13.24**, its lowest in several sessions, signaling lower market fear and potential for stable consolidation.\n*   **Sector Focus:**\n    *   **Banking Recovery:** Keep an eye on **Kotak Mahindra Bank** and **Bajaj Finance** which are showing signs of institutional accumulation.\n    *   **Macro Cues:** Investors will react to the **US ISM Services PMI** data releases overnight.\n*   **Immediate Levels:** \n    *   **Support:** \u20b923,900 level remains crucial.\n    *   **Resistance:** \u20b924,150\u2013\u20b924,200 remains the supply zone to clear for the next leg of the rally.\n\n---\n*Disclaimer: This analysis is based on current market data and intended for informational purposes only.*\n\nNifty Flow Agent\n\nThe latest FII and DII flow data for the Indian market as of **July 1, 2026**, is as follows:\n\n### **FII/DII Data (July 1, 2026)**\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 01-Jul-2026 | 17,136.57 | 13,977.33 | **+3,159.24** |\n| **FII/FPI** | 01-Jul-2026 | 11,623.31 | 12,763.81 | **-1,140.50** |\n\n---\n\n### **Market Analysis & Headlines**\n*   **Net Inflow Sentiment:** Domestic Institutional Investors (DIIs) continue to show strong support with a net inflow of over **\u20b93,150 crore**, effectively counteracting the selling pressure from Foreign Institutional Investors (FIIs), who were net sellers of **\u20b91,140.50 crore**.\n*   **Support & Liquidity:** The heavy buying from DIIs suggests robust domestic liquidity, often seen as a stabilizing factor against global volatility or foreign capital outflows.\n*   **Investor Behavior:** FIIs remain cautious, maintaining a slight selling bias for this session, while domestic mutual funds and institutions remain bullish on current market levels.\n\nAggregator Agent\n\n### **Executive Summary: Nifty 50 Market & Institutional Flow Analysis**\n\nOn July 1, 2026, the Nifty 50 closed at **24,005.85 (+0.59%)**, a session defined by a resilient \"push-and-pull\" between institutional forces. The primary theme was the robust support from **Domestic Institutional Investors (DIIs)**, who provided a significant net inflow of **\u20b93,159.24 crore**. This domestic buying effectively neutralized **\u20b91,140.50 crore** in net selling from Foreign Institutional Investors (FIIs), who maintained a cautious but narrowing selling bias.\n\nSectoral performance revealed a stark divergence: high-weightage **IT stocks** (HCLTech, Tech Mahindra, TCS) faced profit booking and deep corrections, while **consumption and infrastructure** stocks (ETERNAL, ADANIENT, NESTLEIND) surged. This rotation suggests institutional interest is pivoting toward sectors benefiting from easing input costs and stable domestic demand.\n\nA vital takeaway is the **India VIX** dropping to **13.24 (-2.65%)**, indicating decreased market fear and high potential for stable consolidation. For the July 2 session, GIFT Nifty signals a flat start near **24,000\u201324,050**. With \u20b923,900 serving as a crucial support level, immediate focus shifts to signs of institutional accumulation in **banking** and global catalysts like the US ISM Services PMI. Ultimately, robust domestic liquidity remains the stabilizing anchor against persistent foreign outflows.",
+  "executiveSummary": "### **Executive Summary: Nifty 50 Market & Institutional Flow Analysis**\n\nOn July 1, 2026, the Nifty 50 closed at **24,005.85 (+0.59%)**, a session defined by a resilient \"push-and-pull\" between institutional forces. The primary theme was the robust support from **Domestic Institutional Investors (DIIs)**, who provided a significant net inflow of **\u20b93,159.24 crore**. This domestic buying effectively neutralized **\u20b91,140.50 crore** in net selling from Foreign Institutional Investors (FIIs), who maintained a cautious but narrowing selling bias.\n\nSectoral performance revealed a stark divergence: high-weightage **IT stocks** (HCLTech, Tech Mahindra, TCS) faced profit booking and deep corrections, while **consumption and infrastructure** stocks (ETERNAL, ADANIENT, NESTLEIND) surged. This rotation suggests institutional interest is pivoting toward sectors benefiting from easing input costs and stable domestic demand.\n\nA vital takeaway is the **India VIX** dropping to **13.24 (-2.65%)**, indicating decreased market fear and high potential for stable consolidation. For the July 2 session, GIFT Nifty signals a flat start near **24,000\u201324,050**. With \u20b923,900 serving as a crucial support level, immediate focus shifts to signs of institutional accumulation in **banking** and global catalysts like the US ISM Services PMI. Ultimately, robust domestic liquidity remains the stabilizing anchor against persistent foreign outflows.",
+  "bias": "Neutral",
   "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "Based on the latest real-time data and market analysis for the Indian indices, here is the brief for the **Nifty 50** performance, institutional flows, and key financial headlines.",
-    "### **3. Key Financial Headlines for Indian Market**",
-    "### Latest Financial Headlines:",
-    "**Liquidity Support:** Combined institutional net inflow remains positive (+\u20b94,285.59 Cr), suggesting sufficient liquidity to sustain recent highs.",
-    "**Domestic dominance:** DIIs remain the primary support pillar, offsetting FII caution.",
-    "**Defensive Bullishness:** Buying interest in FMCG \"defensives\" suggests a strategic approach to volatility as the index tests new heights."
+    "### **3. Key Financial Headlines for Tomorrow (July 2, 2026)**",
+    "### **Market Analysis & Headlines**"
   ],
   "marketSignals": {
     "positioningLabel": "Put-side hedge build",
     "positioningStrike": 23900,
     "divergenceSummary": "Aligned sentiment",
     "divergenceCount": 0,
-    "trapRiskLabel": "No clear trap",
-    "fiiNetCrores": -2556.75,
-    "diiNetCrores": 6842.34,
+    "trapRiskLabel": "Downside trap @ 23900",
+    "fiiNetCrores": -1140.5,
+    "diiNetCrores": 3159.24,
     "tradedValueCrores": 0.0,
-    "spot": 24018.25
+    "spot": 24005.85
   },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
-    "bias": "Neutral",
-    "note": "Mixed, broadly neutral news tone",
-    "analysis": "Recent market news shows a mixed, broadly neutral news tone, with supportive and cautious headlines roughly balanced. The most supportive headline: \"Tata Motors widens lead in India's ePV market as competition heats up\". The most cautious headline: \"HDFC Life Insurance Company Ltd drops for fifth straight session\".",
+    "bias": "Bearish",
+    "note": "Mildly cautious news tone",
+    "analysis": "Recent market news shows a mildly cautious news tone, with most headlines flagging caution. The most supportive headline: \"Sai Parenterals arm signs OTC medicines supply agreement with Australian pharmacy network\". The most cautious headline: \"Benchmark indices snap two-day decline as easing crude oil lifts sentiment\".",
     "headlines": [
       {
-        "title": "Kashmir heatwave prompts school closure, early summer break as soaring mercury grips valley, touches 35.5\u00b0C",
-        "label": "negative",
-        "sentiment": "Moderately negative"
-      },
-      {
-        "title": "Delhi Gymkhana Club gets eviction notice from govt",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "South Africa Factory Mood Dips as Iran War Deal Delays Purchases",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "US lifts sanctions on four companies based in Hyderabad, Delhi, Ahmedabad: All you need to know",
+        "title": "IVF, surrogacy clinics must renew licences under new rules",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Euro-Zone Inflation Slows More Than Expected as Oil Retreats",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "Paisalo Digital hits the roof after promoter's increase stake to 46.72%",
-        "label": "positive",
-        "sentiment": "Moderately positive"
-      },
-      {
-        "title": "HDFC Life Insurance Company Ltd drops for fifth straight session",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "ByteDance Picks Brazil for Its Largest Data Center Outside China",
-        "label": "positive",
-        "sentiment": "Moderately positive"
-      },
-      {
-        "title": "ECB\u2019s Kocher Says the Next Decisions Will Be Either Hike or Hold",
+        "title": "Delhi HC rules National Stock Exchange a public authority under RTI",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Germany\u2019s Pension Fund Would Be Safe With Bundesbank, Nagel Says",
+        "title": "Benchmark indices snap two-day decline as easing crude oil lifts sentiment",
+        "label": "negative",
+        "sentiment": "Strongly negative"
+      },
+      {
+        "title": "Peru\u2019s Inflation Unexpectedly Picks Up With Rising Food Prices",
         "label": "positive",
         "sentiment": "Slightly positive"
       },
       {
-        "title": "Management churn in banks: Business as usual, or should you be worried?",
+        "title": "Europe heatwave latest: Spain reports 1,029 heat deaths; Hungary, Slovakia, Croatia, Austria see record temperatures",
+        "label": "negative",
+        "sentiment": "Slightly negative"
+      },
+      {
+        "title": "Is  \u20b95 lakh a month still middle class in India? Entrepreneur says \u2018open an idli shop\u2019",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Quote of the day by Adam Smith: \u2018Mercy to the guilty is cruelty to the innocent\u2019",
+        "title": "Mahua Moitra alleges eggs, 'chor' chants at Nadia protest: \u2018These are BJP workers, not ordinary people\u2019",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "Russia buys 60,000 metric tons gasoline from India to tackle fuel shortages: Report",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Tata Motors widens lead in India's ePV market as competition heats up",
-        "label": "positive",
-        "sentiment": "Strongly positive"
+        "title": "Why foreign investors are dumping Indian financial stocks | Share market news",
+        "label": "negative",
+        "sentiment": "Slightly negative"
       },
       {
-        "title": "China imposes \u2018national security\u2019 rules on overseas investments, including offshore tech transfers",
+        "title": "Prabhatam Infra Venture Ltd Announcements",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Sensex jumps 524 pts; Nifty trades above 24,000 level; VIX slides 1.58%",
+        "title": "Sai Parenterals arm signs OTC medicines supply agreement with Australian pharmacy network",
         "label": "positive",
         "sentiment": "Moderately positive"
+      },
+      {
+        "title": "Milei Tries Again to Revive Argentina\u2019s Dormant Mortgage Market",
+        "label": "positive",
+        "sentiment": "Moderately positive"
+      },
+      {
+        "title": "Lagarde Says Inflation, Growth Risks Now More Broadly Balanced",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Warsh Says Inflation Risks Are Down, Vows Price Stability",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "US Companies Added 98,000 Jobs in June, ADP Data Show",
+        "label": "negative",
+        "sentiment": "Slightly negative"
       }
     ]
   }
