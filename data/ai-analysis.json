@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T15:01:18.197413+05:30",
+  "generatedAt": "2026-07-08T20:01:44.991421+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
@@ -12,110 +12,111 @@
     "gemini-robotics-er-1.6-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\nThe latest analysis for the Nifty 50 index and institutional activities for the Indian market is provided below:\n\n### **1. Nifty 50 Stock Analysis (Recent Session)**\nThe Nifty 50 observed a predominantly **bearish sentiment** in its latest session, with significant declines across various heavyweights.\n\n*   **Top Gainers:**\n    *   **ONGC:** +1.03% (LTP: \u20b9246.70)\n    *   **BAJAJ-AUTO:** +0.36% (LTP: \u20b910,146.00)\n*   **Top Decliners:**\n    *   **JIOFIN:** -5.44%\n    *   **INDIGO:** -5.28%\n    *   **SHRIRAMFIN:** -5.24%\n    *   **MARUTI:** -4.44%\n    *   **BAJFINANCE:** -3.60%\n    *   **Financials & FMCG:** HINDUNILVR (-3.53%), ICICIBANK (-2.66%), and ITC (-2.72%) faced broad-based selling.\n    *   **Reliance Industries:** Declined by **2.65%** (LTP: \u20b91,273.70).\n\n### **2. FII & DII Flow (July 8, 2026)**\nThe institutional flow showed a shift towards caution, reflecting the volatility in the broader market:\n*   **Foreign Institutional Investors (FIIs):** Remained marginal buyers with a net buy of approximately **\u20b9393 crore**.\n*   **Domestic Institutional Investors (DIIs):** Recorded as net sellers with an outflow of approximately **\u20b9383 crore**, signaling profit-booking at record high levels.\n\n### **3. Market Outlook & Financial Headlines**\n**Market Sentiment:** **Cautious.** The India VIX (Volatility Index) surged by nearly **5%**, reaching 12.23, indicating higher expected intraday swings.\n\n*   **Technical Levels for Tomorrow:**\n    *   **Immediate Support:** **24,150** and **24,000**. If the index stays below 24,150, further psychological pressure is expected.\n    *   **Key Resistance:** **24,300** and **24,450**.\n*   **Macro Cues:**\n    *   **Crude Oil Surge:** Fresh US-Iran friction has driven **Brent crude prices** higher, which typically weighs on Indian stocks due to inflation concerns.\n    *   **NTPC Green Energy:** Likely to be in focus as it prepares to issue NCDs worth \u20b92,500 crore on July 9.\n    *   **Global Triggers:** Investors are closely monitoring the upcoming **US Fed Reserve minutes** for clues on interest rate movements.\n\n**Smart Summary:** \nThe market is currently undergoing healthy consolidation but faces headwinds from rising geopolitical tensions and oil prices. Traders should watch the **24,150 support** closely; maintaining this level could invite \"buy-on-dips\" flows, while breaking below might trigger more technical selling.\n\nNifty Flow Agent\n\nThe latest FII and DII flow data for the Indian market as of **July 7, 2026**, is as follows:\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **FII/FPI** | 07-Jul-2026 | 18,414.01 | 18,020.82 | **+393.19** |\n| **DII** | 07-Jul-2026 | 18,897.44 | 19,280.87 | **-383.43** |\n\n### **Market Flow Summary:**\n*   **FII Sentiment:** Foreign Institutional Investors were **net buyers** with an inflow of **\u20b9393.19 crore**.\n*   **DII Sentiment:** Domestic Institutional Investors were **net sellers** with an outflow of **\u20b9383.43 crore**.\n*   **Total Net Impact:** The combined net flow from institutional participants is almost neutral (**+\u20b99.76 crore**), indicating a balanced exchange between foreign and domestic institutions during this session.\n\n### **Financial Headlines & Analysis:**\n1.  **Neutral Institutional Stance:** The minimal difference between FII buying and DII selling suggests a period of consolidation where neither group is aggressively pushing the market in one direction.\n2.  **FII Persistence:** Despite global fluctuations, FIIs remain slightly positive, providing essential liquidity support to the index.\n3.  **DII Profit Booking:** The net sell value from DIIs suggests minor profit booking at current levels, potentially balancing the upward pressure from foreign inflows.\n\nAggregator Agent\n\n### **Executive Summary: Market Analysis and Institutional Flow**\n\nThe Indian equity market is currently entering a phase of **cautious consolidation**, as evidenced by recent Nifty 50 performance and institutional activity. In the latest session, the Nifty 50 exhibited a **predominantly bearish sentiment**, driven by notable declines in heavyweights such as Reliance Industries (-2.65%) and major banking entities. Despite these sector-specific declines, institutional flows remain remarkably neutral. Data from July 7\u20138, 2026, shows Foreign Institutional Investors (FIIs) as marginal net buyers (+\u20b9393 crore), while Domestic Institutional Investors (DIIs) engaged in profit-booking (-\u20b9383 crore), resulting in a nearly balanced net impact of **+\u20b99.76 crore**.\n\n**Key Drivers and Macro Cues:**\n*   **Volatility Surge:** The India VIX jumped nearly 5% to 12.23, signaling higher intraday risks.\n*   **Geopolitical Headwinds:** Rising US-Iran tensions have spiked **Brent crude prices**, creating inflationary pressure that weighs on domestic sentiment.\n*   **Technical Benchmarks:** Immediate support is identified at **24,150**; a breach below this could trigger technical selling toward 24,000. Resistance sits at 24,300.\n\n**Conclusion:**\nWhile FII persistence provides essential liquidity support, the market is transitioning to a risk-off stance due to global macro triggers and upcoming US Fed minutes. Traders should prioritize the 24,150 support level as the pivot point between healthy consolidation and a deeper correction.",
-  "executiveSummary": "### **Executive Summary: Market Analysis and Institutional Flow**\n\nThe Indian equity market is currently entering a phase of **cautious consolidation**, as evidenced by recent Nifty 50 performance and institutional activity. In the latest session, the Nifty 50 exhibited a **predominantly bearish sentiment**, driven by notable declines in heavyweights such as Reliance Industries (-2.65%) and major banking entities. Despite these sector-specific declines, institutional flows remain remarkably neutral. Data from July 7\u20138, 2026, shows Foreign Institutional Investors (FIIs) as marginal net buyers (+\u20b9393 crore), while Domestic Institutional Investors (DIIs) engaged in profit-booking (-\u20b9383 crore), resulting in a nearly balanced net impact of **+\u20b99.76 crore**.\n\n**Key Drivers and Macro Cues:**\n*   **Volatility Surge:** The India VIX jumped nearly 5% to 12.23, signaling higher intraday risks.\n*   **Geopolitical Headwinds:** Rising US-Iran tensions have spiked **Brent crude prices**, creating inflationary pressure that weighs on domestic sentiment.\n*   **Technical Benchmarks:** Immediate support is identified at **24,150**; a breach below this could trigger technical selling toward 24,000. Resistance sits at 24,300.\n\n**Conclusion:**\nWhile FII persistence provides essential liquidity support, the market is transitioning to a risk-off stance due to global macro triggers and upcoming US Fed minutes. Traders should prioritize the 24,150 support level as the pivot point between healthy consolidation and a deeper correction.",
-  "bias": "Bearish",
+  "summary": "Nifty Analysis Agent\n\nFor the upcoming trading session on **Thursday, July 9, 2026**, here is a comprehensive brief following the recent market activity and institutional flows:\n\n### **1. Nifty 50 Stock Analysis (Today's Performance)**\nBased on latest exchange data, the market witnessed broad-based selling with only a few defensive stocks resisting the downward trend.\n\n*   **Major Gainers:**\n    *   **ONGC (+1.15%):** Emerged as the top performer, supported by rising crude prices.\n    *   **BAJAJ-AUTO (+0.65%):** Showed resilience despite consumer sentiment concerns.\n    *   **COALINDIA (+0.40%):** Benefited from stable demand in the energy segment.\n*   **Significant Decliners (Index Drags):**\n    *   **INDIGO (-5.1%)** & **JIOFIN (-5.02%):** Led the losers' list with sharp corrections.\n    *   **RELIANCE (-2.56%)** & **HDFCBANK (-2.41%):** As the heavyweights of the index, their combined decline was the primary cause of the benchmark's ~516 point crash.\n    *   **Sectoral Hits:** FMCG (**HINDUNILVR**, **TATACONSUM**) and Auto (**MARUTI**, **M&M**) saw cuts between **2.9% and 3.9%**.\n\n---\n\n### **2. Latest FII & DII Flow Data (Provisional - July 8)**\nDespite the sharp decline in prices, institutional participation remained positive, suggesting a \"buy on dips\" strategy.\n*   **Foreign Institutional Investors (FIIs):** Net **BUYERS** of **\u20b91,962.80 Crore**.\n*   **Domestic Institutional Investors (DIIs):** Net **BUYERS** of **\u20b9790.16 Crore**.\n*   **Observation:** The positive net inflow during a crash indicates that institutions are finding value at lower levels, even as retail or panic selling dominated the session.\n\n---\n\n### **3. Market Headlines & Triggers for Tomorrow (July 9)**\n*   **The \"Trump Effect\":** Geopolitical tensions in the Strait of Hormuz have intensified market fears, causing a spike in crude oil ($78+) and safe-haven assets.\n*   **Earnings Kickoff:** **TCS** is scheduled to announce its **Q1 FY27 results** tomorrow. Management commentary on AI deals and margin guidance will dictate IT sector sentiment.\n*   **Volatility Watch:** **India VIX** has surged over **24%**, climbing above the 15 mark. Expect rapid price movements in early trade tomorrow.\n*   **Crude Oil Pressure:** With Brent crossing $78/barrel, margin pressure will remain high for **Asian Paints, OMCs, and Tyre stocks**.\n\n### **Strategic Brief for Tomorrow**\n*   **Support Levels:** 23,800 is the immediate psychological floor; a breach below 23,750 may lead to further profit-taking.\n*   **Resistance:** Market needs to reclaim **24,020** to signal stability.\n*   **Key stocks to watch:** **TCS** (Result expectation), **ONGC** (Oil hedge), and **HDFC Bank** (Potential recovery after selling pressure).\n\nNifty Flow Agent\n\nBased on the latest institutional flow data for the Indian market, here is the analysis:\n\n### **FII & DII Flow Analysis (As of July 08, 2026)**\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **FII/FPI** | 08-Jul-2026 | 17,463.95 | 15,501.15 | **+1,962.80** |\n| **DII** | 08-Jul-2026 | 19,165.13 | 18,374.97 | **+790.16** |\n| **Total** | | **36,629.08** | **33,876.12** | **+2,752.96** |\n\n---\n\n### **Financial Headlines & Market Insights**\n\n1.  **Bullish Convergence:** Both Foreign Institutional Investors (FII) and Domestic Institutional Investors (DII) remained net buyers in the latest session, contributing a combined net inflow of over **\u20b92,750 crore**.\n2.  **Strong Liquidity Support:** The sustained buying from FIIs (nearly \u20b92,000 crore) indicates renewed global confidence in Indian equities, likely driven by stable macroeconomic indicators or positive sectoral triggers.\n3.  **Market Sentiment:** With both categories of major participants on the buy side, the immediate market sentiment remains positive, providing a strong floor for the Nifty 50 and broader indices.\n4.  **Stock Concentration:** Net institutional buying typically favors heavyweight sectors like Banking, IT, and Reliance Industries, which often act as major growth contributors during such periods of liquidity infusion.\n\nAggregator Agent\n\n### **Executive Summary: Nifty 50 Market Analysis & Institutional Flow**\n\nFollowing the July 8, 2026, session, the Indian market presents a stark dichotomy between benchmark performance and institutional conviction. Despite the Nifty 50 plummeting 516 points (~2.12%)\u2014its sharpest daily correction in months\u2014institutional investors exhibited a high-confidence \"bullish convergence.\" Both Foreign (FII) and Domestic Institutional Investors (DII) emerged as net buyers, contributing a combined net inflow of **\u20b92,752.96 crore**.\n\nThe \"Trump Effect\" and escalating geopolitical tensions in the Strait of Hormuz acted as primary catalysts for the crash, pushing crude oil above **$78/barrel** and spiking the India VIX by over **24%**. While heavyweights like Reliance and HDFC Bank dragged the index lower, institutional participation during the bloodbath suggests a strategic \"buy on dips\" move, identifying value in heavyweight sectors like Banking and IT amid retail panic.\n\n**Key Outlook for July 9:**\n*   **Support & Resistance:** Immediate support sits at **23,800**, with market stability contingent on reclaiming **24,020**. \n*   **Critical Triggers:** The Q1 FY27 results from **TCS** will be the central pivot for the IT sector, while oil-sensitive stocks (Asian Paints, OMCs) face continued margin pressure. \n*   **Connection:** The resilience of defensive stocks like ONGC (+1.15%) remains the primary hedge against volatile energy costs. Investors should watch if institutional liquidity successfully forms a floor near 23,750.",
+  "executiveSummary": "### **Executive Summary: Nifty 50 Market Analysis & Institutional Flow**\n\nFollowing the July 8, 2026, session, the Indian market presents a stark dichotomy between benchmark performance and institutional conviction. Despite the Nifty 50 plummeting 516 points (~2.12%)\u2014its sharpest daily correction in months\u2014institutional investors exhibited a high-confidence \"bullish convergence.\" Both Foreign (FII) and Domestic Institutional Investors (DII) emerged as net buyers, contributing a combined net inflow of **\u20b92,752.96 crore**.\n\nThe \"Trump Effect\" and escalating geopolitical tensions in the Strait of Hormuz acted as primary catalysts for the crash, pushing crude oil above **$78/barrel** and spiking the India VIX by over **24%**. While heavyweights like Reliance and HDFC Bank dragged the index lower, institutional participation during the bloodbath suggests a strategic \"buy on dips\" move, identifying value in heavyweight sectors like Banking and IT amid retail panic.\n\n**Key Outlook for July 9:**\n*   **Support & Resistance:** Immediate support sits at **23,800**, with market stability contingent on reclaiming **24,020**. \n*   **Critical Triggers:** The Q1 FY27 results from **TCS** will be the central pivot for the IT sector, while oil-sensitive stocks (Asian Paints, OMCs) face continued margin pressure. \n*   **Connection:** The resilience of defensive stocks like ONGC (+1.15%) remains the primary hedge against volatile energy costs. Investors should watch if institutional liquidity successfully forms a floor near 23,750.",
+  "bias": "Bullish",
   "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "### **3. Market Outlook & Financial Headlines**",
-    "### **Financial Headlines & Analysis:**",
-    "**Neutral Institutional Stance:** The minimal difference between FII buying and DII selling suggests a period of consolidation where neither group is aggressively pushing the market in one direction.",
-    "**FII Persistence:** Despite global fluctuations, FIIs remain slightly positive, providing essential liquidity support to the index.",
-    "**DII Profit Booking:** The net sell value from DIIs suggests minor profit booking at current levels, potentially balancing the upward pressure from foreign inflows."
+    "### **3. Market Headlines & Triggers for Tomorrow (July 9)**",
+    "### **Financial Headlines & Market Insights**",
+    "**Bullish Convergence:** Both Foreign Institutional Investors (FII) and Domestic Institutional Investors (DII) remained net buyers in the latest session, contributing a combined net inflow of over **\u20b92,750 crore**.",
+    "**Strong Liquidity Support:** The sustained buying from FIIs (nearly \u20b92,000 crore) indicates renewed global confidence in Indian equities, likely driven by stable macroeconomic indicators or positive sectoral triggers.",
+    "**Market Sentiment:** With both categories of major participants on the buy side, the immediate market sentiment remains positive, providing a strong floor for the Nifty 50 and broader indices.",
+    "**Stock Concentration:** Net institutional buying typically favors heavyweight sectors like Banking, IT, and Reliance Industries, which often act as major growth contributors during such periods of liquidity infusion."
   ],
   "marketSignals": {
     "positioningLabel": "Call-side hedge build",
-    "positioningStrike": 24000,
+    "positioningStrike": 24200,
     "divergenceSummary": "Aligned sentiment",
     "divergenceCount": 0,
     "trapRiskLabel": "Upside trap @ 24000",
-    "fiiNetCrores": 393.19,
-    "diiNetCrores": -383.43,
+    "fiiNetCrores": 1962.8,
+    "diiNetCrores": 790.16,
     "tradedValueCrores": 0.0,
-    "spot": 23852.7
+    "spot": 23882.05
   },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
-    "bias": "Bullish",
-    "note": "Mildly positive news tone",
-    "analysis": "Recent market news shows a mildly positive news tone, with most headlines leaning supportive. The most supportive headline: \"ITDC zooms 34% in two days, stock hits 52-week high on heavy volumes\". The most cautious headline: \"Spain responds after Donald Trump threatens trade cutoff: 'treating it as business as usual'\".",
+    "bias": "Bearish",
+    "note": "Moderately cautious news tone",
+    "analysis": "Recent market news shows a moderately cautious news tone, with most headlines flagging caution. The most supportive headline: \"EU Plans More Flexibility for Industry in Carbon Overhaul\". The most cautious headline: \"Rupee tumbles to one-month low; crude spike pushes bond yields higher\".",
     "headlines": [
       {
-        "title": "Badrinath temple donations row: Uttarakhand govt sets up panel to probe irregularities, BKTC employee suspended",
+        "title": "Odisha plans end-to-end digital, cashless property registration overhaul",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Spain responds after Donald Trump threatens trade cutoff: 'treating it as business as usual'",
+        "title": "Pakistan K2 Airways missing cargo Boeing 737 located, search for missing crew underway",
         "label": "negative",
         "sentiment": "Strongly negative"
       },
       {
-        "title": "E20 Petrol row: What is XP100, is it really free of ethanol and can you use it in your vehicle?",
+        "title": "Argentina\u2019s Political Parties Look for Ways to Avoid Extremes",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "EPFO targets 15 July to credit  \u20b91.44 trillion FY26 PF interest under new IT platform",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Quote of the Day by English Romantic poet Percy Bysshe Shelley: \u2018The more we study\u2026\u2019",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "ITDC zooms 34% in two days, stock hits 52-week high on heavy volumes",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "Ceigall India JV emerges L1 bidder for Rs 705-cr Arunachal Pradesh highway project",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Silver Touch Tech climbs after bagging AI project from RITES",
+        "title": "Toyota\u2019s Shift to US Stokes Fears for Mexican Auto Industry",
         "label": "positive",
         "sentiment": "Moderately positive"
       },
       {
-        "title": "Crude Oil: The 'Risk Premium' was compressed, not extinguished",
+        "title": "\u2018Hit them hard again tonight\u2019: Trump's \u2018little warning\u2019 to Iran as war situation escalates again",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "'India remains long-term market for Singapore's Temasek despite volatility'",
+        "title": "Microsoft's $7.3 billion AI data centre sued over \u2018freight train-like\u2019 non-stop noise",
+        "label": "negative",
+        "sentiment": "Strongly negative"
+      },
+      {
+        "title": "Rupee tumbles to one-month low; crude spike pushes bond yields higher",
+        "label": "negative",
+        "sentiment": "Strongly negative"
+      },
+      {
+        "title": "Truecaller CEO explains why spam calls keep rising, warns it's not over yet \u2014 \u2018It's actually going to get worse\u2019",
+        "label": "negative",
+        "sentiment": "Strongly negative"
+      },
+      {
+        "title": "Innovision bags Rs 28 crore NHAI toll collection contract",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Poland Holds Rates for Fourth Month as Inflation Risks Fade",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "INR tumbles sharply against US dollar as oil prices soar on renewed US-Iran tensions; Sensex, NIFTY plunge over 2%",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "Mumbai receives more rain in a week than Delhi gets in a year, nears Bengaluru's annual total",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "EU Plans More Flexibility for Industry in Carbon Overhaul",
         "label": "positive",
-        "sentiment": "Strongly positive"
+        "sentiment": "Moderately positive"
       },
       {
-        "title": "Uzbek Logistics Firm Centrum Bets on Silk Road Trade Before IPO",
-        "label": "neutral",
-        "sentiment": "Neutral"
+        "title": "Chile Consumer Prices Surprise Analysts With Flat June Print",
+        "label": "negative",
+        "sentiment": "Slightly negative"
       },
       {
-        "title": "US Defense Agency Seeks to Buy Up to $300 Million of Lithium",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Australian Pension Shrugs Off AI Bubble Fears, Plans to Buy Dips",
-        "label": "positive",
-        "sentiment": "Slightly positive"
-      },
-      {
-        "title": "Iran Wants to Charge Fees for Hormuz. How Do Other Waterways Work?",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Poland and Romania Set to Hold Rates as Price Outlooks Brighten",
-        "label": "neutral",
-        "sentiment": "Neutral"
+        "title": "ICRA reaffirms ratings of Greenpanel Industries at 'A+' with 'negative' outlook",
+        "label": "negative",
+        "sentiment": "Strongly negative"
       }
     ]
   }
