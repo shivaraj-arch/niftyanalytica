@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T15:01:34.018691+05:30",
+  "generatedAt": "2026-07-14T20:01:32.451965+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
@@ -12,108 +12,107 @@
     "gemini-robotics-er-1.6-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\nBased on the latest data from the Nifty 50 index constituents and today's institutional flows, here is a comprehensive brief for the Indian market:\n\n### **1. Nifty 50 Performance & Stock Analysis**\nThe Nifty 50 is experiencing mixed movements with a noticeable divide between defensive sectors and high-growth/interest-sensitive sectors.\n\n*   **Top Contributors & Gainers:**\n    *   **BHARTIARTL (+1.98%):** Leading the index as it touches highs near \u20b91,941.\n    *   **Healthcare Strength:** **APOLLOHOSP (+1.26%)**, **SUNPHARMA (+1.08%)**, **CIPLA (+1.02%)**, and **DRREDDY (+0.98%)** are among the top gainers, suggesting a \"risk-off\" move where investors flock to defensive stocks amid global uncertainty.\n    *   **TCS (+0.80%):** Supporting the index ahead of its upcoming dividend and earnings sentiment.\n\n*   **Major Laggards (Downside Contributors):**\n    *   **HCLTECH (-4.32%):** Witnessed a sharp sell-off today, being the heaviest dragger on the index.\n    *   **NBFCs & Financials:** **SHRIRAMFIN (-3.02%)**, **HDFCLIFE (-2.95%)**, and **SBIN (-2.11%)** saw significant profit booking.\n    *   **Auto & Consumer:** **M&M (-2.19%)** and **INDIGO (-2.35%)** declined, likely impacted by rising oil prices and weak rupee headlines.\n\n### **2. FII & DII Flow (Provisional - July 13, 2026)**\nThe institutional segment shows a tug-of-war between foreign and domestic participants:\n*   **FIIs (Foreign Institutional Investors):** Net **SELLERS** of approximately **\u20b93,062 Cr to \u20b93,396 Cr**. Their bearish stance on index derivatives continues to create overhead pressure.\n*   **DIIs (Domestic Institutional Investors):** Net **BUYERS** of approximately **\u20b92,171 Cr to \u20b92,355 Cr**. Domestic liquidity remains the primary cushion preventing a larger market collapse.\n\n### **3. Financial Headlines & Outlook for Tomorrow**\nThe market is bracing for a volatile session tomorrow due to several macro headwinds:\n\n*   **Geopolitical Risk:** Escalating **U.S.-Iran military tensions** are triggering risk-off sentiment across Asia.\n*   **Crude Oil Pressure:** Brent crude has climbed above **$85/barrel**. Given India's reliance on oil imports, this is expected to keep pressure on **Paint, Auto, and Aviation** stocks.\n*   **Currency Concerns:** The **INR (Rupee)** is trading at historically low levels (near **96.00 against USD**), which usually triggers algorithmic selling from FIIs.\n*   **Technical Outlook:** The Nifty closed today in the **24,050 - 24,110 range**. Analysts point to a **crucial support level at 23,900**; breaking below this could accelerate selling.\n\n**Strategy for Tomorrow:** Look for continued strength in defensive clusters like **Pharma** and select **IT (TCS)**, while exercising caution in high-beta financials and sectors sensitive to fuel costs.\n\nNifty Flow Agent\n\nThe latest FII and DII flow data for the Indian market (Nifty 50) as of July 13, 2026, is as follows:\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 13-Jul-2026 | 17,393.46 | 15,221.76 | **+2,171.70** |\n| **FII/FPI** | 13-Jul-2026 | 10,386.48 | 13,448.75 | **-3,062.27** |\n\n### Market Summary:\n- **Net Sentiment:** FIIs were net sellers with an outflow of over **\u20b93,000 crore**, while DIIs attempted to balance the scales with a net inflow of over **\u20b92,100 crore**. The overall net institutional flow for the session was negative at **-\u20b9890.57 crore**.\n- **Financial Headlines:**\n    - **FII Pressure:** Foreign investors continue to show caution, leading to significant sell-offs in major large-cap segments.\n    - **DII Support:** Domestic institutional support remains steady, acting as a cushion against global volatility.\n    - **Market Watch:** Investors are keeping a close eye on global macro data and domestic quarterly earnings previews, which are influencing current institutional positioning.\n\nAggregator Agent\n\n### **Executive Summary: Nifty 50 Market Analysis (July 13, 2026)**\n\nThe Indian market concluded the session with a notable divide, closing in the **24,050\u201324,110 range** amid a strategic \"risk-off\" shift. A significant tug-of-war exists between institutional participants: **Foreign Institutional Investors (FIIs)** remained aggressive net sellers with an outflow of **\u20b93,062.27 crore**, while **Domestic Institutional Investors (DIIs)** provided a liquidity cushion through a net inflow of **\u20b92,171.70 crore**.\n\n**Key Divergence in Stock Performance:**\n*   **Defensive Strength:** Healthcare and select IT stocks served as safe havens. Top gainers included **Bharti Airtel (+1.98%)**, **Apollo Hospitals (+1.26%)**, and **TCS (+0.80%)**.\n*   **Sectoral Pressure:** Tech heavy-weight **HCL Tech (-4.32%)** and high-beta financials like **SBI (-2.11%)** faced sharp sell-offs. Consumer-sensitive sectors (M&M, IndiGo) were hit by macro headwinds.\n\n**Macro Headwinds & Strategy:**\nThe negative net institutional flow of **-\u20b9890.57 crore** is largely tied to escalating **U.S.-Iran military tensions**, pushing Brent crude above **$85/barrel**. Furthermore, the INR's historical low (near **96.00**) has triggered algorithmic selling. \n\n**The Outlook:** Tomorrow remains volatile. Investors should watch the **23,900 support level** closely; failure to hold this could accelerate bearish momentum. Strategy prioritizes **defensive clusters (Pharma/IT)** while remaining cautious on oil-sensitive and financial stocks.",
-  "executiveSummary": "### **Executive Summary: Nifty 50 Market Analysis (July 13, 2026)**\n\nThe Indian market concluded the session with a notable divide, closing in the **24,050\u201324,110 range** amid a strategic \"risk-off\" shift. A significant tug-of-war exists between institutional participants: **Foreign Institutional Investors (FIIs)** remained aggressive net sellers with an outflow of **\u20b93,062.27 crore**, while **Domestic Institutional Investors (DIIs)** provided a liquidity cushion through a net inflow of **\u20b92,171.70 crore**.\n\n**Key Divergence in Stock Performance:**\n*   **Defensive Strength:** Healthcare and select IT stocks served as safe havens. Top gainers included **Bharti Airtel (+1.98%)**, **Apollo Hospitals (+1.26%)**, and **TCS (+0.80%)**.\n*   **Sectoral Pressure:** Tech heavy-weight **HCL Tech (-4.32%)** and high-beta financials like **SBI (-2.11%)** faced sharp sell-offs. Consumer-sensitive sectors (M&M, IndiGo) were hit by macro headwinds.\n\n**Macro Headwinds & Strategy:**\nThe negative net institutional flow of **-\u20b9890.57 crore** is largely tied to escalating **U.S.-Iran military tensions**, pushing Brent crude above **$85/barrel**. Furthermore, the INR's historical low (near **96.00**) has triggered algorithmic selling. \n\n**The Outlook:** Tomorrow remains volatile. Investors should watch the **23,900 support level** closely; failure to hold this could accelerate bearish momentum. Strategy prioritizes **defensive clusters (Pharma/IT)** while remaining cautious on oil-sensitive and financial stocks.",
-  "bias": "Bearish",
+  "summary": "Nifty Analysis Agent\n\n### **Nifty 50 Analysis & Market Outlook**\n\nThe Indian market experienced volatility in the previous session, closing lower as profit-booking in financial and tech heavyweights offset gains in defensive sectors.\n\n---\n\n### **1. Stock Performance Analysis (Nifty 50)**\n\n#### **Top Gainers (Major Contributors):**\n*   **BHARTIARTL:** **+1.69%** (LTP: \u20b91,934.00) \u2013 Led the index upward supported by strong telecom tailwinds.\n*   **APOLLOHOSP:** **+1.45%** (LTP: \u20b98,910.00) \u2013 Benefited from a rotation into healthcare stocks.\n*   **SUNPHARMA:** **+1.22%** (LTP: \u20b91,944.80) \u2013 Pharma sector resilience helped stem index declines.\n*   **DRREDDY:** **+0.92%** (LTP: \u20b91,245.80)\n*   **TATASTEEL:** **+0.87%** (LTP: \u20b9188.74)\n\n#### **Top Losers (Major Drags):**\n*   **HCLTECH:** **-4.63%** (LTP: \u20b91,164.60) \u2013 Significant tech sell-off post recent run-up.\n*   **SHRIRAMFIN:** **-3.43%** (LTP: \u20b91,012.10) \u2013 Profit taking in the NBFC space.\n*   **HDFCLIFE:** **-2.97%** (LTP: \u20b9556.35) \u2013 Weakness ahead of their earnings results.\n*   **SBIN:** **-2.34%** (LTP: \u20b91,012.70) \u2013 PSU banking heavyweights underperformed broadly.\n\n**Smart Brief:** The market landscape shows a clear **Sectoral Rotation**. Investors shifted capital from high-valuation IT and Banking names into \"safe-haven\" themes like Pharma and Telecom. Metals showed slight resilience, but widespread selling in financial services restricted any meaningful recovery.\n\n---\n\n### **2. Latest Institutional (FII/DII) Flow**\n*   **FII (Foreign Institutional Investors):** **-\u20b9739.69 Crore** (Net Sellers)\n*   **DII (Domestic Institutional Investors):** **+\u20b92,927.71 Crore** (Net Buyers)\n*   **Observation:** Domestic liquidity remains the primary engine for the Indian market. While FIIs maintain a cautious \"wait-and-watch\" stance (likely due to global crude/geopolitical factors), DIIs are aggressively absorbing sell-offs, keeping the downside in check.\n\n---\n\n### **3. Tomorrow\u2019s Key Financial Headlines (July 15, 2026)**\n\n#### **Corporate & Sectoral Triggers:**\n*   **Q1 Earnings Rush:** High-impact results expected from **HDFC Life Insurance**, **ICICI Prudential Life**, **HDFC AMC**, and **Union Bank of India**. The insurance sector is likely to see high intra-day volatility.\n*   **India-UK FTA:** The landmark Comprehensive Economic and Trade Agreement officially goes live tomorrow. Expect activity in trade-heavy sectors like textiles, chemicals, and machinery.\n*   **Crude Oil Pressure:** Brent crude surging past **$85/barrel** is a macro headwind for Auto, Aviation (Indigo), and Paint sectors due to potential margin compression.\n\n#### **Technical Opening Cues:**\n*   **Gift Nifty Forecast:** Indicates a **muted to flat-to-lower opening** (estimated range: 23,950\u201324,050).\n*   **Immediate Support:** **23,800\u201323,700** range.\n*   **Immediate Resistance:** **24,500\u201324,600** range.\n\n**Strategy Insight:** Given the bearish prediction for the Nifty Financial Services index tomorrow, watch for potential further weakness in **HDFC Bank** and **ICICI Bank**. Defensive positioning in **BHARTIARTL** and **Sun Pharma** may continue to offer protection.\n\nNifty Flow Agent\n\nThe latest FII and DII flow data for the Indian market as of **July 14, 2026**, is as follows:\n\n### **FII & DII Flow Data (14-Jul-2026)**\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 14-Jul-2026 | 20,420.87 | 17,493.16 | **+2,927.71** |\n| **FII/FPI** | 14-Jul-2026 | 12,763.43 | 13,503.12 | **-739.69** |\n| **Total** | | **33,184.30** | **30,996.28** | **+2,188.02** |\n\n---\n\n### **Market Headlines & Analysis**\n\n*   **Mixed Institutional Sentiment:** The market saw a divergence between institutional players. While **DIIs remained aggressive net buyers** with an inflow of over \u20b92,900 crore, **FIIs turned net sellers**, pulling out roughly \u20b9740 crore.\n*   **Domestic Support:** The strong net buying by Domestic Institutional Investors (DII) offset the selling pressure from FIIs, resulting in a net institutional inflow of **\u20b92,188.02 crore** for the session.\n*   **Liquidity:** Trading activity remains high, with combined buy values exceeding \u20b933,000 crore, indicating robust participation and liquidity in the Nifty 50 and broader market.\n*   **Bullish Bias:** Despite the marginal FII outflow, the overall net positive institutional position suggests a resilient bullish sentiment supported by local funds.\n\nAggregator Agent\n\n### **Executive Summary: Nifty 50 Market Analysis & Institutional Flow**\n\nThe Indian market is currently characterized by high volatility and a pronounced **sectoral rotation**. In the most recent session, Nifty 50 closed lower as profit-booking in IT and Banking heavyweights\u2014specifically **HCLTECH (-4.63%)** and **SBIN (-2.34%)**\u2014overshadowed gains in defensive segments like Pharma and Telecom.\n\nA critical takeaway is the widening divergence between institutional participants. **Domestic Institutional Investors (DIIs)** remain the market's primary engine, aggressively absorbing sell-offs with a net buy value of **\u20b92,927.71 crore**. This significantly offset the **\u20b9739.69 crore** pulled out by Foreign Institutional Investors (FIIs), who maintain a cautious \"wait-and-watch\" stance amid rising Brent crude prices (>$85/barrel) and geopolitical concerns.\n\n**Key Connections & Outlook:**\n*   **Defensive Shift:** Capital is flowing into resilient names like **BHARTIARTL (+1.69%)** and **SUNPHARMA (+1.22%)**, which are serving as \"safe havens.\"\n*   **Immediate Triggers:** Tomorrow (July 15) marks a crucial juncture with the **India-UK FTA** going live and high-impact Q1 results from the insurance sector (**HDFC Life**, **ICICI Pru**). \n*   **Sentiment:** While technical cues suggest a muted opening (23,950\u201324,050), the overall institutional liquidity surplus of **\u20b92,188 crore** indicates a resilient bullish bias supported by local funds despite global macro headwinds.",
+  "executiveSummary": "### **Executive Summary: Nifty 50 Market Analysis & Institutional Flow**\n\nThe Indian market is currently characterized by high volatility and a pronounced **sectoral rotation**. In the most recent session, Nifty 50 closed lower as profit-booking in IT and Banking heavyweights\u2014specifically **HCLTECH (-4.63%)** and **SBIN (-2.34%)**\u2014overshadowed gains in defensive segments like Pharma and Telecom.\n\nA critical takeaway is the widening divergence between institutional participants. **Domestic Institutional Investors (DIIs)** remain the market's primary engine, aggressively absorbing sell-offs with a net buy value of **\u20b92,927.71 crore**. This significantly offset the **\u20b9739.69 crore** pulled out by Foreign Institutional Investors (FIIs), who maintain a cautious \"wait-and-watch\" stance amid rising Brent crude prices (>$85/barrel) and geopolitical concerns.\n\n**Key Connections & Outlook:**\n*   **Defensive Shift:** Capital is flowing into resilient names like **BHARTIARTL (+1.69%)** and **SUNPHARMA (+1.22%)**, which are serving as \"safe havens.\"\n*   **Immediate Triggers:** Tomorrow (July 15) marks a crucial juncture with the **India-UK FTA** going live and high-impact Q1 results from the insurance sector (**HDFC Life**, **ICICI Pru**). \n*   **Sentiment:** While technical cues suggest a muted opening (23,950\u201324,050), the overall institutional liquidity surplus of **\u20b92,188 crore** indicates a resilient bullish bias supported by local funds despite global macro headwinds.",
+  "bias": "Bullish",
   "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "*   **Auto & Consumer:** **M&M (-2.19%)** and **INDIGO (-2.35%)** declined, likely impacted by rising oil prices and weak rupee headlines.",
-    "### **3. Financial Headlines & Outlook for Tomorrow**",
-    "**Financial Headlines:**"
+    "### **3. Tomorrow\u2019s Key Financial Headlines (July 15, 2026)**",
+    "### **Market Headlines & Analysis**"
   ],
   "marketSignals": {
     "positioningLabel": "Bearish positioning build",
     "positioningStrike": 24100,
     "divergenceSummary": "Aligned sentiment",
     "divergenceCount": 0,
-    "trapRiskLabel": "No clear trap",
-    "fiiNetCrores": -3062.27,
-    "diiNetCrores": 2171.7,
+    "trapRiskLabel": "Upside trap @ 24100",
+    "fiiNetCrores": -739.69,
+    "diiNetCrores": 2927.71,
     "tradedValueCrores": 0.0,
-    "spot": 24061.55
+    "spot": 24052.05
   },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
-    "bias": "Bullish",
-    "note": "Mildly positive news tone",
-    "analysis": "Recent market news shows a mildly positive news tone, with most headlines leaning supportive. The most supportive headline: \"Oil India Ltd spurts 2.08%, rises for third straight session\". The most cautious headline: \"Godawari Power & Ispat temporarily suspends operations of Raipur pellet plant\".",
+    "bias": "Neutral",
+    "note": "Mixed, broadly neutral news tone",
+    "analysis": "Recent market news shows a mixed, broadly neutral news tone, with most headlines leaning supportive. The most supportive headline: \"Bharti Airtel enhances network coverage across Odisha\". The most cautious headline: \"Several dead in Brussels construction site fire, 6 workers missing\".",
     "headlines": [
       {
-        "title": "Divi's Labs rallies 3%, market cap nears \u20b92 trillion; what's driving stock?",
+        "title": "Indian Railways opens wagon design to private industry in latest reform push",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Mercedes-Benz, BMW, Maruti Suzuki, Toyota\u2014 Full list of carmakers that have assured E20 compatibility",
+        "title": "Boomer Wealth Transfer Set to Favor America\u2019s Richest Families",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "National Aluminium Company Ltd rises for third consecutive session",
-        "label": "positive",
-        "sentiment": "Moderately positive"
-      },
-      {
-        "title": "Oil India Ltd spurts 2.08%, rises for third straight session",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "Adani Green Energy Ltd rises for third consecutive session",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "Godawari Power & Ispat temporarily suspends operations of Raipur pellet plant",
+        "title": "Several dead in Brussels construction site fire, 6 workers missing",
         "label": "negative",
         "sentiment": "Strongly negative"
       },
       {
-        "title": "Shah Rukh Khan's Mannat can add 2 more floors \u2014 SC dismisses plea challenging CRZ clearance",
+        "title": "India speeds up desilting works at J&K hydropower projects",
+        "label": "positive",
+        "sentiment": "Moderately positive"
+      },
+      {
+        "title": "US consumer inflation cools to 3.5% in June as fuel prices ease; core gauge stays flat",
+        "label": "positive",
+        "sentiment": "Moderately positive"
+      },
+      {
+        "title": "India, EU textile bodies launch platform to support FTA implementation",
         "label": "positive",
         "sentiment": "Slightly positive"
       },
       {
-        "title": "'E20 gives lower mileage': Arvind Kejriwal writes to PM Modi, seeks reduced prices, review rollout for older cars",
+        "title": "Bharti Airtel enhances network coverage across Odisha",
         "label": "positive",
-        "sentiment": "Slightly positive"
+        "sentiment": "Strongly positive"
       },
       {
-        "title": "Trump announces US as 'Guardian of the Hormuz Strait,' proposes $30 mn cargo fee; here's how it compares with Tehran's",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Quote of the Day by Stephen King on hard work: \u2018Talent is cheaper than table salt\u2026\u2019",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Traders Boost BOE and\u00a0ECB Rate-Hike Bets After Oil Price Surge",
-        "label": "negative",
-        "sentiment": "Slightly negative"
-      },
-      {
-        "title": "China\u2019s Trade Surplus With EU Hits Record as Tensions Intensify",
-        "label": "positive",
-        "sentiment": "Slightly positive"
-      },
-      {
-        "title": "Indian Insurers Ask for Wider Use of Swaps to Hedge Rate Risks",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "India Price Risks Mount on Renewed US-Iran Tensions, El Nino",
+        "title": "Anupam Kher refuses to back down over Ram Mandir comments: \u2018Not scared today, won't be in future\u2019",
         "label": "negative",
         "sentiment": "Moderately negative"
       },
       {
-        "title": "UK\u2019s Miliband Seen as Least Market-Friendly Chancellor in Poll",
+        "title": "India Unveils Trial Index to Track Services Sector Activity",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "India Wins Bigger Duty-Free Steel Export Quota in UK Trade Deal",
         "label": "positive",
         "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Fed\u2019s\u00a0Warsh Vows to Tame Price Growth as He Begins Testimony",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "INR settles near record lows amid a surge in crude oil prices and renewed geopolitical concerns",
+        "label": "negative",
+        "sentiment": "Strongly negative"
+      },
+      {
+        "title": "US CPI Falls for the First Time Since 2020, Core Gauge Flat",
+        "label": "negative",
+        "sentiment": "Strongly negative"
+      },
+      {
+        "title": "SBI Funds Management IPO opens to 0.68 times subscription on first day",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Affordable childcare can unlock India's female workforce: UNDP India chief",
+        "label": "positive",
+        "sentiment": "Slightly positive"
       }
     ]
   }
