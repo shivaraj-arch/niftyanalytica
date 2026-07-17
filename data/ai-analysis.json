@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T09:02:22.235578+05:30",
+  "generatedAt": "2026-07-17T15:02:34.253660+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
@@ -9,115 +9,114 @@
   "model": "gemini-robotics-er-1.6-preview",
   "requestedModel": "gemini-robotics-er-1.6-preview",
   "attemptedModels": [
+    "gemini-robotics-er-1.6-preview",
     "gemini-robotics-er-1.6-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\nBased on the latest trading data and market updates for **Friday, July 17, 2026**, here is the comprehensive Nifty 50 and Indian market smart brief:\n\n### **1. Nifty 50 Constituent Analysis**\nThe index is witnessing strong stock-specific action today, with Technology and Travel leading the gains while Financials show selective pressure.\n\n**Top Gainers (Contributors to Growth):**\n*   **HCLTECH:** +1.86% (LTP: \u20b91,189.70) - Leading the growth trajectory.\n*   **INDIGO:** +1.82% (LTP: \u20b95,265.00) - Strong upward momentum.\n*   **WIPRO:** +1.75% (LTP: \u20b9177.70) - Showing recovery amid sector-wide IT interest.\n*   **MARUTI:** +1.52% (LTP: \u20b913,790.00)\n*   **BAJFINANCE:** +1.49% (LTP: \u20b91,036.50)\n\n**Top Losers (Major Decliners):**\n*   **ETERNAL:** -3.00% (LTP: \u20b9285.95) - Deepest cut among major components.\n*   **SBILIFE:** -2.27% (LTP: \u20b91,824.10)\n*   **BAJAJFINSV:** -0.95% (LTP: \u20b91,832.00)\n*   **BEL:** -0.90% (LTP: \u20b9407.25)\n*   **HDFCBANK:** -0.87% (LTP: \u20b9808.35) - Continued consolidation in heavyweight banking.\n\n---\n\n### **2. Latest FII & DII Data (July 16, 2026)**\nThe institutional stance remains a tug-of-war between foreign selling and domestic resilience.\n*   **FII (Foreign Institutional Investors):** Net SELLERS of **-\u20b94,205.56 Crore**. Foreign outflows have hit a streak over the last three sessions.\n*   **DII (Domestic Institutional Investors):** Net BUYERS of **+\u20b92,986.41 Crore**. Domestic support remains robust via SIP inflows, absorbing over 70% of the FII selling pressure.\n\n---\n\n### **3. Market Outlook & Headlines for Tomorrow**\n**Global Sentiment:** Flat to Weak.\n*   **Headlines:**\n    *   **Geopolitical Stress:** Tensions in the **US-Iran corridor** are keeping global indices cautious.\n    *   **Commodity Impact:** **Crude oil** remains elevated ($80-90 zone), pressuring the Indian Rupee and refining margins.\n    *   **Earnings Focus:** **IT sectoral play** is dominant today as investors react to Q1 FY27 performances from giants like TCS (minor up), Wipro, and TechM.\n\n**Technical Forecast (Range: 23,800 \u2013 24,350):**\n*   **Immediate Support:** **24,000 \u2013 23,930**. A breakdown below this level could trigger panic selling.\n*   **Resistance Ceiling:** **24,130 \u2013 24,186**. Nifty needs to cross the **24,200** threshold decisively to renew a bullish breakout.\n*   **Strategic Stance:** Bias remains \"range-bound\" with neutral-to-flat momentum (RSI near 51). Traders are advised to monitor the pivot level of **24,050** for directional cues.\n\n**Summary:** The market is currently in a \"buy on dips\" mode supported by DIIs, but heavyweight sectors like Banking (HDFCBANK, AXISBANK) need to recover for a move towards record highs.\n\nNifty Flow Agent\n\nThe latest FII (Foreign Institutional Investors) and DII (Domestic Institutional Investors) flow data for the Indian market as of **July 16, 2026**, is detailed below:\n\n### FII & DII Flow Data (Nifty 50) - July 16, 2026\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 16-Jul-2026 | 19,236.80 | 16,250.39 | **+2,986.41** |\n| **FII/FPI** | 16-Jul-2026 | 13,576.08 | 17,781.64 | **-4,205.56** |\n| **Total** | | **32,812.88** | **34,032.03** | **-1,219.15** |\n\n### Market Analysis & Financial Headlines Summary\n\n*   **Mixed Market Sentiment:** The overall net flow is negative, with a net outflow of **\u20b91,219.15 crore**. While Domestic Institutional Investors (DIIs) showed significant interest with a net buy of nearly \u20b93,000 crore, it was offset by aggressive selling from Foreign Institutional Investors (FIIs).\n*   **FII Selling Pressure:** FIIs continue to be net sellers, offloading over **\u20b94,200 crore**, which indicates continued caution or profit-booking at current market levels.\n*   **DII Support:** Domestic institutions remain the backbone of the liquidity support, partially absorbing the pressure from foreign pullouts.\n*   **Likely Headline Focus:** \"FIIs extend selling streak as net outflows hit \u20b94,200 Cr; DIIs remain steadfast buyers to cushion market impact.\"\n\nAggregator Agent\n\n**Executive Summary: Nifty 50 and Institutional Market Flow (July 17, 2026)**\n\nAs of July 17, 2026, the Indian equity market exhibits a divergence between aggressive foreign selling and consistent domestic acquisition. Data from July 16 shows that Foreign Institutional Investors (FIIs) remained net sellers, offloading \u20b94,205.56 crore, while Domestic Institutional Investors (DIIs) acted as net buyers with an inflow of \u20b92,986.41 crore. This institutional tug-of-war resulted in a consolidated net outflow of \u20b91,219.15 crore.\n\nThe Nifty 50 is currently defined by stock-specific activity rather than broad-based momentum. Key gainers include Technology and Travel sectors, specifically HCLTECH (+1.86%), INDIGO (+1.82%), and WIPRO (+1.75%). In contrast, Financials and Banking underperform, with ETERNAL (-3.00%), SBILIFE (-2.27%), and HDFCBANK (-0.87%) leading the declines.\n\nThe market outlook remains range-bound between 23,800 and 24,350. Technical indicators suggest immediate resistance at 24,130\u201324,186 and support at 24,000\u201323,930. Sentiment is constrained by external factors, including geopolitical movements in the US-Iran corridor and elevated crude oil prices ($80\u201390 zone), which impact refining margins and the Rupee. Investors are prioritizing Q1 FY27 earnings, particularly within the IT sector, while the index pivot level remains at 24,050. Sustained domestic liquidity continues to mitigate foreign selling pressure, though a recovery in heavyweight banking stocks is required for a sustained upward breakout.",
-  "executiveSummary": "**Executive Summary: Nifty 50 and Institutional Market Flow (July 17, 2026)**\n\nAs of July 17, 2026, the Indian equity market exhibits a divergence between aggressive foreign selling and consistent domestic acquisition. Data from July 16 shows that Foreign Institutional Investors (FIIs) remained net sellers, offloading \u20b94,205.56 crore, while Domestic Institutional Investors (DIIs) acted as net buyers with an inflow of \u20b92,986.41 crore. This institutional tug-of-war resulted in a consolidated net outflow of \u20b91,219.15 crore.\n\nThe Nifty 50 is currently defined by stock-specific activity rather than broad-based momentum. Key gainers include Technology and Travel sectors, specifically HCLTECH (+1.86%), INDIGO (+1.82%), and WIPRO (+1.75%). In contrast, Financials and Banking underperform, with ETERNAL (-3.00%), SBILIFE (-2.27%), and HDFCBANK (-0.87%) leading the declines.\n\nThe market outlook remains range-bound between 23,800 and 24,350. Technical indicators suggest immediate resistance at 24,130\u201324,186 and support at 24,000\u201323,930. Sentiment is constrained by external factors, including geopolitical movements in the US-Iran corridor and elevated crude oil prices ($80\u201390 zone), which impact refining margins and the Rupee. Investors are prioritizing Q1 FY27 earnings, particularly within the IT sector, while the index pivot level remains at 24,050. Sustained domestic liquidity continues to mitigate foreign selling pressure, though a recovery in heavyweight banking stocks is required for a sustained upward breakout.",
-  "bias": "Bearish",
-  "keyLevels": [
-    "Resistance 24,130\u201324,186",
-    "Support 24,000\u201323,930"
-  ],
+  "summary": "Nifty Analysis Agent\n\nThe latest market analysis for the **Nifty 50** and the Indian financial landscape reveals a strong domestic rally despite external global pressures. Below is a concise breakdown of stock performance, institutional flows, and headlines for the next session.\n\n### **1. Nifty 50 Stock Analysis**\nThe index showed significant resilience today, primarily driven by the **IT and Financial sectors**.\n\n*   **Top Gainers (Contributors):**\n    *   **TECHM (+4.79%):** Leading the pack following a strong 28.4% YoY rise in quarterly net profit.\n    *   **KOTAKBANK (+3.22%):** Strong buying interest ahead of upcoming earnings.\n    *   **JIOFIN (+3.08%):** Surged significantly following a massive 155% jump in consolidated net profit.\n    *   **TCS (+3.00%) & HCLTECH (+1.69%):** IT heavyweights supported the index rally.\n    *   **RELIANCE (+1.96%):** Provided critical index support ahead of its weekend earnings report.\n*   **Major Decliners:**\n    *   **HINDALCO (-1.78%), SUNPHARMA (-1.19%), & DRREDDY (-1.14%):** Profit-booking was evident in metals and pharma sectors.\n    *   **WIPRO (-0.95%):** Remained weak, lagging behind its large-cap IT peers.\n\n### **2. Latest FII & DII Flow Data (As of July 16, 2026)**\nThe market continues to see a tug-of-war between institutional categories:\n\n| Investor Type | Action | Net Amount (\u20b9 Crores) |\n| :--- | :--- | :--- |\n| **FII** (Foreign Institutional) | **Net Sellers** | **-\u20b94,205.56** |\n| **DII** (Domestic Institutional) | **Net Buyers** | **+\u20b92,986.41** |\n\n**Trend Note:** While FIIs have been heavy sellers in the cash market (-\u20b94,200+ Cr in the last session), they remained net buyers in **Index and Stock Futures**, suggesting a hedge-heavy or tactically long outlook for near-term momentum.\n\n### **3. Financial Headlines & Outlook for Tomorrow**\n*   **Headline Rally:** Nifty 50 successfully breached the **24,250 mark** intraday, while Sensex hit the 78,000 level. This gain came despite a global slump in semiconductor stocks and escalating US-Iran tensions.\n*   **Weekend Catalysts:** The \"Mega Banking Weekend\" is the primary focus. **Reliance (RIL), HDFC Bank, ICICI Bank, and Kotak Bank** are scheduled to release results between Friday evening and Sunday. These will directly determine Monday\u2019s opening gap.\n*   **Macro Risks:** Crude oil prices near **$85/barrel** and geopolitical instability in the Middle East remain the primary \"bearish\" external threats to watch.\n*   **Market Strategy for Monday (July 20):**\n    *   **Immediate Support:** 24,000\u201324,050.\n    *   **Immediate Resistance:** 24,200\u201324,300.\n    *   **View:** \"Buy on dips\" remains the consensus while above 24,000. However, traders are advised to maintain strict stop-losses given potential sensitivity to the heavyweight earnings results.\n\nNifty Flow Agent\n\nThe latest FII and DII trade data for the Indian market as of July 16, 2026, shows a divergence in activity between institutional investors.\n\n### Latest FII/DII Flow Data (July 16, 2026)\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 16-Jul-2026 | 19,236.80 | 16,250.39 | **+2,986.41** |\n| **FII/FPI** | 16-Jul-2026 | 13,576.08 | 17,781.64 | **-4,205.56** |\n\n---\n\n### Market Analysis & Financial Headlines\n\n*   **Mixed Sentiment:** While **Domestic Institutional Investors (DIIs)** continue to support the market with a strong net inflow of approximately **\u20b92,986 crore**, **Foreign Institutional Investors (FIIs)** turned net sellers, offloading **\u20b94,205 crore**.\n*   **Net Liquidity:** The combined net value shows a net outflow of roughly **\u20b91,219 crore** from these two major segments, suggesting potential profit-booking or caution at current levels.\n*   **FII Selling Pressure:** The significant net sell from FIIs (over \u20b94,000 Cr) might exert pressure on large-cap stocks within the Nifty 50, which typically rely on foreign capital for momentum.\n*   **DII Resilience:** Domestic funds remain the \"buying the dip\" force, partially absorbing the FII sell-off and providing a floor for index volatility.\n\n**Overall Trend:** The Indian market is currently witnessing a tug-of-war between foreign selling and domestic buying. Headlines indicate focus on upcoming quarterly results and global macroeconomic cues as primary drivers for the next session.\n\nAggregator Agent\n\n### **Executive Summary: Nifty 50 Market Analysis & Institutional Flows**\n\nAs of July 16, 2026, the Indian equity market is defined by a significant institutional tug-of-war. Foreign Institutional Investors (FIIs) have intensified their selling pressure in the cash segment, offloading a net **\u20b94,205.56 crore**. Conversely, Domestic Institutional Investors (DIIs) remain the primary resilient force, providing a liquidity floor with a net inflow of **\u20b92,986.41 crore**.\n\nDespite a combined net outflow of approximately \u20b91,219 crore, the Nifty 50 has shown remarkable domestic resilience, successfully breaching the **24,250 mark** intraday. This rally is predominantly fueled by the **IT and Financial sectors**, with standout performances from **TECHM (+4.79%)** and **JIOFIN (+3.08%)** following robust quarterly earnings. \n\n**Key Takeaways & Outlook:**\n*   **Sector Divergence:** IT and Financials are driving index gains, successfully offsetting profit-booking in the Metals and Pharma sectors.\n*   **Strategic Hedging:** Interestingly, while FIIs are net sellers in the cash market, they remain net buyers in Index and Stock Futures, suggesting a tactical long outlook despite near-term caution.\n*   **Catalysts:** Market focus shifts to the \"Mega Banking Weekend,\" with results from **Reliance, HDFC Bank, and ICICI Bank** set to determine Monday\u2019s opening momentum.\n*   **Risk Profile:** Sustained high crude oil prices (**$85/barrel**) and global geopolitical tensions remain primary headwinds. \n\n**Bottom Line:** Analysts maintain a **\"buy on dips\"** strategy above the 24,000 support level, though heavyweight weekend earnings will act as the decisive pivot for the coming week.",
+  "executiveSummary": "### **Executive Summary: Nifty 50 Market Analysis & Institutional Flows**\n\nAs of July 16, 2026, the Indian equity market is defined by a significant institutional tug-of-war. Foreign Institutional Investors (FIIs) have intensified their selling pressure in the cash segment, offloading a net **\u20b94,205.56 crore**. Conversely, Domestic Institutional Investors (DIIs) remain the primary resilient force, providing a liquidity floor with a net inflow of **\u20b92,986.41 crore**.\n\nDespite a combined net outflow of approximately \u20b91,219 crore, the Nifty 50 has shown remarkable domestic resilience, successfully breaching the **24,250 mark** intraday. This rally is predominantly fueled by the **IT and Financial sectors**, with standout performances from **TECHM (+4.79%)** and **JIOFIN (+3.08%)** following robust quarterly earnings. \n\n**Key Takeaways & Outlook:**\n*   **Sector Divergence:** IT and Financials are driving index gains, successfully offsetting profit-booking in the Metals and Pharma sectors.\n*   **Strategic Hedging:** Interestingly, while FIIs are net sellers in the cash market, they remain net buyers in Index and Stock Futures, suggesting a tactical long outlook despite near-term caution.\n*   **Catalysts:** Market focus shifts to the \"Mega Banking Weekend,\" with results from **Reliance, HDFC Bank, and ICICI Bank** set to determine Monday\u2019s opening momentum.\n*   **Risk Profile:** Sustained high crude oil prices (**$85/barrel**) and global geopolitical tensions remain primary headwinds. \n\n**Bottom Line:** Analysts maintain a **\"buy on dips\"** strategy above the 24,000 support level, though heavyweight weekend earnings will act as the decisive pivot for the coming week.",
+  "bias": "Neutral",
+  "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "### **3. Market Outlook & Headlines for Tomorrow**",
-    "*   **Headlines:**",
-    "### Market Analysis & Financial Headlines Summary",
-    "*   **Likely Headline Focus:** \"FIIs extend selling streak as net outflows hit \u20b94,200 Cr; DIIs remain steadfast buyers to cushion market impact.\""
+    "The latest market analysis for the **Nifty 50** and the Indian financial landscape reveals a strong domestic rally despite external global pressures. Below is a concise breakdown of stock performance, institutional flows, and headlines for the next session.",
+    "### **3. Financial Headlines & Outlook for Tomorrow**",
+    "*   **Headline Rally:** Nifty 50 successfully breached the **24,250 mark** intraday, while Sensex hit the 78,000 level. This gain came despite a global slump in semiconductor stocks and escalating US-Iran tensions.",
+    "### Market Analysis & Financial Headlines",
+    "**Overall Trend:** The Indian market is currently witnessing a tug-of-war between foreign selling and domestic buying. Headlines indicate focus on upcoming quarterly results and global macroeconomic cues as primary drivers for the next session."
   ],
   "marketSignals": {
-    "positioningLabel": "Bullish positioning build",
-    "positioningStrike": 24050,
+    "positioningLabel": "Put-side hedge build",
+    "positioningStrike": 24200,
     "divergenceSummary": "Aligned sentiment",
     "divergenceCount": 0,
-    "trapRiskLabel": "Upside trap @ 24300",
+    "trapRiskLabel": "No clear trap",
     "fiiNetCrores": -4205.56,
     "diiNetCrores": 2986.41,
     "tradedValueCrores": 0.0,
-    "spot": 24158.8
+    "spot": 24311.6
   },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
-    "bias": "Neutral",
-    "note": "Mixed, broadly neutral news tone",
-    "analysis": "Recent market news shows a mixed, broadly neutral news tone, with supportive and cautious headlines roughly balanced. The most supportive headline: \"Fed\u2019s Jefferson Says Policy Well Positioned If Inflation Cools\". The most cautious headline: \"US-Iran war news LIVE: Warning sirens sound in Qatar again as Iran retaliates to US airstrikes\".",
+    "bias": "Bearish",
+    "note": "Moderately cautious news tone",
+    "analysis": "Recent market news shows a moderately cautious news tone, with most headlines flagging caution. The most supportive headline: \"Malaysian Growth Surges to 5.8% as Services, Tech Sales Counter Impact of War\". The most cautious headline: \"Steel Authority of India Ltd drops for fifth straight session\".",
     "headlines": [
       {
-        "title": "US' new visa restrictions target \u2018Far-Left Terrorists\u2019: Whom will it impact?",
+        "title": "Volumes spurt at Afcons Infrastructure Ltd counter",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Stocks to Watch today: RIL, Jio Financial, Wipro, Maruti Suzuki, Ceat",
+        "title": "Central Bank of India posts PAT of Rs 1324 crore in Q1 FY27",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Diamond Power Infra bags Rs 185-cr conductor supply order",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "HDFC Securities recommends Bull Spread on Bajaj Finance, MidCap Nifty",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Petrol, diesel prices today \u2014 17 July: Fuel rates in Delhi, Mumbai, Bengaluru, Kolkata amid renewed US-Iran war",
-        "label": "negative",
-        "sentiment": "Moderately negative"
-      },
-      {
-        "title": "US ends 'duration of status' for student, journalist visa holders staying in country indefinitely | Check details here",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Born on 17 July? You share your birthday with Queen Camilla, David Hasselhoff, Luke Bryan",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "US-Iran war news LIVE: Warning sirens sound in Qatar again as Iran retaliates to US airstrikes",
+        "title": "Vedanta Ltd slips for fifth straight session",
         "label": "negative",
         "sentiment": "Strongly negative"
       },
       {
-        "title": "Modi Adviser Urges India to Seek More Chinese Investment, Trade",
-        "label": "positive",
-        "sentiment": "Moderately positive"
+        "title": "Steel Authority of India Ltd drops for fifth straight session",
+        "label": "negative",
+        "sentiment": "Strongly negative"
       },
       {
-        "title": "Japan\u2019s \u2018Decisive Action\u2019 Threat Does Little to Scare Yen Bears",
+        "title": "Hindustan Zinc Ltd eases for fifth straight session",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "Argentina FIFA World Cup 2026 song \u2018La cuarta estrella\u2019 goes viral after thrilling win \u2014 lyrics, meaning here",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Donald Trump to attend FIFA World Cup final between Spain and Argentina in New Jersey",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Bengaluru airport: Bomb threat note found inside IndiGo plane toilet delays flight by 5 hours, later declared hoax",
+        "label": "negative",
+        "sentiment": "Strongly negative"
+      },
+      {
+        "title": "BOJ Is Said Likely to Raise Growth Forecast, Stand Pat on Rates",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Who is Nitish Kaushal? FBI arrests alleged Bhagwanpuria gang operative in global crime crackdown",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "Quote of the Day by Bruce Feirstein: 'The distance between insanity and genius is measured only by success'",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Takaichi Flags Importance of GPIF Investing in Japan Assets",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "RBI Governor Flags Elevated Inflation, Monsoon as Key Risks",
         "label": "negative",
         "sentiment": "Slightly negative"
       },
       {
-        "title": "Fed\u2019s Jefferson Says Policy Well Positioned If Inflation Cools",
+        "title": "ECB Set to Wait for September to Hike One Last Time, Poll Shows",
+        "label": "negative",
+        "sentiment": "Slightly negative"
+      },
+      {
+        "title": "Malaysian Growth Surges to 5.8% as Services, Tech Sales Counter Impact of War",
         "label": "positive",
         "sentiment": "Strongly positive"
-      },
-      {
-        "title": "Mozambique President Eyes China Debt Deal Modeled on Brazil Pact",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Making Sense of US Consumer Price Indexes, Jobs Numbers and Sentiment Surveys",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Quarterly results of companies",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Govt plans to replace $189 bn of imports through domestic manufacturing | Economy & Policy News",
-        "label": "neutral",
-        "sentiment": "Neutral"
       }
     ]
   }
