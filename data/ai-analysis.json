@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T15:01:45.114514+05:30",
+  "generatedAt": "2026-07-20T20:03:00.475654+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
@@ -12,96 +12,97 @@
     "gemini-robotics-er-1.6-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\n### **Nifty 50 Analysis: Stock Performance & Market Flow**\n\nFollowing the latest market data and search results, here is a breakdown of the stock activity, institutional flows, and key triggers for the Indian market heading into the next session.\n\n---\n\n### **1. Top Nifty 50 Movers (Stock Performance)**\nBased on recent live-analysis variations, the index is seeing a sharp divide between specific sectors:\n\n*   **Major Gainers (Contribution):**\n    *   **TRENT (+3.03%):** Leading the gainers with significant strength at LTP \u20b92928.60.\n    *   **CIPLA (+1.89%):** Strong show in the pharma space ahead of its dividend (June 5).\n    *   **POWERGRID (+1.80%):** Notable contribution from the utility sector.\n    *   **JSWSTEEL (+1.67%) & ULTRACEMCO (+1.59%):** Cyclical names seeing demand.\n\n*   **Major Losers (Drag on Index):**\n    *   **AXISBANK (-5.31%):** Significant correction to LTP \u20b91258 after earnings signaled NIM contraction.\n    *   **HDFCBANK (-4.86%):** Another major heavy-weight drag, significantly affecting Bank Nifty performance.\n    *   **MARUTI (-2.38%) & KOTAKBANK (-2.17%):** Broad-based selling in high-cap banking and auto segments.\n\n---\n\n### **2. FII & DII Flow Data (as of July 17-18)**\nInstitutional trends show local resilience amid global caution:\n*   **FIIs (Foreign Institutional Investors):** Net **Sellers** of **\u20b9376.41 Cr** in the cash market. However, they were net buyers in Index Futures (~\u20b95,392 Cr), suggesting defensive positioning.\n*   **DIIs (Domestic Institutional Investors):** Net **Buyers** of **\u20b91,017.89 Cr**, continuing to provide crucial liquidity support despite FII selling.\n\n---\n\n### **3. Key Financial Headlines & Tomorrow's Outlook**\n\n*   **Weekly Options Expiry:** Tomorrow (Tuesday, July 21) marks the Nifty 50 weekly expiry. Expect high volatility around **24,100 \u2013 24,150 support** and **24,367 resistance**.\n*   **Crude Oil Pressure:** Brent Crude breaching **$90/barrel** due to US-Iran tensions remains a negative trigger for sectors like OMCs, Paints, and Tyres.\n*   **Banking Sector Stress:** Post-results, both HDFC Bank and Axis Bank are facing downward pressure due to margin concerns, which could continue to dampen market mood.\n*   **Support & Resistance:**\n    *   **Immediate Support:** 24,000 (Psychological level) / 24,100 (Technical).\n    *   **Immediate Resistance:** 24,350 \u2013 24,367.\n\n**Smart Brief:** The market setup is currently **\"sell-on-rise\"** as heavy-weight banking names face fundamental margin headwinds. While midcaps might show individual strength, the Nifty 50 will likely remain volatile due to weekly expiry and elevated global crude oil prices. DII inflows are the primary anchor preventing a deeper slide.\n\nNifty Flow Agent\n\nThe latest FII and DII flow data for the Indian market (specifically Nifty 50) as of **July 17, 2026**, is as follows:\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 17-Jul-2026 | 17,180.08 | 16,162.19 | **+1,017.89** |\n| **FII/FPI** | 17-Jul-2026 | 14,393.77 | 14,770.18 | **-376.41** |\n\n### **Market Summary & Analysis:**\n*   **Net Sentiment:** Domestic Institutional Investors (DII) remained strong net buyers, partially offsetting the selling pressure from Foreign Institutional Investors (FII). \n*   **Combined Flow:** The overall net flow into the market remains positive at **\u20b9641.48 crore**, indicating resilient local liquidity despite slight foreign outflows.\n*   **Analysis:** FIIs turned cautious with a net sell of \u20b9376 crore, while DIIs continued to provide support with a significant buy of over \u20b91,000 crore. This suggests that domestic sentiment remains relatively bullish compared to global institutional positions for this session.\n\nAggregator Agent\n\n### **Executive Summary: Nifty 50 Market Analysis & Institutional Flows**\n\nHeading into the **July 21 weekly expiry**, the Indian market exhibits a **\"sell-on-rise\"** sentiment, driven by a stark divergence between sectoral performance and institutional activity. As of July 17, **Domestic Institutional Investors (DIIs)** remain the primary liquidity anchor, recording net purchases of **\u20b91,017.89 crore**. This localized support partially offset **Foreign Institutional Investors (FIIs)**, who were net cash sellers of **\u20b9376.41 crore**, despite maintaining defensive positioning via significant index future buying.\n\nThe Nifty 50 faces intense downward pressure from the banking heavyweights; **Axis Bank (-5.31%)** and **HDFC Bank (-4.86%)** are significantly dragging the index following earnings reports that signaled margin contraction. While select gainers like **Trent (+3.03%)** and **Cipla (+1.89%)** offer localized strength, macro headwinds are mounting. **Brent Crude's breach of $90/barrel** due to geopolitical tensions specifically threatens the auto and energy sectors.\n\n**Key Outlook:**\nThe short-term trajectory remains volatile. Investors should monitor immediate technical support between **24,000 \u2013 24,100**, while **24,367** serves as critical resistance. Expect heightened fluctuations during tomorrow's options expiry as the market digests banking sector stress alongside rising global commodity prices.",
-  "executiveSummary": "### **Executive Summary: Nifty 50 Market Analysis & Institutional Flows**\n\nHeading into the **July 21 weekly expiry**, the Indian market exhibits a **\"sell-on-rise\"** sentiment, driven by a stark divergence between sectoral performance and institutional activity. As of July 17, **Domestic Institutional Investors (DIIs)** remain the primary liquidity anchor, recording net purchases of **\u20b91,017.89 crore**. This localized support partially offset **Foreign Institutional Investors (FIIs)**, who were net cash sellers of **\u20b9376.41 crore**, despite maintaining defensive positioning via significant index future buying.\n\nThe Nifty 50 faces intense downward pressure from the banking heavyweights; **Axis Bank (-5.31%)** and **HDFC Bank (-4.86%)** are significantly dragging the index following earnings reports that signaled margin contraction. While select gainers like **Trent (+3.03%)** and **Cipla (+1.89%)** offer localized strength, macro headwinds are mounting. **Brent Crude's breach of $90/barrel** due to geopolitical tensions specifically threatens the auto and energy sectors.\n\n**Key Outlook:**\nThe short-term trajectory remains volatile. Investors should monitor immediate technical support between **24,000 \u2013 24,100**, while **24,367** serves as critical resistance. Expect heightened fluctuations during tomorrow's options expiry as the market digests banking sector stress alongside rising global commodity prices.",
-  "bias": "Neutral",
+  "summary": "Nifty Analysis Agent\n\nBased on the latest data from the Indian equity markets (Session: July 20, 2026), here is the analysis of stocks, institutional flows, and expectations for tomorrow:\n\n### **1. Nifty 50 Stock Analysis**\nThe index faced pressure today, closing at **24,241 (-0.38%)**. The volatility was primarily driven by heavy selling in private banking majors following weak quarterly reports.\n\n| Symbol | LTP (\u20b9) | % Change | Trading Volume | Notable Activity |\n| :--- | :--- | :--- | :--- | :--- |\n| **AXISBANK** | 1,257.10 | **-5.37%** | 2.53 Cr | Major laggard; drag on Nifty Bank. |\n| **HDFCBANK** | 777.95 | **-5.08%** | 5.60 Cr | Significant selling pressure; hit intraday lows. |\n| **MARUTI** | 13,519.00 | **-2.06%** | 5.17 Lakh | Weakened alongside auto-sector sentiment. |\n| **KOTAKBANK** | 382.30 | **-1.96%** | 3.25 Cr | Sectoral pressure extended to this heavyweight. |\n| **INFY** | 1,087.60 | **-0.81%** | 63.7 Lakh | IT showed relative resilience compared to banks. |\n| **RELIANCE** | 1,321.90 | **-0.40%** | 1.43 Cr | Marginal decline; acted as a relative anchor. |\n\n**Summary:** The market breadth for the heavyweights was negative today, with the Financial Services sector bearing the brunt of the downside.\n\n---\n\n### **2. FII and DII Flow (Provisional - July 20, 2026)**\nThe ongoing tug-of-war between institutional investors continues, with domestic support partially offsetting foreign outflows:\n*   **FII (Foreign Institutional Investors):** Net **Sellers**. Provisional data indicates an estimated outflow of **\u20b91,600\u2013\u20b91,700 crore**. \n*   **DII (Domestic Institutional Investors):** Net **Buyers**. Local funds continue to deploy liquidity, cushioned by persistent retail SIP inflows.\n*   **Sentiment:** Cautious. Sustained foreign selling in heavyweights (Banks/IT) remains a concern for sustaining record highs.\n\n---\n\n### **3. Market Headlines & Tomorrow's Outlook (July 21, 2026)**\nInvestors should brace for a potentially high-volatility session tomorrow due to the following triggers:\n\n*   **Nifty Weekly Expiry:** Thursday (contracts expiring tomorrow) will likely trigger significant position adjustments and intraday fluctuations near the 24,200 handle.\n*   **Brent Crude at $90:** Brent crossing the **$90/barrel** mark due to geopolitical tensions in the Middle East is a significant headwind for Indian equities, particularly for downstream OMCs and Auto stocks.\n*   **Key Technical Levels:**\n    *   **Support:** Watch for **24,135** (today's low) and the psychological level of **24,000**.\n    *   **Resistance:** Immediate resistance lies at **24,367** and **24,480**.\n*   **Bank Stability:** All eyes are on whether **Axis Bank** and **HDFC Bank** have \"bottomed out\" or if further margin compression concerns trigger secondary selling.\n\n**Strategic takeaway:** Expect a neutral-to-volatile start tomorrow. A breach below today's low (24,135) could invite further correction, whereas holding 24,200 may signal a stabilization attempt.\n\nNifty Flow Agent\n\nThe latest FII and DII flow data for the Indian market as of **July 20, 2026**, shows a divergence in institutional activity:\n\n### **FII & DII Flow Data (July 20, 2026)**\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 20-Jul-2026 | 16,187.84 | 14,875.81 | **+1,312.03** |\n| **FII/FPI** | 20-Jul-2026 | 13,312.67 | 14,433.71 | **-1,121.04** |\n\n---\n\n### **Market Analysis & Financial Headlines**\n\n*   **Mixed Institutional Sentiment:** While Domestic Institutional Investors (DIIs) remained net buyers with an inflow of over \u20b91,300 crore, Foreign Institutional Investors (FIIs) turned net sellers, offloading stocks worth \u20b91,121 crore. This suggests a tug-of-war between local liquidity and global fund movements.\n*   **DII Resilience:** Domestic support continues to be the primary pillar for the Nifty 50, offsetting the pressure created by foreign outflows.\n*   **Net Market Position:** The total net institutional flow for the session stands at a modest positive of approximately **\u20b9191 crore**, indicating a cautious but stable trading environment.\n*   **Headlines:**\n    *   *DIIs maintain buying streak to support index near record highs.*\n    *   *FII selling resumes amid global macro shifts and currency fluctuations.*\n    *   *Midcap and Smallcap segments show selective outperformance despite FII exit in heavyweights.*\n\nAggregator Agent\n\n### **Executive Summary: Nifty Market Analysis & Institutional Flows (July 20, 2026)**\n\nOn July 20, 2026, the Nifty 50 closed at **24,241 (-0.38%)**, characterized by a significant \"tug-of-war\" between global exits and local liquidity. The primary downward pressure stemmed from the private banking sector, with **AXISBANK (-5.37%)** and **HDFCBANK (-5.08%)** leading the decline following weak quarterly reports. Despite this sectoral heavy-selling, IT and PSU banks showed relative resilience, preventing a steeper index correction.\n\n**Institutional Activity & Surprising Connectivity:**\nA divergence in institutional strategy was the session's core theme. Foreign Institutional Investors (FIIs) remained net **sellers** (offloading **\u20b91,121.04 crore**), while Domestic Institutional Investors (DIIs) maintained their buying streak, infusing **\u20b91,312.03 crore**. \n\n**Important Takeaways:**\n*   **DII Resilience:** Total net institutional flows reached a modest positive of **\u20b9191 crore**, revealing that robust retail SIP inflows are effectively neutralizing concentrated FII exits in heavyweights.\n*   **Macro Headwinds:** Brent crude surging to **$90/barrel** represents a significant risk to inflationary-sensitive sectors like Auto and OMCs.\n*   **Tomorrow\u2019s Outlook:** With **weekly expiry** adjustments looming, expect high volatility. Holding above **24,135 (Support)** is vital; a breach below could signal deeper technical damage toward 24,000. \n\n**Strategic takeaway:** Market stability now rests on whether private banking leaders can consolidate after their recent sharp declines.",
+  "executiveSummary": "### **Executive Summary: Nifty Market Analysis & Institutional Flows (July 20, 2026)**\n\nOn July 20, 2026, the Nifty 50 closed at **24,241 (-0.38%)**, characterized by a significant \"tug-of-war\" between global exits and local liquidity. The primary downward pressure stemmed from the private banking sector, with **AXISBANK (-5.37%)** and **HDFCBANK (-5.08%)** leading the decline following weak quarterly reports. Despite this sectoral heavy-selling, IT and PSU banks showed relative resilience, preventing a steeper index correction.\n\n**Institutional Activity & Surprising Connectivity:**\nA divergence in institutional strategy was the session's core theme. Foreign Institutional Investors (FIIs) remained net **sellers** (offloading **\u20b91,121.04 crore**), while Domestic Institutional Investors (DIIs) maintained their buying streak, infusing **\u20b91,312.03 crore**. \n\n**Important Takeaways:**\n*   **DII Resilience:** Total net institutional flows reached a modest positive of **\u20b9191 crore**, revealing that robust retail SIP inflows are effectively neutralizing concentrated FII exits in heavyweights.\n*   **Macro Headwinds:** Brent crude surging to **$90/barrel** represents a significant risk to inflationary-sensitive sectors like Auto and OMCs.\n*   **Tomorrow\u2019s Outlook:** With **weekly expiry** adjustments looming, expect high volatility. Holding above **24,135 (Support)** is vital; a breach below could signal deeper technical damage toward 24,000. \n\n**Strategic takeaway:** Market stability now rests on whether private banking leaders can consolidate after their recent sharp declines.",
+  "bias": "Bearish",
   "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "### **3. Key Financial Headlines & Tomorrow's Outlook**"
+    "### **3. Market Headlines & Tomorrow's Outlook (July 21, 2026)**",
+    "### **Market Analysis & Financial Headlines**",
+    "*   **Headlines:**"
   ],
-  "marketSignals": {
-    "positioningLabel": "Bearish positioning build",
-    "positioningStrike": 24300,
-    "divergenceSummary": "Aligned sentiment",
-    "divergenceCount": 0,
-    "trapRiskLabel": "No clear trap",
-    "fiiNetCrores": -376.41,
-    "diiNetCrores": 1017.89,
-    "tradedValueCrores": 0.0,
-    "spot": 24231.05
-  },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
-    "bias": "Bearish",
-    "note": "Mildly cautious news tone",
-    "analysis": "Recent market news shows a mildly cautious news tone, with most headlines flagging caution. The most supportive headline: \"Pharma index surges 2%; Torrent, Mankind, Cipla, Aurobindo soar up to 5%\". The most cautious headline: \"Coforge Ltd down for fifth straight session\".",
+    "bias": "Bullish",
+    "note": "Mildly positive news tone",
+    "analysis": "Recent market news shows a mildly positive news tone, with most headlines leaning supportive. The most supportive headline: \"India's core sector growth accelerates to 5% in Jun-26\". The most cautious headline: \"Sebi imposes \u20b91 crore penalty on CDSL for alleged cybersecurity lapses\".",
     "headlines": [
       {
-        "title": "Abhijeet Dipke has been picked up by Delhi Police from Jantar Mantar: CJP",
+        "title": "Avengers Doomsday trailer: Marvel\u2019s biggest heroes assemble as Robert Downey Jr\u2019s Doctor Doom threatens the multiverse",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Why was Santy Sharma's YouTube channel permanently deleted? Ratlam rapper blames CJP remarks controversy",
-        "label": "negative",
-        "sentiment": "Moderately negative"
-      },
-      {
-        "title": "Pharma index surges 2%; Torrent, Mankind, Cipla, Aurobindo soar up to 5%",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "Dynamics Cables climbs Q1 PAT rises 37% YoY to Rs 25 cr",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "RBL Bank gains as Q1 PAT rises 27% YoY to Rs 254 crore",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "Coforge Ltd down for fifth straight session",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "Nava Ltd down for fifth straight session",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "After Spain's FIFA World Cup win, Marc Cucurella\u2019s song goes viral: What is it? \u2014 translation, lyrics and more",
+        "title": "Andy Burnham's first speech as UK Prime Minister: Here are the key promises and major announcements",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Karnataka tourist hospitalised after falling 40 feet during zipline ride in Dandeli",
-        "label": "negative",
-        "sentiment": "Strongly negative"
+        "title": "Steel Exchange India's Q1 PAT rises 47% YoY to Rs 15 crore",
+        "label": "positive",
+        "sentiment": "Strongly positive"
       },
       {
-        "title": "Russia-Ukraine war: Kyiv says Moscow's troop losses surpass 1.43 million as tensions escalate",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "Euro-Area Firms Faced Rising Interest Rates in Second Quarter",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "Britain\u2019s Middle Class Feels the Strain as Burnham Vows to Help",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Shakira\u2019s \u20ac55 Million Spain Tax Fight Shines Light on Agency",
+        "title": "MSECL secures satellite townships project worth Rs 11.65 cr",
         "label": "positive",
         "sentiment": "Moderately positive"
+      },
+      {
+        "title": "South Africa Secures $1.5 Billion World Bank Loan for Infrastructure Upgrades",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Atishay secures AI deal with Myanmar-based tech company",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Govt tables bill in Lok Sabha to increase Supreme Court bench to 38 judges",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Sebi imposes \u20b91 crore penalty on CDSL for alleged cybersecurity lapses",
+        "label": "negative",
+        "sentiment": "Strongly negative"
+      },
+      {
+        "title": "India\u2019s Central Bank Says Forex Deposits Net $17.4 Billion",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "US military identifies two soldiers killed in Iranian missile attack in Jordan",
+        "label": "negative",
+        "sentiment": "Strongly negative"
+      },
+      {
+        "title": "\u2018Will continue my fast\u2019: Sonam Wangchuk condemns police brutality on CJP protesters in hand-written letter",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "India's core sector growth accelerates to 5% in Jun-26",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Canada Inflation Falls to 2.8%, Core Measures Ease",
+        "label": "negative",
+        "sentiment": "Strongly negative"
+      },
+      {
+        "title": "World Cup and global geoeconomics",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "UK Latest: Andy Burnham\u2019s Growth Gamble Starts Today",
+        "label": "neutral",
+        "sentiment": "Neutral"
       }
     ]
   }
