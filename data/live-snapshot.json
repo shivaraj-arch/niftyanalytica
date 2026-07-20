@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-17T20:01:01.135459+05:30",
+  "fetchedAt": "2026-07-20T09:00:59.223811+05:30",
   "contributors": {
     "data": [
       {
@@ -259,22 +259,6 @@
         "perChange": 1.15
       },
       {
-        "symbol": "LT",
-        "series": "EQ",
-        "open_price": 3788.9,
-        "high_price": 3828.9,
-        "low_price": 3767.7,
-        "ltp": 3817.9,
-        "prev_price": 3775.6,
-        "net_price": 1.12,
-        "trade_quantity": 1942610,
-        "turnover": 73806.747296,
-        "market_type": "N",
-        "ca_ex_dt": "22-May-2026",
-        "ca_purpose": "Dividend - Rs 38 Per Share",
-        "perChange": 1.12
-      },
-      {
         "symbol": "TMPV",
         "series": "EQ",
         "open_price": 332.1,
@@ -288,6 +272,22 @@
         "market_type": "N",
         "ca_ex_dt": "19-Jun-2026",
         "ca_purpose": "Dividend - Rs 3 Per Share",
+        "perChange": 1.12
+      },
+      {
+        "symbol": "LT",
+        "series": "EQ",
+        "open_price": 3788.9,
+        "high_price": 3828.9,
+        "low_price": 3767.7,
+        "ltp": 3817.9,
+        "prev_price": 3775.6,
+        "net_price": 1.12,
+        "trade_quantity": 1942610,
+        "turnover": 73806.747296,
+        "market_type": "N",
+        "ca_ex_dt": "22-May-2026",
+        "ca_purpose": "Dividend - Rs 38 Per Share",
         "perChange": 1.12
       },
       {
@@ -559,7 +559,7 @@
             "totalSellQuantity": 4225,
             "totalTradedVolume": 4,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 38.46153846153846,
@@ -569,7 +569,7 @@
             "changeinOpenInterest": -18,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE21600.00",
-            "impliedVolatility": 41.78,
+            "impliedVolatility": 83.04,
             "lastPrice": 0.9,
             "openInterest": 60023,
             "optionType": null,
@@ -582,7 +582,7 @@
             "totalSellQuantity": 215280,
             "totalTradedVolume": 97498,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 21600
         },
@@ -609,7 +609,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 28.571428571428573,
@@ -619,7 +619,7 @@
             "changeinOpenInterest": 589,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE21650.00",
-            "impliedVolatility": 41.05,
+            "impliedVolatility": 81.58,
             "lastPrice": 0.9,
             "openInterest": 1121,
             "optionType": null,
@@ -632,7 +632,7 @@
             "totalSellQuantity": 93795,
             "totalTradedVolume": 5081,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 21650
         },
@@ -659,7 +659,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 26.666666666666668,
@@ -669,7 +669,7 @@
             "changeinOpenInterest": 1338,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE21700.00",
-            "impliedVolatility": 40.54,
+            "impliedVolatility": 80.56,
             "lastPrice": 0.95,
             "openInterest": 7341,
             "optionType": null,
@@ -682,7 +682,7 @@
             "totalSellQuantity": 149760,
             "totalTradedVolume": 33173,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 21700
         },
@@ -709,7 +709,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 33.333333333333336,
@@ -719,7 +719,7 @@
             "changeinOpenInterest": 287,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE21750.00",
-            "impliedVolatility": 40.02,
+            "impliedVolatility": 79.51,
             "lastPrice": 1,
             "openInterest": 680,
             "optionType": null,
@@ -732,7 +732,7 @@
             "totalSellQuantity": 38740,
             "totalTradedVolume": 2412,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 21750
         },
@@ -759,7 +759,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 25,
@@ -769,7 +769,7 @@
             "changeinOpenInterest": -346,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE21800.00",
-            "impliedVolatility": 39.28,
+            "impliedVolatility": 78.04,
             "lastPrice": 1,
             "openInterest": 18132,
             "optionType": null,
@@ -782,7 +782,7 @@
             "totalSellQuantity": 51935,
             "totalTradedVolume": 32605,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 21800
         },
@@ -809,7 +809,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 6.25,
@@ -819,7 +819,7 @@
             "changeinOpenInterest": -199,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE21850.00",
-            "impliedVolatility": 37.92,
+            "impliedVolatility": 75.33,
             "lastPrice": 0.85,
             "openInterest": 855,
             "optionType": null,
@@ -832,7 +832,7 @@
             "totalSellQuantity": 40300,
             "totalTradedVolume": 12525,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 21850
         },
@@ -859,7 +859,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 11.764705882352942,
@@ -869,7 +869,7 @@
             "changeinOpenInterest": -715,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE21900.00",
-            "impliedVolatility": 37.62,
+            "impliedVolatility": 74.72,
             "lastPrice": 0.95,
             "openInterest": 5274,
             "optionType": null,
@@ -882,7 +882,7 @@
             "totalSellQuantity": 51220,
             "totalTradedVolume": 27181,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 21900
         },
@@ -909,7 +909,7 @@
             "totalSellQuantity": 4160,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 16.666666666666668,
@@ -919,7 +919,7 @@
             "changeinOpenInterest": 683,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE21950.00",
-            "impliedVolatility": 37.27,
+            "impliedVolatility": 74.01,
             "lastPrice": 1.05,
             "openInterest": 1962,
             "optionType": null,
@@ -932,7 +932,7 @@
             "totalSellQuantity": 52130,
             "totalTradedVolume": 16630,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 21950
         },
@@ -959,7 +959,7 @@
             "totalSellQuantity": 5005,
             "totalTradedVolume": 1,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 23.529411764705884,
@@ -969,7 +969,7 @@
             "changeinOpenInterest": 24675,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22000.00",
-            "impliedVolatility": 36.54,
+            "impliedVolatility": 72.54,
             "lastPrice": 1.05,
             "openInterest": 59929,
             "optionType": null,
@@ -982,7 +982,7 @@
             "totalSellQuantity": 206245,
             "totalTradedVolume": 142372,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22000
         },
@@ -1009,7 +1009,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 47.05882352941177,
@@ -1019,7 +1019,7 @@
             "changeinOpenInterest": 526,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22050.00",
-            "impliedVolatility": 36.47,
+            "impliedVolatility": 72.4,
             "lastPrice": 1.25,
             "openInterest": 2267,
             "optionType": null,
@@ -1032,7 +1032,7 @@
             "totalSellQuantity": 31915,
             "totalTradedVolume": 15715,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22050
         },
@@ -1059,7 +1059,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 22.22222222222222,
@@ -1069,7 +1069,7 @@
             "changeinOpenInterest": 2332,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22100.00",
-            "impliedVolatility": 35.24,
+            "impliedVolatility": 69.95,
             "lastPrice": 1.1,
             "openInterest": 5520,
             "optionType": null,
@@ -1082,7 +1082,7 @@
             "totalSellQuantity": 30940,
             "totalTradedVolume": 33988,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22100
         },
@@ -1109,7 +1109,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 27.77777777777778,
@@ -1119,7 +1119,7 @@
             "changeinOpenInterest": 267,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22150.00",
-            "impliedVolatility": 34.67,
+            "impliedVolatility": 68.8,
             "lastPrice": 1.15,
             "openInterest": 926,
             "optionType": null,
@@ -1132,7 +1132,7 @@
             "totalSellQuantity": 31395,
             "totalTradedVolume": 13143,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22150
         },
@@ -1159,7 +1159,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 33.333333333333336,
@@ -1169,7 +1169,7 @@
             "changeinOpenInterest": 5055,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22200.00",
-            "impliedVolatility": 34.08,
+            "impliedVolatility": 67.63,
             "lastPrice": 1.2,
             "openInterest": 11713,
             "optionType": null,
@@ -1182,7 +1182,7 @@
             "totalSellQuantity": 48880,
             "totalTradedVolume": 72681,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22200
         },
@@ -1209,7 +1209,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 15.789473684210526,
@@ -1219,7 +1219,7 @@
             "changeinOpenInterest": -78,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22250.00",
-            "impliedVolatility": 33.03,
+            "impliedVolatility": 65.53,
             "lastPrice": 1.1,
             "openInterest": 2360,
             "optionType": null,
@@ -1232,7 +1232,7 @@
             "totalSellQuantity": 29835,
             "totalTradedVolume": 25790,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22250
         },
@@ -1259,7 +1259,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 26.31578947368421,
@@ -1269,7 +1269,7 @@
             "changeinOpenInterest": 14594,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22300.00",
-            "impliedVolatility": 32.6,
+            "impliedVolatility": 64.66,
             "lastPrice": 1.2,
             "openInterest": 19802,
             "optionType": null,
@@ -1282,7 +1282,7 @@
             "totalSellQuantity": 53625,
             "totalTradedVolume": 111790,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22300
         },
@@ -1309,7 +1309,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 20,
@@ -1319,7 +1319,7 @@
             "changeinOpenInterest": 1121,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22350.00",
-            "impliedVolatility": 31.86,
+            "impliedVolatility": 63.17,
             "lastPrice": 1.2,
             "openInterest": 2462,
             "optionType": null,
@@ -1332,7 +1332,7 @@
             "totalSellQuantity": 31980,
             "totalTradedVolume": 21369,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22350
         },
@@ -1359,7 +1359,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 14.285714285714286,
@@ -1369,7 +1369,7 @@
             "changeinOpenInterest": 1143,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22400.00",
-            "impliedVolatility": 31.12,
+            "impliedVolatility": 61.69,
             "lastPrice": 1.2,
             "openInterest": 7977,
             "optionType": null,
@@ -1382,7 +1382,7 @@
             "totalSellQuantity": 24700,
             "totalTradedVolume": 70712,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22400
         },
@@ -1409,7 +1409,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 13.636363636363637,
@@ -1419,7 +1419,7 @@
             "changeinOpenInterest": 1119,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22450.00",
-            "impliedVolatility": 30.51,
+            "impliedVolatility": 60.48,
             "lastPrice": 1.25,
             "openInterest": 2539,
             "optionType": null,
@@ -1432,7 +1432,7 @@
             "totalSellQuantity": 24895,
             "totalTradedVolume": 25354,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22450
         },
@@ -1459,7 +1459,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 79,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 37.5,
@@ -1469,7 +1469,7 @@
             "changeinOpenInterest": 38136,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22500.00",
-            "impliedVolatility": 30.72,
+            "impliedVolatility": 60.89,
             "lastPrice": 1.65,
             "openInterest": 100367,
             "optionType": null,
@@ -1482,7 +1482,7 @@
             "totalSellQuantity": 361595,
             "totalTradedVolume": 451998,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22500
         },
@@ -1509,7 +1509,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 20.833333333333332,
@@ -1519,7 +1519,7 @@
             "changeinOpenInterest": 752,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22550.00",
-            "impliedVolatility": 29.52,
+            "impliedVolatility": 58.48,
             "lastPrice": 1.45,
             "openInterest": 2723,
             "optionType": null,
@@ -1532,7 +1532,7 @@
             "totalSellQuantity": 10530,
             "totalTradedVolume": 35205,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22550
         },
@@ -1559,7 +1559,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 36,
@@ -1569,7 +1569,7 @@
             "changeinOpenInterest": 2521,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22600.00",
-            "impliedVolatility": 29.3,
+            "impliedVolatility": 58.03,
             "lastPrice": 1.7,
             "openInterest": 16336,
             "optionType": null,
@@ -1582,7 +1582,7 @@
             "totalSellQuantity": 23140,
             "totalTradedVolume": 172859,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22600
         },
@@ -1609,7 +1609,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 40.74074074074074,
@@ -1619,7 +1619,7 @@
             "changeinOpenInterest": 802,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22650.00",
-            "impliedVolatility": 28.92,
+            "impliedVolatility": 57.26,
             "lastPrice": 1.9,
             "openInterest": 4094,
             "optionType": null,
@@ -1632,7 +1632,7 @@
             "totalSellQuantity": 16055,
             "totalTradedVolume": 54416,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22650
         },
@@ -1659,7 +1659,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 28.571428571428573,
@@ -1669,7 +1669,7 @@
             "changeinOpenInterest": 4360,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22700.00",
-            "impliedVolatility": 27.96,
+            "impliedVolatility": 55.34,
             "lastPrice": 1.8,
             "openInterest": 24993,
             "optionType": null,
@@ -1682,7 +1682,7 @@
             "totalSellQuantity": 17030,
             "totalTradedVolume": 233884,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22700
         },
@@ -1709,7 +1709,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 12.903225806451612,
@@ -1719,7 +1719,7 @@
             "changeinOpenInterest": 6754,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22750.00",
-            "impliedVolatility": 27.1,
+            "impliedVolatility": 53.62,
             "lastPrice": 1.75,
             "openInterest": 11294,
             "optionType": null,
@@ -1732,7 +1732,7 @@
             "totalSellQuantity": 14300,
             "totalTradedVolume": 75176,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22750
         },
@@ -1759,7 +1759,7 @@
             "totalSellQuantity": 4420,
             "totalTradedVolume": 4,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 31.25,
@@ -1769,7 +1769,7 @@
             "changeinOpenInterest": 23637,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22800.00",
-            "impliedVolatility": 26.93,
+            "impliedVolatility": 53.26,
             "lastPrice": 2.1,
             "openInterest": 55634,
             "optionType": null,
@@ -1782,7 +1782,7 @@
             "totalSellQuantity": 40235,
             "totalTradedVolume": 353259,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22800
         },
@@ -1809,7 +1809,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 10.526315789473685,
@@ -1819,7 +1819,7 @@
             "changeinOpenInterest": -2140,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22850.00",
-            "impliedVolatility": 26.14,
+            "impliedVolatility": 51.69,
             "lastPrice": 2.1,
             "openInterest": 11033,
             "optionType": null,
@@ -1832,7 +1832,7 @@
             "totalSellQuantity": 9425,
             "totalTradedVolume": 127233,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22850
         },
@@ -1859,7 +1859,7 @@
             "totalSellQuantity": 4615,
             "totalTradedVolume": 20,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 23.076923076923077,
@@ -1869,7 +1869,7 @@
             "changeinOpenInterest": 9110,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22900.00",
-            "impliedVolatility": 25.8,
+            "impliedVolatility": 50.99,
             "lastPrice": 2.4,
             "openInterest": 35507,
             "optionType": null,
@@ -1882,7 +1882,7 @@
             "totalSellQuantity": 27300,
             "totalTradedVolume": 325746,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22900
         },
@@ -1909,7 +1909,7 @@
             "totalSellQuantity": 4160,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 28.571428571428573,
@@ -1919,7 +1919,7 @@
             "changeinOpenInterest": 2881,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22950.00",
-            "impliedVolatility": 25.39,
+            "impliedVolatility": 50.17,
             "lastPrice": 2.7,
             "openInterest": 12028,
             "optionType": null,
@@ -1932,7 +1932,7 @@
             "totalSellQuantity": 14560,
             "totalTradedVolume": 144424,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22950
         },
@@ -1959,7 +1959,7 @@
             "totalSellQuantity": 6500,
             "totalTradedVolume": 979,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 19.148936170212767,
@@ -1969,7 +1969,7 @@
             "changeinOpenInterest": 81298,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23000.00",
-            "impliedVolatility": 24.71,
+            "impliedVolatility": 48.8,
             "lastPrice": 2.8,
             "openInterest": 220578,
             "optionType": null,
@@ -1982,7 +1982,7 @@
             "totalSellQuantity": 172705,
             "totalTradedVolume": 1228650,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23000
         },
@@ -2009,7 +2009,7 @@
             "totalSellQuantity": 4160,
             "totalTradedVolume": 1,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 24,
@@ -2019,7 +2019,7 @@
             "changeinOpenInterest": -62,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23050.00",
-            "impliedVolatility": 24.23,
+            "impliedVolatility": 47.84,
             "lastPrice": 3.1,
             "openInterest": 12033,
             "optionType": null,
@@ -2032,7 +2032,7 @@
             "totalSellQuantity": 10855,
             "totalTradedVolume": 182355,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23050
         },
@@ -2059,7 +2059,7 @@
             "totalSellQuantity": 5265,
             "totalTradedVolume": 93,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 26.41509433962264,
@@ -2069,7 +2069,7 @@
             "changeinOpenInterest": 21996,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23100.00",
-            "impliedVolatility": 23.67,
+            "impliedVolatility": 46.71,
             "lastPrice": 3.35,
             "openInterest": 55450,
             "optionType": null,
@@ -2082,7 +2082,7 @@
             "totalSellQuantity": 25870,
             "totalTradedVolume": 488762,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23100
         },
@@ -2109,7 +2109,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 2,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 22.413793103448278,
@@ -2119,7 +2119,7 @@
             "changeinOpenInterest": 4139,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23150.00",
-            "impliedVolatility": 23.03,
+            "impliedVolatility": 45.42,
             "lastPrice": 3.55,
             "openInterest": 17360,
             "optionType": null,
@@ -2132,7 +2132,7 @@
             "totalSellQuantity": 23855,
             "totalTradedVolume": 244012,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23150
         },
@@ -2159,7 +2159,7 @@
             "totalSellQuantity": 5525,
             "totalTradedVolume": 138,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 10.9375,
@@ -2169,7 +2169,7 @@
             "changeinOpenInterest": 23636,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23200.00",
-            "impliedVolatility": 22.19,
+            "impliedVolatility": 43.74,
             "lastPrice": 3.55,
             "openInterest": 92312,
             "optionType": null,
@@ -2182,7 +2182,7 @@
             "totalSellQuantity": 40300,
             "totalTradedVolume": 853966,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23200
         },
@@ -2196,7 +2196,7 @@
             "changeinOpenInterest": 0,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE23250.00",
-            "impliedVolatility": 21.93,
+            "impliedVolatility": 59.63,
             "lastPrice": 1114,
             "openInterest": 12,
             "optionType": null,
@@ -2209,7 +2209,7 @@
             "totalSellQuantity": 4225,
             "totalTradedVolume": 27,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 8.450704225352112,
@@ -2219,7 +2219,7 @@
             "changeinOpenInterest": 7721,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23250.00",
-            "impliedVolatility": 21.61,
+            "impliedVolatility": 42.58,
             "lastPrice": 3.85,
             "openInterest": 21151,
             "optionType": null,
@@ -2232,7 +2232,7 @@
             "totalSellQuantity": 12350,
             "totalTradedVolume": 346096,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23250
         },
@@ -2259,7 +2259,7 @@
             "totalSellQuantity": 4550,
             "totalTradedVolume": 553,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 15.189873417721518,
@@ -2269,7 +2269,7 @@
             "changeinOpenInterest": -6023,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23300.00",
-            "impliedVolatility": 21.31,
+            "impliedVolatility": 41.95,
             "lastPrice": 4.55,
             "openInterest": 95367,
             "optionType": null,
@@ -2282,7 +2282,7 @@
             "totalSellQuantity": 39195,
             "totalTradedVolume": 870333,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23300
         },
@@ -2309,7 +2309,7 @@
             "totalSellQuantity": 5005,
             "totalTradedVolume": 75,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 8.51063829787234,
@@ -2319,7 +2319,7 @@
             "changeinOpenInterest": 9927,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23350.00",
-            "impliedVolatility": 20.82,
+            "impliedVolatility": 40.95,
             "lastPrice": 5.1,
             "openInterest": 33815,
             "optionType": null,
@@ -2332,7 +2332,7 @@
             "totalSellQuantity": 46670,
             "totalTradedVolume": 499574,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23350
         },
@@ -2359,7 +2359,7 @@
             "totalSellQuantity": 6695,
             "totalTradedVolume": 414,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -4.385964912280702,
@@ -2369,7 +2369,7 @@
             "changeinOpenInterest": 24427,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23400.00",
-            "impliedVolatility": 20.15,
+            "impliedVolatility": 39.61,
             "lastPrice": 5.45,
             "openInterest": 77083,
             "optionType": null,
@@ -2382,7 +2382,7 @@
             "totalSellQuantity": 85995,
             "totalTradedVolume": 783855,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23400
         },
@@ -2409,7 +2409,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 420,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -13.571428571428571,
@@ -2419,7 +2419,7 @@
             "changeinOpenInterest": 52340,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23450.00",
-            "impliedVolatility": 19.6,
+            "impliedVolatility": 38.51,
             "lastPrice": 6.05,
             "openInterest": 74212,
             "optionType": null,
@@ -2432,7 +2432,7 @@
             "totalSellQuantity": 54145,
             "totalTradedVolume": 458398,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23450
         },
@@ -2459,7 +2459,7 @@
             "totalSellQuantity": 7800,
             "totalTradedVolume": 4633,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -24.293785310734464,
@@ -2469,7 +2469,7 @@
             "changeinOpenInterest": 37537,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23500.00",
-            "impliedVolatility": 19.03,
+            "impliedVolatility": 37.35,
             "lastPrice": 6.7,
             "openInterest": 126921,
             "optionType": null,
@@ -2482,7 +2482,7 @@
             "totalSellQuantity": 159575,
             "totalTradedVolume": 950694,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23500
         },
@@ -2509,7 +2509,7 @@
             "totalSellQuantity": 5980,
             "totalTradedVolume": 624,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -31.48148148148148,
@@ -2519,7 +2519,7 @@
             "changeinOpenInterest": -1413,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23550.00",
-            "impliedVolatility": 18.44,
+            "impliedVolatility": 36.15,
             "lastPrice": 7.4,
             "openInterest": 30083,
             "optionType": null,
@@ -2532,7 +2532,7 @@
             "totalSellQuantity": 54145,
             "totalTradedVolume": 399571,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23550
         },
@@ -2559,7 +2559,7 @@
             "totalSellQuantity": 7020,
             "totalTradedVolume": 2644,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -40.28776978417266,
@@ -2569,7 +2569,7 @@
             "changeinOpenInterest": 34307,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23600.00",
-            "impliedVolatility": 17.88,
+            "impliedVolatility": 35.02,
             "lastPrice": 8.3,
             "openInterest": 87060,
             "optionType": null,
@@ -2582,7 +2582,7 @@
             "totalSellQuantity": 100815,
             "totalTradedVolume": 848267,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23600
         },
@@ -2596,7 +2596,7 @@
             "changeinOpenInterest": 138,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE23650.00",
-            "impliedVolatility": 0,
+            "impliedVolatility": 24.25,
             "lastPrice": 692,
             "openInterest": 484,
             "optionType": null,
@@ -2609,7 +2609,7 @@
             "totalSellQuantity": 7345,
             "totalTradedVolume": 1797,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -47.45762711864407,
@@ -2619,7 +2619,7 @@
             "changeinOpenInterest": 21972,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23650.00",
-            "impliedVolatility": 17.31,
+            "impliedVolatility": 33.85,
             "lastPrice": 9.3,
             "openInterest": 41942,
             "optionType": null,
@@ -2632,7 +2632,7 @@
             "totalSellQuantity": 62205,
             "totalTradedVolume": 468734,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23650
         },
@@ -2646,7 +2646,7 @@
             "changeinOpenInterest": -46,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE23700.00",
-            "impliedVolatility": 0,
+            "impliedVolatility": 23.97,
             "lastPrice": 642.6,
             "openInterest": 1962,
             "optionType": null,
@@ -2659,7 +2659,7 @@
             "totalSellQuantity": 7995,
             "totalTradedVolume": 8423,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -51.991150442477874,
@@ -2669,7 +2669,7 @@
             "changeinOpenInterest": 50779,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23700.00",
-            "impliedVolatility": 16.86,
+            "impliedVolatility": 32.93,
             "lastPrice": 10.85,
             "openInterest": 101590,
             "optionType": null,
@@ -2682,7 +2682,7 @@
             "totalSellQuantity": 219375,
             "totalTradedVolume": 1092338,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23700
         },
@@ -2709,7 +2709,7 @@
             "totalSellQuantity": 7020,
             "totalTradedVolume": 4262,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -54.32098765432099,
@@ -2719,7 +2719,7 @@
             "changeinOpenInterest": 22205,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23750.00",
-            "impliedVolatility": 16.48,
+            "impliedVolatility": 32.14,
             "lastPrice": 12.95,
             "openInterest": 44789,
             "optionType": null,
@@ -2732,7 +2732,7 @@
             "totalSellQuantity": 116675,
             "totalTradedVolume": 616137,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23750
         },
@@ -2746,7 +2746,7 @@
             "changeinOpenInterest": 159,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE23800.00",
-            "impliedVolatility": 0,
+            "impliedVolatility": 24.7,
             "lastPrice": 546,
             "openInterest": 5464,
             "optionType": null,
@@ -2759,7 +2759,7 @@
             "totalSellQuantity": 14820,
             "totalTradedVolume": 41276,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -59.21409214092141,
@@ -2769,7 +2769,7 @@
             "changeinOpenInterest": 58101,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23800.00",
-            "impliedVolatility": 15.99,
+            "impliedVolatility": 31.13,
             "lastPrice": 15.05,
             "openInterest": 130431,
             "optionType": null,
@@ -2782,7 +2782,7 @@
             "totalSellQuantity": 401115,
             "totalTradedVolume": 1554088,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23800
         },
@@ -2796,7 +2796,7 @@
             "changeinOpenInterest": -572,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE23850.00",
-            "impliedVolatility": 0,
+            "impliedVolatility": 24.74,
             "lastPrice": 498.55,
             "openInterest": 1502,
             "optionType": null,
@@ -2809,7 +2809,7 @@
             "totalSellQuantity": 7670,
             "totalTradedVolume": 17024,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -59.95647442872688,
@@ -2819,7 +2819,7 @@
             "changeinOpenInterest": 19016,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23850.00",
-            "impliedVolatility": 15.7,
+            "impliedVolatility": 30.5,
             "lastPrice": 18.4,
             "openInterest": 46273,
             "optionType": null,
@@ -2832,7 +2832,7 @@
             "totalSellQuantity": 183560,
             "totalTradedVolume": 818619,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23850
         },
@@ -2846,7 +2846,7 @@
             "changeinOpenInterest": -4067,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE23900.00",
-            "impliedVolatility": 0,
+            "impliedVolatility": 24.27,
             "lastPrice": 451.15,
             "openInterest": 5249,
             "optionType": null,
@@ -2859,7 +2859,7 @@
             "totalSellQuantity": 8840,
             "totalTradedVolume": 87791,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -62.30769230769231,
@@ -2869,7 +2869,7 @@
             "changeinOpenInterest": 22480,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23900.00",
-            "impliedVolatility": 15.31,
+            "impliedVolatility": 29.69,
             "lastPrice": 22.05,
             "openInterest": 79538,
             "optionType": null,
@@ -2882,7 +2882,7 @@
             "totalSellQuantity": 435370,
             "totalTradedVolume": 1388657,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23900
         },
@@ -2896,7 +2896,7 @@
             "changeinOpenInterest": -1685,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE23950.00",
-            "impliedVolatility": 0,
+            "impliedVolatility": 24.69,
             "lastPrice": 406.55,
             "openInterest": 3964,
             "optionType": null,
@@ -2909,7 +2909,7 @@
             "totalSellQuantity": 8385,
             "totalTradedVolume": 60084,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -62.90983606557377,
@@ -2919,7 +2919,7 @@
             "changeinOpenInterest": 27251,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23950.00",
-            "impliedVolatility": 15.05,
+            "impliedVolatility": 29.11,
             "lastPrice": 27.15,
             "openInterest": 53972,
             "optionType": null,
@@ -2932,7 +2932,7 @@
             "totalSellQuantity": 299130,
             "totalTradedVolume": 912806,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23950
         },
@@ -2946,7 +2946,7 @@
             "changeinOpenInterest": -27665,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24000.00",
-            "impliedVolatility": 7.72,
+            "impliedVolatility": 24.83,
             "lastPrice": 363.05,
             "openInterest": 31393,
             "optionType": null,
@@ -2959,7 +2959,7 @@
             "totalSellQuantity": 17160,
             "totalTradedVolume": 698911,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -63.427947598253276,
@@ -2969,7 +2969,7 @@
             "changeinOpenInterest": 94424,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24000.00",
-            "impliedVolatility": 14.82,
+            "impliedVolatility": 28.57,
             "lastPrice": 33.5,
             "openInterest": 193588,
             "optionType": null,
@@ -2982,7 +2982,7 @@
             "totalSellQuantity": 1657435,
             "totalTradedVolume": 2894237,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24000
         },
@@ -2996,7 +2996,7 @@
             "changeinOpenInterest": -21778,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24050.00",
-            "impliedVolatility": 9.49,
+            "impliedVolatility": 25.05,
             "lastPrice": 321.75,
             "openInterest": 12452,
             "optionType": null,
@@ -3009,7 +3009,7 @@
             "totalSellQuantity": 16575,
             "totalTradedVolume": 397828,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -64.17777777777778,
@@ -3019,7 +3019,7 @@
             "changeinOpenInterest": 22887,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24050.00",
-            "impliedVolatility": 14.45,
+            "impliedVolatility": 27.78,
             "lastPrice": 40.3,
             "openInterest": 73354,
             "optionType": null,
@@ -3032,7 +3032,7 @@
             "totalSellQuantity": 525265,
             "totalTradedVolume": 1300013,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24050
         },
@@ -3046,7 +3046,7 @@
             "changeinOpenInterest": -71812,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24100.00",
-            "impliedVolatility": 9.82,
+            "impliedVolatility": 24.43,
             "lastPrice": 279.6,
             "openInterest": 44705,
             "optionType": null,
@@ -3059,7 +3059,7 @@
             "totalSellQuantity": 29575,
             "totalTradedVolume": 1556612,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -63.28182487122884,
@@ -3069,7 +3069,7 @@
             "changeinOpenInterest": 65786,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24100.00",
-            "impliedVolatility": 14.28,
+            "impliedVolatility": 27.34,
             "lastPrice": 49.9,
             "openInterest": 157558,
             "optionType": null,
@@ -3082,7 +3082,7 @@
             "totalSellQuantity": 1949415,
             "totalTradedVolume": 3197697,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24100
         },
@@ -3096,7 +3096,7 @@
             "changeinOpenInterest": -48808,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24150.00",
-            "impliedVolatility": 11.39,
+            "impliedVolatility": 26.35,
             "lastPrice": 250,
             "openInterest": 31232,
             "optionType": null,
@@ -3109,7 +3109,7 @@
             "totalSellQuantity": 22100,
             "totalTradedVolume": 1770857,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -62.5,
@@ -3119,7 +3119,7 @@
             "changeinOpenInterest": 86764,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24150.00",
-            "impliedVolatility": 14.01,
+            "impliedVolatility": 26.7,
             "lastPrice": 60.6,
             "openInterest": 126181,
             "optionType": null,
@@ -3132,7 +3132,7 @@
             "totalSellQuantity": 938535,
             "totalTradedVolume": 2411778,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24150
         },
@@ -3146,7 +3146,7 @@
             "changeinOpenInterest": -63966,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24200.00",
-            "impliedVolatility": 10.42,
+            "impliedVolatility": 24,
             "lastPrice": 204.85,
             "openInterest": 77920,
             "optionType": null,
@@ -3159,7 +3159,7 @@
             "totalSellQuantity": 73255,
             "totalTradedVolume": 4716521,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -61.468367612600886,
@@ -3169,7 +3169,7 @@
             "changeinOpenInterest": 145232,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24200.00",
-            "impliedVolatility": 13.82,
+            "impliedVolatility": 26.2,
             "lastPrice": 74,
             "openInterest": 191699,
             "optionType": null,
@@ -3182,7 +3182,7 @@
             "totalSellQuantity": 2120495,
             "totalTradedVolume": 4929936,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24200
         },
@@ -3196,7 +3196,7 @@
             "changeinOpenInterest": -2657,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24250.00",
-            "impliedVolatility": 10.61,
+            "impliedVolatility": 23.87,
             "lastPrice": 171.95,
             "openInterest": 43830,
             "optionType": null,
@@ -3209,7 +3209,7 @@
             "totalSellQuantity": 50895,
             "totalTradedVolume": 4288204,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -59.4293357111012,
@@ -3219,7 +3219,7 @@
             "changeinOpenInterest": 80833,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24250.00",
-            "impliedVolatility": 13.76,
+            "impliedVolatility": 25.93,
             "lastPrice": 91,
             "openInterest": 88210,
             "optionType": null,
@@ -3232,7 +3232,7 @@
             "totalSellQuantity": 895375,
             "totalTradedVolume": 3083771,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24250
         },
@@ -3246,7 +3246,7 @@
             "changeinOpenInterest": 292,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24300.00",
-            "impliedVolatility": 10.72,
+            "impliedVolatility": 23.71,
             "lastPrice": 141.95,
             "openInterest": 94067,
             "optionType": null,
@@ -3259,7 +3259,7 @@
             "totalSellQuantity": 126880,
             "totalTradedVolume": 5668872,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -57.55368098159509,
@@ -3269,7 +3269,7 @@
             "changeinOpenInterest": 90434,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24300.00",
-            "impliedVolatility": 13.7,
+            "impliedVolatility": 25.64,
             "lastPrice": 110.7,
             "openInterest": 103865,
             "optionType": null,
@@ -3282,7 +3282,7 @@
             "totalSellQuantity": 932100,
             "totalTradedVolume": 3072474,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24300
         },
@@ -3296,7 +3296,7 @@
             "changeinOpenInterest": 13615,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24350.00",
-            "impliedVolatility": 10.8,
+            "impliedVolatility": 23.56,
             "lastPrice": 115.3,
             "openInterest": 51698,
             "optionType": null,
@@ -3309,7 +3309,7 @@
             "totalSellQuantity": 65325,
             "totalTradedVolume": 2923719,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -55.385392123864015,
@@ -3319,7 +3319,7 @@
             "changeinOpenInterest": 28887,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24350.00",
-            "impliedVolatility": 13.58,
+            "impliedVolatility": 25.18,
             "lastPrice": 132.55,
             "openInterest": 32708,
             "optionType": null,
@@ -3332,7 +3332,7 @@
             "totalSellQuantity": 249665,
             "totalTradedVolume": 845976,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24350
         },
@@ -3346,7 +3346,7 @@
             "changeinOpenInterest": 4587,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24400.00",
-            "impliedVolatility": 10.63,
+            "impliedVolatility": 22.97,
             "lastPrice": 89.7,
             "openInterest": 85083,
             "optionType": null,
@@ -3359,7 +3359,7 @@
             "totalSellQuantity": 151320,
             "totalTradedVolume": 3426358,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -53.56250918172469,
@@ -3369,7 +3369,7 @@
             "changeinOpenInterest": 15522,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24400.00",
-            "impliedVolatility": 13.54,
+            "impliedVolatility": 24.84,
             "lastPrice": 158.05,
             "openInterest": 24771,
             "optionType": null,
@@ -3382,7 +3382,7 @@
             "totalSellQuantity": 222625,
             "totalTradedVolume": 605194,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24400
         },
@@ -3396,7 +3396,7 @@
             "changeinOpenInterest": 4609,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24450.00",
-            "impliedVolatility": 10.61,
+            "impliedVolatility": 22.72,
             "lastPrice": 69.3,
             "openInterest": 38482,
             "optionType": null,
@@ -3409,7 +3409,7 @@
             "totalSellQuantity": 110890,
             "totalTradedVolume": 1808255,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -50.98193244304792,
@@ -3419,7 +3419,7 @@
             "changeinOpenInterest": 5169,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24450.00",
-            "impliedVolatility": 13.58,
+            "impliedVolatility": 24.59,
             "lastPrice": 187.2,
             "openInterest": 6626,
             "optionType": null,
@@ -3432,7 +3432,7 @@
             "totalSellQuantity": 37570,
             "totalTradedVolume": 133981,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24450
         },
@@ -3446,7 +3446,7 @@
             "changeinOpenInterest": -18813,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24500.00",
-            "impliedVolatility": 10.49,
+            "impliedVolatility": 22.31,
             "lastPrice": 51.5,
             "openInterest": 101847,
             "optionType": null,
@@ -3459,7 +3459,7 @@
             "totalSellQuantity": 287235,
             "totalTradedVolume": 3729193,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -49.67381174277726,
@@ -3469,7 +3469,7 @@
             "changeinOpenInterest": 9400,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24500.00",
-            "impliedVolatility": 13.28,
+            "impliedVolatility": 23.57,
             "lastPrice": 216,
             "openInterest": 22416,
             "optionType": null,
@@ -3482,7 +3482,7 @@
             "totalSellQuantity": 119665,
             "totalTradedVolume": 313309,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24500
         },
@@ -3496,7 +3496,7 @@
             "changeinOpenInterest": 4643,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24550.00",
-            "impliedVolatility": 10.35,
+            "impliedVolatility": 21.9,
             "lastPrice": 37,
             "openInterest": 40272,
             "optionType": null,
@@ -3509,7 +3509,7 @@
             "totalSellQuantity": 48815,
             "totalTradedVolume": 1585154,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -46.06079730724729,
@@ -3519,7 +3519,7 @@
             "changeinOpenInterest": 2124,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24550.00",
-            "impliedVolatility": 13.97,
+            "impliedVolatility": 24.52,
             "lastPrice": 256.4,
             "openInterest": 2882,
             "optionType": null,
@@ -3532,7 +3532,7 @@
             "totalSellQuantity": 19305,
             "totalTradedVolume": 29591,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24550
         },
@@ -3546,7 +3546,7 @@
             "changeinOpenInterest": 15037,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24600.00",
-            "impliedVolatility": 10.33,
+            "impliedVolatility": 21.73,
             "lastPrice": 26.4,
             "openInterest": 104890,
             "optionType": null,
@@ -3559,7 +3559,7 @@
             "totalSellQuantity": 186355,
             "totalTradedVolume": 2325867,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -43.68783473603673,
@@ -3569,7 +3569,7 @@
             "changeinOpenInterest": 1274,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24600.00",
-            "impliedVolatility": 14.18,
+            "impliedVolatility": 24.33,
             "lastPrice": 294.4,
             "openInterest": 4267,
             "optionType": null,
@@ -3582,7 +3582,7 @@
             "totalSellQuantity": 30680,
             "totalTradedVolume": 49077,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24600
         },
@@ -3596,7 +3596,7 @@
             "changeinOpenInterest": 10158,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24650.00",
-            "impliedVolatility": 10.29,
+            "impliedVolatility": 21.54,
             "lastPrice": 18.25,
             "openInterest": 50125,
             "optionType": null,
@@ -3609,7 +3609,7 @@
             "totalSellQuantity": 54860,
             "totalTradedVolume": 1340723,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -41.3104414856342,
@@ -3619,7 +3619,7 @@
             "changeinOpenInterest": 398,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24650.00",
-            "impliedVolatility": 14.47,
+            "impliedVolatility": 24.2,
             "lastPrice": 335,
             "openInterest": 823,
             "optionType": null,
@@ -3632,7 +3632,7 @@
             "totalSellQuantity": 7345,
             "totalTradedVolume": 9133,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24650
         },
@@ -3646,7 +3646,7 @@
             "changeinOpenInterest": 30388,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24700.00",
-            "impliedVolatility": 10.4,
+            "impliedVolatility": 21.69,
             "lastPrice": 12.95,
             "openInterest": 127646,
             "optionType": null,
@@ -3659,7 +3659,7 @@
             "totalSellQuantity": 130910,
             "totalTradedVolume": 2012664,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -39.00869005471516,
@@ -3669,7 +3669,7 @@
             "changeinOpenInterest": 735,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24700.00",
-            "impliedVolatility": 15.04,
+            "impliedVolatility": 24.58,
             "lastPrice": 379,
             "openInterest": 1737,
             "optionType": null,
@@ -3682,7 +3682,7 @@
             "totalSellQuantity": 24960,
             "totalTradedVolume": 16514,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24700
         },
@@ -3696,7 +3696,7 @@
             "changeinOpenInterest": 16803,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24750.00",
-            "impliedVolatility": 10.25,
+            "impliedVolatility": 21.32,
             "lastPrice": 8.15,
             "openInterest": 51516,
             "optionType": null,
@@ -3709,7 +3709,7 @@
             "totalSellQuantity": 64545,
             "totalTradedVolume": 1060668,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -36.342540609327045,
@@ -3719,7 +3719,7 @@
             "changeinOpenInterest": 39,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24750.00",
-            "impliedVolatility": 15.8,
+            "impliedVolatility": 25.36,
             "lastPrice": 425.2,
             "openInterest": 276,
             "optionType": null,
@@ -3732,7 +3732,7 @@
             "totalSellQuantity": 5850,
             "totalTradedVolume": 2254,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24750
         },
@@ -3746,7 +3746,7 @@
             "changeinOpenInterest": 20277,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24800.00",
-            "impliedVolatility": 10.33,
+            "impliedVolatility": 21.41,
             "lastPrice": 5.45,
             "openInterest": 122050,
             "optionType": null,
@@ -3759,7 +3759,7 @@
             "totalSellQuantity": 168090,
             "totalTradedVolume": 1750353,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -33.66982124079916,
@@ -3769,7 +3769,7 @@
             "changeinOpenInterest": 455,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24800.00",
-            "impliedVolatility": 16.74,
+            "impliedVolatility": 26.58,
             "lastPrice": 473.1,
             "openInterest": 1219,
             "optionType": null,
@@ -3782,7 +3782,7 @@
             "totalSellQuantity": 7475,
             "totalTradedVolume": 8838,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24800
         },
@@ -3796,7 +3796,7 @@
             "changeinOpenInterest": 1904,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24850.00",
-            "impliedVolatility": 10.51,
+            "impliedVolatility": 21.73,
             "lastPrice": 3.8,
             "openInterest": 28901,
             "optionType": null,
@@ -3809,7 +3809,7 @@
             "totalSellQuantity": 36855,
             "totalTradedVolume": 803590,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -31.914477543836778,
@@ -3819,7 +3819,7 @@
             "changeinOpenInterest": -16,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24850.00",
-            "impliedVolatility": 17.84,
+            "impliedVolatility": 28.26,
             "lastPrice": 522.25,
             "openInterest": 94,
             "optionType": null,
@@ -3832,7 +3832,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 906,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24850
         },
@@ -3846,7 +3846,7 @@
             "changeinOpenInterest": -6869,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24900.00",
-            "impliedVolatility": 10.89,
+            "impliedVolatility": 22.47,
             "lastPrice": 2.95,
             "openInterest": 51084,
             "optionType": null,
@@ -3859,7 +3859,7 @@
             "totalSellQuantity": 86515,
             "totalTradedVolume": 1706106,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -29.957780089334882,
@@ -3869,7 +3869,7 @@
             "changeinOpenInterest": 36,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24900.00",
-            "impliedVolatility": 19.07,
+            "impliedVolatility": 30.37,
             "lastPrice": 572.35,
             "openInterest": 330,
             "optionType": null,
@@ -3882,7 +3882,7 @@
             "totalSellQuantity": 8255,
             "totalTradedVolume": 1113,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24900
         },
@@ -3896,7 +3896,7 @@
             "changeinOpenInterest": 5843,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24950.00",
-            "impliedVolatility": 11.34,
+            "impliedVolatility": 23.34,
             "lastPrice": 2.4,
             "openInterest": 22982,
             "optionType": null,
@@ -3909,7 +3909,7 @@
             "totalSellQuantity": 24830,
             "totalTradedVolume": 1329928,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -23.671786290563556,
@@ -3919,7 +3919,7 @@
             "changeinOpenInterest": 29,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24950.00",
-            "impliedVolatility": 23.02,
+            "impliedVolatility": 39.85,
             "lastPrice": 638.6,
             "openInterest": 35,
             "optionType": null,
@@ -3932,7 +3932,7 @@
             "totalSellQuantity": 4875,
             "totalTradedVolume": 430,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24950
         },
@@ -3946,7 +3946,7 @@
             "changeinOpenInterest": 20914,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25000.00",
-            "impliedVolatility": 11.89,
+            "impliedVolatility": 24.43,
             "lastPrice": 2.1,
             "openInterest": 157883,
             "optionType": null,
@@ -3959,7 +3959,7 @@
             "totalSellQuantity": 493350,
             "totalTradedVolume": 2076956,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -27.195235233047374,
@@ -3969,7 +3969,7 @@
             "changeinOpenInterest": -105,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE25000.00",
-            "impliedVolatility": 20.22,
+            "impliedVolatility": 30.24,
             "lastPrice": 666.2,
             "openInterest": 4604,
             "optionType": null,
@@ -3982,7 +3982,7 @@
             "totalSellQuantity": 11180,
             "totalTradedVolume": 3894,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25000
         },
@@ -3996,7 +3996,7 @@
             "changeinOpenInterest": 4739,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25050.00",
-            "impliedVolatility": 12.13,
+            "impliedVolatility": 24.88,
             "lastPrice": 1.55,
             "openInterest": 21134,
             "optionType": null,
@@ -4009,7 +4009,7 @@
             "totalSellQuantity": 32890,
             "totalTradedVolume": 315156,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -26.572099295739473,
@@ -4019,7 +4019,7 @@
             "changeinOpenInterest": -3,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE25050.00",
-            "impliedVolatility": 24.89,
+            "impliedVolatility": 42.82,
             "lastPrice": 735.05,
             "openInterest": 29,
             "optionType": null,
@@ -4032,7 +4032,7 @@
             "totalSellQuantity": 5005,
             "totalTradedVolume": 9,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25050
         },
@@ -4046,7 +4046,7 @@
             "changeinOpenInterest": 3372,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25100.00",
-            "impliedVolatility": 12.7,
+            "impliedVolatility": 26,
             "lastPrice": 1.4,
             "openInterest": 49557,
             "optionType": null,
@@ -4059,7 +4059,7 @@
             "totalSellQuantity": 91650,
             "totalTradedVolume": 575707,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -22.268969954957186,
@@ -4069,7 +4069,7 @@
             "changeinOpenInterest": 10,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE25100.00",
-            "impliedVolatility": 26.12,
+            "impliedVolatility": 45.04,
             "lastPrice": 785.2,
             "openInterest": 60,
             "optionType": null,
@@ -4082,7 +4082,7 @@
             "totalSellQuantity": 4875,
             "totalTradedVolume": 205,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25100
         },
@@ -4096,7 +4096,7 @@
             "changeinOpenInterest": -2471,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25150.00",
-            "impliedVolatility": 13.23,
+            "impliedVolatility": 27.06,
             "lastPrice": 1.25,
             "openInterest": 10076,
             "optionType": null,
@@ -4109,7 +4109,7 @@
             "totalSellQuantity": 30420,
             "totalTradedVolume": 153995,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -21.30307467057101,
@@ -4119,7 +4119,7 @@
             "changeinOpenInterest": 0,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE25150.00",
-            "impliedVolatility": 31.42,
+            "impliedVolatility": 57.05,
             "lastPrice": 860,
             "openInterest": 17,
             "optionType": null,
@@ -4132,7 +4132,7 @@
             "totalSellQuantity": 5005,
             "totalTradedVolume": 4,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25150
         },
@@ -4146,7 +4146,7 @@
             "changeinOpenInterest": 2140,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25200.00",
-            "impliedVolatility": 13.56,
+            "impliedVolatility": 27.7,
             "lastPrice": 1,
             "openInterest": 63551,
             "optionType": null,
@@ -4159,7 +4159,7 @@
             "totalSellQuantity": 432575,
             "totalTradedVolume": 465670,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -20.666368515205725,
@@ -4169,7 +4169,7 @@
             "changeinOpenInterest": 1,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE25200.00",
-            "impliedVolatility": 28.79,
+            "impliedVolatility": 50.09,
             "lastPrice": 886.95,
             "openInterest": 838,
             "optionType": null,
@@ -4182,7 +4182,7 @@
             "totalSellQuantity": 6240,
             "totalTradedVolume": 139,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25200
         },
@@ -4196,7 +4196,7 @@
             "changeinOpenInterest": 1690,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25250.00",
-            "impliedVolatility": 13.98,
+            "impliedVolatility": 28.53,
             "lastPrice": 0.85,
             "openInterest": 13292,
             "optionType": null,
@@ -4209,7 +4209,7 @@
             "totalSellQuantity": 88270,
             "totalTradedVolume": 125697,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -20.516641828117237,
@@ -4219,7 +4219,7 @@
             "changeinOpenInterest": -2,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE25250.00",
-            "impliedVolatility": 33.92,
+            "impliedVolatility": 61.71,
             "lastPrice": 960,
             "openInterest": 9,
             "optionType": null,
@@ -4232,7 +4232,7 @@
             "totalSellQuantity": 4355,
             "totalTradedVolume": 8,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25250
         },
@@ -4246,7 +4246,7 @@
             "changeinOpenInterest": -686,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25300.00",
-            "impliedVolatility": 14.45,
+            "impliedVolatility": 29.45,
             "lastPrice": 0.75,
             "openInterest": 56551,
             "optionType": null,
@@ -4259,7 +4259,7 @@
             "totalSellQuantity": 300170,
             "totalTradedVolume": 330998,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -11.842553191489362,
@@ -4269,7 +4269,7 @@
             "changeinOpenInterest": 5,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE25300.00",
-            "impliedVolatility": 39.15,
+            "impliedVolatility": 72.94,
             "lastPrice": 1035.85,
             "openInterest": 25,
             "optionType": null,
@@ -4282,7 +4282,7 @@
             "totalSellQuantity": 5200,
             "totalTradedVolume": 57,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25300
         },
@@ -4296,7 +4296,7 @@
             "changeinOpenInterest": 1061,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25350.00",
-            "impliedVolatility": 15,
+            "impliedVolatility": 30.54,
             "lastPrice": 0.7,
             "openInterest": 9578,
             "optionType": null,
@@ -4309,7 +4309,7 @@
             "totalSellQuantity": 46735,
             "totalTradedVolume": 50749,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -4332,7 +4332,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25350
         },
@@ -4346,7 +4346,7 @@
             "changeinOpenInterest": 3555,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25400.00",
-            "impliedVolatility": 15.52,
+            "impliedVolatility": 31.59,
             "lastPrice": 0.65,
             "openInterest": 49086,
             "optionType": null,
@@ -4359,7 +4359,7 @@
             "totalSellQuantity": 502905,
             "totalTradedVolume": 266297,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -8.220739052580173,
@@ -4369,7 +4369,7 @@
             "changeinOpenInterest": -1,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE25400.00",
-            "impliedVolatility": 40.41,
+            "impliedVolatility": 74.96,
             "lastPrice": 1127.6,
             "openInterest": 30,
             "optionType": null,
@@ -4382,7 +4382,7 @@
             "totalSellQuantity": 4550,
             "totalTradedVolume": 9,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25400
         },
@@ -4396,7 +4396,7 @@
             "changeinOpenInterest": 163,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25450.00",
-            "impliedVolatility": 16.17,
+            "impliedVolatility": 32.88,
             "lastPrice": 0.65,
             "openInterest": 8598,
             "optionType": null,
@@ -4409,7 +4409,7 @@
             "totalSellQuantity": 75465,
             "totalTradedVolume": 48038,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -4432,7 +4432,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25450
         },
@@ -4446,7 +4446,7 @@
             "changeinOpenInterest": -16038,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25500.00",
-            "impliedVolatility": 16.82,
+            "impliedVolatility": 34.17,
             "lastPrice": 0.65,
             "openInterest": 64105,
             "optionType": null,
@@ -4459,7 +4459,7 @@
             "totalSellQuantity": 642655,
             "totalTradedVolume": 380779,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -15.757272174317507,
@@ -4469,7 +4469,7 @@
             "changeinOpenInterest": -83,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE25500.00",
-            "impliedVolatility": 33.5,
+            "impliedVolatility": 56.69,
             "lastPrice": 1177.25,
             "openInterest": 1946,
             "optionType": null,
@@ -4482,7 +4482,7 @@
             "totalSellQuantity": 11570,
             "totalTradedVolume": 344,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25500
         },
@@ -4496,7 +4496,7 @@
             "changeinOpenInterest": -431,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25550.00",
-            "impliedVolatility": 17.31,
+            "impliedVolatility": 35.15,
             "lastPrice": 0.6,
             "openInterest": 5820,
             "optionType": null,
@@ -4509,7 +4509,7 @@
             "totalSellQuantity": 26780,
             "totalTradedVolume": 27894,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -4532,7 +4532,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25550
         },
@@ -4546,7 +4546,7 @@
             "changeinOpenInterest": -13059,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25600.00",
-            "impliedVolatility": 17.94,
+            "impliedVolatility": 36.41,
             "lastPrice": 0.6,
             "openInterest": 8877,
             "optionType": null,
@@ -4559,7 +4559,7 @@
             "totalSellQuantity": 79235,
             "totalTradedVolume": 78550,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -4582,7 +4582,7 @@
             "totalSellQuantity": 5265,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25600
         },
@@ -4596,7 +4596,7 @@
             "changeinOpenInterest": -1161,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25650.00",
-            "impliedVolatility": 18.4,
+            "impliedVolatility": 37.33,
             "lastPrice": 0.55,
             "openInterest": 1904,
             "optionType": null,
@@ -4609,7 +4609,7 @@
             "totalSellQuantity": 43095,
             "totalTradedVolume": 15446,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -4632,7 +4632,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25650
         },
@@ -4646,7 +4646,7 @@
             "changeinOpenInterest": -5891,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25700.00",
-            "impliedVolatility": 19.02,
+            "impliedVolatility": 38.57,
             "lastPrice": 0.55,
             "openInterest": 8785,
             "optionType": null,
@@ -4659,7 +4659,7 @@
             "totalSellQuantity": 57525,
             "totalTradedVolume": 48781,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -4682,7 +4682,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25700
         },
@@ -4696,7 +4696,7 @@
             "changeinOpenInterest": -1382,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25750.00",
-            "impliedVolatility": 19.45,
+            "impliedVolatility": 39.42,
             "lastPrice": 0.5,
             "openInterest": 1305,
             "optionType": null,
@@ -4709,7 +4709,7 @@
             "totalSellQuantity": 25220,
             "totalTradedVolume": 8606,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -4732,7 +4732,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25750
         },
@@ -4746,7 +4746,7 @@
             "changeinOpenInterest": -3794,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25800.00",
-            "impliedVolatility": 20.25,
+            "impliedVolatility": 41.02,
             "lastPrice": 0.55,
             "openInterest": 14893,
             "optionType": null,
@@ -4759,7 +4759,7 @@
             "totalSellQuantity": 166660,
             "totalTradedVolume": 43782,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -11.549295774647888,
@@ -4769,7 +4769,7 @@
             "changeinOpenInterest": -2,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE25800.00",
-            "impliedVolatility": 56.81,
+            "impliedVolatility": 107.98,
             "lastPrice": 1570,
             "openInterest": 20,
             "optionType": null,
@@ -4782,7 +4782,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 7,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25800
         },
@@ -4796,7 +4796,7 @@
             "changeinOpenInterest": -349,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25850.00",
-            "impliedVolatility": 20.67,
+            "impliedVolatility": 41.85,
             "lastPrice": 0.5,
             "openInterest": 1806,
             "optionType": null,
@@ -4809,7 +4809,7 @@
             "totalSellQuantity": 36595,
             "totalTradedVolume": 2025,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -4832,7 +4832,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25850
         },
@@ -4846,7 +4846,7 @@
             "changeinOpenInterest": -2165,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25900.00",
-            "impliedVolatility": 21.27,
+            "impliedVolatility": 43.05,
             "lastPrice": 0.5,
             "openInterest": 5542,
             "optionType": null,
@@ -4859,7 +4859,7 @@
             "totalSellQuantity": 111605,
             "totalTradedVolume": 11408,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -0.2987266145160882,
@@ -4882,7 +4882,7 @@
             "totalSellQuantity": 4160,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25900
         },
@@ -4896,7 +4896,7 @@
             "changeinOpenInterest": -228,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25950.00",
-            "impliedVolatility": 22.08,
+            "impliedVolatility": 44.67,
             "lastPrice": 0.55,
             "openInterest": 716,
             "optionType": null,
@@ -4909,7 +4909,7 @@
             "totalSellQuantity": 25935,
             "totalTradedVolume": 1506,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -4932,7 +4932,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25950
         },
@@ -4946,7 +4946,7 @@
             "changeinOpenInterest": -21355,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE26000.00",
-            "impliedVolatility": 22.47,
+            "impliedVolatility": 45.45,
             "lastPrice": 0.5,
             "openInterest": 23875,
             "optionType": null,
@@ -4959,7 +4959,7 @@
             "totalSellQuantity": 307255,
             "totalTradedVolume": 131095,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -12.094240837696335,
@@ -4969,7 +4969,7 @@
             "changeinOpenInterest": -217,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE26000.00",
-            "impliedVolatility": 44.15,
+            "impliedVolatility": 76.11,
             "lastPrice": 1679,
             "openInterest": 936,
             "optionType": null,
@@ -4982,7 +4982,7 @@
             "totalSellQuantity": 4875,
             "totalTradedVolume": 369,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 26000
         },
@@ -4996,7 +4996,7 @@
             "changeinOpenInterest": -414,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE26050.00",
-            "impliedVolatility": 22.83,
+            "impliedVolatility": 46.16,
             "lastPrice": 0.45,
             "openInterest": 524,
             "optionType": null,
@@ -5009,7 +5009,7 @@
             "totalSellQuantity": 32240,
             "totalTradedVolume": 1806,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -5032,7 +5032,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 26050
         },
@@ -5046,7 +5046,7 @@
             "changeinOpenInterest": -197,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE26100.00",
-            "impliedVolatility": 23.16,
+            "impliedVolatility": 46.81,
             "lastPrice": 0.4,
             "openInterest": 3755,
             "optionType": null,
@@ -5059,7 +5059,7 @@
             "totalSellQuantity": 111475,
             "totalTradedVolume": 11113,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -5082,7 +5082,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 26100
         },
@@ -5096,7 +5096,7 @@
             "changeinOpenInterest": -222,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE26150.00",
-            "impliedVolatility": 24,
+            "impliedVolatility": 48.51,
             "lastPrice": 0.45,
             "openInterest": 1141,
             "optionType": null,
@@ -5109,7 +5109,7 @@
             "totalSellQuantity": 35360,
             "totalTradedVolume": 4623,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -5132,7 +5132,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 26150
         },
@@ -5146,7 +5146,7 @@
             "changeinOpenInterest": -1407,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE26200.00",
-            "impliedVolatility": 24.31,
+            "impliedVolatility": 49.13,
             "lastPrice": 0.4,
             "openInterest": 14605,
             "optionType": null,
@@ -5159,7 +5159,7 @@
             "totalSellQuantity": 483210,
             "totalTradedVolume": 31511,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -5182,13 +5182,13 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 26200
         }
       ],
       "timestamp": "17-Jul-2026 15:30:00",
-      "underlyingValue": 24334.3,
+      "underlyingValue": 24340.7,
       "expiryDates": [
         "21-Jul-2026",
         "28-Jul-2026",
@@ -5505,7 +5505,7 @@
             "totalSellQuantity": 4225,
             "totalTradedVolume": 4,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 38.46153846153846,
@@ -5515,7 +5515,7 @@
             "changeinOpenInterest": -18,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE21600.00",
-            "impliedVolatility": 41.78,
+            "impliedVolatility": 83.04,
             "lastPrice": 0.9,
             "openInterest": 60023,
             "optionType": null,
@@ -5528,7 +5528,7 @@
             "totalSellQuantity": 215280,
             "totalTradedVolume": 97498,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 21600
         },
@@ -5555,7 +5555,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 28.571428571428573,
@@ -5565,7 +5565,7 @@
             "changeinOpenInterest": 589,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE21650.00",
-            "impliedVolatility": 41.05,
+            "impliedVolatility": 81.58,
             "lastPrice": 0.9,
             "openInterest": 1121,
             "optionType": null,
@@ -5578,7 +5578,7 @@
             "totalSellQuantity": 93795,
             "totalTradedVolume": 5081,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 21650
         },
@@ -5605,7 +5605,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 26.666666666666668,
@@ -5615,7 +5615,7 @@
             "changeinOpenInterest": 1338,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE21700.00",
-            "impliedVolatility": 40.54,
+            "impliedVolatility": 80.56,
             "lastPrice": 0.95,
             "openInterest": 7341,
             "optionType": null,
@@ -5628,7 +5628,7 @@
             "totalSellQuantity": 149760,
             "totalTradedVolume": 33173,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 21700
         },
@@ -5655,7 +5655,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 33.333333333333336,
@@ -5665,7 +5665,7 @@
             "changeinOpenInterest": 287,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE21750.00",
-            "impliedVolatility": 40.02,
+            "impliedVolatility": 79.51,
             "lastPrice": 1,
             "openInterest": 680,
             "optionType": null,
@@ -5678,7 +5678,7 @@
             "totalSellQuantity": 38740,
             "totalTradedVolume": 2412,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 21750
         },
@@ -5705,7 +5705,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 25,
@@ -5715,7 +5715,7 @@
             "changeinOpenInterest": -346,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE21800.00",
-            "impliedVolatility": 39.28,
+            "impliedVolatility": 78.04,
             "lastPrice": 1,
             "openInterest": 18132,
             "optionType": null,
@@ -5728,7 +5728,7 @@
             "totalSellQuantity": 51935,
             "totalTradedVolume": 32605,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 21800
         },
@@ -5755,7 +5755,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 6.25,
@@ -5765,7 +5765,7 @@
             "changeinOpenInterest": -199,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE21850.00",
-            "impliedVolatility": 37.92,
+            "impliedVolatility": 75.33,
             "lastPrice": 0.85,
             "openInterest": 855,
             "optionType": null,
@@ -5778,7 +5778,7 @@
             "totalSellQuantity": 40300,
             "totalTradedVolume": 12525,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 21850
         },
@@ -5805,7 +5805,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 11.764705882352942,
@@ -5815,7 +5815,7 @@
             "changeinOpenInterest": -715,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE21900.00",
-            "impliedVolatility": 37.62,
+            "impliedVolatility": 74.72,
             "lastPrice": 0.95,
             "openInterest": 5274,
             "optionType": null,
@@ -5828,7 +5828,7 @@
             "totalSellQuantity": 51220,
             "totalTradedVolume": 27181,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 21900
         },
@@ -5855,7 +5855,7 @@
             "totalSellQuantity": 4160,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 16.666666666666668,
@@ -5865,7 +5865,7 @@
             "changeinOpenInterest": 683,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE21950.00",
-            "impliedVolatility": 37.27,
+            "impliedVolatility": 74.01,
             "lastPrice": 1.05,
             "openInterest": 1962,
             "optionType": null,
@@ -5878,7 +5878,7 @@
             "totalSellQuantity": 52130,
             "totalTradedVolume": 16630,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 21950
         },
@@ -5905,7 +5905,7 @@
             "totalSellQuantity": 5005,
             "totalTradedVolume": 1,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 23.529411764705884,
@@ -5915,7 +5915,7 @@
             "changeinOpenInterest": 24675,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22000.00",
-            "impliedVolatility": 36.54,
+            "impliedVolatility": 72.54,
             "lastPrice": 1.05,
             "openInterest": 59929,
             "optionType": null,
@@ -5928,7 +5928,7 @@
             "totalSellQuantity": 206245,
             "totalTradedVolume": 142372,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22000
         },
@@ -5955,7 +5955,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 47.05882352941177,
@@ -5965,7 +5965,7 @@
             "changeinOpenInterest": 526,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22050.00",
-            "impliedVolatility": 36.47,
+            "impliedVolatility": 72.4,
             "lastPrice": 1.25,
             "openInterest": 2267,
             "optionType": null,
@@ -5978,7 +5978,7 @@
             "totalSellQuantity": 31915,
             "totalTradedVolume": 15715,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22050
         },
@@ -6005,7 +6005,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 22.22222222222222,
@@ -6015,7 +6015,7 @@
             "changeinOpenInterest": 2332,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22100.00",
-            "impliedVolatility": 35.24,
+            "impliedVolatility": 69.95,
             "lastPrice": 1.1,
             "openInterest": 5520,
             "optionType": null,
@@ -6028,7 +6028,7 @@
             "totalSellQuantity": 30940,
             "totalTradedVolume": 33988,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22100
         },
@@ -6055,7 +6055,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 27.77777777777778,
@@ -6065,7 +6065,7 @@
             "changeinOpenInterest": 267,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22150.00",
-            "impliedVolatility": 34.67,
+            "impliedVolatility": 68.8,
             "lastPrice": 1.15,
             "openInterest": 926,
             "optionType": null,
@@ -6078,7 +6078,7 @@
             "totalSellQuantity": 31395,
             "totalTradedVolume": 13143,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22150
         },
@@ -6105,7 +6105,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 33.333333333333336,
@@ -6115,7 +6115,7 @@
             "changeinOpenInterest": 5055,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22200.00",
-            "impliedVolatility": 34.08,
+            "impliedVolatility": 67.63,
             "lastPrice": 1.2,
             "openInterest": 11713,
             "optionType": null,
@@ -6128,7 +6128,7 @@
             "totalSellQuantity": 48880,
             "totalTradedVolume": 72681,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22200
         },
@@ -6155,7 +6155,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 15.789473684210526,
@@ -6165,7 +6165,7 @@
             "changeinOpenInterest": -78,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22250.00",
-            "impliedVolatility": 33.03,
+            "impliedVolatility": 65.53,
             "lastPrice": 1.1,
             "openInterest": 2360,
             "optionType": null,
@@ -6178,7 +6178,7 @@
             "totalSellQuantity": 29835,
             "totalTradedVolume": 25790,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22250
         },
@@ -6205,7 +6205,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 26.31578947368421,
@@ -6215,7 +6215,7 @@
             "changeinOpenInterest": 14594,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22300.00",
-            "impliedVolatility": 32.6,
+            "impliedVolatility": 64.66,
             "lastPrice": 1.2,
             "openInterest": 19802,
             "optionType": null,
@@ -6228,7 +6228,7 @@
             "totalSellQuantity": 53625,
             "totalTradedVolume": 111790,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22300
         },
@@ -6255,7 +6255,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 20,
@@ -6265,7 +6265,7 @@
             "changeinOpenInterest": 1121,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22350.00",
-            "impliedVolatility": 31.86,
+            "impliedVolatility": 63.17,
             "lastPrice": 1.2,
             "openInterest": 2462,
             "optionType": null,
@@ -6278,7 +6278,7 @@
             "totalSellQuantity": 31980,
             "totalTradedVolume": 21369,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22350
         },
@@ -6305,7 +6305,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 14.285714285714286,
@@ -6315,7 +6315,7 @@
             "changeinOpenInterest": 1143,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22400.00",
-            "impliedVolatility": 31.12,
+            "impliedVolatility": 61.69,
             "lastPrice": 1.2,
             "openInterest": 7977,
             "optionType": null,
@@ -6328,7 +6328,7 @@
             "totalSellQuantity": 24700,
             "totalTradedVolume": 70712,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22400
         },
@@ -6355,7 +6355,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 13.636363636363637,
@@ -6365,7 +6365,7 @@
             "changeinOpenInterest": 1119,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22450.00",
-            "impliedVolatility": 30.51,
+            "impliedVolatility": 60.48,
             "lastPrice": 1.25,
             "openInterest": 2539,
             "optionType": null,
@@ -6378,7 +6378,7 @@
             "totalSellQuantity": 24895,
             "totalTradedVolume": 25354,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22450
         },
@@ -6405,7 +6405,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 79,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 37.5,
@@ -6415,7 +6415,7 @@
             "changeinOpenInterest": 38136,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22500.00",
-            "impliedVolatility": 30.72,
+            "impliedVolatility": 60.89,
             "lastPrice": 1.65,
             "openInterest": 100367,
             "optionType": null,
@@ -6428,7 +6428,7 @@
             "totalSellQuantity": 361595,
             "totalTradedVolume": 451998,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22500
         },
@@ -6455,7 +6455,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 20.833333333333332,
@@ -6465,7 +6465,7 @@
             "changeinOpenInterest": 752,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22550.00",
-            "impliedVolatility": 29.52,
+            "impliedVolatility": 58.48,
             "lastPrice": 1.45,
             "openInterest": 2723,
             "optionType": null,
@@ -6478,7 +6478,7 @@
             "totalSellQuantity": 10530,
             "totalTradedVolume": 35205,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22550
         },
@@ -6505,7 +6505,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 36,
@@ -6515,7 +6515,7 @@
             "changeinOpenInterest": 2521,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22600.00",
-            "impliedVolatility": 29.3,
+            "impliedVolatility": 58.03,
             "lastPrice": 1.7,
             "openInterest": 16336,
             "optionType": null,
@@ -6528,7 +6528,7 @@
             "totalSellQuantity": 23140,
             "totalTradedVolume": 172859,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22600
         },
@@ -6555,7 +6555,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 40.74074074074074,
@@ -6565,7 +6565,7 @@
             "changeinOpenInterest": 802,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22650.00",
-            "impliedVolatility": 28.92,
+            "impliedVolatility": 57.26,
             "lastPrice": 1.9,
             "openInterest": 4094,
             "optionType": null,
@@ -6578,7 +6578,7 @@
             "totalSellQuantity": 16055,
             "totalTradedVolume": 54416,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22650
         },
@@ -6605,7 +6605,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 28.571428571428573,
@@ -6615,7 +6615,7 @@
             "changeinOpenInterest": 4360,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22700.00",
-            "impliedVolatility": 27.96,
+            "impliedVolatility": 55.34,
             "lastPrice": 1.8,
             "openInterest": 24993,
             "optionType": null,
@@ -6628,7 +6628,7 @@
             "totalSellQuantity": 17030,
             "totalTradedVolume": 233884,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22700
         },
@@ -6655,7 +6655,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 12.903225806451612,
@@ -6665,7 +6665,7 @@
             "changeinOpenInterest": 6754,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22750.00",
-            "impliedVolatility": 27.1,
+            "impliedVolatility": 53.62,
             "lastPrice": 1.75,
             "openInterest": 11294,
             "optionType": null,
@@ -6678,7 +6678,7 @@
             "totalSellQuantity": 14300,
             "totalTradedVolume": 75176,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22750
         },
@@ -6705,7 +6705,7 @@
             "totalSellQuantity": 4420,
             "totalTradedVolume": 4,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 31.25,
@@ -6715,7 +6715,7 @@
             "changeinOpenInterest": 23637,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22800.00",
-            "impliedVolatility": 26.93,
+            "impliedVolatility": 53.26,
             "lastPrice": 2.1,
             "openInterest": 55634,
             "optionType": null,
@@ -6728,7 +6728,7 @@
             "totalSellQuantity": 40235,
             "totalTradedVolume": 353259,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22800
         },
@@ -6755,7 +6755,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 10.526315789473685,
@@ -6765,7 +6765,7 @@
             "changeinOpenInterest": -2140,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22850.00",
-            "impliedVolatility": 26.14,
+            "impliedVolatility": 51.69,
             "lastPrice": 2.1,
             "openInterest": 11033,
             "optionType": null,
@@ -6778,7 +6778,7 @@
             "totalSellQuantity": 9425,
             "totalTradedVolume": 127233,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22850
         },
@@ -6805,7 +6805,7 @@
             "totalSellQuantity": 4615,
             "totalTradedVolume": 20,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 23.076923076923077,
@@ -6815,7 +6815,7 @@
             "changeinOpenInterest": 9110,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22900.00",
-            "impliedVolatility": 25.8,
+            "impliedVolatility": 50.99,
             "lastPrice": 2.4,
             "openInterest": 35507,
             "optionType": null,
@@ -6828,7 +6828,7 @@
             "totalSellQuantity": 27300,
             "totalTradedVolume": 325746,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22900
         },
@@ -6855,7 +6855,7 @@
             "totalSellQuantity": 4160,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 28.571428571428573,
@@ -6865,7 +6865,7 @@
             "changeinOpenInterest": 2881,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE22950.00",
-            "impliedVolatility": 25.39,
+            "impliedVolatility": 50.17,
             "lastPrice": 2.7,
             "openInterest": 12028,
             "optionType": null,
@@ -6878,7 +6878,7 @@
             "totalSellQuantity": 14560,
             "totalTradedVolume": 144424,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 22950
         },
@@ -6905,7 +6905,7 @@
             "totalSellQuantity": 6500,
             "totalTradedVolume": 979,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 19.148936170212767,
@@ -6915,7 +6915,7 @@
             "changeinOpenInterest": 81298,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23000.00",
-            "impliedVolatility": 24.71,
+            "impliedVolatility": 48.8,
             "lastPrice": 2.8,
             "openInterest": 220578,
             "optionType": null,
@@ -6928,7 +6928,7 @@
             "totalSellQuantity": 172705,
             "totalTradedVolume": 1228650,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23000
         },
@@ -6955,7 +6955,7 @@
             "totalSellQuantity": 4160,
             "totalTradedVolume": 1,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 24,
@@ -6965,7 +6965,7 @@
             "changeinOpenInterest": -62,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23050.00",
-            "impliedVolatility": 24.23,
+            "impliedVolatility": 47.84,
             "lastPrice": 3.1,
             "openInterest": 12033,
             "optionType": null,
@@ -6978,7 +6978,7 @@
             "totalSellQuantity": 10855,
             "totalTradedVolume": 182355,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23050
         },
@@ -7005,7 +7005,7 @@
             "totalSellQuantity": 5265,
             "totalTradedVolume": 93,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 26.41509433962264,
@@ -7015,7 +7015,7 @@
             "changeinOpenInterest": 21996,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23100.00",
-            "impliedVolatility": 23.67,
+            "impliedVolatility": 46.71,
             "lastPrice": 3.35,
             "openInterest": 55450,
             "optionType": null,
@@ -7028,7 +7028,7 @@
             "totalSellQuantity": 25870,
             "totalTradedVolume": 488762,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23100
         },
@@ -7055,7 +7055,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 2,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 22.413793103448278,
@@ -7065,7 +7065,7 @@
             "changeinOpenInterest": 4139,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23150.00",
-            "impliedVolatility": 23.03,
+            "impliedVolatility": 45.42,
             "lastPrice": 3.55,
             "openInterest": 17360,
             "optionType": null,
@@ -7078,7 +7078,7 @@
             "totalSellQuantity": 23855,
             "totalTradedVolume": 244012,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23150
         },
@@ -7105,7 +7105,7 @@
             "totalSellQuantity": 5525,
             "totalTradedVolume": 138,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 10.9375,
@@ -7115,7 +7115,7 @@
             "changeinOpenInterest": 23636,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23200.00",
-            "impliedVolatility": 22.19,
+            "impliedVolatility": 43.74,
             "lastPrice": 3.55,
             "openInterest": 92312,
             "optionType": null,
@@ -7128,7 +7128,7 @@
             "totalSellQuantity": 40300,
             "totalTradedVolume": 853966,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23200
         },
@@ -7142,7 +7142,7 @@
             "changeinOpenInterest": 0,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE23250.00",
-            "impliedVolatility": 21.93,
+            "impliedVolatility": 59.63,
             "lastPrice": 1114,
             "openInterest": 12,
             "optionType": null,
@@ -7155,7 +7155,7 @@
             "totalSellQuantity": 4225,
             "totalTradedVolume": 27,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 8.450704225352112,
@@ -7165,7 +7165,7 @@
             "changeinOpenInterest": 7721,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23250.00",
-            "impliedVolatility": 21.61,
+            "impliedVolatility": 42.58,
             "lastPrice": 3.85,
             "openInterest": 21151,
             "optionType": null,
@@ -7178,7 +7178,7 @@
             "totalSellQuantity": 12350,
             "totalTradedVolume": 346096,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23250
         },
@@ -7205,7 +7205,7 @@
             "totalSellQuantity": 4550,
             "totalTradedVolume": 553,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 15.189873417721518,
@@ -7215,7 +7215,7 @@
             "changeinOpenInterest": -6023,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23300.00",
-            "impliedVolatility": 21.31,
+            "impliedVolatility": 41.95,
             "lastPrice": 4.55,
             "openInterest": 95367,
             "optionType": null,
@@ -7228,7 +7228,7 @@
             "totalSellQuantity": 39195,
             "totalTradedVolume": 870333,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23300
         },
@@ -7255,7 +7255,7 @@
             "totalSellQuantity": 5005,
             "totalTradedVolume": 75,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 8.51063829787234,
@@ -7265,7 +7265,7 @@
             "changeinOpenInterest": 9927,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23350.00",
-            "impliedVolatility": 20.82,
+            "impliedVolatility": 40.95,
             "lastPrice": 5.1,
             "openInterest": 33815,
             "optionType": null,
@@ -7278,7 +7278,7 @@
             "totalSellQuantity": 46670,
             "totalTradedVolume": 499574,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23350
         },
@@ -7305,7 +7305,7 @@
             "totalSellQuantity": 6695,
             "totalTradedVolume": 414,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -4.385964912280702,
@@ -7315,7 +7315,7 @@
             "changeinOpenInterest": 24427,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23400.00",
-            "impliedVolatility": 20.15,
+            "impliedVolatility": 39.61,
             "lastPrice": 5.45,
             "openInterest": 77083,
             "optionType": null,
@@ -7328,7 +7328,7 @@
             "totalSellQuantity": 85995,
             "totalTradedVolume": 783855,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23400
         },
@@ -7355,7 +7355,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 420,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -13.571428571428571,
@@ -7365,7 +7365,7 @@
             "changeinOpenInterest": 52340,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23450.00",
-            "impliedVolatility": 19.6,
+            "impliedVolatility": 38.51,
             "lastPrice": 6.05,
             "openInterest": 74212,
             "optionType": null,
@@ -7378,7 +7378,7 @@
             "totalSellQuantity": 54145,
             "totalTradedVolume": 458398,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23450
         },
@@ -7405,7 +7405,7 @@
             "totalSellQuantity": 7800,
             "totalTradedVolume": 4633,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -24.293785310734464,
@@ -7415,7 +7415,7 @@
             "changeinOpenInterest": 37537,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23500.00",
-            "impliedVolatility": 19.03,
+            "impliedVolatility": 37.35,
             "lastPrice": 6.7,
             "openInterest": 126921,
             "optionType": null,
@@ -7428,7 +7428,7 @@
             "totalSellQuantity": 159575,
             "totalTradedVolume": 950694,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23500
         },
@@ -7455,7 +7455,7 @@
             "totalSellQuantity": 5980,
             "totalTradedVolume": 624,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -31.48148148148148,
@@ -7465,7 +7465,7 @@
             "changeinOpenInterest": -1413,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23550.00",
-            "impliedVolatility": 18.44,
+            "impliedVolatility": 36.15,
             "lastPrice": 7.4,
             "openInterest": 30083,
             "optionType": null,
@@ -7478,7 +7478,7 @@
             "totalSellQuantity": 54145,
             "totalTradedVolume": 399571,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23550
         },
@@ -7505,7 +7505,7 @@
             "totalSellQuantity": 7020,
             "totalTradedVolume": 2644,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -40.28776978417266,
@@ -7515,7 +7515,7 @@
             "changeinOpenInterest": 34307,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23600.00",
-            "impliedVolatility": 17.88,
+            "impliedVolatility": 35.02,
             "lastPrice": 8.3,
             "openInterest": 87060,
             "optionType": null,
@@ -7528,7 +7528,7 @@
             "totalSellQuantity": 100815,
             "totalTradedVolume": 848267,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23600
         },
@@ -7542,7 +7542,7 @@
             "changeinOpenInterest": 138,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE23650.00",
-            "impliedVolatility": 0,
+            "impliedVolatility": 24.25,
             "lastPrice": 692,
             "openInterest": 484,
             "optionType": null,
@@ -7555,7 +7555,7 @@
             "totalSellQuantity": 7345,
             "totalTradedVolume": 1797,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -47.45762711864407,
@@ -7565,7 +7565,7 @@
             "changeinOpenInterest": 21972,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23650.00",
-            "impliedVolatility": 17.31,
+            "impliedVolatility": 33.85,
             "lastPrice": 9.3,
             "openInterest": 41942,
             "optionType": null,
@@ -7578,7 +7578,7 @@
             "totalSellQuantity": 62205,
             "totalTradedVolume": 468734,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23650
         },
@@ -7592,7 +7592,7 @@
             "changeinOpenInterest": -46,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE23700.00",
-            "impliedVolatility": 0,
+            "impliedVolatility": 23.97,
             "lastPrice": 642.6,
             "openInterest": 1962,
             "optionType": null,
@@ -7605,7 +7605,7 @@
             "totalSellQuantity": 7995,
             "totalTradedVolume": 8423,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -51.991150442477874,
@@ -7615,7 +7615,7 @@
             "changeinOpenInterest": 50779,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23700.00",
-            "impliedVolatility": 16.86,
+            "impliedVolatility": 32.93,
             "lastPrice": 10.85,
             "openInterest": 101590,
             "optionType": null,
@@ -7628,7 +7628,7 @@
             "totalSellQuantity": 219375,
             "totalTradedVolume": 1092338,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23700
         },
@@ -7655,7 +7655,7 @@
             "totalSellQuantity": 7020,
             "totalTradedVolume": 4262,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -54.32098765432099,
@@ -7665,7 +7665,7 @@
             "changeinOpenInterest": 22205,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23750.00",
-            "impliedVolatility": 16.48,
+            "impliedVolatility": 32.14,
             "lastPrice": 12.95,
             "openInterest": 44789,
             "optionType": null,
@@ -7678,7 +7678,7 @@
             "totalSellQuantity": 116675,
             "totalTradedVolume": 616137,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23750
         },
@@ -7692,7 +7692,7 @@
             "changeinOpenInterest": 159,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE23800.00",
-            "impliedVolatility": 0,
+            "impliedVolatility": 24.7,
             "lastPrice": 546,
             "openInterest": 5464,
             "optionType": null,
@@ -7705,7 +7705,7 @@
             "totalSellQuantity": 14820,
             "totalTradedVolume": 41276,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -59.21409214092141,
@@ -7715,7 +7715,7 @@
             "changeinOpenInterest": 58101,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23800.00",
-            "impliedVolatility": 15.99,
+            "impliedVolatility": 31.13,
             "lastPrice": 15.05,
             "openInterest": 130431,
             "optionType": null,
@@ -7728,7 +7728,7 @@
             "totalSellQuantity": 401115,
             "totalTradedVolume": 1554088,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23800
         },
@@ -7742,7 +7742,7 @@
             "changeinOpenInterest": -572,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE23850.00",
-            "impliedVolatility": 0,
+            "impliedVolatility": 24.74,
             "lastPrice": 498.55,
             "openInterest": 1502,
             "optionType": null,
@@ -7755,7 +7755,7 @@
             "totalSellQuantity": 7670,
             "totalTradedVolume": 17024,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -59.95647442872688,
@@ -7765,7 +7765,7 @@
             "changeinOpenInterest": 19016,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23850.00",
-            "impliedVolatility": 15.7,
+            "impliedVolatility": 30.5,
             "lastPrice": 18.4,
             "openInterest": 46273,
             "optionType": null,
@@ -7778,7 +7778,7 @@
             "totalSellQuantity": 183560,
             "totalTradedVolume": 818619,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23850
         },
@@ -7792,7 +7792,7 @@
             "changeinOpenInterest": -4067,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE23900.00",
-            "impliedVolatility": 0,
+            "impliedVolatility": 24.27,
             "lastPrice": 451.15,
             "openInterest": 5249,
             "optionType": null,
@@ -7805,7 +7805,7 @@
             "totalSellQuantity": 8840,
             "totalTradedVolume": 87791,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -62.30769230769231,
@@ -7815,7 +7815,7 @@
             "changeinOpenInterest": 22480,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23900.00",
-            "impliedVolatility": 15.31,
+            "impliedVolatility": 29.69,
             "lastPrice": 22.05,
             "openInterest": 79538,
             "optionType": null,
@@ -7828,7 +7828,7 @@
             "totalSellQuantity": 435370,
             "totalTradedVolume": 1388657,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23900
         },
@@ -7842,7 +7842,7 @@
             "changeinOpenInterest": -1685,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE23950.00",
-            "impliedVolatility": 0,
+            "impliedVolatility": 24.69,
             "lastPrice": 406.55,
             "openInterest": 3964,
             "optionType": null,
@@ -7855,7 +7855,7 @@
             "totalSellQuantity": 8385,
             "totalTradedVolume": 60084,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -62.90983606557377,
@@ -7865,7 +7865,7 @@
             "changeinOpenInterest": 27251,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE23950.00",
-            "impliedVolatility": 15.05,
+            "impliedVolatility": 29.11,
             "lastPrice": 27.15,
             "openInterest": 53972,
             "optionType": null,
@@ -7878,7 +7878,7 @@
             "totalSellQuantity": 299130,
             "totalTradedVolume": 912806,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 23950
         },
@@ -7892,7 +7892,7 @@
             "changeinOpenInterest": -27665,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24000.00",
-            "impliedVolatility": 7.72,
+            "impliedVolatility": 24.83,
             "lastPrice": 363.05,
             "openInterest": 31393,
             "optionType": null,
@@ -7905,7 +7905,7 @@
             "totalSellQuantity": 17160,
             "totalTradedVolume": 698911,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -63.427947598253276,
@@ -7915,7 +7915,7 @@
             "changeinOpenInterest": 94424,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24000.00",
-            "impliedVolatility": 14.82,
+            "impliedVolatility": 28.57,
             "lastPrice": 33.5,
             "openInterest": 193588,
             "optionType": null,
@@ -7928,7 +7928,7 @@
             "totalSellQuantity": 1657435,
             "totalTradedVolume": 2894237,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24000
         },
@@ -7942,7 +7942,7 @@
             "changeinOpenInterest": -21778,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24050.00",
-            "impliedVolatility": 9.49,
+            "impliedVolatility": 25.05,
             "lastPrice": 321.75,
             "openInterest": 12452,
             "optionType": null,
@@ -7955,7 +7955,7 @@
             "totalSellQuantity": 16575,
             "totalTradedVolume": 397828,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -64.17777777777778,
@@ -7965,7 +7965,7 @@
             "changeinOpenInterest": 22887,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24050.00",
-            "impliedVolatility": 14.45,
+            "impliedVolatility": 27.78,
             "lastPrice": 40.3,
             "openInterest": 73354,
             "optionType": null,
@@ -7978,7 +7978,7 @@
             "totalSellQuantity": 525265,
             "totalTradedVolume": 1300013,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24050
         },
@@ -7992,7 +7992,7 @@
             "changeinOpenInterest": -71812,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24100.00",
-            "impliedVolatility": 9.82,
+            "impliedVolatility": 24.43,
             "lastPrice": 279.6,
             "openInterest": 44705,
             "optionType": null,
@@ -8005,7 +8005,7 @@
             "totalSellQuantity": 29575,
             "totalTradedVolume": 1556612,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -63.28182487122884,
@@ -8015,7 +8015,7 @@
             "changeinOpenInterest": 65786,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24100.00",
-            "impliedVolatility": 14.28,
+            "impliedVolatility": 27.34,
             "lastPrice": 49.9,
             "openInterest": 157558,
             "optionType": null,
@@ -8028,7 +8028,7 @@
             "totalSellQuantity": 1949415,
             "totalTradedVolume": 3197697,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24100
         },
@@ -8042,7 +8042,7 @@
             "changeinOpenInterest": -48808,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24150.00",
-            "impliedVolatility": 11.39,
+            "impliedVolatility": 26.35,
             "lastPrice": 250,
             "openInterest": 31232,
             "optionType": null,
@@ -8055,7 +8055,7 @@
             "totalSellQuantity": 22100,
             "totalTradedVolume": 1770857,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -62.5,
@@ -8065,7 +8065,7 @@
             "changeinOpenInterest": 86764,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24150.00",
-            "impliedVolatility": 14.01,
+            "impliedVolatility": 26.7,
             "lastPrice": 60.6,
             "openInterest": 126181,
             "optionType": null,
@@ -8078,7 +8078,7 @@
             "totalSellQuantity": 938535,
             "totalTradedVolume": 2411778,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24150
         },
@@ -8092,7 +8092,7 @@
             "changeinOpenInterest": -63966,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24200.00",
-            "impliedVolatility": 10.42,
+            "impliedVolatility": 24,
             "lastPrice": 204.85,
             "openInterest": 77920,
             "optionType": null,
@@ -8105,7 +8105,7 @@
             "totalSellQuantity": 73255,
             "totalTradedVolume": 4716521,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -61.468367612600886,
@@ -8115,7 +8115,7 @@
             "changeinOpenInterest": 145232,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24200.00",
-            "impliedVolatility": 13.82,
+            "impliedVolatility": 26.2,
             "lastPrice": 74,
             "openInterest": 191699,
             "optionType": null,
@@ -8128,7 +8128,7 @@
             "totalSellQuantity": 2120495,
             "totalTradedVolume": 4929936,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24200
         },
@@ -8142,7 +8142,7 @@
             "changeinOpenInterest": -2657,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24250.00",
-            "impliedVolatility": 10.61,
+            "impliedVolatility": 23.87,
             "lastPrice": 171.95,
             "openInterest": 43830,
             "optionType": null,
@@ -8155,7 +8155,7 @@
             "totalSellQuantity": 50895,
             "totalTradedVolume": 4288204,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -59.4293357111012,
@@ -8165,7 +8165,7 @@
             "changeinOpenInterest": 80833,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24250.00",
-            "impliedVolatility": 13.76,
+            "impliedVolatility": 25.93,
             "lastPrice": 91,
             "openInterest": 88210,
             "optionType": null,
@@ -8178,7 +8178,7 @@
             "totalSellQuantity": 895375,
             "totalTradedVolume": 3083771,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24250
         },
@@ -8192,7 +8192,7 @@
             "changeinOpenInterest": 292,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24300.00",
-            "impliedVolatility": 10.72,
+            "impliedVolatility": 23.71,
             "lastPrice": 141.95,
             "openInterest": 94067,
             "optionType": null,
@@ -8205,7 +8205,7 @@
             "totalSellQuantity": 126880,
             "totalTradedVolume": 5668872,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -57.55368098159509,
@@ -8215,7 +8215,7 @@
             "changeinOpenInterest": 90434,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24300.00",
-            "impliedVolatility": 13.7,
+            "impliedVolatility": 25.64,
             "lastPrice": 110.7,
             "openInterest": 103865,
             "optionType": null,
@@ -8228,7 +8228,7 @@
             "totalSellQuantity": 932100,
             "totalTradedVolume": 3072474,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24300
         },
@@ -8242,7 +8242,7 @@
             "changeinOpenInterest": 13615,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24350.00",
-            "impliedVolatility": 10.8,
+            "impliedVolatility": 23.56,
             "lastPrice": 115.3,
             "openInterest": 51698,
             "optionType": null,
@@ -8255,7 +8255,7 @@
             "totalSellQuantity": 65325,
             "totalTradedVolume": 2923719,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -55.385392123864015,
@@ -8265,7 +8265,7 @@
             "changeinOpenInterest": 28887,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24350.00",
-            "impliedVolatility": 13.58,
+            "impliedVolatility": 25.18,
             "lastPrice": 132.55,
             "openInterest": 32708,
             "optionType": null,
@@ -8278,7 +8278,7 @@
             "totalSellQuantity": 249665,
             "totalTradedVolume": 845976,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24350
         },
@@ -8292,7 +8292,7 @@
             "changeinOpenInterest": 4587,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24400.00",
-            "impliedVolatility": 10.63,
+            "impliedVolatility": 22.97,
             "lastPrice": 89.7,
             "openInterest": 85083,
             "optionType": null,
@@ -8305,7 +8305,7 @@
             "totalSellQuantity": 151320,
             "totalTradedVolume": 3426358,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -53.56250918172469,
@@ -8315,7 +8315,7 @@
             "changeinOpenInterest": 15522,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24400.00",
-            "impliedVolatility": 13.54,
+            "impliedVolatility": 24.84,
             "lastPrice": 158.05,
             "openInterest": 24771,
             "optionType": null,
@@ -8328,7 +8328,7 @@
             "totalSellQuantity": 222625,
             "totalTradedVolume": 605194,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24400
         },
@@ -8342,7 +8342,7 @@
             "changeinOpenInterest": 4609,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24450.00",
-            "impliedVolatility": 10.61,
+            "impliedVolatility": 22.72,
             "lastPrice": 69.3,
             "openInterest": 38482,
             "optionType": null,
@@ -8355,7 +8355,7 @@
             "totalSellQuantity": 110890,
             "totalTradedVolume": 1808255,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -50.98193244304792,
@@ -8365,7 +8365,7 @@
             "changeinOpenInterest": 5169,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24450.00",
-            "impliedVolatility": 13.58,
+            "impliedVolatility": 24.59,
             "lastPrice": 187.2,
             "openInterest": 6626,
             "optionType": null,
@@ -8378,7 +8378,7 @@
             "totalSellQuantity": 37570,
             "totalTradedVolume": 133981,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24450
         },
@@ -8392,7 +8392,7 @@
             "changeinOpenInterest": -18813,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24500.00",
-            "impliedVolatility": 10.49,
+            "impliedVolatility": 22.31,
             "lastPrice": 51.5,
             "openInterest": 101847,
             "optionType": null,
@@ -8405,7 +8405,7 @@
             "totalSellQuantity": 287235,
             "totalTradedVolume": 3729193,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -49.67381174277726,
@@ -8415,7 +8415,7 @@
             "changeinOpenInterest": 9400,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24500.00",
-            "impliedVolatility": 13.28,
+            "impliedVolatility": 23.57,
             "lastPrice": 216,
             "openInterest": 22416,
             "optionType": null,
@@ -8428,7 +8428,7 @@
             "totalSellQuantity": 119665,
             "totalTradedVolume": 313309,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24500
         },
@@ -8442,7 +8442,7 @@
             "changeinOpenInterest": 4643,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24550.00",
-            "impliedVolatility": 10.35,
+            "impliedVolatility": 21.9,
             "lastPrice": 37,
             "openInterest": 40272,
             "optionType": null,
@@ -8455,7 +8455,7 @@
             "totalSellQuantity": 48815,
             "totalTradedVolume": 1585154,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -46.06079730724729,
@@ -8465,7 +8465,7 @@
             "changeinOpenInterest": 2124,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24550.00",
-            "impliedVolatility": 13.97,
+            "impliedVolatility": 24.52,
             "lastPrice": 256.4,
             "openInterest": 2882,
             "optionType": null,
@@ -8478,7 +8478,7 @@
             "totalSellQuantity": 19305,
             "totalTradedVolume": 29591,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24550
         },
@@ -8492,7 +8492,7 @@
             "changeinOpenInterest": 15037,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24600.00",
-            "impliedVolatility": 10.33,
+            "impliedVolatility": 21.73,
             "lastPrice": 26.4,
             "openInterest": 104890,
             "optionType": null,
@@ -8505,7 +8505,7 @@
             "totalSellQuantity": 186355,
             "totalTradedVolume": 2325867,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -43.68783473603673,
@@ -8515,7 +8515,7 @@
             "changeinOpenInterest": 1274,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24600.00",
-            "impliedVolatility": 14.18,
+            "impliedVolatility": 24.33,
             "lastPrice": 294.4,
             "openInterest": 4267,
             "optionType": null,
@@ -8528,7 +8528,7 @@
             "totalSellQuantity": 30680,
             "totalTradedVolume": 49077,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24600
         },
@@ -8542,7 +8542,7 @@
             "changeinOpenInterest": 10158,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24650.00",
-            "impliedVolatility": 10.29,
+            "impliedVolatility": 21.54,
             "lastPrice": 18.25,
             "openInterest": 50125,
             "optionType": null,
@@ -8555,7 +8555,7 @@
             "totalSellQuantity": 54860,
             "totalTradedVolume": 1340723,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -41.3104414856342,
@@ -8565,7 +8565,7 @@
             "changeinOpenInterest": 398,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24650.00",
-            "impliedVolatility": 14.47,
+            "impliedVolatility": 24.2,
             "lastPrice": 335,
             "openInterest": 823,
             "optionType": null,
@@ -8578,7 +8578,7 @@
             "totalSellQuantity": 7345,
             "totalTradedVolume": 9133,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24650
         },
@@ -8592,7 +8592,7 @@
             "changeinOpenInterest": 30388,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24700.00",
-            "impliedVolatility": 10.4,
+            "impliedVolatility": 21.69,
             "lastPrice": 12.95,
             "openInterest": 127646,
             "optionType": null,
@@ -8605,7 +8605,7 @@
             "totalSellQuantity": 130910,
             "totalTradedVolume": 2012664,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -39.00869005471516,
@@ -8615,7 +8615,7 @@
             "changeinOpenInterest": 735,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24700.00",
-            "impliedVolatility": 15.04,
+            "impliedVolatility": 24.58,
             "lastPrice": 379,
             "openInterest": 1737,
             "optionType": null,
@@ -8628,7 +8628,7 @@
             "totalSellQuantity": 24960,
             "totalTradedVolume": 16514,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24700
         },
@@ -8642,7 +8642,7 @@
             "changeinOpenInterest": 16803,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24750.00",
-            "impliedVolatility": 10.25,
+            "impliedVolatility": 21.32,
             "lastPrice": 8.15,
             "openInterest": 51516,
             "optionType": null,
@@ -8655,7 +8655,7 @@
             "totalSellQuantity": 64545,
             "totalTradedVolume": 1060668,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -36.342540609327045,
@@ -8665,7 +8665,7 @@
             "changeinOpenInterest": 39,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24750.00",
-            "impliedVolatility": 15.8,
+            "impliedVolatility": 25.36,
             "lastPrice": 425.2,
             "openInterest": 276,
             "optionType": null,
@@ -8678,7 +8678,7 @@
             "totalSellQuantity": 5850,
             "totalTradedVolume": 2254,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24750
         },
@@ -8692,7 +8692,7 @@
             "changeinOpenInterest": 20277,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24800.00",
-            "impliedVolatility": 10.33,
+            "impliedVolatility": 21.41,
             "lastPrice": 5.45,
             "openInterest": 122050,
             "optionType": null,
@@ -8705,7 +8705,7 @@
             "totalSellQuantity": 168090,
             "totalTradedVolume": 1750353,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -33.66982124079916,
@@ -8715,7 +8715,7 @@
             "changeinOpenInterest": 455,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24800.00",
-            "impliedVolatility": 16.74,
+            "impliedVolatility": 26.58,
             "lastPrice": 473.1,
             "openInterest": 1219,
             "optionType": null,
@@ -8728,7 +8728,7 @@
             "totalSellQuantity": 7475,
             "totalTradedVolume": 8838,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24800
         },
@@ -8742,7 +8742,7 @@
             "changeinOpenInterest": 1904,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24850.00",
-            "impliedVolatility": 10.51,
+            "impliedVolatility": 21.73,
             "lastPrice": 3.8,
             "openInterest": 28901,
             "optionType": null,
@@ -8755,7 +8755,7 @@
             "totalSellQuantity": 36855,
             "totalTradedVolume": 803590,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -31.914477543836778,
@@ -8765,7 +8765,7 @@
             "changeinOpenInterest": -16,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24850.00",
-            "impliedVolatility": 17.84,
+            "impliedVolatility": 28.26,
             "lastPrice": 522.25,
             "openInterest": 94,
             "optionType": null,
@@ -8778,7 +8778,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 906,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24850
         },
@@ -8792,7 +8792,7 @@
             "changeinOpenInterest": -6869,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24900.00",
-            "impliedVolatility": 10.89,
+            "impliedVolatility": 22.47,
             "lastPrice": 2.95,
             "openInterest": 51084,
             "optionType": null,
@@ -8805,7 +8805,7 @@
             "totalSellQuantity": 86515,
             "totalTradedVolume": 1706106,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -29.957780089334882,
@@ -8815,7 +8815,7 @@
             "changeinOpenInterest": 36,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24900.00",
-            "impliedVolatility": 19.07,
+            "impliedVolatility": 30.37,
             "lastPrice": 572.35,
             "openInterest": 330,
             "optionType": null,
@@ -8828,7 +8828,7 @@
             "totalSellQuantity": 8255,
             "totalTradedVolume": 1113,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24900
         },
@@ -8842,7 +8842,7 @@
             "changeinOpenInterest": 5843,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE24950.00",
-            "impliedVolatility": 11.34,
+            "impliedVolatility": 23.34,
             "lastPrice": 2.4,
             "openInterest": 22982,
             "optionType": null,
@@ -8855,7 +8855,7 @@
             "totalSellQuantity": 24830,
             "totalTradedVolume": 1329928,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -23.671786290563556,
@@ -8865,7 +8865,7 @@
             "changeinOpenInterest": 29,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE24950.00",
-            "impliedVolatility": 23.02,
+            "impliedVolatility": 39.85,
             "lastPrice": 638.6,
             "openInterest": 35,
             "optionType": null,
@@ -8878,7 +8878,7 @@
             "totalSellQuantity": 4875,
             "totalTradedVolume": 430,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 24950
         },
@@ -8892,7 +8892,7 @@
             "changeinOpenInterest": 20914,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25000.00",
-            "impliedVolatility": 11.89,
+            "impliedVolatility": 24.43,
             "lastPrice": 2.1,
             "openInterest": 157883,
             "optionType": null,
@@ -8905,7 +8905,7 @@
             "totalSellQuantity": 493350,
             "totalTradedVolume": 2076956,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -27.195235233047374,
@@ -8915,7 +8915,7 @@
             "changeinOpenInterest": -105,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE25000.00",
-            "impliedVolatility": 20.22,
+            "impliedVolatility": 30.24,
             "lastPrice": 666.2,
             "openInterest": 4604,
             "optionType": null,
@@ -8928,7 +8928,7 @@
             "totalSellQuantity": 11180,
             "totalTradedVolume": 3894,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25000
         },
@@ -8942,7 +8942,7 @@
             "changeinOpenInterest": 4739,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25050.00",
-            "impliedVolatility": 12.13,
+            "impliedVolatility": 24.88,
             "lastPrice": 1.55,
             "openInterest": 21134,
             "optionType": null,
@@ -8955,7 +8955,7 @@
             "totalSellQuantity": 32890,
             "totalTradedVolume": 315156,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -26.572099295739473,
@@ -8965,7 +8965,7 @@
             "changeinOpenInterest": -3,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE25050.00",
-            "impliedVolatility": 24.89,
+            "impliedVolatility": 42.82,
             "lastPrice": 735.05,
             "openInterest": 29,
             "optionType": null,
@@ -8978,7 +8978,7 @@
             "totalSellQuantity": 5005,
             "totalTradedVolume": 9,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25050
         },
@@ -8992,7 +8992,7 @@
             "changeinOpenInterest": 3372,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25100.00",
-            "impliedVolatility": 12.7,
+            "impliedVolatility": 26,
             "lastPrice": 1.4,
             "openInterest": 49557,
             "optionType": null,
@@ -9005,7 +9005,7 @@
             "totalSellQuantity": 91650,
             "totalTradedVolume": 575707,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -22.268969954957186,
@@ -9015,7 +9015,7 @@
             "changeinOpenInterest": 10,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE25100.00",
-            "impliedVolatility": 26.12,
+            "impliedVolatility": 45.04,
             "lastPrice": 785.2,
             "openInterest": 60,
             "optionType": null,
@@ -9028,7 +9028,7 @@
             "totalSellQuantity": 4875,
             "totalTradedVolume": 205,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25100
         },
@@ -9042,7 +9042,7 @@
             "changeinOpenInterest": -2471,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25150.00",
-            "impliedVolatility": 13.23,
+            "impliedVolatility": 27.06,
             "lastPrice": 1.25,
             "openInterest": 10076,
             "optionType": null,
@@ -9055,7 +9055,7 @@
             "totalSellQuantity": 30420,
             "totalTradedVolume": 153995,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -21.30307467057101,
@@ -9065,7 +9065,7 @@
             "changeinOpenInterest": 0,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE25150.00",
-            "impliedVolatility": 31.42,
+            "impliedVolatility": 57.05,
             "lastPrice": 860,
             "openInterest": 17,
             "optionType": null,
@@ -9078,7 +9078,7 @@
             "totalSellQuantity": 5005,
             "totalTradedVolume": 4,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25150
         },
@@ -9092,7 +9092,7 @@
             "changeinOpenInterest": 2140,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25200.00",
-            "impliedVolatility": 13.56,
+            "impliedVolatility": 27.7,
             "lastPrice": 1,
             "openInterest": 63551,
             "optionType": null,
@@ -9105,7 +9105,7 @@
             "totalSellQuantity": 432575,
             "totalTradedVolume": 465670,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -20.666368515205725,
@@ -9115,7 +9115,7 @@
             "changeinOpenInterest": 1,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE25200.00",
-            "impliedVolatility": 28.79,
+            "impliedVolatility": 50.09,
             "lastPrice": 886.95,
             "openInterest": 838,
             "optionType": null,
@@ -9128,7 +9128,7 @@
             "totalSellQuantity": 6240,
             "totalTradedVolume": 139,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25200
         },
@@ -9142,7 +9142,7 @@
             "changeinOpenInterest": 1690,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25250.00",
-            "impliedVolatility": 13.98,
+            "impliedVolatility": 28.53,
             "lastPrice": 0.85,
             "openInterest": 13292,
             "optionType": null,
@@ -9155,7 +9155,7 @@
             "totalSellQuantity": 88270,
             "totalTradedVolume": 125697,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -20.516641828117237,
@@ -9165,7 +9165,7 @@
             "changeinOpenInterest": -2,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE25250.00",
-            "impliedVolatility": 33.92,
+            "impliedVolatility": 61.71,
             "lastPrice": 960,
             "openInterest": 9,
             "optionType": null,
@@ -9178,7 +9178,7 @@
             "totalSellQuantity": 4355,
             "totalTradedVolume": 8,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25250
         },
@@ -9192,7 +9192,7 @@
             "changeinOpenInterest": -686,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25300.00",
-            "impliedVolatility": 14.45,
+            "impliedVolatility": 29.45,
             "lastPrice": 0.75,
             "openInterest": 56551,
             "optionType": null,
@@ -9205,7 +9205,7 @@
             "totalSellQuantity": 300170,
             "totalTradedVolume": 330998,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -11.842553191489362,
@@ -9215,7 +9215,7 @@
             "changeinOpenInterest": 5,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE25300.00",
-            "impliedVolatility": 39.15,
+            "impliedVolatility": 72.94,
             "lastPrice": 1035.85,
             "openInterest": 25,
             "optionType": null,
@@ -9228,7 +9228,7 @@
             "totalSellQuantity": 5200,
             "totalTradedVolume": 57,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25300
         },
@@ -9242,7 +9242,7 @@
             "changeinOpenInterest": 1061,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25350.00",
-            "impliedVolatility": 15,
+            "impliedVolatility": 30.54,
             "lastPrice": 0.7,
             "openInterest": 9578,
             "optionType": null,
@@ -9255,7 +9255,7 @@
             "totalSellQuantity": 46735,
             "totalTradedVolume": 50749,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -9278,7 +9278,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25350
         },
@@ -9292,7 +9292,7 @@
             "changeinOpenInterest": 3555,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25400.00",
-            "impliedVolatility": 15.52,
+            "impliedVolatility": 31.59,
             "lastPrice": 0.65,
             "openInterest": 49086,
             "optionType": null,
@@ -9305,7 +9305,7 @@
             "totalSellQuantity": 502905,
             "totalTradedVolume": 266297,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -8.220739052580173,
@@ -9315,7 +9315,7 @@
             "changeinOpenInterest": -1,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE25400.00",
-            "impliedVolatility": 40.41,
+            "impliedVolatility": 74.96,
             "lastPrice": 1127.6,
             "openInterest": 30,
             "optionType": null,
@@ -9328,7 +9328,7 @@
             "totalSellQuantity": 4550,
             "totalTradedVolume": 9,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25400
         },
@@ -9342,7 +9342,7 @@
             "changeinOpenInterest": 163,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25450.00",
-            "impliedVolatility": 16.17,
+            "impliedVolatility": 32.88,
             "lastPrice": 0.65,
             "openInterest": 8598,
             "optionType": null,
@@ -9355,7 +9355,7 @@
             "totalSellQuantity": 75465,
             "totalTradedVolume": 48038,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -9378,7 +9378,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25450
         },
@@ -9392,7 +9392,7 @@
             "changeinOpenInterest": -16038,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25500.00",
-            "impliedVolatility": 16.82,
+            "impliedVolatility": 34.17,
             "lastPrice": 0.65,
             "openInterest": 64105,
             "optionType": null,
@@ -9405,7 +9405,7 @@
             "totalSellQuantity": 642655,
             "totalTradedVolume": 380779,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -15.757272174317507,
@@ -9415,7 +9415,7 @@
             "changeinOpenInterest": -83,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE25500.00",
-            "impliedVolatility": 33.5,
+            "impliedVolatility": 56.69,
             "lastPrice": 1177.25,
             "openInterest": 1946,
             "optionType": null,
@@ -9428,7 +9428,7 @@
             "totalSellQuantity": 11570,
             "totalTradedVolume": 344,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25500
         },
@@ -9442,7 +9442,7 @@
             "changeinOpenInterest": -431,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25550.00",
-            "impliedVolatility": 17.31,
+            "impliedVolatility": 35.15,
             "lastPrice": 0.6,
             "openInterest": 5820,
             "optionType": null,
@@ -9455,7 +9455,7 @@
             "totalSellQuantity": 26780,
             "totalTradedVolume": 27894,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -9478,7 +9478,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25550
         },
@@ -9492,7 +9492,7 @@
             "changeinOpenInterest": -13059,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25600.00",
-            "impliedVolatility": 17.94,
+            "impliedVolatility": 36.41,
             "lastPrice": 0.6,
             "openInterest": 8877,
             "optionType": null,
@@ -9505,7 +9505,7 @@
             "totalSellQuantity": 79235,
             "totalTradedVolume": 78550,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -9528,7 +9528,7 @@
             "totalSellQuantity": 5265,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25600
         },
@@ -9542,7 +9542,7 @@
             "changeinOpenInterest": -1161,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25650.00",
-            "impliedVolatility": 18.4,
+            "impliedVolatility": 37.33,
             "lastPrice": 0.55,
             "openInterest": 1904,
             "optionType": null,
@@ -9555,7 +9555,7 @@
             "totalSellQuantity": 43095,
             "totalTradedVolume": 15446,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -9578,7 +9578,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25650
         },
@@ -9592,7 +9592,7 @@
             "changeinOpenInterest": -5891,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25700.00",
-            "impliedVolatility": 19.02,
+            "impliedVolatility": 38.57,
             "lastPrice": 0.55,
             "openInterest": 8785,
             "optionType": null,
@@ -9605,7 +9605,7 @@
             "totalSellQuantity": 57525,
             "totalTradedVolume": 48781,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -9628,7 +9628,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25700
         },
@@ -9642,7 +9642,7 @@
             "changeinOpenInterest": -1382,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25750.00",
-            "impliedVolatility": 19.45,
+            "impliedVolatility": 39.42,
             "lastPrice": 0.5,
             "openInterest": 1305,
             "optionType": null,
@@ -9655,7 +9655,7 @@
             "totalSellQuantity": 25220,
             "totalTradedVolume": 8606,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -9678,7 +9678,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25750
         },
@@ -9692,7 +9692,7 @@
             "changeinOpenInterest": -3794,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25800.00",
-            "impliedVolatility": 20.25,
+            "impliedVolatility": 41.02,
             "lastPrice": 0.55,
             "openInterest": 14893,
             "optionType": null,
@@ -9705,7 +9705,7 @@
             "totalSellQuantity": 166660,
             "totalTradedVolume": 43782,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -11.549295774647888,
@@ -9715,7 +9715,7 @@
             "changeinOpenInterest": -2,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE25800.00",
-            "impliedVolatility": 56.81,
+            "impliedVolatility": 107.98,
             "lastPrice": 1570,
             "openInterest": 20,
             "optionType": null,
@@ -9728,7 +9728,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 7,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25800
         },
@@ -9742,7 +9742,7 @@
             "changeinOpenInterest": -349,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25850.00",
-            "impliedVolatility": 20.67,
+            "impliedVolatility": 41.85,
             "lastPrice": 0.5,
             "openInterest": 1806,
             "optionType": null,
@@ -9755,7 +9755,7 @@
             "totalSellQuantity": 36595,
             "totalTradedVolume": 2025,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -9778,7 +9778,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25850
         },
@@ -9792,7 +9792,7 @@
             "changeinOpenInterest": -2165,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25900.00",
-            "impliedVolatility": 21.27,
+            "impliedVolatility": 43.05,
             "lastPrice": 0.5,
             "openInterest": 5542,
             "optionType": null,
@@ -9805,7 +9805,7 @@
             "totalSellQuantity": 111605,
             "totalTradedVolume": 11408,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -0.2987266145160882,
@@ -9828,7 +9828,7 @@
             "totalSellQuantity": 4160,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25900
         },
@@ -9842,7 +9842,7 @@
             "changeinOpenInterest": -228,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE25950.00",
-            "impliedVolatility": 22.08,
+            "impliedVolatility": 44.67,
             "lastPrice": 0.55,
             "openInterest": 716,
             "optionType": null,
@@ -9855,7 +9855,7 @@
             "totalSellQuantity": 25935,
             "totalTradedVolume": 1506,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -9878,7 +9878,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 25950
         },
@@ -9892,7 +9892,7 @@
             "changeinOpenInterest": -21355,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE26000.00",
-            "impliedVolatility": 22.47,
+            "impliedVolatility": 45.45,
             "lastPrice": 0.5,
             "openInterest": 23875,
             "optionType": null,
@@ -9905,7 +9905,7 @@
             "totalSellQuantity": 307255,
             "totalTradedVolume": 131095,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": -12.094240837696335,
@@ -9915,7 +9915,7 @@
             "changeinOpenInterest": -217,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026PE26000.00",
-            "impliedVolatility": 44.15,
+            "impliedVolatility": 76.11,
             "lastPrice": 1679,
             "openInterest": 936,
             "optionType": null,
@@ -9928,7 +9928,7 @@
             "totalSellQuantity": 4875,
             "totalTradedVolume": 369,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 26000
         },
@@ -9942,7 +9942,7 @@
             "changeinOpenInterest": -414,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE26050.00",
-            "impliedVolatility": 22.83,
+            "impliedVolatility": 46.16,
             "lastPrice": 0.45,
             "openInterest": 524,
             "optionType": null,
@@ -9955,7 +9955,7 @@
             "totalSellQuantity": 32240,
             "totalTradedVolume": 1806,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -9978,7 +9978,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 26050
         },
@@ -9992,7 +9992,7 @@
             "changeinOpenInterest": -197,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE26100.00",
-            "impliedVolatility": 23.16,
+            "impliedVolatility": 46.81,
             "lastPrice": 0.4,
             "openInterest": 3755,
             "optionType": null,
@@ -10005,7 +10005,7 @@
             "totalSellQuantity": 111475,
             "totalTradedVolume": 11113,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -10028,7 +10028,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 26100
         },
@@ -10042,7 +10042,7 @@
             "changeinOpenInterest": -222,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE26150.00",
-            "impliedVolatility": 24,
+            "impliedVolatility": 48.51,
             "lastPrice": 0.45,
             "openInterest": 1141,
             "optionType": null,
@@ -10055,7 +10055,7 @@
             "totalSellQuantity": 35360,
             "totalTradedVolume": 4623,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -10078,7 +10078,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 26150
         },
@@ -10092,7 +10092,7 @@
             "changeinOpenInterest": -1407,
             "expiryDate": "21-07-2026",
             "identifier": "OPTIDXNIFTY21-07-2026CE26200.00",
-            "impliedVolatility": 24.31,
+            "impliedVolatility": 49.13,
             "lastPrice": 0.4,
             "openInterest": 14605,
             "optionType": null,
@@ -10105,7 +10105,7 @@
             "totalSellQuantity": 483210,
             "totalTradedVolume": 31511,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "PE": {
             "PChange": 0,
@@ -10128,7 +10128,7 @@
             "totalSellQuantity": 4940,
             "totalTradedVolume": 0,
             "underlying": "NIFTY",
-            "underlyingValue": 24334.3
+            "underlyingValue": 24340.7
           },
           "strikePrice": 26200
         }

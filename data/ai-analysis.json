@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T20:01:24.179739+05:30",
+  "generatedAt": "2026-07-20T09:02:23.477655+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
@@ -9,17 +9,20 @@
   "model": "gemini-robotics-er-1.6-preview",
   "requestedModel": "gemini-robotics-er-1.6-preview",
   "attemptedModels": [
+    "gemini-robotics-er-1.6-preview",
     "gemini-robotics-er-1.6-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\nBased on the latest institutional trading data and the Nifty 50 constituent performance as of **July 17, 2026**, here is the analysis and outlook:\n\n### **1. Stock Analysis & Index Performance**\nThe Nifty 50 saw a robust rebound, driven by high-weightage banking and technology stocks.\n\n*   **Top Gainers (Fueling the Index):**\n    *   **TECHM:** +3.96% (LTP: 1570.1) - Led the charge in the IT sector.\n    *   **KOTAKBANK:** +3.59% (LTP: 390.7) - Strong momentum in private banking.\n    *   **JIOFIN:** +2.99% (LTP: 242.7)\n    *   **TCS:** +2.95% (LTP: 2266) - Significant index heavy-lifter.\n    *   **ICICIBANK:** +2.52% (LTP: 1454)\n    *   **RELIANCE:** +2.48% (LTP: 1328.8) - Major contributor to the index upside.\n\n*   **Top Losers (Dragging Slightly):**\n    *   **HINDALCO:** -1.49% (LTP: 945.05) - Notable decline in the metal space.\n    *   **DRREDDY:** -1.15% (LTP: 1210.3)\n    *   **WIPRO:** -1.04% (LTP: 175.9)\n    *   **SUNPHARMA:** -0.83% (LTP: 1934)\n\n**Brief Sentiment:** The market breadth was strongly positive. The index was predominantly supported by the recovery in **Heavyweights (Reliance & HDFC Bank)** and sustained interest in the **IT sector**.\n\n---\n\n### **2. FII and DII Flow (July 17, 2026)**\nInstitutional activity showed a mix of domestic support versus foreign caution:\n\n| Category | Net Value (\u20b9 Cr) | Action |\n| :--- | :--- | :--- |\n| **FII (Foreign Institutional Investors)** | **-\u20b9376.40** | **Net Sellers** |\n| **DII (Domestic Institutional Investors)** | **+\u20b91,017.90** | **Net Buyers** |\n\n**Insight:** Domestic support continues to be the bedrock of the current rally, effectively absorbing the small outflows from foreign funds.\n\n---\n\n### **3. Market Headlines & Tomorrow's Outlook**\nSince tomorrow, **Saturday, July 18, 2026**, is a market holiday, focus shifts to global cues and expectations for Monday:\n\n*   **Earnings Focus:** All eyes are on the weekend spillover of **Q1 Results**. Market participants will react to results from majors like Reliance Industries and key private banks.\n*   **Technical Levels:**\n    *   **Immediate Support:** 24,200.\n    *   **Resistance Zone:** analysts anticipate a move toward **24,600\u201324,800** if momentum from Friday persists.\n*   **Crude Oil impact:** Trading around **$85/barrel**; stability here is crucial for oil-marketing and energy stocks.\n*   **GIFT Nifty:** Early indicators point toward a stable opening for next week, tracking the 262-point gain seen in the Nifty 50 on Friday.\n\nNifty Flow Agent\n\nBased on the latest available market data as of **July 17, 2026**, here is the FII and DII flow analysis and the overall sentiment for the Indian market:\n\n### **FII & DII Flow Data (July 17, 2026)**\n| Category | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- |\n| **DII** | 17,180.08 | 16,162.19 | **+1,017.89** (Net Buyer) |\n| **FII/FPI** | 14,393.77 | 14,770.18 | **-376.41** (Net Seller) |\n\n---\n\n### **Market Sentiment & Financial Headlines**\n\n*   **Mixed Institutional Sentiment:** The market shows a divergence between domestic and foreign investors. While **Domestic Institutional Investors (DIIs)** remain bullish with a net inflow of over \u20b91,017 crore, **Foreign Institutional Investors (FIIs)** turned slight net sellers (\u20b9376.41 crore), suggesting a cautious approach or profit booking at higher levels.\n*   **Liquidity Support:** The domestic liquidity continues to provide a strong floor for the Nifty 50, effectively absorbing the pressure from foreign outflows.\n*   **Stock Analysis Overview:** \n    *   **Focus on Large-Caps:** Given the DII support, large-cap stability is likely maintained despite FII outflows.\n    *   **Volatility Watch:** Traders may expect minor volatility in high-FII-holding stocks (like major private banks and IT) if the FII selling trend persists into the next sessions.\n    *   **Resilience:** The positive net combined institutional flow (approx. +\u20b9641.48 Cr) indicates overall underlying resilience in the current market environment.\n\nAggregator Agent\n\n### **Executive Summary: Nifty 50 Analysis & Institutional Flow (July 17, 2026)**\n\nOn July 17, 2026, the Nifty 50 demonstrated significant resilience, rebounding 1.09% to close at 24,334.30. The executive takeaway from institutional activity is a clear divergence in sentiment: Foreign Institutional Investors (FIIs) acted as cautious net sellers (-\u20b9376.41 Cr), while Domestic Institutional Investors (DIIs) reinforced the rally as net buyers (+\u20b91,017.90 Cr). This robust domestic liquidity effectively anchored the market, absorbing foreign pressure to maintain a net positive combined institutional inflow of approximately \u20b9641 crore.\n\n**Key Performance Drivers:**\nThe surge was spearheaded by technology and banking heavyweights, specifically **TECHM (+3.96%)**, **Kotak Bank (+3.59%)**, and **Reliance (+2.48%)**. A surprising connection lies in the sectoral divergence: while the IT sector largely fueled the upside via TCS and TECHM, **Wipro (-1.04%)** appeared among the top losers, suggesting selective profit booking within leading industries. Metals and Pharma also faced headwinds, led by declines in **Hindalco** and **Dr. Reddy**.\n\n**Outlook:**\nWith markets closed on Saturday, July 18, attention shifts to **Q1 earnings** from major private banks and Reliance Industries. Technical analysis suggests immediate support at **24,200**, with momentum potentially testing resistance zones of **24,600\u201324,800** early next week. Given the stable GIFT Nifty signals and domestic support, the outlook remains cautiously optimistic.",
-  "executiveSummary": "### **Executive Summary: Nifty 50 Analysis & Institutional Flow (July 17, 2026)**\n\nOn July 17, 2026, the Nifty 50 demonstrated significant resilience, rebounding 1.09% to close at 24,334.30. The executive takeaway from institutional activity is a clear divergence in sentiment: Foreign Institutional Investors (FIIs) acted as cautious net sellers (-\u20b9376.41 Cr), while Domestic Institutional Investors (DIIs) reinforced the rally as net buyers (+\u20b91,017.90 Cr). This robust domestic liquidity effectively anchored the market, absorbing foreign pressure to maintain a net positive combined institutional inflow of approximately \u20b9641 crore.\n\n**Key Performance Drivers:**\nThe surge was spearheaded by technology and banking heavyweights, specifically **TECHM (+3.96%)**, **Kotak Bank (+3.59%)**, and **Reliance (+2.48%)**. A surprising connection lies in the sectoral divergence: while the IT sector largely fueled the upside via TCS and TECHM, **Wipro (-1.04%)** appeared among the top losers, suggesting selective profit booking within leading industries. Metals and Pharma also faced headwinds, led by declines in **Hindalco** and **Dr. Reddy**.\n\n**Outlook:**\nWith markets closed on Saturday, July 18, attention shifts to **Q1 earnings** from major private banks and Reliance Industries. Technical analysis suggests immediate support at **24,200**, with momentum potentially testing resistance zones of **24,600\u201324,800** early next week. Given the stable GIFT Nifty signals and domestic support, the outlook remains cautiously optimistic.",
-  "bias": "Bearish",
-  "keyLevels": [],
+  "summary": "Nifty Analysis Agent\n\n### **Nifty 50 Analysis: Market Brief**\n\nThe Indian market maintains its resilience with a strong bullish bias despite minor FII selling. The latest data suggests a domestic-driven rally, supported by heavyweights in the IT and Banking sectors.\n\n#### **1. Stock Performance Summary (Nifty 50)**\nThe index saw strong contributions from top-tier constituents, particularly in the tech and private banking space.\n\n*   **Top Gainers (Drivers):**\n    *   **TECHM:** Leading the pack with a **+3.96%** surge, closing at \u20b91570.1.\n    *   **KOTAKBANK:** Strong upside of **+3.59%**, buoyed by upcoming dividend interests.\n    *   **TCS & RELIANCE:** Large-cap anchors contributing significantly with gains of **+2.95%** and **+2.48%** respectively.\n    *   **JIOFIN:** Gained **+2.99%**, indicating renewed retail and institutional interest.\n*   **Major Decliners (Drag):**\n    *   **HINDALCO:** Faced profit booking, dropping **-1.49%**.\n    *   **DRREDDY:** Slipped **-1.15%** ahead of its dividend payout.\n    *   **WIPRO:** Saw a decline of **-1.04%** despite general positive sentiment in the IT index.\n\n#### **2. FII & DII Flow Data (Provisional)**\nThe liquidity dynamics remain anchored by domestic confidence:\n| Category | Market Type | Net Value (\u20b9 Cr) | Sentiment |\n| :--- | :--- | :--- | :--- |\n| **FII (Foreign)** | Cash Market | **- \u20b9376.41** | **Selective Selling** |\n| **DII (Domestic)** | Cash Market | **+ \u20b91,017.89** | **Strong Bullish** |\n| **FII (Derivatives)** | F&O Positions | **+ \u20b95,392** | **Short Covering** |\n\n*   **Insight:** While FIIs remain net sellers in the cash market, their massive short-covering in derivatives suggests they are no longer betting on an immediate downfall.\n\n#### **3. Financial Headlines & Outlook for Tomorrow**\n*   **Bullish Run Continues:** Nifty 50 successfully closed at **24,334.30**, up by 1.1%. However, the **RSI at 76.9** signals that the market is in an **overbought zone**, which may lead to sideways movement or sudden profit-booking at resistance levels.\n*   **Key Levels to Watch:**\n    *   **Support:** Immediate floor at **24,180 \u2013 24,200**.\n    *   **Resistance:** Immediate ceiling at **24,360 \u2013 24,400**. A breakout above 24,400 could open doors to **24,600**.\n*   **Market Triggers:**\n    *   **Macro Factors:** Volatility may arise from higher **Crude Oil prices ($78-79/bbl)** and geopolitical developments.\n    *   **Strategic Stance:** Analysts suggest a \"Buy on Dips\" strategy near support zones rather than initiating fresh longs at current peaks.\n\n**Summary:** The internal breadth of the index remains healthy with 13+ stocks gaining over 1%, though the high RSI warrants a cautious entry at high price points for tomorrow's session.\n\nNifty Flow Agent\n\nThe latest FII and DII flow data for the Indian market (Nifty 50) as of **July 17, 2026**, is as follows:\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 17-Jul-2026 | 17,180.08 | 16,162.19 | **+1,017.89** |\n| **FII/FPI** | 17-Jul-2026 | 14,393.77 | 14,770.18 | **-376.41** |\n\n### **Market Summary & Headlines:**\n*   **Mixed Sentiment:** The market saw a divergence in institutional behavior. While Domestic Institutional Investors (DIIs) remained bullish with a net inflow of over \u20b91,000 crore, Foreign Institutional Investors (FIIs) turned marginal net sellers.\n*   **DII Support:** Strong domestic liquidity continues to provide a cushion to the Indian indices, offsetting the mild selling pressure from global peers.\n*   **FII Caution:** FIIs showed a cautious stance with a net outflow of \u20b9376.41 crore, likely reacting to global macroeconomic cues or localized profit booking.\n*   **Net Institutional Impact:** On a combined basis, institutional investors were net buyers of **\u20b9641.48 crore**, maintaining a generally positive bias in the market liquidity.\n\nAggregator Agent\n\n### **Executive Summary: Nifty 50 Market Analysis & Institutional Flow**\n\nThe Indian market demonstrated remarkable resilience on July 17, 2026, with the **Nifty 50 closing at 24,334.30 (+1.1%)**. This domestic-driven rally was characterized by a healthy index breadth, where over 13 constituents gained more than 1%, led by **TECHM (+3.96%)** and **KOTAKBANK (+3.59%)**.\n\n**Institutional Liquidity & Connections**\nA key theme is the divergence between cash and derivative markets. While **DIIs remained the primary anchor** with a net inflow of **\u20b91,017.89 crore**, FIIs were marginal net sellers in the cash market (-\u20b9376.41 crore). However, a surprising technical pivot occurred in derivatives, where **FIIs recorded \u20b95,392 crore in short covering**. This suggests that while foreign investors are cautious in cash, they have ceased betting against the immediate uptrend.\n\n**Outlook & Strategy**\nDespite the bullish momentum, the **RSI has reached 76.9**, placing the index in an \"overbought\" zone. \n*   **Support:** 24,180 \u2013 24,200\n*   **Resistance:** 24,360 \u2013 24,400\n*   **Market Triggers:** Geopolitical tensions and Crude Oil prices ($78-79/bbl) remain secondary risks.\n\n**Key Takeaway:** The market is structurally strong but technically stretched. Analysts recommend a **\"Buy on Dips\"** strategy near support levels rather than chasing momentum at current peaks, anticipating brief consolidation before a potential move toward 24,600.",
+  "executiveSummary": "### **Executive Summary: Nifty 50 Market Analysis & Institutional Flow**\n\nThe Indian market demonstrated remarkable resilience on July 17, 2026, with the **Nifty 50 closing at 24,334.30 (+1.1%)**. This domestic-driven rally was characterized by a healthy index breadth, where over 13 constituents gained more than 1%, led by **TECHM (+3.96%)** and **KOTAKBANK (+3.59%)**.\n\n**Institutional Liquidity & Connections**\nA key theme is the divergence between cash and derivative markets. While **DIIs remained the primary anchor** with a net inflow of **\u20b91,017.89 crore**, FIIs were marginal net sellers in the cash market (-\u20b9376.41 crore). However, a surprising technical pivot occurred in derivatives, where **FIIs recorded \u20b95,392 crore in short covering**. This suggests that while foreign investors are cautious in cash, they have ceased betting against the immediate uptrend.\n\n**Outlook & Strategy**\nDespite the bullish momentum, the **RSI has reached 76.9**, placing the index in an \"overbought\" zone. \n*   **Support:** 24,180 \u2013 24,200\n*   **Resistance:** 24,360 \u2013 24,400\n*   **Market Triggers:** Geopolitical tensions and Crude Oil prices ($78-79/bbl) remain secondary risks.\n\n**Key Takeaway:** The market is structurally strong but technically stretched. Analysts recommend a **\"Buy on Dips\"** strategy near support levels rather than chasing momentum at current peaks, anticipating brief consolidation before a potential move toward 24,600.",
+  "bias": "Bullish",
+  "keyLevels": [
+    "Close 24,334.30"
+  ],
   "watchlist": [],
   "headlines": [
-    "### **3. Market Headlines & Tomorrow's Outlook**",
-    "### **Market Sentiment & Financial Headlines**"
+    "#### **3. Financial Headlines & Outlook for Tomorrow**",
+    "### **Market Summary & Headlines:**"
   ],
   "marketSignals": {
     "positioningLabel": "Put-side hedge build",
@@ -30,89 +33,69 @@
     "fiiNetCrores": -376.41,
     "diiNetCrores": 1017.89,
     "tradedValueCrores": 0.0,
-    "spot": 24334.3
+    "spot": 24340.7
   },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
-    "bias": "Bullish",
-    "note": "Moderately positive news tone",
-    "analysis": "Recent market news shows a moderately positive news tone, with most headlines leaning supportive. The most supportive headline: \"US Consumer Sentiment Climbs on Cheaper Gas, Tops Forecasts\". The most cautious headline: \"US Manufacturing Output Stalls, Held Back by Durable Goods\".",
+    "bias": "Neutral",
+    "note": "Mixed, broadly neutral news tone",
+    "analysis": "Recent market news shows a mixed, broadly neutral news tone, with supportive and cautious headlines roughly balanced. The most supportive headline: \"Lamine Yamal Net Worth: Valuation to skyrocket after World Cup win as teenager shines in Spain vs Argentina final\". The most cautious headline: \"\u2018Shame on Argentina\u2019: Social media erupts as chaos follows World Cup final; embarrassing history haunts Messi\u2019s team\".",
     "headlines": [
       {
-        "title": "India rejects ex-Japan minister's 'delay' charge on Mumbai-Ahmedabad bullet train: \u2018Considerable variance with facts\u2019",
+        "title": "Tropical storm watch issued for Florida Panhandle as Fausto strengthens over the Gulf of Mexico",
         "label": "negative",
-        "sentiment": "Slightly negative"
+        "sentiment": "Moderately negative"
       },
       {
-        "title": "Datanomics: Social media platforms step up action against suicide content",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Shakira Tax Win Set to Face Supreme Court Appeal in Spain",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Gujarat tops NITI Aayog's first investment friendliness index; Maharashtra, Tamil Nadu follow",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "Pakistan, Kuwait hold defence talks as Gulf seeks stronger security amid US-Iran crisis \u2014 Report",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Fed\u2019s Hammack Sees No Conflict in Mandate, Inflation Her Worry",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Heavyweight stocks power Sensex, Nifty to biggest gains in over a month",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "Om Infra successfully bids for Rs 482-cr irrigation project in Rajasthan",
+        "title": "Hexaware Tech expands Eravi Gopan's role to oversee Hyperscaler partnerships",
         "label": "positive",
         "sentiment": "Moderately positive"
       },
       {
-        "title": "ARSS Infrastructure Projects bags work order of Rs 52.65 cr",
+        "title": "Sonam Wangchuk's conditions to end hunger strike omit Dharmendra Pradhan; CJP clarifies stance",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "US Consumer Sentiment Climbs on Cheaper Gas, Tops Forecasts",
+        "title": "India FX traders eye oil prices, RBI defence; bonds bulls await index call",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Stocks to Watch today: RIL, Vi, HDFC Bank, ICICI Bank, Axis Bank, JSW Steel",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Looking to buy? These 3 stocks deserve a spot in your portfolio; check why",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Lamine Yamal Net Worth: Valuation to skyrocket after World Cup win as teenager shines in Spain vs Argentina final",
         "label": "positive",
-        "sentiment": "Strongly positive"
+        "sentiment": "Moderately positive"
       },
       {
-        "title": "Louis Vuitton to deliver FIFA World Cup 2026 trophy in bespoke trunk for New York-New Jersey final",
-        "label": "neutral",
-        "sentiment": "Neutral"
+        "title": "Stock Market LIVE: GIFT Nifty signals lower open; Kospi falls 3%; Brent tops $90 on US-Iran tension",
+        "label": "negative",
+        "sentiment": "Moderately negative"
       },
       {
-        "title": "Prince Harry and Prince William share rare common ground after England's FIFA World Cup exit",
-        "label": "neutral",
-        "sentiment": "Neutral"
+        "title": "Delhi wakes up to fresh wet spell as city braces for relief from hot-humid weather, IMD predicts rains till 23 July",
+        "label": "positive",
+        "sentiment": "Moderately positive"
       },
       {
-        "title": "US Manufacturing Output Stalls, Held Back by Durable Goods",
+        "title": "\u2018Shame on Argentina\u2019: Social media erupts as chaos follows World Cup final; embarrassing history haunts Messi\u2019s team",
         "label": "negative",
         "sentiment": "Strongly negative"
       },
       {
-        "title": "JSW Steel's PAT more than doubles to Rs 4,696 crore in Q1 FY27",
+        "title": "Shakira\u2019s \u20ac55 Million Spain Tax Fight Shines Light on Agency",
         "label": "positive",
         "sentiment": "Moderately positive"
-      },
-      {
-        "title": "US Housing Starts Surge on Rebound in Multifamily Construction",
-        "label": "positive",
-        "sentiment": "Strongly positive"
       }
     ]
   }
