@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T09:01:40.682380+05:30",
+  "generatedAt": "2026-07-23T15:02:52.584213+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
@@ -12,108 +12,111 @@
     "gemini-robotics-er-1.6-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\nBased on the latest trading data and market developments for **July 22, 2026**, here is a brief analysis of the Indian market:\n\n### **1. Nifty 50 Constituent Analysis**\nThe Nifty 50 witnessed a session of mixed performance with a distinct shift toward specific sectors.\n*   **Top Gainers (Growth Drivers):**\n    *   **BAJAJ-AUTO:** Led the index with a significant gain of **+5.92%**, closing at \u20b911,019.\n    *   **NESTLEIND:** Followed with a **+3.31%** increase to \u20b91,500, buoyed by robust Q1 profit figures (\u20b9959 crore).\n    *   **TATACONSUM:** Showed resilience with a **+1.43%** gain.\n*   **Major Decliners (Laggards):**\n    *   **INDIGO:** Saw the steepest decline at **-3.58%**, likely impacted by rising crude oil prices.\n    *   **DRREDDY & INFY:** Faced pressure, declining by **-2.16%** and **-2.00%** respectively, as the Pharma and IT sectors dealt with external headwinds (US tariffs and global macro shifts).\n    *   **Financials:** Major heavyweights like **AXISBANK (-1.96%)** and **SBIN (-1.86%)** contributed to the index's weakness.\n\n### **2. Institutional Flow (FII & DII)**\nInstitutional activity turned cautious today, marking a sharp reversal from recent bullish trends:\n*   **FIIs (Foreign Institutional Investors):** Net **Sellers** of ~\u20b9819.20 crore.\n*   **DIIs (Domestic Institutional Investors):** Net **Sellers** of ~\u20b9418.26 crore.\n*   **Combined Net Flow:** A totalinstitutional outflow of **\u20b91,237.46 crore**, signaling temporary caution as Nifty dipped below the crucial 24,000 mark.\n\n### **3. Smart Market Brief & Tomorrow\u2019s Headlines**\nThe sentiment for the upcoming session on **Thursday, July 23, 2026**, remains watchful:\n*   **Key Resistance & Support:** Nifty closed at **23,996.25**. Resistance is expected near **24,166**, while immediate support lies at **23,900**.\n*   **Global Macro Triggers:**\n    *   **Oil Prices:** Brent crude surge ($92\u2013$95/bbl) remains the primary concern for the Rupee and inflation.\n    *   **Geopolitical Outlook:** Ongoing Iran-US tensions are keep investors on their toes.\n    *   **Data Watch:** Markets will track **US Jobless Claims** and the **ECB interest rate decision** tomorrow afternoon.\n*   **Sector Outlook:** While Pharma might face continued \"tariff shock\" pressure, **FMCG** (led by Nestl\u00e9's earnings) and defensive stocks may offer a refuge if volatility persists.\n\n**Strategic Note:** Expect high intraday volatility. Investors may pivot towards value-based defensive names until institutional selling stabilizes.\n\nNifty Flow Agent\n\nThe latest FII and DII flow data for the Indian market as of **July 22, 2026**, indicates a shift toward net selling by both institutional categories:\n\n### **FII & DII Market Flow (July 22, 2026)**\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **FII/FPI** | 22-Jul-2026 | 12,889.82 | 13,709.02 | **-819.20** |\n| **DII** | 22-Jul-2026 | 13,665.69 | 14,083.95 | **-418.26** |\n| **Total** | | **26,555.51** | **27,792.97** | **-1,237.46** |\n\n---\n\n### **Market Analysis & Financial Headlines**\n\n*   **Shift in Sentiment:** Unlike the previous session where combined net buying exceeded \u20b95,400 crore, this session saw a **combined net outflow of \u20b91,237.46 crore**. This suggests a period of profit booking or cautious positioning by major players.\n*   **FII Selling Pressure:** Foreign Institutional Investors were the primary net sellers (\u20b9819.20 Cr), potentially reacting to global cues or sector-specific adjustments.\n*   **DII Activity:** Domestic Institutional Investors also turned net sellers (\u20b9418.26 Cr), though to a lesser extent, indicating they did not absorb the foreign sell-off as aggressively as in prior sessions.\n*   **Headlines:**\n    *   **Net Outflow:** Both FIIs and DIIs turned net sellers in the latest session, pulling back from previous bullish trends.\n    *   **Profit Booking:** Market analysts note a cooling-off period after strong growth, as liquidity support from institutional buyers temporarily dipped.\n    *   **Focus Areas:** Investors are likely monitoring quarterly earnings and upcoming policy signals that may influence the next wave of institutional entries.\n\nAggregator Agent\n\n### **Executive Summary: Nifty Market Analysis & Institutional Flow (July 22, 2026)**\n\nThe trading session on **July 22, 2026**, marked a sharp pivot toward caution as the Indian market broke below the psychologically significant 24,000 level to close at **23,996.25**. The most striking development is the synchronized withdrawal of institutional support: both **FIIs and DIIs turned net sellers**, resulting in a combined outflow of **\u20b91,237.46 crore**. This signals a total U-turn from recent sessions, which had seen net inflows exceeding \u20b95,400 crore.\n\nDespite the broader bearish sentiment, the market exhibited a clear sectoral divergence. While macro headwinds\u2014specifically rising Brent crude ($92\u2013$95/bbl) and US \"tariff shocks\"\u2014hammered sectors like Aviation (**INDIGO -3.58%**) and Pharma (**DRREDDY -2.16%**), defensive names provided a buffer. **BAJAJ-AUTO (+5.92%)** and **NESTLEIND (+3.31%)** emerged as surprise drivers, with the latter buoyed by robust Q1 profit growth.\n\n**Key Takeaways:**\n*   **Institutional Reversal:** Profit booking by major players suggests a cooling-off period and reduced liquidity support.\n*   **Support & Resistance:** Volatility is expected to persist, with immediate support at **23,900** and key resistance at **24,166**.\n*   **Macro Triggers:** Investors are recalibrating portfolios based on geopolitical tensions in the Gulf and upcoming global cues, including the ECB interest rate decision.\n\n**Strategic Outlook:** Anticipate high intraday volatility. Investors should favor value-based defensive plays in FMCG until institutional flows stabilize.",
-  "executiveSummary": "### **Executive Summary: Nifty Market Analysis & Institutional Flow (July 22, 2026)**\n\nThe trading session on **July 22, 2026**, marked a sharp pivot toward caution as the Indian market broke below the psychologically significant 24,000 level to close at **23,996.25**. The most striking development is the synchronized withdrawal of institutional support: both **FIIs and DIIs turned net sellers**, resulting in a combined outflow of **\u20b91,237.46 crore**. This signals a total U-turn from recent sessions, which had seen net inflows exceeding \u20b95,400 crore.\n\nDespite the broader bearish sentiment, the market exhibited a clear sectoral divergence. While macro headwinds\u2014specifically rising Brent crude ($92\u2013$95/bbl) and US \"tariff shocks\"\u2014hammered sectors like Aviation (**INDIGO -3.58%**) and Pharma (**DRREDDY -2.16%**), defensive names provided a buffer. **BAJAJ-AUTO (+5.92%)** and **NESTLEIND (+3.31%)** emerged as surprise drivers, with the latter buoyed by robust Q1 profit growth.\n\n**Key Takeaways:**\n*   **Institutional Reversal:** Profit booking by major players suggests a cooling-off period and reduced liquidity support.\n*   **Support & Resistance:** Volatility is expected to persist, with immediate support at **23,900** and key resistance at **24,166**.\n*   **Macro Triggers:** Investors are recalibrating portfolios based on geopolitical tensions in the Gulf and upcoming global cues, including the ECB interest rate decision.\n\n**Strategic Outlook:** Anticipate high intraday volatility. Investors should favor value-based defensive plays in FMCG until institutional flows stabilize.",
+  "summary": "Nifty Analysis Agent\n\n### **Market Analysis: Nifty 50 Smart Brief (July 23, 2026)**\n\nThe Indian market is currently navigating a **bearish and cautious environment**, characterized by institutional outflows and geopolitical headwinds. The Nifty 50 benchmark has slipped below the crucial 24,000 level.\n\n---\n\n### **1. Index Performance & Stock Analysis**\nThe index breadth shows a tilt towards sellers, with specific volatility in the Adani Group and Pharma sectors.\n\n| **Category** | **Stock** | **% Change** | **Smart Insight** |\n| :--- | :--- | :--- | :--- |\n| **Top Gainer** | **BAJAJ-AUTO** | **+2.55%** | Leading the index higher, likely supported by its recent **Buy Back** news (Ex-Date June 24). |\n| **Top Gainer** | **SBILIFE** | **+1.91%** | Strong resilience despite broader market selling; remains a key pick in the insurance space. |\n| **Steady Performer** | **TCS** | **+1.50%** | IT majors are seeing some traction as defensive plays amid currency volatility. |\n| **Top Loser** | **ADANIENT** | **-4.19%** | Significant correction today, dragging down index sentiment alongside Adani Ports (-2.56%). |\n| **Sector Pressure** | **NESTLEIND** | **-3.10%** | FMCG heavyweight seeing profit booking; potentially shifting investor focus to high-beta stocks in lower ranges. |\n| **Sector Pressure** | **DRREDDY** | **-1.59%** | Hit by news of **US Tariffs on generics**, common across the Nifty Pharma index today. |\n\n---\n\n### **2. FII & DII Cash Flow (July 23, 2026)**\nThe sentiment has turned net-negative as both domestic and foreign institutions pulled money from the cash market.\n\n*   **FII (Foreign Institutional Investors):** Net **Sellers** of approx. **\u20b9819.20 Cr**.\n*   **DII (Domestic Institutional Investors):** Net **Sellers** of approx. **\u20b9418.26 Cr**.\n*   **Net Inflow:** Combined outflow of over **\u20b91,237 Cr**, highlighting a decrease in liquidity support and high selling pressure at resistance levels.\n\n---\n\n### **3. Key Financial Headlines & Outlook**\n*   **Geopolitical Oil Surge:** Brent Crude is testing **$96/barrel** due to US-Iran tensions. This is a negative catalyst for the Indian Rupee, which is trading near a record low of **\u20b996.57**.\n*   **24,000 Level Breached:** Technical weakness has been confirmed as Nifty targets support near **23,850 \u2013 23,900**.\n*   **Pharma Tariff Shock:** US plans for a 100% tariff on generic generic drugs in 2028 is creating mid-term uncertainty for export-heavy players like **Cipla** and **Sun Pharma**.\n*   **Tomorrow's Watch:** Expect volatility to remain high. Investors are advised to look at **defensives** (HUL, Nestle) and **Auto names** (Bajaj Auto) that show relative strength against the index.\n\n**Summary:** High oil prices and geopolitical risks are currently overpowering domestic growth stories, leading to a \"risk-off\" mood among institutional players.\n\nNifty Flow Agent\n\nThe latest FII and DII flow data for the Indian market (Nifty 50) as of **July 22, 2026**, shows that both institutional categories were net sellers during the session.\n\n### **Institutional Flow Data (July 22, 2026)**\n\n| Category | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- |\n| **DII** | 13,665.69 | 14,083.95 | **-418.26** |\n| **FII/FPI** | 12,889.82 | 13,709.02 | **-819.20** |\n| **Total** | **26,555.51** | **27,792.97** | **-1,237.46** |\n\n---\n\n### **Market Analysis & Financial Headlines**\n\n*   **Market Sentiment:** The combined net outflow of approximately **\u20b91,237.46 crore** indicates a cautious or bearish sentiment for the session. Unlike the previous context where both were net buyers, this session saw selling pressure from both foreign and domestic fronts.\n*   **Net Outflow:** Foreign Institutional Investors (FII) were more aggressive sellers compared to Domestic Institutional Investors (DII), with a net sell-off of over \u20b9800 crore.\n*   **Headlines Summary:**\n    *   **\"Twin Selling\" Pressure:** Markets faced headwinds as both FIIs and DIIs turned net sellers on July 22nd.\n    *   **Institutional Pullback:** Liquidations in the large-cap space (Nifty 50) likely contributed to institutional net selling values.\n    *   **Caution Prevails:** Investors remain watchful as total institutional outflow suggests a momentary pause in the bullish momentum seen in previous weeks.\n\nAggregator Agent\n\n### **Executive Summary: Nifty 50 Market Analysis & Institutional Flow (July 23, 2026)**\n\nAs of July 23, 2026, the Indian market has entered a pronounced **\"risk-off\" environment**, characterized by the Nifty 50 breaching the psychological **24,000 support level**. A primary driver of this bearish sentiment is the emergence of **\"Twin Selling\" pressure**: for the current session, both Foreign Institutional Investors (FIIs) and Domestic Institutional Investors (DIIs) were simultaneous net sellers, resulting in a combined institutional outflow of approximately **\u20b91,237.46 crore**.\n\n**Key Market Connections & Drivers:**\n*   **Geopolitical and Macro Headwinds:** Escalating US-Iran tensions have pushed Brent Crude toward **$96/barrel**, simultaneously dragging the Indian Rupee to a near-record low of **\u20b996.57**.\n*   **Sector Specific Impacts:** The pharma sector faced a targeted sell-off following news of a proposed 100% US tariff on generic drugs for 2028, impacting export-heavy players like Dr. Reddy\u2019s and Cipla. \n*   **Stock Volatility:** Despite the correction in heavyweights like Adani Enterprises (-4.19%) and Nestle India (-3.10%), defensive rotation is evident in top gainers such as **Bajaj Auto (+2.55%)** and **TCS (+1.50%)**.\n\n**Bottom Line:** The market outlook remains cautious as institutional liquidity support retreats. With confirmed technical weakness, the focus is shifting toward defensives and sectors with relative strength as global volatility temporarily overpowers domestic growth narratives.",
+  "executiveSummary": "### **Executive Summary: Nifty 50 Market Analysis & Institutional Flow (July 23, 2026)**\n\nAs of July 23, 2026, the Indian market has entered a pronounced **\"risk-off\" environment**, characterized by the Nifty 50 breaching the psychological **24,000 support level**. A primary driver of this bearish sentiment is the emergence of **\"Twin Selling\" pressure**: for the current session, both Foreign Institutional Investors (FIIs) and Domestic Institutional Investors (DIIs) were simultaneous net sellers, resulting in a combined institutional outflow of approximately **\u20b91,237.46 crore**.\n\n**Key Market Connections & Drivers:**\n*   **Geopolitical and Macro Headwinds:** Escalating US-Iran tensions have pushed Brent Crude toward **$96/barrel**, simultaneously dragging the Indian Rupee to a near-record low of **\u20b996.57**.\n*   **Sector Specific Impacts:** The pharma sector faced a targeted sell-off following news of a proposed 100% US tariff on generic drugs for 2028, impacting export-heavy players like Dr. Reddy\u2019s and Cipla. \n*   **Stock Volatility:** Despite the correction in heavyweights like Adani Enterprises (-4.19%) and Nestle India (-3.10%), defensive rotation is evident in top gainers such as **Bajaj Auto (+2.55%)** and **TCS (+1.50%)**.\n\n**Bottom Line:** The market outlook remains cautious as institutional liquidity support retreats. With confirmed technical weakness, the focus is shifting toward defensives and sectors with relative strength as global volatility temporarily overpowers domestic growth narratives.",
   "bias": "Bearish",
   "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "### **3. Smart Market Brief & Tomorrow\u2019s Headlines**",
+    "| **Top Gainer** | **BAJAJ-AUTO** | **+2.55%** | Leading the index higher, likely supported by its recent **Buy Back** news (Ex-Date June 24). |",
+    "| **Sector Pressure** | **DRREDDY** | **-1.59%** | Hit by news of **US Tariffs on generics**, common across the Nifty Pharma index today. |",
+    "### **3. Key Financial Headlines & Outlook**",
     "### **Market Analysis & Financial Headlines**",
-    "*   **Headlines:**"
+    "*   **Headlines Summary:**",
+    "*   **Sector Specific Impacts:** The pharma sector faced a targeted sell-off following news of a proposed 100% US tariff on generic drugs for 2028, impacting export-heavy players like Dr. Reddy\u2019s and Cipla."
   ],
   "marketSignals": {
     "positioningLabel": "Call-side hedge build",
-    "positioningStrike": 24200,
+    "positioningStrike": 24000,
     "divergenceSummary": "Aligned sentiment",
     "divergenceCount": 0,
-    "trapRiskLabel": "Upside trap @ 24100",
+    "trapRiskLabel": "No clear trap",
     "fiiNetCrores": -819.2,
     "diiNetCrores": -418.26,
     "tradedValueCrores": 0.0,
-    "spot": 23998.55
+    "spot": 23840.9
   },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
-    "bias": "Bearish",
-    "note": "Moderately cautious news tone",
-    "analysis": "Recent market news shows a moderately cautious news tone, with most headlines flagging caution. The most supportive headline: \"South Korea\u2019s Economy Beats Estimates as Chip Boom Continues\". The most cautious headline: \"Argentina Economy Shrinks Again in May Amid Uneven Recovery\".",
+    "bias": "Neutral",
+    "note": "Mixed, broadly neutral news tone",
+    "analysis": "Recent market news shows a mixed, broadly neutral news tone, with supportive and cautious headlines roughly balanced. The most supportive headline: \"Ujjivan Small Finance Bank standalone net profit rises 206.67% in the June 2026 quarter\". The most cautious headline: \"Sensex slumps 394 pts; metal share decline for 2nd day\".",
     "headlines": [
       {
-        "title": "GCPL infuses Rs 200-cr in Godrej Pet Care via right issue",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Asian stocks rise as tech earnings lift chipmakers; oil at six-week highs",
-        "label": "positive",
-        "sentiment": "Moderately positive"
-      },
-      {
-        "title": "India's silver imports slump as licensing curbs disrupt shipments",
+        "title": "Sensex slumps 394 pts; metal share decline for 2nd day",
         "label": "negative",
         "sentiment": "Strongly negative"
       },
       {
-        "title": "House Republicans adopt $95 billion package for Iran war, Donald Trump\u2019s SAVE America Act",
+        "title": "CBI gives clean chit to Sanjeev Mukhiya in NEET-UG 2024 paper leak case",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Sikkim NHPC tunnel collapse: 22 bodies recovered, search on for 3 trapped",
+        "title": "Watch: Mumbai students wave at CJP protesters from school windows, viral video strikes chord online",
         "label": "negative",
-        "sentiment": "Strongly negative"
+        "sentiment": "Moderately negative"
       },
       {
-        "title": "Stocks to Watch today: Infosys, IndiGo, RIL, IndusInd Bk, HPCL, Dr Reddy's",
+        "title": "Overseas investment limit for MFs needs a fresh look: Umeshkumar Mehta",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "CJP Protest: \u2018RAF man shot me, pellets hit me in face,\u2019 says injured protester whom JP Nadda met at hospital",
-        "label": "negative",
-        "sentiment": "Moderately negative"
-      },
-      {
-        "title": "Ajit Mishra decodes Nifty strategy; recommends Buy on Marico, 2 more stocks",
-        "label": "positive",
-        "sentiment": "Slightly positive"
-      },
-      {
-        "title": "Who was Daniel Siad? French modelling scout linked to Jeffrey Epstein found dead in Paris home",
-        "label": "negative",
-        "sentiment": "Slightly negative"
-      },
-      {
-        "title": "France records over 5,700 excess deaths during historic June heatwave, highest toll since 2003",
-        "label": "negative",
-        "sentiment": "Moderately negative"
-      },
-      {
-        "title": "South Korea\u2019s Economy Beats Estimates as Chip Boom Continues",
+        "title": "Ujjivan Small Finance Bank standalone net profit rises 206.67% in the June 2026 quarter",
         "label": "positive",
         "sentiment": "Strongly positive"
       },
       {
-        "title": "Democrats Threaten Yale With Tax If School Makes Deal With Trump",
-        "label": "negative",
-        "sentiment": "Moderately negative"
+        "title": "Solara Active Pharma Sciences consolidated net profit rises 55.04% in the June 2026 quarter",
+        "label": "positive",
+        "sentiment": "Strongly positive"
       },
       {
-        "title": "Argentina Economy Shrinks Again in May Amid Uneven Recovery",
+        "title": "PTC Industries receives design and development order from DRDO",
+        "label": "positive",
+        "sentiment": "Moderately positive"
+      },
+      {
+        "title": "Equinix bets big on India, plans to triple data centre capacity by 2028",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "UAE Doubles Down on $1.4 Trillion US Pledge, Faults EU on Trade",
         "label": "negative",
         "sentiment": "Strongly negative"
       },
       {
-        "title": "What Is Section 338? The Tool Trump Is Using to Threaten Canada With 50% Tariffs",
+        "title": "As Dharmendra Pradhan faces resignation calls, a look at India's most notable moral resignations",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Bad Loans Threaten Argentina\u2019s Next Economic Growth Engine",
+        "title": "Meghalaya honeymoon murder case: Supreme Court cancels Sonam Raghuvanshi's bail, gives 3 weeks to surrender",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "Burnham Cuts Business Rates on Pubs, Clubs and Live Venues",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "PHP/USD: Philippines Draws Line in Sand for Peso Weakness as Oil Surges",
         "label": "negative",
         "sentiment": "Strongly negative"
+      },
+      {
+        "title": "India RBI Says Economy Resilient Despite Monsoon, Iran War Risks",
+        "label": "positive",
+        "sentiment": "Moderately positive"
+      },
+      {
+        "title": "ECB Rate Decision: Lagarde Set to Keep Policy Unchanged to Gauge Iran War Risks",
+        "label": "neutral",
+        "sentiment": "Neutral"
       }
     ]
   }
