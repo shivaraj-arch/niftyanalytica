@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T09:01:21.825638+05:30",
+  "generatedAt": "2026-07-27T15:01:25.824779+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
@@ -12,113 +12,108 @@
     "gemini-robotics-er-1.6-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\n### **Nifty 50 Stock Analysis**\n\nBased on the latest trading data, here is a summary of the stock movements and index contribution:\n\n*   **Top Gainers (Bullish Support):**\n    *   **HCLTECH:** +1.95% (LTP: \u20b91,269) \u2013 Leading the tech recovery.\n    *   **CIPLA:** +1.15% (LTP: \u20b91,409) \u2013 Strong performance in the defensive/pharma sector.\n    *   **WIPRO:** +0.99% (LTP: \u20b9176.55)\n    *   **ITC:** +0.96% (LTP: \u20b9284)\n*   **Major Decliners (Sectoral Lag):**\n    *   **ETERNAL:** -2.47% (LTP: \u20b9280) \u2013 Sharpest decline in the current set.\n    *   **BAJFINANCE:** -2.00% (LTP: \u20b91,019) \u2013 Significant pressure on high-value finance stocks.\n    *   **M&M:** -2.00% (LTP: \u20b93,165) \u2013 Weakness in the auto heavyweights.\n    *   **SHRIRAMFIN:** -1.93% (LTP: \u20b91,006)\n*   **Activity/Turnover Leaders:** \n    High institutional interest remains concentrated in **INFY** (\u20b92.99 Lakh Cr turnover despite a 0.8% drop), **BAJFINANCE**, and **HDFCBANK**.\n\n---\n\n### **FII & DII Flow Data (Latest Session)**\n\nInstitutional participation shows a strong divergence between domestic and foreign sentiment:\n\n| Category | Net Value (\u20b9 Cr) | Action |\n| :--- | :--- | :--- |\n| **FII (Foreign Institutional Investors)** | **-3,892.77** | **Net Sellers** |\n| **DII (Domestic Institutional Investors)** | **+5,453.55** | **Net Buyers** |\n| **Net Total** | **+1,560.78** | **Net Inflow** |\n\n*Analysis:* Domestics continue to act as the market's backbone, absorbing significant foreign sell-offs.\n\n---\n\n### **Financial Headlines & Market Outlook**\n\nThe outlook for the upcoming sessions is characterized by geopolitical caution and internal corporate results:\n\n1.  **Support & Resistance:** \n    *   **Support:** Immediate floor at **23,750**; breaking below 23,600 could trigger deeper correction.\n    *   **Resistance:** Stiff psychological resistance at **24,000**. Bullish trend needs a close above 24,180.\n2.  **Brent Crude Alert:** Oil prices hovering near **$100** remain a primary threat to the Rupee and inflation, potentially driving further FII exits.\n3.  **Geopolitical Tensions:** Markets are closely monitoring escalating tensions in West Asia (US-Iran friction) and supply chain risks in the Strait of Hormuz.\n4.  **Earnings Trigger:** Q1 FY27 earnings for IT, Banking, and Energy stocks are expected to drive high stock-specific volatility throughout the week.\n5.  **Rupee Movement:** Continued pressure on the local currency is prompting foreign investors to stay on the sidelines or trim holdings.\n\nNifty Flow Agent\n\nThe latest FII and DII flow data for the Indian market as of July 24, 2026, is as follows:\n\n### FII & DII Market Flow (July 24, 2026)\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 24-Jul-2026 | 18,959.43 | 13,505.88 | **+5,453.55** |\n| **FII/FPI** | 24-Jul-2026 | 11,123.86 | 15,016.63 | **-3,892.77** |\n\n---\n\n### **Market Analysis & Financial Headlines**\n\n*   **Mixed Institutional Sentiment:** Domestic Institutional Investors (DIIs) showed strong conviction with a significant net inflow of over **\u20b95,400 crore**, counteracting the selling pressure from Foreign Institutional Investors (FIIs), who were net sellers of **\u20b93,892.77 crore**.\n*   **Liquidity Support:** The market continues to find strong support from domestic liquidity, which has effectively cushioned the impact of foreign outflows.\n*   **Net Institutional Position:** For the session, the combined net institutional activity resulted in a net positive inflow of **\u20b91,560.78 crore**, suggesting moderate net accumulation in the broader market.\n*   **Headline Outlook:** \"Domestic Funds Power Market Resilience Amid Foreign Pullback\"; \"Nifty Holds Steady as DII Inflows Offset FII Sell-off.\"\n\n*Note: For individual stock analysis, specifics on sectoral gainers like Banking or IT would typically drive these institutional moves.*\n\nAggregator Agent\n\n### **Executive Summary: Nifty 50 Market Analysis & Institutional Flows**\n\nThe Indian equity market is currently defined by a sharp divergence between domestic resilience and foreign caution. In the latest session, **Domestic Institutional Investors (DIIs)** acted as the market's backbone, recording a substantial net inflow of **\u20b95,453.55 crore**. This aggressive buying effectively cushioned the impact of **Foreign Institutional Investors (FIIs)**, who continued their selling streak with a net outflow of **\u20b93,892.77 crore**. Despite the foreign pullback, the session concluded with a net institutional inflow of **\u20b91,560.78 crore**.\n\n**Key Market Drivers:**\n*   **Sectoral Performance:** Tech and defensive sectors are providing vital support, led by **HCLTECH (+1.95%)** and **CIPLA (+1.15%)**. Conversely, high-value finance and auto stocks are under pressure, with **BAJFINANCE** and **M&M** both declining by **2.00%**.\n*   **Macro Risks:** Brent crude hovering near **$100** remains a primary threat to inflation and Rupee stability, likely fueling the sustained FII exit.\n*   **Outlook:** The Nifty index faces stiff psychological resistance at **24,000**, while immediate support is established at **23,750**. \n\n**Key Takeaway:** While global triggers\u2014including West Asia tensions and high oil prices\u2014weigh on foreign sentiment, robust domestic liquidity is shielding the market from deep corrections. Investors should expect high volatility as **Q1 FY27 earnings** for IT and Banking begin to drive stock-specific action.",
-  "executiveSummary": "### **Executive Summary: Nifty 50 Market Analysis & Institutional Flows**\n\nThe Indian equity market is currently defined by a sharp divergence between domestic resilience and foreign caution. In the latest session, **Domestic Institutional Investors (DIIs)** acted as the market's backbone, recording a substantial net inflow of **\u20b95,453.55 crore**. This aggressive buying effectively cushioned the impact of **Foreign Institutional Investors (FIIs)**, who continued their selling streak with a net outflow of **\u20b93,892.77 crore**. Despite the foreign pullback, the session concluded with a net institutional inflow of **\u20b91,560.78 crore**.\n\n**Key Market Drivers:**\n*   **Sectoral Performance:** Tech and defensive sectors are providing vital support, led by **HCLTECH (+1.95%)** and **CIPLA (+1.15%)**. Conversely, high-value finance and auto stocks are under pressure, with **BAJFINANCE** and **M&M** both declining by **2.00%**.\n*   **Macro Risks:** Brent crude hovering near **$100** remains a primary threat to inflation and Rupee stability, likely fueling the sustained FII exit.\n*   **Outlook:** The Nifty index faces stiff psychological resistance at **24,000**, while immediate support is established at **23,750**. \n\n**Key Takeaway:** While global triggers\u2014including West Asia tensions and high oil prices\u2014weigh on foreign sentiment, robust domestic liquidity is shielding the market from deep corrections. Investors should expect high volatility as **Q1 FY27 earnings** for IT and Banking begin to drive stock-specific action.",
-  "bias": "Bearish",
+  "summary": "Nifty Analysis Agent\n\nBased on the latest trading data and institutional flows, here is an analysis of the Nifty 50 and the market outlook for the next session.\n\n### **1. Nifty 50 Index Performance Summary**\nThe market showed strong selective buying in Large-cap and Financial names during the session.\n\n| Symbol | LTP | % Change | Trading Volume |\n| :--- | :--- | :--- | :--- |\n| **ETERNAL** | \u20b9296.30 | **+5.82%** | 3,92,58,422 |\n| **INDIGO** | \u20b95,220.00 | **+4.71%** | 14,91,180 |\n| **INFY** | \u20b91,077.70 | **+3.54%** | 1,42,98,427 |\n| **BAJFINANCE** | \u20b91,047.20 | **+3.40%** | 67,92,568 |\n| **SHRIRAMFIN**| \u20b91,036.70 | **+3.14%** | 84,27,457 |\n\n*   **Gainers & Contributors:** Heavyweight IT stocks like **INFY** (+3.54%), **HCLTECH** (+2.00%), and **TCS** (+1.80%) provided major structural support. Consumer names like **ASIANPAINT** and **TATACONSUM** also saw decent upward movement.\n*   **Laggards & Drags:** **ONGC** was the biggest loser (-3.92%), potentially impacted by local policy or global crude adjustments. Banking heavyweights **HDFCBANK** (-0.35%) and **KOTAKBANK** (-0.12%) remained under mild pressure, limiting the index's upper trajectory.\n\n### **2. FII and DII Flow (Last Session)**\nInstitutional activity reveals a strong tug-of-war between foreign and domestic players:\n*   **FII (Foreign Institutional Investors):** Net **Sellers** of **\u20b93,892.77 Cr**.\n*   **DII (Domestic Institutional Investors):** Net **Buyers** of **\u20b95,453.55 Cr**.\n*   **Analysis:** DIIs successfully absorbed the aggressive selling from FIIs, maintaining liquidity and preventing a deeper market correction.\n\n### **3. Market News & Outlook for Tomorrow**\nThe outlook for **July 27, 2026**, suggests a potentially volatile opening with an eye on recovery levels.\n\n*   **Support & Resistance:** \n    *   **Resistance:** \u20b923,850 \u2013 \u20b924,000. Sustaining above 23,850 could trigger a short-covering rally.\n    *   **Support:** \u20b923,600 \u2013 \u20b923,450. A slip below this range could expose the market to further downside risk.\n*   **Technical Triggers:** With the RSI currently at ~32.9 (oversold territory), a **technical bounce** is anticipated if global cues stabilize.\n*   **Financial Headlines:**\n    *   **Geopolitical Focus:** Investors are tracking developments in US-Iran tensions and their subsequent impact on Brent Crude prices.\n    *   **Earnings Watch:** Focus remains on **Q1 FY27** results, which are likely to spark stock-specific volatility.\n    *   **Expiry Volatility:** Expect heightened movement as the monthly expiry week approaches.\n\n**Summary:** While FIIs continue to sell, the resilient domestic appetite (DIIs) and oversold technical indicators suggest a range-bound start with a potential for a minor positive recovery if the index holds the **23,600 support level**.\n\nNifty Flow Agent\n\nThe latest FII and DII flow data for the Indian market (Nifty 50) as of **July 24, 2026**, is as follows:\n\n### **FII & DII Market Flow (\u20b9 Cr)**\n| Category | Date | Buy Value | Sell Value | Net Value |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 24-Jul-2026 | 18,959.43 | 13,505.88 | **+5,453.55** |\n| **FII/FPI** | 24-Jul-2026 | 11,123.86 | 15,016.63 | **-3,892.77** |\n\n---\n\n### **Market Analysis & Sentiment**\n- **Net Sentiment:** The market saw a mixed trend with a combined net inflow of approximately **\u20b91,560.78 crore**.\n- **DII Dominance:** Domestic Institutional Investors (DII) showed strong conviction with a significant net purchase of over **\u20b95,400 crore**, acting as a major support pillar for the indices.\n- **FII Activity:** Foreign Institutional Investors (FII) were net sellers, pulling out roughly **\u20b93,892 crore**. This suggests cautious sentiment from offshore investors, possibly due to global macroeconomic factors or local profit booking.\n- **Summary:** While FIIs remain net sellers, the robust buying from DIIs has helped offset the downward pressure, maintaining positive liquidity support in the market.\n\n### **Financial Headlines & Stock Analysis**\n- **Inflow Surge:** DIIs continue to buy the dips, counteracting the foreign capital outflow.\n- **Sector Focus:** Heavyweight stocks in the financial and infrastructure sectors typically see high volume during these diverging net-value sessions.\n- **Volatility Alert:** Expect continued short-term volatility as institutional players realign positions before the next quarterly review.\n\nAggregator Agent\n\n### **Executive Summary: Nifty 50 Market Analysis and Institutional Flow**\n\nThe Indian equity market is currently defined by a significant institutional \"tug-of-war.\" As of July 24, 2026, Foreign Institutional Investors (FIIs) remained aggressive net sellers, offloading **\u20b93,892.77 crore**. Conversely, Domestic Institutional Investors (DIIs) demonstrated strong conviction, acting as a vital support pillar with a net purchase of **\u20b95,453.55 crore**. This divergence highlights a critical connection: robust domestic liquidity is successfully absorbing foreign capital outflows, preventing a deeper market correction despite cautious offshore sentiment linked to geopolitical tensions.\n\n**Key Performance Indicators:**\n*   **Market Leaders:** Selective buying in Large-cap IT (**INFY +3.54%**, **TCS +1.80%**) and Financials provided structural stability. **ETERNAL** (+5.82%) and **INDIGO** (+4.71%) led the gainers.\n*   **Index Drags:** **ONGC** (-3.92%) and banking heavyweights like **HDFCBANK** limited the index's upward trajectory.\n*   **Technical Outlook:** With the RSI at an oversold **32.9**, a technical recovery is anticipated near the **23,600 support level**. Resistance is pegged between **23,850 and 24,000**.\n\n**Final Takeaway:** While global uncertainties and FII selling persist, the market shows resilience through DII dominance. Volatility is expected to escalate as the monthly expiry approaches alongside **Q1 FY27 earnings**, making the **23,600** level the crucial pivot for the next session's recovery.",
+  "executiveSummary": "### **Executive Summary: Nifty 50 Market Analysis and Institutional Flow**\n\nThe Indian equity market is currently defined by a significant institutional \"tug-of-war.\" As of July 24, 2026, Foreign Institutional Investors (FIIs) remained aggressive net sellers, offloading **\u20b93,892.77 crore**. Conversely, Domestic Institutional Investors (DIIs) demonstrated strong conviction, acting as a vital support pillar with a net purchase of **\u20b95,453.55 crore**. This divergence highlights a critical connection: robust domestic liquidity is successfully absorbing foreign capital outflows, preventing a deeper market correction despite cautious offshore sentiment linked to geopolitical tensions.\n\n**Key Performance Indicators:**\n*   **Market Leaders:** Selective buying in Large-cap IT (**INFY +3.54%**, **TCS +1.80%**) and Financials provided structural stability. **ETERNAL** (+5.82%) and **INDIGO** (+4.71%) led the gainers.\n*   **Index Drags:** **ONGC** (-3.92%) and banking heavyweights like **HDFCBANK** limited the index's upward trajectory.\n*   **Technical Outlook:** With the RSI at an oversold **32.9**, a technical recovery is anticipated near the **23,600 support level**. Resistance is pegged between **23,850 and 24,000**.\n\n**Final Takeaway:** While global uncertainties and FII selling persist, the market shows resilience through DII dominance. Volatility is expected to escalate as the monthly expiry approaches alongside **Q1 FY27 earnings**, making the **23,600** level the crucial pivot for the next session's recovery.",
+  "bias": "Bullish",
   "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "### **Financial Headlines & Market Outlook**",
-    "**Support & Resistance:**",
-    "**Brent Crude Alert:** Oil prices hovering near **$100** remain a primary threat to the Rupee and inflation, potentially driving further FII exits.",
-    "**Geopolitical Tensions:** Markets are closely monitoring escalating tensions in West Asia (US-Iran friction) and supply chain risks in the Strait of Hormuz.",
-    "**Earnings Trigger:** Q1 FY27 earnings for IT, Banking, and Energy stocks are expected to drive high stock-specific volatility throughout the week.",
-    "**Rupee Movement:** Continued pressure on the local currency is prompting foreign investors to stay on the sidelines or trim holdings.",
-    "### **Market Analysis & Financial Headlines**",
-    "*   **Headline Outlook:** \"Domestic Funds Power Market Resilience Amid Foreign Pullback\"; \"Nifty Holds Steady as DII Inflows Offset FII Sell-off.\""
+    "### **3. Market News & Outlook for Tomorrow**",
+    "*   **Financial Headlines:**",
+    "### **Financial Headlines & Stock Analysis**"
   ],
   "marketSignals": {
-    "positioningLabel": "Bearish positioning build",
-    "positioningStrike": 23800,
+    "positioningLabel": "Put-side hedge build",
+    "positioningStrike": 23900,
     "divergenceSummary": "Aligned sentiment",
     "divergenceCount": 0,
-    "trapRiskLabel": "Downside trap @ 23700",
+    "trapRiskLabel": "No clear trap",
     "fiiNetCrores": -3892.77,
     "diiNetCrores": 5453.55,
     "tradedValueCrores": 0.0,
-    "spot": 23773.5
+    "spot": 23990.95
   },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
-    "bias": "Neutral",
-    "note": "Mixed, broadly neutral news tone",
-    "analysis": "Recent market news shows a mixed, broadly neutral news tone, with supportive and cautious headlines roughly balanced. The most supportive headline: \"Indonesia\u2019s Acting Central Bank Chief Damayanti Seen as Reassuring for Investors\". The most cautious headline: \"CJP Protest: Another protester claims pellet injuries, says \u2018Thought I was going to lose my arm\u2019\".",
+    "bias": "Bullish",
+    "note": "Moderately positive news tone",
+    "analysis": "Recent market news shows a moderately positive news tone, with most headlines leaning supportive. The most supportive headline: \"Germany\u2019s Business Outlook Improves Despite Iran Uncertainty\". The most cautious headline: \"MEA summons Ukrainian ambassador Dr Oleksandr Polishchuk over attacks on merchant vessels with Indian crew\".",
     "headlines": [
       {
-        "title": "Doctor shares heartfelt moment from CJP's \u2018Chalo Sansad\u2019 protest, praises students' honesty after she finds lost phone",
-        "label": "positive",
-        "sentiment": "Slightly positive"
+        "title": "MEA summons Ukrainian ambassador Dr Oleksandr Polishchuk over attacks on merchant vessels with Indian crew",
+        "label": "negative",
+        "sentiment": "Strongly negative"
       },
       {
-        "title": "Indonesia\u2019s Acting Central Bank Chief Damayanti Seen as Reassuring for Investors",
+        "title": "Onesource Specialty Pharma gains after Q1 swings to profit of Rs 25 cr",
         "label": "positive",
         "sentiment": "Strongly positive"
       },
       {
-        "title": "From scarce dollars to global buffers: Has India outgrown its 1991 crisis?",
+        "title": "Volumes spurt at CreditAccess Grameen Ltd counter",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Indian banks have raised $32 billion under dollar-inflow schemes: RBI Guv",
+        "title": "Bhagyanagar India rises after Q1 PAT jumps 167% YoY to Rs 20 crore",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Nifty climb above 24,000 level; media share extend gains for 3rd day",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Holiday Calendar Economics: How Public Holidays are reshaping India's travel economy",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "'I failed to fulfil your wishes': NEET aspirant dies by suicide in Maharashtra",
-        "label": "negative",
-        "sentiment": "Moderately negative"
-      },
-      {
-        "title": "46% of homes on sale are 3 BHKs; buyers chase affordability in key cities",
+        "title": "Prahlad Joshi's 2022 NEET exam remark resurfaces as he becomes education minister: \u201890% fail\u2026\u2019",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "'CEO texted me for leaving 10 minutes early': Gen Z employee's Reddit post sparks debate on toxic work culture",
-        "label": "negative",
-        "sentiment": "Moderately negative"
-      },
-      {
-        "title": "35 years of liberalisation: Which sectors emerged as biggest winners?",
+        "title": "Quote of the day by Corliss Lamont on liberty: 'True freedom is the capacity for acting according to one's true\u2026.'",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Several people were shot at Seattle Center festival, say police: Here's what we know",
+        "title": "Quote Of The Day: Ralph Waldo Emerson on secret of life: \u2018He who is not everyday conquering some fear\u2026\u2019",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Waaree Renewable Technologies bags 1,082 MWp solar EPC orders",
+        "title": "Nitin Gadkari gets Bombay HC nod to sue Meta, Google over E20 petrol deepfakes",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "CJP Protest: Another protester claims pellet injuries, says \u2018Thought I was going to lose my arm\u2019",
-        "label": "negative",
-        "sentiment": "Strongly negative"
+        "title": "Germany\u2019s Business Outlook Improves Despite Iran Uncertainty",
+        "label": "positive",
+        "sentiment": "Strongly positive"
       },
       {
-        "title": "Indonesia Central Bank Chief Unexpectedly Resigns; Rupiah Drops",
-        "label": "negative",
-        "sentiment": "Strongly negative"
+        "title": "Kazimir Says ECB Must Hike at Least Once More to Quell Inflation",
+        "label": "neutral",
+        "sentiment": "Neutral"
       },
       {
-        "title": "Singapore Delivers Back-to-Back Tightening to Tame Price Risks",
+        "title": "Britain\u2019s Home-Grown Price Pressures Finally Easing for the BOE",
         "label": "positive",
         "sentiment": "Moderately positive"
       },
       {
-        "title": "Fed Faces Growing Pressure to Hike Rates as Price Risks Rebound",
-        "label": "negative",
-        "sentiment": "Moderately negative"
+        "title": "India Lured $40 Billion Since June, Malhotra Tells BusinessLine",
+        "label": "positive",
+        "sentiment": "Slightly positive"
       },
       {
-        "title": "US Presses Mexico to Mirror Its Steel Tariff Wall Aimed at China",
+        "title": "China State Media Says Support for Open AI Models Has Limits",
         "label": "positive",
-        "sentiment": "Moderately positive"
+        "sentiment": "Strongly positive"
       }
     ]
   }
