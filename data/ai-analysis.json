@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T09:02:37.622819+05:30",
+  "generatedAt": "2026-07-28T15:01:43.666597+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
@@ -9,111 +9,111 @@
   "model": "gemini-robotics-er-1.6-preview",
   "requestedModel": "gemini-robotics-er-1.6-preview",
   "attemptedModels": [
-    "gemini-robotics-er-1.6-preview",
     "gemini-robotics-er-1.6-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\nThe current snapshot of the **Nifty 50** highlights a strong positive bias driven by institutional divergence and anticipation of global macro updates.\n\n### **1. Nifty 50 Market Analysis**\nBased on the latest constituent data, the index shows robust performance from high-growth sectors, despite some drag from heavyweights.\n\n*   **Top Gainers (Drivers):**\n    *   **ETERNAL:** Leading with a surge of **+5.61%**.\n    *   **INDIGO:** Strong momentum at **+5.12%**.\n    *   **INFY:** Gained **+3.59%**, showing resilience in the IT sector.\n    *   **BAJFINANCE & SHRIRAMFIN:** Strong upward movement at **+3.57%** and **+3.27%** respectively, indicating strength in the NBFC space.\n*   **Top Losers (Drags):**\n    *   **ONGC:** The major outlier with a sharp decline of **-4.17%**.\n    *   **HDFCLIFE & HDFCBANK:** Marginally lower at **-0.44%** and **-0.34%** respectively, acting as minor headwinds.\n*   **Outlook:** With multiple constituents seeing gains above 3%, the broader sentiment appears bullish, albeit cautious at higher levels.\n\n### **2. Institutional Flow (FII/DII Data)**\nInstitutional behavior remains split, as is characteristic of the late July cycle:\n*   **FII (Foreign Institutional Investors):** Remained net **sellers** with an outflow of **\u20b9 -1,688.23 Crore**.\n*   **DII (Domestic Institutional Investors):** Acted as market stabilizers, remaining net **buyers** with an inflow of **\u20b9 +2,329.14 Crore**.\n*   **Net Sentiment:** Positive total institutional inflow of **\u20b9640.91 Crore** indicates domestic retail/institutional confidence is currently absorbing foreign pressure.\n\n### **3. Headlines & Outlook for July 29, 2026**\nTomorrow's session is expected to be high-stakes due to a critical global event.\n*   **US Fed Decision:** Markets are laser-focused on the Federal Reserve\u2019s monetary policy decision. A 62% probability exists for maintaining rates at **3.50%\u20133.75%**. Any hawkish commentary will trigger volatility.\n*   **Technical Levels:**\n    *   **Immediate Support:** **23,800 \u2013 23,891**.\n    *   **Resistance:** **24,100 \u2013 24,170**. Bulls need a breakout above 24,200 to aim for 24,300.\n*   **Market Sentiment:** **India VIX** is at a low **12.66**, suggesting reduced immediate panic, though **Crude Oil at $88/barrel** remains a key risk factor for aviation and paint stocks.\n*   **Strategy:** Expect range-bound volatility early in the day as traders position themselves for the FOMC outcomes in the evening.\n\nNifty Flow Agent\n\nThe latest FII and DII flow data for the Indian market as of **July 27, 2026**, is as follows:\n\n### **FII & DII Market Flow (\u20b9 Crores)**\n\n| Category | Date | Buy Value | Sell Value | Net Value |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 27-Jul-2026 | 15,937.10 | 13,607.96 | **+2,329.14** |\n| **FII/FPI** | 27-Jul-2026 | 11,695.95 | 13,384.18 | **-1,688.23** |\n| **TOTAL** | | **27,633.05** | **26,992.14** | **+640.91** |\n\n---\n\n### **Market Analysis & Financial Headlines**\n\n*   **Market Sentiment:** Mixed sentiment as Foreign Institutional Investors (FIIs) turned net sellers with an outflow of \u20b91,688.23 crore. However, Domestic Institutional Investors (DIIs) cushioned the impact with a strong net buy of \u20b92,329.14 crore, leading to a marginal net positive liquidity in the market.\n*   **Key Trend:** DIIs continue to show resilience and provide a safety net against foreign capital outflows, maintaining a positive bias for the session.\n*   **Net Inflow:** The overall net market balance remains positive at \u20b9640.91 crore, suggesting stability despite volatility in global markets.\n*   **Growth Contributors:** Domestic liquidity remains a primary driver for the Nifty indices, while global cues are likely causing the cautious stance seen in FII activity.\n\nAggregator Agent\n\n### **Executive Summary: Nifty 50 Market Outlook and Institutional Flow**\n\nAs of late July 2026, the **Nifty 50** maintains a resilient positive bias, primarily underpinned by robust domestic liquidity that is effectively counteracting foreign capital flight. A striking divergence has emerged between institutional behaviors: while **Foreign Institutional Investors (FIIs)** remained net sellers with an outflow of **\u20b91,688.23 crore**, **Domestic Institutional Investors (DIIs)** acted as market stabilizers with a substantial net buy of **\u20b92,329.14 crore**. This resulted in a total positive institutional net inflow of **\u20b9640.91 crore**, indicating that domestic confidence is successfully absorbing foreign pressure.\n\n**Key Performance Drivers:**\n*   **Sector Winners:** High-growth stocks are leading the charge, specifically **ETERNAL (+5.61%)**, **INDIGO (+5.12%)**, and IT heavyweights like **INFY (+3.59%)**.\n*   **Market Drags:** Heavyweights such as **ONGC (-4.17%)** and HDFC Bank act as headwinds, tempering overall index gains.\n*   **Global Triggers:** All eyes are on the **July 29 US Fed decision**. While there is a 62% probability of maintaining current rates, any hawkish commentary is expected to spike volatility.\n\n**Outlook:** \nWith **India VIX** at a low **12.66**, immediate panic is low; however, elevated **Crude Oil prices ($88/barrel)** remain a looming threat to consumption-linked stocks. Traders should expect range-bound movement between support at **23,800** and resistance at **24,170**, with bulls requiring a breakout above **24,200** to sustain the recovery.",
-  "executiveSummary": "### **Executive Summary: Nifty 50 Market Outlook and Institutional Flow**\n\nAs of late July 2026, the **Nifty 50** maintains a resilient positive bias, primarily underpinned by robust domestic liquidity that is effectively counteracting foreign capital flight. A striking divergence has emerged between institutional behaviors: while **Foreign Institutional Investors (FIIs)** remained net sellers with an outflow of **\u20b91,688.23 crore**, **Domestic Institutional Investors (DIIs)** acted as market stabilizers with a substantial net buy of **\u20b92,329.14 crore**. This resulted in a total positive institutional net inflow of **\u20b9640.91 crore**, indicating that domestic confidence is successfully absorbing foreign pressure.\n\n**Key Performance Drivers:**\n*   **Sector Winners:** High-growth stocks are leading the charge, specifically **ETERNAL (+5.61%)**, **INDIGO (+5.12%)**, and IT heavyweights like **INFY (+3.59%)**.\n*   **Market Drags:** Heavyweights such as **ONGC (-4.17%)** and HDFC Bank act as headwinds, tempering overall index gains.\n*   **Global Triggers:** All eyes are on the **July 29 US Fed decision**. While there is a 62% probability of maintaining current rates, any hawkish commentary is expected to spike volatility.\n\n**Outlook:** \nWith **India VIX** at a low **12.66**, immediate panic is low; however, elevated **Crude Oil prices ($88/barrel)** remain a looming threat to consumption-linked stocks. Traders should expect range-bound movement between support at **23,800** and resistance at **24,170**, with bulls requiring a breakout above **24,200** to sustain the recovery.",
-  "bias": "Bearish",
+  "summary": "Nifty Analysis Agent\n\nHere is the latest financial brief for the Indian market as of **July 27-28, 2026**, covering Nifty 50 constituents, institutional flows, and key headlines.\n\n### **1. Nifty 50 Stock Analysis (Smart Brief)**\nThe market snapped a five-session losing streak, largely supported by the IT and FMCG sectors. While high-beta names faced some pressure, heavyweights provided the necessary cushion to target the 24,000 level.\n\n*   **Major Gainers & Contributors:**\n    *   **TCS (+4.72%):** Led the charge in the IT sector, trading strongly at \u20b92,404.\n    *   **NESTLEIND (+4.07%):** A major defensive play contributor, hitting \u20b91,504.\n    *   **TECHM (+4.06%) & INFY (+2.46%):** Further solidified the \"IT-led recovery\" narrative.\n    *   **ETERNAL (+3.95%):** Saw high liquidity with a turnover of \u20b91.8 lakh Cr, indicating significant institutional reshuffling.\n*   **Major Decliners:**\n    *   **HINDUNILVR (-6.88%):** The sharpest drop in the index today, closing at \u20b92,025.\n    *   **BEL (-4.70%):** Continued profit-booking in defense-related names.\n    *   **COALINDIA (-4.08%):** Dragged lower as part of a general cool-off in the energy/mining segment.\n    *   **ICICIBANK (-1.46%) & RELIANCE (-1.06%):** Marginal drags that capped index gains.\n\n---\n\n### **2. Latest FII & DII Cash Flow (July 27, 2026)**\nDomestic institutions remain the primary driver of the current rebound, offsetting foreign outflows ahead of the monthly expiry.\n\n| Category | Net Value (\u20b9 Cr) | Action |\n| :--- | :--- | :--- |\n| **FII (Foreign Institutional Investors)** | **- \u20b91,688.23 Cr** | Net Sellers |\n| **DII (Domestic Institutional Investors)** | **+ \u20b92,329.14 Cr** | Net Buyers |\n| **Index Futures (FIIs)** | **+ \u20b9600+ Cr** | Bullish Positioning |\n\n---\n\n### **3. Key Financial Headlines for Tomorrow**\n*   **Monthly F&O Expiry:** Volatility is expected to peak on **July 28** as the monthly July series expires. Nifty is expected to oscillate in the **23,850 \u2013 24,150** range.\n*   **Crude Oil Impact:** Brent crude saw a sharp **5% drop** ($91 range), which is fundamentally positive for Indian macroeconomics, potentially lowering import bills and cooling inflation.\n*   **India VIX Crash:** The Fear Index fell by nearly **10%** (resting at **12.66**), signaling that the panic from last week has subsided.\n*   **Currency Strength:** The Rupee strengthened significantly by 63 paise to **95.90** against the Dollar, reflecting increased confidence in domestic stability.\n*   **Outlook:** \"Short covering\" is anticipated if Nifty sustains above **24,050**, which could spark a quick rally toward **24,200 \u2013 24,400**.\n\nNifty Flow Agent\n\nThe latest FII and DII flow data for the Indian market as of **July 27, 2026**, is as follows:\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 27-Jul-2026 | 15,937.10 | 13,607.96 | **+2,329.14** |\n| **FII/FPI** | 27-Jul-2026 | 11,695.95 | 13,384.18 | **-1,688.23** |\n\n### **Market Summary & Headlines:**\n*   **Divergent Flows:** While Domestic Institutional Investors (DIIs) remained strong net buyers with an inflow of **\u20b92,329.14 crore**, Foreign Institutional Investors (FIIs) shifted to a net selling position of **\u20b91,688.23 crore**.\n*   **Net Institutional Activity:** The total net institutional impact for the day was a positive **\u20b9640.91 crore**, indicating that domestic buying absorbed the foreign sell-off.\n*   **Bullish Domestic Sentiment:** Strong DII activity suggests continued domestic confidence and liquidity support in the Indian equity markets despite global volatility or FII profit-booking.\n\nAggregator Agent\n\nAs of **July 27-28, 2026**, the Indian market has successfully snapped a five-session losing streak, closing near the pivotal **24,000 level**. This rebound was primarily driven by an IT and FMCG-led recovery, with TCS (+4.72%) and Nestle (+4.07%) leading the gains. Conversely, heavyweights like HUL (-6.88%) and BEL (-4.70%) faced significant pressure due to sectoral cool-offs and profit-booking.\n\nA critical theme in this recovery is the **divergent institutional flow**. While Foreign Institutional Investors (FIIs) remained net sellers (-\u20b91,688.23 Cr), Domestic Institutional Investors (DIIs) acted as the primary market pillar with a strong net buy of **+\u20b92,329.14 Cr**. This domestic absorption resulted in a net positive institutional impact of **\u20b9640.91 Cr**, signaling deep domestic confidence despite global reshuffling.\n\n**Macroeconomic tailwinds** further supported the bullish sentiment:\n*   **Crude Oil:** A sharp 5% drop in Brent prices ($91 range) boosted macroeconomic outlooks.\n*   **India VIX:** The Fear Index crashed by nearly 10% to **12.66**, suggesting the recent panic has subsided.\n*   **Currency:** The Rupee strengthened to **95.90** against the Dollar.\n\n**Outlook:** With the **Monthly F&O Expiry** on July 28, volatility is expected to peak. Technical levels suggest that sustaining above **24,050** could ignite a short-covering rally toward 24,400.",
+  "executiveSummary": "As of **July 27-28, 2026**, the Indian market has successfully snapped a five-session losing streak, closing near the pivotal **24,000 level**. This rebound was primarily driven by an IT and FMCG-led recovery, with TCS (+4.72%) and Nestle (+4.07%) leading the gains. Conversely, heavyweights like HUL (-6.88%) and BEL (-4.70%) faced significant pressure due to sectoral cool-offs and profit-booking.\n\nA critical theme in this recovery is the **divergent institutional flow**. While Foreign Institutional Investors (FIIs) remained net sellers (-\u20b91,688.23 Cr), Domestic Institutional Investors (DIIs) acted as the primary market pillar with a strong net buy of **+\u20b92,329.14 Cr**. This domestic absorption resulted in a net positive institutional impact of **\u20b9640.91 Cr**, signaling deep domestic confidence despite global reshuffling.\n\n**Macroeconomic tailwinds** further supported the bullish sentiment:\n*   **Crude Oil:** A sharp 5% drop in Brent prices ($91 range) boosted macroeconomic outlooks.\n*   **India VIX:** The Fear Index crashed by nearly 10% to **12.66**, suggesting the recent panic has subsided.\n*   **Currency:** The Rupee strengthened to **95.90** against the Dollar.\n\n**Outlook:** With the **Monthly F&O Expiry** on July 28, volatility is expected to peak. Technical levels suggest that sustaining above **24,050** could ignite a short-covering rally toward 24,400.",
+  "bias": "Bullish",
   "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "### **3. Headlines & Outlook for July 29, 2026**",
-    "### **Market Analysis & Financial Headlines**"
+    "Here is the latest financial brief for the Indian market as of **July 27-28, 2026**, covering Nifty 50 constituents, institutional flows, and key headlines.",
+    "### **3. Key Financial Headlines for Tomorrow**",
+    "### **Market Summary & Headlines:**"
   ],
   "marketSignals": {
-    "positioningLabel": "Put-side hedge build",
-    "positioningStrike": 23900,
+    "positioningLabel": "Bearish positioning build",
+    "positioningStrike": 24000,
     "divergenceSummary": "Aligned sentiment",
     "divergenceCount": 0,
-    "trapRiskLabel": "Downside trap @ 23950",
+    "trapRiskLabel": "No clear trap",
     "fiiNetCrores": -1688.23,
     "diiNetCrores": 2329.14,
     "tradedValueCrores": 0.0,
-    "spot": 23995.95
+    "spot": 23974.15
   },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
-    "bias": "Neutral",
-    "note": "Mixed, broadly neutral news tone",
-    "analysis": "Recent market news shows a mixed, broadly neutral news tone, with most headlines flagging caution. The most supportive headline: \"Zaggle wins 3-year agreement from Daimler India Commercial Vehicles\". The most cautious headline: \"Powerful tornado struck parts of Wisconsin, toppled trees, damaged homes; over 30,000 left without power: Details\".",
+    "bias": "Bullish",
+    "note": "Mildly positive news tone",
+    "analysis": "Recent market news shows a mildly positive news tone, with most headlines leaning supportive. The most supportive headline: \"French Consumer Confidence Increases to Highest Since March\". The most cautious headline: \"Ambuja Cements consolidated net profit declines 33.60% in the June 2026 quarter\".",
     "headlines": [
       {
-        "title": "Powerful tornado struck parts of Wisconsin, toppled trees, damaged homes; over 30,000 left without power: Details",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "Ex-IPS officer, two victims move SC for decommissioning of pellet guns, seek compensation for injured",
+        "title": "PM Andy Burnham rules out stamp duty reform in next budget: Why is it a blow to British homebuyers?",
         "label": "negative",
         "sentiment": "Moderately negative"
       },
       {
-        "title": "Bank Indonesia Chief\u2019s Shock Exit Fuels Prabowo Policy Worries",
-        "label": "negative",
-        "sentiment": "Moderately negative"
-      },
-      {
-        "title": "Malaysia Economy Set to Hit Upper End of Growth Target, BNM Says",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "Zaggle wins 3-year agreement from Daimler India Commercial Vehicles",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "Stocks to Watch today: BEL, Coal India, HDFC Bank, BoB, Tata Power, IndiGo",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "World News Today Live Updates on July 28, 2026 : Ebola outbreak: Case tally reaches 3,200 as UK approves human trial of vaccine for Bundibugyo strain",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "Ebola outbreak: Case tally reaches 3,200 as UK approves human trial of vaccine for Bundibugyo strain",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "Former FBI chief James Comey seeks dismissal of charges over Instagram seashell post",
+        "title": "Ambuja Cements consolidated net profit declines 33.60% in the June 2026 quarter",
         "label": "negative",
         "sentiment": "Strongly negative"
       },
       {
-        "title": "Takaichi\u2019s Long-Term Vision May Fail to Dispel Inflation Angst",
-        "label": "negative",
-        "sentiment": "Slightly negative"
-      },
-      {
-        "title": "Takaichi\u2019s Looming Tax Cut Plan Risks Weighing on Yen, JGBs",
+        "title": "Thermax Ltd slips for fifth straight session",
         "label": "negative",
         "sentiment": "Strongly negative"
       },
       {
-        "title": "Japan\u2019s Takaichi to Order Food Tax Cut to 1%, Reports Say",
+        "title": "Suzlon Energy consolidated net profit declines 5.89% in the June 2026 quarter",
         "label": "negative",
-        "sentiment": "Slightly negative"
+        "sentiment": "Strongly negative"
       },
       {
-        "title": "Trust key for market operations, says Sebi Chairman Tuhin Kanta Pandey",
+        "title": "Martin Burn standalone net profit rises 183.53% in the June 2026 quarter",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Deep Industries consolidated net profit rises 45.12% in the June 2026 quarter",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Crowds erupt in cheers as Dharmendra Pradhan arrives at Bhubaneswar Airport | Video",
         "label": "positive",
         "sentiment": "Slightly positive"
       },
       {
-        "title": "US widens foreign exchange review, keeps India off currency watch list",
-        "label": "negative",
-        "sentiment": "Slightly negative"
-      },
-      {
-        "title": "Quarterly results of companies",
+        "title": "Quote Of The Day: What Frank Sinatra meant by 'if you play your cards right, once is enough'",
         "label": "neutral",
         "sentiment": "Neutral"
+      },
+      {
+        "title": "Explained: How the Caspian Sea could bring the Ukraine and Iran wars together",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Earthquake Today: 7.1 magnitude quake hits Southern Japan, tsunami advisory issued",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "French Consumer Confidence Increases to Highest Since March",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "AI Boom Propels Hong Kong Exports to Strongest Growth Since 1984",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "AI to Help UK Recover From Data Crisis, Says Senior Statistician",
+        "label": "positive",
+        "sentiment": "Moderately positive"
+      },
+      {
+        "title": "RBA\u2019s Bullock Says Economy Cooling, Unsure Rates High Enough",
+        "label": "positive",
+        "sentiment": "Slightly positive"
+      },
+      {
+        "title": "USD/PHP: Philippines Intervened in Small Way to Defend Peso, BSP Governor Says",
+        "label": "positive",
+        "sentiment": "Strongly positive"
       }
     ]
   }
