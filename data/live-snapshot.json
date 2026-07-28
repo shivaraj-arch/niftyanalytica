@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-27T20:00:54.628941+05:30",
+  "fetchedAt": "2026-07-28T09:00:58.547809+05:30",
   "contributors": {
     "data": [
       {
@@ -243,22 +243,6 @@
         "perChange": 1.7
       },
       {
-        "symbol": "SUNPHARMA",
-        "series": "EQ",
-        "open_price": 1948.5,
-        "high_price": 1977,
-        "low_price": 1933,
-        "ltp": 1973,
-        "prev_price": 1941.1,
-        "net_price": 1.64,
-        "trade_quantity": 5414380,
-        "turnover": 106041.173738,
-        "market_type": "N",
-        "ca_ex_dt": "07-Jul-2026",
-        "ca_purpose": "Dividend - Rs 5 Per Share",
-        "perChange": 1.64
-      },
-      {
         "symbol": "TRENT",
         "series": "EQ",
         "open_price": 2918.9,
@@ -275,20 +259,20 @@
         "perChange": 1.64
       },
       {
-        "symbol": "TITAN",
+        "symbol": "SUNPHARMA",
         "series": "EQ",
-        "open_price": 4686.9,
-        "high_price": 4749.1,
-        "low_price": 4686.9,
-        "ltp": 4739,
-        "prev_price": 4677,
-        "net_price": 1.33,
-        "trade_quantity": 500721,
-        "turnover": 23612.7505575,
+        "open_price": 1948.5,
+        "high_price": 1977,
+        "low_price": 1933,
+        "ltp": 1973,
+        "prev_price": 1941.1,
+        "net_price": 1.64,
+        "trade_quantity": 5414380,
+        "turnover": 106041.173738,
         "market_type": "N",
-        "ca_ex_dt": "09-Jul-2026",
-        "ca_purpose": "Dividend - Rs 15 Per Share",
-        "perChange": 1.33
+        "ca_ex_dt": "07-Jul-2026",
+        "ca_purpose": "Dividend - Rs 5 Per Share",
+        "perChange": 1.64
       },
       {
         "symbol": "HINDUNILVR",
@@ -304,6 +288,22 @@
         "market_type": "N",
         "ca_ex_dt": "23-Jun-2026",
         "ca_purpose": "Dividend - Rs 22 Per Share",
+        "perChange": 1.33
+      },
+      {
+        "symbol": "TITAN",
+        "series": "EQ",
+        "open_price": 4686.9,
+        "high_price": 4749.1,
+        "low_price": 4686.9,
+        "ltp": 4739,
+        "prev_price": 4677,
+        "net_price": 1.33,
+        "trade_quantity": 500721,
+        "turnover": 23612.7505575,
+        "market_type": "N",
+        "ca_ex_dt": "09-Jul-2026",
+        "ca_purpose": "Dividend - Rs 15 Per Share",
         "perChange": 1.33
       },
       {
