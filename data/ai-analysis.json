@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T09:03:24.560109+05:30",
+  "generatedAt": "2026-07-30T15:03:01.309481+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
@@ -12,108 +12,109 @@
     "gemini-robotics-er-1.6-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\n### Nifty 50 Market Analysis & Financial Update\n\nThe Indian stock market shows robust institutional support and sectoral strength, particularly in the IT and FMCG segments.\n\n#### **1. Nifty 50 Stock Analysis (Constituents Data)**\nThe index saw varied performance across major sectors, with high-weightage stocks driving the gains:\n\n*   **Major Gainers:**\n    *   **JIOFIN:** +4.92% (\u20b9248.75) \u2014 Strong bullish momentum.\n    *   **HINDUNILVR:** +4.81% (\u20b92,120) \u2014 Leading the FMCG rally.\n    *   **INFY:** +4.32% (\u20b91,153.50) \u2014 Spearheading the IT sector growth.\n    *   **HINDALCO & TATASTEEL:** ~2.7%\u20133.0% \u2014 Strong uptick in the metal sector.\n*   **Major Decliners:**\n    *   **ADANIPORTS:** -3.03% (\u20b91,721) \u2014 Profit-taking after recent highs.\n    *   **M&M:** -1.32% (\u20b93,228) \u2014 Witnessing marginal selling pressure.\n    *   **POWERGRID:** -0.67% \u2014 Underperforming in the utilities space.\n\n#### **2. Institutional Cash Flow (July 29, 2026)**\nThe institutional desks remained net buyers, providing significant liquidity:\n\n| Institution | Net Value (\u20b9 Cr) | Action |\n| :--- | :--- | :--- |\n| **FII (Foreign)** | **+\u20b92,981.87** | **Net Buyer** |\n| **DII (Domestic)** | **+\u20b9998.02** | **Net Buyer** |\n| **Total Inflow** | **+\u20b93,979.89** | **Strong Liquidity Support** |\n\n#### **3. Financial Headlines & Forecast for Tomorrow (July 31, 2026)**\n*   **Sentiment:** Cautiously bullish. Analysts highlight immediate support at **24,100** and key resistance at **24,500**.\n*   **Global Macro:** Market participants are processing the **US Fed\u2019s decision** to hold rates at **3.50%\u20133.75%**, alongside fluctuating **Oil prices ($89\u2013$90/bbl)** due to geopolitical tensions in the Middle East.\n*   **Sector Highlights:**\n    *   **IT Lead:** Nifty IT is the primary market driver, gaining nearly 10% this week.\n    *   **Earnings Heat:** Markets are reacting to positive Q1 earnings from **L&T (+14%)** and **Eicher Motors (+21%)**.\n    *   **Banking:** Bank Nifty is testing resistance at **57,500**, critical for the next leg of the rally.\n\n**Market Strategy:** Brokerages suggest a \"buy-on-dips\" approach near the **24,050\u201324,100** range, rather than entering at peak resistance levels.\n\nNifty Flow Agent\n\nThe latest FII and DII trade data for the Indian market as of **July 29, 2026**, is summarized below:\n\n### **Institutional Flow Data (\u20b9 Crores)**\n\n| Category | Date | Buy Value | Sell Value | Net Value |\n| :--- | :--- | :--- | :--- | :--- |\n| **FII/FPI** | 29-Jul-2026 | 17,358.31 | 14,376.44 | **+2,981.87** |\n| **DII** | 29-Jul-2026 | 18,176.22 | 17,178.20 | **+998.02** |\n| **Combined** | | | | **+3,979.89** |\n\n---\n\n### **Market Analysis & Financial Headlines**\n\n*   **Sustained Bullish Momentum:** The market exhibits strong bullish sentiment as both Foreign Institutional Investors (FII) and Domestic Institutional Investors (DII) remain net buyers. The combined net inflow of nearly **\u20b94,000 crore** indicates robust liquidity and confidence in the current market trajectory.\n*   **FII Leadership:** FIIs dominated the buying side this session with a net purchase of **\u20b92,981.87 crore**, suggesting a renewal of foreign interest or strategic positioning in heavyweights within the Nifty 50.\n*   **DII Support:** DIIs continue to provide a floor to the market, contributing a steady net inflow of **\u20b9998.02 crore**, ensuring domestic liquidity offsets any potential volatility.\n*   **Headline Sentiment:** \"Dual Inflow Boosts Markets: Institutional sync drives Nifty towards fresh highs as FIIs lead the buying charge.\"\n\n**Summary:** The convergence of positive net values from both institutional classes suggests a high-conviction environment, likely supported by stable macroeconomic signals or strong corporate earnings expectations.\n\nAggregator Agent\n\n### **Executive Summary: Nifty 50 Institutional Sync & Market Outlook**\n\nThe Indian equity market demonstrates a high-conviction environment, characterized by a significant convergence of institutional support. On July 29, 2026, both **Foreign (FII)** and **Domestic (DII)** institutional investors were net buyers, injecting a combined **\u20b93,979.89 crore** into the market. FIIs spearheaded the liquidity charge with a substantial net purchase of **\u20b92,981.87 crore**, signaling a resurgence of foreign confidence in heavyweights, while DIIs provided a solid floor with an additional **\u20b9998.02 crore**.\n\n**Key Market Drivers:**\n*   **Sectoral Strength:** The **IT index** remains the primary growth engine, gaining 10% in a week, led by **INFY (+4.32%)**. FMCG also showed resilience, with **HINDUNILVR (+4.81%)** hitting significant gains.\n*   **Top Performers:** JIOFIN (+4.92%) showed the strongest bullish momentum, while HINDALCO and TATASTEEL contributed to a recovery in the metal sector.\n*   **Forecast:** Analysts remain **cautiously bullish**, targeting immediate resistance at **24,500** and support at **24,100**.\n\n**Critical Connection:** Despite global headwinds\u2014including the US Fed holding rates at **3.50%\u20133.75%** and oil price volatility ($89\u2013$90)\u2014strong domestic Q1 earnings from firms like **L&T (+14%)** and **Eicher Motors (+21%)** have successfully offset external pressures. The recommended strategy is \"buy-on-dips\" near the 24,050\u201324,100 range.",
-  "executiveSummary": "### **Executive Summary: Nifty 50 Institutional Sync & Market Outlook**\n\nThe Indian equity market demonstrates a high-conviction environment, characterized by a significant convergence of institutional support. On July 29, 2026, both **Foreign (FII)** and **Domestic (DII)** institutional investors were net buyers, injecting a combined **\u20b93,979.89 crore** into the market. FIIs spearheaded the liquidity charge with a substantial net purchase of **\u20b92,981.87 crore**, signaling a resurgence of foreign confidence in heavyweights, while DIIs provided a solid floor with an additional **\u20b9998.02 crore**.\n\n**Key Market Drivers:**\n*   **Sectoral Strength:** The **IT index** remains the primary growth engine, gaining 10% in a week, led by **INFY (+4.32%)**. FMCG also showed resilience, with **HINDUNILVR (+4.81%)** hitting significant gains.\n*   **Top Performers:** JIOFIN (+4.92%) showed the strongest bullish momentum, while HINDALCO and TATASTEEL contributed to a recovery in the metal sector.\n*   **Forecast:** Analysts remain **cautiously bullish**, targeting immediate resistance at **24,500** and support at **24,100**.\n\n**Critical Connection:** Despite global headwinds\u2014including the US Fed holding rates at **3.50%\u20133.75%** and oil price volatility ($89\u2013$90)\u2014strong domestic Q1 earnings from firms like **L&T (+14%)** and **Eicher Motors (+21%)** have successfully offset external pressures. The recommended strategy is \"buy-on-dips\" near the 24,050\u201324,100 range.",
+  "summary": "Nifty Analysis Agent\n\nBased on the latest data from the National Stock Exchange (NSE) and market updates, here is a breakdown of the current market activity and the outlook for tomorrow.\n\n### **1. Nifty 50 Stock Performance Analysis**\nThe latest session saw a predominantly positive lean among the top constituents, driven by Energy, Auto, and IT sectors.\n\n*   **Top Gainers (Major Contributors):**\n    *   **COALINDIA:** Up **1.71%** (LTP: \u20b9417.05) - Emerging as the top performer.\n    *   **M&M:** Up **1.61%** (LTP: \u20b93,273.60) - Strong sentiment in the auto space.\n    *   **ONGC:** Up **1.60%** (LTP: \u20b9242.13) - Gains mirrored by rising global energy demand.\n    *   **EICHERMOT:** Up **1.54%** (LTP: \u20b97,899.00).\n    *   **WIPRO:** Up **1.52%** (LTP: \u20b9186.40) - IT leads with healthy turnover.\n    *   **RELIANCE:** Up **1.34%** (LTP: \u20b91,293.00) - Continues to provide heavy-weight support to the index.\n\n*   **Top Losers (Sectoral Lag):**\n    *   **ADANIPORTS:** Down **3.24%** (LTP: \u20b91,664.00) - Notable profit booking or negative news impact.\n    *   **HDFCLIFE:** Down **1.82%** (LTP: \u20b9546.55).\n    *   **SHRIRAMFIN:** Down **1.75%** (LTP: \u20b91,026.40).\n    *   **ASIANPAINT:** Down **1.00%** (LTP: \u20b92,730.70).\n\n---\n\n### **2. Latest FII & DII Flow Data**\nThe provisional figures for July 29, 2026, suggest a robust return of foreign capital, providing a significant tailwind for the bulls:\n*   **Foreign Institutional Investors (FIIs):** Net **BUYERS** of **\u20b92,981.87 crore**.\n*   **Domestic Institutional Investors (DIIs):** Net **BUYERS** of **\u20b9998.02 crore**.\n*   **Market Sentiment:** With a combined net buying of nearly **\u20b94,000 crore**, liquidity support remains high as the Nifty hovers near its recent rally points (around **24,250**).\n\n---\n\n### **3. Financial Headlines & Triggers for Tomorrow (July 31, 2026)**\nInvestors should keep an eye on the following catalysts for tomorrow's session:\n\n*   **Key Technical Targets:**\n    *   **Resistance:** Immediate hurdle at **24,360\u201324,400**. A breakout above this could push the index toward **24,700**.\n    *   **Support:** Strong base is noted at **24,100** (100-day EMA). A breach below **24,000** could signal deeper consolidation.\n*   **Major Earnings Calls:**\n    *   **Maruti Suzuki:** To report Q1 FY27 results (Call at 5:15 PM). Expected focus on margin expansion.\n    *   **Others:** Kajaria Ceramics and Raymond Lifestyle are among the prominent firms expected to post results.\n*   **Macroeconomic Data:**\n    *   **RBI Data:** India\u2019s weekly Foreign Exchange Reserves data will be released.\n    *   **Budget Figures:** Government Budget Value for June 2026 will be made public, impacting fiscal outlook sentiment.\n*   **Global Cues:** Markets are still processing the \"wait and watch\" stance from the **US Federal Reserve**, while elevated Brent crude (**~$90/barrel**) remains a monitoring point for potential inflationary pressure.\n\nNifty Flow Agent\n\nThe latest FII and DII flow data for the Indian market as of **July 29, 2026**, is as follows:\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **FII/FPI** | 29-Jul-2026 | 17,358.31 | 14,376.44 | **+2,981.87** |\n| **DII** | 29-Jul-2026 | 18,176.22 | 17,178.20 | **+998.02** |\n| **Total** | | **35,534.53** | **31,554.64** | **+3,979.89** |\n\n### **Market Analysis & Financial Headlines:**\n\n*   **Bullish Momentum:** The combined net inflow of nearly **\u20b93,980 crore** indicates strong institutional support for the session.\n*   **Dual Buying:** Both Foreign Institutional Investors (FII) and Domestic Institutional Investors (DII) remained net buyers, suggesting broad-based confidence across both international and local desks.\n*   **Headlines Summary:**\n    *   **Net Inflow Strength:** FIIs led the buying charge with a significant net addition of nearly \u20b93,000 crore, signaling potential optimism in macro-indicators or specific heavyweights within the Nifty 50.\n    *   **DII Resilience:** DIIs continued to provide a safety net, remaining in green territory despite elevated market valuations.\n    *   **Market Sentiment:** The market maintains a risk-on appetite as liquidity remains robust, likely driven by steady quarterly earnings reports and favorable global cues.\n\nAggregator Agent\n\n### **Executive Summary: Nifty 50 Market Outlook and Institutional Activity**\n\nThe Indian equity market exhibits robust bullish momentum, anchored by a significant return of institutional capital. On **July 29, 2026**, Foreign Institutional Investors (FIIs) and Domestic Institutional Investors (DIIs) demonstrated a rare synchronicity in aggressive buying, contributing a combined net inflow of nearly **\u20b94,000 crore**. FIIs led the charge with **\u20b92,981.87 crore** in net purchases, signaling a risk-on appetite and providing a solid liquidity floor as the Nifty 50 hovers near **24,250**.\n\n**Sectoral Performance & Key Drivers**\nThe market maintains a \"positive lean,\" primarily fueled by the **Energy, Auto, and IT sectors**. Top contributors include **Coal India (+1.71%)**, **M&M (+1.61%)**, and **Reliance (+1.34%)**, which continues to provide heavyweight support. Conversely, **Adani Ports (-3.24%)** emerged as a primary laggard due to notable profit booking.\n\n**Triggers for July 31, 2026**\nLooking ahead, the market faces a critical resistance zone at **24,360\u201324,400**; a breakout could target **24,700**, while support holds firm at **24,100**. Key catalysts include **Maruti Suzuki\u2019s Q1 results**, upcoming **RBI Forex reserve data**, and national **Budget figures**. While internal liquidity is strong, high **Brent crude (~$90/barrel)** and ongoing cues from the **US Federal Reserve** remain pivotal monitoring points for potential inflationary pressure.",
+  "executiveSummary": "### **Executive Summary: Nifty 50 Market Outlook and Institutional Activity**\n\nThe Indian equity market exhibits robust bullish momentum, anchored by a significant return of institutional capital. On **July 29, 2026**, Foreign Institutional Investors (FIIs) and Domestic Institutional Investors (DIIs) demonstrated a rare synchronicity in aggressive buying, contributing a combined net inflow of nearly **\u20b94,000 crore**. FIIs led the charge with **\u20b92,981.87 crore** in net purchases, signaling a risk-on appetite and providing a solid liquidity floor as the Nifty 50 hovers near **24,250**.\n\n**Sectoral Performance & Key Drivers**\nThe market maintains a \"positive lean,\" primarily fueled by the **Energy, Auto, and IT sectors**. Top contributors include **Coal India (+1.71%)**, **M&M (+1.61%)**, and **Reliance (+1.34%)**, which continues to provide heavyweight support. Conversely, **Adani Ports (-3.24%)** emerged as a primary laggard due to notable profit booking.\n\n**Triggers for July 31, 2026**\nLooking ahead, the market faces a critical resistance zone at **24,360\u201324,400**; a breakout could target **24,700**, while support holds firm at **24,100**. Key catalysts include **Maruti Suzuki\u2019s Q1 results**, upcoming **RBI Forex reserve data**, and national **Budget figures**. While internal liquidity is strong, high **Brent crude (~$90/barrel)** and ongoing cues from the **US Federal Reserve** remain pivotal monitoring points for potential inflationary pressure.",
   "bias": "Bullish",
   "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "#### **3. Financial Headlines & Forecast for Tomorrow (July 31, 2026)**",
-    "### **Market Analysis & Financial Headlines**",
-    "*   **Headline Sentiment:** \"Dual Inflow Boosts Markets: Institutional sync drives Nifty towards fresh highs as FIIs lead the buying charge.\""
+    "*   **ADANIPORTS:** Down **3.24%** (LTP: \u20b91,664.00) - Notable profit booking or negative news impact.",
+    "### **3. Financial Headlines & Triggers for Tomorrow (July 31, 2026)**",
+    "### **Market Analysis & Financial Headlines:**",
+    "*   **Headlines Summary:**"
   ],
   "marketSignals": {
     "positioningLabel": "Put-side hedge build",
     "positioningStrike": 24200,
     "divergenceSummary": "Aligned sentiment",
     "divergenceCount": 0,
-    "trapRiskLabel": "Downside trap @ 24200",
+    "trapRiskLabel": "No clear trap",
     "fiiNetCrores": 2981.87,
     "diiNetCrores": 998.02,
     "tradedValueCrores": 0.0,
-    "spot": 24345.45
+    "spot": 24279.7
   },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
-    "bias": "Bearish",
-    "note": "Mildly cautious news tone",
-    "analysis": "Recent market news shows a mildly cautious news tone, with most headlines flagging caution. The most supportive headline: \"Nifty could rise to 24,500-24,600, says Jatin Gedia, shares 3 stock picks\". The most cautious headline: \"Japan Trims Its Economic Outlook as Oil Prices Weigh on Growth\".",
+    "bias": "Bullish",
+    "note": "Mildly positive news tone",
+    "analysis": "Recent market news shows a mildly positive news tone, with most headlines leaning supportive. The most supportive headline: \"PSP Projects consolidated net profit rises 4266.67% in the June 2026 quarter\". The most cautious headline: \"Mahanagar Gas consolidated net profit declines 39.44% in the June 2026 quarter\".",
     "headlines": [
       {
-        "title": "Iran war: US to spend $58.6 billion in missile deal with Lockheed Martin amid depleting critical Patriot interceptors",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "Japan\u2019s Takaichi Calls for Food Sales Tax Cut to 1%, NHK Says",
+        "title": "\u2018I have made mistakes\u2019: Ajinkya Rahane chokes in emotion while announcing his retirement | Watch",
         "label": "negative",
         "sentiment": "Slightly negative"
       },
       {
-        "title": "US launches fresh strikes on Iranian military targets after missile attack on American forces in Jordan",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Asian stocks choppy after rout, Fed leaves markets uncertain on rates",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "Stocks to buy: TVS Motor among 3 stock ideas from Ajit Mishra; here's why",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Stocks to Watch today: Bajaj Finance, Vedanta, Tata Steel, Dabur, PNB, RCF",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Nifty could rise to 24,500-24,600, says Jatin Gedia, shares 3 stock picks",
+        "title": "PSP Projects consolidated net profit rises 4266.67% in the June 2026 quarter",
         "label": "positive",
         "sentiment": "Strongly positive"
       },
       {
-        "title": "Petrol, diesel prices today: Check fuel rates in Delhi, Mumbai, Bengaluru as Brent falls amid US-Iran tensions",
-        "label": "negative",
-        "sentiment": "Moderately negative"
-      },
-      {
-        "title": "Pakistan: Seven police personnel, eight terrorists dead in Hangu police checkpoint attack; several injured",
+        "title": "Mahanagar Gas consolidated net profit declines 39.44% in the June 2026 quarter",
         "label": "negative",
         "sentiment": "Strongly negative"
       },
       {
-        "title": "Japan Trims Its Economic Outlook as Oil Prices Weigh on Growth",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "India Student Protests Expose Soaring Private Coaching Costs: In Charts",
-        "label": "negative",
-        "sentiment": "Moderately negative"
-      },
-      {
-        "title": "Iran war: Why US military may ban cell phones for some troops in Middle East? Report says Tehran \u2018benefiting\u2019 from...",
+        "title": "ICRA consolidated net profit rises 32.33% in the June 2026 quarter",
         "label": "positive",
-        "sentiment": "Moderately positive"
+        "sentiment": "Strongly positive"
       },
       {
-        "title": "BOE Set to Keep Powder Dry as Oil Prices Swing: Decision Guide",
+        "title": "GHCL Textiles standalone net profit rises 191.05% in the June 2026 quarter",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Market pare gains; Nifty slips below 24,250",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "Severe rainfall alert: IMD forecasts heavy rainfall in Assam, Arunachal Pradesh, parts of Odisha amid monsoon",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "Gaganyaan mission update: Govt unveils details, says Ganganyatris training in Bengaluru as first uncrewed launch nears",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "How the NFL's Washington Commanders Build Relationships With Advertisers",
+        "title": "Sonam Wangchuk hails Vande Bharat Express as he travels to Srinagar from New Delhi, reminds Centre to fulfil promises",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Quarterly results of companies",
+        "title": "Union Minister Jitendra Singh introduces Public Examinations Amendment Bill 2026 in Rajya Sabha amid Oppn uproar",
         "label": "neutral",
         "sentiment": "Neutral"
+      },
+      {
+        "title": "Zambia\u2019s Inflation Rate Holds Steady, Helped by Kwacha Strength",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Saudi Economy Shrinks Most Since 2020 as War Roils Oil Exports",
+        "label": "negative",
+        "sentiment": "Strongly negative"
+      },
+      {
+        "title": "Euro Zone Grows at Fastest in Over a Year Despite Iran Pressures",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Peso Slump, Electronics Demand Lift Philippine Exports to Record High",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "British Shoppers Tap Savings Buffers to Ride Out Economic Pain",
+        "label": "positive",
+        "sentiment": "Slightly positive"
       }
     ]
   }
