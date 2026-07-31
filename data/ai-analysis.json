@@ -1,123 +1,126 @@
 {
-  "generatedAt": "2026-07-30T20:02:49.149095+05:30",
+  "generatedAt": "2026-07-31T15:02:03.759274+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
     "nifty_flow_agent",
     "AggregatorAgent"
   ],
-  "model": "gemini-robotics-er-1.6-preview",
-  "requestedModel": "gemini-robotics-er-1.6-preview",
+  "model": "gemini-robotics-er-2-preview",
+  "requestedModel": "gemini-robotics-er-2-preview",
   "attemptedModels": [
-    "gemini-robotics-er-1.6-preview"
+    "gemini-robotics-er-2-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\n### **Nifty 50 Analysis: Stock Movements & Institutional Flow**\n\nBased on the latest data for the upcoming trading session, the Indian market exhibits a **cautiously bullish sentiment** driven by high corporate earnings momentum and institutional buying support.\n\n---\n\n### **1. Stock Performance Analysis (Nifty 50)**\nAutomobile and PSU stocks were the primary gainers, while insurance and specific port-related stocks faced selling pressure.\n\n*   **Major Gainers (Advancers):**\n    *   **M&M (Mahindra & Mahindra):** **+2.26%** (LTP: \u20b93,294.60) \u2013 Beneficiary of robust profit growth and sector tailwinds.\n    *   **Coal India:** **+1.79%** (LTP: \u20b9417.40).\n    *   **Eicher Motors:** **+1.67%** (LTP: \u20b97,909.00).\n    *   **Maruti Suzuki:** **+1.66%** (LTP: \u20b914,180.00).\n*   **Major Losers (Decliners):**\n    *   **Adani Ports:** **-3.38%** (LTP: \u20b91,661.50) \u2013 Significant drag on the index today.\n    *   **HDFC Life:** **-2.09%** (LTP: \u20b9545.05).\n    *   **Shriram Finance:** **-1.50%** (LTP: \u20b91,029.00).\n*   **Smart Brief - Key Index Drivers:**\n    *   **Reliance Industries (+1.06%)** and **HDFC Bank (+0.7%)** were pivotal in maintaining index gains, supported by high turnover. \n    *   **ICICI Bank (-0.55%)** saw high-volume profit-taking, acting as a minor hurdle for the Nifty's upward trend.\n\n---\n\n### **2. Institutional (FII/DII) Flow Data**\nThe institutional segment continues to show high conviction, with cumulative net buying providing a solid floor for the market.\n\n| Category | Date | Net Value (\u20b9 Cr) | Action |\n| :--- | :--- | :--- | :--- |\n| **FII (Foreign)** | July 29, 2026 | **+ \u20b92,981.87** | **Net Buyer** |\n| **DII (Domestic)** | July 29, 2026 | **+ \u20b9998.02** | **Net Buyer** |\n\n*   **Provisional Update:** Recent trends show continued net buying activity, which helped Nifty settle around the **24,317** mark recently.\n\n---\n\n### **3. Market Headlines & Financial Outlook for Tomorrow**\n\n**Headlines for tomorrow (Friday, July 31, 2026):**\n*   **Q1 Earnings Focus:** **LIC (Life Insurance Corporation)** is set to reveal its quarterly results tomorrow, which will likely dictate sentiment for Bank Nifty and general insurers.\n*   **Global Macro Cues:** US Federal Reserve's stance on holding rates between **3.5%\u20133.75%** is keeping markets steady, though future hawkishness remains a monitorable.\n*   **Energy Warning:** Brent crude hovering near **$89\u2013$90/barrel** is being watched as a key risk factor for inflation and OMCs (Oil Marketing Companies).\n*   **IT Momentum:** The Nifty IT index continues its massive run (up 20% this month), eyeing further record levels if global tech sentiment holds firm.\n\n**Technical Support & Resistance levels:**\n- **Immediate Support:** 24,150\n- **Major Resistance:** 24,500\n\nNifty Flow Agent\n\nThe latest FII and DII flow data for the Indian market as of **July 30, 2026**, is as follows:\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **FII/FPI** | 30-Jul-2026 | 17,431.96 | 13,808.45 | **+3,623.51** |\n| **DII** | 30-Jul-2026 | 17,979.63 | 19,843.66 | **-1,864.03** |\n\n### **Market Summary & Headlines:**\n\n*   **Mixed Institutional Activity:** Foreign Institutional Investors (FIIs) showed strong conviction with a net inflow of over **\u20b93,623 crore**, while Domestic Institutional Investors (DIIs) acted as net sellers, pulling out **\u20b91,864 crore**.\n*   **Net Positive liquidity:** Despite DII selling, the combined net institutional inflow remained positive at approximately **\u20b91,759 crore**, providing steady liquidity support to the benchmark indices.\n*   **Bullish FII Sentiment:** FIIs continue to remain net buyers for the session, suggesting confidence in large-cap valuations or specific sectoral opportunities within the Nifty 50.\n*   **DII Profit Booking:** The negative net value for DIIs indicates strategic profit booking at current market levels or rebalancing of portfolios.\n\n**Financial Headlines:**\n1.  **FIIs Fuel Market Resilience:** Continued foreign inflows offset domestic outflows, keeping the market sentiment cautiously optimistic.\n2.  **DIIs Turn Net Sellers:** Local institutions take a breather after recent rallies, booking gains across key sectors.\n3.  **Inflow Surge:** Total traded value across both categories exceeded \u20b968,000 crore, indicating high participation and market depth.\n\nAggregator Agent\n\n### **Executive Summary: Nifty 50 Performance & Institutional Dynamics**\n\nThe Indian market maintains a **cautiously bullish sentiment**, sustained by positive institutional liquidity and strong corporate earnings momentum. A key shift is emerging in institutional behavior: while both FIIs and DIIs were net buyers on July 29, recent data from July 30 shows a **divergence**. FIIs have intensified their conviction with a net inflow of **\u20b93,623.51 crore**, while DIIs transitioned to strategic profit booking, offloading **\u20b91,864.03 crore**. Despite this DII sell-off, the combined net institutional inflow remains positive, providing a solid floor for the Nifty 50.\n\n**Core Market Drivers:**\n*   **Sectoral Strength:** The **Automobile** (M&M, Maruti) and **IT** sectors remain high-growth engines, with the Nifty IT index surging 20% this month. Conversely, profit-taking is evident in **Insurance** and **Port-related stocks** (notably Adani Ports at -3.38%).\n*   **Index Anchors:** Heavyweights **Reliance (+1.06%)** and **HDFC Bank (+0.7%)** are critical in offsetting volatility from ICICI Bank and other high-volume decliners.\n*   **Forward Outlook:** For the July 31 session, the focus shifts to **LIC\u2019s Q1 results** and macro risks like Brent crude hovering near **$90/barrel**.\n\n**Technicals:** The index holds immediate support at **24,150**, with a major breakout expected only if it clears the **24,500** resistance level. High traded values (\u20b968,000+ Cr) indicate deep market participation and resilient liquidity.",
-  "executiveSummary": "### **Executive Summary: Nifty 50 Performance & Institutional Dynamics**\n\nThe Indian market maintains a **cautiously bullish sentiment**, sustained by positive institutional liquidity and strong corporate earnings momentum. A key shift is emerging in institutional behavior: while both FIIs and DIIs were net buyers on July 29, recent data from July 30 shows a **divergence**. FIIs have intensified their conviction with a net inflow of **\u20b93,623.51 crore**, while DIIs transitioned to strategic profit booking, offloading **\u20b91,864.03 crore**. Despite this DII sell-off, the combined net institutional inflow remains positive, providing a solid floor for the Nifty 50.\n\n**Core Market Drivers:**\n*   **Sectoral Strength:** The **Automobile** (M&M, Maruti) and **IT** sectors remain high-growth engines, with the Nifty IT index surging 20% this month. Conversely, profit-taking is evident in **Insurance** and **Port-related stocks** (notably Adani Ports at -3.38%).\n*   **Index Anchors:** Heavyweights **Reliance (+1.06%)** and **HDFC Bank (+0.7%)** are critical in offsetting volatility from ICICI Bank and other high-volume decliners.\n*   **Forward Outlook:** For the July 31 session, the focus shifts to **LIC\u2019s Q1 results** and macro risks like Brent crude hovering near **$90/barrel**.\n\n**Technicals:** The index holds immediate support at **24,150**, with a major breakout expected only if it clears the **24,500** resistance level. High traded values (\u20b968,000+ Cr) indicate deep market participation and resilient liquidity.",
+  "summary": "Nifty Analysis Agent\n\nHere is a comprehensive financial and stock-specific analysis for the Indian stock market (Nifty 50), combining the latest trading data, FII/DII flows, and tomorrow's upcoming market headlines.\n\n---\n\n### **1. FII & DII Flows & Market Sentiment**\n*   **FII Activity (Foreign Institutional Investors):** Remained net **buyers** for consecutive sessions, injecting **\u20b93,623.51 crore** into the cash market. This continued foreign inflow highlights sustained interest from global funds.\n*   **DII Activity (Domestic Institutional Investors):** Turned net **sellers**, booking profits of **\u20b91,864.03 crore**.\n*   **Key Trend:** Although DIIs booked partial profit in this session, recent records indicate their Nifty 500 ownership is at a record high of **21%**, whilst FII holdings sit near a multi-year low of **17%**, showing the immense domestic appetite shielding the market from global pullbacks.\n\n---\n\n### **2. Stock-Specific Analysis (Nifty 50 Action)**\n\nFrom the latest live trading data, we see a clear sector-wise rotation: **Financials and Autos drove the upside**, while the **IT sector experienced profit-taking**.\n\n#### **Top Gainers (Major Positive Contributors)**\n1.  **BAJFINANCE (Bajaj Finance):** **+8.05%** (LTP: \u20b91,138.30)\n    *   *Triggers:* Sparked by a blockbuster earnings release showing a **29% YoY rise in standalone net profit** (\u20b95,345.50 crore), which propelled its share price to new highs.\n2.  **BAJAJFINSV (Bajaj Finserv):** **+5.79%** (LTP: \u20b92,019.90)\n    *   *Triggers:* Gained in tandem with its subsidiary, Bajaj Finance, showing strong bullish sentiment.\n3.  **JIOFIN (Jio Financial Services):** **+3.67%** (LTP: \u20b9256.01)\n4.  **M&M (Mahindra & Mahindra):** **+3.56%** (LTP: \u20b93,400.70)\n    *   *Triggers:* Supported by solid domestic auto demand.\n5.  **RELIANCE (Reliance Industries):** **+0.88%** (LTP: \u20b91,304.30)\n    *   *Triggers:* Provided critical heavyweight support to the index's baseline.\n\n#### **Top Losers (Major Drags)**\n1.  **TCS (Tata Consultancy Services):** **-2.78%** (LTP: \u20b92,364.30)\n2.  **ETERNAL (Eternal):** **-2.49%** (LTP: \u20b9302.90)\n3.  **MAXHEALTH (Max Healthcare):** **-2.34%** (LTP: \u20b91,098.50)\n4.  **INFY (Infosys):** **-2.28%** (LTP: \u20b91,128.80)\n5.  **WIPRO (Wipro):** **-1.41%** (LTP: \u20b9183.71)\n    *   *Sectoral Drifts:* Indian IT stocks faced sharp, selective profit-taking as investors locked in gains ahead of the weekend, despite positive overnight cues from Wall Street's tech rebound.\n\n---\n\n### **3. Key Financial Headlines & Outlook for Tomorrow**\n\nAs the market transitions into tomorrow's session, keep a close watch on these critical triggers:\n\n*   **Global Oil & Forex Relief:** Brent Crude oil cooled down below **$89 per barrel**, providing a significant macroeconomic relief cushion for oil-importing countries like India. The Indian Rupee (USD/INR) opened 28 paise stronger, trading around **95.40**.\n*   **Earnings Impact to Continue:** \n    *   **Hyundai Motor India** is back in the spotlight after rallying **7\u20138%**, brushing aside a 35% decline in Q1 profit on hopes of strong multi-quarter recovery.\n    *   **Thermax Ltd.**'s stock took a severe hit, plunging up to **16%** due to an 83.4% YoY slump in quarterly profits. This could trigger broader mid-cap capitulation in capital goods stocks tomorrow if negative sentiments persist.\n    *   Upcoming earnings from giants like **ITC** and **Mankind Pharma** will likely dictate the next wave of stock-specific and sectoral swings.\n*   **Trading Strategy Note:** The market's technical structure remains consolidated around the **24,330 \u2013 24,360** zone for the Nifty 50. Strong domestic cash-market support combined with a steady decline in crude oil provides an underlying safety net, but investors must remain cautious of high volatility in IT and capital goods counters.\n\nNifty Flow Agent\n\nThe latest FII (Foreign Institutional Investors) and DII (Domestic Institutional Investors) flow data for the Indian market as of **July 30, 2026**, is as follows:\n\n### **FII & DII Flow Data (July 30, 2026)**\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **FII/FPI** | 30-Jul-2026 | 17,431.96 | 13,808.45 | **+3,623.51** (Net Buyers) |\n| **DII** | 30-Jul-2026 | 17,979.63 | 19,843.66 | **-1,864.03** (Net Sellers) |\n| **Combined**| \u2014 | \u2014 | \u2014 | **+1,759.48** (Net Inflow) |\n\n---\n\n### **Market Analysis & Financial Headlines**\n\n#### **1. FIIs Drive the Rally as Net Buyers**\nForeign Institutional Investors (FIIs) showed strong bullish momentum, registering a significant net buy value of **\u20b93,623.51 crore**. This injection of foreign liquidity indicates increasing confidence in large-cap Indian equities, likely driving upward pressure on heavyweights within the Nifty 50.\n\n#### **2. Profit Booking by DIIs**\nOn the other side, Domestic Institutional Investors (DIIs) opted to book profits during this session, ending up as net sellers with a negative net value of **-\u20b91,864.03 crore**. This reflects a cautious approach or rebalancing of portfolios at higher valuation levels.\n\n#### **3. Positive Combined Market Sentiment**\nDespite DII outflows, the heavy FII inflow pushed the overall net flow to **+\u20b91,759.48 crore**. This positive net balance signals robust resilience and liquidity support in the market, favoring buyers and creating a positive momentum build-up for the upcoming trading sessions.\n\n---\n\n### **Expected Market Headlines**\n* **\"FIIs Lead the Charge:\"** Foreign portfolio investors pump over \u20b93,600 Cr into Indian equities, offsetting local profit-booking.\n* **\"DIIs Retrench at Peaks:\"** Domestic institutions turn net sellers of \u20b91,864 Cr amid local consolidations.\n* **\"Nifty Gains Ground:\"** Strong net institutional inflows of \u20b91,759 Cr support key indices.\n\nAggregator Agent\n\n**Executive Summary**\n\nOn July 30, 2026, the Indian stock market exhibited robust resilience, driven by a positive combined net institutional inflow of \u20b91,759.48 crore. In a striking trend, Foreign Institutional Investors (FIIs) spearheaded the bullish charge by injecting \u20b93,623.51 crore, comfortably offsetting profit-booking by Domestic Institutional Investors (DIIs), who offloaded \u20b91,864.03 crore. This dynamic highlights a structural shift: while FIIs are returning to large-caps, DII ownership of Nifty 500 companies remains at a record high of 21% (versus FIIs at a multi-year low of 17%), insulating the market against global pullbacks.\n\nA sharp sector rotation defined the session's action. Strong corporate earnings propelled Financials and Autos, with Bajaj Finance surging 8.05% on stellar 29% YoY profit growth, while Mahindra & Mahindra gained 3.56%. Conversely, the IT sector faced selective profit-taking, dragged down by TCS (-2.78%) and Infosys (-2.28%). \n\nMacroeconomic reliefs further aided sentiment as Brent Crude cooled below $89 per barrel and the Rupee strengthened to 95.40. Despite pockets of earnings-led volatility\u2014such as Thermax\u2019s 16% plunge\u2014robust domestic liquidity and easing global oil pressures continue to provide a sturdy floor for the consolidating index.",
+  "executiveSummary": "**Executive Summary**\n\nOn July 30, 2026, the Indian stock market exhibited robust resilience, driven by a positive combined net institutional inflow of \u20b91,759.48 crore. In a striking trend, Foreign Institutional Investors (FIIs) spearheaded the bullish charge by injecting \u20b93,623.51 crore, comfortably offsetting profit-booking by Domestic Institutional Investors (DIIs), who offloaded \u20b91,864.03 crore. This dynamic highlights a structural shift: while FIIs are returning to large-caps, DII ownership of Nifty 500 companies remains at a record high of 21% (versus FIIs at a multi-year low of 17%), insulating the market against global pullbacks.\n\nA sharp sector rotation defined the session's action. Strong corporate earnings propelled Financials and Autos, with Bajaj Finance surging 8.05% on stellar 29% YoY profit growth, while Mahindra & Mahindra gained 3.56%. Conversely, the IT sector faced selective profit-taking, dragged down by TCS (-2.78%) and Infosys (-2.28%). \n\nMacroeconomic reliefs further aided sentiment as Brent Crude cooled below $89 per barrel and the Rupee strengthened to 95.40. Despite pockets of earnings-led volatility\u2014such as Thermax\u2019s 16% plunge\u2014robust domestic liquidity and easing global oil pressures continue to provide a sturdy floor for the consolidating index.",
   "bias": "Bullish",
   "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "### **3. Market Headlines & Financial Outlook for Tomorrow**",
-    "**Headlines for tomorrow (Friday, July 31, 2026):**",
-    "### **Market Summary & Headlines:**",
-    "**Financial Headlines:**",
-    "**FIIs Fuel Market Resilience:** Continued foreign inflows offset domestic outflows, keeping the market sentiment cautiously optimistic.",
-    "**DIIs Turn Net Sellers:** Local institutions take a breather after recent rallies, booking gains across key sectors.",
-    "**Inflow Surge:** Total traded value across both categories exceeded \u20b968,000 crore, indicating high participation and market depth."
+    "Here is a comprehensive financial and stock-specific analysis for the Indian stock market (Nifty 50), combining the latest trading data, FII/DII flows, and tomorrow's upcoming market headlines.",
+    "**BAJFINANCE (Bajaj Finance):** **+8.05%** (LTP: \u20b91,138.30)",
+    "**BAJAJFINSV (Bajaj Finserv):** **+5.79%** (LTP: \u20b92,019.90)",
+    "**JIOFIN (Jio Financial Services):** **+3.67%** (LTP: \u20b9256.01)",
+    "**M&M (Mahindra & Mahindra):** **+3.56%** (LTP: \u20b93,400.70)",
+    "**RELIANCE (Reliance Industries):** **+0.88%** (LTP: \u20b91,304.30)",
+    "**TCS (Tata Consultancy Services):** **-2.78%** (LTP: \u20b92,364.30)",
+    "**ETERNAL (Eternal):** **-2.49%** (LTP: \u20b9302.90)",
+    "**MAXHEALTH (Max Healthcare):** **-2.34%** (LTP: \u20b91,098.50)",
+    "**INFY (Infosys):** **-2.28%** (LTP: \u20b91,128.80)"
   ],
   "marketSignals": {
     "positioningLabel": "Put-side hedge build",
-    "positioningStrike": 24200,
+    "positioningStrike": 24300,
     "divergenceSummary": "Aligned sentiment",
     "divergenceCount": 0,
-    "trapRiskLabel": "Downside trap @ 24200",
+    "trapRiskLabel": "No clear trap",
     "fiiNetCrores": 3623.51,
     "diiNetCrores": -1864.03,
     "tradedValueCrores": 0.0,
-    "spot": 24317.15
+    "spot": 24368.15
   },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
-    "bias": "Bearish",
-    "note": "Moderately cautious news tone",
-    "analysis": "Recent market news shows a moderately cautious news tone, with most headlines flagging caution. The most supportive headline: \"German Inflation Accelerates to Three-Month High on Energy\". The most cautious headline: \"Short Gilts Surge as Traders Slash Bets on BOE Hike in September\".",
+    "bias": "Bullish",
+    "note": "Mildly positive news tone",
+    "analysis": "Recent market news shows a mildly positive news tone, with most headlines leaning supportive. The most supportive headline: \"Goldman Sees More South Africa Rating Upgrades on Strong Revenue\". The most cautious headline: \"Bengaluru's Visa manager loses job in latest round of layoffs despite \u2018outstanding performance reviews\u2019\".",
     "headlines": [
       {
-        "title": "GSTN again defers e-Way Bill changes ahead of 1 August rollout",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Short Gilts Surge as Traders Slash Bets on BOE Hike in September",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "Chhota Rajan convicted as CBI court sentences him to 7 years in fake passport case; here's what the probe revealed",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Over 200 academics criticise Priyanka Gandhi over 'gaumutra' remark on IIT professor: 'Whether intended as sarcasm...'",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "US Section 301 tariffs may not survive court scrutiny, experts say",
-        "label": "negative",
-        "sentiment": "Moderately negative"
-      },
-      {
-        "title": "Board of Honda India Power Products approves change in CFO",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Oil India signs MoU with Municipal Corporation of Delhi",
-        "label": "positive",
-        "sentiment": "Moderately positive"
-      },
-      {
-        "title": "Tata Power Renewable Energy conducts groundbreaking ceremony of 800 MW RE project",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "GAIL (India) announces its inclusion in FTSE4Good Index Series",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Saurav Das\u2019 single-word reaction to Supreme Court\u2019s decision on pellet guns sparks outrage, \u2018Face the consequence\u2019",
-        "label": "negative",
-        "sentiment": "Moderately negative"
-      },
-      {
-        "title": "Monsoon weather: Are schools open or closed tomorrow in India as IMD predicts heavy rainfall in various states?",
-        "label": "negative",
-        "sentiment": "Moderately negative"
-      },
-      {
-        "title": "US GDP Growth Softens Despite Strong Consumer, Investment",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "Mexico Economy Rebounds More Than Expected in Second Quarter",
-        "label": "negative",
-        "sentiment": "Moderately negative"
-      },
-      {
-        "title": "German Inflation Accelerates to Three-Month High on Energy",
+        "title": "Goldman Sees More South Africa Rating Upgrades on Strong Revenue",
         "label": "positive",
         "sentiment": "Strongly positive"
       },
       {
-        "title": "Zuckerberg's Messaging Cloudy: Zino",
+        "title": "Euro-Area Inflation Strengthens as US-Iran Strikes Boost Oil",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Colombia to Hike Interest Rate in Last Petro-Era Meeting",
+        "label": "positive",
+        "sentiment": "Moderately positive"
+      },
+      {
+        "title": "Bengaluru's Visa manager loses job in latest round of layoffs despite \u2018outstanding performance reviews\u2019",
+        "label": "negative",
+        "sentiment": "Strongly negative"
+      },
+      {
+        "title": "PM Modi congratulates Lovepreet Singh for silver medal win at CWG 2026 \u2014 \u2018His dedication, determination are admirable\u2019",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "CJP protest: Families of injured policemen share their side of story\u2014 \u2018My father was dragged\u2019, \u2018uniform soaked in blood\u2019",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "Market near day's high; European mrkt advance - business-standard.com",
         "label": "neutral",
         "sentiment": "Neutral"
+      },
+      {
+        "title": "Tata Steel gains after recording nearly 19% YoY growth in Q1 PAT despite operational disruptions - business-standard.com",
+        "label": "positive",
+        "sentiment": "Moderately positive"
+      },
+      {
+        "title": "Hindalco Industries Ltd rises for third consecutive session - business-standard.com",
+        "label": "positive",
+        "sentiment": "Slightly positive"
+      },
+      {
+        "title": "Jindal Steel Ltd up for third consecutive session - business-standard.com",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "National Aluminium Company Ltd soars 1.67% - business-standard.com",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Pakistan avalanche: 4 bodies recovered after Broad Peak disaster, Nirmal Purja among 10 climbers missing",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Taiwan\u2019s Economy Clocks Fastest First-Half Growth Since 1976",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "CJP protest: Daughter of UP BJP leader says Pralhad Joshi appointed as education minister feels like \u2018bleak joke\u2019",
+        "label": "negative",
+        "sentiment": "Strongly negative"
+      },
+      {
+        "title": "French Inflation Unexpectedly Accelerates on Services, Power",
+        "label": "negative",
+        "sentiment": "Strongly negative"
       }
     ]
   }
