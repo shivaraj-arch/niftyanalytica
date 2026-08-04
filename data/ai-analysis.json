@@ -1,31 +1,28 @@
 {
-  "generatedAt": "2026-08-03T20:05:59.280688+05:30",
+  "generatedAt": "2026-08-04T09:01:34.594283+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
     "nifty_flow_agent",
     "AggregatorAgent"
   ],
-  "model": "gemini-robotics-er-1.6-preview",
+  "model": "gemini-robotics-er-2-preview",
   "requestedModel": "gemini-robotics-er-2-preview",
   "attemptedModels": [
-    "gemini-robotics-er-2-preview",
-    "gemini-robotics-er-1.6-preview"
+    "gemini-robotics-er-2-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\nBased on the latest institutional trading data and stock performance as of the August 3, 2026 session, here is the analysis for Nifty 50.\n\n### **1. Market Performance & Stock Analysis**\nThe Nifty 50 index showed a robust session with heavyweight participation, particularly from IT and select financial sectors.\n\n*   **Major Gainers (Top Contributors):**\n    *   **GRASIM:** +5.13% (LTP: \u20b93,260) \u2014 Lead gainer for the day.\n    *   **TCS:** +4.57% (LTP: \u20b92,473.70) \u2014 Strong buying in large-cap IT.\n    *   **INDIGO:** +4.43% (LTP: \u20b95,400) \u2014 Significant upward momentum.\n    *   **INFY:** +4.42% (LTP: \u20b91,180) \u2014 Continued IT sector tailwinds.\n    *   **SHRIRAMFIN:** +4.16% (LTP: \u20b91,090.20) \u2014 Outperforming in the NBFC space.\n*   **Major Decliners:**\n    *   **APOLLOHOSP:** -1.53% (LTP: \u20b98,820)\n    *   **SUNPHARMA:** -1.36% (LTP: \u20b91,963.50)\n    *   **MARUTI:** -0.59% (LTP: \u20b914,150)\n*   **Brief:** The market was largely driven by a sharp rebound in the **IT index** (TCS, INFY) and solid performance in **Materials/Cement** (Grasim). Healthcare and Auto (Maruti) faced minor profit-booking.\n\n---\n\n### **2. Latest FII & DII Flow Data (Provisional)**\nLiquidity remains supportive with both institutional legs turning into net buyers as sentiment improved following cooling crude prices.\n\n| Investor Category | Segment | Net Investment (\u20b9 Cr) | Status |\n| :--- | :--- | :--- | :--- |\n| **FII (Foreign Institutional)** | Cash | **Net Buyers** | Sustained interest in Large-caps |\n| **DII (Domestic Institutional)** | Cash | **Net Buyers** | Continuous support for Dips |\n\n*   *Reference:* On the previous trading session (July 31), DIIs significantly overshadowed FIIs with a net buy of **\u20b92,260 Cr**, while FIIs provided positive support at **\u20b9277 Cr**.\n\n---\n\n### **3. Financial Headlines & Outlook for Tomorrow (August 4, 2026)**\n1.  **RBI MPC in Focus:** Traders will focus on pre-policy positioning ahead of the RBI Monetary Policy Committee meeting. Financial stocks are expected to see increased volatility.\n2.  **Closing Auction Session (CAS):** Investors will continue adjusting to the new **CAS implementation** for F&O, where index and stock derivative trading wraps up at 3:40 pm for enhanced price discovery.\n3.  **Key Technical Levels:**\n    *   **Resistance:** Watch the 24,820 \u2013 24,950 zone. A clear break targets 25,100+.\n    *   **Support:** Immediate downside protection is seen at 24,530 \u2013 24,400.\n4.  **Earnings Trigger:** Watch out for Q1 results from companies like **DLF, IREDA, and UPL**. Auto stocks will continue to react to the newly released July wholesale numbers.\n5.  **Global Cues:** With Brent Crude stable near **$83\u2013$84**, the index is set for a relatively stable to positive open unless major tech volatility hits US markets overnight.\n\nNifty Flow Agent\n\nThe latest FII and DII flow data for the Indian market as of **August 3, 2026**, is as follows:\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 03-Aug-2026 | 18,325.97 | 16,754.79 | **+1,571.18** |\n| **FII/FPI** | 03-Aug-2026 | 12,621.89 | 11,699.63 | **+922.26** |\n\n### **Market Summary & Analysis:**\n*   **Net Inflow:** Both Foreign Institutional Investors (FII) and Domestic Institutional Investors (DII) were **net buyers** for the session.\n*   **Market Sentiment:** A combined net inflow of over **\u20b92,490 crore** indicates positive liquidity support and a constructive sentiment in the Nifty 50 space.\n*   **DII Dominance:** Domestic institutions were more active, with significantly higher buy and sell values compared to their foreign counterparts, contributing more to the net positive turnover.\n\n### **Financial Headlines (Indian Market):**\n*   **Bullish Run Continues:** Positive FII and DII data suggests continued confidence in the Indian indices, potentially eyeing new resistance levels.\n*   **Liquidity Boost:** High buy values from DIIs (\u20b918,325.97 Cr) highlight robust local liquidity, cushioning the index against global volatility.\n*   **Sector Rotation:** Observers are looking at large-cap stocks as key drivers, given the substantial institutional activity.\n\nAggregator Agent\n\n**Executive Summary: Nifty 50 Market Analysis (August 3, 2026)**\n\nThe Nifty 50 delivered a robust performance during the August 3, 2026, session, underpinned by a significant surge in institutional liquidity. Both Foreign Institutional Investors (FII) and Domestic Institutional Investors (DII) acted as **net buyers**, contributing a combined net inflow of over **\u20b92,490 crore**. A key takeaway is the dominance of domestic institutions; DIIs provided substantial support with a buy value of \u20b918,325.97 crore, effectively cushioning the market against potential global tech volatility.\n\nMarket momentum was primarily fueled by a sharp rebound in **large-cap IT** (TCS +4.57%, INFY +4.42%) and **Materials** (Grasim +5.13%). This bullishness was further supported by macro cues, specifically cooling Brent crude prices stabilizing between $83 and $84. \n\n**Strategic Outlook for August 4:**\nTraders are pivoting toward pre-policy positioning ahead of the **RBI Monetary Policy Committee** meeting, expected to heighten volatility in financial stocks. Additionally, market participants are adapting to the newly implemented **Closing Auction Session (CAS)** for F&O, designed to refine price discovery. Technical resistance is firmly identified at the **24,820\u201324,950** zone; a clear breakout targets **25,100+**, while immediate support rests comfortably between **24,400 and 24,530**. Sentiment remains constructive, bolstered by strong local liquidity and positive institutional participation.",
-  "executiveSummary": "**Executive Summary: Nifty 50 Market Analysis (August 3, 2026)**\n\nThe Nifty 50 delivered a robust performance during the August 3, 2026, session, underpinned by a significant surge in institutional liquidity. Both Foreign Institutional Investors (FII) and Domestic Institutional Investors (DII) acted as **net buyers**, contributing a combined net inflow of over **\u20b92,490 crore**. A key takeaway is the dominance of domestic institutions; DIIs provided substantial support with a buy value of \u20b918,325.97 crore, effectively cushioning the market against potential global tech volatility.\n\nMarket momentum was primarily fueled by a sharp rebound in **large-cap IT** (TCS +4.57%, INFY +4.42%) and **Materials** (Grasim +5.13%). This bullishness was further supported by macro cues, specifically cooling Brent crude prices stabilizing between $83 and $84. \n\n**Strategic Outlook for August 4:**\nTraders are pivoting toward pre-policy positioning ahead of the **RBI Monetary Policy Committee** meeting, expected to heighten volatility in financial stocks. Additionally, market participants are adapting to the newly implemented **Closing Auction Session (CAS)** for F&O, designed to refine price discovery. Technical resistance is firmly identified at the **24,820\u201324,950** zone; a clear breakout targets **25,100+**, while immediate support rests comfortably between **24,400 and 24,530**. Sentiment remains constructive, bolstered by strong local liquidity and positive institutional participation.",
+  "summary": "Nifty Analysis Agent\n\nHere is a comprehensive analysis of the Indian stock market (Nifty 50), covering stock performance, institutional flows, and the latest financial headlines.\n\n---\n\n### **1. Market Sentiment & Stock Performance (Nifty 50)**\n\nThe NSE Nifty 50 index witnessed a strong session, closing up **1.60% at 24,774.30** on August 3, 2026. Market breadth favored the bulls, fueled by a surge in high-growth sectors (IT, Aviation, and Automobiles) while defensive plays (Pharmaceuticals) lagged.\n\n#### **Major Gainers (Contributors to Growth)**\n* **GRASIM:** $+5.13\\%$ (LTP: \u20b93,260.00) \u2014 Led the Nifty pack.\n* **TCS:** $+4.57\\%$ (LTP: \u20b92,473.70) \u2014 Strong buying in IT heavyweights.\n* **INDIGO (InterGlobe Aviation):** $+4.43\\%$ (LTP: \u20b95,400.00) \u2014 Lifted by a drop in crude prices.\n* **INFY (Infosys):** $+4.42\\%$ (LTP: \u20b91,180.00) \u2014 Supported IT index outperformance.\n* **SHRIRAMFIN:** $+4.16\\%$ (LTP: \u20b91,090.20)\n* **AXISBANK:** $+3.46\\%$ (LTP: \u20b91,272.00)\n\n#### **Major Laggards (Drags)**\n* **APOLLOHOSP:** $-1.53\\%$ (LTP: \u20b98,820.00) \u2014 Dragged by profit booking in healthcare.\n* **SUNPHARMA:** $-1.36\\%$ (LTP: \u20b91,963.50)\n* **MARUTI:** $-0.59\\%$ (LTP: \u20b914,150.00)\n* **ONGC:** $-0.22\\%$ (LTP: \u20b9242.00)\n\n---\n\n### **2. Institutional Flows (FII & DII Activity)**\n\nBoth Foreign and Domestic Institutional Investors ended the last session as **net buyers** in the cash segment, indicating strong liquidity support and a combined net inflow of **\u20b92,493.44 crore**.\n\n| Category | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) | Status |\n| :--- | :--- | :--- | :--- | :--- |\n| **FII (Foreign Institutional)** | \u20b912,621.89 | \u20b911,699.63 | **+\u20b9922.26** | **Net Buyer** |\n| **DII (Domestic Institutional)** | \u20b918,325.97 | \u20b916,754.79 | **+\u20b91,571.18** | **Net Buyer** |\n\n*Note: Domestically driven SIP flows of approximately $3 billion per month continue to act as a solid anchor, push-starting DII ownership of Nifty 500 stocks to a record high of 21%.*\n\n---\n\n### **3. Key Financial Headlines & Market Drivers**\n\n* **Brent Crude Tumbles to $83.56/Barrel:** A sharp reduction of nearly 5% in oil prices has lowered the projected import bill, sparking rallies in aviation, paint, and consumer discretionary stocks.\n* **Geopolitical De-escalation:** Renewed hope for diplomatic dialogue in the Middle East has cooled energy volatility, triggering a broad relief rally in global risk assets.\n* **IT Resurgence:** Building on a 17% gain in July, software majors TCS, Infosys, and HCLTech led the charges on the back of resilient enterprise spending expectations.\n* **Eyes on RBI Policy Decision:** Investors are starting to position themselves defensively as the Reserve Bank of India (RBI) prepares to hold its Monetary Policy Committee meeting, focusing heavily on inflation management and interest rate projections.\n* **Technical Outlook:** Gift Nifty points to a positive gap-up start. Technical structures show a bullish RSI crossover, with analysts forecasting a short-term breakout run towards the **25,000** psychological milestone.\n\nNifty Flow Agent\n\nBased on the latest available market data, here is the analysis of the FII/DII flow and the general market sentiment for the Indian stock market.\n\n### **Latest FII / DII Flow (As of August 3, 2026)**\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII (Domestic Institutional Investors)** | 03-Aug-2026 | 18,325.97 | 16,754.79 | **+1,571.18** |\n| **FII/FPI (Foreign Institutional Investors)** | 03-Aug-2026 | 12,621.89 | 11,699.63 | **+922.26** |\n| **Total Combined Flow** | | **30,947.86** | **28,454.42** | **+2,493.44** |\n\n---\n\n### **Market Analysis & Sentiment**\n\n1. **Dual Inflows (Bullish Support):** Both Foreign Institutional Investors (FIIs) and Domestic Institutional Investors (DIIs) acted as net buyers during this session, contributing a combined net inflow of **\u20b92,493.44 crore**. This joint accumulation signal reinforces stability and confidence in the Indian market (Nifty 50).\n2. **DII Strength:** Domestic institutions continue to lead the buy-side pressure with a robust net inflow of \u20b91,571.18 crore, illustrating resilient domestic liquidity and retail mutual fund flow support.\n3. **FII Activity:** Foreign investors turned positive for the session, registering a net inflow of \u20b9922.26 crore. This reflects a healthy risk-on appetite from global funds despite global macroeconomic variables.\n\n### **Key Market Themes**\n* **Liquidity Push:** With combined net inflows exceeding \u20b92,400 crore, index heavyweights and large-cap sectors are likely to find immediate support.\n* **Focus Sectors:** Sectors showing earnings resilience (such as Banking & Financials, IT, and selective Auto/Defense counters) remain in focus as institutional positioning strengthens.\n\nAggregator Agent\n\n### Executive Summary\n\nOn August 3, 2026, the NSE Nifty 50 surged 1.60% to close at 24,774.30, fueled by robust dual institutional inflows totaling \u20b92,493.44 crore. Both Domestic Institutional Investors (DIIs) and Foreign Institutional Investors (FIIs) acted as net buyers, contributing \u20b91,571.18 crore and \u20b9922.26 crore respectively. \n\nA significant takeaway is the ongoing structural shift in the Indian market: anchored by monthly retail SIP inflows of approximately $3 billion, DII ownership has reached a record high of 21% among Nifty 500 companies, providing a powerful domestic liquidity cushion that offset historical FII volatility. \n\nThis domestic strength, combined with a sharp 5% drop in Brent crude to $83.56 per barrel, sparked a risk-on rally. High-import and high-growth sectors like Aviation (IndiGo) and IT (TCS, Infosys) led the gains, while defensive pharmaceutical plays faced profit-booking. Supported by easing Middle East geopolitical tensions and bullish technical indicators eyeing the 25,000 milestone, market sentiment remains highly optimistic. However, selective defensive positioning continues as investors await the upcoming RBI Monetary Policy Committee decision on inflation and interest rate guidance.",
+  "executiveSummary": "### Executive Summary\n\nOn August 3, 2026, the NSE Nifty 50 surged 1.60% to close at 24,774.30, fueled by robust dual institutional inflows totaling \u20b92,493.44 crore. Both Domestic Institutional Investors (DIIs) and Foreign Institutional Investors (FIIs) acted as net buyers, contributing \u20b91,571.18 crore and \u20b9922.26 crore respectively. \n\nA significant takeaway is the ongoing structural shift in the Indian market: anchored by monthly retail SIP inflows of approximately $3 billion, DII ownership has reached a record high of 21% among Nifty 500 companies, providing a powerful domestic liquidity cushion that offset historical FII volatility. \n\nThis domestic strength, combined with a sharp 5% drop in Brent crude to $83.56 per barrel, sparked a risk-on rally. High-import and high-growth sectors like Aviation (IndiGo) and IT (TCS, Infosys) led the gains, while defensive pharmaceutical plays faced profit-booking. Supported by easing Middle East geopolitical tensions and bullish technical indicators eyeing the 25,000 milestone, market sentiment remains highly optimistic. However, selective defensive positioning continues as investors await the upcoming RBI Monetary Policy Committee decision on inflation and interest rate guidance.",
   "bias": "Bullish",
   "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "### **3. Financial Headlines & Outlook for Tomorrow (August 4, 2026)**",
-    "**RBI MPC in Focus:** Traders will focus on pre-policy positioning ahead of the RBI Monetary Policy Committee meeting. Financial stocks are expected to see increased volatility.",
-    "**Closing Auction Session (CAS):** Investors will continue adjusting to the new **CAS implementation** for F&O, where index and stock derivative trading wraps up at 3:40 pm for enhanced price discovery.",
-    "**Key Technical Levels:**",
-    "**Earnings Trigger:** Watch out for Q1 results from companies like **DLF, IREDA, and UPL**. Auto stocks will continue to react to the newly released July wholesale numbers.",
-    "**Global Cues:** With Brent Crude stable near **$83\u2013$84**, the index is set for a relatively stable to positive open unless major tech volatility hits US markets overnight.",
-    "### **Financial Headlines (Indian Market):**"
+    "Here is a comprehensive analysis of the Indian stock market (Nifty 50), covering stock performance, institutional flows, and the latest financial headlines.",
+    "### **3. Key Financial Headlines & Market Drivers**",
+    "**Dual Inflows (Bullish Support):** Both Foreign Institutional Investors (FIIs) and Domestic Institutional Investors (DIIs) acted as net buyers during this session, contributing a combined net inflow of **\u20b92,493.44 crore**. This joint accumulation signal reinforces stability and confidence in the Indian market (Nifty 50).",
+    "**DII Strength:** Domestic institutions continue to lead the buy-side pressure with a robust net inflow of \u20b91,571.18 crore, illustrating resilient domestic liquidity and retail mutual fund flow support.",
+    "**FII Activity:** Foreign investors turned positive for the session, registering a net inflow of \u20b9922.26 crore. This reflects a healthy risk-on appetite from global funds despite global macroeconomic variables."
   ],
   "marketSignals": {
     "positioningLabel": "Put-side hedge build",
@@ -36,87 +33,87 @@
     "fiiNetCrores": 922.26,
     "diiNetCrores": 1571.18,
     "tradedValueCrores": 0.0,
-    "spot": 24774.3
+    "spot": 24753.95
   },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
-    "bias": "Bullish",
-    "note": "Mildly positive news tone",
-    "analysis": "Recent market news shows a mildly positive news tone, with most headlines leaning supportive. The most supportive headline: \"INR near 4-week high as DXY resets below the 100 mark; Easing oil prices and positive equities support\". The most cautious headline: \"Brazil Analysts Cut 2026 Selic Forecast on Eve of Rate Decision\".",
+    "bias": "Neutral",
+    "note": "Mixed, broadly neutral news tone",
+    "analysis": "Recent market news shows a mixed, broadly neutral news tone, with most headlines flagging caution. The most supportive headline: \"Bessent\u2019s Yen Rescue to Boost US Pressure on Japan Trade, Rates\". The most cautious headline: \"From  \u20b980,000 rent to  \u20b92.5 lakh a month: Indian Woman in Sweden breaks down monthly budget in viral video\".",
     "headlines": [
       {
-        "title": "Why did Todd Blanche scrap Trump's $1.8 billion \u2018anti-weaponization fund\u2019 before attorney general confirmation vote?",
+        "title": "After 10 years in the US, Adobe executive moves back to Bengaluru for family: \u2018We miss the Bay area\u2019",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "India hikes windfall tax on petrol, diesel and ATF exports from 3 August \u2014 Here's all you need to know",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "US Factory Activity Expands at Strongest Pace Since 2022",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "Bhaiyyaji Joshi steps down as Ram Temple Trust's patron, health cited as reason: Report",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Parliamentary panel takes tough stance on removal of Modi\u2019s video from Facebook, seek accountability from Meta officials",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Govt bonds recover on lower crude prices, rupee surrenders early gains",
+        "title": "Trump meets Jeanine Pirro amid concerns over her future as attorney for dropping Reflecting Pool case against Olympian",
         "label": "negative",
         "sentiment": "Slightly negative"
       },
       {
-        "title": "New York weather alert: Flash flooding threat for NYC, New Jersey",
-        "label": "negative",
-        "sentiment": "Moderately negative"
+        "title": "RBI likely to keep rates unchanged as inflation risks stay in focus",
+        "label": "positive",
+        "sentiment": "Moderately positive"
       },
       {
-        "title": "BofA\u2019s Cabana Sees Risk in Silent Fed: \u2018You Can\u2019t Fool the Bond\u2019",
+        "title": "Stocks to buy: Kotak Securities names these two top picks for investors",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "India achieves near-universal banking coverage, says Ministry of Finance",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "Chile Economic Activity Caps Second Quarter on Stronger Note",
-        "label": "positive",
-        "sentiment": "Slightly positive"
-      },
-      {
-        "title": "INR near 4-week high as DXY resets below the 100 mark; Easing oil prices and positive equities support",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "MV Electrosystems IPO subscribed 188.85 times",
+        "title": "Stocks to watch: LIC, Bharti Airtel, BSE, Dabur, IREDA & others",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Brazil Analysts Cut 2026 Selic Forecast on Eve of Rate Decision",
+        "title": "Asian markets edge higher on Wall Street lead, oil remains steady",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Born on 4 August? You share your birthday with Kishore Kumar, Barack Obama, Meghan Markle and more",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "What is tularemia or rabbit fever? Symptoms, spread and treatment explained as New York reports three possible cases",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Stocks to buy: Ircon among 3 stock ideas by Geojit Investments",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "From  \u20b980,000 rent to  \u20b92.5 lakh a month: Indian Woman in Sweden breaks down monthly budget in viral video",
         "label": "negative",
         "sentiment": "Strongly negative"
       },
       {
-        "title": "CAMS clocks over 17% YoY increase in Q1 PAT; AUM rises to Rs 56 lakh crore",
+        "title": "Australia Household Spending Jumps as Fuel Spike Drives EV Surge",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "Bessent\u2019s Yen Rescue to Boost US Pressure on Japan Trade, Rates",
         "label": "positive",
         "sentiment": "Strongly positive"
       },
       {
-        "title": "US and Japan and yen intervention",
+        "title": "India RBI Seen Holding Rates as Inflation Risks Stay in Focus",
+        "label": "negative",
+        "sentiment": "Slightly negative"
+      },
+      {
+        "title": "Korea Inflation Drops Below Estimates But Pressure Persists",
+        "label": "negative",
+        "sentiment": "Strongly negative"
+      },
+      {
+        "title": "Prabowo Eyes Bank Indonesia Chief Aligned With His Goals",
         "label": "neutral",
         "sentiment": "Neutral"
       }
