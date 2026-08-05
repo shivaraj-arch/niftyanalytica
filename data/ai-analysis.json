@@ -1,121 +1,95 @@
 {
-  "generatedAt": "2026-08-05T09:02:15.775249+05:30",
+  "generatedAt": "2026-08-05T15:05:28.300762+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
     "nifty_flow_agent",
     "AggregatorAgent"
   ],
-  "model": "gemini-robotics-er-2-preview",
+  "model": "gemini-robotics-er-1.6-preview",
   "requestedModel": "gemini-robotics-er-2-preview",
   "attemptedModels": [
-    "gemini-robotics-er-2-preview"
+    "gemini-robotics-er-2-preview",
+    "gemini-robotics-er-1.6-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\nHere is a comprehensive market analysis of the Indian Stock Market (Nifty 50), detailing individual stock movements, institutional flows, and the latest financial headlines.\n\n---\n\n### **1. Market Summary & Stock Analysis (Nifty 50)**\nDuring the latest session, the Nifty 50 index experienced profit booking after a multi-day rally, ending **0.64% (159.40 points) lower at 24,614.90**. However, the constituent-level analysis reveals a mix of strong stock-specific defenses versus high-weightage profit booking:\n\n#### **Top Gainers (Bucking the Trend)**\n*   **Apollo Hospitals (APOLLOHOSP):** `+2.61%` (LTP: \u20b99,050.00) \u2013 Lead gainer, showcasing strong defensive buying in healthcare.\n*   **Hindalco Industries (HINDALCO):** `+2.52%` (LTP: \u20b91,020.00) \u2013 Upward momentum driven by positive global metal trends.\n*   **Trent Ltd. (TRENT):** `+1.89%` (LTP: \u20b93,107.70) \u2013 Continued retail expansion traction.\n*   **Jio Financial Services (JIOFIN):** `+0.76%` (LTP: \u20b9265.00)\n*   **ITC Ltd. (ITC):** `+0.70%` (LTP: \u20b9289.00)\n\n#### **Top Decliners (Drag on the Index)**\n*   **Grasim Industries (GRASIM):** `-3.74%` (LTP: \u20b93,138.00)\n*   **HDFC Life Insurance (HDFCLIFE):** `-3.10%` (LTP: \u20b9535.95)\n*   **Bajaj Auto (BAJAJ-AUTO):** `-2.16%` (LTP: \u20b911,600.00)\n*   **Reliance Industries (RELIANCE):** `-2.13%` (LTP: \u20b91,290.90) \u2013 High-weightage drag pulling down the benchmark.\n*   **NTPC:** `-2.07%` (LTP: \u20b9343.65)\n*   **HDFC Bank (HDFCBANK):** `-1.46%` (LTP: \u20b9742.00)\n\n---\n\n### **2. FII and DII Flow Activity (Cash Segment)**\nInstitutional flows showed positive foreign momentum, though domestic funds locked in some gains:\n\n| Category | Gross Purchases (\u20b9 Cr) | Gross Sales (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- |\n| **Foreign Institutional Investors (FII)** | \u20b915,630.45 | \u20b913,183.98 | **+\u20b92,446.47 (Net Buy)** |\n| **Domestic Institutional Investors (DII)** | \u20b915,241.39 | \u20b916,177.53 | **-\u20b9936.14 (Net Sell)** |\n| **Combined Net Activity** | \u2014 | \u2014 | **+\u20b91,510.33 (Net Buy)** |\n\n*Despite the Nifty's decline, foreign portfolios remained buyers of over \u20b92,400 crore, indicating that the baseline liquidity and demand remain firm.*\n\n---\n\n### **3. Key Financial Headlines & Market Drivers**\n\n*   **RBI Monetary Policy Decision Today:** The three-day Reserve Bank of India MPC meeting concludes today. RBI Governor Sanjay Malhotra is set to announce the key interest rate decision. While a status quo is widely anticipated, markets will watch for cues on inflation and liquidity.\n*   **GIFT Nifty Signals Strong Opening:** Setting the stage for a major reversal, GIFT Nifty futures are trading up **120\u2013170 points higher**, pointing to a gap-up opening for the Nifty 50 above the 24,700\u201324,750 zone.\n*   **Global Rally Boosts Sentiment:** Overnight, Wall Street\u2019s Dow Jones jumped over 900 points, and the Nasdaq-100 rallied over 3.3% on semiconductor gains. This triggered a >3% rally in Japan\u2019s Nikkei 225 and South Korea's Kospi this morning.\n*   **Crude Oil Pressure Eases:** Brent Crude prices slipped below the **$80/barrel** mark to trade near $79. Positive commentary regarding diplomatic progresses to ease hostilities in the Middle East has cooled supply disruption fears.\n*   **Closing Auction Session (CAS) Volatility:** Market observers attributed the sharp volatile swings in Tuesday's final hour to the recently introduced exchanges' CAS mechanism, which is aimed at improving pricing discovery on high-volume days.\n\nNifty Flow Agent\n\nThe latest FII (Foreign Institutional Investors) and DII (Domestic Institutional Investors) flow data for the Indian market is as follows:\n\n### **FII & DII Flow Data (As of August 4, 2026)**\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) | Action |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| **FII/FPI** | 04-Aug-2026 | 15,630.45 | 13,183.98 | **+2,446.47** | Net Buyers |\n| **DII** | 04-Aug-2026 | 15,241.39 | 16,177.53 | **-936.14** | Net Sellers |\n| **Combined** | | | | **+1,510.33** | Net Inflow |\n\n---\n\n### **Market Sentiment & Analysis**\n\n1. **FII Bullishness:** Foreign Institutional Investors (FIIs) showed strong buying interest, recording a significant net inflow of **+\u20b92,446.47 crore**. This indicates renewed global investor confidence in the Indian equity markets (specifically Nifty 50 constituents).\n2. **DII Profit Booking:** Domestic Institutional Investors (DIIs) acted as net sellers with a minor outflow of **-\u20b9936.14 crore**. This suggests strategic profit booking at current valuations or reallocation of portfolios by domestic mutual funds and institutions.\n3. **Net Market Impact:** The overall combined net institutional investment stood positive at **+\u20b91,510.33 crore**. When FIIs lead the buying with substantial numbers, it typically acts as a strong upward catalyst for the benchmarks, offsetting the marginal domestic profit-taking.\n\nAggregator Agent\n\n### Executive Summary\n\nOn August 4, 2026, the Nifty 50 snapped its multi-day winning streak, declining 0.64% to close at 24,614.90 due to high-weightage profit booking and volatile swings linked to the new Closing Auction Session (CAS) mechanism. However, underlying market sentiment remains highly resilient. Underpinning this strength is a stark divergence in institutional behavior: Foreign Institutional Investors (FIIs) acted as aggressive net buyers with an inflow of \u20b92,446.47 crore, comfortably offsetting Domestic Institutional Investors\u2019 (DIIs) strategic profit-taking of \u20b9936.14 crore. \n\nThis robust foreign liquidity, resulting in a combined net inflow of \u20b91,510.33 crore, sets a bullish baseline for a rapid market recovery. A massive gap-up opening of 120\u2013170 points is indicated by GIFT Nifty, catalyzed by a powerful overnight global rally\u2014with Wall Street and Asian indices surging over 3%\u2014alongside Brent Crude slipping below $80 per barrel as geopolitical tensions ease. With the Reserve Bank of India\u2019s MPC interest rate decision today, the stage is set for heightened activity in rate-sensitive sectors. This suggests that Tuesday\u2019s minor correction was merely a temporary pause in a structurally strong market.",
-  "executiveSummary": "### Executive Summary\n\nOn August 4, 2026, the Nifty 50 snapped its multi-day winning streak, declining 0.64% to close at 24,614.90 due to high-weightage profit booking and volatile swings linked to the new Closing Auction Session (CAS) mechanism. However, underlying market sentiment remains highly resilient. Underpinning this strength is a stark divergence in institutional behavior: Foreign Institutional Investors (FIIs) acted as aggressive net buyers with an inflow of \u20b92,446.47 crore, comfortably offsetting Domestic Institutional Investors\u2019 (DIIs) strategic profit-taking of \u20b9936.14 crore. \n\nThis robust foreign liquidity, resulting in a combined net inflow of \u20b91,510.33 crore, sets a bullish baseline for a rapid market recovery. A massive gap-up opening of 120\u2013170 points is indicated by GIFT Nifty, catalyzed by a powerful overnight global rally\u2014with Wall Street and Asian indices surging over 3%\u2014alongside Brent Crude slipping below $80 per barrel as geopolitical tensions ease. With the Reserve Bank of India\u2019s MPC interest rate decision today, the stage is set for heightened activity in rate-sensitive sectors. This suggests that Tuesday\u2019s minor correction was merely a temporary pause in a structurally strong market.",
-  "bias": "Bullish",
+  "summary": "Nifty Analysis Agent\n\nBased on the latest data for **August 5, 2026**, here is the analysis of the Nifty 50 stocks, institutional flows, and key financial headlines for the Indian market:\n\n### **1. Nifty 50 Stock Analysis (Movers & Shakers)**\nThe index saw a mix of strong individual performers and sectoral drags.\n*   **Top Gainers (Major Contributors):**\n    *   **SHRIRAMFIN:** +2.49% (LTP: \u20b91114.40) - Leading the rally in NBFCs.\n    *   **GRASIM:** +2.45% (LTP: \u20b93215.00) - Strong buying interest ahead of dividend dates.\n    *   **JSWSTEEL:** +1.65% (LTP: \u20b91321.50) - Benefiting from stability in metal prices.\n    *   **LT (Larsen & Toubro):** +1.41% (LTP: \u20b94046.10) - High turnover suggests strong institutional support.\n*   **Top Losers (Sectoral Drags):**\n    *   **HCLTECH:** -2.19% (LTP: \u20b91339.90) - Leading the weakness in the IT sector.\n    *   **TCS:** -2.04% (LTP: \u20b92409.80) - Heavyweight under pressure.\n    *   **APOLLO HOSP:** -1.66% (LTP: \u20b98900.00) - Correcting after recent peaks.\n    *   **HDFCBANK:** -1.23% (LTP: \u20b9732.90) - Continued pressure on major banking stocks weighed heavily on the index.\n\n### **2. Latest FII & DII Flow (Institutional Sentiment)**\nInstitutional activity shows foreign confidence remaining steady while domestic funds have begun profit booking:\n*   **Foreign Institutional Investors (FIIs):** Net **BUYERS** of **\u20b92,446.47 crore**. This extends a significant 6-day buying streak.\n*   **Domestic Institutional Investors (DIIs):** Net **SELLERS** of **\u20b9936.14 crore**, indicating slight caution near higher levels.\n*   **FII Index Futures:** Maintain a sizeable short position (~1.53 lakh contracts), suggesting they are hedging against potential spot market volatility.\n\n### **3. Key Financial Headlines & Market Outlook**\n*   **RBI Policy Stance:** The central bank has kept the **Repo Rate unchanged at 5.25%** with a \"Neutral\" stance. The market initially reacted positively to the pause but cooled off later in the session.\n*   **LIC OFS:** The government\u2019s 4% stake sale in LIC is the primary focus for liquidity in the market today.\n*   **Macro Factors:** Crude oil dipping below **USD 80/barrel** is a positive driver for Indian fiscal stability and the rupee, though equity indices remain choppy due to global volatility.\n*   **Earnings Impact:** **ONGC** and **Nykaa** reported strong sequential profit growth, outperforming consensus and providing individual stock-level triggers.\n\n**Summary:** While FIIs are providing liquidity support, the Nifty 50 faces resistance around the 24,650 level, currently trading lower due to weakness in heavyweights like HDFC Bank and major IT players.\n\nNifty Flow Agent\n\nThe latest FII and DII flow data for the Indian market as of **August 4, 2026**, is as follows:\n\n### FII & DII Flow Data (August 4, 2026)\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **FII/FPI** | 04-Aug-2026 | 15,630.45 | 13,183.98 | **+2,446.47** |\n| **DII** | 04-Aug-2026 | 15,241.39 | 16,177.53 | **-936.14** |\n| **Total** | | **30,871.84** | **29,361.51** | **+1,510.33** |\n\n---\n\n### Analysis & Financial Headlines\n\n*   **Market Sentiment:** The net combined inflow of approximately **\u20b91,510 crore** indicates a cautiously optimistic sentiment. While FIIs showed strong buying interest (net positive \u20b92,446.47 Cr), DIIs engaged in profit booking, resulting in a net outflow of \u20b9936.14 Cr.\n*   **FII Comeback:** Foreign Institutional Investors have returned as net buyers, providing substantial liquidity support to the Nifty indices.\n*   **DII Profit Booking:** Domestic Institutional Investors appear to be capitalising on recent rallies, liquidating positions as indicated by the negative net value.\n*   **Global Cues:** Investors are likely monitoring global macro-economic data and upcoming corporate earnings which typically influence these flow patterns.\n\nAggregator Agent\n\nAs of August 5, 2026, the Indian equity market presents a narrative of institutional divergence amidst significant macroeconomic updates. Foreign Institutional Investors (FIIs) extended a six-day buying streak with a net inflow of **\u20b92,446.47 crore**, while Domestic Institutional Investors (DIIs) opted for caution, booking profits of **\u20b9936.14 crore**. This resulted in a total net combined inflow of approximately \u20b91,510 crore.\n\nDespite liquidity support from FIIs, the Nifty 50 faces stiff resistance around the 24,650 level, weighed down by weakness in IT heavyweights like HCLTech (-2.19%) and banking majors like HDFC Bank (-1.23%). Conversely, NBFCs and Metals showed strength, led by **Shriram Finance (+2.49%)** and **JSW Steel (+1.65%)**.\n\nKey macroeconomic triggers include the **RBI maintaining the repo rate at 5.25%** with a \"Neutral\" stance. While the market initially welcomed the pause, momentum cooled due to global volatility. Support remains underpinned by lower crude oil prices (sub-USD 80/barrel) and robust corporate earnings from firms like ONGC and Nykaa. Moving forward, market participants are closely monitoring the government\u2019s 4% stake sale in LIC and a high volume of FII short positions in index futures, suggesting a continued need for hedging.",
+  "executiveSummary": "As of August 5, 2026, the Indian equity market presents a narrative of institutional divergence amidst significant macroeconomic updates. Foreign Institutional Investors (FIIs) extended a six-day buying streak with a net inflow of **\u20b92,446.47 crore**, while Domestic Institutional Investors (DIIs) opted for caution, booking profits of **\u20b9936.14 crore**. This resulted in a total net combined inflow of approximately \u20b91,510 crore.\n\nDespite liquidity support from FIIs, the Nifty 50 faces stiff resistance around the 24,650 level, weighed down by weakness in IT heavyweights like HCLTech (-2.19%) and banking majors like HDFC Bank (-1.23%). Conversely, NBFCs and Metals showed strength, led by **Shriram Finance (+2.49%)** and **JSW Steel (+1.65%)**.\n\nKey macroeconomic triggers include the **RBI maintaining the repo rate at 5.25%** with a \"Neutral\" stance. While the market initially welcomed the pause, momentum cooled due to global volatility. Support remains underpinned by lower crude oil prices (sub-USD 80/barrel) and robust corporate earnings from firms like ONGC and Nykaa. Moving forward, market participants are closely monitoring the government\u2019s 4% stake sale in LIC and a high volume of FII short positions in index futures, suggesting a continued need for hedging.",
+  "bias": "Neutral",
   "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "Here is a comprehensive market analysis of the Indian Stock Market (Nifty 50), detailing individual stock movements, institutional flows, and the latest financial headlines.",
-    "### **3. Key Financial Headlines & Market Drivers**",
-    "**FII Bullishness:** Foreign Institutional Investors (FIIs) showed strong buying interest, recording a significant net inflow of **+\u20b92,446.47 crore**. This indicates renewed global investor confidence in the Indian equity markets (specifically Nifty 50 constituents).",
-    "**DII Profit Booking:** Domestic Institutional Investors (DIIs) acted as net sellers with a minor outflow of **-\u20b9936.14 crore**. This suggests strategic profit booking at current valuations or reallocation of portfolios by domestic mutual funds and institutions.",
-    "**Net Market Impact:** The overall combined net institutional investment stood positive at **+\u20b91,510.33 crore**. When FIIs lead the buying with substantial numbers, it typically acts as a strong upward catalyst for the benchmarks, offsetting the marginal domestic profit-taking."
+    "Based on the latest data for **August 5, 2026**, here is the analysis of the Nifty 50 stocks, institutional flows, and key financial headlines for the Indian market:",
+    "### **3. Key Financial Headlines & Market Outlook**",
+    "### Analysis & Financial Headlines"
   ],
   "marketSignals": {
     "positioningLabel": "Call-side hedge build",
-    "positioningStrike": 24600,
+    "positioningStrike": 24700,
     "divergenceSummary": "Aligned sentiment",
     "divergenceCount": 0,
-    "trapRiskLabel": "Upside trap @ 24700",
+    "trapRiskLabel": "No clear trap",
     "fiiNetCrores": 2446.47,
     "diiNetCrores": -936.14,
     "tradedValueCrores": 0.0,
-    "spot": 24665.5
+    "spot": 24522.2
   },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
     "bias": "Neutral",
     "note": "Mixed, broadly neutral news tone",
-    "analysis": "Recent market news shows a mixed, broadly neutral news tone, with most headlines leaning supportive. The most supportive headline: \"Zydus receives USFDA approval for Indocyanine Green for Injection\". The most cautious headline: \"New Zealand\u2019s Plan to Move to Annual Census Hits Political Hurdle\".",
+    "analysis": "Recent market news shows a mixed, broadly neutral news tone, with supportive and cautious headlines roughly balanced. The most supportive headline: \"German Industry Builds Resilience to Low Rhine Levels, Bloomberg Economics Says\". The most cautious headline: \"UK in Longest Jobs Slump Since Financial Crisis, PMI Shows\".",
     "headlines": [
       {
-        "title": "Thai Inflation Eases to 1.95% in July, Slowing for Third Month",
-        "label": "positive",
-        "sentiment": "Moderately positive"
-      },
-      {
-        "title": "Mumbai Police payroll fraud:  \u20b96.41 crore disbursed to 10 'ghost' employees, 5 booked",
+        "title": "Ajit Agarkar may lose his job over Rohit Sharma\u2019s retirement controversy; VVS Laxman likely to take over: Report",
         "label": "negative",
         "sentiment": "Moderately negative"
       },
       {
-        "title": "Thailand Rules Out Fully Owned SpaceX Venture in US Trade Talks",
+        "title": "Jharkhand hunger strike: Sonam Wangchuk urges Devendra Nath Mahato to drink water; Abhijeet Dipke says 'will ...'",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "New Zealand\u2019s Plan to Move to Annual Census Hits Political Hurdle",
+        "title": "Brazil Central Bank to Cut Interest Rate to 14%",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "Quote Of The Day: Henry Ford's three-step formula for lasting success",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Mark Zuckerberg asked to apologise over PM Modi's reel fiasco; Parl panel warns Meta of losing legal protection if\u2026.",
         "label": "negative",
         "sentiment": "Strongly negative"
       },
       {
-        "title": "Pakistan boxer Qudratullah goes missing from CWG hotel in Glasgow, passport still with team manager",
+        "title": "Trump Fuels Hopes of Hormuz Reopening With Hints a Deal is Near",
+        "label": "positive",
+        "sentiment": "Moderately positive"
+      },
+      {
+        "title": "UK in Longest Jobs Slump Since Financial Crisis, PMI Shows",
         "label": "negative",
-        "sentiment": "Moderately negative"
+        "sentiment": "Strongly negative"
       },
       {
-        "title": "Stocks to buy today: Two breakout ideas from HDFC Securities",
-        "label": "neutral",
-        "sentiment": "Neutral"
+        "title": "German Industry Builds Resilience to Low Rhine Levels, Bloomberg Economics Says",
+        "label": "positive",
+        "sentiment": "Strongly positive"
       },
       {
-        "title": "CJP core committee meet today after historic Jantar Mantar protest: Key agenda, what to expect",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Born on 5 August? You share your birthday with Neil Armstrong, Kajol, Genelia D'Souza and more",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Why this doctor left McKinsey and US after 13 years to return to India",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Philippine Inflation Slows a Third Month, Easing Pressure for Rate Hike",
+        "title": "Italy Must Use EU\u2019s Energy Leeway, Giorgetti Tells Lawmakers",
         "label": "positive",
         "sentiment": "Slightly positive"
       },
       {
-        "title": "Fed\u2019s Schmid Says Tighter Policy Needed to Reduce Inflation",
+        "title": "Czech Inflation Quickens With Central Bank Set to Hold Rates",
         "label": "positive",
         "sentiment": "Moderately positive"
-      },
-      {
-        "title": "1991 marked a paradigm shift in industrial, trade policy: Jairam Ramesh",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Reit, Invit investors to regain dividend tax break; SPV surcharge will rise",
-        "label": "positive",
-        "sentiment": "Moderately positive"
-      },
-      {
-        "title": "Capillary Technologies acquires CustomerGlu software platform and associated intellectual property",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Zydus receives USFDA approval for Indocyanine Green for Injection",
-        "label": "positive",
-        "sentiment": "Strongly positive"
       }
     ]
   }
