@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06T09:02:33.521433+05:30",
+  "generatedAt": "2026-08-06T20:02:09.770416+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
@@ -12,109 +12,107 @@
     "gemini-robotics-er-2-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\n### Nifty 50 Market Analysis: Trends, Stock Action, & Flow Analysis\n\n---\n\n### 1. Nifty 50 Stock Action (Trading Session Summary)\n\nThe latest session witnessed an interesting sectoral tug-of-war, with commodities, steel, and NBFC giants leading the advances, while major IT heavyweights and pharmaceutical stocks weighed on the index.\n\n#### **Major Gainers (Top Index Contributors):**\n* **Shriram Finance (`SHRIRAMFIN`):** $\\mathbf{+3.23\\%}$ to \u20b91,122.40 \u2014 Paced the gainers as NBFCs found strong buyers following supportive macroeconomic policy stances.\n* **Grasim Industries (`GRASIM`):** $\\mathbf{+2.74\\%}$ to \u20b93,224.00 \u2014 Surged ahead of earnings expectation boosts.\n* **JSW Steel (`JSWSTEEL`):** $\\mathbf{+2.31\\%}$ to \u20b91,330.00 \u2014 Rallied on the back of rising global copper and metal prices.\n* **Hindalco Industries (`HINDALCO`):** $\\mathbf{+1.96\\%}$ to \u20b91,040.00 \u2014 Strong performance tracking metal sector momentum.\n* **NTPC (`NTPC`):** $\\mathbf{+1.82\\%}$ to \u20b9349.90 \u2014 Resilient utility sector buying.\n\n#### **Major Decliners (Top Drags on the Index):**\n* **TCS (`TCS`):** $\\mathbf{-1.91\\%}$ to \u20b92,413.00 \u2014 Profit booking dragged IT index momentum.\n* **Apollo Hospitals (`APOLLOHOSP`):** $\\mathbf{-1.55\\%}$ to \u20b98,910.00 \u2014 Retreated after recent multi-day climbs.\n* **HCL Technologies (`HCLTECH`):** $\\mathbf{-1.45\\%}$ to \u20b91,350.00 \u2014 Extended the IT sectoral weakness.\n* **Sun Pharmaceutical (`SUNPHARMA`):** $\\mathbf{-1.22\\%}$ to \u20b91,940.00 \u2014 Pulled back as defensive pharmaceutical allocations rotated out.\n* **Jio Financial Services (`JIOFIN`):** $\\mathbf{-1.15\\%}$ to \u20b9261.95 \u2014 Experienced a slight pullback after a strong multi-session run.\n\n---\n\n### 2. Institutional Flows (FII & DII Flows)\n\nActivity for the latest session (Cash segment provisional) points to a continued protective layer provided by domestic funds:\n\n| Category | Buy/Sell Action | Net Value (\u20b9 Crore) | Sentiment |\n| :--- | :--- | :--- | :--- |\n| **Foreign Institutional Investors (FII)** | Net Sellers | **-\u20b9943.42 Cr** | Marginal outflow |\n| **Domestic Institutional Investors (DII)** | Net Buyers | **+\u20b92,883.17 Cr** | Strong buying stance |\n| **Combined Net Flow** | **Net Inflow** | **+\u20b91,939.75 Cr** | **Bullish / Absorbed Supply** |\n\n**Smart Analysis:** Despite global cues and FIIs offloading some holdings (\u20b9943.42 Cr), DIIs completely overpowered the selling pressure with a robust absorption of \u20b92,883.17 Cr, showcasing strong domestic liquidity and confidence.\n\n---\n\n### 3. Key Financial Headlines & Sectoral Outlook\n\n* **RBI\u2019s Status Quo & Bullish GDP Revision:** The Reserve Bank of India\u2019s MPC kept the repo rate unchanged at **5.25%**, while raising India\u2019s FY27 GDP growth forecast to **6.7%** (up from 6.6%). This upgrade in structural growth numbers injected optimism into metals, rate-sensitive autos, and infrastructure-related firms.\n* **Brent Crude Slumps:** Brent crude hovering below **$80 per barrel** is actings as a strong positive catalyst for Indian macros, lowering the raw material basket and strengthening the Indian Rupee to close at **95.12 per USD**.\n* **SEBI\u2019s Closing Auction Session (CAS):** Markets are adapting to the newly introduced CAS framework for F&O-linked stocks. This has led to some last-hour intraday price divergence, but it is expected to streamline closing prices in the medium term.\n* **Earnings Volatility Ahead:** Focus shifts to corporate results today and tomorrow, with heavyweights like **LIC, Trent, Britannia, and Hero MotoCorp** lined up. These earnings will decide the direction for tomorrow's weekly options expiry.\n\nNifty Flow Agent\n\nBased on the latest flow data retrieved for the Indian market as of **August 5, 2026**, here is the FII and DII activity:\n\n### FII/DII Activity (August 5, 2026)\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 05-Aug-2026 | 19,353.43 | 16,470.26 | **+2,883.17** |\n| **FII/FPI** | 05-Aug-2026 | 15,940.50 | 16,883.92 | **-943.42** |\n| **Combined** | | **35,293.93** | **33,354.18** | **+1,939.75** |\n\n---\n\n### Key Analysis & Market Insights\n\n1. **DII Support (Strong Buying):** \n   Domestic Institutional Investors (DIIs) continue to show strong confidence, acting as the primary driver of liquidity with a robust net inflow of **+\u20b92,883.17 crore**. This persistent domestic bidding cushions the market against external volatility.\n\n2. **FII Outflow (Marginal Profit Booking):** \n   Foreign Institutional Investors (FIIs) were net sellers for the session, with a net outflow of **-\u20b9943.42 crore**. This indicates selective profit booking, potentially triggered by global macroeconomic factors or currency movements.\n\n3. **Net Market Sentiment:** \n   The combined institutional net flow stands positive at **+\u20b91,939.75 crore**. This suggests a resilient sentiment in the Indian equity markets, with domestic inflows comfortably absorbing global-led FII selling.\n\nAggregator Agent\n\n### Executive Summary\n\nDuring the trading session of August 5, 2026, the Indian stock market showcased remarkable resilience against a backdrop of global cues, driven by a powerful surge in domestic liquidity. While Foreign Institutional Investors (FIIs) engaged in marginal profit-booking with a net outflow of \u20b9943.42 crore, Domestic Institutional Investors (DIIs) forcefully absorbed the selling pressure by injecting \u20b92,883.17 crore, leading to a strong positive combined inflow of \u20b91,939.75 crore.\n\nThis bullish domestic conviction was sparked by the Reserve Bank of India\u2019s (RBI) decision to hold the repo rate at 5.25% while optimistically upgrading India\u2019s FY27 GDP growth projection to 6.7%. This policy boost\u2014combined with falling Brent crude prices under $80 per barrel\u2014triggered a distinct capital rotation. Rate-sensitive NBFCs (Shriram Finance +3.23%), commodities (Grasim), and metals (JSW Steel) led the charge, while IT heavyweights (TCS) and pharmaceuticals dragged as defensive positions were unwound. Although the newly introduced SEBI Closing Auction Session (CAS) framework introduced some last-hour price volatility, strong macro fundamentals and supportive domestic flows keep the underlying market sentiment firmly robust ahead of major corporate earnings.",
-  "executiveSummary": "### Executive Summary\n\nDuring the trading session of August 5, 2026, the Indian stock market showcased remarkable resilience against a backdrop of global cues, driven by a powerful surge in domestic liquidity. While Foreign Institutional Investors (FIIs) engaged in marginal profit-booking with a net outflow of \u20b9943.42 crore, Domestic Institutional Investors (DIIs) forcefully absorbed the selling pressure by injecting \u20b92,883.17 crore, leading to a strong positive combined inflow of \u20b91,939.75 crore.\n\nThis bullish domestic conviction was sparked by the Reserve Bank of India\u2019s (RBI) decision to hold the repo rate at 5.25% while optimistically upgrading India\u2019s FY27 GDP growth projection to 6.7%. This policy boost\u2014combined with falling Brent crude prices under $80 per barrel\u2014triggered a distinct capital rotation. Rate-sensitive NBFCs (Shriram Finance +3.23%), commodities (Grasim), and metals (JSW Steel) led the charge, while IT heavyweights (TCS) and pharmaceuticals dragged as defensive positions were unwound. Although the newly introduced SEBI Closing Auction Session (CAS) framework introduced some last-hour price volatility, strong macro fundamentals and supportive domestic flows keep the underlying market sentiment firmly robust ahead of major corporate earnings.",
+  "summary": "Nifty Analysis Agent\n\nHere is the latest financial analysis, stock performance breakdown, institutional flows, and key market headlines for the Indian stock market as of **August 6, 2026**.\n\n---\n\n### **1. Market Summary & Institutional Flows (FII/DII)**\n\nOn **August 6, 2026**, the Indian markets presented a mixed trend. While the BSE Sensex closed stronger, the **Nifty 50 remained almost flat**, consolidating within a narrow range due to counteracting forces between heavyweights and profit-booking in cyclicals.\n\n| Metric / Index | Closing Value | Change (%) | Key Triggers / Context |\n| :--- | :--- | :--- | :--- |\n| **Nifty 50** | **24,636.00** | **+0.05% (+11.35 pts)** | Supported by Reliance & SBI, but dragged down by Power Grid and metals. |\n| **BSE Sensex** | **78,954.76** | **+0.48% (+373.76 pts)** | Showed better performance; aided by heavyweights. |\n| **USD/INR** | **\u20b995.24** | **-0.16%** | Depreciated by 16 paise. |\n\n#### **Institutional Activity (FII/DII Provisional Flows)**\n* **Domestic Institutional Investors (DIIs):** Continues to act as the market's primary pillar of strength, emerging as **net buyers of \u20b92,883.17 crore**.\n* **Foreign Institutional Investors (FIIs):** Kept up their selective profit-booking stance, registering as **net sellers of \u20b9943.42 crore**.\n* *Takeaway:* The strong DII support comfortably absorbed FII outflows and stabilized the broader indices.\n\n---\n\n### **2. Nifty 50 Stock Analysis: Gainers & Losers**\n\nAccording to the latest live trading data, several heavyweights saw major action, driving the divergence within the index.\n\n#### **Major Gainers (Positive Contributors)**\n* **RELIANCE (NSE: RELIANCE):** Led the index higher, surging **+3.52%** to close at **\u20b91,325.00** with the highest turnover of \u20b92,67,141 Cr.\n* **State Bank of India (NSE: SBIN):** Gained **+2.84%** to close at **\u20b91,085.00** following robust banking sector support.\n* **Bharat Electronics (NSE: BEL):** Rose **+2.36%** to close at **\u20b9399.20**.\n* **Titan Company (NSE: TITAN):** Increased **+1.74%** to **\u20b94,998.00**.\n\n#### **Major Losers (Negative Contributors)**\n* **Power Grid (NSE: POWERGRID):** Suffered the largest drag, falling **-3.90%** to **\u20b9270.75**.\n* **Tata Steel (NSE: TATASTEEL):** Slid **-1.91%** to **\u20b9189.30**, facing metal-sector profit taking.\n* **Tata Consultancy Services (NSE: TCS):** Slid **-1.66%** to **\u20b92,373.00**.\n* **JSW Steel (NSE: JSWSTEEL):** Declined **-1.66%** to **\u20b91,307.90**.\n* **Bajaj Auto (NSE: BAJAJ-AUTO):** Down **-1.53%** to **\u20b911,620.00**.\n\n---\n\n### **3. Key Financial Headlines & Market Drivers**\n\n* **RBI Holds Status Quo at 5.25%:** \n  The RBI\u2019s Monetary Policy Committee (MPC) voted unanimously to **keep the repo rate unchanged at 5.25%**. Governor Sanjay Malhotra highlighted a data-dependent \"neutral\" stance as the central bank continues to monitor global energy prices and geopolitical stress.\n  \n* **Impact of New Closing Auction Session (CAS):** \n  Since its roll-out on August 3, 2026, the newly structured Closing Auction Session (designed for F&O-eligible stocks to enhance transparency in price discovery) has generated significant late-session volatility, causing closing price divergence between the Sensex and Nifty indices.\n\n* **Jio-BlackRock ETF Launch:** \n  The joint venture officially marked its entry into India\u2019s mutual fund passive sector by launching its **Nifty 50 ETF/Index Fund**, raising expectation of increased domestic passive investment.\n\n* **Paytm \u20b92,038 Cr Block Deal:** \n  Early backer Elevation Capital trimmed its stake via a massive block deal. Demonstrating domestic absorption capability, domestic institutions like the National Pension System (NPS) and Axis Mutual Fund emerged as major buyers.\n\nNifty Flow Agent\n\nThe latest Foreign Institutional Investor (FII) and Domestic Institutional Investor (DII) flow data for the Indian market as of **August 6, 2026**, is as follows:\n\n### FII/DII Flow Data (August 6, 2026)\n\n| Category | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) | Action |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 19,723.68 | 15,710.08 | **+4,013.60** | **Net Buyer** |\n| **FII/FPI** | 16,161.35 | 16,179.21 | **-17.86** | **Net Seller (Marginal)** |\n| **Combined** | **35,885.03** | **31,889.29** | **+3,995.74** | **Net Inflow** |\n\n---\n\n### Market Analysis & Financial Sentiment\n\n* **Strong Domestic Support:** Domestic Institutional Investors (DIIs) continue to act as a significant pillar of strength for the Indian stock market, registering a substantial net buy of **\u20b94,013.60 crore**.\n* **FII Neutrality:** Foreign Institutional Investors (FIIs) showed highly balanced trade activity, ending the session as marginal net sellers of just **\u20b917.86 crore**. This suggests a pause in heavy foreign outflows and a shift toward a wait-and-see approach.\n* **Overall Market Sentiment:** The combined net inflow of nearly **\u20b94,000 crore** highlights a strong bullish bias driven by domestic liquidity. This heavy domestic participation helps buffer the Indian market (Nifty 50) against global volatility, maintaining solid support levels.\n\nAggregator Agent\n\n### **Executive Summary: Indian Market Analysis (August 6, 2026)**\n\nOn August 6, 2026, the Indian stock market experienced divergent closing trends. While the BSE Sensex gained 0.48%, the Nifty 50 remained virtually flat (+0.05% to close at 24,636.00), squeezed by gains in heavyweights like Reliance (+3.52%) and State Bank of India (+2.84%) against a pull-back in Power Grid (-3.90%). \n\nThe primary takeaway is the overwhelming strength of domestic liquidity. Domestic Institutional Investors (DIIs) acted as the market's main anchor, recording a substantial net buy of \u20b94,013.60 crore. Meanwhile, Foreign Institutional Investors (FIIs) shifted to a neutral stance, registering a marginal net sell of just \u20b917.86 crore. This solid combined net inflow of nearly \u20b94,000 crore buffered the index from global volatility. A striking example of this domestic absorption capability was seen as domestic funds easily digested a \u20b92,038 crore Paytm block deal.\n\nKey macroeconomic and structural drivers included the RBI holding the repo rate unchanged at 5.25%, the entry of the Jio-BlackRock ETF into the passive investment space, and increased late-session volatility triggered by the newly rolled-out Closing Auction Session (CAS).",
+  "executiveSummary": "### **Executive Summary: Indian Market Analysis (August 6, 2026)**\n\nOn August 6, 2026, the Indian stock market experienced divergent closing trends. While the BSE Sensex gained 0.48%, the Nifty 50 remained virtually flat (+0.05% to close at 24,636.00), squeezed by gains in heavyweights like Reliance (+3.52%) and State Bank of India (+2.84%) against a pull-back in Power Grid (-3.90%). \n\nThe primary takeaway is the overwhelming strength of domestic liquidity. Domestic Institutional Investors (DIIs) acted as the market's main anchor, recording a substantial net buy of \u20b94,013.60 crore. Meanwhile, Foreign Institutional Investors (FIIs) shifted to a neutral stance, registering a marginal net sell of just \u20b917.86 crore. This solid combined net inflow of nearly \u20b94,000 crore buffered the index from global volatility. A striking example of this domestic absorption capability was seen as domestic funds easily digested a \u20b92,038 crore Paytm block deal.\n\nKey macroeconomic and structural drivers included the RBI holding the repo rate unchanged at 5.25%, the entry of the Jio-BlackRock ETF into the passive investment space, and increased late-session volatility triggered by the newly rolled-out Closing Auction Session (CAS).",
   "bias": "Bullish",
   "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "### 3. Key Financial Headlines & Sectoral Outlook",
-    "**DII Support (Strong Buying):**",
-    "**FII Outflow (Marginal Profit Booking):**",
-    "**Net Market Sentiment:**"
+    "Here is the latest financial analysis, stock performance breakdown, institutional flows, and key market headlines for the Indian stock market as of **August 6, 2026**.",
+    "### **3. Key Financial Headlines & Market Drivers**"
   ],
   "marketSignals": {
-    "positioningLabel": "Call-side hedge build",
-    "positioningStrike": 25000,
+    "positioningLabel": "Put-side hedge build",
+    "positioningStrike": 24600,
     "divergenceSummary": "Aligned sentiment",
     "divergenceCount": 0,
-    "trapRiskLabel": "Upside trap @ 24800",
-    "fiiNetCrores": -943.42,
-    "diiNetCrores": 2883.17,
+    "trapRiskLabel": "Downside trap @ 24600",
+    "fiiNetCrores": -17.86,
+    "diiNetCrores": 4013.6,
     "tradedValueCrores": 0.0,
-    "spot": 24746.2
+    "spot": 24636.0
   },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
     "bias": "Bearish",
     "note": "Mildly cautious news tone",
-    "analysis": "Recent market news shows a mildly cautious news tone, with most headlines flagging caution. The most supportive headline: \"AI-Driven Chip Boom Lifts Korean Current Account to Fresh Record\". The most cautious headline: \"NTSB, FAA launch probe after Marine One with Donald Trump on board came too close to passenger jet above Washington\".",
+    "analysis": "Recent market news shows a mildly cautious news tone, with most headlines flagging caution. The most supportive headline: \"Life Insurance Corporation of India standalone net profit rises 22.81% in the June 2026 quarter\". The most cautious headline: \"Why Black Moms Are Leaving The Job Market at Alarming Rate\".",
     "headlines": [
       {
-        "title": "Deadly fungus candida auris cases detected in 27 US states \u2014 Who is at risk, symptoms, treatment and more",
+        "title": "PM Modi receives call from Israeli counterpart Netanyahu, discusses West Asia crisis",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Korea in Race to Keep Chips Edge as China Presses, Minister Says",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Mexican TikTok influencer Cesar Gastelum shot to death during livestream allegedly over posts about cartel",
-        "label": "negative",
-        "sentiment": "Moderately negative"
-      },
-      {
-        "title": "Stock Market LIVE: GIFT Nifty signals positive open; Kospi drops nearly 5%; US-Iran talks in focus",
-        "label": "negative",
-        "sentiment": "Moderately negative"
-      },
-      {
-        "title": "Nazi warships, bones of woolly mammoth: Danube reveals historic relics as water level sees record-breaking drop",
+        "title": "Cabinet clears  \u20b923.7k-crore GOBARdhan \u2018waste-to-energy\u2019 biogas scheme",
         "label": "positive",
         "sentiment": "Slightly positive"
       },
       {
-        "title": "Stocks to buy today: Three picks from Teji Mandi; Tata Capital on list",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "NTSB, FAA launch probe after Marine One with Donald Trump on board came too close to passenger jet above Washington",
+        "title": "Why Black Moms Are Leaving The Job Market at Alarming Rate",
         "label": "negative",
         "sentiment": "Strongly negative"
       },
       {
-        "title": "Uttarakhand poll panel chief Purushottam gets SIR notice over mismatch in electoral records: Report",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "Stocks to buy today: Mphasis among 3 stock ideas by Bonanza",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Fed\u2019s Daly Supported Rate Decision, Warns of Inflation Risks",
+        "title": "US Senate panel votes to hold Anthony Fauci in contempt of Congress over Covid hearing testimony",
         "label": "negative",
         "sentiment": "Moderately negative"
       },
       {
-        "title": "Australia Posts Surprise Trade Surplus as Commodity Exports Gain",
-        "label": "positive",
-        "sentiment": "Strongly positive"
+        "title": "No dedicated audit of workplace creche provision: Labour Ministry",
+        "label": "neutral",
+        "sentiment": "Neutral"
       },
       {
-        "title": "Asian shares retreat as AI rally cools; oil steady on Iran peace hopes",
+        "title": "Germany Confronts Rhine Threat to Economy After Crisis Talks",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "Kochi-bound flight passenger arrested for trying to open emergency exit mid-air",
         "label": "negative",
         "sentiment": "Strongly negative"
       },
       {
-        "title": "Why the RBI Is Emerging as an Asian Rate Outlier in Five Charts",
+        "title": "Brij Bhushan Singh gets grand welcome in Gonda with \u2018Sher aaya\u2019 chants, flower petals after acquittal in wrestlers' case",
+        "label": "positive",
+        "sentiment": "Slightly positive"
+      },
+      {
+        "title": "Coal stocks can meet power sector demand for 62 days: Coal Ministry",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "AI-Driven Chip Boom Lifts Korean Current Account to Fresh Record",
+        "title": "US Initial Jobless Claims Remain Stable Below 200,000",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "Life Insurance Corporation of India standalone net profit rises 22.81% in the June 2026 quarter",
         "label": "positive",
         "sentiment": "Strongly positive"
       },
       {
-        "title": "Poojaa Precision Engg. Ltd Announcements",
-        "label": "neutral",
-        "sentiment": "Neutral"
+        "title": "US Labor Productivity Picks Up as Firms Seek to Curb Costs",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "INR settles lower tracking slight recovery in dollar overseas; modest gains in local equities cap downside",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "Hindustan Construction Company consolidated net profit rises 0.69% in the June 2026 quarter",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Emerging Currencies Trade Mixed Pending Hormuz Deal, US Payrolls",
+        "label": "negative",
+        "sentiment": "Moderately negative"
       }
     ]
   }
