@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T20:01:45.177689+05:30",
+  "generatedAt": "2026-08-14T09:01:36.756426+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
@@ -12,117 +12,109 @@
     "gemini-robotics-er-2-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\n### **Daily Indian Market Update & Nifty 50 Analysis**\n\nHere is a comprehensive breakdown of the latest trading data, institutional flows, and financial headlines for the Indian stock market (Nifty 50).\n\n---\n\n### **1. Nifty 50 Stock Analysis (Constituent Movements)**\nThe latest trading data exhibits a highly selective or defensive stance by market participants, with defensive sectors like Consumer Goods (FMCG) and Power outperforming, while metal and banking heavyweights drag the index down.\n\n* **Top Gainers (Contributors to Growth):**\n  * **TATACONSUM:** **+2.69%** (LTP: \u20b91090.50) \u2013 Leading the gainers, signaling demand in FMCG/defensives.\n  * **TMPV (Tata Motors DVR):** **+1.92%** (LTP: \u20b9349.60)\n  * **NTPC:** **+1.41%** (LTP: \u20b9344.25) \u2013 Strong interest in utilities/power.\n  * **HINDUNILVR:** **+1.41%** (LTP: \u20b92092.00) \u2013 Defensive FMCG buying.\n  * **SHRIRAMFIN:** **+1.35%** (LTP: \u20b91132.30)\n  * **LT (Larsen & Toubro):** **+1.26%** (LTP: \u20b94070.70) \u2013 Supporting the industrial basket.\n\n* **Top Losers (Major Drags):**\n  * **HINDALCO:** **-2.99%** (LTP: \u20b91046.25) \u2013 Dragged by commodity price volatility.\n  * **ICICIBANK:** **-1.74%** (LTP: \u20b91406.80) \u2013 Leading private bank experiencing profit booking.\n  * **ULTRACEMCO:** **-1.56%** (LTP: \u20b911706.00)\n  * **GRASIM:** **-1.54%** (LTP: \u20b93257.00)\n  * **RELIANCE:** **-0.90%** (LTP: \u20b91317.00) \u2013 Heavyweight pressure.\n\n---\n\n### **2. Latest FII and DII Flows**\nDomestic Institutional Investors (DIIs) continue to show structural resilience and are systematically absorbing the persistent selling pressure from Foreign Institutional Investors (FIIs).\n\n* **FII Net Flow (June 2026 Cash Segment):** **-\u20b949,028.63 crore** (Net Outflow)\n  * *Gross Purchases:* \u20b93,40,120.27 Cr | *Gross Sales:* \u20b93,89,148.90 Cr\n* **DII Net Flow (June 2026 Cash Segment):** **+\u20b985,800.14 crore** (Net Inflow)\n  * *Gross Purchases:* \u20b94,22,821.98 Cr | *Gross Sales:* \u20b93,37,021.84 Cr\n* **Flow Sentiment:** Although global macroeconomic challenges and dollar strength (~\u20b995.40/USD) trigger foreign outflows, SIP inflows (exceeding \u20b930,000+ crore monthly) serve as a massive cushion for the domestic market.\n\n---\n\n### **3. Key Financial Headlines & Technical Forecast**\n\n#### **Financial Headlines:**\n1. **Defensives Outperforming Metals:** Defensive buying in FMCG (HUL, Tata Consumer) and IT countered the drag from metal stocks (Hindalco, Tata Steel) and banking giants (ICICI Bank).\n2. **Supportive Macro Inflation Data:** Headline CPI inflation numbers from India printed at a comfortable **4.45%**, easing pressure on the Reserve Bank of India (RBI) regarding rate hikes and offering underlying comfort to the market.\n3. **Oil Prices Soften Slightly:** Brent crude traded near **$87.69\u2013$88.25**, balancing out concerns regarding inflation versus global growth deceleration.\n\n#### **Tomorrow's Nifty 50 Forecast & Trading Range:**\n* **Support Levels:**\n  * **24,300** is the immediate and crucial support. If broken, Nifty may drift down to test the **24,100** zone.\n* **Resistance Levels:**\n  * **24,450** and **24,550** are immediate resistance barriers. A daily close above 24,550 could spark a short-covering rally towards **24,700\u201324,800**.\n* **Market Outlook:** **Cautious to Range-bound**. Investors should focus on defensive sectors and stock-specific actions rather than large-direction bets on the index.\n\nNifty Flow Agent\n\n### Latest FII & DII Flow Data (As of August 13, 2026)\n\nHere is the latest institutional trading activity for the Indian equity market:\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** (Domestic Institutional Investors) | 13-Aug-2026 | 16,565.14 | 12,212.05 | **+4,353.09** |\n| **FII/FPI** (Foreign Institutional Investors) | 13-Aug-2026 | 14,492.46 | 15,003.15 | **-510.69** |\n| **Combined Total** | | **31,057.60** | **27,215.20** | **+3,842.40** |\n\n---\n\n### Market Analysis & Sentiment\n\n1. **DIIs Driving the Momentum:** \n   Domestic Institutional Investors (DIIs) continue to act as a robust cushion for the Indian markets, registering a strong net inflow of **\u20b94,353.09 crore**. This reflects sustained domestic liquidity and confidence from mutual funds, insurance companies, and pension funds.\n   \n2. **FII Activity:** \n   Foreign Institutional Investors (FIIs) recorded a marginal net outflow of **-\u20b9510.69 crore**. Despite the slight selling pressure, their overall participation remains active, indicating a consolidated or cautious stance rather than panic selling.\n\n3. **Combined Sentiment:** \n   The cumulative net institutional inflow stands at **+\u20b93,842.40 crore**. This substantial positive net figure indicates strong underlying support and a generally bullish undertone for the Nifty 50 and broader indices in this trading session.\n\nAggregator Agent\n\n### Executive Summary\n\nThis summary integrates the Nifty 50 market update and institutional flow data as of mid-August 2026, highlighting the structural shifts in the Indian equity market.\n\n**Key Takeaways:**\n* **DII Inflow Resiliency:** Domestic Institutional Investors (DIIs) continue to act as the market\u2019s primary anchor, systematically absorbing persistent Foreign Institutional Investor (FII) selling. Across longer horizons (such as June 2026) and specific sessions like August 13, 2026\u2014where DIIs registered a robust net inflow of \u20b94,353.09 crore against FII selling of \u20b9510.69 crore\u2014domestic liquidity remains structurally dominant.\n* **Defensive Market Rotation:** Market participants are adopting a defensive posture. FMCG gainers like TATACONSUM (+2.69%) and utilities like NTPC (+1.41%) are outperforming, while metal and banking heavyweights like HINDALCO (-2.99%) and ICICIBANK (-1.74%) drag the index.\n* **Macro Conditions & Outlook:** Easing domestic retail inflation (4.45%) and softening crude prices ($87.69\u2013$88.25) stabilize the market despite a depreciating Rupee (~\u20b995.40/USD). The technical outlook for the Nifty 50 remains cautious and range-bound, with crucial support at 24,300 and resistance at 24,450\u201324,550. \n\nUltimately, sustained domestic retail inflows offset foreign capital flight, keeping the broader market resilient.",
-  "executiveSummary": "### Executive Summary\n\nThis summary integrates the Nifty 50 market update and institutional flow data as of mid-August 2026, highlighting the structural shifts in the Indian equity market.\n\n**Key Takeaways:**\n* **DII Inflow Resiliency:** Domestic Institutional Investors (DIIs) continue to act as the market\u2019s primary anchor, systematically absorbing persistent Foreign Institutional Investor (FII) selling. Across longer horizons (such as June 2026) and specific sessions like August 13, 2026\u2014where DIIs registered a robust net inflow of \u20b94,353.09 crore against FII selling of \u20b9510.69 crore\u2014domestic liquidity remains structurally dominant.\n* **Defensive Market Rotation:** Market participants are adopting a defensive posture. FMCG gainers like TATACONSUM (+2.69%) and utilities like NTPC (+1.41%) are outperforming, while metal and banking heavyweights like HINDALCO (-2.99%) and ICICIBANK (-1.74%) drag the index.\n* **Macro Conditions & Outlook:** Easing domestic retail inflation (4.45%) and softening crude prices ($87.69\u2013$88.25) stabilize the market despite a depreciating Rupee (~\u20b995.40/USD). The technical outlook for the Nifty 50 remains cautious and range-bound, with crucial support at 24,300 and resistance at 24,450\u201324,550. \n\nUltimately, sustained domestic retail inflows offset foreign capital flight, keeping the broader market resilient.",
-  "bias": "Bullish",
-  "keyLevels": [
-    "Resistance 24,450\u201324,550",
-    "Support 24,300"
-  ],
+  "summary": "Nifty Analysis Agent\n\n### Indian Market Update & Nifty 50 Performance Analysis\n\n---\n\n### 1. Stock Performance Brief (Nifty 50 Constituents)\nBased on the latest live NSE Nifty 50 trading data, the market is seeing mixed activity with selective sectoral buying and profit-booking in metal and heavy-weight banking names.\n\n* **Major Gainers (Top Performers):**\n  * **TATACONSUM** (Tata Consumer Products): LTP \u20b91,090.50 (**+2.69%**)\n  * **TMPV**: LTP \u20b9349.60 (**+1.92%**)\n  * **NTPC**: LTP \u20b9344.25 (**+1.41%**)\n  * **HINDUNILVR** (Hindustan Unilever): LTP \u20b92,092.00 (**+1.41%**)\n  * **SHRIRAMFIN** (Shriram Finance): LTP \u20b91,132.30 (**+1.35%**)\n  * **LT** (Larsen & Toubro): LTP \u20b94,070.70 (**+1.26%**)\n  * **TCS** (Tata Consultancy Services): LTP \u20b92,375.00 (**+1.08%**)\n\n* **Major Losers (Decliners):**\n  * **HINDALCO**: LTP \u20b91,046.25 (**-2.99%**) \u2014 Dragged down by weakness in metal prices and industrial demand.\n  * **ICICIBANK**: LTP \u20b91,406.80 (**-1.74%**)\n  * **ULTRACEMCO** (UltraTech Cement): LTP \u20b911,706.00 (**-1.56%**)\n  * **GRASIM**: LTP \u20b93,257.00 (**-1.54%**)\n  * **RELIANCE**: LTP \u20b91,317.00 (**-0.90%**)\n\n* **Takeaway:** FMCG and Defensive names like Tata Consumer, Hindustan Unilever, and IT bellwether TCS are leading the gains, signaling a defensive stance by investors. Heavyweights in Metals (Hindalco) and Financials (ICICI Bank) are acting as a drag.\n\n---\n\n### 2. Latest Institutional Capital Flows (FII / DII Activity)\nThe institutional flow trend indicates a major positive shift. After months of intense foreign liquidation, Foreign Institutional Investors (FIIs) are returning to buy in the cash segment alongside Domestic Institutional Investors (DIIs).\n\n| Period | FII Net Cash Segment Flow (\u20b9 Cr) | DII Net Cash Segment Flow (\u20b9 Cr) | Combined Net Flow (\u20b9 Cr) | Market Trend |\n| :--- | :--- | :--- | :--- | :--- |\n| **June 2026** | **-\u20b949,028.63** | **+\u20b985,800.14** | **+\u20b936,771.51** | Resilient Nifty; holds above **24,000**. |\n| **July 2026** | **-\u20b95,778.99** (provisional) | **+\u20b935,099.25** | **+\u20b929,320.26** | FII pressure eases; Nifty climbs above **24,400**. |\n| **August 2026 (MTD)** | **+\u20b93,607.90** | **+\u20b916,696.80** | **+\u20b920,304.70** | FIIs flip **Net Buyers**; consolidation phase. |\n\n---\n\n### 3. Financial Headlines & Market Dynamics\n\n* **FIIs Turn Net Buyers in August:** For the first time in several months, Foreign Portfolio Investors (FPIs/FIIs) have transitioned to being net buyers on a Month-to-Date basis, investing over \u20b93,600 crore. Lower US Bond yields and rising expectations of a US Fed rate cut in September are fueling this reallocation to emerging markets.\n* **Domestic Liquidity Remains Bulletproof:** DIIs continue to support the index with unwavering buying through August (over \u20b916,696 crore). Ongoing SIP inflows ensure any FII sell-off is quickly absorbed.\n* **Nifty Consolidated Trading Range:** The Nifty 50 index remains in a range-bound, sideways phase between **24,395 and 24,500**. Upward breakouts are currently capped by geopolitical friction in the Middle East and Brent crude oil remaining volatile at around $87 per barrel. Investors are adopting a highly selective, stock-specific strategy, favoring solid earners and dividend-paying stocks.\n\nNifty Flow Agent\n\nBased on the latest institutional flow data fetched for the Indian market, here is the analysis and institutional flow for **August 13, 2026**:\n\n### **1. Institutional Flow Data (FII / DII) \u2014 August 13, 2026**\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII (Domestic Institutional Investors)** | 13-Aug-2026 | 16,565.14 | 12,212.05 | **+4,353.09** |\n| **FII/FPI (Foreign Institutional Investors)** | 13-Aug-2026 | 14,492.46 | 15,003.15 | **-510.69** |\n| **Combined Total** | | **31,057.60** | **27,215.20** | **+3,842.40** |\n\n---\n\n### **2. Financial Headlines & Takeaways**\n\n*   **\"DIIs Flex Muscle:\"** Domestic Institutional Investors heavily absorb FII selling pressure, pumping a massive **\u20b94,353.09 crore** net into the market.\n*   **\"FII Outflows Slow Down:\"** Foreign portfolio selling remained marginal at just **-\u20b9510.69 crore**, showing a cooling-off period in their aggressive distribution phase.\n*   **\"Net Market Support Remains Positive:\"** The combined institutional activity concluded with a robust **net positive inflow of \u20b93,842.40 crore**, showcasing strong domestic resilience and liquidity backing.\n\n---\n\n### **3. Market Analysis & Stock Implications**\n\n1.  **Bullish Underlying Liquidity:** \n    With DIIs maintaining aggressive buying strategies, large-cap defensive sectors\u2014such as Financials, IT, and FMCG\u2014are likely receiving strong support. This dynamic minimizes downside risk for the Nifty 50 despite global macroeconomic uncertainties.\n    \n2.  **FII Reticence vs. Domestic Conviction:** \n    The minor FII outflow indicates a wait-and-watch approach ahead of key domestic corporate earnings results or global central bank cues. Conversely, the high buy-to-sell volume by DIIs reflects ongoing strong retail flows via SIPs (Systematic Investment Plans) and domestic mutual fund schemes, providing a solid cushion against international volatility.\n\nAggregator Agent\n\n### Executive Summary\n\nThe Indian equity market is experiencing a significant positive transition in institutional capital flows, characterized by a dramatic slowdown in foreign liquidations and robust domestic resilience. Foreign Institutional Investors (FIIs), after months of aggressive selling, have turned net buyers Month-to-Date in August (+\u20b93,607.90 crore) and registered a marginal outflow of just \u20b9510.69 crore on August 13, 2026. This pivotal return of foreign capital is supported by expectations of a September US Fed rate cut and lower bond yields. Concurrently, Domestic Institutional Investors (DIIs) continue to absorb any selling pressure, pumping \u20b94,353.09 crore on August 13 and over \u20b916,696 crore in August, driven by consistent SIP inflows.\n\nDespite this strong, combined net positive liquidity, a surprising disconnect remains: the Nifty 50 remains capped in a consolidated, range-bound phase (24,395 to 24,500) due to geopolitical friction and volatile crude oil prices. This sideways pressure has driven a highly selective, stock-specific market environment. Defensive sectors like FMCG (Tata Consumer, Hindustan Unilever) and IT (TCS) are leading the gains, while heavyweights in metals (Hindalco) and financials (ICICI Bank) undergo profit-booking and act as a near-term drag.",
+  "executiveSummary": "### Executive Summary\n\nThe Indian equity market is experiencing a significant positive transition in institutional capital flows, characterized by a dramatic slowdown in foreign liquidations and robust domestic resilience. Foreign Institutional Investors (FIIs), after months of aggressive selling, have turned net buyers Month-to-Date in August (+\u20b93,607.90 crore) and registered a marginal outflow of just \u20b9510.69 crore on August 13, 2026. This pivotal return of foreign capital is supported by expectations of a September US Fed rate cut and lower bond yields. Concurrently, Domestic Institutional Investors (DIIs) continue to absorb any selling pressure, pumping \u20b94,353.09 crore on August 13 and over \u20b916,696 crore in August, driven by consistent SIP inflows.\n\nDespite this strong, combined net positive liquidity, a surprising disconnect remains: the Nifty 50 remains capped in a consolidated, range-bound phase (24,395 to 24,500) due to geopolitical friction and volatile crude oil prices. This sideways pressure has driven a highly selective, stock-specific market environment. Defensive sectors like FMCG (Tata Consumer, Hindustan Unilever) and IT (TCS) are leading the gains, while heavyweights in metals (Hindalco) and financials (ICICI Bank) undergo profit-booking and act as a near-term drag.",
+  "bias": "Neutral",
+  "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "Here is a comprehensive breakdown of the latest trading data, institutional flows, and financial headlines for the Indian stock market (Nifty 50).",
-    "### **3. Key Financial Headlines & Technical Forecast**",
-    "#### **Financial Headlines:**",
-    "**Defensives Outperforming Metals:** Defensive buying in FMCG (HUL, Tata Consumer) and IT countered the drag from metal stocks (Hindalco, Tata Steel) and banking giants (ICICI Bank).",
-    "2. **Supportive Macro Inflation Data:** Headline CPI inflation numbers from India printed at a comfortable **4.45%**, easing pressure on the Reserve Bank of India (RBI) regarding rate hikes and offering underlying comfort to the market.",
-    "**Oil Prices Soften Slightly:** Brent crude traded near **$87.69\u2013$88.25**, balancing out concerns regarding inflation versus global growth deceleration.",
-    "**DIIs Driving the Momentum:**",
-    "**FII Activity:**",
-    "**Combined Sentiment:**"
+    "### 3. Financial Headlines & Market Dynamics",
+    "### **2. Financial Headlines & Takeaways**",
+    "**Bullish Underlying Liquidity:**",
+    "**FII Reticence vs. Domestic Conviction:**"
   ],
   "marketSignals": {
-    "positioningLabel": "Bullish positioning build",
+    "positioningLabel": "Put-side hedge build",
     "positioningStrike": 24300,
     "divergenceSummary": "Aligned sentiment",
     "divergenceCount": 0,
-    "trapRiskLabel": "Upside trap @ 24500",
+    "trapRiskLabel": "No clear trap",
     "fiiNetCrores": -510.69,
     "diiNetCrores": 4353.09,
     "tradedValueCrores": 0.0,
-    "spot": 24395.85
+    "spot": 24215.35
   },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
     "bias": "Bearish",
-    "note": "Mildly cautious news tone",
-    "analysis": "Recent market news shows a mildly cautious news tone, with most headlines flagging caution. The most supportive headline: \"India's crude oil demand to surge 7% in 2027\". The most cautious headline: \"INR weighed down by weak investor sentiments; Falling oil prices limit losses\".",
+    "note": "Moderately cautious news tone",
+    "analysis": "Recent market news shows a moderately cautious news tone, with most headlines flagging caution. The most supportive headline: \"Argentina\u2019s Inflation Edged Up Last Month on Winter Holidays\". The most cautious headline: \"Australia Home Loans Fall Most Since Pandemic as Tax Changes Hit\".",
     "headlines": [
       {
-        "title": "West Bengal: BJP\u2019s Rajya Sabha MP loses top honour over \u2018derogatory\u2019 remarks against Netaji Subhas Chandra Bose",
+        "title": "Nifty near 200-DEMA; pullback or breakdown on cards? Check analysts view",
         "label": "negative",
         "sentiment": "Strongly negative"
       },
       {
-        "title": "Who is Mirza Fakhrul? BNP nominates party's secretary general for presidential election in Bangladesh",
+        "title": "Delhi Master Plan 2047: Forty lakh new homes, land pooling and rental units proposed \u2013 all you need to know",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Time Technoplast wins order of Rs 2.48 cr",
-        "label": "positive",
-        "sentiment": "Moderately positive"
-      },
-      {
-        "title": "Carney Walks a Political Tightrope as US Trade Talks Approach Deadline",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "In a first, govt plans turning citizen grievances into a source of policy reforms",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Sharper divergence in benchmark index closing levels on Sensex expiry day",
+        "title": "World News Today Live Updates on August 14, 2026 : India helping China evade US tariffs? White House weighs anti-transhipment penalties, says it's losing $19B-$26B a year",
         "label": "negative",
         "sentiment": "Strongly negative"
       },
       {
-        "title": "Birth tourism crackdown: US revokes more than 600 visas; Marco Rubio says \u2018American citizenship is not for sale\u2019",
+        "title": "India helping China evade US tariffs? White House weighs anti-transhipment penalties, says it's losing $19B-$26B a year",
         "label": "negative",
         "sentiment": "Strongly negative"
       },
       {
-        "title": "\u2018Devastated\u2019: Teenage Australian golfer Jessica Bang dies in Bangkok; tributes pour in",
+        "title": "IRM Energy appoints Ashish Maheshwari as CFO",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Setbacks for Meta continue: Tech giant calls allegations of misleading users \u2018unsubstantiated\u2019 ahead of upcoming trial",
+        "label": "negative",
+        "sentiment": "Strongly negative"
+      },
+      {
+        "title": "Stocks to watch: Honasa, LG Electronics, Physicswalla, NMDC, TMPV",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Australia Home Loans Fall Most Since Pandemic as Tax Changes Hit",
+        "label": "negative",
+        "sentiment": "Strongly negative"
+      },
+      {
+        "title": "Live-in registration, polygamy ban,  \u20b925,000 fine: Key provisions in Rajasthan UCC Bill 2026",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "China\u2019s High-Tech Boom Seen Failing to Halt Slowdown of Economy",
+        "label": "negative",
+        "sentiment": "Strongly negative"
+      },
+      {
+        "title": "Peru Keeps 4.25% Rate as Inflation Pick-Up Seen as Temporary",
         "label": "negative",
         "sentiment": "Moderately negative"
       },
       {
-        "title": "Fed\u2019s Hammack Questions Whether US Inflation Will Keep Slowing",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "INR weighed down by weak investor sentiments; Falling oil prices limit losses",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "US Jobless Claims Edged Up to 209,000 Last Week",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "US Wholesale Inflation Cools as War-Driven Energy Shock Fades",
+        "title": "Cloudy Yen Outlook Raises the Bar for Japan\u2019s Earnings Beats",
         "label": "positive",
         "sentiment": "Moderately positive"
       },
       {
-        "title": "Chemicals, Telecom & Networking, Textiles and Solar PV are key sectors for India to become global manufacturing hub",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "India's crude oil demand to surge 7% in 2027",
+        "title": "Argentina\u2019s Inflation Edged Up Last Month on Winter Holidays",
         "label": "positive",
         "sentiment": "Strongly positive"
       },
       {
-        "title": "US Tech Earnings Shock Would Ripple Through UK, BOE Says",
-        "label": "negative",
-        "sentiment": "Strongly negative"
+        "title": "Quarterly results of companies",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "India needs a national framework to build a sustainable care economy",
+        "label": "positive",
+        "sentiment": "Slightly positive"
       }
     ]
   }
