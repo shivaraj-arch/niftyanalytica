@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-24T20:01:16.832817+05:30",
+  "fetchedAt": "2026-08-25T09:00:52.621511+05:30",
   "contributors": {
     "data": [
       {
@@ -547,22 +547,6 @@
         "perChange": -0.6
       },
       {
-        "symbol": "ULTRACEMCO",
-        "series": "EQ",
-        "open_price": 11566,
-        "high_price": 11606,
-        "low_price": 11484,
-        "ltp": 11504,
-        "prev_price": 11570,
-        "net_price": -0.57,
-        "trade_quantity": 297744,
-        "turnover": 34372.2521712,
-        "market_type": "N",
-        "ca_ex_dt": "30-Jul-2026",
-        "ca_purpose": "Dividend - Rs 240 Per Share",
-        "perChange": -0.57
-      },
-      {
         "symbol": "BHARTIARTL",
         "series": "EQ",
         "open_price": 1950,
@@ -576,6 +560,22 @@
         "market_type": "N",
         "ca_ex_dt": "24-Jul-2026",
         "ca_purpose": "Dividend - Rs 24 Per Share",
+        "perChange": -0.57
+      },
+      {
+        "symbol": "ULTRACEMCO",
+        "series": "EQ",
+        "open_price": 11566,
+        "high_price": 11606,
+        "low_price": 11484,
+        "ltp": 11504,
+        "prev_price": 11570,
+        "net_price": -0.57,
+        "trade_quantity": 297744,
+        "turnover": 34372.2521712,
+        "market_type": "N",
+        "ca_ex_dt": "30-Jul-2026",
+        "ca_purpose": "Dividend - Rs 240 Per Share",
         "perChange": -0.57
       },
       {
@@ -13078,8 +13078,8 @@
   ],
   "vix": {
     "symbol": "INDIA VIX",
-    "last": 11.7,
-    "change": 0.5,
-    "percentChange": 4.51
+    "last": 11.53,
+    "change": 0.0,
+    "percentChange": 2.94
   }
 }
