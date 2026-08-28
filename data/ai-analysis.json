@@ -1,28 +1,27 @@
 {
-  "generatedAt": "2026-08-27T20:01:57.960349+05:30",
+  "generatedAt": "2026-08-28T09:05:36.096877+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
     "nifty_flow_agent",
     "AggregatorAgent"
   ],
-  "model": "gemini-robotics-er-2-preview",
+  "model": "gemini-robotics-er-1.6-preview",
   "requestedModel": "gemini-robotics-er-2-preview",
   "attemptedModels": [
-    "gemini-robotics-er-2-preview"
+    "gemini-robotics-er-2-preview",
+    "gemini-robotics-er-1.6-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\n### Market Analysis & Flow Report: Indian Stock Market (Nifty 50)\n\n---\n\n### 1. FII & DII Trading Activity (Institutional Flows)\nThe Indian stock market continues to enjoy strong liquidity support. Both Foreign Institutional Investors (FII) and Domestic Institutional Investors (DII) closed as **net buyers** during the session, showing that despite volatile price action, institutional interest remains robust:\n\n* **Foreign Portfolio Investors (FII/FPI):** Registered a net buy of **\u20b9502.63 crore**, maintaining a steady build-up in monthly inflows.\n* **Domestic Institutional Investors (DII):** Contributed heavily to the market's cushion with a massive net buy of **\u20b96,425.16 crore**, powered by strong monthly SIP-driven inflows.\n* **Combined Institutional Support:** Total net inflow stood at **\u20b96,927.79 crore**, which indicates solid structural liquidity in the secondary markets.\n\n---\n\n### 2. Nifty 50 Constituents Analysis (Gainers & Losers)\nDespite the heavy net institutional buying, the index experienced intra-day volatility and consolidated due to profit-taking in heavyweight banking, energy, and IT stocks. \n\n#### **Top Gainers (Contributors to Growth)**\n* **ADANIENT (Adani Enterprises):** `\u20b93,169` | **+1.83%** (Led the chart after resuming upward trajectory)\n* **KOTAKBANK (Kotak Mahindra Bank):** `\u20b9424.2` | **+1.80%** (Provided necessary defense in the private banking space)\n* **ADANIPORTS (Adani Ports):** `\u20b91,714` | **+1.33%**\n* **CIPLA:** `\u20b91,420` | **+1.23%** (Pharma continued defensive outperformance)\n* **BEL (Bharat Electronics):** `\u20b9411` | **+1.01%**\n\n#### **Top Losers (Sectoral Profit Booking)**\n* **HINDALCO:** `\u20b91,024` | **-2.75%** (Fell despite announcing the commissioning of its new specialty plant)\n* **HDFCBANK:** `\u20b9711` | **-2.23%** (Weighed down the banking gauge on profit booking)\n* **M&M (Mahindra & Mahindra):** `\u20b93,330` | **-2.01%** (Corrected from higher bounds)\n* **SHRIRAMFIN:** `\u20b91,101` | **-1.48%**\n* **HCLTECH:** `\u20b91,282` | **-1.27%** & **RELIANCE:** `\u20b91,282.2` | **-1.22%** (Drag on heavyweights capped index upside)\n\n---\n\n### 3. Latest Financial Headlines & Market Drivers\n\n#### **Tug-of-War and Technological Consolidation**\nThe Nifty 50 started off on a strong foot (testing 24,277) but quickly erased gains to trade in a narrow, volatile range. Profit-booking in IT (Infosys, TCS) and FMCG heavyweights capped the morning optimism. Technical analysts highlight **24,150** as a major make-or-break support floor for Nifty tomorrow.\n\n#### **Block Deals Hit 14-Month High**\nLarge-scale portfolio reshuffling triggered a surge in block deals, totaling **\u20b910,300 crore** in a single session. This elevated the block transaction volume for August to a 14-month peak, reflecting active institutional reorganization behind the scenes.\n\n#### **Crosscurrent of Global Forces**\n* **Nvidia Momentum:** Chipmaker giant Nvidia\u2019s stellar blowout earnings provided a lift to Asian and tech-heavy regional indices.\n* **Macro Drag:** On the flip side, hotter-than-expected overnight US inflation prints stoked concerns of a delayed Federal Reserve rate-cut trajectory, generating global headwind pressure.\n* **Oil Relief:** Easing Brent Crude prices, hovering around **$87/barrel**, provided a margin of relief for oil-sensitive markets like India.\n\n---\n\n### Summary Outlook\nThe Indian market displays a split personality: while macro liquidity is extremely healthy\u2014demonstrated by a combined institutional net purchase of over **\u20b96,900 crore**\u2014individual stock movements show that investors are rotating out of expensive tech and private banks during run-ups. The Nifty is positioned for range-bound consolidation tomorrow with an eye on the **24,150** technical floor.\n\nNifty Flow Agent\n\n### Latest FII and DII Flow Data (as of August 27, 2026)\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 27-Aug-2026 | 19,605.60 | 14,628.43 | **+4,977.17** |\n| **FII/FPI** | 27-Aug-2026 | 15,276.94 | 15,575.20 | **-298.26** |\n| **Combined** | | | | **+4,678.91** |\n\n---\n\n### Market Flow Analysis & Sentiment\n\n* **Domestic Strength:** Domestic Institutional Investors (DIIs) continue to show robust confidence, bringing in a significant net inflow of **\u20b94,977.17 crore**. This acts as a major buffer for the domestic market.\n* **FII Activity:** Foreign Institutional Investors (FII/FPI) registered a minor net outflow of **\u20b9298.26 crore**. The close balance of buying and selling suggests a cautious or range-bound positioning by foreign participants rather than aggressive profit-taking.\n* **Net Sentiment:** With a combined net institutional inflow of **over \u20b94,678 crore**, the overall liquidity conditions in the Indian market remain highly supportive, reinforcing a generally bullish undertone backed strongly by domestic liquidity.\n\n### Financial Headlines & Stock Trends\n\n1. **Domestic Mutual Funds Dominate:** Robust SIP (Systematic Investment Plan) inflows continue to drive DII purchasing power, helping absorb global macro volatilities and marginal FII outflows.\n2. **Nifty Consolidates:** Sectoral rotation remains active, with defensives like FMCG/Pharma and pockets of Banking holding the indices steady amidst localized swings.\n3. **Focus on Quality:** With global interest rate expectations shifting, large-cap stocks with solid earnings profiles are seeing increased relative strength as institutional buyers lean toward safer defensive-growth plays.\n\nAggregator Agent\n\n### Executive Summary\n\nThe Indian stock market exhibits robust, domestic-driven resilience amidst global crosscurrents and active sectoral reshuffling. Solid liquidity continues to anchor the secondary market, primarily driven by Domestic Institutional Investors (DIIs). Backed by relentless SIP inflows, DIIs registered massive net buys (exceeding \u20b94,900 crore and \u20b96,400 crore across tracked sessions), heavily cushioning the indices against volatile Foreign Institutional Investor (FII) flows and macroeconomic headwinds. \n\nConcurrently, institutional portfolio reorganizations have surged, pushing block deals to a 14-month high of \u20b910,300 crore. However, despite strong macro liquidity, the Nifty 50 has faced intra-day volatility and profit-booking in heavyweights like HDFC Bank, Reliance, and IT majors, capping upward momentum and prompting a range-bound consolidation toward the crucial 24,150 support floor. This has triggered active sectoral rotation into defensives, FMCG, and pharma. Externally, the market is navigating a tug-of-war between positive triggers, such as Nvidia's blowout earnings and easing Brent crude ($87/barrel), and global drags like persistent US inflation. Overall, while the index consolidates, the robust underlying domestic liquidity maintains a structurally supportive, defensive-growth posture.",
-  "executiveSummary": "### Executive Summary\n\nThe Indian stock market exhibits robust, domestic-driven resilience amidst global crosscurrents and active sectoral reshuffling. Solid liquidity continues to anchor the secondary market, primarily driven by Domestic Institutional Investors (DIIs). Backed by relentless SIP inflows, DIIs registered massive net buys (exceeding \u20b94,900 crore and \u20b96,400 crore across tracked sessions), heavily cushioning the indices against volatile Foreign Institutional Investor (FII) flows and macroeconomic headwinds. \n\nConcurrently, institutional portfolio reorganizations have surged, pushing block deals to a 14-month high of \u20b910,300 crore. However, despite strong macro liquidity, the Nifty 50 has faced intra-day volatility and profit-booking in heavyweights like HDFC Bank, Reliance, and IT majors, capping upward momentum and prompting a range-bound consolidation toward the crucial 24,150 support floor. This has triggered active sectoral rotation into defensives, FMCG, and pharma. Externally, the market is navigating a tug-of-war between positive triggers, such as Nvidia's blowout earnings and easing Brent crude ($87/barrel), and global drags like persistent US inflation. Overall, while the index consolidates, the robust underlying domestic liquidity maintains a structurally supportive, defensive-growth posture.",
+  "summary": "Nifty Analysis Agent\n\n### **Nifty 50 Market Analysis: Latest Trends & Forecast**\n\nBased on the latest exchange data and institutional flow reports for the trading session ending late August 2026, here is the performance summary and outlook for the Indian markets.\n\n---\n\n### **1. Nifty 50 Constituent Analysis (Performance Recap)**\nThe market showed a clear divide between gainers and heavyweight losers, leading to volatility in the index.\n\n*   **Top Gainers (Bullish Momentum):**\n    *   **ADANIENT:** \u2191 1.83% (LTP: \u20b93,169) - Leading the growth trajectory.\n    *   **KOTAKBANK:** \u2191 1.80% (LTP: \u20b9424.2) - Strong resilience in the banking space.\n    *   **ADANIPORTS:** \u2191 1.33% (LTP: \u20b91,714) - Consistent uptick in the logistics major.\n    *   **CIPLA:** \u2191 1.23% (LTP: \u20b91,420) - Strong defensive buying in Pharma.\n    *   **BEL:** \u2191 1.01% (LTP: \u20b9411) - Continued demand in defense electronics.\n\n*   **Top Losers (Major Contributors to Decline):**\n    *   **HINDALCO:** \u2193 2.75% (LTP: \u20b91,024) - Sharpest decline due to weak metal cues.\n    *   **HDFCBANK:** \u2193 2.23% (LTP: \u20b9711) - Continues to drag the index, hitting multi-year relative lows.\n    *   **M&M:** \u2193 2.01% (LTP: \u20b93,330) - Profit booking seen in the auto major.\n    *   **RELIANCE:** \u2193 1.22% (LTP: \u20b91,282.2) - Marginal weakness in the heavy-weight index stock.\n\n---\n\n### **2. FII & DII Data (August 27, 2026)**\nThe institutional segment remains a \"Tale of Two Cities,\" with domestic liquidity countering foreign sell-offs.\n\n| **Category** | **Net Value (\u20b9 Crore)** | **Sentiment** |\n| :--- | :--- | :--- |\n| **DII (Domestic)** | **+ \u20b94,977.17 (BUY)** | Strong confidence from mutual funds/pension funds. |\n| **FII (Foreign)** | **- \u20b9298.26 (SELL)** | Cautious stance, higher sell-off in NSE Cash (\u20b91,558 Cr). |\n\n*   **Observation:** The strong \u20b94,900+ Cr inflow from DIIs suggests that local appetite is absorbing global pressures efficiently.\n\n---\n\n### **3. Market Headlines & Outlook for Tomorrow**\n\n*   **Opening Forecast:** Gift Nifty signals a **flat-to-negative start**. Resistance is expected at **24,200\u201324,250**, while crucial support sits at **24,000**.\n*   **HDFC Bank Watch:** Analysts are closely monitoring HDFC Bank as its drop to a 4-year low creates a significant drag on both Nifty 50 and Bank Nifty sectors.\n*   **Crude Oil impact:** Brent crude hovering near **$87/barrel** is a mixed signal, though slightly beneficial for downstream oil companies in India compared to higher peaks.\n*   **Strategy:** Experts suggest a **\"Sell on Rise\"** approach near resistance levels until the index decisively clears 24,350. Alternatively, **\"Buy near support\"** at 24,000 for quick tactical bounces.\n*   **Sectoral Cue:** Metals and Autos remain under pressure from weak global demand, while Pharma and Realty continue to show \"buy on dips\" patterns.\n\nNifty Flow Agent\n\nThe latest market flow data for the Indian equity market (specifically Nifty 50) as of August 27, 2026, reveals a mixed outlook between domestic and foreign institutional participants:\n\n### **FII & DII Flow Data (August 27, 2026)**\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 27-Aug-2026 | 19,605.60 | 14,628.43 | **+4,977.17** |\n| **FII/FPI** | 27-Aug-2026 | 15,276.94 | 15,575.20 | **-298.26** |\n\n---\n\n### **Market Summary & Headlines**\n\n*   **Strong Domestic Support:** Domestic Institutional Investors (DII) acted as the primary market anchor, with a substantial net buy of nearly **\u20b94,977 crore**, offsetting minor exits from foreign participants.\n*   **FII Caution:** Foreign Institutional Investors (FII) showed slight net selling of **\u20b9298.26 crore**, suggesting a cautious or \"wait-and-watch\" stance despite healthy overall trading volumes.\n*   **Market Sentiment:** The heavy net inflow from DIIs indicates robust local liquidity and confidence in the Indian market's current valuation, effectively neutralizing the impact of minimal FII outflows.\n*   **Headlines to Watch:**\n    *   *DII Inflows Hit Highs:* Domestic funds remain aggressive in the face of minor global headwinds.\n    *   *Institutional Tug-of-War:* Markets continue to find stability as domestic liquidity buffers foreign portfolio adjustments.\n\nAggregator Agent\n\n### **Executive Market Summary: Nifty 50 Pulse and Institutional Flow**\n\nAs of late August 2026, the Indian equity market is defined by a distinct \"institutional tug-of-war.\" The primary theme is the robust resilience provided by **Domestic Institutional Investors (DIIs)**, whose substantial net inflow of **\u20b94,977.17 crore** acted as a crucial anchor, effectively neutralizing the cautious **\u20b9298.26 crore** exit by **Foreign Institutional Investors (FIIs)**.\n\nA surprising connection emerges from the internal index divergence: while bullish momentum is evident in logistics (ADANIPORTS \u21911.33%) and defensive pharma (CIPLA \u21911.23%), heavyweight **HDFC Bank** has dropped to a four-year low. This multi-year relative weakness in banking, alongside a **2.75% decline in Hindalco**, continues to drag the index despite strong domestic liquidity support.\n\n**Most Important Key Takeaways:**\n*   **Outlook:** A flat-to-negative start is forecasted. Crucial support rests at **24,000**, with immediate resistance targeted at **24,200\u201324,250**.\n*   **Sentiment:** Market confidence is internally driven. DIIs are aggressively absorbing global volatility, buffering against weak metal cues and high crude oil prices ($87/barrel).\n*   **Sector Watch:** Defensive buying persists in **Pharma and Realty**, whereas **Metals and Autos** remain under pressure from weak global demand.\n*   **Tactical Strategy:** Analysts suggest a \"**Sell on Rise**\" approach near resistance unless the index decisively reclaims 24,350.",
+  "executiveSummary": "### **Executive Market Summary: Nifty 50 Pulse and Institutional Flow**\n\nAs of late August 2026, the Indian equity market is defined by a distinct \"institutional tug-of-war.\" The primary theme is the robust resilience provided by **Domestic Institutional Investors (DIIs)**, whose substantial net inflow of **\u20b94,977.17 crore** acted as a crucial anchor, effectively neutralizing the cautious **\u20b9298.26 crore** exit by **Foreign Institutional Investors (FIIs)**.\n\nA surprising connection emerges from the internal index divergence: while bullish momentum is evident in logistics (ADANIPORTS \u21911.33%) and defensive pharma (CIPLA \u21911.23%), heavyweight **HDFC Bank** has dropped to a four-year low. This multi-year relative weakness in banking, alongside a **2.75% decline in Hindalco**, continues to drag the index despite strong domestic liquidity support.\n\n**Most Important Key Takeaways:**\n*   **Outlook:** A flat-to-negative start is forecasted. Crucial support rests at **24,000**, with immediate resistance targeted at **24,200\u201324,250**.\n*   **Sentiment:** Market confidence is internally driven. DIIs are aggressively absorbing global volatility, buffering against weak metal cues and high crude oil prices ($87/barrel).\n*   **Sector Watch:** Defensive buying persists in **Pharma and Realty**, whereas **Metals and Autos** remain under pressure from weak global demand.\n*   **Tactical Strategy:** Analysts suggest a \"**Sell on Rise**\" approach near resistance unless the index decisively reclaims 24,350.",
   "bias": "Bullish",
   "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "### 3. Latest Financial Headlines & Market Drivers",
-    "### Financial Headlines & Stock Trends",
-    "**Domestic Mutual Funds Dominate:** Robust SIP (Systematic Investment Plan) inflows continue to drive DII purchasing power, helping absorb global macro volatilities and marginal FII outflows.",
-    "**Nifty Consolidates:** Sectoral rotation remains active, with defensives like FMCG/Pharma and pockets of Banking holding the indices steady amidst localized swings.",
-    "**Focus on Quality:** With global interest rate expectations shifting, large-cap stocks with solid earnings profiles are seeing increased relative strength as institutional buyers lean toward safer defensive-growth plays."
+    "### **3. Market Headlines & Outlook for Tomorrow**",
+    "### **Market Summary & Headlines**",
+    "*   **Headlines to Watch:**"
   ],
   "marketSignals": {
     "positioningLabel": "Call-side hedge build",
@@ -33,87 +32,87 @@
     "fiiNetCrores": -298.26,
     "diiNetCrores": 4977.17,
     "tradedValueCrores": 0.0,
-    "spot": 24090.85
+    "spot": 24057.4
   },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
     "bias": "Neutral",
     "note": "Mixed, broadly neutral news tone",
-    "analysis": "Recent market news shows a mixed, broadly neutral news tone, with most headlines flagging caution. The most supportive headline: \"Russia remains India's top crude supplier in Aug despite lower volumes\". The most cautious headline: \"Romania\u2019s Rating Downgrade Risks Grow After Wage Law Failure\".",
+    "analysis": "Recent market news shows a mixed, broadly neutral news tone, with supportive and cautious headlines roughly balanced. The most supportive headline: \"Faster Tokyo Inflation Supports Near-Term BOJ Rate Hike Case\". The most cautious headline: \"Fed Officials Remain Divided on Inflation Ahead of Warsh Speech\".",
     "headlines": [
       {
-        "title": "Tata Power Renewable Energy commissions 72.5 MW captive project at Kalasar, Rajasthan",
+        "title": "New York, Huntsville, Palm Desert: Which Red Lobster locations are closing in 2026? See complete list",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Deccan Gold Mines' investment in Altyn Tor Gold Project reaches production stage",
+        "title": "White House construction may have contributed to Trump's Marine One getting close to commercial jet - What we know",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Trump admin likely to sign a deal with Venezuela to access its oilfields: How will it work? What are the legal hurdles?",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Krystal Integrated Services bags sanitation contract for Khatu Shyamji temple in Rajasthan",
         "label": "positive",
         "sentiment": "Moderately positive"
       },
       {
-        "title": "Usha Vance breaks silence on JD Vance\u2019s potential 2028 White House bid: \u2018Whatever it is\u2026\u2019",
+        "title": "Petrol and diesel prices today \u2014 28 Aug: Fuel rates in Delhi, Mumbai, Bengaluru as crude oil heads for weekly loss",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Treasury Yields Rise as Investors Shift Focus to Jackson Hole",
+        "title": "Stocks to watch: Wipro, Hero MotoCorp, HDFC Bank, Tata Motors PV & more",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Stock Market LIVE: GIFT Nifty signals tepid open; Asia mkts mixed; US Fed Chair's speech in focus",
         "label": "negative",
         "sentiment": "Slightly negative"
       },
       {
-        "title": "ED seizes, freezes  \u20b933 crore assets of Vatika promoters in homebuyer 'fraud' case",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "India to get widespread rainfall over the week: IMD",
+        "title": "Nifty, Bandhan Bank: HDFC Securities' Nandish Shah recommends bear spreads",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Govt rules out onion export curbs, begins  \u20b935/kg buffer-stock sales",
+        "title": "CIA Chief John Ratcliffe gave bleak assessment of Russia-Ukraine war, urged Moscow to strike a deal with Kyiv: Reports",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Oil Exports Drive Canada\u2019s Largest Current Account Surplus Since 2005",
-        "label": "positive",
-        "sentiment": "Moderately positive"
+        "title": "Thailand Central Bank Chief Who Takes On Problems Rates Can\u2019t Fix",
+        "label": "neutral",
+        "sentiment": "Neutral"
       },
       {
-        "title": "\u2018Don\u2019t ridicule her like this\u2019: Grandma\u2019s innocent conversation with ChatGPT leaves social media divided | Watch video",
-        "label": "negative",
-        "sentiment": "Moderately negative"
+        "title": "Fed\u2019s Jackson Hole Conference Is Underway: Here\u2019s What to Expect",
+        "label": "neutral",
+        "sentiment": "Neutral"
       },
       {
-        "title": "Romania\u2019s Rating Downgrade Risks Grow After Wage Law Failure",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "Russia remains India's top crude supplier in Aug despite lower volumes",
+        "title": "Faster Tokyo Inflation Supports Near-Term BOJ Rate Hike Case",
         "label": "positive",
         "sentiment": "Strongly positive"
       },
       {
-        "title": "Symbiotec Pharmalab IPO subscribed 71.26 times",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Skyways Air Services IPO subscribed 71.25 times",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "US Goods-Trade Deficit Widens to Largest Since March 2025",
+        "title": "Fed Officials Remain Divided on Inflation Ahead of Warsh Speech",
         "label": "negative",
-        "sentiment": "Slightly negative"
+        "sentiment": "Moderately negative"
       },
       {
-        "title": "ECB Officials Discussed Need for \u2018Mildly Restrictive\u2019 Policy",
+        "title": "Canada Can Weather Latest Trump Tariffs, Economists Tell Carney Finance Minister",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Plant-based protein market to reach \u20b99,000 cr in 5 yrs: Industry body PBFIA",
         "label": "neutral",
         "sentiment": "Neutral"
       }
