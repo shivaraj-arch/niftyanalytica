@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T09:01:34.001058+05:30",
+  "generatedAt": "2026-08-31T15:02:04.655987+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
@@ -12,110 +12,113 @@
     "gemini-robotics-er-2-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\n### Indian Stock Market Analysis: Nifty 50 Constituents, FII/DII Flow, and Key Financial Headlines\n\n---\n\n### **1. Stock Performance & Index Contribution Analysis (Nifty 50)**\nThe latest trading variations in the Nifty 50 show a distinct sector-specific outperformance, primarily led by a **massive rally in IT stocks**, while financial heavyweights and FMCG lagged.\n\n#### **Major Gainers (Driving the IT-Led Surge):**\n* **TCS (Tata Consultancy Services):** **+4.16%** (LTP: \u20b92,342.00) \u2014 Dominant gainer leading the IT index.\n* **TECHM (Tech Mahindra):** **+3.53%** (LTP: \u20b91,640.90)\n* **INFY (Infosys):** **+2.99%** (LTP: \u20b91,144.00)\n* **HCLTECH (HCL Technologies):** **+2.66%** (LTP: \u20b91,316.10)\n* **WIPRO:** **+2.58%** (LTP: \u20b9180.95)\n* **Other Gainers:** **BAJAJ-AUTO** (+1.62%), **HDFCBANK** (+1.31%), and **HINDALCO** (+1.31%).\n\n*IT shares acted as a major defensive shield for the index, driven by strong dividend payouts and sector rotation.*\n\n#### **Major Losers (Dragging the Index):**\n* **ICICIBANK:** **-1.40%** (LTP: \u20b91,422.80) \u2014 Substantial weightage drag.\n* **SHRIRAMFIN:** **-1.28%** (LTP: \u20b91,086.90)\n* **ITC:** **-1.12%** (LTP: \u20b9266.00) \u2014 Dragging FMCG sentiment.\n* **ULTRACEMCO:** **-1.09%** (LTP: \u20b911,589.00)\n* **ASIANPAINT:** **-0.85%** (LTP: \u20b92,608.70)\n\n---\n\n### **2. FII and DII Flow Trends (Robust DII Backing)**\nThe domestic market has showcased a resilient trend in 2026, wherein consistent **Domestic Institutional Investor (DII)** inflows, driven by strong SIP books, have absorbed aggressive **Foreign Institutional Investor (FII)** sell-offs.\n\n| Period | FII Net Flow (\u20b9 Cr) | DII Net Flow (\u20b9 Cr) | Trend Summary |\n| :--- | :--- | :--- | :--- |\n| **June 2026** | **-49,028.63** | **+85,800.14** | FIIs exited due to global tensions; DIIs fully offset the selling. |\n| **July 2026** | **-5,778.99** | **+35,099.25** | FII selling drastically eased on Fed rate-cut hopes. |\n| **Aug 28, 2026** | **-5,039.80** | **+5,183.93** | Hand-to-hand buyback as DIIs defend critical supports. |\n| **Aug 27, 2026** | **-298.26** | **+4,977.17** | Broad DII buying support against minor FII trims. |\n\n---\n\n### **3. Key Financial Headlines & Tomorrow's Outlook (August 31, 2026)**\n\n#### **I. GIFT Nifty Signals Negative Start**\nGIFT Nifty futures tumbled **80 to 103 points**, trading around 24,239, hinting at a gap-down opening for the Nifty 50 (which closed the previous session marginally higher at 24,175).\n\n#### **II. Crude Oil Surges Past $90 on Geopolitical Friction**\nGlobal Brent crude prices jumped over **2% towards $90 per barrel** following US airstrikes on Iranian targets on Larak Island in the Strait of Hormuz. Elevated crude acts as a structural headwind for oil-importing economies like India.\n\n#### **III. MSCI August Rebalancing Execution Today**\nHigh intraday volatility is expected towards the closing session of August 31 as MSCI rebalancing changes are implemented.\n* **Additions:** Adani Energy Solutions, Lenskart, Groww, and Laurus Labs.\n* **Removals:** SBI Cards, Astral, and Balkrishna Industries.\n\n#### **IV. Hawkish Tone at Jackson Hole Triggers \"Risk-Off\"**\nNewly appointed US Federal Reserve Chairman Kevin Warsh delivered a hawkish speech at the Jackson Hole Symposium, emphasizing sticky inflation risks and keeping the door open for another rate hike. This has sparked a flight to safety globally, causing a pullback across emerging markets.\n\n---\n\n### **Smart Summary & Strategic Takeaway**\nWhile Indian markets boast **unprecedented domestic liquidity support (via DII inflows)**, the combination of **escalating geopolitical tensions in West Asia (Brent at $90)**, a **hawkish Fed**, and **MSCI rebalancing volatility** will demand caution. Strong **IT heavyweights (TCS, INFY)** are likely to remain key defensive plays, whereas financials and crude-sensitive sectors (aviation, paints) may witness immediate selling pressure.\n\nNifty Flow Agent\n\nBased on the latest institutional flow data retrieved for the Indian market as of **August 28, 2026**, here is the FII (Foreign Institutional Investors) and DII (Domestic Institutional Investors) trading activity:\n\n### Institutional Flow Data (August 28, 2026)\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 28-Aug-2026 | 16,539.38 | 11,355.45 | **+5,183.93** (Net Buyers) |\n| **FII/FPI** | 28-Aug-2026 | 13,263.62 | 18,303.42 | **-5,039.80** (Net Sellers) |\n| **Combined** | \u2014 | 29,803.00 | 29,658.87 | **+144.13** (Net Inflow) |\n\n---\n\n### Market Analysis & Sentiment\n\n1. **The Institutional Tug-of-War:**\n   * **DIIs to the Rescue:** Domestic Institutional Investors showed robust buying interest, pumping in a net **\u20b95,183.93 crore**. This strong support highlights resilient domestic liquidity and confidence in local economic fundamentals.\n   * **FII Outflows:** On the flip side, Foreign Institutional Investors (FIIs) remained heavy net sellers, with a net outflow of **\u20b95,039.80 crore**. This reflects cautious global sentiment, potential asset reallocation, or profit-booking in emerging markets.\n   \n2. **Marginally Positive Net Bias:**\n   * The combined net institutional activity stood marginally positive at **+\u20b9144.13 crore**. This suggests that while FIIs are aggressive sellers, domestic funds are successfully absorbing the pressure, preventing any major systemic downturns and keeping the broader market sentiment consolidated yet resilient.\n\n### Expected Financial Headlines / Key Themes\n\n* **\"DIIs Absorb FII Selloff to Keep Nifty Stable\"** \u2013 Strong domestic flows counteract \u20b95,000+ crore FII outflows, keeping the benchmark indices resilient.\n* **\"Domestic Liquidity Shields Indian Equities\"** \u2013 High-conviction domestic mutual fund inflows continue to act as a crucial shock absorber against foreign risk-off sentiments.\n\nAggregator Agent\n\n### Executive Summary\n\nThe Indian stock market exhibits a clear institutional tug-of-war, where robust Domestic Institutional Investor (DII) inflows consistently absorb aggressive Foreign Institutional Investor (FII) exits. On August 28, 2026, a heavy FII sell-off of \u20b95,039.80 crore was fully offset by \u20b95,183.93 crore in DII buying, maintaining a marginally positive net inflow of \u20b9144.13 crore and demonstrating strong domestic liquidity support.\n\nDespite this local resilience, the market faces severe imminent headwinds. GIFT Nifty signals a negative, gap-down opening of 80 to 103 points for the August 31 session. This risk-off sentiment is triggered by escalating geopolitical tensions in West Asia\u2014with Brent crude surging past $90 per barrel following US airstrikes\u2014alongside a hawkish tone from Fed Chairman Kevin Warsh at the Jackson Hole Symposium. \n\nDefensively, IT giants like TCS (+4.16%) and Tech Mahindra (+3.53%) are leading a massive sector rally, acting as a critical index shield against declines in financial heavyweights like ICICI Bank (-1.40%). Moving forward, while resilient DII inflows provide a structural cushion, the combination of soaring oil prices, hawkish monetary signals, and high volatility from the MSCI rebalancing warrants a highly cautious near-term outlook.",
-  "executiveSummary": "### Executive Summary\n\nThe Indian stock market exhibits a clear institutional tug-of-war, where robust Domestic Institutional Investor (DII) inflows consistently absorb aggressive Foreign Institutional Investor (FII) exits. On August 28, 2026, a heavy FII sell-off of \u20b95,039.80 crore was fully offset by \u20b95,183.93 crore in DII buying, maintaining a marginally positive net inflow of \u20b9144.13 crore and demonstrating strong domestic liquidity support.\n\nDespite this local resilience, the market faces severe imminent headwinds. GIFT Nifty signals a negative, gap-down opening of 80 to 103 points for the August 31 session. This risk-off sentiment is triggered by escalating geopolitical tensions in West Asia\u2014with Brent crude surging past $90 per barrel following US airstrikes\u2014alongside a hawkish tone from Fed Chairman Kevin Warsh at the Jackson Hole Symposium. \n\nDefensively, IT giants like TCS (+4.16%) and Tech Mahindra (+3.53%) are leading a massive sector rally, acting as a critical index shield against declines in financial heavyweights like ICICI Bank (-1.40%). Moving forward, while resilient DII inflows provide a structural cushion, the combination of soaring oil prices, hawkish monetary signals, and high volatility from the MSCI rebalancing warrants a highly cautious near-term outlook.",
-  "bias": "Bullish",
+  "summary": "Nifty Analysis Agent\n\n### **NIFTY 50 Analysis, FII/DII Flow, and Financial Headlines**\n\n---\n\n### **1. Market Sentiment & FII/DII Flows (Institutional Activity)**\nThe recent session has witnessed a classic tug-of-war between domestic and foreign institutional forces. Domestic support has acted as a crucial bulwark against foreign outflows.\n\n| Category | Date (Aug 28, 2026) | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **Foreign Institutional Investors (FII)** | August 28, 2026 | 13,263.62 | 18,303.42 | **-5,039.80 (Net Sellers)** |\n| **Domestic Institutional Investors (DII)** | August 28, 2026 | 16,539.38 | 11,355.45 | **+5,183.93 (Net Buyers)** |\n| **Combined Flow Contribution** | | | | **+144.13 (Net Buy)** |\n\n*   **Flow Narrative:** Despite heavy FII selling (exceeding \u20b95,000 Cr), the domestic markets remained supported by intense buying from DIIs (+\u20b95,183 Cr), demonstrating robust domestic liquidity.\n\n---\n\n### **2. Stocks on the Move (Nifty 50 Constituent Performance)**\n\n#### **Major Gainers (Defense Pack & Private Banks)**\n*   **ICICI Bank (ICICIBANK):** **+1.42%** (LTP: \u20b91,443) \u2014 Strong outperformer helping hold the financial index.\n*   **Grasim Industries (GRASIM):** **+1.06%** (LTP: \u20b93,324.90)\n*   **Bajaj Auto (BAJAJ-AUTO):** **+0.71%** (LTP: \u20b911,994)\n*   **Mahindra & Mahindra (M&M):** **+0.49%** (LTP: \u20b93,350.40)\n*   **Reliance Industries (RELIANCE):** **+0.45%** (LTP: \u20b91,292.80) \u2014 Provided heavy-weight stability.\n\n#### **Major Losers (Drags on Nifty)**\n*   **Adani Enterprises (ADANIENT):** **-5.21%** (LTP: \u20b93,003.40) \u2014 Major laggard of the session.\n*   **Adani Ports (ADANIPORTS):** **-3.07%** (LTP: \u20b91,655)\n*   **Tata Steel (TATASTEEL):** **-2.38%** (LTP: \u20b9182.06) \u2014 Drank by metal sector weakness.\n*   **Infosys (INFY):** **-1.64%** (LTP: \u20b91,125.20) \u2014 IT sector remained under pressure.\n*   **HDFC Bank (HDFCBANK):** **-1.54%** (LTP: \u20b9709.20) \u2014 Shaken by higher intraday volumes and management transition news.\n\n---\n\n### **3. Key Financial Headlines & Triggers for Tomorrow**\n\n*   **Crude Oil Tensions Above $90:** Fresh Middle East geopolitical tensions between the US and Iran have pushed global crude oil prices past the $90-per-barrel mark, raising concerns about inflation and prolonged higher interest rates. This is driving a minor sell-off in risk assets globally.\n*   **Q1 GDP & Economic Clues Awaited:** Investors are positioning themselves ahead of India's Q1 FY27 GDP growth and fiscal deficit prints. The street is anticipating robust economic expansion of over 7%.\n*   **MSCI Rebalancing Volatility:** Portfolio weight adjustments of passive funds tracking the MSCI index are inducing higher volatility, specifically during closing ticks.\n*   **Corporate Transition:** HDFC Bank remains in focus as the market processes news regarding Sashidhar Jagdishan's decision to retire upon completion of his current term.\n\nNifty Flow Agent\n\nBased on the latest data retrieved, here is the flow analysis for Foreign Institutional Investors (FII) and Domestic Institutional Investors (DII) in the Indian market as of **August 28, 2026**:\n\n### **Latest FII / DII Flow Data (August 28, 2026)**\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII (Domestic)** | 28-Aug-2026 | 16,539.38 | 11,355.45 | **+5,183.93** (Net Buyers) |\n| **FII/FPI (Foreign)** | 28-Aug-2026 | 13,263.62 | 18,303.42 | **-5,039.80** (Net Sellers) |\n| **Combined** | \u2014 | **29,803.00** | **29,658.87** | **+144.13** (Net Positive) |\n\n---\n\n### **Market Analysis & Financial Headlines Summary**\n\n#### **1. Domestic Strength Offsets Foreign Capital Outflow**\n* **The Headline:** *\"Domestic Institutional Investors (DIIs) cushion the blow as FIIs offload shares worth over \u20b95,000 crore.\"*\n* **Analysis:** There is a highly active tug-of-war happening between foreign and domestic institutions. FIIs carried out aggressive selling with a net outflow of **-\u20b95,039.80 crore**, reflecting short-term caution, profit booking, or global risk-off sentiments. However, the domestic market showed immense resilience with DIIs absorbing almost the entirety of that sell-off pressure, net-buying **+\u20b95,183.93 crore**.\n\n#### **2. Neutral to Marginally Positive Net Liquidity**\n* **The Headline:** *\"Nifty trades flat to positive as net institutional flow records a modest \u20b9144 crore surplus.\"*\n* **Analysis:** With a tiny positive combined net inflow of **\u20b9144.13 crore**, the market's liquidity backdrop remains neutral-positive. Rather than a directional push, this indicates consolidation and range-bound trading for the Nifty 50, where active stock-picking and sector rotation dominate over broad-market indexes. \n\n#### **3. Stock & Sector Implications**\n* **Defensive vs. High-Beta Plays:** With heavy FII selling, heavyweights in sectors typically favored by FIIs (such as banking, financial services, and IT) might experience volatility or localized pressure. \n* **Domestic Cyclicals Rise:** Strong DII inflows point toward support in domestic-oriented sectors like capital goods, infrastructure, auto, and public sector undertakings (PSUs) where domestic mutual funds are heavily invested.\n\nAggregator Agent\n\n### Executive Summary\n\nThe trading session of August 28, 2026, highlighted a fierce institutional tug-of-war in the Indian market. Foreign Institutional Investors (FIIs) aggressively divested a net \u20b95,039.80 crore, driven by global risk-off sentiments as Middle East tensions pushed crude oil past the $90-per-barrel mark. However, Domestic Institutional Investors (DIIs) successfully cushioned this massive outflow, net-purchasing \u20b95,183.93 crore. This resulted in a marginal combined surplus of \u20b9144.13 crore, signaling a neutral-positive but consolidating liquidity backdrop.\n\nOn the charts, private banking and domestic cyclicals provided crucial support, led by ICICI Bank (+1.42%) and Reliance Industries (+0.45%). Conversely, Adani Enterprises (-5.21%) and metal heavyweights dragged the Nifty 50, while HDFC Bank fell 1.54% amid news of CEO Sashidhar Jagdishan's retirement. \n\nMoving forward, the market faces heightened short-term volatility due to portfolio adjustments ahead of the September 1 MSCI rebalancing. Crucial near-term triggers include global inflationary worries from rising oil prices and the release of India\u2019s Q1 FY27 GDP figures, which are anticipated to showcase a robust expansion of over 7%. This suggests a transition toward defensive positioning and stock-specific trading.",
+  "executiveSummary": "### Executive Summary\n\nThe trading session of August 28, 2026, highlighted a fierce institutional tug-of-war in the Indian market. Foreign Institutional Investors (FIIs) aggressively divested a net \u20b95,039.80 crore, driven by global risk-off sentiments as Middle East tensions pushed crude oil past the $90-per-barrel mark. However, Domestic Institutional Investors (DIIs) successfully cushioned this massive outflow, net-purchasing \u20b95,183.93 crore. This resulted in a marginal combined surplus of \u20b9144.13 crore, signaling a neutral-positive but consolidating liquidity backdrop.\n\nOn the charts, private banking and domestic cyclicals provided crucial support, led by ICICI Bank (+1.42%) and Reliance Industries (+0.45%). Conversely, Adani Enterprises (-5.21%) and metal heavyweights dragged the Nifty 50, while HDFC Bank fell 1.54% amid news of CEO Sashidhar Jagdishan's retirement. \n\nMoving forward, the market faces heightened short-term volatility due to portfolio adjustments ahead of the September 1 MSCI rebalancing. Crucial near-term triggers include global inflationary worries from rising oil prices and the release of India\u2019s Q1 FY27 GDP figures, which are anticipated to showcase a robust expansion of over 7%. This suggests a transition toward defensive positioning and stock-specific trading.",
+  "bias": "Bearish",
   "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "### Indian Stock Market Analysis: Nifty 50 Constituents, FII/DII Flow, and Key Financial Headlines",
-    "### **3. Key Financial Headlines & Tomorrow's Outlook (August 31, 2026)**",
-    "**The Institutional Tug-of-War:**",
-    "**Marginally Positive Net Bias:**",
-    "### Expected Financial Headlines / Key Themes"
+    "### **NIFTY 50 Analysis, FII/DII Flow, and Financial Headlines**",
+    "*   **HDFC Bank (HDFCBANK):** **-1.54%** (LTP: \u20b9709.20) \u2014 Shaken by higher intraday volumes and management transition news.",
+    "### **3. Key Financial Headlines & Triggers for Tomorrow**",
+    "*   **Corporate Transition:** HDFC Bank remains in focus as the market processes news regarding Sashidhar Jagdishan's decision to retire upon completion of his current term.",
+    "### **Market Analysis & Financial Headlines Summary**",
+    "* **The Headline:** *\"Domestic Institutional Investors (DIIs) cushion the blow as FIIs offload shares worth over \u20b95,000 crore.\"*",
+    "* **The Headline:** *\"Nifty trades flat to positive as net institutional flow records a modest \u20b9144 crore surplus.\"*",
+    "On the charts, private banking and domestic cyclicals provided crucial support, led by ICICI Bank (+1.42%) and Reliance Industries (+0.45%). Conversely, Adani Enterprises (-5.21%) and metal heavyweights dragged the Nifty 50, while HDFC Bank fell 1.54% amid news of CEO Sashidhar Jagdishan's retirement."
   ],
   "marketSignals": {
     "positioningLabel": "Bullish positioning build",
     "positioningStrike": 24000,
     "divergenceSummary": "Aligned sentiment",
     "divergenceCount": 0,
-    "trapRiskLabel": "Downside trap @ 24000",
+    "trapRiskLabel": "No clear trap",
     "fiiNetCrores": -5039.8,
     "diiNetCrores": 5183.93,
     "tradedValueCrores": 0.0,
-    "spot": 24091.0
+    "spot": 24061.35
   },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
-    "bias": "Bearish",
-    "note": "Mildly cautious news tone",
-    "analysis": "Recent market news shows a mildly cautious news tone, with most headlines flagging caution. The most supportive headline: \"Japan\u2019s Factory Output Edges Up Despite Mideast Headwinds\". The most cautious headline: \"Stock Market LIVE: GIFT Nifty signals negative open; Most Asian markets fall; Brent tops $90\".",
+    "bias": "Neutral",
+    "note": "Mixed, broadly neutral news tone",
+    "analysis": "Recent market news shows a mixed, broadly neutral news tone, with most headlines leaning supportive. The most supportive headline: \"Turkey Growth Quickens in Second Quarter Despite War Stress\". The most cautious headline: \"Gold, silver ETFs off day's low, still down 4% amid hawkish Fed stance\".",
     "headlines": [
       {
-        "title": "\u2018Saans lene ke bhi paise lagte hai\u2019: NRI woman sparks debate on why meeting friends in India always comes with a bill",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "MSCI rebalancing threatens to turn 'messy' in India's new closing auction",
+        "title": "Gold, silver ETFs off day's low, still down 4% amid hawkish Fed stance",
         "label": "negative",
         "sentiment": "Strongly negative"
       },
       {
-        "title": "Indian woman spots \u2018incredibly fit\u2019 70-80+ travellers in Europe, questions India\u2019s lifestyle: \u2018Something terribly wrong\u2019",
-        "label": "negative",
-        "sentiment": "Moderately negative"
-      },
-      {
-        "title": "Ankit Baliyan murder: Two prime accused shot dead in UP Police encounter \u2014 what we know so far",
-        "label": "negative",
-        "sentiment": "Slightly negative"
-      },
-      {
-        "title": "Breakout stocks: Jindal SAW, Electrosteel Castings, Adani Enterprises",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "KNR Constructions bags Rs 158 crore EPC order from GHMC",
-        "label": "positive",
-        "sentiment": "Moderately positive"
-      },
-      {
-        "title": "Oil prices jump more than 1% after US attack on Iran's Larak island",
-        "label": "negative",
-        "sentiment": "Slightly negative"
-      },
-      {
-        "title": "Grand Canyon flood: 15 people missing, dozens evacuated, heavy rainfall today may cause \u2018additional flash flooding\u2019",
+        "title": "FMCG stocks HUL, ITC, Dabur, Emami, Godrej Consumer hit 52-week lows",
         "label": "negative",
         "sentiment": "Strongly negative"
       },
       {
-        "title": "Stock Market LIVE: GIFT Nifty signals negative open; Most Asian markets fall; Brent tops $90",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "Nepal Floods Expose Gaps in Warning, China Data Sharing",
-        "label": "negative",
-        "sentiment": "Moderately negative"
-      },
-      {
-        "title": "South Korea\u2019s Lee Picks New Finance Chief in Surprise Reshuffle",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Bessent Expects BOJ to \u2018Do the Right Thing\u2019 on Policy",
-        "label": "positive",
-        "sentiment": "Moderately positive"
-      },
-      {
-        "title": "Japan\u2019s Factory Output Edges Up Despite Mideast Headwinds",
+        "title": "Bank credit growth stays firm at 18.60% on year",
         "label": "positive",
         "sentiment": "Strongly positive"
       },
       {
-        "title": "US Treasury Bars Reporters From Some Outlets From G20 Summit",
+        "title": "NIIF raises $2 billion towards Infra Fund 2's first close, largest till date",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Why India may revive 'Most-Favoured-Nation' rule in bilateral treaties",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Paytm, TaMo: Emkay picks 15 stocks as high US yields reshape India strategy",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Japan Seeks Record Defense Budget as Takaichi Plans Buildup",
+        "label": "positive",
+        "sentiment": "Moderately positive"
+      },
+      {
+        "title": "Quote of the day by Robin Williams: \u2018No matter what anybody tells you\u2026\u2019",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Sonam Wangchuk reveals untold NEET protest story: CJP \u2018test\u2019 before hunger strike, \u2018take a break or exit\u2019 moment",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Planning a trip to Uzbekistan? Indians can now stay visa-free for 30 days",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Supreme Court stays FIR against Uttarakhand gym owner 'Mohammed' Deepak over Bajrang Dal row",
         "label": "negative",
         "sentiment": "Moderately negative"
       },
       {
-        "title": "India and Uzbekistan Seek $5 Billion in Bilateral Trade by 2030",
+        "title": "Turkey Growth Quickens in Second Quarter Despite War Stress",
         "label": "positive",
-        "sentiment": "Moderately positive"
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Japan\u2019s Industry Ministry Seeks Unprecedented $49 Billion Budget",
+        "label": "positive",
+        "sentiment": "Slightly positive"
+      },
+      {
+        "title": "Productores del Mercosur temen competencia de Europa",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "South American Producers Fret Over New Rivals From EU Trade Deal",
+        "label": "negative",
+        "sentiment": "Strongly negative"
       }
     ]
   }
