@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T15:01:31.089328+05:30",
+  "generatedAt": "2026-09-01T20:01:36.188148+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
@@ -12,108 +12,88 @@
     "gemini-robotics-er-2-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\n### **Market Snapshot & Analysis: Nifty 50 & Institutional Flows**\n\n---\n\n### **1. Nifty 50 Stock Analysis (Gains & Declines)**\nThe recent session shows mixed but highly active market participation. Heavily-weighted stocks in FMCG, Energy, and Telecom sectors provided crucial support to the benchmark index, offsetting profit-booking in Financials and Auto majors.\n\n* **Major Gainers (Top Contributors):**\n  * **ITC (`+4.29%` to \u20b9266.45):** Led the pack, buoyed by the corporate action where its subsidiary, ITC Infotech, announced the acquisition of software services firm Happiest Minds Technologies.\n  * **ADANIPORTS (`+3.37%` to \u20b91,646.80):** Showed robust momentum with heavy volume turnover.\n  * **BHARTIARTL (`+3.10%` to \u20b91,868.00):** Strong accumulation ahead of ex-dividend dates.\n  * **HCLTECH (`+3.01%` to \u20b91,351.70) & RELIANCE (`+2.00%` to \u20b91,302.50):** Standard index pillars giving the market an upward push.\n\n* **Major Decliners (Laggards):**\n  * **SHRIRAMFIN (`-4.87%` to \u20b91,055.90):** Hit by profit-booking and facing sectoral headwinds.\n  * **MARUTI (`-4.72%` to \u20b912,908.00) & INDIGO (`-3.63%` to \u20b95,044.00):** Leading the drag due to worries over crude oil costs and operational margins.\n  * **NESTLEIND (`-3.45%` to \u20b91,444.80) & AXISBANK (`-3.20%` to \u20b91,258.40):** Squeezed under broader banking and FMCG sector re-allocations.\n\n---\n\n### **2. Institutional Flow (FII & DII Activity - August 31, 2026)**\nThe institutional desks recorded a highly active session, mainly driven by the scheduled **MSCI India Index Rebalancing**:\n\n| Institutional Category | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- |\n| **Foreign Institutional Investors (FII)** | 60,025.88 | 68,011.76 | **-7,985.88** *(Net Sellers)* |\n| **Domestic Institutional Investors (DII)** | 19,730.38 | 15,141.50 | **+4,588.88** *(Net Buyers)* |\n| **Net Cash Flow** | **-** | **-** | **-3,397.00** *(Total Outflow)* |\n\n* **Derivative Highlights:** FIIs were net buyers in **Stock Futures (`+\u20b91,194.23 Cr`)**, but remained net sellers in both Index Futures (`-\u20b91,037.38 Cr`) and Index Options (`-\u20b95,660.81 Cr`).\n* **Interpretation:** DIIs successfully cushioned a heavy FII outflow triggered by passive rebalancing, preventing any catastrophic downside in domestic indices.\n\n---\n\n### **3. Latest Financial Headlines & Market Sentiment**\n* **Turnaround Assisted by GDP:** The Indian market saw a dramatic reversal from its early losses. Despite high crude oil prices (Brent surpassing $91/barrel due to US-Iran tensions in the Strait of Hormuz), a stellar domestic **Q1 GDP growth rate of 7.8%** revived investor optimism, pushing Nifty back above **24,100**.\n* **Implied Volatility Slumps:** The **India VIX collapsed by over 17% to 9.25**, signaling a sharp decrease in market panic and suggesting that traders expect the ongoing recovery to be stable and less erratic.\n* **Corporate Buzz:** \n  * **Bajaj Auto** jumped on the back of strong August auto sales numbers.\n  * Gold and jewelry counters (such as **Titan** and **Kalyan Jewellers**) slumped up to 2.25% following Prime Minister Modi\u2019s appeal to citizens to curtail discretionary gold purchases.\n\nNifty Flow Agent\n\n### FII and DII Flow Analysis (as of August 31, 2026)\n\nThe latest flow data for Foreign Institutional Investors (FII/FPI) and Domestic Institutional Investors (DII) indicates a mixed but cautious sentiment in the Indian market, characterized by heavy FII outflow and strong defensive buying by DIIs.\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) | Action |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| **FII/FPI** | 31-Aug-2026 | 60,025.88 | 68,011.76 | **-7,985.88** | Net Sellers |\n| **DII** | 31-Aug-2026 | 19,730.38 | 15,141.50 | **+4,588.88** | Net Buyers |\n| **Combined** | | **79,756.26** | **83,153.26** | **-3,397.00** | **Net Outflow** |\n\n---\n\n### Key Financial Insights & Market Sentiment\n\n1. **FII Pullback:** \n   Foreign Institutional Investors registered a significant net outflow of **\u20b97,985.88 crore**, showing profit booking or risk-off sentiment in the Indian equity markets. This level of elevated activity (buying and selling totaling over \u20b91,28,000 crore) indicates high institutional churn.\n\n2. **DII Resilience:**\n   Domestic Institutional Investors continued their support with a net inflow of **\u20b94,588.88 crore**, absorbing a substantial portion of the FII selling pressure. This suggests strong domestic liquidity via mutual fund SIPs and insurance flows remains a vital cushion for the market.\n\n3. **Overall Sentiment:**\n   With a combined net negative flow of **-\u20b93,397.00 crore**, the immediate short-term sentiment points toward consolidation or slight downward pressure on major indices like the Nifty 50 and Sensex. Defensive sectors (such as IT, Pharma, or FMCG) might see higher interest, while high-beta sectors (such as Banking and Metals) could experience volatility due to FII liquidations.\n\nAggregator Agent\n\n### **Executive Summary: Indian Market & Institutional Flow Analysis**\n\nDespite geopolitical headwinds pushing Brent crude past $91/barrel, the Indian equity market demonstrated strong domestic resilience on August 31, 2026. This turnaround was anchored by a stellar Q1 GDP growth rate of 7.8%, which revived investor optimism, pushed the Nifty 50 back above the 24,100 mark, and triggered a 17% collapse in the India VIX to 9.25. \n\nA primary takeaway is the striking contrast between heavy foreign outflows and resilient domestic absorption. Triggered by a scheduled MSCI India Index Rebalancing, Foreign Institutional Investors (FIIs) registered a massive net outflow of \u20b97,985.88 crore. However, Domestic Institutional Investors (DIIs) successfully cushioned this pressure with a net inflow of \u20b94,588.88 crore, absorbing the bulk of the FII liquidation and preventing a market downturn.\n\nCorporate performance closely mirrored these macro themes. Defensive pillars like ITC (up on subsidiary acquisition news) and Adani Ports drove index gains, while aviation and auto majors like Maruti and IndiGo lagged due to crude oil margin worries. Additionally, jewelry counters suffered a unique, surprising decline following the Prime Minister's appeal to curtail discretionary gold purchases. Overall, robust domestic GDP and strong retail liquidity continue to insulate the Indian market from external volatility.",
-  "executiveSummary": "### **Executive Summary: Indian Market & Institutional Flow Analysis**\n\nDespite geopolitical headwinds pushing Brent crude past $91/barrel, the Indian equity market demonstrated strong domestic resilience on August 31, 2026. This turnaround was anchored by a stellar Q1 GDP growth rate of 7.8%, which revived investor optimism, pushed the Nifty 50 back above the 24,100 mark, and triggered a 17% collapse in the India VIX to 9.25. \n\nA primary takeaway is the striking contrast between heavy foreign outflows and resilient domestic absorption. Triggered by a scheduled MSCI India Index Rebalancing, Foreign Institutional Investors (FIIs) registered a massive net outflow of \u20b97,985.88 crore. However, Domestic Institutional Investors (DIIs) successfully cushioned this pressure with a net inflow of \u20b94,588.88 crore, absorbing the bulk of the FII liquidation and preventing a market downturn.\n\nCorporate performance closely mirrored these macro themes. Defensive pillars like ITC (up on subsidiary acquisition news) and Adani Ports drove index gains, while aviation and auto majors like Maruti and IndiGo lagged due to crude oil margin worries. Additionally, jewelry counters suffered a unique, surprising decline following the Prime Minister's appeal to curtail discretionary gold purchases. Overall, robust domestic GDP and strong retail liquidity continue to insulate the Indian market from external volatility.",
-  "bias": "Bearish",
+  "summary": "Nifty Analysis Agent\n\nHere is the latest financial analysis, FII/DII flow update, and stock analysis for the Indian stock market (Nifty 50):\n\n---\n\n### **1. FII & DII Flows (Provisional Data as of August 31, 2026)**\n* **Foreign Institutional Investors (FIIs):** Stepped up their sell-off significantly, recording a heavy net outflow of **\u20b97,985.88 crore** in the cash market (Gross Buys: \u20b960,025.88 Cr / Gross Sells: \u20b968,011.76 Cr).\n* **Domestic Institutional Investors (DIIs):** Acted as a liquidity buffer but did not fully offset the foreign outflows, finishing as net buyers of **\u20b94,588.88 crore** (Gross Buys: \u20b919,730.38 Cr / Gross Sells: \u20b915,141.50 Cr).\n* **Monthly Narrative:** Due to the large end-of-month selling on August 31, the cumulative FII cash flow flipped to a net outflow of **\u20b97,531.84 crore** for August. However, broader depository data showed FPIs remained net buyers overall via non-cash routes, recording **\u20b930,919 crore** in August.\n\n---\n\n### **2. Nifty 50 Index Analysis & Top Movers**\nThe Nifty 50 has been exhibiting range-bound and consolidated behavior, closing marginally lower on September 1, 2026, at **24,055.80 (down 0.10%)**. It holds a vital support zone between **23,800\u201324,000**, with immediate resistance located near the 50-day EMA at **24,190**.\n\n#### **Top Nifty 50 Gainers (Major Contributors)**\n1. **ITC Ltd (ITC):** **+4.34%** (LTP: \u20b9266.60) \u2014 Provided a strong defensive hedge to the index.\n2. **Bharti Airtel (BHARTIARTL):** **+3.60%** (LTP: \u20b91,877.20) \u2014 Extended its strong momentum.\n3. **Adani Ports (ADANIPORTS):** **+3.41%** (LTP: \u20b91,647.50) \u2014 Staged a solid recovery following a heavy sell-off related to MSCI rebalancing.\n4. **HCL Technologies (HCLTECH):** **+2.99%** (LTP: \u20b91,351.40) \u2014 Supported the Nifty IT index.\n5. **Reliance Industries (RELIANCE):** **+2.51%** (LTP: \u20b91,309.00) \u2014 Supported the index heavily due to its high weightage.\n\n#### **Top Nifty 50 Decliners (Laggards)**\n1. **Shriram Finance (SHRIRAMFIN):** **-4.58%** (LTP: \u20b91,059.10)\n2. **Maruti Suzuki (MARUTI):** **-4.41%** (LTP: \u20b912,950.00) \n3. **Nestle India (NESTLEIND):** **-3.90%** (LTP: \u20b91,438.20)\n4. **Max Healthcare (MAXHEALTH):** **-3.75%** (LTP: \u20b91,003.00)\n5. **InterGlobe Aviation / IndiGo (INDIGO):** **-3.48%** (LTP: \u20b95,052.00)\n\n---\n\n### **3. Key Financial & Macro Headlines**\n* **Geopolitical & Crude Headwinds:** Rising tensions in the Strait of Hormuz pushed Brent crude oil prices back above **$90\u2013$91 per barrel**, creating concerns about inflationary pressure and fiscal deficit margins in India.\n* **Rising US Yields:** The US 10-year Treasury yield climbed toward **4.78%** after a series of hawkish comments from Fed policymakers. This rate-hike risk is driving foreign capital out of emerging markets.\n* **Corporate Buzz:**\n  * **Texmaco Rail & Engineering:** Shares surged over **7%** following a major **$135 million export contract** to supply diesel-electric locomotives to South Africa.\n  * **Strong Auto Sales:** Monthly dispatches for August recorded strong volumes, with TVS Motor seeing a **21%** sales growth to 6.16 lakh units and Escorts Kubota registering a **19%** increase in tractor sales.\n\nNifty Flow Agent\n\nThe latest FII (Foreign Institutional Investors) and DII (Domestic Institutional Investors) trade activity data for the Indian market is as follows:\n\n### Institutional Flow Summary (As of September 1, 2026)\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) | Action |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| **DII** | 01-Sep-2026 | 15,635.49 | 13,788.55 | **+1,846.94** | Net Buyers |\n| **FII/FPI** | 01-Sep-2026 | 17,807.53 | 16,664.15 | **+1,143.38** | Net Buyers |\n| **Combined** | **01-Sep-2026** | **33,443.02** | **30,452.70** | **+2,990.32** | **Strong Net Inflow** |\n\n---\n\n### Market Analysis & Sentiment\n\n1. **Dual Inflows Support the Market:** Both Foreign and Domestic Institutional Investors acted as net buyers during the session, registering a combined net inflow of **\u20b92,990.32 Crore**. This provides solid liquidity cushion and indicates aligned confidence from both global and local desks.\n2. **DII Domination:** Domestic Institutions continue to drive steady inflows (net \u20b91,846.94 Crore), often fueled by systematic investment plans (SIPs) and mutual fund allocations.\n3. **FII Activity Reversal:** Net FII purchases of \u20b91,143.38 Crore suggest positive global risk appetite or specific rebalancing/allocations into Indian equities (like heavyweights in Nifty 50).\n4. **General Outlook:** Combined positive flows are typically associated with bullish or consolidated resilience in the Nifty 50 and Sensex benchmarks. Positive institutional support reduces downside volatility and creates a strong base for leading sector stocks (Banking, IT, and Infrastructure).\n\nAggregator Agent\n\n### **Executive Summary: Market Analysis & Institutional Flows (Sept 1, 2026)**\n\n**Flow Reversal & Institutional Support:**\nFollowing a heavy FII cash sell-off of \u20b97,985.88 crore on August 31, September 1 marked a swift turnaround. Both Foreign and Domestic Institutional Investors acted as net buyers, contributing a combined net inflow of \u20b92,990.32 crore (DIIs: +\u20b91,846.94 crore; FIIs: +\u20b91,143.38 crore). This dual inflow provides a strong liquidity cushion and signals aligned confidence across domestic and global desks, reversing the negative momentum of the previous session.\n\n**Nifty 50 Index & Stock Movers:**\nSupported by these inflows, the Nifty 50 stabilized to close marginally lower at 24,055.80 (down 0.10%), holding firmly above its crucial 23,800\u201324,000 support zone. ITC (+4.34%) provided a strong defensive hedge, while Adani Ports (+3.41%) staged a solid recovery from prior MSCI-related selling. On the downside, Shriram Finance (-4.58%) and Maruti Suzuki (-4.41%) led the laggards.\n\n**Macro Headwinds:**\nDespite the supportive institutional flows, upside gains remain capped by rising macroeconomic headwinds. Brent crude oil prices have climbed above $90\u2013$91 per barrel due to geopolitical tensions in the Strait of Hormuz, and rising US 10-year Treasury yields (nearing 4.78%) continue to present capital-flight risks for emerging markets.",
+  "executiveSummary": "### **Executive Summary: Market Analysis & Institutional Flows (Sept 1, 2026)**\n\n**Flow Reversal & Institutional Support:**\nFollowing a heavy FII cash sell-off of \u20b97,985.88 crore on August 31, September 1 marked a swift turnaround. Both Foreign and Domestic Institutional Investors acted as net buyers, contributing a combined net inflow of \u20b92,990.32 crore (DIIs: +\u20b91,846.94 crore; FIIs: +\u20b91,143.38 crore). This dual inflow provides a strong liquidity cushion and signals aligned confidence across domestic and global desks, reversing the negative momentum of the previous session.\n\n**Nifty 50 Index & Stock Movers:**\nSupported by these inflows, the Nifty 50 stabilized to close marginally lower at 24,055.80 (down 0.10%), holding firmly above its crucial 23,800\u201324,000 support zone. ITC (+4.34%) provided a strong defensive hedge, while Adani Ports (+3.41%) staged a solid recovery from prior MSCI-related selling. On the downside, Shriram Finance (-4.58%) and Maruti Suzuki (-4.41%) led the laggards.\n\n**Macro Headwinds:**\nDespite the supportive institutional flows, upside gains remain capped by rising macroeconomic headwinds. Brent crude oil prices have climbed above $90\u2013$91 per barrel due to geopolitical tensions in the Strait of Hormuz, and rising US 10-year Treasury yields (nearing 4.78%) continue to present capital-flight risks for emerging markets.",
+  "bias": "Bullish",
   "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "### **3. Latest Financial Headlines & Market Sentiment**",
-    "**FII Pullback:**",
-    "**DII Resilience:**",
-    "**Overall Sentiment:**",
-    "Corporate performance closely mirrored these macro themes. Defensive pillars like ITC (up on subsidiary acquisition news) and Adani Ports drove index gains, while aviation and auto majors like Maruti and IndiGo lagged due to crude oil margin worries. Additionally, jewelry counters suffered a unique, surprising decline following the Prime Minister's appeal to curtail discretionary gold purchases. Overall, robust domestic GDP and strong retail liquidity continue to insulate the Indian market from external volatility."
+    "**ITC Ltd (ITC):** **+4.34%** (LTP: \u20b9266.60) \u2014 Provided a strong defensive hedge to the index.",
+    "**Bharti Airtel (BHARTIARTL):** **+3.60%** (LTP: \u20b91,877.20) \u2014 Extended its strong momentum.",
+    "**Adani Ports (ADANIPORTS):** **+3.41%** (LTP: \u20b91,647.50) \u2014 Staged a solid recovery following a heavy sell-off related to MSCI rebalancing.",
+    "**HCL Technologies (HCLTECH):** **+2.99%** (LTP: \u20b91,351.40) \u2014 Supported the Nifty IT index.",
+    "**Reliance Industries (RELIANCE):** **+2.51%** (LTP: \u20b91,309.00) \u2014 Supported the index heavily due to its high weightage.",
+    "**Shriram Finance (SHRIRAMFIN):** **-4.58%** (LTP: \u20b91,059.10)",
+    "**Maruti Suzuki (MARUTI):** **-4.41%** (LTP: \u20b912,950.00)",
+    "**Nestle India (NESTLEIND):** **-3.90%** (LTP: \u20b91,438.20)",
+    "**Max Healthcare (MAXHEALTH):** **-3.75%** (LTP: \u20b91,003.00)",
+    "**InterGlobe Aviation / IndiGo (INDIGO):** **-3.48%** (LTP: \u20b95,052.00)"
   ],
   "marketSignals": {
-    "positioningLabel": "Call-side hedge build",
+    "positioningLabel": "Bearish positioning build",
     "positioningStrike": 24100,
     "divergenceSummary": "Aligned sentiment",
     "divergenceCount": 0,
-    "trapRiskLabel": "No clear trap",
-    "fiiNetCrores": -7985.88,
-    "diiNetCrores": 4588.88,
+    "trapRiskLabel": "Downside trap @ 24050",
+    "fiiNetCrores": 1143.38,
+    "diiNetCrores": 1846.94,
     "tradedValueCrores": 0.0,
-    "spot": 23977.2
+    "spot": 24055.8
   },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
     "bias": "Bullish",
-    "note": "Mildly positive news tone",
-    "analysis": "Recent market news shows a mildly positive news tone, with supportive and cautious headlines roughly balanced. The most supportive headline: \"Tata Motors gains PV market share as non-EV sales rise, EVs rebound\". The most cautious headline: \"Nifty trades below 24,000 level; auto share decline\".",
+    "note": "Moderately positive news tone",
+    "analysis": "Recent market news shows a moderately positive news tone, with most headlines leaning supportive. The most supportive headline: \"Mahindra & Mahindra tractors sales grow 5% to 29,507 units in August\". The most cautious headline: \"Israel Slashes Interest Rates for Third Consecutive Meeting\".",
     "headlines": [
       {
-        "title": "Nifty trades below 24,000 level; auto share decline",
+        "title": "US Job Openings Edge Higher in Sign of Stable Labor Demand",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "US Factory Gauge Eases But Holds Close to Four-Year High",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "ECB\u2019s September Hike Won\u2019t Be Enough, Simkus Tells Econostream",
+        "label": "negative",
+        "sentiment": "Slightly negative"
+      },
+      {
+        "title": "Mahindra & Mahindra Aug auto sales jump 42% to 1.07 lakh units",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "ECB\u2019s Nagel Says Slowdown in Underlying Inflation Is Good News",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Israel Slashes Interest Rates for Third Consecutive Meeting",
         "label": "negative",
         "sentiment": "Strongly negative"
       },
       {
-        "title": "Delhi Metro employee breaks Guinness record, travels across all stations in 14 hours, 54 minutes",
+        "title": "Mahindra & Mahindra tractors sales grow 5% to 29,507 units in August",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Sudarshan Chemical divests its stake in VP4 Frankfurt to Celanese Corporation, USA",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Euro-Zone Inflation Jumps to Highest in Almost Three Years",
+        "title": "Magellanic Cloud receives 3rd consecutive DFCCIL order",
         "label": "positive",
         "sentiment": "Moderately positive"
       },
       {
-        "title": "Fewest UK Mortgages Approved Since the Start of 2024",
-        "label": "negative",
-        "sentiment": "Moderately negative"
-      },
-      {
-        "title": "Markets are cyclical; it's a good time to invest: Deepak Shenoy",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "US-Iran war: Two oil supertankers targeted by unknown projectiles in the Strait of Hormuz, Marisks reports",
-        "label": "negative",
-        "sentiment": "Moderately negative"
-      },
-      {
-        "title": "Religare Enterprises rises as Ashish Dhawan raises stake further",
-        "label": "positive",
-        "sentiment": "Moderately positive"
-      },
-      {
-        "title": "Indian LNG Imports Surge to Six-Year High Even as Prices Spike",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "Tata Motors gains PV market share as non-EV sales rise, EVs rebound",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "Graphite India surges 7%, HEG hits 52-week high; what's driving GE stocks?",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Iranian President Pezeshkian says Tehran will \u2018immediately\u2019 reciprocate if US returns to June MoU commitments",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "India\u2019s Economy Grows Faster Than Expected at 7.8%",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "Why Zomato banned analogue paneer? What it is and how it harms even your healthy body | Explained",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Israel Faces Rate Dilemma as War Settles and Elections Loom",
-        "label": "negative",
-        "sentiment": "Moderately negative"
-      },
-      {
-        "title": "India-Nepal rail link resumes: UP CM Yogi Adityanath flags off Varanasi-Nepalgunj trains",
+        "title": "IZMO arm develops innovative 40 GHz RF package for semiconductor devices",
         "label": "neutral",
         "sentiment": "Neutral"
       }
