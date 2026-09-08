@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T20:01:33.592680+05:30",
+  "generatedAt": "2026-09-08T09:01:47.215534+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
@@ -12,104 +12,111 @@
     "gemini-robotics-er-2-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\n### Indian Stock Market Analysis & FII/DII Flows (September 7, 2026)\n\nOn Monday, September 7, 2026, the Indian benchmark indices resumed their downward trajectory due to a combination of geopolitical tensions, rising energy costs, and persistent foreign fund outflows. \n\n---\n\n### 1. Market Headlines & Summary\n* **Nifty 50:** Settled at **23,779.15**, shedding **118.55 points (0.50%)** to reach its lowest closing level in almost two months.\n* **BSE Sensex:** Ended **382.62 points (0.50%)** lower at **76,132.81**.\n* **Primary Headwinds:** \n  * **Geopolitical Risk & Crude Surge:** Surging West Asian tensions between the US and Iran drove Brent crude oil prices up towards **$96\u2013$97 per barrel**.\n  * **US Federal Reserve Policy:** Stronger-than-expected US labor data fueled investor anxiety regarding prolonged high-interest rates or potential further monetary tightening.\n\n---\n\n### 2. Stocks Performance Analysis (Nifty 50 Constituents)\n\nA look at the latest intraday movements from the Nifty 50 constituent tracker highlights a distinct trend: **IT and Insurance sectors witnessed significant selling**, while **Defensives (Hospitals, Pharma) and Value Stocks (Infrastructure, Telecom) offered resilient cushions.**\n\n#### **Major Gainers (Defense & Defensives):**\n* **APOLLOHOSP (Apollo Hospitals):** $+1.27\\%$ (LTP: \u20b98,760.00) \u2014 Supported by strong defensive healthcare inflows.\n* **LT (Larsen & Toubro):** $+0.88\\%$ (LTP: \u20b93,999.00) \u2014 Steady on back of robust order books.\n* **COALINDIA (Coal India):** $+0.84\\%$ (LTP: \u20b9418.85) \u2014 Leveraged strong domestic energy demand and dividend expectations.\n* **BHARTIARTL (Bharti Airtel):** $+0.76\\%$ (LTP: \u20b91,854.00) \u2014 Stood firm on defensive telecom play.\n* **MAXHEALTH:** $+0.73\\%$ (LTP: \u20b9992.00) and **CIPLA:** $+0.72\\%$ (LTP: \u20b91,395.00) \u2014 Reinforced sector-wide pharma strength.\n\n#### **Major Losers (IT & High-Beta Decliners):**\n* **INFY (Infosys):** $-3.76\\%$ (LTP: \u20b91,087.50) \u2014 Drastic sell-off as global IT spend and US macroeconomic headwinds weighed on investor sentiment.\n* **SBILIFE & HDFCLIFE:** Both closed down $-2.42\\%$ (LTPs: \u20b91,732.00 & \u20b9533.20 respectively) \u2014 Financial/Insurance names faced liquidation under FII outflows.\n* **JIOFIN (Jio Financial Services):** $-2.13\\%$ (LTP: \u20b9234.40).\n* **TECHM (Tech Mahindra):** $-2.06\\%$ (LTP: \u20b91,564.00) and **WIPRO:** $-2.04\\%$ (LTP: \u20b9172.80) \u2014 Symmetrical to Infosys' fall, dragging the broader IT index.\n\n---\n\n### 3. FII & DII Trading Flow Summary\n\nThe structural battle between foreign institutional outflows and domestic institutional inflows remains the key driver of current market movements.\n\n* **FIIs (Foreign Institutional Investors):** Turn major net sellers. In the most recently completed weekend/prior session (September 4, 2026), FIIs offloaded equities worth **\u20b93,111.94 crore**. Cumulatively, FIIs withdrew a net **\u20b97,443 crore** in just the first few trading days of September 2026 alone, with total year-to-date FPI outflows rising to **\u20b92.32 lakh crore**.\n* **DIIs (Domestic Institutional Investors):** Continued to act as the primary market defense, absorbing substantial selling pressure by registering a robust net purchase of **\u20b98,930.12 crore** on Friday. \n\n**Smart Brief:**\nWhile the continuous selling by FIIs (prompted by rising US Treasury yields and crude oil concerns) has restricted the Nifty from staging a structural recovery above the 24,000 mark, the market correction is being largely cushioned by aggressive DII buying. Technical support for Nifty 50 resides around the **23,600\u201323,800** consolidation band.\n\nNifty Flow Agent\n\nHere is the latest **FII and DII flow data** for the Indian market as of **September 7, 2026**:\n\n### **FII/DII Trading Activity (September 7, 2026)**\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 07-Sep-2026 | 13,154.13 | 12,587.37 | **+566.76** |\n| **FII / FPI** | 07-Sep-2026 | 9,581.19 | 9,301.06 | **+280.13** |\n| **Combined** | | **22,735.32** | **21,888.43** | **+846.89** |\n\n---\n\n### **Market Analysis & Sentiment**\n\n* **Dual Net Buyers:** Both Foreign Institutional Investors (FII) and Domestic Institutional Investors (DII) registered as net buyers on this session. This coordinated buying indicates a healthy underlying appetite for Indian equities across both global and domestic desks.\n* **Volume and Participation:** DIIs continues to exhibit significantly higher market participation, with total transaction values (Buy + Sell) exceeding \u20b925,700 crore, compared to FIIs' transaction value of around \u20b918,800 crore.\n* **Bullish Resilience:** A combined net inflow of **\u20b9846.89 crore** suggests that the market has solid liquidity support at current levels, helping absorb potential selling pressure and maintaining a positive or consolidative bias for the Nifty index.\n\nAggregator Agent\n\n### Executive Summary: Indian Stock Market & Institutional Flows (September 7, 2026)\n\nOn September 7, 2026, the Indian stock market continued its descent, with the Nifty 50 dropping 0.50% to 23,779.15 and the Sensex falling 0.50% to 76,132.81. This two-month low was triggered by escalating US-Iran tensions driving Brent crude to $96\u2013$97 per barrel, alongside hawkish US interest rate fears. High-beta sectors like IT (Infosys down 3.76%) and Insurance faced heavy liquidations, while defensive plays such as Healthcare (Apollo Hospitals up 1.27%) and Pharma provided resilient cushions.\n\nDespite the broader index decline and heavy year-to-date withdrawals, institutional data for the September 7 session revealed coordinated resilience. Uncharacteristically, both Domestic Institutional Investors (DIIs) and Foreign Institutional Investors (FIIs) acted as net buyers, generating a combined net inflow of \u20b9846.89 crore (DIIs: +\u20b9566.76 crore; FIIs: +\u20b9280.13 crore). DIIs continued to dominate trading activity, reinforcing their role as the market's primary shock absorber against macroeconomic pressures. This joint buying activity underscores healthy underlying liquidity support, helping secure a crucial consolidation zone for the Nifty 50 between 23,600 and 23,800.",
-  "executiveSummary": "### Executive Summary: Indian Stock Market & Institutional Flows (September 7, 2026)\n\nOn September 7, 2026, the Indian stock market continued its descent, with the Nifty 50 dropping 0.50% to 23,779.15 and the Sensex falling 0.50% to 76,132.81. This two-month low was triggered by escalating US-Iran tensions driving Brent crude to $96\u2013$97 per barrel, alongside hawkish US interest rate fears. High-beta sectors like IT (Infosys down 3.76%) and Insurance faced heavy liquidations, while defensive plays such as Healthcare (Apollo Hospitals up 1.27%) and Pharma provided resilient cushions.\n\nDespite the broader index decline and heavy year-to-date withdrawals, institutional data for the September 7 session revealed coordinated resilience. Uncharacteristically, both Domestic Institutional Investors (DIIs) and Foreign Institutional Investors (FIIs) acted as net buyers, generating a combined net inflow of \u20b9846.89 crore (DIIs: +\u20b9566.76 crore; FIIs: +\u20b9280.13 crore). DIIs continued to dominate trading activity, reinforcing their role as the market's primary shock absorber against macroeconomic pressures. This joint buying activity underscores healthy underlying liquidity support, helping secure a crucial consolidation zone for the Nifty 50 between 23,600 and 23,800.",
-  "bias": "Neutral",
-  "keyLevels": [],
+  "summary": "Nifty Analysis Agent\n\nHere is the latest financial report and stock analysis for the Indian market and Nifty 50, featuring live stock data, FII/DII flow statistics, and current market sentiment.\n\n---\n\n### **1. Nifty 50 Stock Performance & Analysis**\nBased on the latest exchange transaction variations, the market is showing a distinct polarization, with IT and metal counters facing selling pressure while selective pharma, consumption, and capital goods offer support.\n\n#### **Major Gainers (Top Contributors):**\n*   **Apollo Hospitals (APOLLOHOSP):** `+1.27%` | LTP: \u20b98,760.00 *(Up from \u20b98,650.00)*\n*   **Larsen & Toubro (LT):** `+0.88%` | LTP: \u20b93,999.00\n*   **Coal India (COALINDIA):** `+0.84%` | LTP: \u20b9418.85\n*   **Bharti Airtel (BHARTIARTL):** `+0.76%` | LTP: \u20b91,854.00\n*   **Max Healthcare (MAXHEALTH):** `+0.73%` | LTP: \u20b9992.00\n*   **Cipla (CIPLA):** `+0.72%` | LTP: \u20b91,395.00\n\n#### **Major Decliners (Drag on Index):**\n*   **Infosys (INFY):** `-3.76%` | LTP: \u20b91,087.50 *(Leading the IT drag)*\n*   **HDFC Life (HDFCLIFE):** `-2.42%` | LTP: \u20b9533.20\n*   **SBI Life Insurance (SBILIFE):** `-2.42%` | LTP: \u20b91,732.00\n*   **Jio Financial Services (JIOFIN):** `-2.13%` | LTP: \u20b9234.40\n*   **Tech Mahindra (TECHM):** `-2.06%` | LTP: \u20b91,564.00\n*   **Wipro (WIPRO):** `-2.04%` | LTP: \u20b9172.80\n\n---\n\n### **2. Institutional Flows (FII & DII Activity)**\nIn the latest completed trading session, both Foreign Institutional Investors (FIIs) and Domestic Institutional Investors (DIIs) acted as net purchasers in the cash segment, providing a localized cushion of liquidity.\n\n| Category | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) | Trend / Notes |\n| :--- | :---: | :---: | :---: | :--- |\n| **FII (Foreign)** | 9,581.19 | 9,301.06 | **+280.13** | Snapped a 3-day consecutive selling streak. |\n| **DII (Domestic)** | 13,154.13 | 12,587.37 | **+566.76** | Continued support via domestic inflows. |\n| **Combined Flow** | **22,735.32** | **21,888.43** | **+846.89** | Overall positive institutional inflow in cash. |\n\n*(Note: Despite becoming marginal buyers in the cash market, FIIs continue to maintain defensive hedging strategies with net short positions in index futures.)*\n\n---\n\n### **3. Latest Financial Headlines & Market Outlook**\n*   **Nifty 50 Under Technical Pressure:** The Nifty 50 finished the previous session down 0.50% at **23,779.15**, marking its fourth consecutive slide and registering its lowest level in six weeks.\n*   **Crude Oil Surges to $97:** Growing geopolitical developments (US-Iran tensions) in the Middle East have driven Brent crude oil prices up toward **$97 per barrel**. This constitutes a severe headwind for the Indian Rupee and raises import-led inflation risks.\n*   **Global Macro and Fed Trajectory:** Stronger-than-anticipated employment data in the US has renewed speculation of an upcoming interest rate hike by the Federal Reserve, keeping global capital flows highly sensitive.\n*   **Tomorrow's Technical Zones:**\n    *   **Support:** **23,600 \u2013 23,750** is recognized as the major defensive cushion. A sustained breakdown beneath 23,600 would likely accelerate correction targets toward 23,500.\n    *   **Resistance:** Direct overhead selling is positioned at **23,950 \u2013 24,000**, with the stronger resistance standing near **24,150** (coinciding with the 50-day EMA).\n\nNifty Flow Agent\n\nThe latest FII (Foreign Institutional Investors) and DII (Domestic Institutional Investors) flow data for the Indian market is as follows:\n\n### **FII & DII Flow Data (As of September 7, 2026)**\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) | Action |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| **DII** | 07-Sep-2026 | 13,154.13 | 12,587.37 | **+566.76** | Net Buyers |\n| **FII/FPI** | 07-Sep-2026 | 9,581.19 | 9,301.06 | **+280.13** | Net Buyers |\n| **Combined** | | **22,735.32** | **21,888.43** | **+846.89** | **Net Inflow** |\n\n---\n\n### **Market Analysis & Insights**\n\n1. **Bullish Bias & Resiliency:** Both FIIs and DIIs emerged as net buyers in the session, contributing to a combined net inflow of **\u20b9846.89 crore**. This dual-buying behavior represents healthy market sentiment, offering reliable support to the benchmark Nifty 50 and Sensex indices.\n2. **DII Strength:** Domestic Institutional Investors continue to act as the primary cushion for the markets, registering a net inflow of **\u20b9566.76 crore**. Consistent SIP (Systematic Investment Plan) inflows and strong domestic mutual fund participation keep the buying momentum high.\n3. **FII Participation:** FIIs registered a positive net action of **\u20b9280.13 crore**. This reflects a risk-on sentiment and moderate buying, which provides a positive signal to the markets after periods of global volatility.\n\n### **Financial Headlines & Market Outlook**\n* **Positive Global Cues & Domestic Flow:** The consistent accumulation by domestic mutual funds, combined with returning interest from foreign funds, provides structural support to heavyweights in the banking, IT, and auto sectors.\n* **Focus on Quality Stock Picking:** With both institutional blocks showing positive action, defensive sectors and high-quality large-cap stocks are likely to experience upward momentum or stable consolidation.\n\nAggregator Agent\n\n### Executive Summary\n\nThe Indian market exhibits a notable divergence between positive institutional liquidity and mounting macro-technical pressures. Despite the Nifty 50 sliding 0.50% to a six-week low of 23,779.15 in its fourth consecutive decline, benchmark indices are structurally cushioned by synchronized institutional inflows. In the session ending September 7, 2026, both Domestic Institutional Investors (DIIs) (+\u20b9566.76 Cr) and Foreign Institutional Investors (FIIs) (+\u20b9280.13 Cr)\u2014with the latter snapping a three-day selling streak\u2014combined for a net cash inflow of \u20b9846.89 crore.\n\nHowever, a critical disconnect persists: despite their localized cash-buying, FIIs continue to maintain defensive, bearish hedges via net short derivative positions. The underlying equity market is highly polarized; heavyweights like Infosys (-3.76%) and other IT counters drag the index down, while selective pharma, consumption, and capital goods (such as Apollo Hospitals and Larsen & Toubro) offer defensive support.\n\nGoing forward, severe external headwinds\u2014including Brent crude surging to $97 per barrel due to geopolitical tensions and renewed US rate-hike expectations\u2014will continue to pressure the rupee and sentiment. Key levels to watch include critical technical support at 23,600\u201323,750 and immediate overhead resistance at 23,950\u201324,000.",
+  "executiveSummary": "### Executive Summary\n\nThe Indian market exhibits a notable divergence between positive institutional liquidity and mounting macro-technical pressures. Despite the Nifty 50 sliding 0.50% to a six-week low of 23,779.15 in its fourth consecutive decline, benchmark indices are structurally cushioned by synchronized institutional inflows. In the session ending September 7, 2026, both Domestic Institutional Investors (DIIs) (+\u20b9566.76 Cr) and Foreign Institutional Investors (FIIs) (+\u20b9280.13 Cr)\u2014with the latter snapping a three-day selling streak\u2014combined for a net cash inflow of \u20b9846.89 crore.\n\nHowever, a critical disconnect persists: despite their localized cash-buying, FIIs continue to maintain defensive, bearish hedges via net short derivative positions. The underlying equity market is highly polarized; heavyweights like Infosys (-3.76%) and other IT counters drag the index down, while selective pharma, consumption, and capital goods (such as Apollo Hospitals and Larsen & Toubro) offer defensive support.\n\nGoing forward, severe external headwinds\u2014including Brent crude surging to $97 per barrel due to geopolitical tensions and renewed US rate-hike expectations\u2014will continue to pressure the rupee and sentiment. Key levels to watch include critical technical support at 23,600\u201323,750 and immediate overhead resistance at 23,950\u201324,000.",
+  "bias": "Bearish",
+  "keyLevels": [
+    "Resistance 23,950\u201324,000",
+    "Support 23,600\u201323,750"
+  ],
   "watchlist": [],
   "headlines": [
-    "### 1. Market Headlines & Summary"
+    "### **3. Latest Financial Headlines & Market Outlook**",
+    "**Bullish Bias & Resiliency:** Both FIIs and DIIs emerged as net buyers in the session, contributing to a combined net inflow of **\u20b9846.89 crore**. This dual-buying behavior represents healthy market sentiment, offering reliable support to the benchmark Nifty 50 and Sensex indices.",
+    "**DII Strength:** Domestic Institutional Investors continue to act as the primary cushion for the markets, registering a net inflow of **\u20b9566.76 crore**. Consistent SIP (Systematic Investment Plan) inflows and strong domestic mutual fund participation keep the buying momentum high.",
+    "**FII Participation:** FIIs registered a positive net action of **\u20b9280.13 crore**. This reflects a risk-on sentiment and moderate buying, which provides a positive signal to the markets after periods of global volatility.",
+    "### **Financial Headlines & Market Outlook**"
   ],
   "marketSignals": {
     "positioningLabel": "Call-side hedge build",
     "positioningStrike": 23900,
     "divergenceSummary": "Aligned sentiment",
     "divergenceCount": 0,
-    "trapRiskLabel": "Upside trap @ 23800",
+    "trapRiskLabel": "Upside trap @ 24000",
     "fiiNetCrores": 280.13,
     "diiNetCrores": 566.76,
     "tradedValueCrores": 0.0,
-    "spot": 23779.15
+    "spot": 23868.2
   },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
     "bias": "Bearish",
-    "note": "Mildly cautious news tone",
-    "analysis": "Recent market news shows a mildly cautious news tone, with supportive and cautious headlines roughly balanced. The most supportive headline: \"South Africa\u2019s Economy Seen Ending Longest Growth Run in Decade\". The most cautious headline: \"Chile Copper Shipments Sink to One-Year Low Despite Price Rally\".",
+    "note": "Moderately cautious news tone",
+    "analysis": "Recent market news shows a moderately cautious news tone, with most headlines flagging caution. The most supportive headline: \"Philippine Jobless Rate Surges to Four-Year High as Growth Slows\". The most cautious headline: \"Australia\u2019s Consumer Confidence Slumps on Rates, Fuel Costs\".",
     "headlines": [
       {
-        "title": "Trump shares AI image showing Intel stock price jump from $20 to $95, claims \u2018hundreds of billions\u2019 in gains for US",
-        "label": "positive",
-        "sentiment": "Slightly positive"
-      },
-      {
-        "title": "Chile Copper Shipments Sink to One-Year Low Despite Price Rally",
+        "title": "\u2018Unacceptable\u2019: Marine Le Pen condemns removal of female staff during Hindu group\u2019s visit to Eiffel Tower",
         "label": "negative",
         "sentiment": "Strongly negative"
       },
       {
-        "title": "South Africa\u2019s Economy Seen Ending Longest Growth Run in Decade",
-        "label": "positive",
-        "sentiment": "Moderately positive"
-      },
-      {
-        "title": "Iceland Finance Chief Spars With Central Bank Over Price Drivers",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "Bengal govt ad shows Durga with 11 hands, draws flak from TMC, CPI(M) - What did BJP's Shamik Bhattacharya say?",
+        "title": "Equitas SFB appoints Sivaraman K as Head of Operations",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "West Bengal bypolls: ECI announces October 6 polling for Nandigram, Rejinagar",
+        "title": "Nifty below 23,800 amid FIIs selling in index fut; here's what analysts say",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "In a first, West Bengal to see a complete liquor ban on Ashtami during Durga Puja, CM Suvendu Adhikari announces",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Delhi HC reserves order on HUL plea against Beco ads alleging skin irritation",
+        "title": "Asian stocks waver as yen surges, Iran retaliation threat lifts oil prices",
         "label": "negative",
         "sentiment": "Moderately negative"
       },
       {
-        "title": "Sebi eases investor group disclosure for FPIs investing in govt bonds - business-standard.com",
+        "title": "Philippine Jobless Rate Surges to Four-Year High as Growth Slows",
+        "label": "positive",
+        "sentiment": "Moderately positive"
+      },
+      {
+        "title": "Trump says Canada's Bombardier must build jets in US or lose market access",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "China Export Growth Rebounds as Trade Surplus Nears $806 Billion",
+        "label": "negative",
+        "sentiment": "Strongly negative"
+      },
+      {
+        "title": "'No more selling Bombardier': Trump threatens to stop sale of Canadian jets in US",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "Delhi traffic advisory for September 8: Key routes face diversions during BRICS carcade rehearsal",
+        "label": "negative",
+        "sentiment": "Strongly negative"
+      },
+      {
+        "title": "Canada's retaliatory US tariffs set to take effect: Which American products face new duties?",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Shalibhadra Finance forays into used commercial vehicle financing - business-standard.com",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Aarti Industries commissions Phase 1 of its Zone IV project at Jhagadia, Gujarat - business-standard.com",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "GE Vernova T&D wins bid for 6000 MW HVDC LCC terminal station project - business-standard.com",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Rajputana Stainless board approves wind and solar projects for captive consumption - business-standard.com",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "China Central Bank Adds Most Gold Since 2023 Even as Prices Jump",
+        "title": "Philippines Central Bank Sees High Interest Rates But No Shortage of Loans",
         "label": "positive",
         "sentiment": "Slightly positive"
       },
       {
-        "title": "Fed Latest: Warsh\u2019s speech contrasts with New York Fed president\u2019s take",
+        "title": "Stock Market LIVE: GIFT Nifty signals negative open; Asia markets mixed; US-Iran tension in focus",
+        "label": "negative",
+        "sentiment": "Strongly negative"
+      },
+      {
+        "title": "Japan\u2019s Katayama Says Will Aim to Maintain Orderly FX Market",
+        "label": "positive",
+        "sentiment": "Moderately positive"
+      },
+      {
+        "title": "Petrol and diesel prices today \u2013 8 Sep: Fuel rates in Delhi, Mumbai, Bengaluru as Iran eyes Hormuz deal with Oman",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Australia\u2019s Consumer Confidence Slumps on Rates, Fuel Costs",
         "label": "negative",
         "sentiment": "Strongly negative"
       }
