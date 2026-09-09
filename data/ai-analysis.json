@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T15:01:32.957602+05:30",
+  "generatedAt": "2026-09-09T20:01:36.092418+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
@@ -12,114 +12,110 @@
     "gemini-robotics-er-2-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\nHere is the detailed analysis of the Indian stock market, featuring Nifty 50 stock performance, institutional flows (FII/DII), and major headlines.\n\n---\n\n### **1. Executive Summary & Market Sentiment**\nThe Indian equity market continues to witness a structural transition where relentless **Domestic Institutional Investor (DII)** liquidity is counterbalancing and shielding the market against foreign capital outflows (**FII** selling). In early September 2026, despite localized sector-level profit-taking in the IT segment, the market retains a highly resilient posture. This resilience is supported by a record high DII ownership (~20.9% in the Nifty-500) driven by systematic retail SIP inflows.\n\n---\n\n### **2. FII & DII Flows (September 2026 Trend)**\n\nThe latest trade statistics indicate a consistent trend of domestic absorption of global headwinds:\n\n| Date | Net FII Activity (\u20b9 Crores) | Net DII Activity (\u20b9 Crores) | Combined Daily Activity (\u20b9 Cr) | Sentiment Impact |\n| :--- | :--- | :--- | :--- | :--- |\n| **Sept 08, 2026** | `-123.19` | `+1,349.64` | **+1,226.45** (Net Buy) | Stable; marginal FII selling fully absorbed. |\n| **Sept 07, 2026** | `+280.13` | `+566.76` | **+846.89** (Net Buy) | Bullish; both institutions in tandem buying. |\n| **Sept 04, 2026** | `-3,111.94` | `+8,930.12` | **+5,818.18** (Net Buy) | Highly Bullish; massive DII buying of ~\u20b98,900 Cr. |\n| **Sept 03, 2026** | `-2,345.87` | `+4,977.46` | **+2,631.59** (Net Buy) | Resilient; robust absorption of global tech weakness. |\n| **Sept 02, 2026** | `+6,688.37` | `+2,812.98` | **+9,501.35** (Net Buy) | Strong Bullish Momentum. |\n\n**Key takeaway:** Domestic institutions have deployed multi-thousand crore shields during heavy global selloff sessions (e.g., Sept 3rd & 4th), preventing steep index corrections.\n\n---\n\n### **3. Nifty 50 Stock Analysis (Key Movers)**\n\nAn analysis of the Nifty 50 constituent performance shows a clear **rotation out of high-growth IT giants into Infrastructure, Commodities, and Healthcare:**\n\n#### **\ud83d\ude80 Top Gainers (Contributors to Growth)**\n* **ADANIENT (Adani Enterprises):** **+4.95%** (LTP: \u20b93,099.40) \u2013 Led the charge on strong buying sentiment and infrastructure push.\n* **MAXHEALTH (Max Healthcare):** **+4.48%** (LTP: \u20b91,037.50) \u2013 Robust gains supported by strong underlying industry demand.\n* **ADANIPORTS (Adani Ports):** **+3.80%** (LTP: \u20b91,775.00) \u2013 Upward momentum driven by strong volume metrics.\n* **COALINDIA (Coal India):** **+2.86%** (LTP: \u20b9432.25) \u2013 High dividend-yield play attracting valuation comfort.\n* **TATASTEEL (Tata Steel):** **+2.16%** (LTP: \u20b9188.13) \u2013 Responding to global metal re-ratings.\n\n#### **\ud83d\udcc9 Top Losers (Drag on Index)**\nThe IT sector faced heavy profit-taking, dragging down the benchmark's performance:\n* **INFY (Infosys):** **-4.79%** (LTP: \u20b91,030.20) \u2013 Leading decliner on earnings sentiment and global rate pauses.\n* **TECHM (Tech Mahindra):** **-3.63%** (LTP: \u20b91,502.40)\n* **HCLTECH (HCL Technologies):** **-3.59%** (LTP: \u20b91,231.20)\n* **HDFCLIFE (HDFCLife):** **-3.15%** (LTP: \u20b9517.00)\n* **WIPRO (Wipro):** **-2.38%** (LTP: \u20b9167.42)\n* **HINDUNILVR (Hindustan Unilever):** **-1.99%** (LTP: \u20b91,940.50) \u2013 Squeezed margins on rural recovery timelines.\n\n---\n\n### **4. Major Financial Headlines to Watch Tomorrow**\n\n1. **IT Pack Under Pressure:** Keep a close eye on the technology sector. The sharp drops in `INFY`, `TECHM`, and `HCLTECH` suggest index-level consolidation as money shifts into defensively valued cyclical sectors (Metals and Energy).\n2. **SIP Power Prevails:** Multi-billion DII inflows highlight that domestic investors are maintaining long-term equity allocations, signaling that downside risks remain well-guarded despite FIIs having offloaded more than \u20b912,600 crore in September 2026 month-to-date.\n3. **Sectoral Divergence:** The underperformance of FMCG (`HINDUNILVR`) and Banking (`HDFCBANK`, -1.64%) contrasted with the power of infrastructure (`ADANIPORTS`, `ADANIENT`) represents a classic mid-cycle sectoral re-allocation.\n\nNifty Flow Agent\n\nThe latest FII (Foreign Institutional Investors) and DII (Domestic Institutional Investors) flow data for the Indian market is as follows:\n\n### **FII/DII Flow Data (As of September 08, 2026)**\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 08-Sep-2026 | 14,678.53 | 13,328.89 | **+1,349.64** |\n| **FII/FPI** | 08-Sep-2026 | 11,704.84 | 11,828.03 | **-123.19** |\n| **Combined** | \u2014 | **26,383.37** | **25,156.92** | **+1,226.45** |\n\n---\n\n### **Market Analysis & Financial Insights**\n\n1. **Domestic Strength Dominating:**\n   Domestic Institutional Investors (DIIs) continue to be the primary pillar of support for the Indian equity market, pumping in a net **\u20b91,349.64 crore**. This reflects sustained retail and mutual fund inflows (via SIPs) which are consistently deployed into the market.\n\n2. **FIIs Taking a Marginal Pause:**\n   Foreign Institutional Investors (FIIs) turned marginal net sellers on September 8, with a net outflow of **-\u20b9123.19 crore**. Despite the slight negative bias, the volume of FII selling is very low, indicating a consolidation phase or wait-and-watch approach rather than an aggressive risk-off mood.\n\n3. **Overall Market Sentiment:**\n   The cumulative market flow is **positive by \u20b91,226.45 crore**. This net positive inflow indicates that the underlying sentiment remains constructive. Domestic liquidity is efficiently absorbing any minor selling pressure from offshore investors, preventing any significant downside in the Nifty 50 and broader indices.\n\n4. **Strategic Stock Outlook:**\n   - **Large-caps & Index Heavyweights:** While FIIs have slowed their buying pace, the heavy domestic backing suggests sectors like private banking, IT, and consumer goods may see selective buying or stability.\n   - **Mid & Small-caps:** Since DII inflows typically spill over into broader market mutual funds, mid-cap and small-cap stocks are likely to continue experiencing resilient demand and liquidity-driven momentum.\n\nAggregator Agent\n\n### Executive Summary\n\nThe Indian equity market is undergoing a profound structural transition, characterized by relentless Domestic Institutional Investor (DII) liquidity counterbalancing Foreign Institutional Investor (FII) outflows. Driven by consistent retail SIP inflows, DIIs have reached a record-high ownership of 20.9% in the Nifty-500, successfully shielding the benchmark against global macro headwinds and FII sales of over \u20b912,600 crore in early September 2026. This domestic strength is exemplified on September 8, where a minor FII outflow of \u20b9123.19 crore was effortlessly absorbed by a robust \u20b91,349.64 crore DII net buy, keeping the combined flow positive.\n\nBeneath this resilient surface, a striking thematic rotation is underway. Investors are actively shifting capital out of high-growth IT giants (like Infosys and Tech Mahindra) and reallocating it toward defensively valued cyclical sectors, notably Infrastructure (Adani Enterprises and Ports), Commodities (Coal India, Tata Steel), and Healthcare. This classic mid-cycle sectoral re-allocation, supported by a multi-thousand crore domestic liquidity shield, protects the Nifty 50 from severe downward corrections, highlighting a permanent regime shift where domestic retail force, rather than foreign capital, has become the primary driver of market sentiment.",
-  "executiveSummary": "### Executive Summary\n\nThe Indian equity market is undergoing a profound structural transition, characterized by relentless Domestic Institutional Investor (DII) liquidity counterbalancing Foreign Institutional Investor (FII) outflows. Driven by consistent retail SIP inflows, DIIs have reached a record-high ownership of 20.9% in the Nifty-500, successfully shielding the benchmark against global macro headwinds and FII sales of over \u20b912,600 crore in early September 2026. This domestic strength is exemplified on September 8, where a minor FII outflow of \u20b9123.19 crore was effortlessly absorbed by a robust \u20b91,349.64 crore DII net buy, keeping the combined flow positive.\n\nBeneath this resilient surface, a striking thematic rotation is underway. Investors are actively shifting capital out of high-growth IT giants (like Infosys and Tech Mahindra) and reallocating it toward defensively valued cyclical sectors, notably Infrastructure (Adani Enterprises and Ports), Commodities (Coal India, Tata Steel), and Healthcare. This classic mid-cycle sectoral re-allocation, supported by a multi-thousand crore domestic liquidity shield, protects the Nifty 50 from severe downward corrections, highlighting a permanent regime shift where domestic retail force, rather than foreign capital, has become the primary driver of market sentiment.",
-  "bias": "Neutral",
+  "summary": "Nifty Analysis Agent\n\n### **Nifty 50 Market Analysis, Institutional Flows & Headlines**\n\n---\n\n### **1. Market Trends & Nifty 50 Stocks Analysis**\nBased on the latest live-analysis-variations data, the market is experiencing a notable divergence. While selected commodity, utility, and infrastructure stocks (such as Adani Group firms) are holding strong, high-valuation IT, banking, and consumption stocks are facing sharp selling pressure.\n\n#### **Top Gainers (Contributors to Resilience):**\n*   **ADANIENT (Adani Enterprises):** **+5.13%** (LTP: \u20b93,104.70) \u2013 Spearheaded the recovery efforts.\n*   **MAXHEALTH (Max Healthcare):** **+4.48%** (LTP: \u20b91,037.50) \u2013 Showed robust defensive traction.\n*   **ADANIPORTS (Adani Ports):** **+3.80%** (LTP: \u20b91,775.00) \u2013 Continued its upward trajectory alongside the flagship.\n*   **COALINDIA (Coal India):** **+2.56%** (LTP: \u20b9431.00) and **TATASTEEL (Tata Steel):** **+2.50%** (LTP: \u20b9188.75) \u2013 Gained from commodity rotation amid surging global input costs.\n\n#### **Top Losers (Major Drags):**\n*   **INFY (Infosys):** **-4.34%** (LTP: \u20b91,035.00) \u2013 Led the tech rout on global macro headwinds.\n*   **HDFCLIFE:** **-3.71%** (LTP: \u20b9514.00) & **HCLTECH:** **-3.70%** (LTP: \u20b91,229.80).\n*   **TECHM (Tech Mahindra):** **-3.27%** (LTP: \u20b91,508.00) & **WIPRO:** **-2.62%** (LTP: \u20b9167.00) \u2013 Heavy sell-offs triggered by higher-for-longer US interest rate expectations.\n*   **HDFCBANK:** **-2.26%** (LTP: \u20b9687.10) \u2013 Heavyweight pressure continued to test the index's support.\n\n---\n\n### **2. Latest FII & DII Provisional Flow Data (September 9, 2026)**\nThe market reflects a classic risk-off environment with domestic institutions striving to absorb foreign exits:\n*   **Foreign Institutional Investors (FIIs):** Net **Sellers** of equities worth **\u20b91,712.33 crore**.\n*   **Domestic Institutional Investors (DIIs):** Net **Buyers** of equities worth **\u20b91,512.14 crore**.\n\n---\n\n### **3. Key Financial News & Market Headlines**\n\n*   **Geopolitical Flares Spook Benchmark Indices:** The BSE Sensex slumped by over 813 points and the Nifty 50 dropped over 203 points to close at 23,431.50 as risk aversion swept global markets due to geopolitical flare-ups in the Middle East.\n*   **Brent Crude Breezes Past $100/Barrel:** Surging crude oil prices have renewed fiscal deficit and inflation fears for India, intensifying negative sentiment.\n*   **Indian Rupee Slumps to Record Low:** Driven by FII outflows and oil pricing pressures, the INR fell to a provisional record low of **95.08 against the US Dollar**.\n*   **US Labor Data Drags IT Sector:** With stronger-than-expected US jobs data supporting the case for prolonged higher interest rates, IT spending concerns pulled down discretionary tech majors (Infosys, TCS, and Tech Mahindra).\n\nNifty Flow Agent\n\nBased on the latest institutional flow data retrieved for the Indian market (Nifty 50) as of **September 9, 2026**, here is the analysis and breakdown of the FII and DII trading activity:\n\n### **FII/DII Flow Data (September 9, 2026)**\n\n| Category | Date | Buy Value (\u20b9 Cr) | Sell Value (\u20b9 Cr) | Net Value (\u20b9 Cr) |\n| :--- | :--- | :--- | :--- | :--- |\n| **DII** | 09-Sep-2026 | 18,130.76 | 16,621.72 | **+1,509.04** |\n| **FII/FPI** | 09-Sep-2026 | 16,392.90 | 16,975.89 | **-582.99** |\n| **Combined** | \u2014 | **34,523.66** | **33,597.61** | **+926.05** |\n\n---\n\n### **Market Sentiment & Analysis**\n\n1. **Domestic Resilience (DIIs as Pillars):**\n   Domestic Institutional Investors (DIIs) continue to show strong commitment, emerging as net buyers with an inflow of **\u20b91,509.04 crore**. This persistent buying from domestic mutual funds and insurance companies provides a solid cushion to the market.\n\n2. **Foreign Profit Booking (FIIs marginal net sellers):**\n   Foreign Portfolio Investors (FIIs) were marginal net sellers, offloading equities worth **\u20b9582.99 crore**. This suggests minor profit-booking or reallocation actions, though not a massive exodus, indicating a neutral-to-cautious global stance.\n\n3. **Overall Net Positivity:**\n   The combined institutional net flow remains positive at **\u20b9926.05 crore**. This net positive absorption of FII outflows by DIIs indicates that domestic liquidity remains highly robust and keeps the market trend relatively stable or upwardly biased.\n\nAggregator Agent\n\n### **Executive Summary: Market Correction & Institutional Resilience (Sept 9, 2026)**\n\nOn September 9, 2026, the Indian equity market faced a sharp correction driven by escalating Middle East tensions, Brent crude surging past $100/barrel, and the Rupee slumping to a record low of 95.08 against the US Dollar. Consequently, the Nifty 50 dropped 203.60 points to close at 23,431.50. High-valuation IT majors (such as Infosys, which fell 4.34%) led the downward draft, heavily impacted by stronger-than-expected US jobs data and fears of prolonged high interest rates.\n\nAmidst these macro headwinds, a notable divergence surfaced: infrastructure and commodity stocks like Adani Enterprises (+5.13%) and Coal India (+2.56%) staged a counter-cyclical rally, buoyed by global input cost rotations and defense traction.\n\nThis divergence is strongly tied to institutional flow dynamics. While Foreign Institutional Investors (FIIs) pursued a defensive risk-off playbook by net-selling equities, Domestic Institutional Investors (DIIs) acted as a pillar of strength, absorbing the foreign exit with a robust net inflow of \u20b91,512.14 crore. This formidable domestic liquidity acted as a critical cushion, preventing a systemic crash and highlighting the growing independence of India\u2019s domestic investment pool against global volatility.",
+  "executiveSummary": "### **Executive Summary: Market Correction & Institutional Resilience (Sept 9, 2026)**\n\nOn September 9, 2026, the Indian equity market faced a sharp correction driven by escalating Middle East tensions, Brent crude surging past $100/barrel, and the Rupee slumping to a record low of 95.08 against the US Dollar. Consequently, the Nifty 50 dropped 203.60 points to close at 23,431.50. High-valuation IT majors (such as Infosys, which fell 4.34%) led the downward draft, heavily impacted by stronger-than-expected US jobs data and fears of prolonged high interest rates.\n\nAmidst these macro headwinds, a notable divergence surfaced: infrastructure and commodity stocks like Adani Enterprises (+5.13%) and Coal India (+2.56%) staged a counter-cyclical rally, buoyed by global input cost rotations and defense traction.\n\nThis divergence is strongly tied to institutional flow dynamics. While Foreign Institutional Investors (FIIs) pursued a defensive risk-off playbook by net-selling equities, Domestic Institutional Investors (DIIs) acted as a pillar of strength, absorbing the foreign exit with a robust net inflow of \u20b91,512.14 crore. This formidable domestic liquidity acted as a critical cushion, preventing a systemic crash and highlighting the growing independence of India\u2019s domestic investment pool against global volatility.",
+  "bias": "Bullish",
   "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "Here is the detailed analysis of the Indian stock market, featuring Nifty 50 stock performance, institutional flows (FII/DII), and major headlines.",
-    "### **4. Major Financial Headlines to Watch Tomorrow**",
-    "**IT Pack Under Pressure:** Keep a close eye on the technology sector. The sharp drops in `INFY`, `TECHM`, and `HCLTECH` suggest index-level consolidation as money shifts into defensively valued cyclical sectors (Metals and Energy).",
-    "**SIP Power Prevails:** Multi-billion DII inflows highlight that domestic investors are maintaining long-term equity allocations, signaling that downside risks remain well-guarded despite FIIs having offloaded more than \u20b912,600 crore in September 2026 month-to-date.",
-    "**Sectoral Divergence:** The underperformance of FMCG (`HINDUNILVR`) and Banking (`HDFCBANK`, -1.64%) contrasted with the power of infrastructure (`ADANIPORTS`, `ADANIENT`) represents a classic mid-cycle sectoral re-allocation.",
-    "**Domestic Strength Dominating:**",
-    "**FIIs Taking a Marginal Pause:**",
-    "**Overall Market Sentiment:**",
-    "**Strategic Stock Outlook:**"
+    "### **Nifty 50 Market Analysis, Institutional Flows & Headlines**",
+    "### **3. Key Financial News & Market Headlines**",
+    "**Domestic Resilience (DIIs as Pillars):**",
+    "**Foreign Profit Booking (FIIs marginal net sellers):**",
+    "**Overall Net Positivity:**"
   ],
   "marketSignals": {
     "positioningLabel": "Call-side hedge build",
-    "positioningStrike": 23800,
+    "positioningStrike": 23700,
     "divergenceSummary": "Aligned sentiment",
     "divergenceCount": 0,
-    "trapRiskLabel": "No clear trap",
-    "fiiNetCrores": -123.19,
-    "diiNetCrores": 1349.64,
+    "trapRiskLabel": "Upside trap @ 23500",
+    "fiiNetCrores": -582.99,
+    "diiNetCrores": 1509.04,
     "tradedValueCrores": 0.0,
-    "spot": 23487.5
+    "spot": 23431.5
   },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
-    "bias": "Bearish",
-    "note": "Mildly cautious news tone",
-    "analysis": "Recent market news shows a mildly cautious news tone, with most headlines flagging caution. The most supportive headline: \"Chinese markets gain despite inflation concerns\". The most cautious headline: \"French Industrial Output Drops in Blow to Economic Outlook\".",
+    "bias": "Bullish",
+    "note": "Moderately positive news tone",
+    "analysis": "Recent market news shows a moderately positive news tone, with most headlines leaning supportive. The most supportive headline: \"South Africa\u2019s 3% Inflation Goal Is Robust, Central Bank Study Shows\". The most cautious headline: \"Bessent Yen Jawboning Risks Raising Expectations BOJ Can\u2019t Meet\".",
     "headlines": [
       {
-        "title": "Moneyboxx Finance Ltd leads losers in 'B' group",
+        "title": "Bessent Yen Jawboning Risks Raising Expectations BOJ Can\u2019t Meet",
+        "label": "negative",
+        "sentiment": "Moderately negative"
+      },
+      {
+        "title": "Who is Noel Clarke? British actor charged with six sexual offences involving five women",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Volumes soar at Graphite India Ltd counter",
-        "label": "positive",
-        "sentiment": "Slightly positive"
+        "title": "'Moonlighting is a crime unless you're an MP': LinkedIn post sparks debate; check social media reactions",
+        "label": "neutral",
+        "sentiment": "Neutral"
       },
       {
-        "title": "Nifty trades below 23,550; auto share decline",
-        "label": "negative",
-        "sentiment": "Strongly negative"
+        "title": "Enviro Infra Engineers receives LoI for 180 MW wind power project",
+        "label": "neutral",
+        "sentiment": "Neutral"
       },
       {
-        "title": "Japan's Nikkei slips as yen strengthens",
-        "label": "negative",
-        "sentiment": "Strongly negative"
+        "title": "Who is Suresh Gopi? Why did BJP MP and Malayalam star order all gates at Thrissur\u2019s Paliyekkara toll plaza to be opened?",
+        "label": "neutral",
+        "sentiment": "Neutral"
       },
       {
-        "title": "Chinese markets gain despite inflation concerns",
+        "title": "Shakti Pumps wins order worth Rs 235 cr from MSEDCL",
         "label": "positive",
         "sentiment": "Strongly positive"
       },
       {
-        "title": "India condemns Iran-backed Houthi attacks on Saudi Arabia that injured over 70 civilians: 'Unacceptable'",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "Gaurav Bhatia files  \u20b92 cr defamation suit against Saurav Das, other CJP leaders over AI-generated post",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "BRICS Summit 2026: Dates, venue, timings and complete itinerary",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "BRICS Summit 2026: Will New Delhi be shut? Uber, DTC buses, road closures, airport routes, emergency services \u2014 10 FAQs",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Muslim man\u2019s skullcap pulled off in Uttar Pradesh, six youths face police action \u2013 What we know",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "French Industrial Output Drops in Blow to Economic Outlook",
-        "label": "negative",
-        "sentiment": "Strongly negative"
-      },
-      {
-        "title": "Poland to Hold Interest Rates With Inflation at 14-Month High",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Bolivia Central Bank to Start Dollar Sales to Banks Wednesday",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Ex-BOK Governor Says No Need to Panic Over Short-Term Won Moves",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Sheinbaum Budget Sees Smaller Deficit, More Public Works",
+        "title": "GPT Infraprojects arm bags Rs 114.82-cr contract from Northeast Frontier Railways",
         "label": "positive",
         "sentiment": "Moderately positive"
+      },
+      {
+        "title": "PhonePe to launch UAE operations in its first international market foray",
+        "label": "positive",
+        "sentiment": "Slightly positive"
+      },
+      {
+        "title": "Poland Keeps Rates Unchanged as Fuel Costs Boost Inflation",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Bandhan Bank allots 35,768 equity shares under ESOP",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Ammy Virk's father dismisses Canada Shooting \u2018rumours\u2019 involving his son, says family safe and no dispute with anyone",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "India Seeks Payment-System Links in \u2018Every Free Trade Agreement\u2019",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Monsoon to remain active across India through 15 September",
+        "label": "positive",
+        "sentiment": "Slightly positive"
+      },
+      {
+        "title": "Mexico Inflation Ticks Up Again as Banxico Holds Rates Firm",
+        "label": "positive",
+        "sentiment": "Moderately positive"
+      },
+      {
+        "title": "South Africa\u2019s 3% Inflation Goal Is Robust, Central Bank Study Shows",
+        "label": "positive",
+        "sentiment": "Strongly positive"
       }
     ]
   }
