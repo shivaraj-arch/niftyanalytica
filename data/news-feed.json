@@ -1,116 +1,127 @@
 {
   "marketTape": {
     "updatedAt": "2026-09-15T15:02:46.137812+05:30",
-    "items": []
+    "items": [],
+    "ageMinutes": 298.7547251166667,
+    "sourceErrors": [
+      {
+        "source": "pages/news-feed.json",
+        "error": "published marketTape is empty"
+      },
+      {
+        "source": "pages/news-feed.json",
+        "error": "tape is 299 min old (limit 90)"
+      }
+    ]
   },
   "newsFeed": {
-    "updatedAt": "2026-09-15T15:02:40.772274+05:30",
-    "updatedAtLabel": "15 Sep 2026, 03:02:40 PM IST",
+    "updatedAt": "2026-09-15T20:03:32.339785+05:30",
+    "updatedAtLabel": "15 Sep 2026, 08:03:32 PM IST",
     "items": [
       {
         "source": "Livemint",
-        "title": "Is US running short of weapons amid Iran war? Pentagon report flags missile shortfalls, supply bottlenecks",
-        "link": "https://www.livemint.com/news/world/is-us-running-short-of-weapons-amid-iran-war-pentagon-report-flags-missile-shortfalls-supply-bottlenecks-11789460222601.html",
-        "publishedAt": "2026-09-15T15:00:09+05:30",
-        "publishedAtLabel": "15 Sep 2026, 03:00:09 PM IST"
+        "title": "Noida schools to remain closed on September 16? Officials respond to Saurav Das's claim",
+        "link": "https://www.livemint.com/news/india/noida-schools-to-remain-closed-on-september-16-officials-respond-to-saurav-dass-claim-11789479977551.html",
+        "publishedAt": "2026-09-15T19:47:18+05:30",
+        "publishedAtLabel": "15 Sep 2026, 07:47:18 PM IST"
       },
       {
         "source": "Livemint",
-        "title": "Over 200 SpiceJet passengers protest at Delhi airport after Dubai flight gets delayed for more than 24 hours",
-        "link": "https://www.livemint.com/news/india/over-200-spicejet-passengers-protest-at-delhi-airport-after-dubai-flight-gets-delayed-for-more-than-24-hours-11789462954764.html",
-        "publishedAt": "2026-09-15T14:53:17+05:30",
-        "publishedAtLabel": "15 Sep 2026, 02:53:17 PM IST"
+        "title": "\u2018Horrible, highly political\u2019 ruling: Trump attacks Supreme Court after mail-in voting setback",
+        "link": "https://www.livemint.com/news/us-news/horrible-highly-political-ruling-trump-attacks-supreme-court-after-mail-in-voting-setback-11789480143233.html",
+        "publishedAt": "2026-09-15T19:45:53+05:30",
+        "publishedAtLabel": "15 Sep 2026, 07:45:53 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "Defence stocks tank up to 14%, index down 5%; analysts flag downside risks",
-        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOUTBUdkhXUThWWjVBak14c3JsQUd2VHVCUUoxcG9oV3dkcmdhenpCNE00aF9NR1NuSXg5WldUZGRvYnItMmh6TFhuQi1SakdySmdnTGxZU3hCS1JzQkhJTm1QUHVNbnNHM295X1BIeXRCa2U3aVdyZ3RrLV9XS0xrZXJLN2hTamZPSmlKNGc4OEEyQnJrdFZwVzBXY0xtR2NSaTktWFlMSDgtY1hPZS10OUJYRy1VSzRHQnBMbGpfb19uX0tSSzE5WndkYTc0NW9aSUkw0gHYAUFVX3lxTE90cWNDOVh5X0NTOV8tM2xQdmpZWTJfamQybC1CclRYczR4Qnc0MG9NSGpKS2lWWVBucWwwbklVZXoydEdkX2NCWmRIZnNaSExpSHdGeUdhaWw3OTltTlVfcWdOMlZ1Q2E1VVNCZHczQzY1T0R5MjhjRklFTlRGWmdwVUwyb2l3aGxiSlcyV0ZVVVFhVUNkeVd6UTdLcjlFdmNDRVpXRmU0Rlc3Z0lFT011WXZ4MjliS0dpQ25oV1dsZ2o1a21PQ2dPWG5oeWlRQU0zSUh6ZWYxSw?oc=5",
-        "publishedAt": "2026-09-15T14:50:15+05:30",
-        "publishedAtLabel": "15 Sep 2026, 02:50:15 PM IST"
+        "title": "Rupee falls 0.42% to 95.96, posts sharpest decline since July 14 - business-standard.com",
+        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxONzY4SWJmYl9UMGpfWnVWYVkxSDRlb0VYbEdqMGZRd3ZMc0I3TXJQVl9xQkYtQWduWXdtQ0JVX2dEczRSMmFjUFdJVU1RbzlTSXl2cE9zRHlkT1FERkdGWS1KRzJSS3JzcVpiYXJXVFpPTmlDYWhpaE1BWFlmVnN2UFRJWkJMOTBiSHM2bGIxX2tqT0NtVURBMHc1SlRNU3dtN3Z3Q0QwdndkLXdpdWFwMkpUaERnZm1QbDFiWE8xeTgxS0gxQmoyQ9IBzgFBVV95cUxNUEE2VGU5ZXllZ214T2pIdEplNTcyQWFlRjd3ZWQ1dzlKSzhtYlVKMlBsd3FtbFpRa1Z2aXNOQ1VVT0VPXzRHQ0ltQkNsenhBSGg3X2I4OTJuZkp6M19rbVZ4dEYyWVI0WkFIUVpuNEZjT2Z2aGMyWFAxVmIxWjZJUjJLa0ZDZVNodEQ2MVVoZHpMWXllQ0U0WkkzV1ZpNTRsYVpCYWpsTXhjWFd4cVZjcDYta0pMdDQ1Z1FTZDRXQWZqS3Q4WV81eDdYZGlIdw?oc=5",
+        "publishedAt": "2026-09-15T19:39:55+05:30",
+        "publishedAtLabel": "15 Sep 2026, 07:39:55 PM IST"
       },
       {
         "source": "Livemint",
-        "title": "Vijay\u2019s London investment trip: AIADMK jabs, \u2018Why travel to UK for MoU with Noida-based company?\u2019",
-        "link": "https://www.livemint.com/news/vijays-london-investment-trip-aiadmk-jabs-why-travel-to-uk-for-mou-with-noida-based-company-tvk-11789461985802.html",
-        "publishedAt": "2026-09-15T14:42:25+05:30",
-        "publishedAtLabel": "15 Sep 2026, 02:42:25 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "German Investor Outlook Edges Up as Optimism Over Recovery Grows",
-        "link": "https://www.bloomberg.com/news/articles/2026-09-15/german-investor-outlook-edges-up-as-optimism-over-recovery-grows",
-        "publishedAt": "2026-09-15T14:37:23+05:30",
-        "publishedAtLabel": "15 Sep 2026, 02:37:23 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "India Trade Deficit Narrows in August Even as Oil Risks Loom",
-        "link": "https://www.bloomberg.com/news/articles/2026-09-15/india-trade-deficit-narrows-in-august-even-as-oil-risks-loom",
-        "publishedAt": "2026-09-15T14:26:26+05:30",
-        "publishedAtLabel": "15 Sep 2026, 02:26:26 PM IST"
+        "title": "India\u2019s unemployment rate holds at 5% in August as rural joblessness eases",
+        "link": "https://www.livemint.com/news/india/indias-unemployment-rate-holds-at-5-in-august-as-rural-joblessness-eases-11789472639802.html",
+        "publishedAt": "2026-09-15T19:37:06+05:30",
+        "publishedAtLabel": "15 Sep 2026, 07:37:06 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "Glass Wall, Kanohar eye 25-35% listing pop; Prasol Chem may see weak debut",
-        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPaWhNMXlGMjlCS3N3QmF6dHNqSGpBMmxPN2Z5UC1xaHNONXJOeUJ2TEpxbXlVMm90WkZlVjRFTV9ycW1TVmZ4NHhLRHltcWJseG9hV3ZubkNNaWZINnBpelZva09nY3VWenVVVnZESjMyMFVvSGc1ektoUDdrZXdKREF6ZGpqWklRMjE5YWpFZ25zZm1UaFNzbFl1aFh3d2kwQ3NwR1BqZHN0djhhOVJiS2c2WFZQb2Y1NzJRUWJETGxaOEY5NjNqdlRGUUF1UGp5YVJZ0gHYAUFVX3lxTE5XbjBTLVltMHRZcW1NUmdyNmdxTmNGZVp4NG81WUs0Ykx3SU94LTRGcEVzNlVoa2hESEtmMlJxSF9DSUpPZ0NyWUNGUk5WaFVFQ2NDaTVuNzFCcmJNRktvN2hHQlFsVXVMNFJmcWIyc3FkVkJleU9hZTAyQW1ObEVmZm1FWEhKWmZpTzJHbE5WWTlMVVpoUHNxWTJBdmIxUjZKNHktNWliUENRTHZqZzkzbnNVdXpLemdpNGpvR2JQM21EXzgzQkpHYmhxU0UzMW96aXpZLUEteg?oc=5",
-        "publishedAt": "2026-09-15T14:13:45+05:30",
-        "publishedAtLabel": "15 Sep 2026, 02:13:45 PM IST"
+        "title": "WCIL commences operations at Gati Shakti Cargo Terminal in Morbi - business-standard.com",
+        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOWm9jVWZ3a0cwbXU5bWZLSVBhMFRiNUpYR3ZpSXlCVVYzZnlRaWlDTGQ1WnU0R1hTS1VydlExNUtsaV92SjAwaGJaa1VWYzl2U3NEYzVia3JKdEFpTTZnaS1JZk00SVV3NzhIRzQ3M3FvVkNqb0U0SDhqcTlqSE1sR24zWDlLUW9hQkZZT1d2ZFR4M3NDZVNJcFd1N21PWlA5QXlqVTFyWXNGa2pkcG5PLXh2VVJIYVdUV2VNQXg3aUkxeEk3SGtSanB0cTFYWk1UY0JZQTJSMVp1U1dNTUxV0gHkAUFVX3lxTE1ReFBBdUhrNFBOaVZjWVZTb0l5UXF4U3hxNjVBTUc5eFphaHgycWFMZW9wLXgtZVFqODBLdGZ3cFRSQUlZM2RTYm5LRHZ4eDJYbkVvX2w1VmE5T0RUNTdOQVlJTVc0OXpIWmFPdUVhcXdELUcySWJJa2VFdVdBbERWNEtjUDFXSEQ2Zk5WUEIxbWlpMS13Y0hKd2pwdUJTUE9YRVAzUnVxejZzUzZsTHpfVHFHbmdGOXlISnBBWkZlZGdwNUVidzdkTFZ1TlF1dU51bE5TRUJ4WVZXTTk2UGFnMnVMRg?oc=5",
+        "publishedAt": "2026-09-15T19:31:06+05:30",
+        "publishedAtLabel": "15 Sep 2026, 07:31:06 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "Coforge extends fall on chairman's exit; Jefferies sees limited impact",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQNUVTcS1ETmhDVE5aWGJEVXRhb0VrbkNqSnZjQmVHaDZXaXByYndXLUFFMzE2dDJRcS1MdU9fZGJONXYxTVhHS1ByQnhfanllaWxnWG1WVklEY2pFQWdZYmFfSFdEenVjQ1NnVEtUeXRNZGtyaE5UV0RGaXhlS0JzSU5PZkNmcGR3OUlOVzU5Zkk3T01UOWIxeHdjZ3NvUFVvdTJZS094eGdNTU52RW9XSXl3Zlo2Q29jTXdfTjJrZGJYbXlDZWVpbktmQW9fWFBMWWfSAdcBQVVfeXFMTXJCbGxaU1Fzb1VGWnljd1N1XzFrMW1uSDliaThleXpiZ0RLcFM1dGFWVlcta2g0WkVjeHloajUybkVNa2E4dnB0Y3JpSnhDOEw2R2tWTTdNMl9xYTBrakwtLWhkeHQ5NWU4anY2aGppZmVvSjdRUk5BbWx6QWwxNFFCZ2hDUktXV2MtX3RkZ3lTS3hQWTFxY1hsQWNyMU1sZ19pZll1LS1ENXlNTFRQdldzQV9DSmZaWDNWeHJ4R204ZXAwR19fVWczdWY4eFUtX1lMSE5tUmc?oc=5",
-        "publishedAt": "2026-09-15T14:11:29+05:30",
-        "publishedAtLabel": "15 Sep 2026, 02:11:29 PM IST"
+        "title": "Purple Style Labs invests Rs 420 cr in PSL Retail - business-standard.com",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQbGIzT1R5dDNQV1BkcUpHSzl5Z25NQjBCSDRRWDY5SXh1Rkg3NHYzcFpoQTRTZTVRQ1BjVV83RzZndzIwOFhITHZVM1Q2alIwSzdRRVRnM2VLSGNKNnhtTVE4RmtSS01LOHo3U29JMEtRWW1jeGZRbTRRUzdrcVJRREN0UzYta0lHcjBOVW1hTTJLMHZLcDZINEpvTkd2eHhHaU5qQ25ZSmxQR1BSb0plSkV2ZXBPTkZWVmFXLTVsM3d6R2dITmpYYnpJZ9IB0AFBVV95cUxNM195Q0QzSXEyNWtmZjBVV1BvbXJmWk5hSm82MDhOM1ZoTVJKWTRsQ1NuQWI5VjZGcEZaRm9JM3RvZEtDSFEtUEdZcno0bFF5LTkwVEpLM2JMRFVqMzlJWHZsaG42cVcxTmhid1ltX20tTDNIQ05kNVpHU2cwM04xSnRDRHFVOGJxTDFsVm15UE54dDAtNUVOVlNOZVlWcm9lVTdIUmhKTHQ2TTlYbmt5MzdTYVptRVpZVjJUbkZxeUljY0VaTEZRRC0weUhHSjlE?oc=5",
+        "publishedAt": "2026-09-15T19:16:14+05:30",
+        "publishedAtLabel": "15 Sep 2026, 07:16:14 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "Schaeffler to showcase its next-gen construction machines",
-        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPXzhJSWFfNkhZZGU3RjUwZWlVaTI5TDJaM3J0VDBNdVY0LTV5dEJpVGVsS0VFdnFWMWZCWV9CeURLVTlObHJKeHF2X3Ezc3hHeldHby1KREJIM2xSS1gxQ0piN3dfM1FXZW51S0Q5akl2SEdnUVc2ckw0bXhhbVEtSlptOTl1cHFvRkpNMHk4R2RqaERlbHgxd3hOZllrQjZqWUtkRk8zZjhSb001R255dXR6NVdoNnprb2Z4Z2ZaWThxQ2FxTXNvcEltVGZCcUNTOGJBNkN30gHbAUFVX3lxTE1QREQxZ1NsMUNyYzBaaUlOQzVMbzJJcC1oRC1pT3RHSFk2eW1qaFJhWWYxUE1nRi1FdE15SnNCSEVCYXN0RWxqX0NMZXlvQXdpRnlFcFNESDZ6UHRaLUdXb3cxN09iWWxVQ2ZCN3hCWFlIcHhYM25tTHRiVXJDcXlKOVA1elVxOVlHb1R0dHNueHVONGtobFY4LWFLcExkQzM2MXA0TEFaZU9sakEzTlNSXzVBX0taMnBWMXVBR1hwWGVUMDZVUEZVcmtBZnF5R1o2dGJ5bkJvUHJYUQ?oc=5",
-        "publishedAt": "2026-09-15T14:04:10+05:30",
-        "publishedAtLabel": "15 Sep 2026, 02:04:10 PM IST"
+        "title": "Thermax announces incorporation of step-down subsidiary in Botswana - business-standard.com",
+        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQYUViZEVla2VWWkdZVlJyX21INk10RnN3aUpJVjQ0U1BOLXBJQnNrSHk4aFpBZlhJR0M0eHdYM1k2UGdhOGRTQ1dJNUVfMTFoOWxfbDFOSGc3U19QYXltcVJRbUlPMmJfX1VUSFFKN1ZwUFhKRTV3S2Q0bGRYVzJNdW5wczk0OHZWVkladGlYcVk1aXpvNzB5T1B5T214bVFVanpJdDRLRmlleWZZN0pSVG5Gc01iSlR0NjYxVWo5OHBMYklDRkxZbTl0N3NKRzYzV3Z6UnhMMjAwVi1EQ0xqTnlnTdIB6AFBVV95cUxQaXhmaEluVjR3MFBrenU4c3p1Nl94YnR5VllMQ3g4cDlYM3ZEdkYxaDlqR0NTeUQ3eVZfNkVxdms0WHNiWDhpOWt0NURhN3Q3TFVjd3c5RERrdUQzOXFvNkM5WDNyVExFOUZXX0pLMGxjZFEzalZwUGsxSTFLLTZfVVJqenJUYXdFVlZJZDZmOGtuNVpuaVNLS0drM2xFbk5YZDV6SXlUMmxUdTB6OXdMYTQzb25Wa1BlMk5wUXlvQk5xYlhfa183c2g1bEU1UTM5cDQ4SE9HOE1uSGdRWFpnYWx4MkF5VVRZ?oc=5",
+        "publishedAt": "2026-09-15T19:16:02+05:30",
+        "publishedAtLabel": "15 Sep 2026, 07:16:02 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "Coforge expands automotive engineering capabilities",
-        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNX2JqRjhXTndlbEpuUXI3UGtpX1lkUnpCYjNsYnhDRmxSUXRSMTBvWmhENS1acWhjYVNCb01SeXFydVl5OVp0R05sWE9KR2ctbVdONlY3eERiUTR0M01iMnZfdlpTc0xLd0h2TjJkWUp4Z3BCczZfLS1rbllpbDZuTk0yT09xWVROZkg3MmFRUnhiSWhqaXV5VzBGWmtNY0ZZMXVBa05lejVkM2hyWEFBbjI0TlBUdDd1QlR4RWlCWi1nY1p5UWRwOW1mN1l4QdIB0wFBVV95cUxQbHp5Z0ZRUDc1Uk15MkxHSDFFd2htWW1Ua3RjVlF5TWpMaWRCUGRlSUxEZkJUOGJNREJ6Q1k5UGZmWTV1RGJOamE4WmpqU28za2hZYmM2S0dWWTdoSlFvMHY4TTJ2Q2pCaS1TQ2NqTzAxT3otS01lUWpvZkUtM0dKQ0ZQd1lFZFpVblJuY3ZwZ2dZS0ZESUpfRnlzbGJPYm9CTi1xVzljTmpJMFRtQl9ybEc5X291X01TY3BzYzN2VDRTclhSajBESmVsSzZHOU15YWtr?oc=5",
-        "publishedAt": "2026-09-15T14:04:01+05:30",
-        "publishedAtLabel": "15 Sep 2026, 02:04:01 PM IST"
+        "title": "Thermal plants with critical coal stocks rise to 66 amid high demand - business-standard.com",
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQM2FuVWtyRmtJTGZ2U0ZkckRMUFgzT0RaLUFzY0hXdlV2MVFYVjE1NE5MTVd2ZFpGc2hBX3ZvblhHT0VfRkRTeHBJNUpmTUFhQW5IRWxZTXVXUUQtdzh4cGtGRXJYZ21wWWpBc21oWk1WaXFQMkVLbFVZMzNEZE0yNUk5X2wwTW91TEVFSHJmbFZEN1JQa3c1RGxIRmdaVEdHYkJqTzFNQkc1bjRaRXdRMTZnWHpDWGV5eDRsN2NBSGpodkxGalpfS2pNZC1iRklRQUHSAdcBQVVfeXFMTVZ5OExXS0hUX2dWb2h0Yy11ZEZqUDVDSXJieTA3amdUOEM3dmw3eDdlbmVIbVJUVzVEcElFZjdCSkMtQ1RYc0MwS05pUmJPY2VNbWtuQi0tazItNGhCVWVNWUI3LWlDOVZoNTFTR05KVXdVS1I4TVJ5NGkxMnducXVYRW5EclZKbWUwcS1hMjQtVE9fWDFnYk5iOUZZQnB1cGp5WEozQ1NOV3E1aUpIbXh2aVZPUUQtVkt6SDAtWkNtY0hBUnYtWGItZEpINUF4bzZ6dHRTdjQ?oc=5",
+        "publishedAt": "2026-09-15T19:09:24+05:30",
+        "publishedAtLabel": "15 Sep 2026, 07:09:24 PM IST"
       },
       {
         "source": "Livemint",
-        "title": "Bengaluru CEO fixes broken footpath for  \u20b92,700 after lack of action from BBMP; sparks debate on \u2018DIY governance\u2019",
-        "link": "https://www.livemint.com/news/trends/bengaluru-ceo-fixes-broken-footpath-for-2-700-after-lack-of-action-from-bbmp-sparks-debate-on-diy-governance-11789456104934.html",
-        "publishedAt": "2026-09-15T13:52:44+05:30",
-        "publishedAtLabel": "15 Sep 2026, 01:52:44 PM IST"
+        "title": "How much will Major Rishabh Singh Sambyal earn on Instagram? Ex-ADC to President Murmu launches subscriber-only content",
+        "link": "https://www.livemint.com/news/trends/how-much-will-major-rishabh-singh-sambyal-earn-on-instagram-ex-adc-to-president-murmu-launches-subscriber-only-content-11789478641677.html",
+        "publishedAt": "2026-09-15T19:08:42+05:30",
+        "publishedAtLabel": "15 Sep 2026, 07:08:42 PM IST"
       },
       {
         "source": "Livemint",
-        "title": "In a first, US Air Force Secretary reveals Washington has weapons in space; to counter challenges from adversaries",
-        "link": "https://www.livemint.com/news/us-news/in-a-first-us-air-force-secretary-reveals-washington-has-weapons-in-space-to-counter-challenges-from-adversaries-11789458685884.html",
-        "publishedAt": "2026-09-15T13:35:37+05:30",
-        "publishedAtLabel": "15 Sep 2026, 01:35:37 PM IST"
+        "title": "China, Russia warn against \u2018weaponisation\u2019 of space after US confirms orbital weapons",
+        "link": "https://www.livemint.com/news/world/china-russia-warn-against-weaponisation-of-space-after-us-confirms-orbital-weapons-11789477120343.html",
+        "publishedAt": "2026-09-15T19:01:19+05:30",
+        "publishedAtLabel": "15 Sep 2026, 07:01:19 PM IST"
       },
       {
         "source": "Bloomberg Economics",
-        "title": "Japan\u2019s Cabinet Approves Temporary Food Sales Tax Cut to 1%",
-        "link": "https://www.bloomberg.com/news/articles/2026-09-15/japan-s-cabinet-approves-temporary-food-sales-tax-cut-to-1",
-        "publishedAt": "2026-09-15T12:52:24+05:30",
-        "publishedAtLabel": "15 Sep 2026, 12:52:24 PM IST"
+        "title": "Switzerland Needs Reforms to Keep Its Global Lead, OECD Says",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-15/switzerland-needs-reforms-to-retain-its-global-lead-oecd-says",
+        "publishedAt": "2026-09-15T18:15:00+05:30",
+        "publishedAtLabel": "15 Sep 2026, 06:15:00 PM IST"
       },
       {
         "source": "Bloomberg Economics",
-        "title": "UK Energy Bills Forecast to Jump 25%, Bloomberg Analysis Finds",
-        "link": "https://www.bloomberg.com/news/articles/2026-09-15/uk-energy-bills-forecast-to-jump-25-and-drive-up-inflation",
-        "publishedAt": "2026-09-15T12:32:42+05:30",
-        "publishedAtLabel": "15 Sep 2026, 12:32:42 PM IST"
+        "title": "Mexico Tourism Hit by Falling Beach Visits from Big Spending Foreigners",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-15/mexico-tourism-hit-by-falling-beach-visits-from-big-spending-foreigners",
+        "publishedAt": "2026-09-15T17:30:00+05:30",
+        "publishedAtLabel": "15 Sep 2026, 05:30:00 PM IST"
       },
       {
         "source": "Bloomberg Economics",
-        "title": "BOE May End Long-Dated Bond Sales as Officials Draft Plans, Report Says",
-        "link": "https://www.bloomberg.com/news/articles/2026-09-15/boe-plans-to-stop-long-dated-bond-sales-telegraph-report-says",
-        "publishedAt": "2026-09-15T12:22:02+05:30",
-        "publishedAtLabel": "15 Sep 2026, 12:22:02 PM IST"
+        "title": "WTO and rules of global trade",
+        "link": "https://www.bloomberg.com/news/newsletters/2026-09-15/wto-and-rules-of-global-trade",
+        "publishedAt": "2026-09-15T16:30:01+05:30",
+        "publishedAtLabel": "15 Sep 2026, 04:30:01 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "China Stuck in Economic Slow Lane Relies on AI-Fueled Export Boom",
+        "link": "https://www.bloomberg.com/news/newsletters/2026-09-15/china-stuck-in-economic-slow-lane-relies-on-ai-fueled-export-boom",
+        "publishedAt": "2026-09-15T16:30:01+05:30",
+        "publishedAtLabel": "15 Sep 2026, 04:30:01 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Unusual Calm in UK Pound Is Red Flag to Traders Before Budget",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-15/unusual-calm-in-uk-pound-is-red-flag-to-traders-before-budget",
+        "publishedAt": "2026-09-15T15:45:42+05:30",
+        "publishedAtLabel": "15 Sep 2026, 03:45:42 PM IST"
       }
     ],
     "sourcesAvailable": [
