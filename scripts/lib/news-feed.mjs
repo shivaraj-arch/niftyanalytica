@@ -5,6 +5,26 @@ const MAX_HEADLINES = 12;
 const MAX_HEADLINE_AGE_MS = 48 * 60 * 60 * 1000;
 const SGX_NIFTY_URL = 'https://sgxnifty.org/';
 
+// sgxnifty.org carries no ADRs and no crypto, so these come from CNBC's public
+// quote endpoint. Indian ADRs are the useful half: they price HDFC Bank,
+// Infosys and ICICI through the US session, which is a direct overnight read on
+// tomorrow's heavyweights rather than a foreign cue. On 14-Sep INFY closed
+// +4.79% and WIT +5.33% against a red US tape; NIFTY IT opened +2.94%.
+const CNBC_QUOTE_URL = 'https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol';
+const ADR_SYMBOLS = [
+  ['INFY', 'Infosys'],
+  ['WIT', 'Wipro'],
+  ['HDB', 'HDFC Bank'],
+  ['IBN', 'ICICI Bank'],
+  ['RDY', "Dr Reddy's"],
+  ['MMYT', 'MakeMyTrip'],
+];
+// Bitcoin rides in the world ticker next to Gold/Silver rather than forming a
+// category of one — it reads as a risk-appetite gauge, not a separate asset class.
+const CRYPTO_SYMBOLS = [
+  ['BTC.CM=', 'Bitcoin'],
+];
+
 const RSS_QUERIES = [
   'india stock market OR nifty OR sensex when:1d',
   'site:livemint.com nifty OR stock market when:1d',
@@ -234,6 +254,53 @@ async function buildHeadlines() {
   };
 }
 
+function parseCnbcQuotes(rawJson, specs, category) {
+  const payload = JSON.parse(rawJson);
+  const quotes = payload?.FormattedQuoteResult?.FormattedQuote || [];
+  const names = new Map(specs);
+  const items = [];
+
+  for (const quote of quotes) {
+    const symbol = String(quote?.symbol || '');
+    const last = parseNumber(String(quote?.last || '').replace(/,/g, ''));
+    if (!symbol || !Number.isFinite(last) || last <= 0) {
+      continue;
+    }
+    const changePercent = parseNumber(String(quote?.change_pct || '').replace(/[%+]/g, ''));
+    // Extended hours runs to 01:30 IST, so for a 09:00 brief it is the freshest
+    // read available — carried separately rather than folded into the close.
+    const extendedRaw = quote?.ExtendedMktQuote?.change_pct;
+    const extended = extendedRaw ? parseNumber(String(extendedRaw).replace(/[%+]/g, '')) : null;
+    const label = names.get(symbol) || quote?.shortName || symbol;
+    const status = String(quote?.curmktstatus || '').includes('REG_MKT') ? 'Open' : 'Close';
+
+    items.push({
+      label: `${label} ${symbol} (${status})`,
+      last,
+      changePercent,
+      ...(Number.isFinite(extended) ? { extendedChangePercent: extended } : {}),
+      source: `CNBC / ${category}`,
+      updatedAt: new Date().toISOString(),
+    });
+  }
+
+  return items;
+}
+
+async function fetchCnbcTape(specs, category) {
+  // Symbols go in the `symbols` query param, pipe-separated and NOT encoded —
+  // putting them in the path returns 404.
+  const symbols = specs.map(([symbol]) => symbol).join('|');
+  const url = `${CNBC_QUOTE_URL}?symbols=${symbols}`
+    + '&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json';
+  try {
+    return parseCnbcQuotes(await fetchText(url), specs, category);
+  } catch (error) {
+    console.warn(`CNBC ${category} tape failed: ${error instanceof Error ? error.message : String(error)}`);
+    return [];
+  }
+}
+
 async function buildMarketTape() {
   let parsedItems = [];
 
@@ -244,9 +311,16 @@ async function buildMarketTape() {
     console.warn(error instanceof Error ? error.message : String(error));
   }
 
+  // Appended after the sgxnifty rows so ADRs and crypto read as their own
+  // categories downstream rather than as more "International" cues.
+  const [adrItems, cryptoItems] = await Promise.all([
+    fetchCnbcTape(ADR_SYMBOLS, 'ADR'),
+    fetchCnbcTape(CRYPTO_SYMBOLS, 'Commodities'),
+  ]);
+
   return {
     updatedAt: new Date().toISOString(),
-    items: parsedItems,
+    items: [...parsedItems, ...adrItems, ...cryptoItems],
   };
 }
 
