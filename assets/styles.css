@@ -792,6 +792,35 @@ main {
   will-change: transform;
 }
 
+.ticker-row + .ticker-row {
+  border-top: 1px solid rgba(15, 76, 92, 0.1);
+}
+
+.ticker-row-label {
+  display: block;
+  padding: 10px 16px 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.ticker-row-label + .ticker-marquee {
+  padding-top: 8px;
+}
+
+/* Six chips instead of twenty-eight, so match the pixel speed of the world row. */
+.ticker-row-adr .ticker-track {
+  animation-duration: 32s;
+}
+
+.ticker-ext {
+  color: var(--muted);
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
 .ticker-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));

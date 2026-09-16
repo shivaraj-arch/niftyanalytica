@@ -1337,22 +1337,40 @@ const renderMarketTape = (items) => {
     return;
   }
 
-  const chips = items.map((item) => `
+  // ADRs are Indian companies priced in the US overnight, not world markets, so
+  // they run in their own row instead of scrolling among indices and currencies.
+  const isAdr = (item) => /\bADR\b/.test(String(item.source || ''));
+  const adrItems = items.filter(isAdr);
+  const worldItems = items.filter((item) => !isAdr(item));
+
+  const chipsFor = (rowItems) => rowItems.map((item) => `
     <article class="ticker-chip ${tone(item.changePercent)}" tabindex="0">
       <span class="ticker-label">${item.label}</span>
       <span class="ticker-value">${formatTickerValue(item.last)}</span>
       <span class="ticker-change ${tone(item.changePercent)}">${signed(item.changePercent)}%</span>
+      ${Number.isFinite(item.extendedChangePercent) && item.extendedChangePercent !== 0
+        ? `<span class="ticker-ext">ext ${signed(item.extendedChangePercent)}%</span>`
+        : ''}
     </article>
   `).join('');
+
+  const rowFor = (rowItems, label, modifier) => {
+    const chips = chipsFor(rowItems);
+    return `
+      <div class="ticker-row${modifier ? ` ${modifier}` : ''}">
+        ${label ? `<span class="ticker-row-label">${label}</span>` : ''}
+        <div class="ticker-marquee">
+          <div class="ticker-track">${chips}${chips}</div>
+        </div>
+      </div>
+    `;
+  };
 
   setText('marketTapeMeta', 'Global market pulse for the current session. Hover to pause the tape and read each move.');
   setText('marketTapeHighlights', buildMarketTapeHighlights(items));
 
-  host.innerHTML = `
-    <div class="ticker-marquee">
-      <div class="ticker-track">${chips}${chips}</div>
-    </div>
-  `;
+  host.innerHTML = rowFor(worldItems.length ? worldItems : items)
+    + (adrItems.length ? rowFor(adrItems, 'Indian ADRs \u00b7 US overnight', 'ticker-row-adr') : '');
 };
 
 const renderNewsFeed = (newsFeed) => {
