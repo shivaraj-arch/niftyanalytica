@@ -1,316 +1,371 @@
 {
   "marketTape": {
-    "updatedAt": "2026-09-16T03:31:01.962Z",
+    "updatedAt": "2026-09-16T09:31:02.177Z",
     "items": [
       {
         "label": "DOW 30 (Close)",
         "last": 52093.1,
         "changePercent": -0.63,
         "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "S&P 500 (Close)",
         "last": 7585.73,
         "changePercent": -0.45,
         "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "NASDAQ COMPO (Close)",
         "last": 25981.6,
         "changePercent": -0.78,
         "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
-        "label": "FTSE 100 (Close)",
-        "last": 10658.1,
-        "changePercent": -0.37,
+        "label": "FTSE 100 (Open)",
+        "last": 10689.5,
+        "changePercent": 0.29,
         "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
-        "label": "DAX (Close)",
-        "last": 25402.3,
-        "changePercent": -0.15,
+        "label": "DAX (Open)",
+        "last": 25411.4,
+        "changePercent": 0.04,
         "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "NIKKEI 225 (Close)",
-        "last": 63396,
-        "changePercent": -0.14,
+        "last": 63923,
+        "changePercent": 0.69,
         "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
-        "label": "SHANGHAI COM (Open)",
-        "last": 3872.6,
-        "changePercent": 0.22,
+        "label": "SHANGHAI COM (Close)",
+        "last": 3891.6,
+        "changePercent": 0.71,
         "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "DOW 30 FUTUR (Open)",
-        "last": 52658,
-        "changePercent": 0.25,
+        "last": 52535,
+        "changePercent": 0.02,
         "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "S&P 500 FUTU (Open)",
-        "last": 7675.5,
-        "changePercent": 0.25,
+        "last": 7666,
+        "changePercent": 0.13,
         "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "NASDAQ 100 F (Open)",
-        "last": 29332.8,
-        "changePercent": 0.29,
+        "last": 29338,
+        "changePercent": 0.31,
         "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "FTSE 100 FUT (Open)",
-        "last": 10758.3,
-        "changePercent": 0.04,
+        "last": 10755.3,
+        "changePercent": 0.25,
         "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "DAX FUTURES (Open)",
-        "last": 25682.5,
-        "changePercent": 0.27,
+        "last": 25591.5,
+        "changePercent": -0.08,
         "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "US DOLLAR IN (Open)",
-        "last": 99.651,
-        "changePercent": 0.04,
+        "last": 99.646,
+        "changePercent": 0.03,
         "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
-        "label": "S&P 500 VIX (Close)",
-        "last": 17.2,
-        "changePercent": 0.58,
+        "label": "S&P 500 VIX (Open)",
+        "last": 17.08,
+        "changePercent": -0.7,
         "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "GOLD (Open)",
-        "last": 4376.8,
-        "changePercent": 1.02,
+        "last": 4370.5,
+        "changePercent": 0.87,
         "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "SILVER (Open)",
-        "last": 65.225,
-        "changePercent": 2.14,
+        "last": 64.945,
+        "changePercent": 1.71,
         "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "COPPER (Open)",
-        "last": 6.4795,
-        "changePercent": 0.56,
+        "last": 6.481,
+        "changePercent": 0.58,
         "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "CRUDE OIL (Open)",
-        "last": 104.29,
-        "changePercent": -1.46,
+        "last": 104.89,
+        "changePercent": -0.89,
         "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "BRENT OIL (Open)",
-        "last": 107.54,
-        "changePercent": -1.11,
+        "last": 108.44,
+        "changePercent": -0.29,
         "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "NATURAL GAS (Open)",
-        "last": 2.932,
-        "changePercent": 0.45,
+        "last": 2.919,
+        "changePercent": 0,
         "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "EUR/USD (Open)",
-        "last": 1.1542,
-        "changePercent": -0.01,
+        "last": 1.1539,
+        "changePercent": -0.03,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "USD/JPY (Open)",
-        "last": 155.33,
-        "changePercent": 0.16,
+        "last": 155.07,
+        "changePercent": -0.01,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "GBP/USD (Open)",
-        "last": 1.3477,
-        "changePercent": 0.02,
+        "last": 1.3468,
+        "changePercent": -0.04,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "USD/CHF (Open)",
         "last": 0.8189,
         "changePercent": 0.02,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "USD/CAD (Open)",
-        "last": 1.3932,
-        "changePercent": 0.11,
+        "last": 1.3927,
+        "changePercent": 0.08,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "AUD/USD (Open)",
-        "last": 0.7122,
-        "changePercent": -0.1,
+        "last": 0.7128,
+        "changePercent": -0.01,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
         "label": "USD/CNY (Open)",
-        "last": 6.7097,
-        "changePercent": -0.02,
+        "last": 6.7074,
+        "changePercent": -0.06,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
       },
       {
-        "label": "USD/INR (Close)",
-        "last": 95.95,
-        "changePercent": 0,
+        "label": "USD/INR (Open)",
+        "last": 95.973,
+        "changePercent": 0.02,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-09-16T03:31:01.962Z"
+        "updatedAt": "2026-09-16T09:31:01.558Z"
+      },
+      {
+        "label": "Bitcoin BTC.CM= (Open)",
+        "last": 75779.74,
+        "changePercent": -0.24,
+        "source": "CNBC / Commodities",
+        "updatedAt": "2026-09-16T09:31:01.799Z"
+      },
+      {
+        "label": "Infosys INFY (Close)",
+        "last": 11.32,
+        "changePercent": -2.41,
+        "extendedChangePercent": -1.5,
+        "source": "CNBC / ADR",
+        "updatedAt": "2026-09-16T09:31:02.177Z"
+      },
+      {
+        "label": "Wipro WIT (Open)",
+        "last": 1.75,
+        "changePercent": -1.69,
+        "extendedChangePercent": 0,
+        "source": "CNBC / ADR",
+        "updatedAt": "2026-09-16T09:31:02.177Z"
+      },
+      {
+        "label": "HDFC Bank HDB (Close)",
+        "last": 22.58,
+        "changePercent": -1.35,
+        "extendedChangePercent": 0.97,
+        "source": "CNBC / ADR",
+        "updatedAt": "2026-09-16T09:31:02.177Z"
+      },
+      {
+        "label": "ICICI Bank IBN (Close)",
+        "last": 28.4,
+        "changePercent": -2.94,
+        "extendedChangePercent": -0.04,
+        "source": "CNBC / ADR",
+        "updatedAt": "2026-09-16T09:31:02.177Z"
+      },
+      {
+        "label": "Dr Reddy's RDY (Open)",
+        "last": 11.55,
+        "changePercent": -3.02,
+        "extendedChangePercent": 0,
+        "source": "CNBC / ADR",
+        "updatedAt": "2026-09-16T09:31:02.177Z"
+      },
+      {
+        "label": "MakeMyTrip MMYT (Open)",
+        "last": 47.9,
+        "changePercent": -5.24,
+        "extendedChangePercent": 0,
+        "source": "CNBC / ADR",
+        "updatedAt": "2026-09-16T09:31:02.177Z"
       }
     ],
-    "ageMinutes": 0.06223661666666667,
+    "ageMinutes": 0.06407026666666667,
     "origin": "supabase",
     "sourceErrors": []
   },
   "newsFeed": {
-    "updatedAt": "2026-09-16T09:03:10.059138+05:30",
-    "updatedAtLabel": "16 Sep 2026, 09:03:10 AM IST",
+    "updatedAt": "2026-09-16T15:02:03.733015+05:30",
+    "updatedAtLabel": "16 Sep 2026, 03:02:03 PM IST",
     "items": [
       {
-        "source": "Livemint",
-        "title": "Iran war: Photos show widespread damage at US bases across Middle East after missile, drone attacks",
-        "link": "https://www.livemint.com/news/us-news/iran-war-photos-show-widespread-damage-at-us-bases-across-middle-east-after-missile-drone-attacks-11789527881090.html",
-        "publishedAt": "2026-09-16T09:02:45+05:30",
-        "publishedAtLabel": "16 Sep 2026, 09:02:45 AM IST"
-      },
-      {
-        "source": "Livemint",
-        "title": "Petrol and diesel prices today, Sept 16: How much does fuel cost in Delhi, Mumbai, Bengaluru? Check here",
-        "link": "https://www.livemint.com/news/india/petrol-and-diesel-prices-today-sept-16-how-much-does-fuel-cost-in-delhi-mumbai-bengaluru-check-here-11789524764564.html",
-        "publishedAt": "2026-09-16T08:43:24+05:30",
-        "publishedAtLabel": "16 Sep 2026, 08:43:24 AM IST"
+        "source": "Bloomberg Economics",
+        "title": "ARS/USD: Argentina's Milei Defied by Governor Handing Out Own Money",
+        "link": "https://www.bloomberg.com/news/features/2026-09-16/ars-usd-argentina-s-milei-defied-by-governor-handing-out-own-money",
+        "publishedAt": "2026-09-16T15:00:10+05:30",
+        "publishedAtLabel": "16 Sep 2026, 03:00:10 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "Asian stocks edge higher ahead of Fed decision as yields, oil pause - business-standard.com",
-        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPSEIzTzBGSEk3cmpGamdKUjZZMkZwOXA1WXZzdDl1S0dBbFMxcU8zMEV5Q3gyZU9PWTFUTV9ZZ3c3WTJQZVB6LVU1VXpYT0ZaaDloTFg2a192RDR4NGh1Zng3QXo4NkVEUDJCQW00V3owMWJtbTlQbTdHczFfOWhYQTJRalczS1NKWnhleXVfNkFIWnF2WE9ZYUVzVzFEbXlqMWpJQkY1SHhtSEtZMi1OS2c3c0s4ZDBCNFhWRmRlSlRfbElwX2NFVWRJTTBCQdIB0wFBVV95cUxOYVNOLUdEaWRlOGtuTDIwRjR0QUU3eWR6U25PblRJaXI4S2lGUkJQMEtMM0l1UWd5dzkwY3prZENFQXI5T0pCMFZ6UUgxQzdHMjNSWEtoODVqTWRJRXo0NWFjWURkcHRtd1BrbE9ydGNJMjN0UW90YXlnSlN2cEhtdVRpTWJyVjdkYl83T1ZNN2JxODR0X0RRMkJSNWw5RFY2cVMzU3lhSm5UamdQWFF5WjVCei1KcE0wM0JfaDE5ZEhlWGtXS29UN2otNVVqNWM2d2Jz?oc=5",
-        "publishedAt": "2026-09-16T08:29:28+05:30",
-        "publishedAtLabel": "16 Sep 2026, 08:29:28 AM IST"
+        "title": "Volumes soar at Tata Chemicals Ltd counter",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQYV96alBSRERpbXhKRW5GMWJ4YWNWdng5SWpBeng1M2RYSVdWTHVaVTRHMG9RSU0yZ1NtY0hfU0xkWEN2VzVFRVlvRkJkWDlmaEVIRDlWMUVGUjB4SklxdzRsWE85TGZUTnc0dzJPSGxGZHdDbGNIb3BRaW80bnR6LXl5LXBpN09GQzROVFdqU1N6dnpoNUwzaUozYXk2OFRkUUJ1LXl5SVg3cmNmb2oxbzkyc1FodXlUNGVBNkFjSVZsZ9IBxwFBVV95cUxOekVCeXhaenhJbF8zX3pmYkdGaGRNVS1MN0gyTGVQbXZ3eWlMTVFkcEljVG9BYWhSS281Y21XQUhtRVRWU2ROeWNVV2dEVTFRZ29VX2VNWGNuX1U5Y1pBMExfeUtlbVNjSGF5RHp0TUJLZ0NKcFNxX1FJU21DXzhQazlRVTVhWUpSbGxTOVprSFVucU1rWjhhcGZPTlBXTExfdEhVZWViNWtqcDh2RnNhNFBBeXU1WERuMXdNbWJLd2JCWmhVQkdZ?oc=5",
+        "publishedAt": "2026-09-16T14:51:36+05:30",
+        "publishedAtLabel": "16 Sep 2026, 02:51:36 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "Saatvik Green Energy bags Rs 1,042-cr solar module order - business-standard.com",
-        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQVWRoelA2WUY0Rnl1aFVlb2E1RWxnZ2hEWHVvb1IxZFhfTzA2QnhnZjVQMlQwcTI0SHB1aE5lV3pmQUhKaGVWU2JsWUcxMFJFYWRZbzhCMWdZbExzRzZBblVPcnBSWHpXSkpVVHZEWXVSdER4N25USUdEUnF1Q1doa0toS2hqc3p5M3U3SVRhNnZGQUhkOEJBYVhULTY2VmJhT3dkYjlZU3RoaUlWMFRYY2t1ZVdFdGZlUUF0dXhpQWlPQ3lzOFlRakd4YXhNaUtjUnVtSdIB2gFBVV95cUxOZGJYSVo4TGo3dHh0Ykl2S2hyLW9xcHg3QXEzaHdidlh0M0plcGR4TWdzTk5hMmMyVnEyd3VFX0ROYTByX0hKWjNfeVVqN2pzWm1vcnRkYlQyYTZqajZuRjJvUmRxZmFwZXFhWElzNWwzRTItU1Foc3lqNnZtWG9QNmVrcjQ5RTZSdmZXMjhoQko5MlBUanp5dXFsdDZCWFNIWU02dEZHQ3FoVWVHdGJUbk1mM0RqUWR0Wk1jMVc2NmtzQVgwQ3l0U2pTZlc3NnhpdHFfTmlRUVFBUQ?oc=5",
-        "publishedAt": "2026-09-16T08:04:01+05:30",
-        "publishedAtLabel": "16 Sep 2026, 08:04:01 AM IST"
+        "title": "Divis Laboratories Ltd down for fifth straight session",
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQQ0h6SjlLdDMzSC1mTm9OZS1EcWE4SHI2ZTdwV0ZaY1hKalJ6dnJ2Ym5Ob3dlT0NZMEhRM2lkY2JER2pEcjhvMDlfTlhILUpaSjVwaDdPTldNVDJxSFV4ZHBsYVFSMm5MZzl4M2tiLXBpRHMxUUt1c1JmbFh2NFh3WkZEaWNCNTRyTEtRbnhxVHFVSGVlZWVHcmhTc013NHVXNzFvSjhCVEVUYXZZNXRzQjVUNHdza2tGZnRoSC12TElwU2lzUzVnTlowUUcwRUZIV1HSAdcBQVVfeXFMT2dFTEc0eFZhaHpaNFNhSUZfRGhIcXRFQnA3X2NzRE5RSGtiSklJWGx5dlZxaGl0RUJ3U3dUOG1XNEl6NDZFSjhWS2hlNnk3eDA4ZXJYNDdZZF9abE11RkVmT212THdqeThqRW52YjU1MHgtb2JLY3RDX3Z0ZlFWbllqUWphZVMwZHZrVjhreUZSTlp5d3Itb3NxVFpTZlFnWmRyWWlRSXFKSDlrazB4TEwxRUxaTjVSSE5BYXJzVDdiRGh4MDJfQnZqS0d5NG1CYl9FVVNPYk0?oc=5",
+        "publishedAt": "2026-09-16T14:51:28+05:30",
+        "publishedAtLabel": "16 Sep 2026, 02:51:28 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "Stocks to watch: Paytm, BHEL, Bharat Forge, Tempsens Instruments, Groww - business-standard.com",
-        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOR0xsRnRsZnRQa1dYT0dYTktTa1F6QUdWeDVJc0diWjdOWmgyU2VKUFpDYmtUU05fRzNEVzkycTR2X0hTSXh3YXhCNzlnckZXdTkwNEp3M2N5Z2JQN3FQWnU5YWZZZm43U2ZsRENfeURLdjdKR0VuUFJNWUNTSnZxTWJWUHFBNXkxV2FfbzdWa3FlMXpoUHh4YXo3NF9ySkdfZWVtT0VpTy1FTWhMU0lucnZ3OGdxM0JmVWllT281VWo0Zm4wUks3QXhmNEg2YW9KdkZzZDlTMWFOOGcyTVZR0gHkAUFVX3lxTE92MmFEUGxGRHI2dGZmZko4UlNEYmNpUGRxNEFfb2VXb3RZS0FUWEl0d1lGa0x6UzNzamNQdFhyQXVJZzVVR1RnZjlCNndJOGxLMF9VZnFkUXpmcllNUW91alpYN19LTXdhWjJQdndpa0JpQlU3Zkx5X19nOG1LRG9XbmlNaWd1OFlYWnhGY09TVlNhX1RNRDlqVEJwNFRlSG93Q3dyTGFSeWNNZzJYaUVLT2lva09JMU1HcTZMUURteWhhclBFQXU1Zllkb1QxY25iQjZWcnFZVGxJMnY3M25JQzlQVA?oc=5",
-        "publishedAt": "2026-09-16T07:58:17+05:30",
-        "publishedAtLabel": "16 Sep 2026, 07:58:17 AM IST"
+        "title": "Piramal Pharma Ltd drops for fifth straight session",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZFpndHBtcmMyX2F4X21VZ2tmdmxtQzlGWlNEblZvN2tqZ20xeGZQbmFOenpIeVVJMjVuenF2cW1KeWtWbkJSRG9TbmwtTHlxeTcyOFI0TFMwWnFyeG1xMUwxZmNlN1ZHT3diTkYtdWFJaVBiU295YVdyODVpeEEtcDFpbUxlT0ZXV2hBb0lxQTA3NmY2MTdVY0FnUXBpR2ZqTEhuVThYVlpHZHYxemotV3dYeW5VYi1NaHVYYWUyb0pxX0swSEduYTRUVTlZQdIB0wFBVV95cUxQWGF6ZFJoUmRfSGlDS2ZCajdkTzZnNFIydDV1anRMeDVaMkx0b0tfc3B5bkc3dGt5UWZmZlBwcW91TFJtUWtRbTBDU3Mtb0Utcmk2d282MGpnZmlCOFJmVmp1X2NnYkVndTdQcGVGaUYweHc1eHV5a0QtYXRQX0tJNGZOYjlkc3VqNlBLV3h4T1FNUWlmSGlUQ1cwdWdGai1kWDFsZzFrZ05EYkhVdG8wSjN1ejlGcms2ekxYZWJicDRzM1A3cUtjTTNLNWVWT2VCeEJj?oc=5",
+        "publishedAt": "2026-09-16T14:51:19+05:30",
+        "publishedAtLabel": "16 Sep 2026, 02:51:19 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "Technical view: Nifty's next important support at 22,700, says Vinay Rajani - business-standard.com",
-        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOMWZ4ODNYWmpuZzdiQWE2bWRTdDAtX05sWXBWSlcwV3N4REVPSDZWSlFyQk1lcXhLLVlRSHlUVENWZG9jd2VaSEFJUFZ5SWZXM1FCZHdPcFJVZzdmRU41WkpmcmJjcnN2Q2tSaklOTXVfZzQ1Y3hUamZOMjNrdzloUFFUa0tMWjdKLXZEV3d3N3FDZzhYaWVtX3JQb2NYcGpmWkJXcEEtblMza1pwcjY2eHRpWmpLZlpGNUNJSFR3TVRzbktLSktrNzBGUldBd2RPZkZEOW1YSdIB3AFBVV95cUxQSldzTHBvcjljMkpHVTROOGJpS1BwTkN3TW9RTGFDSWlvQXlsby14c1pxbWxsU0xWbEExQlRCNVk5cFo1ZEh1TDhsR3pUanZNVEJ6dnQyOUt2aThHREhHWllYcXJfWVJpdDFaWldKZWNtY0owQ0szQ21GZjBpOXJxZ0JjNlo2UWJEUVF0NXpLczFHTkhuaDZLaWc0TkZjRXFUbllQTkxtUHJld09SSzZVVENGRHlQWmF5UVlEMFlfT3BfQ2tEVC0tUlU0RkNpNW5qalBOaGsweFBsUncx?oc=5",
-        "publishedAt": "2026-09-16T07:56:49+05:30",
-        "publishedAtLabel": "16 Sep 2026, 07:56:49 AM IST"
+        "title": "Hindustan Copper Ltd slips for fifth straight session",
+        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNV3NjaUsyZ2UwMFBzSzk3RGZrMEhHNE4yQ252eTJuRms5Tkx3YnB3cTZfM01TZWRJaWNYb2pqOFJTRlRxMjdzdEcwQmhscS1pdVJ2NTZEaXBpOUIyMTQ4V2NBUXdlaFJVZFVzQ3MzVThmckwzYU5jS3pScm9aeHNVSV9ENEhTRjZwM2pXOVRTTmdqMDh4MmgtQjhZdzZLU3RLZnJlYS1COEhYV0dGTUtTamlvNE1fSGtMYlVMWC11SXFEZGJpSUZmOGFKdEFqTVdN0gHWAUFVX3lxTE5udzhmQXJaYXBXekVIQnZ3eWRkWTljNS02V1Vvc1FqZmJiakJaRks5QWJDUXNSbjc5Tlctb0dJTklBd3JGc0h5ZFF2TU05cF9vTHI1UkZkenRKeUFMeVc0akZyb194ME9jYlM5Njc1S25yQldQRjZwUXEtWmt0d1RDbk5ITmRxRkVEZ2c3Wkg5R0ZKNTZfV1FWUEJxNGQzRkNWVGJDZWZnZjdaeEQ0bUNOQUE1c0d1QlBIZDBUNFU4Y0I4TGVFSjY0OTB1Z0dyMExLSFBJMFE?oc=5",
+        "publishedAt": "2026-09-16T14:51:10+05:30",
+        "publishedAtLabel": "16 Sep 2026, 02:51:10 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "Nifty support slips to 22,950; Kalyan Jewellers, DLF on analyst radar - business-standard.com",
-        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOUTZsNGFFVlZmVVFlWVRJMkRPdFNONi1SWWV5eUh5TDJIS1ZRV2dWcHNTQzFobEwzOEJoSlZJZG5RTkNkVWRpS3U2U3ktemJjRlNKNXZiR19IejlPb0NkcS1vZ1pXbTZsT0NXd211eXRSVVhzSzh2b3pUekV3ZDJ0dWNnMm5BZmR6WlJETEtld2JPNzBtT25WR0ZCYUs0QTJaRWlVUXpmNlFYV055TGh0X2pzMldENVFLRi1oY0tHZ3FlZ0NJdE1CbVFITU9PbjjSAdQBQVVfeXFMT2FmM0xKbUJVMTdYVGxTSnd2em1SdUUwRWtWcUxDT090dGxVbzU4MnpWd21yb1ItbXo5OUxjdVNlbUIzdHlEdmgxdFAzNjlYbUlWb2dKR2podWlOWGNEMXZ5SG5hYnZrNWFBQlpMQ2dUNkkxeW9WRWhjbmFJOVpteTZmMkpsOWxJWXhka1NsMlN5R3pZMGNiSVVDeXlCYlJMVXlBYWN0cTczR3JrX2p5c2tDLTVUSGpqdFhiM3FPT2gxeHZYWjRPMWp0ZzEzSVJUSG9KUVQ?oc=5",
-        "publishedAt": "2026-09-16T07:42:13+05:30",
-        "publishedAtLabel": "16 Sep 2026, 07:42:13 AM IST"
+        "title": "NLC India Ltd drops for fifth straight session",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNbVJZVGZ1RDkwQnRfd3V1V0pZR1NHM2NLTzlOZWlVdlNhQkR0c09kaDVrSTVsOTd1T3c4NjZxcTBSX3hmT0JfM29Oc2IxZVBJMmZXQUtVTkZ3NTM3ZzlfaTZGRzYxaFlqcUEwakg4aGVjSm5mVmpNUWREN3l4cWhMMjg2ak83T1pEZ2lJaGg4cExtTEtvYm1wX0NYcjFycjd0THNaOVVNR2RLM3pablpmN193OW93bXRNWkVOaG52cFh4b2NOOXBZ0gHMAUFVX3lxTFBJa3FaUWZwa0dITFRMcDZDYVhTeHlOVS1PQTVMcHZEdGp4S1ZxcEFKMkhXamlReDNuRWFvWWk5dTdwMTlHbEpGOTduVHByOE5kTE1jN1ktdTNEQ2lJTGRvdEVQQ3Q0SHJoeUFxekF2M0VFbkdPaVc1MmlTQVpFXzZLMHJvUGlxbHNzTXcwZFJBeURRQTVvOWhpbFFYbEppcHJpY2dTcTlmRlZHTTdUNm9DTEk5SzZwX2U1OXZKOGhnWDlsU0pIdFZRaVdFZQ?oc=5",
+        "publishedAt": "2026-09-16T14:51:03+05:30",
+        "publishedAtLabel": "16 Sep 2026, 02:51:03 PM IST"
       },
       {
         "source": "Livemint",
-        "title": "Ed Sheeran-Macklemore \u2018Free Palestine\u2019 controversy: Here is everything that happened on the Loop Tour",
-        "link": "https://www.livemint.com/news/us-news/ed-sheeran-macklemore-free-palestine-controversy-here-is-everything-that-happened-on-the-loop-tour-11789524196076.html",
-        "publishedAt": "2026-09-16T07:42:02+05:30",
-        "publishedAtLabel": "16 Sep 2026, 07:42:02 AM IST"
+        "title": "Miss Universe India finalist returns to Google job in Bengaluru days after pageant",
+        "link": "https://www.livemint.com/news/trends/miss-universe-india-finalist-returns-to-google-job-in-bengaluru-days-after-pageant-11789548669554.html",
+        "publishedAt": "2026-09-16T14:48:40+05:30",
+        "publishedAtLabel": "16 Sep 2026, 02:48:40 PM IST"
       },
       {
         "source": "Livemint",
-        "title": "100% tariff threat to India: US House advances Russia sanctions bill | What we know",
-        "link": "https://www.livemint.com/news/us-news/100-tariff-threat-to-india-us-house-advances-russia-sanctions-bill-what-we-know-11789522442630.html",
-        "publishedAt": "2026-09-16T07:24:00+05:30",
-        "publishedAtLabel": "16 Sep 2026, 07:24:00 AM IST"
+        "title": "Bharat Forge, Pratt & Whitney join hands for India\u2019s HALE programme: What it means for India\u2019s UAV push",
+        "link": "https://www.livemint.com/news/india/bharat-forge-pratt-whitney-join-hands-for-india-s-hale-programme-what-it-means-for-india-s-uav-push-11789544117994.html",
+        "publishedAt": "2026-09-16T14:23:14+05:30",
+        "publishedAtLabel": "16 Sep 2026, 02:23:14 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Euro-Zone\u00a0Wage\u00a0Growth Set to Accelerate in 2027, ECB Says",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-16/euro-zone-wage-growth-set-to-accelerate-in-2027-ecb-says",
+        "publishedAt": "2026-09-16T13:42:05+05:30",
+        "publishedAtLabel": "16 Sep 2026, 01:42:05 PM IST"
       },
       {
         "source": "Livemint",
-        "title": "Iran War Live Updates: Saudi-led coalition in Yemen says it intercepted Houthi drone south of Mecca",
-        "link": "https://www.livemint.com/news/us-news/iran-us-war-live-updates-strait-of-hormuz-attack-on-saudi-houthis-oil-price-11789519266661.html",
-        "publishedAt": "2026-09-16T06:27:05+05:30",
-        "publishedAtLabel": "16 Sep 2026, 06:27:05 AM IST"
+        "title": "Tukaram Mundhe's latest action plan on medical devices: MRP vs procurement prices revealed",
+        "link": "https://www.livemint.com/news/india/tukaram-mundhes-latest-action-plan-on-medical-devices-mrp-vs-procurement-prices-revealed-11789543323689.html",
+        "publishedAt": "2026-09-16T13:39:03+05:30",
+        "publishedAtLabel": "16 Sep 2026, 01:39:03 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Time Magazine's \u2018AI Tipping Point\u2019 cover sparks debate online: 'AI fear mongering is stupid\u2019",
+        "link": "https://www.livemint.com/news/trends/time-magazines-ai-tipping-point-cover-sparks-debate-online-ai-fear-mongering-is-stupid-11789543342158.html",
+        "publishedAt": "2026-09-16T13:12:35+05:30",
+        "publishedAtLabel": "16 Sep 2026, 01:12:35 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "Pakistan Navy ship collides with Indian warship in Arabian Sea; New Delhi summons Islamabad envoy",
+        "link": "https://www.livemint.com/news/india/pakistan-navy-ship-collides-with-indian-warship-in-arabian-sea-new-delhi-summons-islamabad-envoy-11789544092089.html",
+        "publishedAt": "2026-09-16T13:10:14+05:30",
+        "publishedAtLabel": "16 Sep 2026, 01:10:14 PM IST"
       },
       {
         "source": "Bloomberg Economics",
-        "title": "US-China Discuss Cutting Some Tariffs as Leaders Prepare to Meet",
-        "link": "https://www.bloomberg.com/news/articles/2026-09-16/us-china-discuss-cutting-some-tariffs-as-leaders-prepare-to-meet",
-        "publishedAt": "2026-09-16T06:23:27+05:30",
-        "publishedAtLabel": "16 Sep 2026, 06:23:27 AM IST"
+        "title": "South African Inflation Expectations Dip Before Rate Call",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-16/south-african-inflation-expectations-rise-before-rate-decision",
+        "publishedAt": "2026-09-16T12:33:31+05:30",
+        "publishedAtLabel": "16 Sep 2026, 12:33:31 PM IST"
       },
       {
         "source": "Bloomberg Economics",
-        "title": "Japan\u2019s Export Growth Stays Solid as Shipments of Chips Jump",
-        "link": "https://www.bloomberg.com/news/articles/2026-09-15/japan-s-export-growth-stays-robust-as-shipments-to-us-lead-gains",
-        "publishedAt": "2026-09-16T05:28:06+05:30",
-        "publishedAtLabel": "16 Sep 2026, 05:28:06 AM IST"
+        "title": "UK Inflation Rises to Five-Month High Before BOE Decision",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-16/uk-inflation-rises-to-five-month-high-ahead-of-boe-rate-decision",
+        "publishedAt": "2026-09-16T11:34:33+05:30",
+        "publishedAtLabel": "16 Sep 2026, 11:34:33 AM IST"
       },
       {
         "source": "Bloomberg Economics",
-        "title": "AI, Data Center Spending by Multinationals Boosts Irish Economy",
-        "link": "https://www.bloomberg.com/news/articles/2026-09-15/ai-data-center-spending-by-multinationals-boosts-irish-economy",
-        "publishedAt": "2026-09-16T04:31:00+05:30",
-        "publishedAtLabel": "16 Sep 2026, 04:31:00 AM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Thai Finance Chief Sticks to 2.5% Growth Goal Despite Oil Surge",
-        "link": "https://www.bloomberg.com/news/articles/2026-09-15/thai-finance-chief-sticks-to-2-5-growth-goal-despite-oil-surge",
-        "publishedAt": "2026-09-16T04:30:00+05:30",
-        "publishedAtLabel": "16 Sep 2026, 04:30:00 AM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Carry Traders Eye Franc and Krona as Yen\u2019s Funding Appeal Ebbs",
-        "link": "https://www.bloomberg.com/news/articles/2026-09-15/carry-traders-eye-franc-and-krona-as-yen-s-funding-appeal-ebbs",
-        "publishedAt": "2026-09-16T04:30:00+05:30",
-        "publishedAtLabel": "16 Sep 2026, 04:30:00 AM IST"
+        "title": "PBOC Chief Unfazed by Credit Slump as Era of Surging Loans Ends",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-16/pboc-chief-unfazed-by-credit-slump-as-era-of-surging-loans-ends",
+        "publishedAt": "2026-09-16T09:55:51+05:30",
+        "publishedAtLabel": "16 Sep 2026, 09:55:51 AM IST"
       }
     ],
     "sourcesAvailable": [
