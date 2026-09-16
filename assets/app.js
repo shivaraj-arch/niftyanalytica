@@ -62,6 +62,7 @@ let aiRefreshTimer = null;
 let marketActivityRows = [];
 let lastNewsRailSnapshot = null;
 let lastMarketTapeLoadAt = 0;
+let lastMarketTapeMarkup = '';
 
 const fetchWithTimeout = async (url, options = {}, timeoutMs = DEFAULT_FETCH_TIMEOUT_MS) => {
   const controller = new AbortController();
@@ -1334,6 +1335,7 @@ const renderMarketTape = (items) => {
   if (!items.length) {
     setText('marketTapeHighlights', 'Top Movements: Waiting for world markets.');
     host.innerHTML = '<p>No market tape available.</p>';
+    lastMarketTapeMarkup = '';
     return;
   }
 
@@ -1369,8 +1371,29 @@ const renderMarketTape = (items) => {
   setText('marketTapeMeta', 'Global market pulse for the current session. Hover to pause the tape and read each move.');
   setText('marketTapeHighlights', buildMarketTapeHighlights(items));
 
-  host.innerHTML = rowFor(worldItems.length ? worldItems : items)
+  const markup = rowFor(worldItems.length ? worldItems : items)
     + (adrItems.length ? rowFor(adrItems, 'Indian ADRs \u00b7 US overnight', 'ticker-row-adr') : '');
+
+  // The rail re-renders every 60s but the world row takes 110s to scroll once,
+  // so rebuilding unconditionally restarted the animation mid-cycle and read as
+  // a stutter just past the seam. Skip identical redraws, and carry the scroll
+  // position across the ones that really do change.
+  if (markup === lastMarketTapeMarkup && host.querySelector('.ticker-track')) {
+    return;
+  }
+
+  const carried = [...host.querySelectorAll('.ticker-track')]
+    .map((track) => (track.getAnimations ? (track.getAnimations()[0] || {}).currentTime : null));
+
+  host.innerHTML = markup;
+  lastMarketTapeMarkup = markup;
+
+  [...host.querySelectorAll('.ticker-track')].forEach((track, index) => {
+    const animation = track.getAnimations ? track.getAnimations()[0] : null;
+    if (animation && carried[index] != null) {
+      animation.currentTime = carried[index];
+    }
+  });
 };
 
 const renderNewsFeed = (newsFeed) => {
