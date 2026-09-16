@@ -1,127 +1,316 @@
 {
   "marketTape": {
-    "updatedAt": "2026-09-15T15:02:46.137812+05:30",
-    "items": [],
-    "ageMinutes": 456.9039342833333,
-    "sourceErrors": [
+    "updatedAt": "2026-09-16T03:31:01.962Z",
+    "items": [
       {
-        "source": "pages/news-feed.json",
-        "error": "published marketTape is empty"
+        "label": "DOW 30 (Close)",
+        "last": 52093.1,
+        "changePercent": -0.63,
+        "source": "SGX Nifty / Indices",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
       },
       {
-        "source": "pages/news-feed.json",
-        "error": "tape is 457 min old (limit 90)"
+        "label": "S&P 500 (Close)",
+        "last": 7585.73,
+        "changePercent": -0.45,
+        "source": "SGX Nifty / Indices",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "NASDAQ COMPO (Close)",
+        "last": 25981.6,
+        "changePercent": -0.78,
+        "source": "SGX Nifty / Indices",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "FTSE 100 (Close)",
+        "last": 10658.1,
+        "changePercent": -0.37,
+        "source": "SGX Nifty / Indices",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "DAX (Close)",
+        "last": 25402.3,
+        "changePercent": -0.15,
+        "source": "SGX Nifty / Indices",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "NIKKEI 225 (Close)",
+        "last": 63396,
+        "changePercent": -0.14,
+        "source": "SGX Nifty / Indices",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "SHANGHAI COM (Open)",
+        "last": 3872.6,
+        "changePercent": 0.22,
+        "source": "SGX Nifty / Indices",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "DOW 30 FUTUR (Open)",
+        "last": 52658,
+        "changePercent": 0.25,
+        "source": "SGX Nifty / Futures",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "S&P 500 FUTU (Open)",
+        "last": 7675.5,
+        "changePercent": 0.25,
+        "source": "SGX Nifty / Futures",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "NASDAQ 100 F (Open)",
+        "last": 29332.8,
+        "changePercent": 0.29,
+        "source": "SGX Nifty / Futures",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "FTSE 100 FUT (Open)",
+        "last": 10758.3,
+        "changePercent": 0.04,
+        "source": "SGX Nifty / Futures",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "DAX FUTURES (Open)",
+        "last": 25682.5,
+        "changePercent": 0.27,
+        "source": "SGX Nifty / Futures",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "US DOLLAR IN (Open)",
+        "last": 99.651,
+        "changePercent": 0.04,
+        "source": "SGX Nifty / Futures",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "S&P 500 VIX (Close)",
+        "last": 17.2,
+        "changePercent": 0.58,
+        "source": "SGX Nifty / Futures",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "GOLD (Open)",
+        "last": 4376.8,
+        "changePercent": 1.02,
+        "source": "SGX Nifty / Commodities",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "SILVER (Open)",
+        "last": 65.225,
+        "changePercent": 2.14,
+        "source": "SGX Nifty / Commodities",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "COPPER (Open)",
+        "last": 6.4795,
+        "changePercent": 0.56,
+        "source": "SGX Nifty / Commodities",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "CRUDE OIL (Open)",
+        "last": 104.29,
+        "changePercent": -1.46,
+        "source": "SGX Nifty / Commodities",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "BRENT OIL (Open)",
+        "last": 107.54,
+        "changePercent": -1.11,
+        "source": "SGX Nifty / Commodities",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "NATURAL GAS (Open)",
+        "last": 2.932,
+        "changePercent": 0.45,
+        "source": "SGX Nifty / Commodities",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "EUR/USD (Open)",
+        "last": 1.1542,
+        "changePercent": -0.01,
+        "source": "SGX Nifty / Currencies",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "USD/JPY (Open)",
+        "last": 155.33,
+        "changePercent": 0.16,
+        "source": "SGX Nifty / Currencies",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "GBP/USD (Open)",
+        "last": 1.3477,
+        "changePercent": 0.02,
+        "source": "SGX Nifty / Currencies",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "USD/CHF (Open)",
+        "last": 0.8189,
+        "changePercent": 0.02,
+        "source": "SGX Nifty / Currencies",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "USD/CAD (Open)",
+        "last": 1.3932,
+        "changePercent": 0.11,
+        "source": "SGX Nifty / Currencies",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "AUD/USD (Open)",
+        "last": 0.7122,
+        "changePercent": -0.1,
+        "source": "SGX Nifty / Currencies",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "USD/CNY (Open)",
+        "last": 6.7097,
+        "changePercent": -0.02,
+        "source": "SGX Nifty / Currencies",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
+      },
+      {
+        "label": "USD/INR (Close)",
+        "last": 95.95,
+        "changePercent": 0,
+        "source": "SGX Nifty / Currencies",
+        "updatedAt": "2026-09-16T03:31:01.962Z"
       }
-    ]
+    ],
+    "ageMinutes": 0.06223661666666667,
+    "origin": "supabase",
+    "sourceErrors": []
   },
   "newsFeed": {
-    "updatedAt": "2026-09-15T22:41:41.252427+05:30",
-    "updatedAtLabel": "15 Sep 2026, 10:41:41 PM IST",
+    "updatedAt": "2026-09-16T09:03:10.059138+05:30",
+    "updatedAtLabel": "16 Sep 2026, 09:03:10 AM IST",
     "items": [
       {
         "source": "Livemint",
-        "title": "Nick Reiner will not face death penalty in alleged murders of parents Rob and Michele Singer Reiner",
-        "link": "https://www.livemint.com/news/us-news/nick-reiner-will-not-face-death-penalty-in-alleged-murders-of-parents-rob-and-michele-singer-reiner-11789486872897.html",
-        "publishedAt": "2026-09-15T22:29:27+05:30",
-        "publishedAtLabel": "15 Sep 2026, 10:29:27 PM IST"
+        "title": "Iran war: Photos show widespread damage at US bases across Middle East after missile, drone attacks",
+        "link": "https://www.livemint.com/news/us-news/iran-war-photos-show-widespread-damage-at-us-bases-across-middle-east-after-missile-drone-attacks-11789527881090.html",
+        "publishedAt": "2026-09-16T09:02:45+05:30",
+        "publishedAtLabel": "16 Sep 2026, 09:02:45 AM IST"
       },
       {
         "source": "Livemint",
-        "title": "Agartala-Delhi IndiGo flight carrying 103 passengers diverted to Lucknow after smoke warning",
-        "link": "https://www.livemint.com/news/india/agartaladelhi-indigo-flight-carrying-103-passengers-diverted-to-lucknow-after-smoke-warning-11789490248494.html",
-        "publishedAt": "2026-09-15T22:28:21+05:30",
-        "publishedAtLabel": "15 Sep 2026, 10:28:21 PM IST"
+        "title": "Petrol and diesel prices today, Sept 16: How much does fuel cost in Delhi, Mumbai, Bengaluru? Check here",
+        "link": "https://www.livemint.com/news/india/petrol-and-diesel-prices-today-sept-16-how-much-does-fuel-cost-in-delhi-mumbai-bengaluru-check-here-11789524764564.html",
+        "publishedAt": "2026-09-16T08:43:24+05:30",
+        "publishedAtLabel": "16 Sep 2026, 08:43:24 AM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Asian stocks edge higher ahead of Fed decision as yields, oil pause - business-standard.com",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPSEIzTzBGSEk3cmpGamdKUjZZMkZwOXA1WXZzdDl1S0dBbFMxcU8zMEV5Q3gyZU9PWTFUTV9ZZ3c3WTJQZVB6LVU1VXpYT0ZaaDloTFg2a192RDR4NGh1Zng3QXo4NkVEUDJCQW00V3owMWJtbTlQbTdHczFfOWhYQTJRalczS1NKWnhleXVfNkFIWnF2WE9ZYUVzVzFEbXlqMWpJQkY1SHhtSEtZMi1OS2c3c0s4ZDBCNFhWRmRlSlRfbElwX2NFVWRJTTBCQdIB0wFBVV95cUxOYVNOLUdEaWRlOGtuTDIwRjR0QUU3eWR6U25PblRJaXI4S2lGUkJQMEtMM0l1UWd5dzkwY3prZENFQXI5T0pCMFZ6UUgxQzdHMjNSWEtoODVqTWRJRXo0NWFjWURkcHRtd1BrbE9ydGNJMjN0UW90YXlnSlN2cEhtdVRpTWJyVjdkYl83T1ZNN2JxODR0X0RRMkJSNWw5RFY2cVMzU3lhSm5UamdQWFF5WjVCei1KcE0wM0JfaDE5ZEhlWGtXS29UN2otNVVqNWM2d2Jz?oc=5",
+        "publishedAt": "2026-09-16T08:29:28+05:30",
+        "publishedAtLabel": "16 Sep 2026, 08:29:28 AM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Saatvik Green Energy bags Rs 1,042-cr solar module order - business-standard.com",
+        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQVWRoelA2WUY0Rnl1aFVlb2E1RWxnZ2hEWHVvb1IxZFhfTzA2QnhnZjVQMlQwcTI0SHB1aE5lV3pmQUhKaGVWU2JsWUcxMFJFYWRZbzhCMWdZbExzRzZBblVPcnBSWHpXSkpVVHZEWXVSdER4N25USUdEUnF1Q1doa0toS2hqc3p5M3U3SVRhNnZGQUhkOEJBYVhULTY2VmJhT3dkYjlZU3RoaUlWMFRYY2t1ZVdFdGZlUUF0dXhpQWlPQ3lzOFlRakd4YXhNaUtjUnVtSdIB2gFBVV95cUxOZGJYSVo4TGo3dHh0Ykl2S2hyLW9xcHg3QXEzaHdidlh0M0plcGR4TWdzTk5hMmMyVnEyd3VFX0ROYTByX0hKWjNfeVVqN2pzWm1vcnRkYlQyYTZqajZuRjJvUmRxZmFwZXFhWElzNWwzRTItU1Foc3lqNnZtWG9QNmVrcjQ5RTZSdmZXMjhoQko5MlBUanp5dXFsdDZCWFNIWU02dEZHQ3FoVWVHdGJUbk1mM0RqUWR0Wk1jMVc2NmtzQVgwQ3l0U2pTZlc3NnhpdHFfTmlRUVFBUQ?oc=5",
+        "publishedAt": "2026-09-16T08:04:01+05:30",
+        "publishedAtLabel": "16 Sep 2026, 08:04:01 AM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Stocks to watch: Paytm, BHEL, Bharat Forge, Tempsens Instruments, Groww - business-standard.com",
+        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOR0xsRnRsZnRQa1dYT0dYTktTa1F6QUdWeDVJc0diWjdOWmgyU2VKUFpDYmtUU05fRzNEVzkycTR2X0hTSXh3YXhCNzlnckZXdTkwNEp3M2N5Z2JQN3FQWnU5YWZZZm43U2ZsRENfeURLdjdKR0VuUFJNWUNTSnZxTWJWUHFBNXkxV2FfbzdWa3FlMXpoUHh4YXo3NF9ySkdfZWVtT0VpTy1FTWhMU0lucnZ3OGdxM0JmVWllT281VWo0Zm4wUks3QXhmNEg2YW9KdkZzZDlTMWFOOGcyTVZR0gHkAUFVX3lxTE92MmFEUGxGRHI2dGZmZko4UlNEYmNpUGRxNEFfb2VXb3RZS0FUWEl0d1lGa0x6UzNzamNQdFhyQXVJZzVVR1RnZjlCNndJOGxLMF9VZnFkUXpmcllNUW91alpYN19LTXdhWjJQdndpa0JpQlU3Zkx5X19nOG1LRG9XbmlNaWd1OFlYWnhGY09TVlNhX1RNRDlqVEJwNFRlSG93Q3dyTGFSeWNNZzJYaUVLT2lva09JMU1HcTZMUURteWhhclBFQXU1Zllkb1QxY25iQjZWcnFZVGxJMnY3M25JQzlQVA?oc=5",
+        "publishedAt": "2026-09-16T07:58:17+05:30",
+        "publishedAtLabel": "16 Sep 2026, 07:58:17 AM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Technical view: Nifty's next important support at 22,700, says Vinay Rajani - business-standard.com",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOMWZ4ODNYWmpuZzdiQWE2bWRTdDAtX05sWXBWSlcwV3N4REVPSDZWSlFyQk1lcXhLLVlRSHlUVENWZG9jd2VaSEFJUFZ5SWZXM1FCZHdPcFJVZzdmRU41WkpmcmJjcnN2Q2tSaklOTXVfZzQ1Y3hUamZOMjNrdzloUFFUa0tMWjdKLXZEV3d3N3FDZzhYaWVtX3JQb2NYcGpmWkJXcEEtblMza1pwcjY2eHRpWmpLZlpGNUNJSFR3TVRzbktLSktrNzBGUldBd2RPZkZEOW1YSdIB3AFBVV95cUxQSldzTHBvcjljMkpHVTROOGJpS1BwTkN3TW9RTGFDSWlvQXlsby14c1pxbWxsU0xWbEExQlRCNVk5cFo1ZEh1TDhsR3pUanZNVEJ6dnQyOUt2aThHREhHWllYcXJfWVJpdDFaWldKZWNtY0owQ0szQ21GZjBpOXJxZ0JjNlo2UWJEUVF0NXpLczFHTkhuaDZLaWc0TkZjRXFUbllQTkxtUHJld09SSzZVVENGRHlQWmF5UVlEMFlfT3BfQ2tEVC0tUlU0RkNpNW5qalBOaGsweFBsUncx?oc=5",
+        "publishedAt": "2026-09-16T07:56:49+05:30",
+        "publishedAtLabel": "16 Sep 2026, 07:56:49 AM IST"
+      },
+      {
+        "source": "Business Standard",
+        "title": "Nifty support slips to 22,950; Kalyan Jewellers, DLF on analyst radar - business-standard.com",
+        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOUTZsNGFFVlZmVVFlWVRJMkRPdFNONi1SWWV5eUh5TDJIS1ZRV2dWcHNTQzFobEwzOEJoSlZJZG5RTkNkVWRpS3U2U3ktemJjRlNKNXZiR19IejlPb0NkcS1vZ1pXbTZsT0NXd211eXRSVVhzSzh2b3pUekV3ZDJ0dWNnMm5BZmR6WlJETEtld2JPNzBtT25WR0ZCYUs0QTJaRWlVUXpmNlFYV055TGh0X2pzMldENVFLRi1oY0tHZ3FlZ0NJdE1CbVFITU9PbjjSAdQBQVVfeXFMT2FmM0xKbUJVMTdYVGxTSnd2em1SdUUwRWtWcUxDT090dGxVbzU4MnpWd21yb1ItbXo5OUxjdVNlbUIzdHlEdmgxdFAzNjlYbUlWb2dKR2podWlOWGNEMXZ5SG5hYnZrNWFBQlpMQ2dUNkkxeW9WRWhjbmFJOVpteTZmMkpsOWxJWXhka1NsMlN5R3pZMGNiSVVDeXlCYlJMVXlBYWN0cTczR3JrX2p5c2tDLTVUSGpqdFhiM3FPT2gxeHZYWjRPMWp0ZzEzSVJUSG9KUVQ?oc=5",
+        "publishedAt": "2026-09-16T07:42:13+05:30",
+        "publishedAtLabel": "16 Sep 2026, 07:42:13 AM IST"
       },
       {
         "source": "Livemint",
-        "title": "Trump\u2019s bid to put his name on Kennedy Center blocked again by federal judge; \u2018Trump Plaza\u2019 plan also halted",
-        "link": "https://www.livemint.com/news/us-news/trumps-bid-to-put-his-name-on-kennedy-center-blocked-again-by-federal-judge-11789490055385.html",
-        "publishedAt": "2026-09-15T22:23:55+05:30",
-        "publishedAtLabel": "15 Sep 2026, 10:23:55 PM IST"
+        "title": "Ed Sheeran-Macklemore \u2018Free Palestine\u2019 controversy: Here is everything that happened on the Loop Tour",
+        "link": "https://www.livemint.com/news/us-news/ed-sheeran-macklemore-free-palestine-controversy-here-is-everything-that-happened-on-the-loop-tour-11789524196076.html",
+        "publishedAt": "2026-09-16T07:42:02+05:30",
+        "publishedAtLabel": "16 Sep 2026, 07:42:02 AM IST"
       },
       {
         "source": "Livemint",
-        "title": "UPI sets charges for merchant payments above  \u20b92,000, caps fee at  \u20b9300",
-        "link": "https://www.livemint.com/news/upi-sets-charges-for-merchant-payments-above-2-000-caps-fee-at-300-11789482097465.html",
-        "publishedAt": "2026-09-15T21:59:47+05:30",
-        "publishedAtLabel": "15 Sep 2026, 09:59:47 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Bessent Says US Yen Intervention Was \u2018Nominal,\u2019 Backs US Exports",
-        "link": "https://www.bloomberg.com/news/articles/2026-09-15/bessent-says-us-yen-intervention-was-nominal-backs-us-exports",
-        "publishedAt": "2026-09-15T21:53:25+05:30",
-        "publishedAtLabel": "15 Sep 2026, 09:53:25 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "History Shows Fed Will Deliver Rate Hike Markets Have Locked In",
-        "link": "https://www.bloomberg.com/news/articles/2026-09-15/history-shows-fed-will-deliver-rate-hike-markets-have-locked-in",
-        "publishedAt": "2026-09-15T21:49:03+05:30",
-        "publishedAtLabel": "15 Sep 2026, 09:49:03 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "High food inflation seen in August unlikely to persist: CEA Nageswaran",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPZW9uZkFlUk1YdEJFeTZ0NXFjOHBnalBidkRkMTBDT0pCbHV6cUxNVTRZeGVTQ0pZOE5McTVINTQ1SVJaZ2xwZC1lQ1BONjNBaHZQYTMxby1nNzFmWWJJX3VVRnFXNUV1c2E4YWVnQjRBanQzSm1DTTBIbGxTZnROUjY1TWdnMm5RSDNmTHN5SUsxZDNUaVBUZ3pxZGdMQmpOUVRveWg4NllIYmpVV2tyS1h5Xzl4TWVZYVBiZWdyRjRJelpsUWVXUm84VV83WUtNcEHSAdcBQVVfeXFMUGRldUlKUFBlZmdwTndIaUtESmpKZTZ4UE5FeWswdTlvVXZzbkZPcS1BUWtLTGkxOF9BTUNuNGtub0VjT0ZRNWU0bldKZkx5ZXBINU0xdk5OZXdiMGZSOUJPRHltWG9iclhZY25KWmRVVHFUOFBXNXoxX0RTRVlSYU56bFZSLXJVeDFIeWpjMnE1bFlxaDZ2UlRhZ3FrMHBnZDFBWFlhcmo2RXNsV3A2OG9uZmZXaXU1NndIbkJvdUNQMjB4RzVBb1lrUUlWTk9xR21hTWJ5dEU?oc=5",
-        "publishedAt": "2026-09-15T21:47:28+05:30",
-        "publishedAtLabel": "15 Sep 2026, 09:47:28 PM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Telangana tops India's inflation table for eighth consecutive month",
-        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPWTZsOVA5dnZvWXUwM0dvUXVjaWVNSWxNWjZXM1lTQV96RllOVThQTVotdXIzd1p2NThVN0VCMlY0dTZnVE5qbkZTMlRPaTBLMXNyLW83blpIZ09jQ0NfNGF5a0RKNkJ5Uk1EUGhTSHJJVkstdzlzVWUzR3M1c3pPRmZhRGpnMy1Vdk5pVUtONFp4QVk5aFZEcmdleEJrNzZvOE1lUzBNbE04emJrY3EyNWZDTFZleUJmQnpYSG5YS2VLeGdRNUs4aHFlbHBIdU3SAdQBQVVfeXFMTVNVWXVFbFc3R1NlSkNTa01kWGl0Yk1uY1dPM0dtUUhRTkU3SUg4MldWY0pLSkNWOG8zWERvT2RCRDA1NDUyaTNIUGdkZXVkeF9MazFISUt6ZkhzV2NfWW9Sd09scXpqTVdZRW9xaG1iR3lPOU5lVWFDV1pkcXRRTVBlT2ZxM21qQmlNVlJPZ1Q4Z2JkdjV3MXp1ejNacFF1eUNHWGJQbDJLdjJtX0NodVBnd1otZFB0czVNZl9JYy1pMGlDalFBdlVNbGpyY0RrNUM4cUU?oc=5",
-        "publishedAt": "2026-09-15T21:39:42+05:30",
-        "publishedAtLabel": "15 Sep 2026, 09:39:42 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "UK Budget to Be Based on a Single Set of Economic Forecasts",
-        "link": "https://www.bloomberg.com/news/articles/2026-09-15/uk-chancellor-scales-back-economic-forecasts-before-budget",
-        "publishedAt": "2026-09-15T21:25:02+05:30",
-        "publishedAtLabel": "15 Sep 2026, 09:25:02 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Peru\u2019s Economy Rebounded in July to Top Forecasts",
-        "link": "https://www.bloomberg.com/news/articles/2026-09-15/peru-s-economy-rebounded-in-july-to-top-forecasts",
-        "publishedAt": "2026-09-15T21:23:12+05:30",
-        "publishedAtLabel": "15 Sep 2026, 09:23:12 PM IST"
+        "title": "100% tariff threat to India: US House advances Russia sanctions bill | What we know",
+        "link": "https://www.livemint.com/news/us-news/100-tariff-threat-to-india-us-house-advances-russia-sanctions-bill-what-we-know-11789522442630.html",
+        "publishedAt": "2026-09-16T07:24:00+05:30",
+        "publishedAtLabel": "16 Sep 2026, 07:24:00 AM IST"
       },
       {
         "source": "Livemint",
-        "title": "\u2018Strong dollar is not a price on a screen\u2019: Bessent defends US currency as global transactions rise",
-        "link": "https://www.livemint.com/news/us-news/strong-dollar-is-not-a-price-on-a-screen-bessent-defends-us-currency-as-global-transactions-rise-11789484954700.html",
-        "publishedAt": "2026-09-15T21:06:32+05:30",
-        "publishedAtLabel": "15 Sep 2026, 09:06:32 PM IST"
+        "title": "Iran War Live Updates: Saudi-led coalition in Yemen says it intercepted Houthi drone south of Mecca",
+        "link": "https://www.livemint.com/news/us-news/iran-us-war-live-updates-strait-of-hormuz-attack-on-saudi-houthis-oil-price-11789519266661.html",
+        "publishedAt": "2026-09-16T06:27:05+05:30",
+        "publishedAtLabel": "16 Sep 2026, 06:27:05 AM IST"
       },
       {
         "source": "Bloomberg Economics",
-        "title": "Rep. Waters Presses Bessent on Inflation, Iran and Tariffs",
-        "link": "https://www.bloomberg.com/news/videos/2026-09-15/rep-waters-presses-bessent-on-inflation-iran-tariffs-video",
-        "publishedAt": "2026-09-15T20:52:58+05:30",
-        "publishedAtLabel": "15 Sep 2026, 08:52:58 PM IST"
+        "title": "US-China Discuss Cutting Some Tariffs as Leaders Prepare to Meet",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-16/us-china-discuss-cutting-some-tariffs-as-leaders-prepare-to-meet",
+        "publishedAt": "2026-09-16T06:23:27+05:30",
+        "publishedAtLabel": "16 Sep 2026, 06:23:27 AM IST"
       },
       {
-        "source": "Business Standard",
-        "title": "India's current account deficit more than doubles to $7 billion in July",
-        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPUC1EWV8teVdNWm1ZSzd1SWlKTmxCb3R3cWRNRXlhNUhYb3lyejZMSzRockllWnFRWnZCYzlueGU1aVdPUUlzOXkyOTBCNDlYM0Z4RmRwbGJvUUhsZGNaX2JxMGRFN1EwNENoZHBWWHEzaGdaRVJWLTNqRGR1X08wRVpNS1dGeHN5RmgwejRGOVpUQndVekFpc1pLVUVpb0RMck8xX0JOc1k4NVhxOHcycWVxbnAwa2VycllRakhReEViRmt1QVkwVGEwRUFNOGRST1ZV0gHYAUFVX3lxTE1fWDI1M3lxQnhoLVAzMUl2X1p4S0dob2VhZm12QnpGY2l5WWFOMVhRS3laZXh2dUFYd0hTaE9pR0VDNkRlZ2h5YWdwMWZvdUx6TUZ1VWRNSzktNmJoYjllSGltNjlnejRiLTM1aXJBM1NacU5wVDIyMUtudnBkNWhNUElCTVY2cWkyYk5HNENiS0Z5bG9ZU25sUGgtNGZQTmVDSFJjVDhVTWJnRU9rTW5GOEJnSmsxZndlZC1CTmZzMlljZTFJSTYtVy1ObDNGOXJ6MlFhV1dkRg?oc=5",
-        "publishedAt": "2026-09-15T19:57:41+05:30",
-        "publishedAtLabel": "15 Sep 2026, 07:57:41 PM IST"
+        "source": "Bloomberg Economics",
+        "title": "Japan\u2019s Export Growth Stays Solid as Shipments of Chips Jump",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-15/japan-s-export-growth-stays-robust-as-shipments-to-us-lead-gains",
+        "publishedAt": "2026-09-16T05:28:06+05:30",
+        "publishedAtLabel": "16 Sep 2026, 05:28:06 AM IST"
       },
       {
-        "source": "Business Standard",
-        "title": "Bharat Forge collaborates with Pratt & Whitney Canada",
-        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPOC00MTVzMi1idXl3QUJPaXV5NFFfTkxhU2xkemtlTmxtV2gxR0ZNNHZhamhWOTF0bWxYLThHZ1Aza0UwNnlNMzEyM0ZVRVpDMW1BMkRIcVJMTmF0SEI3azZ5SGxIbldxOVhiVkRDMnFrUVV4QUZGRnV0VXpxdHh2SEdVZU1nZ1NjTnA3ZHpwbnYzZ05DdGNhdjdoMkR6Yks1V3BxWDZuMzVHWGswVmpHZkw4NnNYdDFmYnZoM0JsdUEwaWxsaGRyM056U0ZLQdIB0wFBVV95cUxNTDFqUWdzZFlRMjU5c2JDUDcxQ3NvTm92TUNHYmx4RVhIRjhSZ0ctOU1NT1JtSm05NkRpaHBiSTBJQTJrcmREX1BaUTZoRDBYMmRYa1RNUUVlS0FXN0NwbWY5VlVoUWJFQmZwWDFjcV81LWNJV01SU1hYUmkxM2x2OVlZUU1KQU4ydm5WcGRDRUhQbXZGN0JQdEt1WnhJSHNCMEtwbkNXZmw5SDBQSEFqWjZ3LWtoRzBRSnJUN2k4T1Y2ZGI5OFZzcUx2R0paZUNOTmZj?oc=5",
-        "publishedAt": "2026-09-15T19:50:02+05:30",
-        "publishedAtLabel": "15 Sep 2026, 07:50:02 PM IST"
+        "source": "Bloomberg Economics",
+        "title": "AI, Data Center Spending by Multinationals Boosts Irish Economy",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-15/ai-data-center-spending-by-multinationals-boosts-irish-economy",
+        "publishedAt": "2026-09-16T04:31:00+05:30",
+        "publishedAtLabel": "16 Sep 2026, 04:31:00 AM IST"
       },
       {
-        "source": "Business Standard",
-        "title": "Rupee falls 0.42% to 95.96, posts sharpest decline since July 14",
-        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxONzY4SWJmYl9UMGpfWnVWYVkxSDRlb0VYbEdqMGZRd3ZMc0I3TXJQVl9xQkYtQWduWXdtQ0JVX2dEczRSMmFjUFdJVU1RbzlTSXl2cE9zRHlkT1FERkdGWS1KRzJSS3JzcVpiYXJXVFpPTmlDYWhpaE1BWFlmVnN2UFRJWkJMOTBiSHM2bGIxX2tqT0NtVURBMHc1SlRNU3dtN3Z3Q0QwdndkLXdpdWFwMkpUaERnZm1QbDFiWE8xeTgxS0gxQmoyQ9IBzgFBVV95cUxNUEE2VGU5ZXllZ214T2pIdEplNTcyQWFlRjd3ZWQ1dzlKSzhtYlVKMlBsd3FtbFpRa1Z2aXNOQ1VVT0VPXzRHQ0ltQkNsenhBSGg3X2I4OTJuZkp6M19rbVZ4dEYyWVI0WkFIUVpuNEZjT2Z2aGMyWFAxVmIxWjZJUjJLa0ZDZVNodEQ2MVVoZHpMWXllQ0U0WkkzV1ZpNTRsYVpCYWpsTXhjWFd4cVZjcDYta0pMdDQ1Z1FTZDRXQWZqS3Q4WV81eDdYZGlIdw?oc=5",
-        "publishedAt": "2026-09-15T19:39:55+05:30",
-        "publishedAtLabel": "15 Sep 2026, 07:39:55 PM IST"
+        "source": "Bloomberg Economics",
+        "title": "Thai Finance Chief Sticks to 2.5% Growth Goal Despite Oil Surge",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-15/thai-finance-chief-sticks-to-2-5-growth-goal-despite-oil-surge",
+        "publishedAt": "2026-09-16T04:30:00+05:30",
+        "publishedAtLabel": "16 Sep 2026, 04:30:00 AM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "Carry Traders Eye Franc and Krona as Yen\u2019s Funding Appeal Ebbs",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-15/carry-traders-eye-franc-and-krona-as-yen-s-funding-appeal-ebbs",
+        "publishedAt": "2026-09-16T04:30:00+05:30",
+        "publishedAtLabel": "16 Sep 2026, 04:30:00 AM IST"
       }
     ],
     "sourcesAvailable": [
