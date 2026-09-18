@@ -704,6 +704,45 @@ main {
   margin-top: 0;
 }
 
+/* Markdown tables in the AI brief (FII/DII flows, option chain summaries). */
+.md-table-wrap {
+  overflow-x: auto;
+  margin: 14px 0;
+  border: 1px solid rgba(15, 76, 92, 0.12);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.md-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.94rem;
+  white-space: nowrap;
+}
+
+.md-table th,
+.md-table td {
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid rgba(15, 76, 92, 0.08);
+}
+
+.md-table th {
+  font-weight: 700;
+  color: var(--accent-strong);
+  background: rgba(15, 76, 92, 0.06);
+  position: sticky;
+  top: 0;
+}
+
+.md-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.md-table tbody tr:nth-child(even) td {
+  background: rgba(15, 76, 92, 0.03);
+}
+
 .ai-summary-text h2,
 .ai-summary-text h3,
 .ai-summary-text h4 {

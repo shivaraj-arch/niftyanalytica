@@ -2082,6 +2082,7 @@ const renderMarkdown = (value) => {
   let paragraph = [];
   let listType = null;
   let listItems = [];
+  let tableRows = [];
 
   const flushParagraph = () => {
     if (!paragraph.length) {
@@ -2100,13 +2101,53 @@ const renderMarkdown = (value) => {
     listType = null;
   };
 
+  const splitRow = (row) => row.replace(/^\||\|$/g, '').split('|').map((cell) => cell.trim());
+
+  const flushTable = () => {
+    if (!tableRows.length) {
+      return;
+    }
+    // A GFM table needs a header plus an alignment row (| :--- | ---: |).
+    const isSeparator = tableRows.length > 1
+      && /^\|?[\s:|-]+\|?$/.test(tableRows[1]) && tableRows[1].includes('-');
+    if (!isSeparator) {
+      tableRows.forEach((row) => blocks.push(`<p>${formatMarkdownInline(row)}</p>`));
+      tableRows = [];
+      return;
+    }
+
+    const aligns = splitRow(tableRows[1]).map((cell) => {
+      if (/^:-+:$/.test(cell)) return ' style="text-align:center"';
+      if (/^-+:$/.test(cell)) return ' style="text-align:right"';
+      return '';
+    });
+    const cellsFor = (row, tag) => splitRow(row)
+      .map((cell, i) => `<${tag}${aligns[i] || ''}>${formatMarkdownInline(cell)}</${tag}>`)
+      .join('');
+
+    const head = `<thead><tr>${cellsFor(tableRows[0], 'th')}</tr></thead>`;
+    const body = tableRows.slice(2)
+      .map((row) => `<tr>${cellsFor(row, 'td')}</tr>`).join('');
+    blocks.push(`<div class="md-table-wrap"><table class="md-table">${head}<tbody>${body}</tbody></table></div>`);
+    tableRows = [];
+  };
+
   lines.forEach((line) => {
     const trimmed = line.trim();
     if (!trimmed) {
       flushParagraph();
       flushList();
+      flushTable();
       return;
     }
+
+    if (trimmed.startsWith('|')) {
+      flushParagraph();
+      flushList();
+      tableRows.push(trimmed);
+      return;
+    }
+    flushTable();
 
     const headingMatch = trimmed.match(/^(#{1,4})\s+(.+)$/);
     if (headingMatch) {
@@ -2145,6 +2186,7 @@ const renderMarkdown = (value) => {
 
   flushParagraph();
   flushList();
+  flushTable();
 
   return blocks.join('') || `<p>${formatMarkdownInline(String(value || ''))}</p>`;
 };
