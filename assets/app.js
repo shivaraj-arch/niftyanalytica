@@ -683,6 +683,7 @@ const renderOptionChainMarketActivity = () => {
   const rows = marketActivityRows
     .map((row) => ({
       date: row.date,
+      fiiDiiDate: row.fiiDiiDate,
       marketCapCrores: parseNumber(row.totalMarketCapitalisationCrores),
       tradedValueCrores: parseNumber(row.tradedValueCrores),
       ffmcCrores: parseNumber(row.ffmcCrores),
@@ -753,12 +754,15 @@ const renderOptionChainMarketActivity = () => {
     { axisFormatter: formatCroresAxisCompact, tooltipFormatter: formatCroresValueLabel },
   );
 
-  // FII / DII Flows — signed chart, can go negative
+  // FII / DII Flows — signed chart, can go negative.
+  // Label from fiiDiiDate, not date: NSE publishes flows only after the close,
+  // so the row collected on day X carries day X-1's figures. Labelling by date
+  // showed every bar a trading session late, and more after a long weekend.
   renderGroupedSeriesChart(
     'optionChainFiiDiiChart',
     rows,
     (row) => ({
-      label: formatArchiveDateLabel(row.date),
+      label: formatArchiveDateLabel(row.fiiDiiDate || row.date),
       series: OPTION_CHAIN_FII_DII_SERIES.map((series) => ({
         value: parseNumber(row[series.key]),
         color: series.color,
