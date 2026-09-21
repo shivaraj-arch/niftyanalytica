@@ -84,6 +84,28 @@ jobs:
           echo "NSE_INDEX_CACHE_DATE=${TARGET_DATE}" >> "$GITHUB_ENV"
           echo "NSE_INDEX_HISTORY_DATE=${TARGET_DATE}" >> "$GITHUB_ENV"
 
+      - name: Refresh snapshot before reading it
+        if: ${{ env.SKIP_SYNC != 'true' }}
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          LIVE_SNAPSHOT_REFRESH_SECRET: ${{ secrets.LIVE_SNAPSHOT_REFRESH_SECRET }}
+        run: |
+          # refresh-live-snapshot's pg_cron windows stop at 16:00 IST, before NSE
+          # publishes the day's FII/DII, and the function skips any call after the
+          # close unless force is set. Without this the snapshot fetched below
+          # still carries the previous session's flows no matter how late this job
+          # runs -- which is why every row held yesterday's numbers.
+          AUTH=()
+          if [ -n "${LIVE_SNAPSHOT_REFRESH_SECRET}" ]; then
+            AUTH=(-H "x-refresh-secret: ${LIVE_SNAPSHOT_REFRESH_SECRET}")
+          fi
+          curl --fail --silent --show-error -X POST \
+            "${SUPABASE_URL%/}/functions/v1/refresh-live-snapshot" \
+            -H 'Content-Type: application/json' "${AUTH[@]}" \
+            -d '{"force":true}' -o refresh-result.json
+          node -e "const r=require('./refresh-result.json'); console.log('snapshot refresh: ok=' + r.ok + ' skipped=' + r.skipped + ' fetchedAt=' + ((r.snapshot || {}).fetchedAt || '-'));"
+          rm -f refresh-result.json
+
       - name: Fetch latest closing snapshot
         if: ${{ env.SKIP_SYNC != 'true' }}
         env:
