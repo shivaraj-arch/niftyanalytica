@@ -8,10 +8,10 @@ on:
         required: false
         type: string
   schedule:
-    # 14:45 UTC = 20:15 IST. The market-activity archive is out by ~16:36 IST,
+    # 14:15 UTC = 19:45 IST. The market-activity archive is out by ~16:36 IST,
     # but NSE refreshes FII/DII only in the evening, so the old 17:00 IST run
     # always recorded the previous session's flows in the same row.
-    - cron: '45 14 * * 1-5'
+    - cron: '15 14 * * 1-5'
 
 permissions:
   contents: write
