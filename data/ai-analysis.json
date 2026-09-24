@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T15:01:37.746497+05:30",
+  "generatedAt": "2026-09-24T09:01:41.185178+05:30",
   "agent": "AggregatorAgent",
   "pipeline": [
     "nifty_analysis_agent",
@@ -12,362 +12,366 @@
     "gemini-robotics-er-2-preview"
   ],
   "status": "ok",
-  "summary": "Nifty Analysis Agent\n\n### **1. Nifty 50 Index Analysis**\n\nThe Nifty 50 index showed resilient behavior, recovering from earlier sessions of weakness to trade with positive momentum. \n\n* **Top Gainers:** Sectoral strength was concentrated in **Metals** and **Financials**. **Tata Steel** led the index gainers, rising **+3.05%** to \u20b9190.61, followed by **Bajaj Finance (+2.79%)** at \u20b91,036.90. Other metal heavyweights, **Hindalco (+2.47%)** and **JSW Steel (+2.08%)**, also contributed significantly to the upward movement.\n* **Top Losers:** The index's gains were capped by a drag in the **IT Sector** and selective consumer names. **HCLTech (-1.32%)** was the top drag, followed closely by **Titan (-1.26%)**, **Infosys (-1.21%)**, and **TCS (-1.17%)**.\n\n---\n\n### **2. Institutional Flows (FII & DII Activity)**\n\nDomestic Institutions continue to act as a crucial counterweight to foreign outflows:\n* **Foreign Institutional Investors (FIIs):** Emerged as net **Sellers**, offloading shares worth **\u20b93,809.99 crore**.\n* **Domestic Institutional Investors (DIIs):** Remained active net **Buyers**, infusing **\u20b94,120.07 crore** to absorb the foreign selling pressure.\n\n---\n\n### **3. Key Financial Headlines for Tomorrow's Session**\n\n* **GDP Growth Forecast Upgrades:** Following a strong economic start, both the **Asian Development Bank (ADB)** and **Fitch Ratings** upgraded India\u2019s FY27 GDP growth forecasts to **7%** and **6.9%** respectively, reflecting robust domestic demand.\n* **The Landmark NSE IPO Listing:** Tomorrow's session will witness the historic stock exchange debut of the **National Stock Exchange (NSE)** on the BSE. This \u20b922,562 crore issue will be closely watched by the entire financial sector.\n* **Weekly Derivative Expiry:** Intraday volatility is expected tomorrow due to the F&O expiry. Immediate support zones for Nifty 50 are highlighted at **23,000\u201323,100**, while call options concentration indicates a tough ceiling at **23,400\u201323,450**.\n\n---\n\n### Global setup\n- US and Asian closes were mixed (Nasdaq +0.45%, Dow -0.36%, Nikkei +1.38%, Shanghai -0.39%) with flat futures implying a neutral open.\n- Crude oil ($89.91, -0.67%), Gold ($4,353.20, -0.53%), Bitcoin ($85,885.63, -0.56%), and Dollar Index (100.84, +0.23%) show muted risk-appetite.\n- ADRs: Divergence in IT with Wipro (+1.20%) gaining while Infosys (-1.19%) fell; banking ADRs HDFC Bank (-1.01%) and ICICI Bank (-0.99%) both declined.\n\nNifty Flow Agent\n\nBased on the global cues, ADR performance, and the latest institutional flow data, here is the analysis for the Indian market:\n\n### 1. FII & DII Institutional Flows (As of 22-Sep-2026)\n* **Domestic Institutional Investors (DIIs):** Continues to support the domestic market strongly as net **Buyers** with an inflow of **\u20b94,120.07 Crores** (Buy: \u20b914,599.72 Cr, Sell: \u20b910,479.65 Cr).\n* **Foreign Institutional Investors (FIIs/FPIs):** Continued their selling streak as net **Sellers** with an outflow of **-\u20b93,809.99 Crores** (Buy: \u20b99,845.81 Cr, Sell: \u20b913,655.80 Cr).\n* **Takeaway:** While FIIs persist with outflows, the robust DII purchasing power (~\u20b94.1k Cr) provides a strong backstop to cushion major declines in the domestic indices.\n\n---\n\n### 2. Global Cues & Market Sentiment\n* **US & European Markets:** US markets showed mixed trends (Nasdaq +0.45%, Dow -0.36%). S&P 500 remained flat. European starts are mixed as FTSE is slightly positive (+0.13%) and DAX is down (-0.36%).\n* **Asian Markets:** Nikkei showed strength (+1.38%) while Shanghai Composite fell by -0.39%.\n* **Currency:** USD/INR has risen slightly to **95.69 (+0.10%)**, signifying mild pressure on the Indian Rupee, which correlates with the persistent FII selling.\n\n---\n\n### 3. ADR (American Depository Receipts) Performance\nThe ADRs show mixed to weak cues, particularly in high-weightage sectors like Banking and IT:\n* **Banking:** **HDFC Bank (HDB)** and **ICICI Bank (IBN)** both fell around **-1.00%** overnight, indicating potential early morning pressure on the Nifty Bank index.\n* **IT Sector:** **Infosys (INFY)** dropped by **-1.19%** (with extended hours down -0.14%), while **Wipro (WIT)** gained **+1.20%**. This suggests a mixed to slightly soft start for the major IT heavyweights.\n* **Pharma:** **Dr Reddy's (RDY)** gained **+1.37%**, indicating defensive strength in the pharmaceutical space.\n\n---\n\n### Market Outlook\nThe combination of persistent **FII selling (\u20b93,809.99 Cr)** and weak overnight banking ADRs suggests a cautious or flat-to-weak opening, particularly for Nifty Bank. However, strong **DII accumulation (\u20b94,120.07 Cr)** is likely to act as a solid demand zone on intraday dips, supporting the overall index structure. Defensive sectors like Pharma and selective IT stocks could outperform in early trades.\n\nAggregator Agent\n\n**Executive Summary**\n\nIndia's market demonstrates a battle between foreign selling pressure and domestic resilience. In the cash market, robust Domestic Institutional Investor (DII) inflows of \u20b94,120.07 crore acted as the dominant counter-force, fully absorbing the \u20b93,809.99 crore of Foreign Institutional Investor (FII) outflows. \n\nWhile the Nifty 50 traded with positive momentum during the session, overnight reads from depository receipts hint at potential opening pressure on high-weightage financial and tech names, with HDFC Bank (-1.01%), ICICI Bank (-0.99%), and Infosys (-1.19%) declining. This soft tone matches a mixed overnight global setup\u2014where the Nasdaq gained +0.45% but the Dow fell -0.36%\u2014and correlates with a rising USD/INR at 95.69. However, defensive ADRs like Dr. Reddy's (+1.37%) and Wipro (+1.20%) showed strength, mirroring the index\u2019s internal sector rotation.\n\nCrucially, domestic confidence remains anchored by upgraded FY27 GDP growth forecasts from ADB (7%) and Fitch (6.9%). Heading into the next session, the highly anticipated \u20b922,562 crore NSE IPO listing on the BSE and weekly F&O expiry volatility (Nifty support at 23,000\u201323,100; ceiling at 23,400\u201323,450) will set the market's near-term direction.",
-  "executiveSummary": "**Executive Summary**\n\nIndia's market demonstrates a battle between foreign selling pressure and domestic resilience. In the cash market, robust Domestic Institutional Investor (DII) inflows of \u20b94,120.07 crore acted as the dominant counter-force, fully absorbing the \u20b93,809.99 crore of Foreign Institutional Investor (FII) outflows. \n\nWhile the Nifty 50 traded with positive momentum during the session, overnight reads from depository receipts hint at potential opening pressure on high-weightage financial and tech names, with HDFC Bank (-1.01%), ICICI Bank (-0.99%), and Infosys (-1.19%) declining. This soft tone matches a mixed overnight global setup\u2014where the Nasdaq gained +0.45% but the Dow fell -0.36%\u2014and correlates with a rising USD/INR at 95.69. However, defensive ADRs like Dr. Reddy's (+1.37%) and Wipro (+1.20%) showed strength, mirroring the index\u2019s internal sector rotation.\n\nCrucially, domestic confidence remains anchored by upgraded FY27 GDP growth forecasts from ADB (7%) and Fitch (6.9%). Heading into the next session, the highly anticipated \u20b922,562 crore NSE IPO listing on the BSE and weekly F&O expiry volatility (Nifty support at 23,000\u201323,100; ceiling at 23,400\u201323,450) will set the market's near-term direction.",
-  "bias": "Neutral",
-  "keyLevels": [
-    "Support 23,000\u201323,100"
-  ],
+  "summary": "Nifty Analysis Agent\n\n### **Nifty 50 Constituent Analysis**\n\nAn analysis of the Nifty 50 constituent data reveals a mixed to positive bias in the latest trading session, driven by metals and financial conglomerates, even as technology and discretionary retail dragged.\n\n*   **Top Gainers (Contributors to the Index):**\n    *   **BAJFINANCE (LTP \u20b91,043.20):** Surged by **+3.41%**, leading the gainers on strong buying interest.\n    *   **HINDALCO (LTP \u20b91,003.80):** Advanced by **+3.17%**, tracking strength in metal counters.\n    *   **TATASTEEL (LTP \u20b9190.82):** Gained **+3.16%** on high volumes (over 3.97 crore shares traded).\n    *   **APOLLOHOSP (LTP \u20b99,069.00):** Climbed **+2.64%** following positive defensive demand.\n    *   **JSWSTEEL (LTP \u20b91,297.80):** Rose **+2.43%**, compounding the broad metal rally.\n\n*   **Top Losers (Drags on the Index):**\n    *   **HCLTECH (LTP \u20b91,256.70):** Slipped **-1.08%**, emerging as the top IT drag.\n    *   **TITAN (LTP \u20b94,880.00):** Declined by **-0.98%** on high-value discretionary booking.\n    *   **INFY (LTP \u20b91,020.50):** Dropped **-0.86%**, continuing to reflect software services softness.\n    *   **COALINDIA (LTP \u20b9424.55):** Fell **-0.81%**.\n    *   **TCS (LTP \u20b92,089.60):** Shaved off **-0.73%**.\n\n---\n\n### **FII and DII Flow Activity**\n*   **Foreign Institutional Investors (FIIs):** Net **buyers** of equity worth **\u20b91,617.45 crore** in the latest daily cash session. However, the cumulative year-to-date and summer selling pressures remain an overarching headwind.\n*   **Domestic Institutional Investors (DIIs):** Net **buyers** of equity worth **\u20b92,341.46 crore**, continuing to absorb FII outflows and provide a solid liquidity cushion.\n\n---\n\n### **Key Market News & Corporate Actions**\n1. **The Landmarks of Insurance Reforms:** The Insurance Regulatory and Development Authority of India (IRDAI) has issued draft reform proposals to tighten mis-selling safeguards and revise commission structures, placing counters like **HDFC Life, SBI Life, ICICI Prudential, and PB Fintech** directly in the spotlight.\n2. **NSE Mega Listing Today:** The landmark **\u20b922,562 crore IPO** of the National Stock Exchange of India (NSE) culminates in its much-anticipated listing debut at 10:00 AM on the BSE, which is poised to steer broking and exchange-infrastructure sentiment.\n3. **Macro Headwinds:** Although domestic recovery remains supported by DII flows, the overnight surge in the benchmark US Treasury yield to **5.11%** continues to impact IT and high-valuation growth sectors.\n\n---\n\n### Global setup\nUS closes (Dow -0.68%, S&P -0.75%, Nasdaq -1.13%) and weak opens in S&P futures (-0.14%) imply a soft start, though NIKKEI closed up +1.33%.\nCrude oil is at $91.29 (-0.94%), Gold is at $4,324.80 (+0.15%), Bitcoin is at $84,044.80 (-0.49%), and the Dollar Index is up at 101.11 (+0.02%).\nADRs: Infosys (-0.09%), Wipro (flat), HDFC Bank (-2.65%), ICICI Bank (-0.46%), Dr Reddy's (-1.43%) diverge on a weak banking read.\n\nNifty Flow Agent\n\nBased on the latest data fetched and the pre-open global cues, here is the analysis and institutional flow report for the Indian market:\n\n### 1. FII / DII Institutional Flow (Latest Data)\n* **Date:** 23-Sep-2026\n* **Domestic Institutional Investors (DII):**\n  * **Buy Value:** \u20b914,404.90 Cr\n  * **Sell Value:** \u20b912,063.44 Cr\n  * **Net Value:** **+\u20b92,341.46 Cr (Net Buyers)**\n* **Foreign Institutional Investors (FII/FPI):**\n  * **Buy Value:** \u20b913,580.40 Cr\n  * **Sell Value:** \u20b911,962.95 Cr\n  * **Net Value:** **+\u20b91,617.45 Cr (Net Buyers)**\n\n**Takeaway:** Both FIIs and DIIs were net buyers in the last session, injecting a combined total of over \u20b93,950 Crores into the Indian equities, indicating strong underlying domestic liquidity and institutional support.\n\n---\n\n### 2. Market Open Analysis & Sentiments\n\n#### **Global Cues & Weakness in US Markets:**\n* **US & European Markets:** Major US indices closed in the red (Dow Jones down -0.68%, Nasdaq down -1.13%). European indices also closed flat to negative. S&P 500 VIX surged by **+6.83%** to 15.18, signaling rising market volatility and fear ahead.\n* **Commodities & Currencies:** Crude oil and Brent oil prices are down nearly 1% (Brent at $102.09), which is fundamentally supportive for India\u2019s fiscal deficit and margin-sensitive sectors like Paints, Tyres, and Aviation. The USD/INR remained steady at 95.74.\n\n#### **ADR (American Depository Receipts) Performance:**\nADRs are a direct overnight proxy for Indian stocks before the domestic session starts:\n* **HDFC Bank (HDB):** Closed down **-2.65%** (though it recovered marginally by +0.78% in extended hours). \n* **ICICI Bank (IBN):** Closed down **-0.46%**.\n* **MakeMyTrip (MMYT):** Slumped **-3.21%**.\n* **Dr Reddy's (RDY):** Down **-1.43%**.\n\n### **Strategic Market Outlook:**\n1. **Gap Down or Cautious Start:** Given the weak closes across US tech and indices, as well as a sharp drop in the HDFC Bank ADR, the Indian benchmark indices (Nifty 50 and Nifty Bank) are highly likely to start on a cautious or slightly negative note.\n2. **Banking Sector Pressure:** HDFC Bank and ICICI Bank's ADR weakness will likely exert immediate pressure on the **Nifty Bank** index in the opening hour.\n3. **Resilience from Institutional Flows:** The negative global cues might be partly cushioned by the heavy net-buying from both FIIs and DIIs (+\u20b93,958 Cr combined). Look for potential buying support on dips closer to key psychological support levels.\n\nAggregator Agent\n\n### Executive Summary\n\nThe Indian equity market faces a classic tug-of-war as strong domestic liquidity runs headfirst into intense overnight global headwinds. In the latest session, both FIIs and DIIs emerged as net buyers, injecting a combined \u20b93,958.91 crore (DIIs adding \u20b92,341.46 crore and FIIs \u20b91,617.45 crore). This institutional support coincided with a mixed-to-positive bias in the Nifty 50, driven by metals like Hindalco (+3.17%) and Tata Steel (+3.16%), while technology counters like HCLTech (-1.08%) and Infosys (-0.86%) dragged.\n\nHowever, overnight global cues are poised to dominate the opening session, pointing toward a gap-down start that overshadows yesterday's domestic inflows. Major US indices fell (Dow -0.68%, Nasdaq -1.13%) as the benchmark US Treasury yield spiked to 5.11%. Indian ADRs mirror this weakness, indicating immediate pressure on heavyweight financials; HDFC Bank ADR fell -2.65%, ICICI Bank slid -0.46%, and Infosys finished -0.09%. \n\nTraders should monitor whether strong institutional cash reserves can absorb early selling pressure. Separately, the landmark \u20b922,562 crore NSE listing and proposed IRDAI insurance reforms will keep financial and insurance counters highly active.",
+  "executiveSummary": "### Executive Summary\n\nThe Indian equity market faces a classic tug-of-war as strong domestic liquidity runs headfirst into intense overnight global headwinds. In the latest session, both FIIs and DIIs emerged as net buyers, injecting a combined \u20b93,958.91 crore (DIIs adding \u20b92,341.46 crore and FIIs \u20b91,617.45 crore). This institutional support coincided with a mixed-to-positive bias in the Nifty 50, driven by metals like Hindalco (+3.17%) and Tata Steel (+3.16%), while technology counters like HCLTech (-1.08%) and Infosys (-0.86%) dragged.\n\nHowever, overnight global cues are poised to dominate the opening session, pointing toward a gap-down start that overshadows yesterday's domestic inflows. Major US indices fell (Dow -0.68%, Nasdaq -1.13%) as the benchmark US Treasury yield spiked to 5.11%. Indian ADRs mirror this weakness, indicating immediate pressure on heavyweight financials; HDFC Bank ADR fell -2.65%, ICICI Bank slid -0.46%, and Infosys finished -0.09%. \n\nTraders should monitor whether strong institutional cash reserves can absorb early selling pressure. Separately, the landmark \u20b922,562 crore NSE listing and proposed IRDAI insurance reforms will keep financial and insurance counters highly active.",
+  "bias": "Bearish",
+  "keyLevels": [],
   "watchlist": [],
   "headlines": [
-    "### **3. Key Financial Headlines for Tomorrow's Session**"
+    "### **Key Market News & Corporate Actions**",
+    "**The Landmarks of Insurance Reforms:** The Insurance Regulatory and Development Authority of India (IRDAI) has issued draft reform proposals to tighten mis-selling safeguards and revise commission structures, placing counters like **HDFC Life, SBI Life, ICICI Prudential, and PB Fintech** directly in the spotlight.",
+    "**NSE Mega Listing Today:** The landmark **\u20b922,562 crore IPO** of the National Stock Exchange of India (NSE) culminates in its much-anticipated listing debut at 10:00 AM on the BSE, which is poised to steer broking and exchange-infrastructure sentiment.",
+    "**Macro Headwinds:** Although domestic recovery remains supported by DII flows, the overnight surge in the benchmark US Treasury yield to **5.11%** continues to impact IT and high-valuation growth sectors.",
+    "**Gap Down or Cautious Start:** Given the weak closes across US tech and indices, as well as a sharp drop in the HDFC Bank ADR, the Indian benchmark indices (Nifty 50 and Nifty Bank) are highly likely to start on a cautious or slightly negative note.",
+    "**Banking Sector Pressure:** HDFC Bank and ICICI Bank's ADR weakness will likely exert immediate pressure on the **Nifty Bank** index in the opening hour.",
+    "**Resilience from Institutional Flows:** The negative global cues might be partly cushioned by the heavy net-buying from both FIIs and DIIs (+\u20b93,958 Cr combined). Look for potential buying support on dips closer to key psychological support levels."
   ],
   "globalTape": {
-    "updatedAt": "2026-09-23T09:30:02.611Z",
+    "updatedAt": "2026-09-24T03:30:02.819Z",
     "items": [
       {
         "label": "DOW 30 (Close)",
-        "last": 51863.7,
-        "changePercent": -0.36,
+        "last": 51511.6,
+        "changePercent": -0.68,
         "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-09-23T09:30:01.889Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
         "label": "S&P 500 (Close)",
-        "last": 7764.64,
-        "changePercent": 0,
+        "last": 7706.03,
+        "changePercent": -0.75,
         "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-09-23T09:30:01.889Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
         "label": "NASDAQ COMPO (Close)",
-        "last": 27244.3,
-        "changePercent": 0.45,
+        "last": 26936,
+        "changePercent": -1.13,
         "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-09-23T09:30:01.889Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
-        "label": "FTSE 100 (Open)",
-        "last": 10722.4,
-        "changePercent": 0.13,
+        "label": "FTSE 100 (Close)",
+        "last": 10705.3,
+        "changePercent": -0.03,
         "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-09-23T09:30:01.889Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
-        "label": "DAX (Open)",
-        "last": 25485.6,
-        "changePercent": -0.36,
+        "label": "DAX (Close)",
+        "last": 25410.6,
+        "changePercent": -0.66,
         "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-09-23T09:30:01.889Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
         "label": "NIKKEI 225 (Close)",
-        "last": 65018.9,
-        "changePercent": 1.38,
+        "last": 65883.4,
+        "changePercent": 1.33,
         "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-09-23T09:30:01.889Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
-        "label": "SHANGHAI COM (Close)",
-        "last": 3936.52,
-        "changePercent": -0.39,
+        "label": "SHANGHAI COM (Open)",
+        "last": 3902.08,
+        "changePercent": -0.87,
         "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-09-23T09:30:01.889Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
         "label": "DOW 30 FUTUR (Open)",
-        "last": 52283,
-        "changePercent": 0.01,
+        "last": 51814,
+        "changePercent": -0.11,
         "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-09-23T09:30:01.889Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
         "label": "S&P 500 FUTU (Open)",
-        "last": 7835,
-        "changePercent": 0.04,
+        "last": 7761.5,
+        "changePercent": -0.14,
         "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-09-23T09:30:01.889Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
         "label": "NASDAQ 100 F (Open)",
-        "last": 31014,
-        "changePercent": -0.05,
+        "last": 30721.8,
+        "changePercent": -0.14,
         "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-09-23T09:30:01.889Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
         "label": "FTSE 100 FUT (Open)",
-        "last": 10788.8,
-        "changePercent": 0.01,
+        "last": 10746,
+        "changePercent": 0,
         "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-09-23T09:30:01.889Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
         "label": "DAX FUTURES (Open)",
-        "last": 25670.5,
-        "changePercent": -0.46,
+        "last": 25504.5,
+        "changePercent": -0.41,
         "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-09-23T09:30:01.889Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
         "label": "US DOLLAR IN (Open)",
-        "last": 100.84,
-        "changePercent": 0.23,
+        "last": 101.11,
+        "changePercent": 0.02,
         "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-09-23T09:30:01.889Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
-        "label": "S&P 500 VIX (Open)",
-        "last": 14.13,
-        "changePercent": -0.56,
+        "label": "S&P 500 VIX (Close)",
+        "last": 15.18,
+        "changePercent": 6.83,
         "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-09-23T09:30:01.890Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
         "label": "GOLD (Open)",
-        "last": 4353.2,
-        "changePercent": -0.53,
+        "last": 4324.8,
+        "changePercent": 0.15,
         "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-09-23T09:30:01.890Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
         "label": "SILVER (Open)",
-        "last": 65.875,
-        "changePercent": -0.98,
+        "last": 64.565,
+        "changePercent": -0.61,
         "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-09-23T09:30:01.890Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
         "label": "COPPER (Open)",
-        "last": 6.83,
-        "changePercent": -0.09,
+        "last": 6.7695,
+        "changePercent": 0.24,
         "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-09-23T09:30:01.890Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
         "label": "CRUDE OIL (Open)",
-        "last": 89.91,
-        "changePercent": -0.67,
+        "last": 91.29,
+        "changePercent": -0.94,
         "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-09-23T09:30:01.890Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
         "label": "BRENT OIL (Open)",
-        "last": 99.34,
-        "changePercent": 0.09,
+        "last": 102.09,
+        "changePercent": -0.96,
         "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-09-23T09:30:01.890Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
         "label": "NATURAL GAS (Open)",
-        "last": 3.019,
-        "changePercent": 1.82,
+        "last": 3.051,
+        "changePercent": 0.93,
         "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-09-23T09:30:01.890Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
         "label": "EUR/USD (Open)",
-        "last": 1.1411,
-        "changePercent": -0.31,
+        "last": 1.1379,
+        "changePercent": -0.01,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-09-23T09:30:01.890Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
         "label": "USD/JPY (Open)",
-        "last": 157.87,
-        "changePercent": 0.32,
+        "last": 158.02,
+        "changePercent": -0.17,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-09-23T09:30:01.890Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
         "label": "GBP/USD (Open)",
-        "last": 1.3287,
-        "changePercent": -0.39,
+        "last": 1.3238,
+        "changePercent": 0.01,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-09-23T09:30:01.890Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
         "label": "USD/CHF (Open)",
-        "last": 0.8222,
-        "changePercent": 0.21,
+        "last": 0.824,
+        "changePercent": -0.13,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-09-23T09:30:01.890Z"
+        "updatedAt": "2026-09-24T03:30:02.665Z"
       },
       {
         "label": "USD/CAD (Open)",
-        "last": 1.4081,
-        "changePercent": 0.14,
+        "last": 1.4103,
+        "changePercent": 0.03,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-09-23T09:30:01.890Z"
+        "updatedAt": "2026-09-24T03:30:02.666Z"
       },
       {
         "label": "AUD/USD (Open)",
-        "last": 0.7086,
-        "changePercent": -0.37,
+        "last": 0.703,
+        "changePercent": -0.09,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-09-23T09:30:01.890Z"
+        "updatedAt": "2026-09-24T03:30:02.666Z"
       },
       {
         "label": "USD/CNY (Open)",
-        "last": 6.7059,
-        "changePercent": 0.09,
+        "last": 6.7137,
+        "changePercent": 0.04,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-09-23T09:30:01.890Z"
+        "updatedAt": "2026-09-24T03:30:02.666Z"
       },
       {
-        "label": "USD/INR (Open)",
-        "last": 95.69,
-        "changePercent": 0.1,
+        "label": "USD/INR (Close)",
+        "last": 95.74,
+        "changePercent": 0,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-09-23T09:30:01.890Z"
+        "updatedAt": "2026-09-24T03:30:02.666Z"
       },
       {
         "label": "Bitcoin BTC.CM= (Open)",
-        "last": 85885.63,
-        "changePercent": -0.56,
+        "last": 84044.8,
+        "changePercent": -0.49,
         "source": "CNBC / Commodities",
-        "updatedAt": "2026-09-23T09:30:02.611Z"
+        "updatedAt": "2026-09-24T03:30:02.809Z"
       },
       {
         "label": "Infosys INFY (Close)",
-        "last": 10.76,
-        "changePercent": -1.19,
-        "extendedChangePercent": -0.14,
+        "last": 10.75,
+        "changePercent": -0.09,
+        "extendedChangePercent": 0.47,
         "source": "CNBC / ADR",
-        "updatedAt": "2026-09-23T09:30:02.025Z"
+        "updatedAt": "2026-09-24T03:30:02.819Z"
       },
       {
         "label": "Wipro WIT (Close)",
         "last": 1.69,
-        "changePercent": 1.2,
-        "extendedChangePercent": -0.59,
+        "changePercent": 0,
+        "extendedChangePercent": -0.54,
         "source": "CNBC / ADR",
-        "updatedAt": "2026-09-23T09:30:02.025Z"
+        "updatedAt": "2026-09-24T03:30:02.819Z"
       },
       {
-        "label": "HDFC Bank HDB (Open)",
-        "last": 23.41,
-        "changePercent": -1.01,
+        "label": "HDFC Bank HDB (Close)",
+        "last": 22.79,
+        "changePercent": -2.65,
+        "extendedChangePercent": 0.78,
+        "source": "CNBC / ADR",
+        "updatedAt": "2026-09-24T03:30:02.819Z"
+      },
+      {
+        "label": "ICICI Bank IBN (Close)",
+        "last": 27.91,
+        "changePercent": -0.46,
         "extendedChangePercent": 0,
         "source": "CNBC / ADR",
-        "updatedAt": "2026-09-23T09:30:02.025Z"
-      },
-      {
-        "label": "ICICI Bank IBN (Open)",
-        "last": 28.04,
-        "changePercent": -0.99,
-        "extendedChangePercent": -0.07,
-        "source": "CNBC / ADR",
-        "updatedAt": "2026-09-23T09:30:02.025Z"
+        "updatedAt": "2026-09-24T03:30:02.819Z"
       },
       {
         "label": "Dr Reddy's RDY (Close)",
-        "last": 12.57,
-        "changePercent": 1.37,
-        "extendedChangePercent": -0.32,
-        "source": "CNBC / ADR",
-        "updatedAt": "2026-09-23T09:30:02.025Z"
-      },
-      {
-        "label": "MakeMyTrip MMYT (Open)",
-        "last": 48.34,
-        "changePercent": 0.77,
+        "last": 12.39,
+        "changePercent": -1.43,
         "extendedChangePercent": 0,
         "source": "CNBC / ADR",
-        "updatedAt": "2026-09-23T09:30:02.025Z"
+        "updatedAt": "2026-09-24T03:30:02.819Z"
+      },
+      {
+        "label": "MakeMyTrip MMYT (Close)",
+        "last": 46.79,
+        "changePercent": -3.21,
+        "extendedChangePercent": 0,
+        "source": "CNBC / ADR",
+        "updatedAt": "2026-09-24T03:30:02.819Z"
       }
     ]
   },
   "marketSignals": {
-    "positioningLabel": "Put-side hedge build",
-    "positioningStrike": 23400,
+    "positioningLabel": "Bullish positioning build",
+    "positioningStrike": 23000,
     "divergenceSummary": "Aligned sentiment",
     "divergenceCount": 0,
     "trapRiskLabel": "No clear trap",
-    "fiiNetCrores": -3809.99,
-    "diiNetCrores": 4120.07,
+    "fiiNetCrores": 1617.45,
+    "diiNetCrores": 2341.46,
     "tradedValueCrores": 0.0,
-    "spot": 23421.65
+    "spot": 22835.75
   },
   "finbert": {
     "model": "ProsusAI/finbert",
     "engine": "FinBERT",
-    "bias": "Bullish",
-    "note": "Mildly positive news tone",
-    "analysis": "Recent market news shows a mildly positive news tone, with most headlines leaning supportive. The most supportive headline: \"Subex surges after bagging operations modernaisation contract from major APAC operator\". The most cautious headline: \"Volumes jump at Elecon Engineering Company Ltd counter\".",
+    "bias": "Neutral",
+    "note": "Mixed, broadly neutral news tone",
+    "analysis": "Recent market news shows a mixed, broadly neutral news tone, with supportive and cautious headlines roughly balanced. The most supportive headline: \"China\u2019s Trade Volumes Hit Record in Week Before Trump-Xi Summit\". The most cautious headline: \"Red alert for 4 Odisha districts as deep depression triggers heavy rain threat\".",
     "headlines": [
       {
-        "title": "Ultraviolette raises $85 mn to expand EV production, enter US market",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "Subex surges after bagging operations modernaisation contract from major APAC operator",
-        "label": "positive",
-        "sentiment": "Strongly positive"
-      },
-      {
-        "title": "Volumes jump at Elecon Engineering Company Ltd counter",
+        "title": "Red alert for 4 Odisha districts as deep depression triggers heavy rain threat",
         "label": "negative",
         "sentiment": "Strongly negative"
       },
       {
-        "title": "Persistent Systems completes acquisition of 83.25% stake in Nagarro",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "HUL, Dabur India trade near Covid lows: Reasons, strategy decoded",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Trump throws weight behind IMEC: What is India-Middle East-Europe corridor and where does it stand?",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "\u2018Differing views are normal\u2019: EC responds to report on 14 objections, says key decisions were unanimous",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "Are banks open this Sunday? Here's what customers need to know ahead of three-day nationwide strike from September 28-30",
-        "label": "neutral",
-        "sentiment": "Neutral"
-      },
-      {
-        "title": "UK Growth Cools Over Budget Worries and Energy Shock, PMI Shows",
+        "title": "Fractal Analytics' Cogentiq CEO Matthew Gennone resigns",
         "label": "negative",
-        "sentiment": "Slightly negative"
+        "sentiment": "Moderately negative"
       },
       {
-        "title": "BOE Officials Leave London for Leeds to Set Interest Rates",
+        "title": "RBI Said to Conduct At Least $10 Billion FX Swaps to Drain Cash",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "Why the 2026 US midterm elections matter more than ever for Trump amid Iran war",
+        "title": "PM Modi likely to visit Canada in December: What\u2019s on agenda as Carney eyes India-Canada trade deal around G20",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "SNB Gauges Inflation Impact of a Weaker Franc: Decision Guide",
+        "title": "Stocks to watch: NSE, Exide Industries, Welspun Living, Max Estates, GHCL",
         "label": "neutral",
         "sentiment": "Neutral"
       },
       {
-        "title": "South African Inflation Picks Up Slightly Ahead of Rate Decision",
-        "label": "positive",
-        "sentiment": "Strongly positive"
+        "title": "9 dead as AC bus catches fire on Yamuna Expressway in Greater Noida",
+        "label": "negative",
+        "sentiment": "Strongly negative"
       },
       {
-        "title": "OECD Warns of Faster Global Inflation, Sees Rate Hikes at Fed, ECB, BOJ",
+        "title": "India cuts edible oil import duty ahead of festivals: Will it bring relief after prices rose 20% in a year?",
         "label": "positive",
         "sentiment": "Moderately positive"
       },
       {
-        "title": "Brics to set up working groups on transfer pricing, revenue statistics",
+        "title": "Nifty showing signs of trend reversal; buy the dips says Jatin Gedia",
+        "label": "positive",
+        "sentiment": "Moderately positive"
+      },
+      {
+        "title": "Donald Trump rolls out red carpet for Xi Jinping as US, China eye deals on trade, AI and rare earths",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "NSE to debut today in test of investor faith in India's long-term growth",
+        "label": "positive",
+        "sentiment": "Moderately positive"
+      },
+      {
+        "title": "China\u2019s Trade Volumes Hit Record in Week Before Trump-Xi Summit",
+        "label": "positive",
+        "sentiment": "Strongly positive"
+      },
+      {
+        "title": "Bessent Says US, China Extend Their Trade Truce to Jan. 10",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Hassett Blasts Fed Officials Calling for Hikes in Recent Days",
+        "label": "negative",
+        "sentiment": "Slightly negative"
+      },
+      {
+        "title": "S\u00e1nchez Backs Spain\u2019s Hern\u00e1ndez de Cos to Be Next ECB President",
+        "label": "neutral",
+        "sentiment": "Neutral"
+      },
+      {
+        "title": "Quarterly results of companies",
         "label": "neutral",
         "sentiment": "Neutral"
       }
