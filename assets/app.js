@@ -304,9 +304,16 @@ const hasNewsFeedItems = (payload) => Array.isArray(payload?.newsFeed?.items) &&
 
 const hasMarketTapeItems = (payload) => Array.isArray(payload?.marketTape?.items) && payload.marketTape.items.length > 0;
 
+// Upstream RSS fetches fail intermittently and the rail re-renders every 60s,
+// so a single empty payload used to blank the headlines outright. Keep showing
+// the last copy that had items -- its own timestamp makes the staleness plain.
 const mergeNewsRailSnapshot = (payload) => ({
-  marketTape: payload?.marketTape || {},
-  newsFeed: payload?.newsFeed || {},
+  marketTape: hasMarketTapeItems(payload)
+    ? payload.marketTape
+    : (lastNewsRailSnapshot?.marketTape || payload?.marketTape || {}),
+  newsFeed: hasNewsFeedItems(payload)
+    ? payload.newsFeed
+    : (lastNewsRailSnapshot?.newsFeed || payload?.newsFeed || {}),
 });
 
 const cacheNewsRailSnapshot = (payload) => {
@@ -385,18 +392,15 @@ const loadRealtimeData = async ({ preferLive = false } = {}) => {
       renderNewsRailSnapshot(
         shouldRefreshMarketTape
           ? newsRailSnapshot
-          : {
-            marketTape: lastNewsRailSnapshot?.marketTape || newsRailSnapshot?.marketTape || {},
-            newsFeed: newsRailSnapshot?.newsFeed || {},
-          },
+          : { marketTape: lastNewsRailSnapshot?.marketTape || newsRailSnapshot?.marketTape || {},
+              newsFeed: newsRailSnapshot?.newsFeed || {} },
       );
       if (shouldRefreshMarketTape && hasMarketTapeItems(newsRailSnapshot)) {
         lastMarketTapeLoadAt = Date.now();
       }
     } catch (error) {
       console.error('News rail render failed', error);
-      renderMarketTapeError(error?.message || 'Market tape refresh failed.');
-      renderHeadlineError(error?.message || 'Headline rail refresh failed.');
+      renderNewsRailSnapshot({});
     }
 
     try {
@@ -406,8 +410,8 @@ const loadRealtimeData = async ({ preferLive = false } = {}) => {
       renderLiveError(error?.message || 'Live market render failed.');
     }
   } else {
-    renderMarketTapeError(liveResult.reason?.message || 'Market tape refresh failed.');
-    renderHeadlineError(liveResult.reason?.message || 'Headline rail refresh failed.');
+    console.error('Live snapshot fetch failed', liveResult.reason);
+    renderNewsRailSnapshot({});
     renderLiveError(liveResult.reason?.message || 'Live market refresh failed.');
   }
 
