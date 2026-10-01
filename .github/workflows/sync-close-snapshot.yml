@@ -99,11 +99,21 @@ jobs:
           if [ -n "${LIVE_SNAPSHOT_REFRESH_SECRET}" ]; then
             AUTH=(-H "x-refresh-secret: ${LIVE_SNAPSHOT_REFRESH_SECRET}")
           fi
-          curl --fail --silent --show-error -X POST \
+          # Best effort. The refresh only makes the stored snapshot fresher; if it
+          # fails the next step still reads whatever storage holds, which the
+          # 19:45 run has usually already refreshed. A transient NSE scrape error
+          # (this returned 500 once at 21:00 on 1 Oct) must not fail the sync.
+          STATUS=$(curl --silent --show-error -X POST \
             "${SUPABASE_URL%/}/functions/v1/refresh-live-snapshot" \
             -H 'Content-Type: application/json' "${AUTH[@]}" \
-            -d '{"force":true}' -o refresh-result.json
-          node -e "const r=require('./refresh-result.json'); console.log('snapshot refresh: ok=' + r.ok + ' skipped=' + r.skipped + ' fetchedAt=' + ((r.snapshot || {}).fetchedAt || '-'));"
+            -d '{"force":true}' -o refresh-result.json -w '%{http_code}') || STATUS=000
+          if [ "$STATUS" = "200" ]; then
+            node -e "const r=require('./refresh-result.json'); console.log('snapshot refresh: ok=' + r.ok + ' skipped=' + r.skipped + ' fetchedAt=' + ((r.snapshot || {}).fetchedAt || '-'));"
+          else
+            echo "::warning::Snapshot refresh returned ${STATUS}; continuing with the stored snapshot."
+            head -c 300 refresh-result.json 2>/dev/null || true
+            echo
+          fi
           rm -f refresh-result.json
 
       - name: Fetch latest closing snapshot
