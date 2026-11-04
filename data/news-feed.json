@@ -1,336 +1,357 @@
 {
   "marketTape": {
-    "updatedAt": "2026-11-04T03:30:06.883Z",
+    "updatedAt": "2026-11-04T09:31:02.169Z",
     "items": [
       {
         "label": "DOW 30 (Close)",
         "last": 51786.7,
         "changePercent": -0.38,
         "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.940Z"
       },
       {
         "label": "S&P 500 (Close)",
         "last": 7568.92,
         "changePercent": 0.36,
         "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.940Z"
       },
       {
         "label": "NASDAQ COMPO (Close)",
         "last": 25372,
         "changePercent": 0.83,
         "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.940Z"
       },
       {
-        "label": "FTSE 100 (Close)",
-        "last": 10638.4,
-        "changePercent": -1.14,
+        "label": "FTSE 100 (Open)",
+        "last": 10701.2,
+        "changePercent": 0.59,
         "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.940Z"
       },
       {
-        "label": "DAX (Close)",
-        "last": 25864.6,
-        "changePercent": -0.45,
+        "label": "DAX (Open)",
+        "last": 26094,
+        "changePercent": 0.89,
         "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.940Z"
       },
       {
         "label": "NIKKEI 225 (Close)",
-        "last": 60835.4,
-        "changePercent": -3.56,
+        "last": 62188.6,
+        "changePercent": -1.42,
         "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.940Z"
       },
       {
-        "label": "SHANGHAI COM (Open)",
-        "last": 3600.48,
-        "changePercent": -0.21,
+        "label": "SHANGHAI COM (Close)",
+        "last": 3686.17,
+        "changePercent": 2.16,
         "source": "SGX Nifty / Indices",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
         "label": "DOW 30 FUTUR (Open)",
-        "last": 51491,
-        "changePercent": -0.78,
+        "last": 52309,
+        "changePercent": 0.8,
         "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
         "label": "S&P 500 FUTU (Open)",
-        "last": 7505,
-        "changePercent": -1.21,
+        "last": 7622.75,
+        "changePercent": 0.34,
         "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
         "label": "NASDAQ 100 F (Open)",
-        "last": 27706,
-        "changePercent": -2.12,
+        "last": 28353.8,
+        "changePercent": 0.17,
         "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
         "label": "FTSE 100 FUT (Open)",
-        "last": 10549.3,
-        "changePercent": -0.72,
+        "last": 10718.5,
+        "changePercent": 0.45,
         "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
         "label": "DAX FUTURES (Open)",
-        "last": 25686,
-        "changePercent": -1.2,
+        "last": 26200,
+        "changePercent": 0.77,
         "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
         "label": "US DOLLAR IN (Open)",
-        "last": 101.42,
-        "changePercent": -0.44,
+        "last": 101.34,
+        "changePercent": -0.51,
         "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
-        "label": "S&P 500 VIX (Close)",
-        "last": 20.83,
-        "changePercent": -1.51,
+        "label": "S&P 500 VIX (Open)",
+        "last": 18.76,
+        "changePercent": -9.94,
         "source": "SGX Nifty / Futures",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
         "label": "GOLD (Open)",
-        "last": 3944.4,
-        "changePercent": 0.1,
+        "last": 4053.8,
+        "changePercent": 2.88,
         "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
         "label": "SILVER (Open)",
-        "last": 49.245,
-        "changePercent": -1.02,
+        "last": 51.955,
+        "changePercent": 4.43,
         "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
         "label": "COPPER (Open)",
-        "last": 6.306,
-        "changePercent": -1.5,
+        "last": 6.4285,
+        "changePercent": 0.41,
         "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
         "label": "CRUDE OIL (Open)",
-        "last": 95.49,
-        "changePercent": -0.62,
+        "last": 95.57,
+        "changePercent": -0.54,
         "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
         "label": "BRENT OIL (Open)",
-        "last": 103.13,
-        "changePercent": -0.45,
+        "last": 102.83,
+        "changePercent": -0.74,
         "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
         "label": "NATURAL GAS (Open)",
-        "last": 2.853,
-        "changePercent": -1.45,
+        "last": 2.92,
+        "changePercent": 0.86,
         "source": "SGX Nifty / Commodities",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
         "label": "EUR/USD (Open)",
-        "last": 1.1238,
-        "changePercent": 0.4,
+        "last": 1.1254,
+        "changePercent": 0.55,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
         "label": "USD/JPY (Open)",
-        "last": 157.74,
-        "changePercent": -0.58,
+        "last": 158.32,
+        "changePercent": -0.21,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
         "label": "GBP/USD (Open)",
-        "last": 1.3458,
-        "changePercent": 0.35,
+        "last": 1.3485,
+        "changePercent": 0.55,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
         "label": "USD/CHF (Open)",
-        "last": 0.8149,
-        "changePercent": -0.69,
+        "last": 0.8161,
+        "changePercent": -0.55,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
         "label": "USD/CAD (Open)",
-        "last": 1.397,
-        "changePercent": -0.29,
+        "last": 1.3951,
+        "changePercent": -0.42,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
         "label": "AUD/USD (Open)",
-        "last": 0.6965,
-        "changePercent": -0.01,
+        "last": 0.7006,
+        "changePercent": 0.57,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
         "label": "USD/CNY (Open)",
-        "last": 6.683,
-        "changePercent": 0.19,
+        "last": 6.6722,
+        "changePercent": 0.03,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
-        "label": "USD/INR (Close)",
-        "last": 94.54,
-        "changePercent": -0.21,
+        "label": "USD/INR (Open)",
+        "last": 94.65,
+        "changePercent": -0.1,
         "source": "SGX Nifty / Currencies",
-        "updatedAt": "2026-11-04T03:30:06.651Z"
+        "updatedAt": "2026-11-04T09:31:01.941Z"
       },
       {
         "label": "Bitcoin BTC.CM= (Open)",
-        "last": 76219.98,
-        "changePercent": -0.74,
+        "last": 78248.66,
+        "changePercent": 0.66,
         "source": "CNBC / Commodities",
-        "updatedAt": "2026-11-04T03:30:06.883Z"
+        "updatedAt": "2026-11-04T09:31:02.169Z"
       },
       {
         "label": "Infosys INFY (Close)",
         "last": 11.93,
         "changePercent": -2.65,
-        "extendedChangePercent": 0,
+        "extendedChangePercent": 0.08,
         "source": "CNBC / ADR",
-        "updatedAt": "2026-11-04T03:30:06.703Z"
+        "updatedAt": "2026-11-04T09:31:02.164Z"
       },
       {
-        "label": "Wipro WIT (Close)",
+        "label": "Wipro WIT (Open)",
         "last": 2.15,
         "changePercent": 0,
         "extendedChangePercent": 0,
         "source": "CNBC / ADR",
-        "updatedAt": "2026-11-04T03:30:06.703Z"
+        "updatedAt": "2026-11-04T09:31:02.164Z"
       },
       {
         "label": "HDFC Bank HDB (Close)",
         "last": 23.05,
         "changePercent": 1.54,
-        "extendedChangePercent": 0.17,
+        "extendedChangePercent": 1.91,
         "source": "CNBC / ADR",
-        "updatedAt": "2026-11-04T03:30:06.703Z"
+        "updatedAt": "2026-11-04T09:31:02.164Z"
       },
       {
-        "label": "ICICI Bank IBN (Close)",
+        "label": "ICICI Bank IBN (Open)",
         "last": 30.13,
         "changePercent": 0.23,
         "extendedChangePercent": 0,
         "source": "CNBC / ADR",
-        "updatedAt": "2026-11-04T03:30:06.703Z"
+        "updatedAt": "2026-11-04T09:31:02.164Z"
       },
       {
         "label": "Dr Reddy's RDY (Close)",
         "last": 14.3,
         "changePercent": 1.2,
-        "extendedChangePercent": -1.96,
+        "extendedChangePercent": -1.05,
         "source": "CNBC / ADR",
-        "updatedAt": "2026-11-04T03:30:06.703Z"
+        "updatedAt": "2026-11-04T09:31:02.164Z"
       },
       {
-        "label": "MakeMyTrip MMYT (Close)",
+        "label": "MakeMyTrip MMYT (Open)",
         "last": 45.5,
         "changePercent": -0.22,
         "extendedChangePercent": -1.05,
         "source": "CNBC / ADR",
-        "updatedAt": "2026-11-04T03:30:06.703Z"
+        "updatedAt": "2026-11-04T09:31:02.164Z"
       }
     ],
-    "ageMinutes": 0.8618629333333333,
+    "ageMinutes": 0.13213933333333333,
     "origin": "supabase",
     "sourceErrors": []
   },
   "newsFeed": {
-    "updatedAt": "2026-11-04T09:05:58.725768+05:30",
-    "updatedAtLabel": "04 Nov 2026, 09:05:58 AM IST",
+    "updatedAt": "2026-11-04T15:03:07.527737+05:30",
+    "updatedAtLabel": "04 Nov 2026, 03:03:07 PM IST",
     "items": [
       {
-        "source": "Livemint",
-        "title": "\u2018No immediate plans\u2019: Donald Trump says amid report of possible US strike against Iran as early as tomorrow",
-        "link": "https://www.livemint.com/news/us-news/no-immediate-plans-donald-trump-says-amid-report-of-possible-us-strike-against-iran-as-early-as-tomorrow-11793762007376.html",
-        "publishedAt": "2026-11-04T08:55:16+05:30",
-        "publishedAtLabel": "04 Nov 2026, 08:55:16 AM IST"
-      },
-      {
         "source": "Business Standard",
-        "title": "FIIs cover shorts, net buy \u20b94,711 cr index futures on Tue; a 4-month record",
-        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQREp4M1A4RXNUNzBOV09KSV9COWU2REs3WFNtWjRtQmw4MVdMaFViUElnVlhqdjV0YkNFeTN1NVdEcnVTa19qdnNwSjU1QjlmZ2pPWlBMRXdBR3B5bHRaV3pFVVRLQ0F4aG1ZU0ZuLVpveTNORkRqa21LdThaeDliOUxNNkVzdDZNSzdueHVsVlBCd0ZFU0szZERSMDczcndYMWZocVhSdDdHU1B0NkVWeUdtNW5JRjJqS2xBQmFOM0E4eDZUMlhnRE1HT3FrSXhrUHBOYTlR0gHbAUFVX3lxTE5BdThmVTl1ZDRGU0tyOWp2UHpvZkh2VUsybVp4a3h6YTRDbzFxOXJJaGhjVEV0VkhrY3BXWDBONEpDazZ4Y2EyMlkxMy1vVGJyN0Vra05mSk84dFlVS196ZEF3eDhHWFNxUXk5SXV0ZDZUa2hibnA4a1duWEpHeGNhc0VxNlVrdUdDU0Y5S0MzWWxTZDEwYVhpT3dDdllkenYwbjE4cXZTWEEwbll0bXFKbEl1R21rVVBocjFjVzVhOFJidTJBZDZTYUlCQXVMVnpyenc1VHN1VEk1TQ?oc=5",
-        "publishedAt": "2026-11-04T08:41:42+05:30",
-        "publishedAtLabel": "04 Nov 2026, 08:41:42 AM IST"
-      },
-      {
-        "source": "Business Standard",
-        "title": "Oil prices edge down as investors await US midterm election results",
-        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPTEJXRmJKS3Jsc1NWdnJHZEVzYklBZm16Tmdha1ZPekF4VzF5aFVqYndNQlQ1cnpUbUVzMlNTQXRzWG9SODg2Vk9fSkN5SzVsMnpMbWg0QUE5VzcyNTlVTll0anpiRVhWMlprU2J2SGZZQ1hSd2JaQVZ0U1ZsNWduM0VBWTBrSUtOaklfUnpGV29rMk5lV3hHRlhib3VoaUFlb2dtcVVYdzNTMEZudGtEa3UwSmxXYWNTWmRNd2Rsc2ZUUUQ4RW5EUXNTZ3BlazhDLWJYVFpQN0nSAd4BQVVfeXFMUHNVaDFEU2VwN3lXaVlQX3lwRHdJX3k3Vnd4NU1RbEtSeTN2S0k0Sjh6SXFHQ29mT3Y2T0tuWWw0VndVa2RUZkctQmhlR2JRUXd4RzRzdUdabTdBeE1SXzZyNmY2SnEwY3NDUllyRnJjT3daZUFzams1bDU5MElVSXdERDRmRURYZXB2RkVVVDlXVm54cTdGcHg4X2Zsd3ByTTFTX2Y4T2diWnVFQzRHcEhEcXF6UXpIN0hCYTRKTVFtUHhINVh0SU9QamV0WWhzalZSclVOd3o3Ml9sRHVn?oc=5",
-        "publishedAt": "2026-11-04T08:36:12+05:30",
-        "publishedAtLabel": "04 Nov 2026, 08:36:12 AM IST"
+        "title": "India sees some trade relief, new risks after US midterm elections",
+        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOTW4xdm1nUmhuMjJGT0JtcDRJd0tjRVotRHFkOTJYdTdNUUVYVmloQlR5OHFVbl83X3pfRV9mdDVnU0lxQ2dmb2c2UFhGcl9ETC1JbWhPd3BjWTFIUEw5YlNvcWUtZzlEWVJLY0FCNXlpaXh5VmdQWE9icDE2T19aWnQ3M3FYLVp5bHhOTlJPdkFwU05UbXFka0hodlVkckphakJUYjZ3Mml1bk9SR2J5RE15Zll2N1FUQjIxNUJDT0NHTW5rUUNOakdTTnnSAdIBQVVfeXFMUDN6azQwLTZWYzlZaEFTQjRaeTNRaElOUnpDTUFkYXVTcU1aUWtyanN5enVoQzFLRTJlS1Q4S3NiYUkwS3YtTVBaUkFQOWVmaWZQRGI1Nm9ua3pmb2ZJdmVrRGRCczNUM2pFM2tXaS1faW1YSFIwQ2tsVEZuSVVaSnNPd1NlMjBlTl9DTXlVZ21sQ21VbmhRdGIzZThNNy1veWRWcEo5UFZaei1JRlVWQTlDS3BUMExQM0F4OHRJR1FfcG9uX3c0azhZRmliV0ljaThB?oc=5",
+        "publishedAt": "2026-11-04T14:49:39+05:30",
+        "publishedAtLabel": "04 Nov 2026, 02:49:39 PM IST"
       },
       {
         "source": "Livemint",
-        "title": "US midterm election results impact on H-1B visa: What Republican or Democratic control could mean for Indians",
-        "link": "https://www.livemint.com/news/us-news/us-midterm-election-results-impact-on-h-1b-visa-what-republican-or-democratic-control-could-mean-for-indians-11793760000081.html",
-        "publishedAt": "2026-11-04T08:24:24+05:30",
-        "publishedAtLabel": "04 Nov 2026, 08:24:24 AM IST"
+        "title": "US midterms: Vivek Ramaswamy loses Ohio governor's race; how Ro Khanna, Pia Dandiya and others fared",
+        "link": "https://www.livemint.com/news/us-news/us-midterms-vivek-ramaswamy-loses-ohio-governor-s-race-how-ro-khanna-pia-dandiya-and-others-fared-11793780896050.html",
+        "publishedAt": "2026-11-04T14:37:24+05:30",
+        "publishedAtLabel": "04 Nov 2026, 02:37:24 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "Diwali shopping rush brings Delhi traffic to a crawl, key roads hit",
-        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPem1LdTFFTy02a0VYT2RzWXM1TE1TbzJMZVRJQmVxam5lWXRGb2xBeTV6MXNfZDNINUVwcnhvVENaSXpTelZ6ZDVFdl80RTFuWHRqT3JfejRqZWdRVUgzS1N1ZGhKcGxTRE9kNGl5Z2w0STJQLXNjOHpyZEZvQlFVbDNXU0xSSE9hdVFUN2N5UUFzQnBYTG1YRlQ3dENZUnhLcVhWdGZmX3NKdEF2WnFhMGktd2p6M3FYcmRCX2JBQWJmOV9WSnpZc1JOc9IB0AFBVV95cUxOLVUzc2VMRjdYVEJoVTYtX091Q196ck9lU1J1ckNMNDBtaXhJQlhCODhfZUNTem1WZm1wUHBWSTE4eExQT1ptS1o4dUJuOUtPNGxJZGZuYjNJWmhtX3VlOU9iZmUzeE1kaGRzQloyb2NoTk1lLTdEQnZyOGRYbmg4LURHX2NBM3ctMFBXNUdWMUFVOVBfM096eDRnWFFiWS14VG43UEhXMWN2aUdqNm1LZHRjUy1GeW5QS1BZV19FMG9BeGFsZlE0LVBzYnRPSTdF?oc=5",
-        "publishedAt": "2026-11-04T08:19:04+05:30",
-        "publishedAtLabel": "04 Nov 2026, 08:19:04 AM IST"
+        "title": "BEL stock rises 5% as order inflow optimism keeps MOFSL upbeat post Q2",
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOU1RmMkNjNFhyaFR3T2RWYXJtQUtiYjNTNGhLMl9TWG1INHAzNTJmc3pZWnFGLWpRUThKQzMwcEJCdXkzMmRpUFZ1eU5KcnN6S1ZmRTg2WXI2VXNNeEdrS0I4YnZzeGR4YklQcDhEblNZWDZMMFdtVmRiSXBfQUI1aS16WVJpZERGc0tKeWVDWGNBNXJZVGd6WWg3bmNKWVlDc2hMZ1FjS1hzWTdmNXdlRHpqVi1ydzQzVklLRlhYeC1VREVqNkxLdUZsbzlhVzNkcGfSAdcBQVVfeXFMTU84UjNLVFF1R19uaThUUXAxMjBxcExZa3VZNGprd1VjeGgza1g5UlBJNUpZY2dHdFVqNVlwZjhRdGk5bnVqWTloQm5pS091T2d4d21IUmFfMWFrVXJlT0lyMWthOWZ1bC1kUEVOd3F6NkJMTDQ4VFFsOFpQeTJKcmRBOWE2S3RrdUFLQ2NtYWxxdU1PelQ1d0NVcms5NmVOeWdtcHBnc2p1eE9jcElmNl93S20ySmRZaFdPR2Q2NnY3RTY4Y0M5Rl83bXVCWklhRDRQVUxVRm8?oc=5",
+        "publishedAt": "2026-11-04T14:05:39+05:30",
+        "publishedAtLabel": "04 Nov 2026, 02:05:39 PM IST"
       },
       {
         "source": "Livemint",
-        "title": "US midterm election results prediction: What betting market, exit polls reveal \u2014 Democrats have \u2018100% chance of winning\u2019",
-        "link": "https://www.livemint.com/news/us-news/us-midterm-election-results-prediction-what-betting-market-exit-polls-reveal-democrats-have-100-chance-of-winning-11793759365937.html",
-        "publishedAt": "2026-11-04T08:10:31+05:30",
-        "publishedAtLabel": "04 Nov 2026, 08:10:31 AM IST"
+        "title": "Mint explainer: why is India opening new entry gateways for medicines and medical devices?",
+        "link": "https://www.livemint.com/news/why-is-india-opening-new-entry-gateways-for-medicines-and-medical-devices-11793763261157.html",
+        "publishedAt": "2026-11-04T13:57:40+05:30",
+        "publishedAtLabel": "04 Nov 2026, 01:57:40 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "SC upholds states' power to levy additional tax on sales tax under pre-GST regime",
+        "link": "https://www.livemint.com/news/supreme-court-states-power-additional-sales-tax-surcharge-cess-gst-11793775813066.html",
+        "publishedAt": "2026-11-04T13:51:58+05:30",
+        "publishedAtLabel": "04 Nov 2026, 01:51:58 PM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "UK Rates Are Not High Enough to Curb Inflation, Research Finds",
+        "link": "https://www.bloomberg.com/news/articles/2026-11-04/uk-rates-are-not-high-enough-to-curb-inflation-research-finds",
+        "publishedAt": "2026-11-04T13:30:00+05:30",
+        "publishedAtLabel": "04 Nov 2026, 01:30:00 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "Nifty's medium-term momentum improves; 24K next resistance: HDFC Securities",
-        "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPSlNWeV9UU1dMVU16SEl2Qk1hVlphT0JOdkNZZ2g4UThkbWg2aXhiRDhkT1BHVmtoOHdndE96clNPSklpeXRKM3dIUk5xNk9uelNKamhoUXA4MW5xSzdieDFwc0JObFBkajJzcWVLNDlYc3FTTjB0YnFoQUwycnl4QnJycFFGemp5ZVZlLTgtTERhMXRhNjJCRXIwdW5YbFU3NWhJSlZmOVktVlBvb3gwY0QxQVhsR2d1X044NHU5MHNhazBnN3NoLW5jX0NBX2F6LTlRd3pWaDA2OWc3aHY2TDBqMjJBMEx1YUhnS0dkazVTd9IB9wFBVV95cUxPN1Q5b2Y3RTdRd0d4RGN4aUs1UEFHcUdGcXdtc3RQNTFmVUpPRkdqWEd5Xzh6SkpGT1FVcE5GZVlrWGUzM3hCOFozb25STUxMSTNFNDBkX19ydU1SaUQwWW84eEZ1Yy1OSHFvLUlKTWpPVTlmZHVXM2FYNDYyUXJVVGF0TTVCMWFCV2FMMHZQTmJPNVVBQzdXNEZ4c3FWZFFQcWdtZEdsRzBveUF0eE9qTjMya1UxZ3JudEtnZ2lGMXR1WlE3NXdZSklRei1VcnJzZEhDdExQMkhOWUJ1SUxqUXQwY0s2a1FUR2owNUdrM3o2clprZml3?oc=5",
-        "publishedAt": "2026-11-04T08:10:14+05:30",
-        "publishedAtLabel": "04 Nov 2026, 08:10:14 AM IST"
+        "title": "Camlin Fine Sciences tanks 18% post Q2 results; stock hits 52-week low",
+        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNWmxZVTJ1LS01YXpxY1lscGdHSFFEaHhCUDNxQ0k4cEJ3OFNQc3puY214ZWluM3N4dllFMzNWUGlEWmsxdElUUkt1RUdzdHVpOHFNdHpDcHR2ZGRPNW9OQllPRGdmQmRRdERGOFZjMmVSVkwyUXc3YXh5NDZNeGNoc0JCNVRHczJTaWRvV3h4RGw4MGVZZmNBNUdha0dRZ3FFRk5FQ1JYRDZHX3BRSWk1TUxRQ0xfOXdQcGFjZzJ4QUpsZmpYTm9iWV84OHB5cEVF0gHWAUFVX3lxTE9udUR6T3ROYWZvY3JEa0tSWWtiLVJPSVIxakRRc1FnRFZoN2xmRUEzSU5JamFnUjJGZWlUS1B6Qi1zQUhxc2Z3a2tJYy1MQXhjQ2paWVhoX3htbkd1MTdfY3BySloxMXRCazZrOEdYaGRzRndLenpzRWtFTEFTSWthM3A5clZsNG11R2ZaOUN1SGk3ZzU0Z2VrSlVqUGF3ME1CbEluSHFhSzRuUmkzcGF4Wl8wMjF6NzZQcFE2VWRfN3NFQW5uNFN2dEk1Zm84N3NuMVVUeVE?oc=5",
+        "publishedAt": "2026-11-04T13:28:07+05:30",
+        "publishedAtLabel": "04 Nov 2026, 01:28:07 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "\u2018Absurd rhetoric and nothing new\u2019: Kim Jong Un's sister Kim Yo Jong responds to FBI linking North Korea to Binance heist",
+        "link": "https://www.livemint.com/news/world/absurd-rhetoric-and-nothing-new-kim-jong-uns-sister-kim-yo-jong-responds-to-fbi-linking-north-korea-to-binance-heist-11793778024742.html",
+        "publishedAt": "2026-11-04T13:19:58+05:30",
+        "publishedAtLabel": "04 Nov 2026, 01:19:58 PM IST"
+      },
+      {
+        "source": "Livemint",
+        "title": "\u2019People were forced to pay between  \u20b925,000- \u20b950,000 to get LPG cylinder connection: UP CM Yogi slams Congress | Details",
+        "link": "https://www.livemint.com/news/india/people-were-forced-to-pay-between-25-000-50-000-to-get-lpg-cylinder-connection-up-cm-yogi-slams-congress-details-11793777534686.html",
+        "publishedAt": "2026-11-04T13:11:49+05:30",
+        "publishedAtLabel": "04 Nov 2026, 01:11:49 PM IST"
       },
       {
         "source": "Business Standard",
-        "title": "Stocks to watch: NSE, Bata India, Hindustan Zinc, Nykaa, ASK Automotive",
-        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOV2cxT1hiaEpBTWVNX0dmWVJtbWZuQmxZR3g0aWFGdHhpVTIyTDlNLXhtQ0tod2hVT19IREN1V2dJS01nb2gwM1d4bzE3M3pQdzNuNHRDQ1FzTF9icVRfYXEtSmc3dndLaU12VXBOWHFwYmMzcGl6Q2dZVFZERGU5OWRGSFVNcXRjNVFnLWN2amtmU1M4ZEI4WFF1WTdoRTI4S2htTXB5WjIxODRtTEhXeW5OVEdQSHp3NTlpMmo5ZzRtdGFGZFl1ZWN6UWZNUdIB0wFBVV95cUxQUHpiV3RJTkpFdk80MG1OMWtJNHlpNjlYMUQtTWpUaHdzZ0VJbmZMTXNoME5hRjJmMzd6eENVejE5bUxVQXEyYks5RGN5eURXRzNHa0ViS3RXVGJMY2JQZTNiUThrdzFYUUdkemlocmowdzhkb2MyVGU4aXpHUEVfN0d4Vm9jdndtZVM5Y2phTWQwVzQ4VXF4NThXenIwV1dXUGZiNTVhc0hLM3liMWpJcllsMi1jRTZKT0U1eE9HbWhBQkprYXF2MGo4bTRlT3BnMU13?oc=5",
-        "publishedAt": "2026-11-04T08:08:07+05:30",
-        "publishedAtLabel": "04 Nov 2026, 08:08:07 AM IST"
+        "title": "'India's crypto market to broaden, smaller cities to aid growth'",
+        "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOWUJ2aTE1VC1vV2RiMXJvZTdrNWhkNG1sekVZd25MSVRXX2xrRm9kRW80UFpLeC1QVXZCTFJpQ29XRXZVSlJHbExla1k1ay1EanFoQzBGR0FpWWR5dk5zYkZDWk1JTzJ0a3dUZXl1WmZTeW5ydXZfRzB6SVNaYUJxR3VfM0ZiRk91Ti1GOVRBUVUxTEhPeV9IMU1wWEJtdjR6ZUp6TS1vbVp4dDBKbF9TbDA1Wm43NmFYb2NvOTBNLTM1N3Z6Q3FOV1R6YnhyRU80SXJ5YXRadnJkdWQ5VmZrTVlfbmlhcTZDclJGUDFBVWVMTWlBQVdR0gH8AUFVX3lxTFB0N1djWkowUnprSGRzQ2NxaU9FQkQxbThlS003dEVjRktjcEZVNHNBd3FsN2JIdnVXd00xYktWQ0ROS2RYemk4WU9KSEY2RXRLWHItb2J1Ui0tVmEtYjBHeHNtdnJnNThMdC1aNEtjWEUyb0NjbTZWSjFhaEhrVkhVSmVFRHJqT1NQbWxIV2JNMkE3TzZHOWhpZXBJNjJZZS1aQTdmZm9Dakk3cGJyNFByWFZELXJrcThVaWMtejByWUNleVBKcEN4LW53VWdQbm81a0xvTXZhNHdGaTRfSzk4THNXTnI1cDB3RV9vMzNIaVJxdURoVG5zckhsVw?oc=5",
+        "publishedAt": "2026-11-04T12:47:44+05:30",
+        "publishedAtLabel": "04 Nov 2026, 12:47:44 PM IST"
       },
       {
-        "source": "Livemint",
-        "title": "Midterms may bring in wave of historic firsts for some states and the country",
-        "link": "https://www.livemint.com/news/midterms-may-bring-in-wave-of-historic-firsts-for-some-states-and-the-country-11793759345879.html",
-        "publishedAt": "2026-11-04T08:03:20+05:30",
-        "publishedAtLabel": "04 Nov 2026, 08:03:20 AM IST"
+        "source": "Business Standard",
+        "title": "Bombay Coated & Special Steels may list at 10% premium, signals grey market",
+        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQSXdCbm1VSkpHSUVhaXFfRE41aTRqWllBcXZLSXhGSEhQalZPemtYRnptd2EtX09FSG9iTUU4bWUwelFSenlqWDlRa3doSldqa0hHc3B4WnZyYmhQX0dQYmY4MW1BTjlQdDFhNnlQN1BubWxzVWVQb2pnMEdjSnNJU2NQX1Q0QUdjVnJJWlpieklaTU1kbTB6TkZGVUY4Sk5MQW5uZ1J3em5LT1NvSnpaVUN4ZjRZY0xaSGVPWmlXMmVkU3pmVzZCaEtFZEJrdjlwMlJrS9IB2gFBVV95cUxQNEMzTUdveFQyY2ktc2V5akdEQWU2TXBhejNWOEtuZTExRWZlV2taZXhiampUR3B6SG5Md1BUMEkyajZjbm5VZWlrNHJ2cTItSGJmaG1CUTlpTXMzMkVIQ2Y1WlV6Q3YtemJHZGpwSmhXWFJjZ3BSVHlRUTl3YWdxeWxyWjQ4UkF2alV5X2NWcHk3eS1XRDNZYWNfREt4UGxxQ3ZEdFcySFEyU2s3c1ltSHR0TFNCdkJOMVpwMnpFUVZDMVk5N3VRejlsdUpnYXhFQmJrMklXMk5uZw?oc=5",
+        "publishedAt": "2026-11-04T12:40:56+05:30",
+        "publishedAtLabel": "04 Nov 2026, 12:40:56 PM IST"
       },
       {
-        "source": "Livemint",
-        "title": "Fuel prices on 4 November: Check how much petrol, diesel, and CNG cost in Delhi, Mumbai, Bengaluru \u2014 Full list",
-        "link": "https://www.livemint.com/news/india/fuel-prices-on-4-november-check-how-much-petrol-diesel-and-cng-cost-in-delhi-mumbai-bengaluru-full-list-11793753511017.html",
-        "publishedAt": "2026-11-04T07:11:33+05:30",
-        "publishedAtLabel": "04 Nov 2026, 07:11:33 AM IST"
+        "source": "Bloomberg Economics",
+        "title": "Polish Constitutional Crisis Has Central Bank Chief on Ropes",
+        "link": "https://www.bloomberg.com/news/articles/2026-11-04/poland-constitutional-crisis-has-central-bank-chief-adam-glapinski",
+        "publishedAt": "2026-11-04T10:45:00+05:30",
+        "publishedAtLabel": "04 Nov 2026, 10:45:00 AM IST"
+      },
+      {
+        "source": "Bloomberg Economics",
+        "title": "World Bank Sees Kenya GDP Increasing by a Fifth If Graft Tackled",
+        "link": "https://www.bloomberg.com/news/articles/2026-11-04/world-bank-sees-kenya-gdp-increasing-by-a-fifth-if-graft-tackled",
+        "publishedAt": "2026-11-04T09:30:00+05:30",
+        "publishedAtLabel": "04 Nov 2026, 09:30:00 AM IST"
       },
       {
         "source": "Bloomberg Economics",
@@ -345,27 +366,6 @@
         "link": "https://www.bloomberg.com/news/articles/2026-11-04/thailand-growth-forecasts-raised-on-factory-data-revamp",
         "publishedAt": "2026-11-04T05:30:00+05:30",
         "publishedAtLabel": "04 Nov 2026, 05:30:00 AM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "Canada\u2019s Carney Says US Has Lowered Its Demands in Trade Talks",
-        "link": "https://www.bloomberg.com/news/articles/2026-11-03/canada-s-carney-says-us-has-lowered-its-demands-in-trade-talks",
-        "publishedAt": "2026-11-04T05:00:13+05:30",
-        "publishedAtLabel": "04 Nov 2026, 05:00:13 AM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "ECB Will Probably Have to Hike in December, Nagel Says",
-        "link": "https://www.bloomberg.com/news/articles/2026-11-03/ecb-will-probably-have-to-raise-rates-in-december-nagel-says",
-        "publishedAt": "2026-11-03T23:30:00+05:30",
-        "publishedAtLabel": "03 Nov 2026, 11:30:00 PM IST"
-      },
-      {
-        "source": "Bloomberg Economics",
-        "title": "US Job Openings Jump as Factory, Durable Orders Also Rise",
-        "link": "https://www.bloomberg.com/news/videos/2026-11-03/job-openings-jump-as-factory-durable-orders-also-rise-video",
-        "publishedAt": "2026-11-03T20:55:26+05:30",
-        "publishedAtLabel": "03 Nov 2026, 08:55:26 PM IST"
       }
     ],
     "sourcesAvailable": [
