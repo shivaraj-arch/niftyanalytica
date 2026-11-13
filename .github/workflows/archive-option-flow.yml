@@ -1,0 +1,72 @@
+name: Archive Option Flow
+
+# Writes down the option chain's order-book fields so the flow metrics can
+# eventually be tested. NSE's option-chain API is live-only and
+# data/live-snapshot.json is overwritten on every refresh, so nothing on the
+# page that derives from the book could be validated before this existed.
+#
+# Source is the Supabase storage object, which refresh-live-snapshot
+# repopulates every minute during market hours. NSE is NOT scraped from the
+# runner: equity-stockIndices returns 404 to unprimed clients behind Akamai.
+#
+# NOTE: GitHub's scheduler is best-effort and can slip 5-15 minutes under load.
+# A slipped run is harmless here -- the archiver keys on NSE's own
+# records.timestamp, so a late run still records the right snapshot and a run
+# inside an already-recorded window is a no-op. The production home is still
+# Supabase pg_cron, as with refresh-live-snapshot.
+on:
+  schedule:
+    # 03:00-10:59 UTC = 08:30-16:29 IST. The pre-open and post-close runs
+    # dedupe themselves against the previous close.
+    - cron: '*/15 3-10 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      strike_window:
+        description: 'Points either side of spot to archive (default 500)'
+        required: false
+
+concurrency:
+  group: archive-option-flow
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run tests
+        run: node --test scripts/test/*.test.mjs
+
+      - name: Archive the chain's order book
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          LIVE_SNAPSHOT_BUCKET: ${{ secrets.LIVE_SNAPSHOT_BUCKET }}
+          LIVE_SNAPSHOT_PATH: ${{ secrets.LIVE_SNAPSHOT_PATH }}
+          OPTION_FLOW_WINDOW: ${{ inputs.strike_window }}
+        run: node scripts/archive-option-flow.mjs --from-storage
+
+      - name: Commit the archive
+        run: |
+          # Only data/option-flow is staged. The snapshot is read into memory
+          # and never written to the working tree, so no page data moves here
+          # and the site does not need a redeploy for an archive row.
+          git add data/option-flow
+          if git diff --staged --quiet; then
+            echo "Chain has not refreshed since the last run; nothing to commit."
+            exit 0
+          fi
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git commit -m "chore: archive option flow [skip ci]"
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
+          git push

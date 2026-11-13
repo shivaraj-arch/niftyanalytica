@@ -575,7 +575,7 @@ const renderLiveSections = (snapshot) => {
     const pcrTone = openInterest.pcr > 1.2 ? 'positive' : openInterest.pcr < 0.8 ? 'negative' : '';
     setHtml('heroPcr', `<span class="${pcrTone}">${openInterest.pcr.toFixed(2)} (${pcrLabel})</span>`);
   }
-  setHtml('heroSignalNote', `Sentiment: ${openInterest.signals.divergenceSummary}. Trap: ${openInterest.signals.trapRiskLabel}. See <a href="#open-interest">Market Capitalization</a> for details.`);
+  setHtml('heroSignalNote', `Sentiment: ${openInterest.signals.divergenceSummary}. Resting sell interest: ${openInterest.signals.pressureLabel}. See <a href="#open-interest">Market Capitalization</a> for details.`);
   setText('contributorsStamp', contributors.timestamp || '-');
   setText('openInterestStamp', openInterest.timestamp || '-');
   setText('blackScholesStamp', blackScholes.timestamp || '-');
@@ -591,11 +591,12 @@ const renderLiveSections = (snapshot) => {
     { label: 'Spot', value: formatNumber(openInterest.spot) },
     { label: 'Expiry', value: openInterest.expiry || '-' },
     { label: 'Net Positioning Δ', value: signed(openInterest.positioning.netPositioningChange), tone: tone(openInterest.positioning.netPositioningChange) },
-    { label: 'Flow Imbalance', value: signed(openInterest.positioning.flowImbalance), tone: tone(openInterest.positioning.flowImbalance) },
+    { label: 'Calls Resting (touch)', value: restingLabel(openInterest.positioning.restingCallRupees) },
+    { label: 'Puts Resting (touch)', value: restingLabel(openInterest.positioning.restingPutRupees) },
     { label: 'IV Skew', value: `${signed(openInterest.positioning.ivSkew)}%`, tone: tone(openInterest.positioning.ivSkew) },
     { label: 'Strongest Shift', value: openInterest.positioning.strongestShiftLabel },
     { label: 'Divergence Score', value: String(openInterest.signals.divergenceScore), tone: openInterest.signals.divergenceScore > 0 ? 'negative' : '' },
-    { label: 'Trap Risk', value: openInterest.signals.trapRiskLabel, tone: openInterest.signals.trapRiskTone },
+    { label: 'Resting Sell Interest', value: openInterest.signals.pressureLabel, tone: openInterest.signals.pressureTone },
   ]);
 
   setText('openInterestPositioningNote', openInterest.positioning.note);
@@ -652,8 +653,8 @@ const renderLiveSections = (snapshot) => {
     valueB: putBidAsk,
     colorA: '#0f4c5c',
     colorB: '#b47b19',
-    labelA: 'Call Buy-Sell',
-    labelB: 'Put Buy-Sell',
+    labelA: 'Call Buy-Sell (touch)',
+    labelB: 'Put Buy-Sell (touch)',
   }), 'bidAskLegend', 'Buy Minus Sell by Strike');
 
   bindChartExpansion();
@@ -1040,11 +1041,19 @@ const extractOpenInterest = (payload) => {
       strikePrice,
       callOI: parseNumber(ce.openInterest),
       callOIChange: parseNumber(ce.changeinOpenInterest),
-      callBidAsk: parseNumber(ce.totalBuyQuantity) - parseNumber(ce.totalSellQuantity),
+      // Net resting quantity at the TOUCH. totalBuyQuantity/totalSellQuantity
+      // aggregate the whole book including orders that will never fill; on the
+      // 11-Nov-2026 snapshot they ran ~200x these and disagreed in sign at
+      // 25300 CE (book 6:1 sell, touch 2:1 buy).
+      callBidAsk: parseNumber(ce.buyQuantity1) - parseNumber(ce.sellQuantity1),
+      callBookNet: parseNumber(ce.totalBuyQuantity) - parseNumber(ce.totalSellQuantity),
+      callLtp: parseNumber(ce.lastPrice),
       callIV: parseNumber(ce.impliedVolatility),
       putOI: parseNumber(pe.openInterest),
       putOIChange: parseNumber(pe.changeinOpenInterest),
-      putBidAsk: parseNumber(pe.totalBuyQuantity) - parseNumber(pe.totalSellQuantity),
+      putBidAsk: parseNumber(pe.buyQuantity1) - parseNumber(pe.sellQuantity1),
+      putBookNet: parseNumber(pe.totalBuyQuantity) - parseNumber(pe.totalSellQuantity),
+      putLtp: parseNumber(pe.lastPrice),
       putIV: parseNumber(pe.impliedVolatility),
     };
   });
@@ -1067,19 +1076,29 @@ const extractOpenInterest = (payload) => {
 };
 
 const buildPositioningChanges = (strikes) => {
+  /* Resting interest is accumulated in RUPEES (quantity x premium) rather than
+     in contracts, so the two sides are commensurable: lots of a cheap option no
+     longer count the same as lots of an expensive one. Sub-rupee legs are
+     skipped because one tick there is a 20%+ price change.
+     Mirrors scripts/lib/option-flow.mjs, which is the tested implementation and
+     the one the archive uses -- keep the two in step. */
+  const MIN_PREMIUM = 1;
   const totals = strikes.reduce((accumulator, strikeRow) => {
     const netOIChange = strikeRow.putOIChange - strikeRow.callOIChange;
-    const netFlow = strikeRow.putBidAsk - strikeRow.callBidAsk;
     const ivSkew = strikeRow.putIV - strikeRow.callIV;
+    const callRupees = strikeRow.callLtp >= MIN_PREMIUM ? strikeRow.callBidAsk * strikeRow.callLtp : 0;
+    const putRupees = strikeRow.putLtp >= MIN_PREMIUM ? strikeRow.putBidAsk * strikeRow.putLtp : 0;
 
     return {
       netPositioningChange: accumulator.netPositioningChange + netOIChange,
-      flowImbalance: accumulator.flowImbalance + netFlow,
+      restingCallRupees: accumulator.restingCallRupees + callRupees,
+      restingPutRupees: accumulator.restingPutRupees + putRupees,
       ivSkewTotal: accumulator.ivSkewTotal + ivSkew,
     };
   }, {
     netPositioningChange: 0,
-    flowImbalance: 0,
+    restingCallRupees: 0,
+    restingPutRupees: 0,
     ivSkewTotal: 0,
   });
 
@@ -1101,27 +1120,32 @@ const buildPositioningChanges = (strikes) => {
   }, null);
 
   const averageIvSkew = strikes.length ? totals.ivSkewTotal / strikes.length : 0;
-  const directionLabel = totals.netPositioningChange > 0 && totals.flowImbalance > 0
-    ? 'Bullish positioning build'
-    : totals.netPositioningChange < 0 && totals.flowImbalance < 0
-      ? 'Bearish positioning build'
-      : totals.netPositioningChange > 0
-        ? 'Put-side hedge build'
-        : totals.netPositioningChange < 0
-          ? 'Call-side hedge build'
-          : 'Balanced positioning';
+  /* The old 'Bullish/Bearish positioning build' label required the OI term and
+     the order-book term to agree in sign, but they encode OPPOSITE economics:
+     put OI building is read as writing (bullish), while net resting BUY interest
+     in puts is people trying to buy puts (bearish). On 11-Nov-2026 both were
+     positive and the page asserted bullish from two components that disagreed
+     about what was happening. Which sign is right is not identifiable from a
+     chain snapshot -- it needs the archive in data/option-flow. Until then this
+     reports figures and no direction. */
   const strongestShiftLabel = strongestShift
     ? `${strongestShift.strikePrice} (${signed(strongestShift.netChange)})`
     : '-';
+  const restingNetRupees = totals.restingPutRupees - totals.restingCallRupees;
   const note = strongestShift
-    ? `${directionLabel} led by ${strongestShift.strikePrice}, with net OI shift ${signed(totals.netPositioningChange)}, flow imbalance ${signed(totals.flowImbalance)}, and IV skew ${signed(averageIvSkew)}%.`
+    ? `Largest open-interest shift at ${strongestShift.strikePrice} (${signed(strongestShift.netChange)}); `
+      + `chain net ${signed(totals.netPositioningChange)}. `
+      + `Resting interest at the touch: calls ${restingLabel(totals.restingCallRupees)}, `
+      + `puts ${restingLabel(totals.restingPutRupees)}. IV skew ${signed(averageIvSkew)}%. `
+      + 'Descriptive only; no direction is implied.'
     : 'Positioning changes are waiting for the next option-chain refresh.';
 
   return {
     netPositioningChange: totals.netPositioningChange,
-    flowImbalance: totals.flowImbalance,
+    restingCallRupees: totals.restingCallRupees,
+    restingPutRupees: totals.restingPutRupees,
+    restingNetRupees,
     ivSkew: averageIvSkew,
-    directionLabel,
     strongestShiftLabel,
     note,
   };
@@ -1143,31 +1167,39 @@ const buildOpenInterestSignals = ({ openInterest, contributors, fiiDii, indexSum
   if (priceDirection > 0 && institutionalDirection < 0) divergences.push('Price up vs net negative institutions');
   if (priceDirection < 0 && institutionalDirection > 0) divergences.push('Price down vs supportive institutions');
 
+  /* Replaces the old "Upside trap"/"Downside trap" scorer, which ranked on
+     `callOIChange + |callBidAsk|` -- open-interest contracts ADDED to
+     pending-order quantity. On the 11-Nov-2026 snapshot the OI term was 7.3% of
+     the winning score (25400: OI 68,802 against book -871,130), so the ranking
+     was effectively pure resting quantity with an OI rounding error on top. Its
+     condition also fired on 4 of the 6 strikes within 150 points of spot, which
+     made "No clear trap" the rare state rather than the signal.
+
+     Now: rank on rupees at the touch, and report the OI shift beside it instead
+     of inside it. Still descriptive -- a strike carrying resting sell interest
+     is not evidence the market will fail there. */
+  const MIN_PREMIUM = 1;
   const nearSpotRows = (openInterest.strikes || []).filter((row) => Math.abs(row.strikePrice - openInterest.spot) <= 150);
-  const trapCandidates = nearSpotRows.flatMap((row) => {
-    const upsideScore = row.strikePrice >= openInterest.spot && row.callOIChange > row.putOIChange && row.callBidAsk < 0
-      ? row.callOIChange + Math.abs(row.callBidAsk)
-      : 0;
-    const downsideScore = row.strikePrice <= openInterest.spot && row.putOIChange > row.callOIChange && row.putBidAsk < 0
-      ? row.putOIChange + Math.abs(row.putBidAsk)
-      : 0;
+  const pressureCandidates = nearSpotRows.flatMap((row) => ([
+    { side: 'CE', strike: row.strikePrice, netQty: row.callBidAsk, ltp: row.callLtp, oiChange: row.callOIChange },
+    { side: 'PE', strike: row.strikePrice, netQty: row.putBidAsk, ltp: row.putLtp, oiChange: row.putOIChange },
+  ])).filter((c) => c.netQty < 0 && c.ltp >= MIN_PREMIUM).map((c) => ({
+    label: `${c.strike} ${c.side} resting sell ${compactNumber.format(Math.abs(c.netQty) * c.ltp)}`,
+    rupees: Math.abs(c.netQty) * c.ltp,
+    oiChangeRupees: c.oiChange * c.ltp,
+    tone: '',
+  }));
 
-    return [
-      upsideScore > 0 ? { label: `Upside trap @ ${row.strikePrice}`, score: upsideScore, tone: 'negative' } : null,
-      downsideScore > 0 ? { label: `Downside trap @ ${row.strikePrice}`, score: downsideScore, tone: 'positive' } : null,
-    ].filter(Boolean);
-  });
-
-  const topTrap = trapCandidates.reduce((best, current) => {
+  const topTrap = pressureCandidates.reduce((best, current) => {
     if (!best) return current;
-    return current.score > best.score ? current : best;
+    return current.rupees > best.rupees ? current : best;
   }, null);
 
   const divergenceSummary = divergences.length
     ? divergences[0]
     : 'Aligned sentiment';
-  const trapRiskLabel = topTrap?.label || 'No clear trap';
-  const trapRiskTone = topTrap?.tone || '';
+  const pressureLabel = topTrap?.label || 'None near spot';
+  const pressureTone = topTrap?.tone || '';
   const noteParts = [];
 
   noteParts.push(divergenceSummary);
@@ -1175,14 +1207,14 @@ const buildOpenInterestSignals = ({ openInterest, contributors, fiiDii, indexSum
     noteParts.push(`${divergences.length} divergences active`);
   }
   if (topTrap) {
-    noteParts.push(`${topTrap.label} near spot`);
+    noteParts.push(`Largest resting sell interest at the touch: ${topTrap.label}`);
   }
 
   return {
     divergenceScore: divergences.length,
     divergenceSummary,
-    trapRiskLabel,
-    trapRiskTone,
+    pressureLabel,
+    pressureTone,
     note: noteParts.join('. ') + '.',
   };
 };
@@ -1916,6 +1948,14 @@ const formatTickerValue = (value) => {
   if (Number.isNaN(Number(value))) return '-';
   const number = Number(value);
   return Math.abs(number) >= 1000 ? currency.format(number) : number.toFixed(2);
+};
+
+/* Resting interest is signed: positive is net buy at the touch, negative net
+   sell. A tile reading "-3.9L" is unreadable, so say which side it is. */
+const restingLabel = (value) => {
+  const number = Number(value);
+  if (!Number.isFinite(number) || number === 0) return '-';
+  return `${compactNumber.format(Math.abs(number))} ${number > 0 ? 'buy' : 'sell'}`;
 };
 
 const signed = (value) => {
