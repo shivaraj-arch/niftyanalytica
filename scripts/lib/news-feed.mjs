@@ -159,53 +159,97 @@ function parseNumber(value) {
   return Number.isFinite(numericValue) ? numericValue : 0;
 }
 
-function extractInternationalSection(html) {
-  const start = html.indexOf('<h2 class="widgettitle">International</h2>');
-  if (start === -1) {
-    throw new Error('International widget not found on SGX Nifty page.');
+// sgxnifty.org was rebuilt in November 2026. The "International" widget and its
+// <table class="index-table"> rows are gone; the same four categories now ship as
+// a JSON object on window.FD_SIDE, server-rendered on every page load. Rows are
+// [name, last, change, changePercent, status, id], and the names arrive in full
+// rather than truncated to twelve characters, so "NASDAQ COMPO" is now
+// "Nasdaq Composite". window.FD_LIVE carries a polling URL instead, but its token
+// is minted per page load and covers only the headline contract, so the embedded
+// object stays the better source.
+const SGX_FEED_GLOBAL = 'FD_SIDE';
+
+function extractJsObjectLiteral(html, globalName) {
+  const assignment = new RegExp(`window\\.${globalName}\\s*=\\s*`).exec(html);
+  if (!assignment) {
+    throw new Error(`window.${globalName} not found on SGX Nifty page.`);
   }
 
-  const endCandidates = [
-    html.indexOf('<div id="recent-posts-widget-with-thumbnails', start),
-    html.indexOf('<div class="widget recent-posts-widget-with-thumbnails', start),
-    html.indexOf('<h2 class="widgettitle">Latest News</h2>', start),
-  ].filter((value) => value > start);
-  const end = endCandidates.length ? Math.min(...endCandidates) : html.length;
-  return html.slice(start, end);
+  const start = assignment.index + assignment[0].length;
+  if (html[start] !== '{') {
+    throw new Error(`window.${globalName} is not an object literal.`);
+  }
+
+  // Counted rather than matched with a regex: the payload nests arrays and
+  // carries quoted names like "S&P 500", so a greedy match would run past the
+  // object to the last brace on the page.
+  let depth = 0;
+  let inString = false;
+  let escaped = false;
+  for (let index = start; index < html.length; index += 1) {
+    const char = html[index];
+    if (inString) {
+      if (escaped) {
+        escaped = false;
+      } else if (char === '\\') {
+        escaped = true;
+      } else if (char === '"') {
+        inString = false;
+      }
+      continue;
+    }
+    if (char === '"') {
+      inString = true;
+    } else if (char === '{') {
+      depth += 1;
+    } else if (char === '}') {
+      depth -= 1;
+      if (depth === 0) {
+        return html.slice(start, index + 1);
+      }
+    }
+  }
+
+  throw new Error(`window.${globalName} is unterminated on SGX Nifty page.`);
 }
 
-function parseInternationalMarketTape(html) {
-  const section = extractInternationalSection(html);
-  const tables = [...section.matchAll(/<table class="index-table">([\s\S]*?)<\/table>/g)];
+export function parseSgxMarketTape(html) {
+  const feed = JSON.parse(extractJsObjectLiteral(html, SGX_FEED_GLOBAL));
+  const updatedAt = new Date().toISOString();
   const items = [];
 
-  for (const tableMatch of tables) {
-    const tableHtml = tableMatch[1] || '';
-    const category = stripHtml(extractTagValue(tableHtml, 'th')) || 'International';
-    const rowMatches = [...tableHtml.matchAll(/<tr class="index-line">([\s\S]*?)<\/tr>/g)];
+  for (const [category, rows] of Object.entries(feed)) {
+    if (!Array.isArray(rows)) {
+      continue;
+    }
 
-    for (const rowMatch of rowMatches) {
-      const rowHtml = rowMatch[1] || '';
-      const cells = [...rowHtml.matchAll(/<td class="([^"]+)">([\s\S]*?)<\/td>/g)];
-      const cellMap = new Map(cells.map((cell) => [cell[1], cell[2]]));
-      const rawName = stripHtml(cellMap.get('index-name left-align') || cellMap.get('index-name') || '');
-      const last = parseNumber(stripHtml(cellMap.get('index-price') || ''));
-      const changePercent = parseNumber(stripHtml(cellMap.get('index-percent') || '').replace(/%/g, ''));
-      const clockCell = rowHtml.match(/<td class="index-clock\s+([^"]+)"[^>]*>[\s\S]*?title="([^"]+)"/i);
-      const status = stripHtml(clockCell?.[2] || clockCell?.[1] || '').replace(/[^A-Za-z]/g, '') || 'Unknown';
+    for (const row of rows) {
+      if (!Array.isArray(row)) {
+        continue;
+      }
 
-      if (!rawName || !Number.isFinite(last) || last <= 0) {
+      const [rawName, rawLast, , rawChangePercent, rawStatus] = row;
+      const name = String(rawName ?? '').trim();
+      const last = parseNumber(rawLast);
+      const changePercent = parseNumber(rawChangePercent);
+      const status = String(rawStatus ?? '').replace(/[^A-Za-z]/g, '') || 'Unknown';
+
+      if (!name || !Number.isFinite(last) || last <= 0) {
         continue;
       }
 
       items.push({
-        label: `${rawName} (${status})`,
+        label: `${name} (${status})`,
         last,
         changePercent,
         source: `SGX Nifty / ${category}`,
-        updatedAt: new Date().toISOString(),
+        updatedAt,
       });
     }
+  }
+
+  if (!items.length) {
+    throw new Error('SGX Nifty tape carried no usable rows.');
   }
 
   return items;
@@ -306,7 +350,7 @@ async function buildMarketTape() {
 
   try {
     const html = await fetchText(SGX_NIFTY_URL);
-    parsedItems = parseInternationalMarketTape(html);
+    parsedItems = parseSgxMarketTape(html);
   } catch (error) {
     console.warn(error instanceof Error ? error.message : String(error));
   }
