@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intraday Strategy Backtester - Nifty Analytica</title>
+  <meta name="description" content="Backtest RSI and Bollinger Band entries on NSE Nifty 50 with 1, 5 and 15 minute candles from 2017. Runs in your browser and reports out-of-sample results beside in-sample.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#0f4c5c">
+  <meta name="author" content="playai">
+  <link rel="canonical" href="https://niftyanalytica.com/backtest/">
+  <link rel="icon" type="image/png" href="../assets/icon-app1.png">
+  <meta property="og:title" content="Intraday Strategy Backtester - Nifty Analytica">
+  <meta property="og:description" content="Test RSI and Bollinger Band entries on Nifty 50 minute candles, with out-of-sample results shown by default.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://niftyanalytica.com/backtest/">
+  <meta property="og:site_name" content="Nifty Analytica">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../assets/styles.css?v=20261123-1">
+  <link rel="stylesheet" href="../assets/backtest.css?v=20261123-2">
+</head>
+<body>
+  <main class="page" style="max-width:1180px;margin:0 auto;padding:28px 18px 72px">
+
+    <nav class="section-nav" style="margin-bottom:22px">
+      <a href="../">&larr; Nifty Analytica</a>
+    </nav>
+
+    <h1>Intraday Strategy Backtester</h1>
+    <p style="color:var(--muted);max-width:72ch">
+      44 indicators on NSE Nifty&nbsp;50, over 1, 5 and 15 minute
+      candles back to April 2017. Everything runs in your browser - no data leaves
+      your device. Results are reported <strong>out-of-sample alongside
+      in-sample</strong>, because a result that only holds on the half you tuned it
+      on is a fitted curve rather than an edge.
+    </p>
+
+    <section class="card" style="margin-top:22px">
+      <div class="bt-grid bt-cfg">
+        <div class="bt-field">
+          <label for="btRes">Candle</label>
+          <select id="btRes">
+            <option value="15">15 minute</option>
+            <option value="5" selected>5 minute</option>
+            <option value="1">1 minute</option>
+          </select>
+        </div>
+        <div class="bt-field">
+          <label for="btYear">Year <span id="btYearHint" style="text-transform:none;letter-spacing:0;font-weight:400"></span></label>
+          <select id="btYear"></select>
+        </div>
+        <div class="bt-field">
+          <label for="btSide">Direction</label>
+          <select id="btSide">
+            <option value="-1">Sell / short</option>
+            <option value="1">Buy / long</option>
+          </select>
+        </div>
+        <div class="bt-field">
+          <label for="btSlip">Slippage + cost, points per side</label>
+          <input id="btSlip" type="number" value="1" min="0" step="0.25">
+        </div>
+      </div>
+
+      <div class="bt-grid bt-two" style="margin-top:18px">
+        <fieldset class="bt-set">
+          <legend>Entry conditions</legend>
+          <p style="color:var(--muted);font-size:0.86rem;margin:0 0 12px">
+            44 indicators across price, oscillators, moving averages, bands and trend.
+            Compare any of them against a number or against another indicator. Up to
+            three conditions, combined with AND / OR.
+          </p>
+          <div id="btRows"></div>
+        </fieldset>
+
+        <fieldset class="bt-set">
+          <legend>Exit</legend>
+          <div class="bt-grid" style="grid-template-columns:1fr 1fr">
+            <div class="bt-field">
+              <label for="btTgt">Target, points (0 = none)</label>
+              <input id="btTgt" type="number" value="30" min="0" step="5">
+            </div>
+            <div class="bt-field">
+              <label for="btStp">Stop, points (0 = none)</label>
+              <input id="btStp" type="number" value="30" min="0" step="5">
+            </div>
+            <div class="bt-field">
+              <label for="btMaxBars">Max bars held (0 = none)</label>
+              <input id="btMaxBars" type="number" value="12" min="0" step="1">
+            </div>
+            <div class="bt-field">
+              <label for="btOnce">Entries per session</label>
+              <select id="btOnce">
+                <option value="1">One</option>
+                <option value="0">Unlimited</option>
+              </select>
+            </div>
+            <div class="bt-field">
+              <label>Square off</label>
+              <select disabled><option>At session end</option></select>
+            </div>
+          </div>
+          <p class="bt-caution">
+            When one bar's range covers both your target and your stop, this counts
+            the <strong>stop</strong>. Candles cannot say which was touched first,
+            and assuming the target would quietly manufacture profit.
+          </p>
+        </fieldset>
+      </div>
+
+      <button class="button button-primary" id="btRun" style="margin-top:20px">Run backtest</button>
+      <p class="bt-status" id="btStatus"></p>
+    </section>
+
+    <section id="btOut" class="bt-hide">
+      <h2 style="margin-top:34px">Result</h2>
+      <p class="bt-recipe" id="btRecipe"></p>
+      <p class="bt-verdict" id="btVerdict"></p>
+      <div id="btWarn"></div>
+
+      <div class="bt-grid bt-two">
+        <div class="card">
+          <h3 style="margin-top:0">In-sample
+            <span id="btIsRange" style="font-weight:400;color:var(--muted);font-size:0.85rem"></span>
+          </h3>
+          <div id="btIsBox"></div>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Out-of-sample
+            <span id="btOosRange" style="font-weight:400;color:var(--muted);font-size:0.85rem"></span>
+          </h3>
+          <div id="btOosBox"></div>
+        </div>
+      </div>
+
+      <h2 style="margin-top:34px">Equity curve, cumulative points</h2>
+      <div class="card bt-chart"><div id="btChart"></div></div>
+
+      <h2 style="margin-top:34px">Trades
+        <span id="btTradeCount" style="font-weight:400;color:var(--muted);font-size:0.9rem"></span>
+      </h2>
+      <div class="bt-scroll"><table class="bt-table" id="btTrades"></table></div>
+    </section>
+
+    <section class="card" style="margin-top:34px">
+      <h3 style="margin-top:0">What this does and does not measure</h3>
+      <p style="color:var(--muted);margin-bottom:10px">
+        P&amp;L is in <strong>index points</strong>, not rupees. This backtests the
+        signal against the Nifty&nbsp;50 index itself, not an option or futures
+        position. Option prices do not exist at minute resolution in any public
+        source, so an intraday option P&amp;L cannot be computed honestly here.
+      </p>
+      <p style="color:var(--muted);margin-bottom:10px">
+        A signal is read on a bar's close and the position opens at the
+        <strong>next bar's open</strong>. Entering at the close of the bar that
+        produced the signal is look-ahead, and inflates every result.
+      </p>
+      <p style="color:var(--muted);margin:0">
+        Candles are from this project's own store, 2017-04-03 onward, validated
+        against Kite on 10,180 overlapping bars. Past behaviour is not a forecast.
+      </p>
+    </section>
+  </main>
+
+  <script src="../assets/runtime-config.js?v=20261123-1"></script>
+  <script src="../assets/backtest-indicators.js?v=20261123-2"></script>
+  <script src="../assets/backtest-series.js?v=20261123-2"></script>
+  <script src="../assets/backtest.js?v=20261123-2"></script>
+</body>
+</html>

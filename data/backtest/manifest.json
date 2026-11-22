@@ -1,0 +1,21 @@
+{
+  "generated": "2026-11-23T01:19:35",
+  "inRepo": {
+    "15": "data/backtest/nifty_15min.json",
+    "5": "data/backtest/nifty_5min.json"
+  },
+  "bucketBase": "public-data/backtest/",
+  "oneMinYears": [
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "note": "1-minute files are served from the Supabase public bucket, not this repo"
+}

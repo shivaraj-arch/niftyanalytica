@@ -1,0 +1,78 @@
+/* Backtester-specific styles. Palette, radius and shadow come from
+   styles.css; nothing is redefined here. */
+.bt-grid { display: grid; gap: 14px; }
+@media (min-width: 880px) { .bt-cfg { grid-template-columns: repeat(4, 1fr); } }
+@media (min-width: 580px) and (max-width: 879px) { .bt-cfg { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 820px) { .bt-two { grid-template-columns: 1fr 1fr; } }
+
+.bt-field label {
+  display: block; font-size: 0.72rem; text-transform: uppercase;
+  letter-spacing: 0.06em; color: var(--muted); margin-bottom: 6px; font-weight: 600;
+}
+.bt-field select, .bt-field input {
+  width: 100%; padding: 10px 12px; font: inherit; font-size: 0.94rem;
+  color: var(--ink); background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--card-border); border-radius: 12px;
+}
+.bt-field select:focus-visible, .bt-field input:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 1px;
+}
+.bt-set {
+  border: 1px solid var(--card-border); border-radius: 18px; padding: 16px 18px; margin: 0;
+}
+.bt-set legend {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--muted); font-weight: 600; padding: 0 8px;
+}
+.bt-kv {
+  display: flex; justify-content: space-between; gap: 14px; padding: 7px 0;
+  border-bottom: 1px dashed var(--card-border); font-size: 0.94rem;
+}
+.bt-kv:last-child { border-bottom: 0; }
+.bt-kv b { font-variant-numeric: tabular-nums; }
+.bt-up { color: var(--mint); } .bt-dn { color: var(--rose); }
+.bt-verdict {
+  border-left: 4px solid var(--accent); background: rgba(15, 76, 92, 0.06);
+  padding: 14px 16px; border-radius: 0 16px 16px 0; margin: 0 0 18px;
+}
+.bt-caution {
+  border-left: 4px solid var(--rose); background: rgba(185, 74, 72, 0.07);
+  padding: 12px 14px; border-radius: 0 14px 14px 0; font-size: 0.9rem; margin: 14px 0 0;
+}
+.bt-table { width: 100%; border-collapse: collapse; font-size: 0.86rem; font-variant-numeric: tabular-nums; }
+.bt-table th, .bt-table td { text-align: right; padding: 8px 10px; border-bottom: 1px solid var(--card-border); }
+.bt-table th:first-child, .bt-table td:first-child { text-align: left; }
+.bt-table th {
+  font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em;
+  color: var(--muted); font-weight: 600; position: sticky; top: 0;
+  background: var(--bg-bottom);
+}
+.bt-scroll { max-height: 400px; overflow: auto; border: 1px solid var(--card-border); border-radius: 18px; }
+.bt-status { color: var(--muted); font-size: 0.9rem; margin-top: 14px; min-height: 1.4em; }
+.bt-chart svg { display: block; width: 100%; height: auto; }
+.bt-hide { display: none; }
+
+/* condition builder */
+.bt-row { border: 1px solid var(--card-border); border-radius: 16px; padding: 12px 14px; margin-bottom: 10px; }
+.bt-row[data-off] { opacity: 0.45; }
+.bt-rowhead { display: flex; align-items: center; gap: 14px; margin-bottom: 10px; }
+.bt-switch {
+  display: flex; align-items: center; gap: 7px; font-size: 0.74rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 0; cursor: pointer;
+}
+.bt-switch input { width: auto; }
+.bt-join { width: auto !important; padding: 4px 8px !important; font-size: 0.78rem !important; }
+.bt-rowbody { display: grid; gap: 10px; }
+@media (min-width: 760px) { .bt-rowbody { grid-template-columns: 2fr 1.2fr 1.2fr 1.4fr; align-items: start; } }
+.bt-params { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 7px; }
+.bt-param {
+  display: flex; align-items: center; gap: 5px; font-size: 0.7rem; text-transform: none;
+  letter-spacing: 0; color: var(--muted); margin: 0; font-weight: 500;
+}
+.bt-param input { width: 68px; padding: 5px 7px; font-size: 0.82rem; }
+.bt-noparam { font-size: 0.72rem; color: var(--muted); font-style: italic; }
+.bt-recipe {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.84rem;
+  color: var(--accent-strong); background: rgba(15, 76, 92, 0.05);
+  padding: 10px 14px; border-radius: 12px; margin: 0 0 12px; overflow-x: auto;
+}
