@@ -76,6 +76,18 @@
           </select>
         </div>
         <div class="bt-field">
+          <label for="btFrom">Years from</label>
+          <select id="btFrom"></select>
+        </div>
+        <div class="bt-field">
+          <label for="btTo">to</label>
+          <select id="btTo"></select>
+        </div>
+        <div class="bt-field">
+          <label for="btCapital">Initial capital (₹)</label>
+          <input id="btCapital" type="number" value="200000" min="0" step="25000">
+        </div>
+        <div class="bt-field">
           <label for="btSlip">Slippage + cost, points per side</label>
           <input id="btSlip" type="number" value="1" min="0" step="0.25">
         </div>
@@ -90,6 +102,46 @@
             three conditions, combined with AND / OR.
           </p>
           <div id="btRows"></div>
+        </fieldset>
+
+        <fieldset class="bt-set">
+          <legend>What the signal trades</legend>
+          <div class="bt-grid">
+            <div class="bt-field">
+              <label for="btInstr">Instrument</label>
+              <select id="btInstr">
+                <option value="index" selected>the index itself (points)</option>
+                <option value="buy_ce">buy a CALL</option>
+                <option value="buy_pe">buy a PUT</option>
+                <option value="sell_ce">sell a CALL</option>
+                <option value="sell_pe">sell a PUT</option>
+              </select>
+            </div>
+            <div class="bt-field">
+              <label for="btStrikeBy">Strike by</label>
+              <select id="btStrikeBy">
+                <option value="off" selected>strikes from the money</option>
+                <option value="premium">option premium</option>
+              </select>
+            </div>
+            <div class="bt-field">
+              <label for="btStrikeOff">Strikes out (0 = ATM)</label>
+              <input id="btStrikeOff" type="number" value="0" min="0" max="20" step="1">
+            </div>
+            <div class="bt-field">
+              <label for="btOptPrem">Premium near (₹)</label>
+              <input id="btOptPrem" type="number" value="150" min="5" step="25">
+            </div>
+            <div class="bt-field">
+              <label for="btMinDTE">Minimum DTE</label>
+              <input id="btMinDTE" type="number" value="2" min="0" max="60" step="1">
+            </div>
+            <div class="bt-field">
+              <label for="btLots">Lots</label>
+              <input id="btLots" type="number" value="1" min="1" step="1">
+            </div>
+          </div>
+          <p class="bt-note" id="btInstrNote"></p>
         </fieldset>
 
         <fieldset class="bt-set">
@@ -152,7 +204,7 @@
         </div>
       </div>
 
-      <h2 style="margin-top:34px">Equity curve, cumulative points</h2>
+      <h2 style="margin-top:34px">Equity curve</h2>
       <div class="card bt-chart"><div id="btChart"></div></div>
 
       <h2 style="margin-top:34px">Trades

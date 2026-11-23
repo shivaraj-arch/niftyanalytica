@@ -453,7 +453,106 @@
     };
   }
 
+  /* ---- used by the INDEX INDICATOR tab to trade an option off a signal ----
+   *
+   * The index tab generates its signal from index bars and then needs one
+   * option contract to express it. Both datasets are daily, so a signal on the
+   * close of day N trades the option's OPEN on day N+1 -- the same next-bar
+   * entry the index tab already uses, no look-ahead introduced.
+   *
+   * Intraday resolutions cannot use this: there are no intraday option bars in
+   * the store, so pickLeg returns a reason instead of a contract and the UI
+   * says so rather than inventing a fill.
+   */
+  var YEAR_FOR = {};      // 'YYYY' -> indexed year, filled by prepareYears
+
+  function prepareYears(fromY, toY) {
+    var want = [];
+    for (var y = fromY; y <= toY; y++) want.push(y);
+    // one extra year so an expiry quoted in December can settle in January
+    want.push(toY + 1);
+    return Promise.all(want.map(function (y) {
+      return loadYear(y).catch(function () { return null; });
+    })).then(function (list) {
+      var settle = {};
+      list.forEach(function (Y) {
+        if (!Y) return;
+        YEAR_FOR[String(Y.year)] = Y;
+        for (var i = 0; i < Y.expiries.length; i++) {
+          if (Y.settle[i] != null) settle[Y.expiries[i]] = Y.settle[i];
+        }
+      });
+      return settle;
+    });
+  }
+
+  /* Pick one option to trade on `date`. kind 'ce'|'pe', off = strikes from the
+   * money, minDTE = refuse a contract with less life than this. */
+  function pickLeg(date, kind, off, minDTE, premium, premTol) {
+    var Y = YEAR_FOR[date.slice(0, 4)];
+    if (!Y) return { skip: 'no option data loaded for ' + date.slice(0, 4) };
+    var sIdx = Y.sessions.indexOf(date);
+    if (sIdx < 0) return { skip: 'no option session on ' + date };
+    // nearest expiry with at least minDTE of life
+    var best = -1, bestD = 1e9;
+    for (var x = 0; x < Y.expiries.length; x++) {
+      var dte = dayDiff(date, Y.expiries[x]);
+      if (dte < minDTE) continue;
+      if (!Y.bySX.get(sIdx + '|' + x)) continue;
+      if (dte < bestD) { bestD = dte; best = x; }
+    }
+    if (best < 0) return { skip: 'no expiry with >=' + minDTE + ' days trading on ' + date };
+    var chain = Y.bySX.get(sIdx + '|' + best);
+    var strikes = Array.from(chain.keys()).sort(function (a, b) { return a - b; });
+    var ref = impliedRef(chain, strikes, 'open') || impliedRef(chain, strikes, 'close');
+    if (ref == null) return { skip: 'cannot price the chain on ' + date };
+    var step = strikes.length > 1 ? Math.min.apply(null, strikes.slice(1).map(function (v, i) {
+      return v - strikes[i];
+    })) : 50;
+    var k;
+    if (premium > 0) {
+      var atm0 = nearestStrike(strikes, ref);
+      k = strikeByPremium(chain, strikes, kind, premium, 'open',
+                          kind === 'pe' ? null : atm0, kind === 'pe' ? atm0 : null);
+      if (k == null) return { skip: 'no ' + kind.toUpperCase() + ' priced on ' + date };
+      var lg0 = chain.get(k), b0 = kind === 'ce' ? lg0.ce : lg0.pe;
+      var got = b0 ? b0.o : 0;
+      var tol = (premTol > 0 ? premTol : 40) / 100;
+      if (!(got > 0) || Math.abs(got - premium) > tol * premium) {
+        return { skip: 'no ' + kind.toUpperCase() + ' near \u20b9' + premium
+                 + ' on ' + date + ' (closest \u20b9' + (got || 0).toFixed(0) + ')' };
+      }
+    } else {
+      var sign = kind === 'ce' ? 1 : -1;
+      k = nearestStrike(strikes, nearestStrike(strikes, ref) + sign * off * step);
+    }
+    var leg = chain.get(k);
+    var bar = leg && (kind === 'ce' ? leg.ce : leg.pe);
+    if (!bar || !(bar.o > 0)) {
+      return { skip: kind.toUpperCase() + ' ' + k + ' did not trade at the open on ' + date };
+    }
+    var lot = Y.lot.get(sIdx + '|' + best) || 0;
+    if (!lot) return { skip: 'no lot size for the ' + Y.expiries[best] + ' contract' };
+    return { expiry: Y.expiries[best], dte: bestD, strike: k, kind: kind,
+             lot: lot, ref: ref, entry: bar.o, year: Y.year, sIdx: sIdx, xIdx: best };
+  }
+
+  /* The option's own daily bar on a later date, for stops and exits. */
+  function legBar(leg, date) {
+    var Y = YEAR_FOR[date.slice(0, 4)];
+    if (!Y) return null;
+    var sIdx = Y.sessions.indexOf(date);
+    if (sIdx < 0) return null;
+    var xIdx = Y.expiries.indexOf(leg.expiry);
+    if (xIdx < 0) return null;
+    var chain = Y.bySX.get(sIdx + '|' + xIdx);
+    if (!chain) return null;
+    var l = chain.get(leg.strike);
+    return l ? (leg.kind === 'ce' ? l.ce : l.pe) || null : null;
+  }
+
   global.NA_OPT = {
+    prepareYears: prepareYears, pickLeg: pickLeg, legBar: legBar,
     manifest: manifest, loadYear: loadYear, run: run, stats: stats,
     STRATS: STRATS, charges: charges
   };

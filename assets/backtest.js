@@ -146,18 +146,36 @@ const BT = (() => {
     return acc === true;
   }
 
-  function run(data, cfg) {
+  const held0 = (r) => (r && r.held) || 1;
+
+  function run(data, cfg, settleMap, optSkips) {
+    settleMap = settleMap || {}; optSkips = optSkips || {};
     const trades = [];
     let coverageWarn = 0, sessions = 0;
     for (const s of data.sessions) {
-      const n = s.c.length;
+      const k = data.scale;
+      // YEAR FILTER. For daily the whole history is one series, so filtering
+      // has to happen on the bars; for intraday each session is a day, so a
+      // whole session is in or out. Without this the only choice was "all".
+      let keep = null;
+      if (data.dates) {
+        keep = [];
+        for (let z = 0; z < s.c.length; z++) {
+          const y = +data.dates[s.t[z]].slice(0, 4);
+          if (y >= cfg.fromY && y <= cfg.toY) keep.push(z);
+        }
+        if (keep.length < 12) continue;
+      } else {
+        const y = +String(s.d).slice(0, 4);
+        if (y < cfg.fromY || y > cfg.toY) continue;
+      }
+      const pick = (arr) => (keep ? keep.map((z) => arr[z] / k) : arr.map((v) => v / k));
+      const bars = { c: pick(s.c), h: pick(s.h), l: pick(s.l), o: pick(s.o) };
+      const dateAt = (z) => (data.dates
+        ? data.dates[keep ? s.t[keep[z]] : s.t[z]] : String(s.d));
+      const n = bars.c.length;
       if (n < 12) continue;
       sessions++;
-      const k = data.scale;
-      const bars = {
-        c: s.c.map((v) => v / k), h: s.h.map((v) => v / k),
-        l: s.l.map((v) => v / k), o: s.o.map((v) => v / k),
-      };
       const mem = new Map();
       const vals = cfg.rows.map((r) => ({
         left: SERIES.evaluate(SERIES.byId.get(r.leftId), bars, r.leftParams, mem),
@@ -172,28 +190,83 @@ const BT = (() => {
       while (i < n - 1) {
         if (cfg.oneTrade && taken >= 1) break;
         if (!fires(cfg.rows, vals, i)) { i++; continue; }
-        const e = i + 1, entry = bars.o[e], dir = cfg.side;
-        const tgt = cfg.tgt > 0 ? entry + dir * cfg.tgt : null;
-        const stp = cfg.stp > 0 ? entry - dir * cfg.stp : null;
-        let exit = null, why = '', held = 0;
-        for (let j = e; j < n; j++) {
-          held = j - e + 1;
-          const hitStop = stp !== null && (dir > 0 ? bars.l[j] <= stp : bars.h[j] >= stp);
-          const hitTgt = tgt !== null && (dir > 0 ? bars.h[j] >= tgt : bars.l[j] <= tgt);
-          if (hitStop) { exit = stp; why = 'stop'; break; }
-          if (hitTgt) { exit = tgt; why = 'target'; break; }
-          if (cfg.maxBars > 0 && held >= cfg.maxBars) { exit = bars.c[j]; why = 'max bars'; break; }
-          if (j === n - 1) { exit = bars.c[j]; why = data.res === 'day' ? 'series end' : 'session end'; break; }
+        const e = i + 1;
+        let rec = null;
+        if (cfg.instr === 'index') {
+          const entry = bars.o[e], dir = cfg.side;
+          const tgt = cfg.tgt > 0 ? entry + dir * cfg.tgt : null;
+          const stp = cfg.stp > 0 ? entry - dir * cfg.stp : null;
+          let exit = null, why = '', held = 0;
+          for (let j = e; j < n; j++) {
+            held = j - e + 1;
+            const hitStop = stp !== null && (dir > 0 ? bars.l[j] <= stp : bars.h[j] >= stp);
+            const hitTgt = tgt !== null && (dir > 0 ? bars.h[j] >= tgt : bars.l[j] <= tgt);
+            if (hitStop) { exit = stp; why = 'stop'; break; }
+            if (hitTgt) { exit = tgt; why = 'target'; break; }
+            if (cfg.maxBars > 0 && held >= cfg.maxBars) { exit = bars.c[j]; why = 'max bars'; break; }
+            if (j === n - 1) { exit = bars.c[j]; why = data.res === 'day' ? 'series end' : 'session end'; break; }
+          }
+          const gross = dir * (exit - entry);
+          rec = { d: dateAt(e), t: data.dates ? null : s.t[e], entry, exit, why, held,
+                  sig: vals[0].left[i], gross, net: gross - 2 * cfg.slip,
+                  capital: cfg.capital };
+        } else {
+          /* AN OPTION LEG OFF THE SAME SIGNAL. Target and stop are read as
+           * OPTION premium points here, not index points, and the stop wins an
+           * ambiguous day because a daily bar cannot say which came first. */
+          const kind = cfg.instr.endsWith('_ce') ? 'ce' : 'pe';
+          const sign = cfg.instr.startsWith('buy') ? 1 : -1;
+          const leg = NA_OPT.pickLeg(dateAt(e), kind, cfg.strikeOff, cfg.minDTE,
+                                     cfg.strikeBy === 'premium' ? cfg.optPrem : 0,
+                                     cfg.premTol);
+          if (leg.skip) { optSkips[leg.skip] = (optSkips[leg.skip] || 0) + 1; i = e; continue; }
+          const units = leg.lot * cfg.lots;
+          const tgt = cfg.tgt > 0 ? leg.entry + sign * cfg.tgt : null;
+          const stp = cfg.stp > 0 ? leg.entry - sign * cfg.stp : null;
+          let px = null, why = '', held = 0;
+          for (let j = e; j < n; j++) {
+            held = j - e + 1;
+            const b2 = NA_OPT.legBar(leg, dateAt(j));
+            if (!b2) continue;
+            const worst = sign > 0 ? b2.l : b2.h;
+            const best = sign > 0 ? b2.h : b2.l;
+            if (stp !== null && (sign > 0 ? worst <= stp : worst >= stp)) {
+              px = stp; why = 'stop (premium)'; break;
+            }
+            if (tgt !== null && (sign > 0 ? best >= tgt : best <= tgt)) {
+              px = tgt; why = 'target (premium)'; break;
+            }
+            if (cfg.maxBars > 0 && held >= cfg.maxBars) { px = b2.c; why = 'max bars'; break; }
+            if (dateAt(j) >= leg.expiry) {
+              const st = settleMap[leg.expiry];
+              if (st == null) { px = b2.c; why = 'expiry, settlement unknown'; }
+              else {
+                px = kind === 'ce' ? Math.max(st - leg.strike, 0)
+                                   : Math.max(leg.strike - st, 0);
+                why = 'expiry settlement';
+              }
+              break;
+            }
+            if (j === n - 1) { px = b2.c; why = 'series end'; break; }
+          }
+          if (px == null) { optSkips['no option bar after entry'] =
+            (optSkips['no option bar after entry'] || 0) + 1; i = e; continue; }
+          const pts = sign * (px - leg.entry) - 2 * cfg.slip;
+          const prem = leg.entry * units;
+          const ch = NA_OPT.charges(sign > 0 ? prem * 2 : 0, sign > 0 ? 0 : prem * 2, 2);
+          rec = { d: dateAt(e), t: null, entry: leg.entry, exit: px, why, held,
+                  sig: vals[0].left[i], gross: pts * units,
+                  net: pts * units - ch, charges: ch,
+                  strike: leg.strike, kind: kind.toUpperCase(), expiry: leg.expiry,
+                  dte: leg.dte, lot: leg.lot, units: units,
+                  capital: sign > 0 ? prem : leg.strike * units * 0.12 };
         }
-        const gross = dir * (exit - entry);
-        trades.push({ d: data.dates ? data.dates[s.t[e]] : s.d,
-                      t: data.dates ? null : s.t[e], entry, exit, why, held,
-                      sig: vals[0].left[i], gross, net: gross - 2 * cfg.slip });
+        trades.push(rec);
         taken++;
-        i = e + held + 1;
+        i = e + held0(rec) + 1;
       }
     }
-    return { trades, coverageWarn, sessions };
+    return { trades, coverageWarn, sessions, optSkips };
   }
 
   function stats(t) {
@@ -240,21 +313,36 @@ const BT = (() => {
 
   /* ---------- rendering ---------- */
 
+  // UNITS. Index mode measures index POINTS; option mode measures RUPEES on a
+  // real lot. Printing "Net points" for both put two different quantities under
+  // one label in the same table.
+  let UNIT = { label: 'points', money: false, capital: 0 };
+  const money = (v) => (v < 0 ? '-' : '') + '\u20b9'
+    + Math.abs(Math.round(v)).toLocaleString('en-IN');
+
   function statBox(s) {
     if (!s) return '<p style="color:var(--muted)">No trades in this half.</p>';
     const cls = (v) => (v > 0 ? 'bt-up' : v < 0 ? 'bt-dn' : '');
+    const amt = (v, d) => (UNIT.money ? money(v) : fmt(v, d));
+    const extra = [];
+    if (UNIT.money && UNIT.capital > 0) {
+      extra.push(['Return on capital',
+        `<span class="${cls(s.net)}">${fmt(100 * s.net / UNIT.capital, 1)}%</span>`]);
+      extra.push(['Drawdown vs capital',
+        `<span class="bt-dn">${fmt(100 * s.dd / UNIT.capital, 1)}%</span>`]);
+    }
     return [
       ['Trades', String(s.n)],
-      ['Net points', `<span class="${cls(s.net)}">${fmt(s.net)}</span>`],
-      ['Per trade', `<span class="${cls(s.mean)}">${fmt(s.mean, 2)}</span>`],
+      [UNIT.money ? 'Net' : 'Net points', `<span class="${cls(s.net)}">${amt(s.net)}</span>`],
+      ['Per trade', `<span class="${cls(s.mean)}">${amt(s.mean, 2)}</span>`],
       ['t-statistic', `<span class="${Math.abs(s.t) > 2 ? cls(s.t) : ''}">${fmt(s.t, 2)}</span>`],
       ['Win rate', `${fmt(s.winRate)}%`],
-      ['Average win', fmt(s.avgWin, 1)],
-      ['Average loss', fmt(s.avgLoss, 1)],
-      ['Best / worst', `${fmt(s.best)} / ${fmt(s.worst)}`],
-      ['Max drawdown', `<span class="bt-dn">${fmt(s.dd)}</span>`],
-      ['Std dev per trade', fmt(s.sd, 1)],
-    ].map(([k, v]) => `<div class="bt-kv"><span>${k}</span><b>${v}</b></div>`).join('');
+      ['Average win', amt(s.avgWin, 1)],
+      ['Average loss', amt(s.avgLoss, 1)],
+      ['Best / worst', `${amt(s.best)} / ${amt(s.worst)}`],
+      ['Max drawdown', `<span class="bt-dn">${amt(s.dd)}</span>`],
+      ['Std dev per trade', amt(s.sd, 1)],
+    ].concat(extra).map(([k, v]) => `<div class="bt-kv"><span>${k}</span><b>${v}</b></div>`).join('');
   }
 
   function verdict(a, b, slip) {
@@ -303,20 +391,29 @@ const BT = (() => {
       <path d="${path}" fill="none" stroke="var(--accent)" stroke-width="2.5"/>
       <text x="${PAD}" y="${H - 8}" fill="var(--muted)" font-size="11">trade 1</text>
       <text x="${W - PAD}" y="${H - 8}" fill="var(--muted)" font-size="11" text-anchor="end">trade ${trades.length}</text>
-      <text x="${PAD}" y="${Math.max(sy(mx) - 8, 14)}" fill="var(--muted)" font-size="11">${fmt(mx, 0)} pts</text>
+      <text x="${PAD}" y="${Math.max(sy(mx) - 8, 14)}" fill="var(--muted)" font-size="11">${UNIT.money ? money(mx) : fmt(mx, 0) + " pts"}</text>
     </svg>`;
   }
 
   function tradeTable(t, sigLabel) {
+    const opt = UNIT.money;
     const rows = t.slice(0, 400).map((x) => {
-      const hh = String(Math.floor(x.t / 60)).padStart(2, '0');
-      const mm = String(x.t % 60).padStart(2, '0');
-      return `<tr><td>${x.d} ${hh}:${mm}</td><td>${fmt(x.entry, 2)}</td><td>${fmt(x.exit, 2)}</td>
+      // daily and option rows carry a date, not a minute-of-day
+      const when = x.t == null ? x.d
+        : `${x.d} ${String(Math.floor(x.t / 60)).padStart(2, '0')}:`
+          + `${String(x.t % 60).padStart(2, '0')}`;
+      const contract = opt
+        ? `<td>${x.kind || ''} ${x.strike || ''}</td><td>${x.expiry || ''}</td>`
+          + `<td>${x.dte == null ? '' : x.dte}</td><td>${x.units || ''}</td>`
+        : '';
+      return `<tr><td>${when}</td>${contract}<td>${fmt(x.entry, 2)}</td><td>${fmt(x.exit, 2)}</td>
         <td>${x.why}</td><td>${x.held}</td><td>${fmt(x.sig, 2)}</td>
-        <td class="${x.net > 0 ? 'bt-up' : 'bt-dn'}">${fmt(x.net, 2)}</td></tr>`;
+        <td class="${x.net > 0 ? 'bt-up' : 'bt-dn'}">${opt ? money(x.net) : fmt(x.net, 2)}</td></tr>`;
     }).join('');
-    $('btTrades').innerHTML = `<thead><tr><th>Entry</th><th>In</th><th>Out</th><th>Exit</th>
-      <th>Bars</th><th>${sigLabel}</th><th>Net pts</th></tr></thead><tbody>${rows}</tbody>`;
+    const ch = opt ? '<th>Contract</th><th>Expiry</th><th>DTE</th><th>Qty</th>' : '';
+    $('btTrades').innerHTML = `<thead><tr><th>Entry</th>${ch}<th>In</th><th>Out</th><th>Exit</th>
+      <th>Bars</th><th>${sigLabel}</th><th>${opt ? 'Net' : 'Net pts'}</th></tr></thead>
+      <tbody>${rows}</tbody>`;
     $('btTradeCount').textContent = t.length > 400 ? `showing first 400 of ${t.length}` : `${t.length}`;
   }
 
@@ -331,10 +428,34 @@ const BT = (() => {
       const data = await bars($('btRes').value, $('btYear').value);
       $('btStatus').textContent = 'Running…';
       await new Promise((r) => setTimeout(r, 0));
+      const instr = $('btInstr').value;
+      const fromY = +$('btFrom').value, toY = +$('btTo').value;
       const cfg = { rows, side: +$('btSide').value, tgt: +$('btTgt').value, stp: +$('btStp').value,
-        maxBars: +$('btMaxBars').value, oneTrade: $('btOnce').value === '1', slip: +$('btSlip').value };
+        maxBars: +$('btMaxBars').value, oneTrade: $('btOnce').value === '1', slip: +$('btSlip').value,
+        instr, fromY: Math.min(fromY, toY), toY: Math.max(fromY, toY),
+        capital: +$('btCapital').value || 0,
+        strikeBy: $('btStrikeBy').value, strikeOff: +$('btStrikeOff').value,
+        optPrem: +$('btOptPrem').value, premTol: 40,
+        minDTE: +$('btMinDTE').value, lots: +$('btLots').value || 1 };
+      // Trading an option needs the option chains for those years, and there
+      // are no intraday option bars, so refuse rather than invent a fill.
+      let settleMap = {};
+      if (instr !== 'index') {
+        if ($('btRes').value !== 'day') {
+          $('btStatus').textContent = 'Trading an option needs daily candles — there is no '
+            + 'intraday option data in this store. Switch Candle to 1 day, or set Instrument '
+            + 'back to the index.';
+          return;
+        }
+        $('btStatus').textContent = 'Loading option chains…';
+        settleMap = await NA_OPT.prepareYears(cfg.fromY, cfg.toY);
+      }
+      $('btStatus').textContent = 'Running…';
+      UNIT = { label: instr === 'index' ? 'points' : 'rupees',
+               money: instr !== 'index', capital: cfg.capital };
       const t0 = performance.now();
-      const { trades, coverageWarn, sessions } = run(data, cfg);
+      const optSkips = {};
+      const { trades, coverageWarn, sessions } = run(data, cfg, settleMap, optSkips);
       const ms = performance.now() - t0;
       const scanned = (data.bars || 0).toLocaleString('en-IN');
       $('btRecipe').textContent = describe(rows);
@@ -366,6 +487,13 @@ const BT = (() => {
       $('btIsRange').textContent = `${trades[0].d} → ${trades[mid - 1].d}`;
       $('btOosRange').textContent = `${trades[mid].d} → ${trades[trades.length - 1].d}`;
       $('btVerdict').innerHTML = verdict(sIS, sOOS, cfg.slip);
+      const skipKeys = Object.keys(optSkips);
+      if (skipKeys.length) {
+        $('btWarn').innerHTML = `<p class="bt-caution" style="margin-top:12px">Signals that
+          could not be filled on an option: ${skipKeys.map((kk) =>
+            `${optSkips[kk]} \u2014 ${kk}`).join('; ')}. Those signals produced no trade and
+          are not counted anywhere in these figures.</p>` + ($('btWarn').innerHTML || '');
+      }
       const warn = starved > 20
         ? `<p class="bt-caution" style="margin-top:12px">Your first indicator has no value on
            <strong>${starved}% of sessions</strong> — its warm-up needs more bars than a
@@ -417,6 +545,36 @@ const BT = (() => {
       o.value = String(y); o.textContent = String(y);
       ySel.appendChild(o);
     });
+    // year pickers, from the daily series' own span
+    const YSPAN = [];
+    for (let y = 2001; y <= new Date().getFullYear(); y++) YSPAN.push(y);
+    [['btFrom', YSPAN[0]], ['btTo', YSPAN[YSPAN.length - 1]]].forEach(([id, def]) => {
+      const sel = $(id);
+      YSPAN.forEach((y) => {
+        const o = document.createElement('option');
+        o.value = String(y); o.textContent = String(y);
+        if (y === def) o.selected = true;
+        sel.appendChild(o);
+      });
+    });
+    const syncInstr = () => {
+      const opt = $('btInstr').value !== 'index';
+      const byPrem = $('btStrikeBy').value === 'premium';
+      [['btStrikeBy', opt], ['btStrikeOff', opt && !byPrem], ['btOptPrem', opt && byPrem],
+       ['btMinDTE', opt], ['btLots', opt]].forEach(([id, on]) => {
+        const f = $(id).closest('.bt-field');
+        if (f) f.style.display = on ? '' : 'none';
+      });
+      $('btInstrNote').textContent = opt
+        ? 'Target and stop are read as OPTION premium points, not index points. Needs daily '
+          + 'candles — there are no intraday option bars in this data. The stop wins a day '
+          + 'where both could have triggered.'
+        : 'Target and stop are index points. Switch Instrument to an option to trade a '
+          + 'nearby strike off the same signal.';
+    };
+    $('btInstr').addEventListener('change', syncInstr);
+    $('btStrikeBy').addEventListener('change', syncInstr);
+    syncInstr();
     const syncYear = () => {
       const r = $('btRes').value;
       const one = r === '1';
