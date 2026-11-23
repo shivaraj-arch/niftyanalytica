@@ -37,7 +37,8 @@
       <strong>Option strategies:</strong> real traded prices 2002–2026
       (1,500,756 contract-days).
       Intraday index history starts April 2017 — there is none before that
-      from any source; daily reaches back to 2001.
+      from any source; daily reaches back to 2001. Option prices are daily OHLC
+      per contract, not intraday.
     </p>
     <p style="color:var(--muted);max-width:72ch">
       44 indicators on NSE Nifty&nbsp;50, over 1, 5 and 15 minute
@@ -142,6 +143,9 @@
             </div>
           </div>
           <p class="bt-note" id="btInstrNote"></p>
+          <p class="bt-note">Option prices are <strong>daily</strong> OHLC per contract, taken
+            from NSE’s F&amp;O Bhavcopy — 1,500,756 traded contract-days back to 2002.
+            Intraday option bars are a separate thing and are not in this dataset.</p>
         </fieldset>
 
         <fieldset class="bt-set">

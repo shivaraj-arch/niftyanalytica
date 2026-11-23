@@ -442,9 +442,12 @@ const BT = (() => {
       let settleMap = {};
       if (instr !== 'index') {
         if ($('btRes').value !== 'day') {
-          $('btStatus').textContent = 'Trading an option needs daily candles — there is no '
-            + 'intraday option data in this store. Switch Candle to 1 day, or set Instrument '
-            + 'back to the index.';
+          // "no intraday option data" read as "no option data at all", which is
+          // wrong: the store holds 20.6M option rows. They are DAILY bars.
+          $('btStatus').textContent = 'The option prices here are DAILY bars \u2014 one open, '
+            + 'high, low and close per contract per day, from NSE\u2019s F&O Bhavcopy. A '
+            + $('btRes').value + '-minute signal has no option price to fill against. Switch '
+            + 'Candle to 1 day, or set Instrument back to the index.';
           return;
         }
         $('btStatus').textContent = 'Loading option chains…';
@@ -566,9 +569,9 @@ const BT = (() => {
         if (f) f.style.display = on ? '' : 'none';
       });
       $('btInstrNote').textContent = opt
-        ? 'Target and stop are read as OPTION premium points, not index points. Needs daily '
-          + 'candles — there are no intraday option bars in this data. The stop wins a day '
-          + 'where both could have triggered.'
+        ? 'Target and stop are read as OPTION premium points, not index points. Option prices '
+          + 'are daily bars (one OHLC per contract per day, from the F&O Bhavcopy), so this '
+          + 'needs 1-day candles. The stop wins a day where both could have triggered.'
         : 'Target and stop are index points. Switch Instrument to an option to trade a '
           + 'nearby strike off the same signal.';
     };
