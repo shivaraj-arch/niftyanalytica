@@ -183,10 +183,11 @@ const BT = (() => {
           if (hitStop) { exit = stp; why = 'stop'; break; }
           if (hitTgt) { exit = tgt; why = 'target'; break; }
           if (cfg.maxBars > 0 && held >= cfg.maxBars) { exit = bars.c[j]; why = 'max bars'; break; }
-          if (j === n - 1) { exit = bars.c[j]; why = 'session end'; break; }
+          if (j === n - 1) { exit = bars.c[j]; why = data.res === 'day' ? 'series end' : 'session end'; break; }
         }
         const gross = dir * (exit - entry);
-        trades.push({ d: s.d, t: s.t[e], entry, exit, why, held,
+        trades.push({ d: data.dates ? data.dates[s.t[e]] : s.d,
+                      t: data.dates ? null : s.t[e], entry, exit, why, held,
                       sig: vals[0].left[i], gross, net: gross - 2 * cfg.slip });
         taken++;
         i = e + held + 1;
@@ -214,6 +215,7 @@ const BT = (() => {
   /* ---------- data ---------- */
 
   function sourceFor(res, year) {
+    if (res === 'day') return '../data/backtest/nifty_1day.json';
     if (res !== '1') return `../data/backtest/nifty_${res}min.json`;
     const base = (window.NA_CONFIG && (window.NA_CONFIG.supabaseUrl || window.NA_CONFIG.SUPABASE_URL)) || '';
     return base
@@ -343,7 +345,8 @@ const BT = (() => {
       // every bar and no condition on it can ever fire. Reporting a bare "no
       // trades matched" would read as "the condition never happened", which is
       // a different and misleading statement.
-      const starved = Math.round((coverageWarn / Math.max(sessions, 1)) * 100);
+      const isDay = $('btRes').value === 'day';
+      const starved = isDay ? 0 : Math.round((coverageWarn / Math.max(sessions, 1)) * 100);
       if (!trades.length) {
         const why = starved >= 50
           ? ` Your first indicator has no value at all on ${starved}% of sessions: its warm-up
@@ -415,7 +418,13 @@ const BT = (() => {
       ySel.appendChild(o);
     });
     const syncYear = () => {
-      const one = $('btRes').value === '1';
+      const r = $('btRes').value;
+      const one = r === '1';
+      if (r === 'day') {
+        ySel.disabled = true; ySel.value = 'all';
+        $('btYearHint').textContent = 'using every daily bar, 2001\u20132026';
+        return;
+      }
       ySel.disabled = !one;
       if (!one) ySel.value = 'all';
       else if (ySel.value === 'all') ySel.value = String(YEARS[YEARS.length - 1] || '');
