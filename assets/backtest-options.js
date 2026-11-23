@@ -180,10 +180,22 @@
   }
 
   /* Run one expiry. Returns a trade object or a reason it was skipped. */
-  function runExpiry(Y, xIdx, cfg) {
+  function runExpiry(Y, xIdx, cfg, globalSettle) {
     var xDate = Y.expiries[xIdx];
     var settle = Y.settle[xIdx];
-    if (settle == null) return { skip: 'expiry settles outside the loaded year' };
+    // AN EXPIRY LISTED IN ONE YEAR SETTLES IN ANOTHER. A January expiry is
+    // quoted in December, so its settlement lives in the NEXT year's file.
+    // Looking only inside one year dropped 45% of expiries in the monthly era
+    // (37 of 83 across 2002-2008), which quietly shrank every early-period
+    // sample. Consult the settlement map built across every loaded year.
+    if (settle == null && globalSettle) {
+      var g = globalSettle[xDate];
+      if (g != null) settle = g;
+    }
+    if (settle == null) {
+      return { skip: 'expiry ' + xDate + ' settles outside the years loaded \u2014 '
+               + 'load the following year too' };
+    }
 
     // entry session: the last session at or before the requested DTE
     var entry = -1;
@@ -192,7 +204,17 @@
       if (dte < 0) break;
       if (dte <= cfg.entryDTE) { entry = s; break; }
     }
-    if (entry < 0) return { skip: 'no session at DTE ' + cfg.entryDTE };
+    if (entry < 0) {
+      // NIFTY lists expiries years ahead -- a 2029 contract is quoted in 2024 --
+      // so most of these are far-dated listings with no session anywhere near
+      // them, not missing data. Say which it is.
+      var last = Y.sessions[Y.sessions.length - 1];
+      if (dayDiff(last, xDate) > 40) {
+        return { skip: 'far-dated listing (' + xDate + ') \u2014 quoted years ahead, '
+                 + 'no session near it' };
+      }
+      return { skip: 'no trading session at DTE ' + cfg.entryDTE + ' for ' + xDate };
+    }
 
     var chain = Y.bySX.get(entry + '|' + xIdx);
     if (!chain) return { skip: 'no traded chain on the entry session' };
@@ -376,12 +398,26 @@
   function run(cfg, years) {
     return Promise.all(years.map(loadYear)).then(function (Ys) {
       var trades = [], skips = {};
+      var globalSettle = {};
+      Ys.forEach(function (Y) {
+        for (var i = 0; i < Y.expiries.length; i++) {
+          if (Y.settle[i] != null) globalSettle[Y.expiries[i]] = Y.settle[i];
+        }
+      });
       Ys.forEach(function (Y) {
         for (var x = 0; x < Y.expiries.length; x++) {
-          var r = runExpiry(Y, x, cfg);
+          var r = runExpiry(Y, x, cfg, globalSettle);
           if (r.skip) { skips[r.skip] = (skips[r.skip] || 0) + 1; continue; }
           trades.push(r);
         }
+      });
+      // the same expiry can appear in two year files; keep one entry per
+      // (expiry, entry date) so a December-quoted January expiry is not traded twice
+      var seen = {};
+      trades = trades.filter(function (t) {
+        var k = t.expiry + '|' + t.entryDate;
+        if (seen[k]) return false;
+        seen[k] = 1; return true;
       });
       trades.sort(function (a, b) { return a.entryDate < b.entryDate ? -1 : 1; });
       return { trades: trades, skips: skips, cfg: cfg };
