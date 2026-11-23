@@ -399,16 +399,29 @@ const BT = (() => {
       refreshL(); refreshR();
     }
     const ySel = $('btYear');
+    // A DISABLED SELECT STILL SHOWS A VALUE. This used to be hard-coded to
+    // 2025 and greyed out on 5- and 15-minute runs, which reads as "only 2025
+    // is available" when those runs in fact cover every session from 2017 to
+    // 2026. Carry an explicit all-years entry so the box never claims a single
+    // year it is not using.
+    const allOpt = document.createElement('option');
+    allOpt.value = 'all';
+    allOpt.textContent = YEARS.length
+      ? `All years (${YEARS[0]}\u2013${YEARS[YEARS.length - 1]})` : 'All years';
+    ySel.appendChild(allOpt);
     YEARS.forEach((y) => {
       const o = document.createElement('option');
       o.value = String(y); o.textContent = String(y);
-      if (y === 2025) o.selected = true;
       ySel.appendChild(o);
     });
     const syncYear = () => {
       const one = $('btRes').value === '1';
       ySel.disabled = !one;
-      $('btYearHint').textContent = one ? 'required' : '1-minute only';
+      if (!one) ySel.value = 'all';
+      else if (ySel.value === 'all') ySel.value = String(YEARS[YEARS.length - 1] || '');
+      $('btYearHint').textContent = one
+        ? 'required \u2014 1-minute data is stored per year'
+        : `using every session, ${YEARS[0]}\u2013${YEARS[YEARS.length - 1]}`;
     };
     $('btRes').addEventListener('change', syncYear);
     syncYear();

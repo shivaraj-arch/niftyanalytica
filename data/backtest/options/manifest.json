@@ -1,0 +1,188 @@
+{
+ "generated": "2026-11-23T16:56:46",
+ "band": 0.1,
+ "years": [
+  {
+   "year": 2009,
+   "rows": 14907,
+   "lotPairs": 1768,
+   "lotMissing": 0,
+   "sessions": 242,
+   "expiries": 22,
+   "file": "data/backtest/options/nifty_options_2009.json",
+   "mb": 0.62
+  },
+  {
+   "year": 2010,
+   "rows": 20162,
+   "lotPairs": 1768,
+   "lotMissing": 0,
+   "sessions": 251,
+   "expiries": 23,
+   "file": "data/backtest/options/nifty_options_2010.json",
+   "mb": 0.83
+  },
+  {
+   "year": 2011,
+   "rows": 20280,
+   "lotPairs": 1671,
+   "lotMissing": 0,
+   "sessions": 247,
+   "expiries": 25,
+   "file": "data/backtest/options/nifty_options_2011.json",
+   "mb": 0.83
+  },
+  {
+   "year": 2012,
+   "rows": 19906,
+   "lotPairs": 1643,
+   "lotMissing": 0,
+   "sessions": 247,
+   "expiries": 25,
+   "file": "data/backtest/options/nifty_options_2012.json",
+   "mb": 0.81
+  },
+  {
+   "year": 2013,
+   "rows": 23493,
+   "lotPairs": 1701,
+   "lotMissing": 0,
+   "sessions": 247,
+   "expiries": 25,
+   "file": "data/backtest/options/nifty_options_2013.json",
+   "mb": 0.95
+  },
+  {
+   "year": 2014,
+   "rows": 30033,
+   "lotPairs": 1527,
+   "lotMissing": 0,
+   "sessions": 243,
+   "expiries": 23,
+   "file": "data/backtest/options/nifty_options_2014.json",
+   "mb": 1.19
+  },
+  {
+   "year": 2015,
+   "rows": 32160,
+   "lotPairs": 1541,
+   "lotMissing": 0,
+   "sessions": 247,
+   "expiries": 25,
+   "file": "data/backtest/options/nifty_options_2015.json",
+   "mb": 1.28
+  },
+  {
+   "year": 2016,
+   "rows": 32543,
+   "lotPairs": 1619,
+   "lotMissing": 0,
+   "sessions": 246,
+   "expiries": 24,
+   "file": "data/backtest/options/nifty_options_2016.json",
+   "mb": 1.29
+  },
+  {
+   "year": 2017,
+   "rows": 35833,
+   "lotPairs": 1854,
+   "lotMissing": 0,
+   "sessions": 248,
+   "expiries": 24,
+   "file": "data/backtest/options/nifty_options_2017.json",
+   "mb": 1.42
+  },
+  {
+   "year": 2018,
+   "rows": 40036,
+   "lotPairs": 1968,
+   "lotMissing": 0,
+   "sessions": 246,
+   "expiries": 24,
+   "file": "data/backtest/options/nifty_options_2018.json",
+   "mb": 1.62
+  },
+  {
+   "year": 2019,
+   "rows": 60013,
+   "lotPairs": 2581,
+   "lotMissing": 0,
+   "sessions": 244,
+   "expiries": 64,
+   "file": "data/backtest/options/nifty_options_2019.json",
+   "mb": 2.41
+  },
+  {
+   "year": 2020,
+   "rows": 73348,
+   "lotPairs": 2924,
+   "lotMissing": 0,
+   "sessions": 250,
+   "expiries": 71,
+   "file": "data/backtest/options/nifty_options_2020.json",
+   "mb": 3.0
+  },
+  {
+   "year": 2021,
+   "rows": 122594,
+   "lotPairs": 2919,
+   "lotMissing": 0,
+   "sessions": 247,
+   "expiries": 72,
+   "file": "data/backtest/options/nifty_options_2021.json",
+   "mb": 5.03
+  },
+  {
+   "year": 2022,
+   "rows": 158065,
+   "lotPairs": 3553,
+   "lotMissing": 0,
+   "sessions": 248,
+   "expiries": 70,
+   "file": "data/backtest/options/nifty_options_2022.json",
+   "mb": 6.52
+  },
+  {
+   "year": 2023,
+   "rows": 153568,
+   "lotPairs": 3082,
+   "lotMissing": 0,
+   "sessions": 245,
+   "expiries": 69,
+   "file": "data/backtest/options/nifty_options_2023.json",
+   "mb": 6.23
+  },
+  {
+   "year": 2024,
+   "rows": 187425,
+   "lotPairs": 2925,
+   "lotMissing": 0,
+   "sessions": 246,
+   "expiries": 68,
+   "file": "data/backtest/options/nifty_options_2024.json",
+   "mb": 7.76
+  },
+  {
+   "year": 2025,
+   "rows": 206701,
+   "lotPairs": 2997,
+   "lotMissing": 0,
+   "sessions": 248,
+   "expiries": 78,
+   "file": "data/backtest/options/nifty_options_2025.json",
+   "mb": 8.53
+  },
+  {
+   "year": 2026,
+   "rows": 195522,
+   "lotPairs": 2683,
+   "lotMissing": 0,
+   "sessions": 218,
+   "expiries": 63,
+   "file": "data/backtest/options/nifty_options_2026.json",
+   "mb": 8.08
+  }
+ ],
+ "resolution": "daily",
+ "note": "daily option bars; no intraday option data exists in this store"
+}

@@ -30,7 +30,7 @@
       <a href="../">&larr; Nifty Analytica</a>
     </nav>
 
-    <h1>Intraday Strategy Backtester</h1>
+    <h1>Strategy Backtester</h1>
     <p style="color:var(--muted);max-width:72ch">
       44 indicators on NSE Nifty&nbsp;50, over 1, 5 and 15 minute
       candles back to April 2017. Everything runs in your browser - no data leaves
@@ -39,6 +39,12 @@
       on is a fitted curve rather than an edge.
     </p>
 
+    <nav class="bt-tabs">
+      <button type="button" class="bt-tab is-on" data-tab="tabIndex">Index indicators</button>
+      <button type="button" class="bt-tab" data-tab="tabOptions">Option strategies</button>
+    </nav>
+
+    <div id="tabIndex">
     <section class="card" style="margin-top:22px">
       <div class="bt-grid bt-cfg">
         <div class="bt-field">
@@ -46,7 +52,7 @@
           <select id="btRes">
             <option value="15">15 minute</option>
             <option value="5" selected>5 minute</option>
-            <option value="1">1 minute</option>
+            <option value="1" disabled>1 minute (data not uploaded yet)</option>
           </select>
         </div>
         <div class="bt-field">
@@ -166,9 +172,149 @@
     </section>
   </main>
 
+    </div><!-- /tabIndex -->
+
+    <div id="tabOptions" class="bt-hide">
+      <section class="card" style="margin-top:22px">
+        <p class="bt-note" id="optDataNote">Loading the option manifest…</p>
+        <div class="bt-grid">
+          <div class="bt-field">
+            <label for="optStrat">Strategy</label>
+            <select id="optStrat"></select>
+          </div>
+          <div class="bt-field">
+            <label for="optDTE">Enter at DTE</label>
+            <input id="optDTE" type="number" value="2" min="0" max="60" step="1">
+          </div>
+          <div class="bt-field">
+            <label for="optEntryAt">Entry price</label>
+            <select id="optEntryAt">
+              <option value="open" selected>session open</option>
+              <option value="close">session close</option>
+            </select>
+          </div>
+          <div class="bt-field">
+            <label for="optSelBy">Pick strikes by</label>
+            <select id="optSelBy">
+              <option value="premium" selected>option premium</option>
+              <option value="otm">% out of the money</option>
+            </select>
+          </div>
+          <div class="bt-field">
+            <label for="optPrem">Premium near (₹)</label>
+            <input id="optPrem" type="number" value="150" min="5" step="25" list="optPremList">
+            <datalist id="optPremList">
+              <option value="50"></option><option value="100"></option>
+              <option value="150"></option><option value="200"></option>
+              <option value="250"></option><option value="300"></option>
+            </datalist>
+          </div>
+          <div class="bt-field">
+            <label for="optPremTol">Premium tolerance (%)</label>
+            <input id="optPremTol" type="number" value="40" min="5" max="100" step="5">
+          </div>
+          <div class="bt-field">
+            <label for="optOtm">Strikes out (%)</label>
+            <input id="optOtm" type="number" value="1.5" min="0" max="10" step="0.25">
+          </div>
+          <div class="bt-field">
+            <label for="optLots">Lots</label>
+            <input id="optLots" type="number" value="1" min="1" step="1">
+          </div>
+          <div class="bt-field">
+            <label for="optSlip">Slippage / leg (pts)</label>
+            <input id="optSlip" type="number" value="1" min="0" step="0.25">
+          </div>
+        </div>
+
+        <fieldset class="bt-set">
+          <legend>Exit</legend>
+          <div class="bt-grid">
+            <div class="bt-field">
+              <label for="optTgt">Target (% of credit)</label>
+              <input id="optTgt" type="number" value="0" min="0" step="5">
+            </div>
+            <div class="bt-field">
+              <label for="optStp">Stop (% of credit)</label>
+              <input id="optStp" type="number" value="0" min="0" step="5">
+            </div>
+            <div class="bt-field">
+              <label for="optExitDTE">Else exit at DTE</label>
+              <input id="optExitDTE" type="number" value="0" min="0" step="1">
+            </div>
+          </div>
+          <p class="bt-note">If no strike is within the tolerance of the premium you asked
+            for, that expiry is SKIPPED and counted in the warnings — it is not quietly
+            replaced with the nearest thing. Asking for ₹150 at DTE 0 yields 8 trades in
+            eight years, and you should see that rather than a fabricated sample.</p>
+          <p class="bt-note">0 disables a rule. With all three at 0 the position is held to
+            expiry settlement.</p>
+        </fieldset>
+
+        <fieldset class="bt-set">
+          <legend>Capital</legend>
+          <div class="bt-grid">
+            <div class="bt-field">
+              <label for="optCapital">Capital (₹)</label>
+              <input id="optCapital" type="number" value="200000" min="0" step="25000">
+            </div>
+            <div class="bt-field">
+              <label for="optMargin">Margin est. (% of short notional)</label>
+              <input id="optMargin" type="number" value="12" min="1" max="100" step="1">
+            </div>
+          </div>
+          <p class="bt-note">For a long-only structure the capital is exact — the premium
+            paid. Anything with a short leg needs SPAN + exposure margin, which is not in this
+            data, so it is estimated from notional and labelled as an estimate. It is not a
+            broker quote.</p>
+        </fieldset>
+
+        <fieldset class="bt-set">
+          <legend>Period</legend>
+          <div class="bt-grid">
+            <div class="bt-field">
+              <label for="optFrom">From</label>
+              <select id="optFrom"></select>
+            </div>
+            <div class="bt-field">
+              <label for="optTo">To</label>
+              <select id="optTo"></select>
+            </div>
+          </div>
+        </fieldset>
+
+        <button class="button button-primary" id="optRun" style="margin-top:20px">Run backtest</button>
+        <p class="bt-status" id="optStatus"></p>
+      </section>
+
+      <section id="optOut" class="bt-hide">
+        <h2 style="margin-top:34px">Result</h2>
+        <p class="bt-recipe" id="optRecipe"></p>
+        <p class="bt-verdict" id="optVerdict"></p>
+        <p class="bt-recipe" id="optCapLine"></p>
+        <div id="optWarn"></div>
+        <div class="bt-two">
+          <div class="card">
+            <h3>First half <span id="optIsRange" style="font-weight:400;color:var(--muted);font-size:0.85rem"></span></h3>
+            <div id="optIsBox"></div>
+          </div>
+          <div class="card">
+            <h3>Second half <span id="optOosRange" style="font-weight:400;color:var(--muted);font-size:0.85rem"></span></h3>
+            <div id="optOosBox"></div>
+          </div>
+        </div>
+        <h2 style="margin-top:34px">Trades
+          <span id="optTradeCount" style="font-weight:400;color:var(--muted);font-size:0.9rem"></span>
+        </h2>
+        <div class="bt-scroll"><table class="bt-table" id="optTrades"></table></div>
+      </section>
+    </div><!-- /tabOptions -->
+
   <script src="../assets/runtime-config.js?v=20261123-1"></script>
   <script src="../assets/backtest-indicators.js?v=20261123-2"></script>
   <script src="../assets/backtest-series.js?v=20261123-2"></script>
-  <script src="../assets/backtest.js?v=20261123-2"></script>
+  <script src="../assets/backtest.js?v=20261123-3"></script>
+  <script src="../assets/backtest-options.js?v=20261123-3"></script>
+  <script src="../assets/backtest-options-ui.js?v=20261123-3"></script>
 </body>
 </html>

@@ -76,3 +76,13 @@
   color: var(--accent-strong); background: rgba(15, 76, 92, 0.05);
   padding: 10px 14px; border-radius: 12px; margin: 0 0 12px; overflow-x: auto;
 }
+
+/* tabs */
+.bt-tabs { display:flex; gap:8px; margin-top:26px; border-bottom:1px solid var(--line); }
+.bt-tab {
+  appearance:none; background:none; border:0; border-bottom:2px solid transparent;
+  padding:10px 14px; font:inherit; font-weight:600; color:var(--muted); cursor:pointer;
+}
+.bt-tab:hover { color:var(--fg); }
+.bt-tab.is-on { color:var(--fg); border-bottom-color:var(--accent, #2f6feb); }
+.bt-note { color:var(--muted); font-size:0.88rem; margin:4px 0 14px; }
