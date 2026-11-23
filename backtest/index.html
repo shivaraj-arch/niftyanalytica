@@ -31,6 +31,14 @@
     </nav>
 
     <h1>Strategy Backtester</h1>
+    <p class="bt-note" style="margin-top:6px">
+      <strong>Index indicators:</strong> daily 2001–2026 (6,437 bars) ·
+      5 and 15 minute 2017–2026 (2,379 sessions).
+      <strong>Option strategies:</strong> real traded prices 2002–2026
+      (1,500,756 contract-days).
+      Intraday index history starts April 2017 — there is none before that
+      from any source; daily reaches back to 2001.
+    </p>
     <p style="color:var(--muted);max-width:72ch">
       44 indicators on NSE Nifty&nbsp;50, over 1, 5 and 15 minute
       candles back to April 2017. Everything runs in your browser - no data leaves
@@ -50,9 +58,9 @@
         <div class="bt-field">
           <label for="btRes">Candle</label>
           <select id="btRes">
-            <option value="day">1 day (2001–2026)</option>
-            <option value="15">15 minute</option>
-            <option value="5" selected>5 minute</option>
+            <option value="day" selected>1 day (2001–2026)</option>
+            <option value="15">15 minute (2017–2026)</option>
+            <option value="5">5 minute (2017–2026)</option>
             <option value="1" disabled>1 minute (data not uploaded yet)</option>
           </select>
         </div>
@@ -314,7 +322,7 @@
   <script src="../assets/runtime-config.js?v=20261123-1"></script>
   <script src="../assets/backtest-indicators.js?v=20261123-2"></script>
   <script src="../assets/backtest-series.js?v=20261123-2"></script>
-  <script src="../assets/backtest.js?v=20261123-4"></script>
+  <script src="../assets/backtest.js?v=20261123-5"></script>
   <script src="../assets/backtest-options.js?v=20261123-3"></script>
   <script src="../assets/backtest-options-ui.js?v=20261123-3"></script>
 </body>
