@@ -186,10 +186,81 @@ const getIstClock = (date = new Date()) => {
   };
 };
 
+// data/nse-holidays.json is already fetched to draw the calendar, but the
+// session label never consulted it, so a weekday holiday read as "Open" right
+// through market hours -- and the page polled for a live snapshot all day
+// against a market that never opened. Keyed on the IST calendar date, which is
+// the one the exchange closes against.
+const NSE_HOLIDAYS_BY_DATE = new Map();
+
+const getIstDateKey = (date = new Date()) => new Intl.DateTimeFormat('en-CA', {
+  timeZone: IST_TIMEZONE,
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+}).format(date);
+
+// parseTradingDate is deliberately forgiving for the calendar: an unknown month
+// gives indexOf -1 and an out-of-range day rolls over, so "32-Xyz-2026" becomes
+// a perfectly valid 2026-01-01. The session label states a fact about today, so
+// it parses strictly and drops anything that does not round-trip.
+const parseHolidayDateKey = (value) => {
+  const [day, month, year] = String(value || '').split('-');
+  const monthIndex = MONTHS.indexOf(month);
+  const dayNumber = Number(day);
+  const yearNumber = Number(year);
+  if (monthIndex < 0 || !Number.isInteger(dayNumber) || !Number.isInteger(yearNumber)) {
+    return null;
+  }
+
+  const date = new Date(yearNumber, monthIndex, dayNumber);
+  if (date.getFullYear() !== yearNumber || date.getMonth() !== monthIndex || date.getDate() !== dayNumber) {
+    return null;
+  }
+
+  return toDateKey(date);
+};
+
+const registerNseHolidays = (payload) => {
+  const records = extractHolidayRecords(payload);
+  if (!records.length) {
+    return;
+  }
+
+  // Built aside and swapped in only once it holds something usable: a payload
+  // whose rows all fail to parse must leave the previous list standing rather
+  // than empty the register and quietly put the page back to reporting "Open".
+  const parsed = new Map();
+  records.forEach((record) => {
+    const key = parseHolidayDateKey(record?.tradingDate);
+    if (!key) {
+      return;
+    }
+    parsed.set(key, record?.description || 'Trading holiday');
+  });
+
+  if (!parsed.size) {
+    console.warn('Holiday payload carried no parseable dates; keeping the previous list.');
+    return;
+  }
+
+  NSE_HOLIDAYS_BY_DATE.clear();
+  parsed.forEach((description, key) => NSE_HOLIDAYS_BY_DATE.set(key, description));
+};
+
+const getNseHoliday = (date = new Date()) => NSE_HOLIDAYS_BY_DATE.get(getIstDateKey(date)) || null;
+
 const getMarketSessionState = (date = new Date()) => {
   const { weekday, minutes } = getIstClock(date);
   if (weekday === 'Sat' || weekday === 'Sun') {
     return { session: 'closed', canFetchLiveSnapshot: false };
+  }
+
+  // Before the holiday payload lands the register is empty, so this falls back
+  // to weekday and clock -- the old behaviour, not a wrong answer asserted.
+  const holiday = getNseHoliday(date);
+  if (holiday) {
+    return { session: 'closed', canFetchLiveSnapshot: false, holiday };
   }
 
   if (minutes < MARKET_OPEN_MINUTE_IST || minutes >= MARKET_CLOSE_MINUTE_IST) {
@@ -212,6 +283,7 @@ const getMarketSessionState = (date = new Date()) => {
 
 const getMarketSessionLabel = (state) => {
   if (!state) return '-';
+  if (state.holiday) return 'Holiday';
   if (state.session === 'pre-market') return 'Pre-Market';
   if (state.session === 'open') return 'Open';
   if (state.session === 'post-market') return 'Post-Market';
@@ -266,18 +338,27 @@ const toIstLabel = (value) => {
   }).format(date).replace(',', '') + ' IST';
 };
 
+// NSE publishes a list per segment. CM is the cash market the session label
+// tracks; FO is the fallback because the two share every full-day closure.
+const extractHolidayRecords = (payload) => {
+  const rawHolidays = payload?.holidays || payload || {};
+  if (!rawHolidays || typeof rawHolidays !== 'object') {
+    return [];
+  }
+
+  return Array.isArray(rawHolidays.CM)
+    ? rawHolidays.CM
+    : Array.isArray(rawHolidays.FO)
+      ? rawHolidays.FO
+      : Object.values(rawHolidays).find(Array.isArray) || [];
+};
+
 const normalizeCachedHolidayPayload = (payload) => {
   if (payload?.months && Array.isArray(payload.months)) {
     return payload;
   }
 
-  const rawHolidays = payload?.holidays || payload || {};
-  const records = Array.isArray(rawHolidays.CM)
-    ? rawHolidays.CM
-    : Array.isArray(rawHolidays.FO)
-      ? rawHolidays.FO
-      : Object.values(rawHolidays).find(Array.isArray) || [];
-
+  const records = extractHolidayRecords(payload);
   const normalized = normalizeHolidayPayload(records);
   if (payload?.updatedAt) {
     normalized.updatedAt = payload.updatedAt;
@@ -384,6 +465,18 @@ const loadRealtimeData = async ({ preferLive = false } = {}) => {
     fetchHolidaySnapshot(),
     fetchMarketActivityHistory(),
   ]);
+
+  // Ahead of the live render below, which stamps the session label. All three
+  // payloads have already settled here, so there is no race to lose -- doing
+  // this in the holiday block further down would leave the first paint saying
+  // "Open" until the next refresh corrected it.
+  if (holidaysResult.status === 'fulfilled') {
+    try {
+      registerNseHolidays(holidaysResult.value);
+    } catch (error) {
+      console.warn('Holiday registration failed; session falls back to weekday and clock.', error);
+    }
+  }
 
   if (liveResult.status === 'fulfilled') {
     try {
